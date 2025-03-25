@@ -1,4 +1,3 @@
-
         // FAQ Toggle Functionality
         document.addEventListener('DOMContentLoaded', function() {
             const faqItems = document.querySelectorAll('.faq-item');
@@ -35,6 +34,42 @@
                         behavior: 'smooth'
                     });
                 }
+            });
+        });
+
+        // Service Tab Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceTabs = document.querySelectorAll('.service-tab');
+            
+            serviceTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Remove active class from all tabs
+                    serviceTabs.forEach(t => t.classList.remove('active'));
+                    
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+                    
+                    // Hide all service content
+                    document.querySelectorAll('.service-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    
+                    // Show selected service content
+                    const targetId = this.getAttribute('data-target');
+                    document.getElementById(targetId).classList.add('active');
+                });
+            });
+        });
+
+        // Alert Close Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeButtons = document.querySelectorAll('.close-btn');
+            
+            closeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const alert = this.closest('.alert');
+                    alert.style.display = 'none';
+                });
             });
         });
     

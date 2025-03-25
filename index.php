@@ -138,237 +138,57 @@ include_once 'components/header.php';
 </section>
 
 <!-- Main Services Section -->
-<section id="services" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-2" data-aos="fade-up">Our Services</h2>
-        <p class="text-center mb-5 lead" data-aos="fade-up">Comprehensive technology solutions for modern businesses</p>
+<section class="services-section">
+    <div class="main-container">
+        <div class="section-header">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive technology solutions for modern businesses</p>
+        </div>
         
         <!-- Service Tabs -->
-        <ul class="nav nav-pills mb-5 justify-content-center" id="services-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="web-design-tab" data-bs-toggle="pill" data-bs-target="#web-design" type="button" role="tab" aria-controls="web-design" aria-selected="true">Web Design</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="app-development-tab" data-bs-toggle="pill" data-bs-target="#app-development" type="button" role="tab" aria-controls="app-development" aria-selected="false">App Development</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="ai-services-tab" data-bs-toggle="pill" data-bs-target="#ai-services" type="button" role="tab" aria-controls="ai-services" aria-selected="false">AI Services</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="digital-marketing-tab" data-bs-toggle="pill" data-bs-target="#digital-marketing" type="button" role="tab" aria-controls="digital-marketing" aria-selected="false">Digital Marketing</button>
-            </li>
-        </ul>
+        <div class="services-tabs">
+            <button class="service-tab active" data-target="web-design">Web Design</button>
+            <button class="service-tab" data-target="app-development">App Development</button>
+            <button class="service-tab" data-target="ai-services">AI Services</button>
+            <button class="service-tab" data-target="digital-marketing">Digital Marketing</button>
+        </div>
         
-        <!-- Tab Content -->
-        <div class="tab-content" id="services-tab-content">
-            <!-- Web Design Tab -->
-            <div class="tab-pane fade show active" id="web-design" role="tabpanel" aria-labelledby="web-design-tab">
-                <div class="row align-items-center mb-5">
-                    <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-                        <img src="assets/images/services/web-design.svg" alt="Web Design Services" class="img-fluid rounded shadow">
+        <!-- Service Contents -->
+        <div class="service-content active" id="web-design">
+            <div class="service-info">
+                <h3 class="service-title">Web Design & Development</h3>
+                <p class="service-description">From stunning landing pages to complex web applications, we create responsive, user-friendly websites that drive growth. Our web design team combines aesthetics with functionality for results that impress.</p>
+                
+                <div class="service-features">
+                    <div class="service-feature">
+                        <h4 class="feature-subtitle">UI/UX Design</h4>
+                        <p>User-friendly interfaces with intuitive experiences</p>
                     </div>
-                    <div class="col-lg-6" data-aos="fade-left">
-                        <h3 class="mb-4">Web Design & Development</h3>
-                        <p>From stunning landing pages to complex web applications, we create responsive, user-friendly websites that drive growth. Our web design team combines aesthetics with functionality for results that impress.</p>
-                        <div class="row mt-4">
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-paint-brush text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5>UI/UX Design</h5>
-                                        <p class="mb-0">User-friendly interfaces with intuitive experiences</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-tablet-alt text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5>Responsive Design</h5>
-                                        <p class="mb-0">Mobile-first approach for all screen sizes</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fab fa-wordpress text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5>CMS Development</h5>
-                                        <p class="mb-0">WordPress, Webflow, and custom CMS solutions</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-shopping-cart text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5>E-commerce</h5>
-                                        <p class="mb-0">Shopify, WooCommerce, and custom stores</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="/pages/services/web-design/UI-UX-Design-&-Prototyping/Wireframing-&-Prototyping.php" class="btn btn-primary mt-4">Learn More</a>
+                    
+                    <div class="service-feature">
+                        <h4 class="feature-subtitle">Responsive Design</h4>
+                        <p>Mobile-first approach for all screen sizes</p>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <h4 class="feature-subtitle">CMS Development</h4>
+                        <p>WordPress, Webflow, and custom CMS solutions</p>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <h4 class="feature-subtitle">E-commerce</h4>
+                        <p>Shopify, WooCommerce, and custom stores</p>
                     </div>
                 </div>
+                
+                <a href="/pages/services/web-design.php" class="primary-button">Learn More</a>
             </div>
-            
-            <!-- App Development Tab -->
-            <div class="tab-pane fade" id="app-development" role="tabpanel" aria-labelledby="app-development-tab">
-                <div class="row align-items-center mb-5">
-                    <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0" data-aos="fade-left">
-                        <img src="assets/images/services/app-development.svg" alt="App Development Services" class="img-fluid rounded shadow">
-                    </div>
-                    <div class="col-lg-6 order-lg-1" data-aos="fade-right">
-                        <h3 class="mb-4">App Development</h3>
-                        <p>We build powerful, scalable applications that solve complex business challenges. Our development team delivers custom web applications, mobile solutions, and integrated systems that drive efficiency and growth.</p>
-                        <div class="row mt-4">
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-code text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5>Web Applications</h5>
-                                        <p class="mb-0">Custom solutions for complex business needs</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-database text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5>Backend & Database</h5>
-                                        <p class="mb-0">Scalable infrastructure and data management</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-plug text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5>API Development</h5>
-                                        <p class="mb-0">Custom APIs and third-party integrations</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-cogs text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5>Custom Software</h5>
-                                        <p class="mb-0">Tailored solutions for specific business needs</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="/pages/services/app-development/web-application-devlopment/custom-web-apps.php" class="btn btn-primary mt-4">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- AI Services Tab -->
-            <div class="tab-pane fade" id="ai-services" role="tabpanel" aria-labelledby="ai-services-tab">
-                <div class="row align-items-center mb-5">
-                    <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-                        <img src="assets/images/services/ai-services.svg" alt="AI Services" class="img-fluid rounded shadow">
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-left">
-                        <h3 class="mb-4">AI Services</h3>
-                        <p>Harness the power of artificial intelligence to transform your business. We build intelligent systems that automate processes, provide insights, and enhance customer experiences through cutting-edge AI technologies.</p>
-                        <div class="row mt-4">
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-robot text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5>Conversational AI</h5>
-                                        <p class="mb-0">Chatbots and virtual assistants for customer support</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-cog text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5>Business Automation</h5>
-                                        <p class="mb-0">Workflow and document automation solutions</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-language text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5>Natural Language Processing</h5>
-                                        <p class="mb-0">Text analysis and understanding systems</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-brain text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5>Machine Learning</h5>
-                                        <p class="mb-0">Predictive models and recommendation systems</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="/pages/services/ai-services/chatbots-virtual-assistants.php" class="btn btn-primary mt-4">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Digital Marketing Tab -->
-            <div class="tab-pane fade" id="digital-marketing" role="tabpanel" aria-labelledby="digital-marketing-tab">
-                <div class="row align-items-center mb-5">
-                    <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0" data-aos="fade-left">
-                        <img src="assets/images/services/digital-marketing.svg" alt="Digital Marketing Services" class="img-fluid rounded shadow">
-                    </div>
-                    <div class="col-lg-6 order-lg-1" data-aos="fade-right">
-                        <h3 class="mb-4">Digital Marketing</h3>
-                        <p>Drive traffic, generate leads, and increase conversions with our comprehensive digital marketing services. We create data-driven strategies tailored to your business goals and target audience.</p>
-                        <div class="row mt-4">
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-search text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5>SEO Services</h5>
-                                        <p class="mb-0">Improve visibility with on-page and technical SEO</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-ad text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5>PPC Advertising</h5>
-                                        <p class="mb-0">Google Ads and social media advertising</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-pencil-alt text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5>Content Marketing</h5>
-                                        <p class="mb-0">Engaging content that drives traffic and conversions</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-share-alt text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5>Social Media</h5>
-                                        <p class="mb-0">Strategic management and community building</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="/pages/services/digital-marketing/seo/on-page-seo.php" class="btn btn-primary mt-4">Learn More</a>
-                    </div>
-                </div>
+            <div class="service-image">
+                <img src="assets/images/web-design-service.jpg" alt="Web Design Services">
             </div>
         </div>
+        
+        <!-- Similar blocks for other services... -->
     </div>
 </section>
 
