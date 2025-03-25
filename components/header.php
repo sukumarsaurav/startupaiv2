@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/contact.css">
     
     <!-- Add any additional CSS files needed for specific pages -->
     <?php if (isset($additionalCss) && is_array($additionalCss)): ?>
