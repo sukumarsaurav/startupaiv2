@@ -1,19 +1,14 @@
-<?php
-// Define base path to allow direct script access
-define('BASEPATH', true);
-
-require_once '../../../../includes/config.php';
-
-// Page specific content
-$pageTitle = "AI Content Generation";
-$pageDescription = "Create high-quality, engaging content at scale with AI-powered content generation for blogs, social media, and marketing materials";
-$serviceName = "AI Content Generation";
-$serviceSlug = "content-generation";
-
-require_once '../../../../components/header.php';
-?>
-
-<!-- Page Header -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+  <!-- Page Header -->
 <section class="page-header">
     <div class="main-container">
         <div class="header-content">
@@ -23,7 +18,7 @@ require_once '../../../../components/header.php';
                 <a href="/pages/contact.php" class="btn btn-primary mt-3">Get Started</a>
             </div>
             <div class="col-lg-6" data-aos="fade-left">
-                <img src="/assets/images/services/content-generation.svg" alt="<?php echo $serviceName; ?>" class="img-fluid">
+                <img src="/assets/svg/content-genration.svg" alt="<?php echo $serviceName; ?>" class="img-fluid">
             </div>
         </div>
     </div>
@@ -437,8 +432,8 @@ require_once '../../../../components/header.php';
             </div>
         </div>
     </div>
-</section>
+</section>  
+</body>
+</html>
 
-<?php
-include_once '../../../../components/footer.php';
-?> 
+

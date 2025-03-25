@@ -14,8 +14,8 @@ require_once '../../../../components/header.php';
 ?>
 
 <!-- Page Header -->
-<section class="page-header py-5">
-    <div class="container">
+<section class="page-header">
+    <div class="main-container">
         <div class="row align-items-center">
             <div class="col-lg-6" data-aos="fade-right">
                 <h1 class="display-4"><?php echo $pageTitle; ?></h1>
@@ -30,9 +30,9 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Service Overview -->
-<section class="py-5">
-    <div class="container">
-        <div class="row">
+<section class="service-overview">
+    <div class="main-container">
+        <div class="overview-grid">
             <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
                 <h2>Personalization at Scale with AI</h2>
                 <p class="lead">Move beyond basic segmentation to create truly individualized experiences that connect with customers on a deeper level and drive meaningful engagement.</p>
