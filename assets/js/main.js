@@ -72,4 +72,35 @@
                 });
             });
         });
+
+        // Testimonials Carousel
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.testimonials-track');
+            const cards = document.querySelectorAll('.testimonial-card');
+            const prevButton = document.querySelector('.prev-button');
+            const nextButton = document.querySelector('.next-button');
+            
+            let currentIndex = 0;
+            const cardCount = cards.length;
+            
+            // Set initial position
+            updateCarousel();
+            
+            // Handle next button click
+            nextButton.addEventListener('click', function() {
+                currentIndex = (currentIndex + 1) % cardCount;
+                updateCarousel();
+            });
+            
+            // Handle previous button click
+            prevButton.addEventListener('click', function() {
+                currentIndex = (currentIndex - 1 + cardCount) % cardCount;
+                updateCarousel();
+            });
+            
+            function updateCarousel() {
+                const translateValue = -currentIndex * 100;
+                track.style.transform = `translateX(${translateValue}%)`;
+            }
+        });
     
