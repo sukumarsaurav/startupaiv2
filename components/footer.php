@@ -417,3 +417,20 @@
 // Mobile Footer Accordion
 
 </script>
+
+<!-- Footer content here -->
+
+<!-- Core JavaScript -->
+<script src="/assets/js/main.js"></script>
+
+<!-- Component-specific JavaScript -->
+<script src="/assets/js/footer.js"></script>
+
+<!-- Additional JavaScript files -->
+<?php if (isset($additionalJs) && is_array($additionalJs)): ?>
+    <?php foreach ($additionalJs as $jsFile): ?>
+        <script src="<?php echo $jsFile; ?>"></script>
+    <?php endforeach; ?>
+<?php endif; ?>
+</body>
+</html>
