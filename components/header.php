@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php echo htmlspecialchars($seo_data['description']); ?>">
     <meta name="keywords" content="<?php echo htmlspecialchars($seo_data['keywords']); ?>">
-    <title><?php echo isset($pageTitle) ? $pageTitle . ' | Your Company Name' : 'Your Company Name'; ?></title>
+    <title><?php echo isset($pageTitle) ? $pageTitle : 'StartupAI'; ?></title>
     <meta name="description" content="<?php echo isset($pageDescription) ? $pageDescription : 'Default site description'; ?>">
     
     <!-- Core CSS -->
@@ -13,6 +13,7 @@
     
     <!-- Component-specific CSS -->
     <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
     
     <!-- Add any additional CSS files needed for specific pages -->
     <?php if (isset($additionalCss) && is_array($additionalCss)): ?>

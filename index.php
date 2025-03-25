@@ -17,39 +17,39 @@ include_once 'components/header.php';
 ?>
 
 <!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center">
-            <div class="col-lg-6" data-aos="fade-right">
-                <h1 class="display-4">Transforming Ideas into Digital Success Stories</h1>
-                <p class="lead">End-to-end technology solutions for businesses at every stage of growth - from startup MVPs to enterprise digital transformations.</p>
-                <div class="inquiry-form p-4 bg-white rounded shadow-lg">
-                    <h3 class="h4 mb-4">Get Started Today</h3>
+<section id="home" class="hero-section">
+    <div class="main-container">
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-right">
+                <h1 class="hero-title">Transforming Ideas into Digital Success Stories</h1>
+                <p class="hero-subtitle">End-to-end technology solutions for businesses at every stage of growth - from startup MVPs to enterprise digital transformations.</p>
+                <div class="inquiry-form form-box">
+                    <h3 class="form-title">Get Started Today</h3>
                     
                     <?php if (isset($_SESSION['inquiry_success'])): ?>
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <div class="alert alert-success">
                             Thank you for your inquiry! We'll get back to you as soon as possible.
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            <button type="button" class="close-btn" data-dismiss="alert">×</button>
                         </div>
                         <?php unset($_SESSION['inquiry_success']); ?>
                     <?php elseif (isset($_SESSION['inquiry_error'])): ?>
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <div class="alert alert-danger">
                             <?php echo $_SESSION['inquiry_error']; ?>
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            <button type="button" class="close-btn" data-dismiss="alert">×</button>
                         </div>
                         <?php unset($_SESSION['inquiry_error']); ?>
                     <?php endif; ?>
                     
                     <form id="inquiryForm" action="process/submit-inquiry.php" method="POST">
-                        <div class="mb-3">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name" required
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-input" placeholder="Your Name" required
                                    value="<?php echo isset($_SESSION['form_data']['name']) ? htmlspecialchars($_SESSION['form_data']['name']) : ''; ?>">
                         </div>
-                        <div class="mb-3">
-                            <input type="email" name="email" class="form-control" placeholder="Your Email" required
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-input" placeholder="Your Email" required
                                    value="<?php echo isset($_SESSION['form_data']['email']) ? htmlspecialchars($_SESSION['form_data']['email']) : ''; ?>">
                         </div>
-                        <div class="mb-3">
+                        <div class="form-group">
                             <select name="service" class="form-select" required>
                                 <option value="">Select Service</option>
                                 <option value="web" <?php echo (isset($_SESSION['form_data']['service']) && $_SESSION['form_data']['service'] === 'web') ? 'selected' : ''; ?>>Web Design</option>
@@ -58,8 +58,8 @@ include_once 'components/header.php';
                                 <option value="marketing" <?php echo (isset($_SESSION['form_data']['service']) && $_SESSION['form_data']['service'] === 'marketing') ? 'selected' : ''; ?>>Digital Marketing</option>
                             </select>
                         </div>
-                        <div class="mb-3">
-                            <textarea name="description" class="form-control" rows="3" placeholder="Project Description" required><?php echo isset($_SESSION['form_data']['description']) ? htmlspecialchars($_SESSION['form_data']['description']) : ''; ?></textarea>
+                        <div class="form-group">
+                            <textarea name="description" class="form-input" rows="3" placeholder="Project Description" required><?php echo isset($_SESSION['form_data']['description']) ? htmlspecialchars($_SESSION['form_data']['description']) : ''; ?></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Submit Inquiry</button>
                     </form>
@@ -71,7 +71,7 @@ include_once 'components/header.php';
                     ?>
                 </div>
             </div>
-            <div class="col-lg-6" data-aos="fade-left">
+            <div class="hero-image" data-aos="fade-left">
                 <img src="assets/images/hero-image.svg" alt="Hero Image" class="img-fluid">
             </div>
         </div>
