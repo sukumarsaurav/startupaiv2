@@ -9,11 +9,12 @@
     <meta name="description" content="<?php echo isset($pageDescription) ? $pageDescription : 'Default site description'; ?>">
     
     <!-- Core CSS -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+   
     
     <!-- Component-specific CSS -->
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     
     <!-- Add any additional CSS files needed for specific pages -->
     <?php if (isset($additionalCss) && is_array($additionalCss)): ?>
@@ -378,17 +379,5 @@
         </div>
     </nav>
 
-    <!-- Main Content (for demonstration) -->
-    <main style="margin-top: 100px; padding: 20px;">
-        <div class="container">
-            <h1>Welcome to StartupAI</h1>
-            <p>This is a demonstration of a pure HTML/CSS/JS mega menu header.</p>
-        </div>
-    </main>
-
-    <script>
-        // Mobile drawer toggle
-       
-    </script>
 </body>
 </html>
