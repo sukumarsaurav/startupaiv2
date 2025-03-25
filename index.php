@@ -188,7 +188,110 @@ include_once 'components/header.php';
             </div>
         </div>
         
-        <!-- Similar blocks for other services... -->
+        <!-- App Development Service -->
+        <div class="service-content" id="app-development">
+            <div class="service-info">
+                <h3 class="service-title">Mobile & Web App Development</h3>
+                <p class="service-description">We build powerful, scalable applications that work flawlessly across devices. From startup MVPs to enterprise applications, our development team delivers custom solutions that solve real business problems.</p>
+                
+                <div class="service-features">
+                    <div class="service-feature">
+                        <h4 class="feature-subtitle">Native Mobile Apps</h4>
+                        <p>High-performance iOS and Android applications</p>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <h4 class="feature-subtitle">Cross-Platform Development</h4>
+                        <p>React Native and Flutter solutions for multiple platforms</p>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <h4 class="feature-subtitle">Progressive Web Apps</h4>
+                        <p>Fast, engaging web experiences that work offline</p>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <h4 class="feature-subtitle">Enterprise Applications</h4>
+                        <p>Secure, scalable solutions for large organizations</p>
+                    </div>
+                </div>
+                
+                <a href="/pages/services/app-development.php" class="primary-button">Learn More</a>
+            </div>
+            <div class="service-image">
+                <img src="assets/images/app-development-service.jpg" alt="App Development Services">
+            </div>
+        </div>
+        
+        <!-- AI Services -->
+        <div class="service-content" id="ai-services">
+            <div class="service-info">
+                <h3 class="service-title">AI & Machine Learning Solutions</h3>
+                <p class="service-description">Harness the power of artificial intelligence to automate processes, gain insights, and create intelligent systems. Our AI solutions help businesses work smarter and deliver personalized experiences at scale.</p>
+                
+                <div class="service-features">
+                    <div class="service-feature">
+                        <h4 class="feature-subtitle">Conversational AI</h4>
+                        <p>Intelligent chatbots and virtual assistants</p>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <h4 class="feature-subtitle">Predictive Analytics</h4>
+                        <p>Data-driven forecasting and business intelligence</p>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <h4 class="feature-subtitle">Computer Vision</h4>
+                        <p>Image recognition and visual data processing</p>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <h4 class="feature-subtitle">Natural Language Processing</h4>
+                        <p>Text analysis and language understanding systems</p>
+                    </div>
+                </div>
+                
+                <a href="/pages/services/ai-services.php" class="primary-button">Learn More</a>
+            </div>
+            <div class="service-image">
+                <img src="assets/images/ai-services.jpg" alt="AI Services">
+            </div>
+        </div>
+        
+        <!-- Digital Marketing -->
+        <div class="service-content" id="digital-marketing">
+            <div class="service-info">
+                <h3 class="service-title">Digital Marketing & SEO</h3>
+                <p class="service-description">Drive growth with data-driven digital marketing strategies. From SEO and content marketing to PPC and social media campaigns, we help businesses increase visibility, generate leads, and boost conversions.</p>
+                
+                <div class="service-features">
+                    <div class="service-feature">
+                        <h4 class="feature-subtitle">Search Engine Optimization</h4>
+                        <p>Technical SEO, content optimization, and link building</p>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <h4 class="feature-subtitle">Content Marketing</h4>
+                        <p>Strategic content creation and distribution</p>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <h4 class="feature-subtitle">PPC & Paid Media</h4>
+                        <p>Targeted advertising across search and social platforms</p>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <h4 class="feature-subtitle">Analytics & Reporting</h4>
+                        <p>Comprehensive performance tracking and optimization</p>
+                    </div>
+                </div>
+                
+                <a href="/pages/services/digital-marketing.php" class="primary-button">Learn More</a>
+            </div>
+            <div class="service-image">
+                <img src="assets/images/digital-marketing-service.jpg" alt="Digital Marketing Services">
+            </div>
+        </div>
     </div>
 </section>
 
@@ -395,7 +498,40 @@ include_once 'components/header.php';
                     </div>
                 </div>
                 
-                <!-- Add more tech-item divs as needed -->
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tech-logo">
+                        <i class="fab fa-vuejs"></i>
+                        <h6 class="tech-name">Vue.js</h6>
+                    </div>
+                </div>
+                
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-logo">
+                        <i class="fab fa-php"></i>
+                        <h6 class="tech-name">PHP</h6>
+                    </div>
+                </div>
+                
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tech-logo">
+                        <i class="fab fa-laravel"></i>
+                        <h6 class="tech-name">Laravel</h6>
+                    </div>
+                </div>
+                
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tech-logo">
+                        <i class="fas fa-database"></i>
+                        <h6 class="tech-name">MongoDB</h6>
+                    </div>
+                </div>
+                
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="tech-logo">
+                        <i class="fab fa-android"></i>
+                        <h6 class="tech-name">Android</h6>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -448,7 +584,44 @@ include_once 'components/header.php';
                     </div>
                 </div>
                 
-                <!-- Add more testimonial cards -->
+                <!-- App Development Testimonial -->
+                <div class="testimonial-card">
+                    <div class="category">App Development</div>
+                    <div class="quote-mark">&ldquo;&ldquo;</div>
+                    <div class="testimonial-text">
+                        StartupAI developed a custom mobile app that transformed our customer experience. The app is intuitive, fast, and has all the features we needed. Our users love the seamless experience, and we've seen a significant increase in customer engagement since launch.
+                    </div>
+                    <div class="author-info">
+                        <div class="author-name">Michael Chen</div>
+                        <div class="author-title">CTO, HealthFirst Technologies</div>
+                    </div>
+                </div>
+                
+                <!-- AI Services Testimonial -->
+                <div class="testimonial-card">
+                    <div class="category">AI Services</div>
+                    <div class="quote-mark">&ldquo;&ldquo;</div>
+                    <div class="testimonial-text">
+                        The AI chatbot solution developed by StartupAI has revolutionized our customer support. It handles over 70% of routine inquiries automatically, reducing response times by 85% and allowing our support team to focus on complex issues. Excellent ROI!
+                    </div>
+                    <div class="author-info">
+                        <div class="author-name">Sarah Johnson</div>
+                        <div class="author-title">Customer Experience Manager, TechSupport Inc.</div>
+                    </div>
+                </div>
+                
+                <!-- Digital Marketing Testimonial -->
+                <div class="testimonial-card">
+                    <div class="category">Digital Marketing</div>
+                    <div class="quote-mark">&ldquo;&ldquo;</div>
+                    <div class="testimonial-text">
+                        StartupAI's digital marketing strategy helped us increase organic traffic by 215% in just 6 months. Their SEO and content marketing approach was highly targeted and effective. We're now ranking in the top 3 results for all our key terms.
+                    </div>
+                    <div class="author-info">
+                        <div class="author-name">David Rodriguez</div>
+                        <div class="author-title">Growth Director, Elevate Financial</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
