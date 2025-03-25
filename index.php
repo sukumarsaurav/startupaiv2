@@ -23,17 +23,17 @@ include_once 'components/header.php';
             <div class="hero-text" data-aos="fade-right">
                 <h1 class="hero-title">Transforming Ideas into Digital Success Stories</h1>
                 <p class="hero-subtitle">End-to-end technology solutions for businesses at every stage of growth - from startup MVPs to enterprise digital transformations.</p>
-                <div class="inquiry-form form-box">
+                <div class="inquiry-form">
                     <h3 class="form-title">Get Started Today</h3>
                     
                     <?php if (isset($_SESSION['inquiry_success'])): ?>
-                        <div class="alert alert-success">
+                        <div class="alert success-alert">
                             Thank you for your inquiry! We'll get back to you as soon as possible.
                             <button type="button" class="close-btn" data-dismiss="alert">×</button>
                         </div>
                         <?php unset($_SESSION['inquiry_success']); ?>
                     <?php elseif (isset($_SESSION['inquiry_error'])): ?>
-                        <div class="alert alert-danger">
+                        <div class="alert error-alert">
                             <?php echo $_SESSION['inquiry_error']; ?>
                             <button type="button" class="close-btn" data-dismiss="alert">×</button>
                         </div>
@@ -41,27 +41,27 @@ include_once 'components/header.php';
                     <?php endif; ?>
                     
                     <form id="inquiryForm" action="process/submit-inquiry.php" method="POST">
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-input" placeholder="Your Name" required
+                        <div class="form-field">
+                            <input type="text" name="name" class="input-control" placeholder="Your Name" required
                                    value="<?php echo isset($_SESSION['form_data']['name']) ? htmlspecialchars($_SESSION['form_data']['name']) : ''; ?>">
                         </div>
-                        <div class="form-group">
-                            <input type="email" name="email" class="form-input" placeholder="Your Email" required
+                        <div class="form-field">
+                            <input type="email" name="email" class="input-control" placeholder="Email Address" required
                                    value="<?php echo isset($_SESSION['form_data']['email']) ? htmlspecialchars($_SESSION['form_data']['email']) : ''; ?>">
                         </div>
-                        <div class="form-group">
-                            <select name="service" class="form-select" required>
-                                <option value="">Select Service</option>
-                                <option value="web" <?php echo (isset($_SESSION['form_data']['service']) && $_SESSION['form_data']['service'] === 'web') ? 'selected' : ''; ?>>Web Design</option>
-                                <option value="app" <?php echo (isset($_SESSION['form_data']['service']) && $_SESSION['form_data']['service'] === 'app') ? 'selected' : ''; ?>>App Development</option>
-                                <option value="ai" <?php echo (isset($_SESSION['form_data']['service']) && $_SESSION['form_data']['service'] === 'ai') ? 'selected' : ''; ?>>AI Services</option>
-                                <option value="marketing" <?php echo (isset($_SESSION['form_data']['service']) && $_SESSION['form_data']['service'] === 'marketing') ? 'selected' : ''; ?>>Digital Marketing</option>
+                        <div class="form-field">
+                            <select name="service" class="input-control" required>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="web-design" <?php echo (isset($_SESSION['form_data']['service']) && $_SESSION['form_data']['service'] == 'web-design') ? 'selected' : ''; ?>>Web Design</option>
+                                <option value="app-development" <?php echo (isset($_SESSION['form_data']['service']) && $_SESSION['form_data']['service'] == 'app-development') ? 'selected' : ''; ?>>App Development</option>
+                                <option value="ai-services" <?php echo (isset($_SESSION['form_data']['service']) && $_SESSION['form_data']['service'] == 'ai-services') ? 'selected' : ''; ?>>AI Services</option>
+                                <option value="digital-marketing" <?php echo (isset($_SESSION['form_data']['service']) && $_SESSION['form_data']['service'] == 'digital-marketing') ? 'selected' : ''; ?>>Digital Marketing</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <textarea name="description" class="form-input" rows="3" placeholder="Project Description" required><?php echo isset($_SESSION['form_data']['description']) ? htmlspecialchars($_SESSION['form_data']['description']) : ''; ?></textarea>
+                        <div class="form-field">
+                            <textarea name="description" class="input-control" rows="3" placeholder="Project Description" required><?php echo isset($_SESSION['form_data']['description']) ? htmlspecialchars($_SESSION['form_data']['description']) : ''; ?></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Submit Inquiry</button>
+                        <button type="submit" class="primary-button full-width">Submit Inquiry</button>
                     </form>
                     <?php 
                     // Clear form data after displaying
@@ -72,44 +72,66 @@ include_once 'components/header.php';
                 </div>
             </div>
             <div class="hero-image" data-aos="fade-left">
-                <img src="assets/images/hero-image.svg" alt="Hero Image" class="img-fluid">
+                <img src="assets/images/hero-image.svg" alt="Hero Image">
             </div>
         </div>
     </div>
 </section>
 
 <!-- Why Choose Us Section -->
-<section id="why-us" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-5" data-aos="fade-up">Why Choose Us</h2>
-        <div class="row">
-            <div class="col-md-3 mb-4" data-aos="fade-up">
-                <div class="feature-card">
-                    <i class="fas fa-rocket fa-3x mb-3"></i>
-                    <h3>Startup Focused</h3>
-                    <p>We help startups transform their ideas into MVPs and secure funding with scalable solutions.</p>
+<section class="features-section">
+    <div class="main-container">
+        <div class="section-header">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-subtitle">Our approach sets us apart</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-item" data-aos="fade-up">
+                <div class="feature-icon">
+                    <i class="fas fa-rocket"></i>
                 </div>
+                <h3 class="feature-title">Startup Focused</h3>
+                <p class="feature-text">We help startups transform their ideas into MVPs and secure funding with scalable solutions.</p>
             </div>
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-card">
-                    <i class="fas fa-brain fa-3x mb-3"></i>
-                    <h3>AI Expertise</h3>
-                    <p>Cutting-edge AI solutions and ML models custom-built for your specific business needs.</p>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
                 </div>
+                <h3 class="feature-title">AI-Powered Innovation</h3>
+                <p class="feature-text">We integrate cutting-edge AI capabilities into all our services to deliver smarter solutions.</p>
             </div>
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-card">
-                    <i class="fas fa-chart-line fa-3x mb-3"></i>
-                    <h3>Growth Partners</h3>
-                    <p>Strategic digital marketing and technology solutions to accelerate your business growth.</p>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon">
+                    <i class="fas fa-code"></i>
                 </div>
+                <h3 class="feature-title">Technical Excellence</h3>
+                <p class="feature-text">Our team brings deep expertise across multiple technologies and platforms.</p>
             </div>
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-card">
-                    <i class="fas fa-user-tie fa-3x mb-3"></i>
-                    <h3>Industry Experience</h3>
-                    <p>Specialized solutions for healthcare, finance, education, real estate, and more.</p>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
                 </div>
+                <h3 class="feature-title">Results-Driven</h3>
+                <p class="feature-text">We focus on measurable outcomes that directly impact your business growth.</p>
+            </div>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="feature-title">Collaborative Approach</h3>
+                <p class="feature-text">We work as an extension of your team, ensuring alignment with your vision.</p>
+            </div>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3 class="feature-title">Rapid Delivery</h3>
+                <p class="feature-text">Our agile methodology enables fast iteration and quicker time-to-market.</p>
             </div>
         </div>
     </div>
