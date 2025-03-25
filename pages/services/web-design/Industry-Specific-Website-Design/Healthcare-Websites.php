@@ -2,23 +2,23 @@
 // Define base path to allow direct script access
 define('BASEPATH', true);
 
-require_once '../../../../config/database.php';
-require_once '../../../../config/why-hire-us.php';
-require_once '../../../../assets/templates/why-hire-us-section.php';
+// Use the main config.php instead of config/database.php
+require_once '../../../../includes/config.php';
 
-// Get Why Hire Us content for Healthcare Websites
-$why_hire_us = getWhyHireUsContent('healthcare-websites');
+// Initialize the database connection
+$database = new Database();
+$db = $database->getConnection();
 
 require_once '../../../../components/header.php';
 ?>
 
 <!-- Page Header -->
 <header class="page-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="fw-bold" data-aos="fade-up">Healthcare Website Design</h1>
-                <p class="lead" data-aos="fade-up" data-aos-delay="100">
+    <div class="content-container">
+        <div class="content-row">
+            <div class="content-col full-width text-align-center">
+                <h1 class="font-weight-bold" data-aos="fade-up">Healthcare Website Design</h1>
+                <p class="subtitle" data-aos="fade-up" data-aos-delay="100">
                     Patient-centered medical websites that build trust and deliver care
                 </p>
             </div>
@@ -27,48 +27,48 @@ require_once '../../../../components/header.php';
 </header>
 
 <!-- Service Overview -->
-<section class="service-overview py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-                <img src="/assets/images/services/healthcare-website.svg" alt="Healthcare Website Design" class="img-fluid rounded shadow">
+<section class="service-overview padding-y-5">
+    <div class="content-container">
+        <div class="content-row align-items-center">
+            <div class="content-col half margin-bottom-responsive" data-aos="fade-right">
+                <img src="/assets/images/services/healthcare-website.svg" alt="Healthcare Website Design" class="img-fluid rounded box-shadow">
             </div>
-            <div class="col-lg-6" data-aos="fade-left">
-                <h2 class="mb-4">Healthcare Website Design Services</h2>
+            <div class="content-col half" data-aos="fade-left">
+                <h2 class="margin-bottom-4">Healthcare Website Design Services</h2>
                 <p>
                     Our healthcare website design services create patient-centered digital experiences for medical practices, hospitals, clinics, and healthcare providers. We develop HIPAA-compliant websites that balance clinical professionalism with accessibility, helping you build patient trust while streamlining administrative processes. From physician practices to multi-location hospital systems, our healthcare web solutions deliver intuitive patient portals, appointment scheduling, provider directories, and secure communication channels.
                 </p>
-                <div class="features mt-4">
-                    <div class="feature d-flex align-items-start mb-3">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-lock text-primary"></i>
+                <div class="features margin-top-4">
+                    <div class="feature-item display-flex align-items-start margin-bottom-3">
+                        <div class="feature-icon margin-right-3">
+                            <i class="fas fa-lock color-primary"></i>
                         </div>
                         <div>
                             <h5>HIPAA Compliance</h5>
                             <p>Secure websites with robust data protection and privacy standards.</p>
                         </div>
                     </div>
-                    <div class="feature d-flex align-items-start mb-3">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-calendar-check text-primary"></i>
+                    <div class="feature-item display-flex align-items-start margin-bottom-3">
+                        <div class="feature-icon margin-right-3">
+                            <i class="fas fa-calendar-check color-primary"></i>
                         </div>
                         <div>
                             <h5>Patient Engagement</h5>
                             <p>Easy appointment scheduling, form submissions, and patient portals.</p>
                         </div>
                     </div>
-                    <div class="feature d-flex align-items-start mb-3">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-mobile-alt text-primary"></i>
+                    <div class="feature-item display-flex align-items-start margin-bottom-3">
+                        <div class="feature-icon margin-right-3">
+                            <i class="fas fa-mobile-alt color-primary"></i>
                         </div>
                         <div>
                             <h5>Accessible Design</h5>
                             <p>ADA-compliant interfaces that work for all patients on any device.</p>
                         </div>
                     </div>
-                    <div class="feature d-flex align-items-start">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-sync-alt text-primary"></i>
+                    <div class="feature-item display-flex align-items-start">
+                        <div class="feature-icon margin-right-3">
+                            <i class="fas fa-sync-alt color-primary"></i>
                         </div>
                         <div>
                             <h5>EMR/EHR Integration</h5>
@@ -81,52 +81,121 @@ require_once '../../../../components/header.php';
     </div>
 </section>
 
-<!-- Why Hire Us Section -->
-<?php renderWhyHireUs($why_hire_us['service_name'], $why_hire_us['reasons']); ?>
+<!-- Why Hire Us Section - Hard-coded version -->
+<section class="healthcare-why-hire-us padding-y-5 bg-light">
+    <div class="content-container">
+        <div class="content-row margin-bottom-5">
+            <div class="content-col full-width text-align-center" data-aos="fade-up">
+                <h2 class="section-title">Why Choose Us for Healthcare Website Design</h2>
+                <p class="section-description">
+                    Our expertise makes us the ideal partner for your healthcare website
+                </p>
+            </div>
+        </div>
+        <div class="content-row">
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
+                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="item-icon margin-bottom-3">
+                        <i class="fas fa-shield-alt fa-2x color-primary"></i>
+                    </div>
+                    <h4>Healthcare Compliance Experts</h4>
+                    <p>Our team understands HIPAA, ADA, and healthcare regulations that affect your website, ensuring your online presence meets all legal requirements while providing excellent user experience.</p>
+                </div>
+            </div>
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="item-icon margin-bottom-3">
+                        <i class="fas fa-user-md fa-2x color-primary"></i>
+                    </div>
+                    <h4>Medical Industry Knowledge</h4>
+                    <p>With years of experience designing for healthcare providers, we understand the specific needs of medical organizations and how to communicate complex medical information clearly.</p>
+                </div>
+            </div>
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="item-icon margin-bottom-3">
+                        <i class="fas fa-universal-access fa-2x color-primary"></i>
+                    </div>
+                    <h4>Accessibility-First Approach</h4>
+                    <p>We prioritize inclusive design that ensures all patients, regardless of ability, can navigate your website effectively and access the information they need.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-row margin-top-4">
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
+                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="item-icon margin-bottom-3">
+                        <i class="fas fa-project-diagram fa-2x color-primary"></i>
+                    </div>
+                    <h4>System Integration Experience</h4>
+                    <p>Our developers have extensive experience integrating with EHR/EMR systems, scheduling platforms, and healthcare-specific tools to create seamless digital experiences.</p>
+                </div>
+            </div>
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="item-icon margin-bottom-3">
+                        <i class="fas fa-mobile-alt fa-2x color-primary"></i>
+                    </div>
+                    <h4>Mobile-Optimized Design</h4>
+                    <p>We create responsive healthcare websites that work perfectly on all devices, ensuring patients can access your services whether they're on a computer, tablet, or smartphone.</p>
+                </div>
+            </div>
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="item-icon margin-bottom-3">
+                        <i class="fas fa-chart-line fa-2x color-primary"></i>
+                    </div>
+                    <h4>ROI-Focused Development</h4>
+                    <p>We build healthcare websites that not only look great but deliver measurable results in terms of patient acquisition, appointment bookings, and administrative efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Process -->
-<section class="process-section py-5 bg-light">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
+<section class="process-section padding-y-5 bg-light">
+    <div class="content-container">
+        <div class="content-row margin-bottom-5">
+            <div class="content-col full-width text-align-center" data-aos="fade-up">
                 <h2 class="section-title">Our Healthcare Website Design Process</h2>
                 <p class="section-description">
                     How we create effective healthcare websites
                 </p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-clipboard-list fa-3x text-primary"></i>
+        <div class="content-row">
+            <div class="content-col one-fourth margin-bottom-responsive" data-aos="fade-up">
+                <div class="process-step text-align-center padding-4 height-100 bg-white rounded box-shadow-sm">
+                    <div class="process-icon margin-bottom-3">
+                        <i class="fas fa-clipboard-list fa-3x color-primary"></i>
                     </div>
                     <h4>Discovery & Strategy</h4>
                     <p>We analyze your healthcare organization, patient needs, and compliance requirements to develop a strategic plan.</p>
                 </div>
             </div>
-            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-pencil-ruler fa-3x text-primary"></i>
+            <div class="content-col one-fourth margin-bottom-responsive" data-aos="fade-up" data-aos-delay="100">
+                <div class="process-step text-align-center padding-4 height-100 bg-white rounded box-shadow-sm">
+                    <div class="process-icon margin-bottom-3">
+                        <i class="fas fa-pencil-ruler fa-3x color-primary"></i>
                     </div>
                     <h4>Information Architecture</h4>
                     <p>We create intuitive site structure and patient journeys that make healthcare information accessible.</p>
                 </div>
             </div>
-            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-laptop-code fa-3x text-primary"></i>
+            <div class="content-col one-fourth margin-bottom-responsive" data-aos="fade-up" data-aos-delay="200">
+                <div class="process-step text-align-center padding-4 height-100 bg-white rounded box-shadow-sm">
+                    <div class="process-icon margin-bottom-3">
+                        <i class="fas fa-laptop-code fa-3x color-primary"></i>
                     </div>
                     <h4>Secure Development</h4>
                     <p>Our developers build your site with HIPAA-compliant code practices, security protocols, and encryption.</p>
                 </div>
             </div>
-            <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-shield-alt fa-3x text-primary"></i>
+            <div class="content-col one-fourth" data-aos="fade-up" data-aos-delay="300">
+                <div class="process-step text-align-center padding-4 height-100 bg-white rounded box-shadow-sm">
+                    <div class="process-icon margin-bottom-3">
+                        <i class="fas fa-shield-alt fa-3x color-primary"></i>
                     </div>
                     <h4>Testing & Compliance</h4>
                     <p>We conduct rigorous testing for security, accessibility, and performance across all devices.</p>
@@ -137,71 +206,71 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Healthcare Website Types -->
-<section class="healthcare-types-section py-5">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
+<section class="healthcare-types-section padding-y-5">
+    <div class="content-container">
+        <div class="content-row margin-bottom-5">
+            <div class="content-col full-width text-align-center" data-aos="fade-up">
                 <h2 class="section-title">Healthcare Website Types We Design</h2>
                 <p class="section-description">
                     Specialized solutions for different healthcare providers
                 </p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="type-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="type-icon mb-3">
-                        <i class="fas fa-user-md fa-2x text-primary"></i>
+        <div class="content-row">
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
+                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="type-icon margin-bottom-3">
+                        <i class="fas fa-user-md fa-2x color-primary"></i>
                     </div>
                     <h4>Private Practice Websites</h4>
                     <p>Personalized websites for individual practitioners and small practices that showcase services, provider credentials, and facilitate patient appointments. Designed to build trust and highlight your unique approach to care.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="type-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="type-icon mb-3">
-                        <i class="fas fa-hospital fa-2x text-primary"></i>
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="type-icon margin-bottom-3">
+                        <i class="fas fa-hospital fa-2x color-primary"></i>
                     </div>
                     <h4>Hospital & Health System Sites</h4>
                     <p>Comprehensive websites for complex healthcare organizations with multiple departments, locations, and service lines. Includes sophisticated physician directories, location finders, and service navigation.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="type-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="type-icon mb-3">
-                        <i class="fas fa-clinic-medical fa-2x text-primary"></i>
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="type-icon margin-bottom-3">
+                        <i class="fas fa-clinic-medical fa-2x color-primary"></i>
                     </div>
                     <h4>Specialty Clinic Websites</h4>
                     <p>Focused websites for specialty medical providers such as dental practices, dermatology clinics, orthopedic centers, or cosmetic surgery facilities with specialty-specific features and content.</p>
                 </div>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="type-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="type-icon mb-3">
-                        <i class="fas fa-heartbeat fa-2x text-primary"></i>
+        <div class="content-row margin-top-4">
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
+                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="type-icon margin-bottom-3">
+                        <i class="fas fa-heartbeat fa-2x color-primary"></i>
                     </div>
                     <h4>Wellness & Alternative Medicine</h4>
                     <p>Engaging websites for alternative healthcare providers, wellness centers, nutritionists, and holistic practitioners that communicate their unique approach and philosophy of care.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="type-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="type-icon mb-3">
-                        <i class="fas fa-microscope fa-2x text-primary"></i>
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="type-icon margin-bottom-3">
+                        <i class="fas fa-microscope fa-2x color-primary"></i>
                     </div>
                     <h4>Medical Research Websites</h4>
                     <p>Informative platforms for research institutions, clinical trials, and medical research organizations that communicate complex information clearly to both patients and professionals.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="type-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="type-icon mb-3">
-                        <i class="fas fa-pills fa-2x text-primary"></i>
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="type-icon margin-bottom-3">
+                        <i class="fas fa-wheelchair fa-2x color-primary"></i>
                     </div>
-                    <h4>Pharmacy & Medical Supply</h4>
-                    <p>E-commerce enabled websites for pharmacies, medical equipment providers, and healthcare product companies with secure purchasing and compliance features.</p>
+                    <h4>Accessibility-Focused Sites</h4>
+                    <p>Specialized websites for rehabilitation centers, disability services, and organizations serving patients with specific accessibility needs, with enhanced accessibility features.</p>
                 </div>
             </div>
         </div>
@@ -209,68 +278,68 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Features -->
-<section class="healthcare-features-section py-5 bg-light">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
+<section class="healthcare-features-section padding-y-5 bg-light">
+    <div class="content-container">
+        <div class="content-row margin-bottom-5">
+            <div class="content-col full-width text-align-center" data-aos="fade-up">
                 <h2 class="section-title">Essential Healthcare Website Features</h2>
                 <p class="section-description">
                     Key components for effective patient engagement
                 </p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="feature-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-calendar-alt fa-2x text-primary"></i>
+        <div class="content-row">
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
+                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="feature-icon margin-bottom-3">
+                        <i class="fas fa-calendar-alt fa-2x color-primary"></i>
                     </div>
                     <h4>Appointment Scheduling</h4>
                     <p>Intuitive online booking systems that integrate with your practice management software, allowing patients to schedule appointments 24/7.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-user-circle fa-2x text-primary"></i>
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="feature-icon margin-bottom-3">
+                        <i class="fas fa-user-circle fa-2x color-primary"></i>
                     </div>
                     <h4>Patient Portals</h4>
                     <p>Secure portals where patients can access their medical records, view test results, request prescription refills, and communicate with providers.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-file-medical-alt fa-2x text-primary"></i>
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="feature-icon margin-bottom-3">
+                        <i class="fas fa-file-medical-alt fa-2x color-primary"></i>
                     </div>
                     <h4>Digital Intake Forms</h4>
                     <p>Secure online forms for patient registration, medical history, insurance information, and consent documents that streamline the check-in process.</p>
                 </div>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="feature-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-video fa-2x text-primary"></i>
+        <div class="content-row margin-top-4">
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
+                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="feature-icon margin-bottom-3">
+                        <i class="fas fa-video fa-2x color-primary"></i>
                     </div>
                     <h4>Telemedicine Integration</h4>
                     <p>Virtual visit capabilities with secure video conferencing, waiting rooms, and electronic documentation for remote healthcare delivery.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-credit-card fa-2x text-primary"></i>
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="feature-icon margin-bottom-3">
+                        <i class="fas fa-credit-card fa-2x color-primary"></i>
                     </div>
                     <h4>Secure Bill Pay</h4>
                     <p>PCI-compliant payment processing that allows patients to view statements, make payments, and manage payment plans online.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-search-location fa-2x text-primary"></i>
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="feature-icon margin-bottom-3">
+                        <i class="fas fa-search-location fa-2x color-primary"></i>
                     </div>
                     <h4>Provider Directory</h4>
                     <p>Searchable database of healthcare providers with credentials, specialties, insurance accepted, and online scheduling options.</p>
@@ -281,21 +350,21 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Compliance Section -->
-<section class="compliance-section py-5">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
+<section class="compliance-section padding-y-5">
+    <div class="content-container">
+        <div class="content-row margin-bottom-5">
+            <div class="content-col full-width text-align-center" data-aos="fade-up">
                 <h2 class="section-title">Healthcare Website Compliance</h2>
                 <p class="section-description">
                     How we ensure your website meets regulatory requirements
                 </p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 mb-4" data-aos="fade-up">
-                <div class="compliance-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="compliance-icon mb-3">
-                        <i class="fas fa-shield-virus fa-2x text-primary"></i>
+        <div class="content-row">
+            <div class="content-col one-half margin-bottom-4" data-aos="fade-up">
+                <div class="compliance-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="compliance-icon margin-bottom-3">
+                        <i class="fas fa-shield-virus fa-2x color-primary"></i>
                     </div>
                     <h4>HIPAA Security Measures</h4>
                     <ul class="compliance-list">
@@ -307,10 +376,10 @@ require_once '../../../../components/header.php';
                     </ul>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="compliance-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="compliance-icon mb-3">
-                        <i class="fas fa-universal-access fa-2x text-primary"></i>
+            <div class="content-col one-half margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="compliance-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="compliance-icon margin-bottom-3">
+                        <i class="fas fa-universal-access fa-2x color-primary"></i>
                     </div>
                     <h4>Accessibility Compliance</h4>
                     <ul class="compliance-list">
@@ -323,11 +392,11 @@ require_once '../../../../components/header.php';
                 </div>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-md-6 mb-4" data-aos="fade-up">
-                <div class="compliance-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="compliance-icon mb-3">
-                        <i class="fas fa-file-contract fa-2x text-primary"></i>
+        <div class="content-row margin-top-4">
+            <div class="content-col one-half margin-bottom-4" data-aos="fade-up">
+                <div class="compliance-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="compliance-icon margin-bottom-3">
+                        <i class="fas fa-file-contract fa-2x color-primary"></i>
                     </div>
                     <h4>Legal & Privacy Requirements</h4>
                     <ul class="compliance-list">
@@ -339,10 +408,10 @@ require_once '../../../../components/header.php';
                     </ul>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="compliance-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="compliance-icon mb-3">
-                        <i class="fas fa-clipboard-check fa-2x text-primary"></i>
+            <div class="content-col one-half margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="compliance-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="compliance-icon margin-bottom-3">
+                        <i class="fas fa-clipboard-check fa-2x color-primary"></i>
                     </div>
                     <h4>Content & Advertising Standards</h4>
                     <ul class="compliance-list">
@@ -359,68 +428,68 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Benefits -->
-<section class="benefits-section py-5 bg-light">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
+<section class="benefits-section padding-y-5 bg-light">
+    <div class="content-container">
+        <div class="content-row margin-bottom-5">
+            <div class="content-col full-width text-align-center" data-aos="fade-up">
                 <h2 class="section-title">Benefits of Professional Healthcare Website Design</h2>
                 <p class="section-description">
                     Why investing in a specialized healthcare website matters
                 </p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-handshake fa-2x text-primary"></i>
+        <div class="content-row">
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
+                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="benefit-icon margin-bottom-3">
+                        <i class="fas fa-handshake fa-2x color-primary"></i>
                     </div>
                     <h4>Enhanced Patient Trust</h4>
                     <p>A professional, secure website establishes credibility and reassures patients about the quality of care they can expect.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-clock fa-2x text-primary"></i>
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="benefit-icon margin-bottom-3">
+                        <i class="fas fa-clock fa-2x color-primary"></i>
                     </div>
                     <h4>Operational Efficiency</h4>
                     <p>Online scheduling, digital intake forms, and automated processes reduce administrative burden and free staff for patient care.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-users fa-2x text-primary"></i>
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="benefit-icon margin-bottom-3">
+                        <i class="fas fa-users fa-2x color-primary"></i>
                     </div>
                     <h4>Patient Acquisition</h4>
                     <p>Effective healthcare websites attract new patients through search visibility, clear service information, and easy access to appointments.</p>
                 </div>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-comments fa-2x text-primary"></i>
+        <div class="content-row margin-top-4">
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
+                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="benefit-icon margin-bottom-3">
+                        <i class="fas fa-comments fa-2x color-primary"></i>
                     </div>
                     <h4>Improved Communication</h4>
                     <p>Secure messaging, patient portals, and informational resources create better provider-patient communication and understanding.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-laptop-medical fa-2x text-primary"></i>
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="benefit-icon margin-bottom-3">
+                        <i class="fas fa-laptop-medical fa-2x color-primary"></i>
                     </div>
                     <h4>Expanded Care Access</h4>
                     <p>Telemedicine features and online resources extend your reach to patients regardless of geographic location or mobility limitations.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-chart-line fa-2x text-primary"></i>
+            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="benefit-icon margin-bottom-3">
+                        <i class="fas fa-chart-line fa-2x color-primary"></i>
                     </div>
                     <h4>Risk Reduction</h4>
                     <p>Compliant websites with proper security measures protect your practice from regulatory penalties and data breach liabilities.</p>
@@ -431,16 +500,16 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- CTA -->
-<section class="cta-section py-5 bg-primary text-white">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8 mb-4 mb-lg-0" data-aos="fade-right">
+<section class="cta-section padding-y-5 bg-primary text-white">
+    <div class="content-container">
+        <div class="content-row align-items-center">
+            <div class="content-col one-half margin-bottom-4 margin-lg-0" data-aos="fade-right">
                 <h2 class="mb-3">Ready to Improve Your Healthcare Practice Online?</h2>
                 <p class="lead mb-0">
                     Let's create a secure, patient-friendly website that supports your healthcare mission.
                 </p>
             </div>
-            <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+            <div class="content-col one-half text-lg-end" data-aos="fade-left">
                 <a href="/contact" class="btn btn-light btn-lg">Get Started</a>
             </div>
         </div>
@@ -449,7 +518,7 @@ require_once '../../../../components/header.php';
 
 <!-- FAQ Section -->
 <section class="faq-section">
-    <div class="container">
+    <div class="content-container">
         <div class="faq-header">
             <h2 class="faq-title">Healthcare Website FAQ's</h2>
             <h3 class="faq-subtitle">Have Any Questions?</h3>
