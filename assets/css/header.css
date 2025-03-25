@@ -1,4 +1,5 @@
-*, *::before, *::after {
+ /* Reset and Base Styles */
+ *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,14 +21,23 @@ ul {
     list-style: none;
 }
 
+/* Color Theme */
+:root {
+    --yinmn-blue: #485696;
+    --platinum: #e7e7e7;
+    --sunset: #f9c784;
+    --pumpkin: #fc7a1e;
+    --golden-gate-bridge: #f24c00;
+}
+
 /* Header and Navigation */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #1a1a2e;
-    color: #fff;
+    background-color: var(--yinmn-blue);
+    color: var(--platinum);
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -45,14 +55,14 @@ ul {
 .navbar-brand {
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
+    color: var(--platinum);
 }
 
 .navbar-toggler {
     display: none;
     background: none;
     border: none;
-    color: #fff;
+    color: var(--platinum);
     font-size: 20px;
     cursor: pointer;
 }
@@ -68,7 +78,7 @@ ul {
 }
 
 .nav-link {
-    color: #fff;
+    color: var(--platinum);
     padding: 25px 15px;
     display: block;
     font-size: 16px;
@@ -76,7 +86,7 @@ ul {
 }
 
 .nav-link:hover {
-    color: #4a90e2;
+    color: var(--sunset);
 }
 
 .dropdown-toggle::after {
@@ -85,8 +95,8 @@ ul {
     margin-left: 8px;
     width: 8px;
     height: 8px;
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-right: 2px solid var(--platinum);
+    border-bottom: 2px solid var(--platinum);
     transform: rotate(45deg);
     transition: transform 0.3s;
     vertical-align: 2px;
@@ -134,7 +144,7 @@ ul {
 
 .dropdown-header {
     font-weight: bold;
-    color: #1a1a2e;
+    color: var(--yinmn-blue);
     margin-bottom: 10px;
     padding-bottom: 5px;
     border-bottom: 1px solid #eee;
@@ -150,7 +160,7 @@ ul {
 }
 
 .dropdown-item:hover {
-    color: #4a90e2;
+    color: var(--pumpkin);
 }
 
 /* Mobile Drawer */
@@ -189,7 +199,7 @@ ul {
 .drawer-logo {
     font-size: 20px;
     font-weight: bold;
-    color: #1a1a2e;
+    color: var(--yinmn-blue);
 }
 
 .drawer-close {
@@ -219,7 +229,7 @@ ul {
 }
 
 .drawer-item.dropdown-toggle::after {
-    border-color: #333;
+    border-color: var(--yinmn-blue);
 }
 
 .drawer-submenu {
@@ -235,7 +245,7 @@ ul {
 .drawer-submenu-title {
     font-weight: bold;
     margin-bottom: 8px;
-    color: #1a1a2e;
+    color: var(--yinmn-blue);
     padding: 5px 20px;
     font-size: 14px;
 }
@@ -248,7 +258,7 @@ ul {
 }
 
 .drawer-submenu a:hover {
-    color: #4a90e2;
+    color: var(--pumpkin);
 }
 
 /* Responsive Styles */
