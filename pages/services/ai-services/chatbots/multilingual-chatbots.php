@@ -5,700 +5,443 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Multilingual Chatbots";
-$pageDescription = "Connect with your global audience through AI-powered chatbots that communicate fluently in multiple languages";
+$pageTitle = "Multilingual Chatbot Solutions";
+$pageDescription = "Engage with customers worldwide using our advanced AI-powered multilingual chatbots that break language barriers";
 $serviceName = "Multilingual Chatbots";
 $serviceSlug = "multilingual-chatbots";
+
+// SEO data
+$seoData = [
+    'keywords' => 'multilingual chatbots, language translation bots, international chatbot solutions, global customer service AI, multilingual AI assistants, translation chatbots'
+];
 
 require_once '../../../../components/header.php';
 ?>
 
-    <!-- Page Header -->
-    <section class="page-header py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h1 class="display-4"><?php echo $pageTitle; ?></h1>
-                    <p class="lead"><?php echo $pageDescription; ?></p>
-                    <a href="/pages/contact.php" class="btn btn-primary mt-3">Get Started</a>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <img src="/assets/images/services/multilingual-chatbot.svg" alt="<?php echo $serviceName; ?>" class="img-fluid">
-                </div>
+<!-- Page Header -->
+<section class="page-header">
+    <div class="content-container">
+        <div class="header-grid">
+            <div class="page-header-content" data-aos="fade-right">
+                <h1><?php echo $pageTitle; ?></h1>
+                <p class="lead"><?php echo $pageDescription; ?></p>
+                <a href="/pages/contact.php" class="get-started-btn">Get Started</a>
+            </div>
+            <div class="page-header-image" data-aos="fade-left">
+                <img src="/assets/images/services/multilingual-chatbots.svg" alt="<?php echo $serviceName; ?>" class="animate-float">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Service Overview -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12" data-aos="fade-up">
-                    <h2 class="section-title text-center mb-4">Break Language Barriers with AI-Powered Chatbots</h2>
-                    <div class="section-divider mx-auto mb-5"></div>
-                    <p class="text-center mb-5">
-                        In today's global marketplace, communicating with customers in their native language is no longer optional—it's essential for business growth. Traditional approaches to multilingual support are costly and difficult to scale. Our Multilingual Chatbot solutions leverage advanced AI to deliver seamless, natural conversations across multiple languages, helping you connect with customers worldwide without the overhead of traditional translation services or multilingual support teams.
-                    </p>
-                </div>
+<!-- Service Overview -->
+<section class="service-overview">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="service-overview-header" data-aos="fade-up">
+                <h2>Breaking Language Barriers with AI</h2>
+                <p class="lead">In today's global marketplace, limiting your customer support to a single language means missing out on opportunities. Our multilingual chatbots enable you to communicate with customers in their preferred language, providing seamless, natural conversations across borders without the cost of maintaining language-specific support teams.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Services Offered -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-lg-12 text-center" data-aos="fade-up">
-                    <h2 class="section-title">Our Multilingual Chatbot Solutions</h2>
-                    <div class="section-divider mx-auto mb-5"></div>
+<!-- Services Offered -->
+<section class="services-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="services-header" data-aos="fade-up">
+                <h2>Our Multilingual Chatbot Solutions</h2>
+                <p class="lead">Comprehensive language solutions to connect with your global audience</p>
+            </div>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-item" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Customer Support Chatbots</h3>
+                    <p>AI-powered chatbots that provide customer support in multiple languages, understanding context and cultural nuances while maintaining consistent brand voice across all communications.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Support for 100+ languages</li>
+                        <li><i class="fas fa-check"></i> Cultural context awareness</li>
+                        <li><i class="fas fa-check"></i> Automated language detection</li>
+                        <li><i class="fas fa-check"></i> 24/7 global support coverage</li>
+                    </ul>
                 </div>
             </div>
             
-            <div class="row g-4">
-                <!-- Service 1 -->
-                <div class="col-md-6" data-aos="fade-up">
-                    <div class="service-card h-100">
-                        <div class="p-4">
-                            <div class="icon-box mb-4">
-                                <i class="fas fa-language text-primary"></i>
-                            </div>
-                            <h3>Neural Machine Translation</h3>
-                            <p>State-of-the-art AI translation that goes beyond word-for-word conversion to deliver natural, culturally appropriate responses in multiple languages. Our systems understand context, idioms, and regional expressions.</p>
-                            <ul class="list-unstyled service-features mt-4">
-                                <li><i class="fas fa-check-circle text-primary me-2"></i> Context-aware translations</li>
-                                <li><i class="fas fa-check-circle text-primary me-2"></i> Support for 100+ languages</li>
-                                <li><i class="fas fa-check-circle text-primary me-2"></i> Continuous translation improvements</li>
-                                <li><i class="fas fa-check-circle text-primary me-2"></i> Regional dialect understanding</li>
-                            </ul>
-                        </div>
+            <!-- Service 2 -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
                     </div>
-                </div>
-                
-                <!-- Service 2 -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-card h-100">
-                        <div class="p-4">
-                            <div class="icon-box mb-4">
-                                <i class="fas fa-globe text-primary"></i>
-                            </div>
-                            <h3>Cultural Adaptation</h3>
-                            <p>Chatbots that don't just translate words but adapt to cultural contexts, preferences, and communication styles across different regions, ensuring your message resonates authentically with diverse audiences.</p>
-                            <ul class="list-unstyled service-features mt-4">
-                                <li><i class="fas fa-check-circle text-primary me-2"></i> Region-specific conversation flows</li>
-                                <li><i class="fas fa-check-circle text-primary me-2"></i> Cultural sensitivity algorithms</li>
-                                <li><i class="fas fa-check-circle text-primary me-2"></i> Holiday and local event awareness</li>
-                                <li><i class="fas fa-check-circle text-primary me-2"></i> Appropriate formality levels</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Service 3 -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-card h-100">
-                        <div class="p-4">
-                            <div class="icon-box mb-4">
-                                <i class="fas fa-comments text-primary"></i>
-                            </div>
-                            <h3>Multilingual Knowledge Integration</h3>
-                            <p>Seamless integration with your existing knowledge base, FAQs, and product information in multiple languages, ensuring consistent, accurate responses across all language versions of your chatbot.</p>
-                            <ul class="list-unstyled service-features mt-4">
-                                <li><i class="fas fa-check-circle text-primary me-2"></i> Language-specific content mapping</li>
-                                <li><i class="fas fa-check-circle text-primary me-2"></i> Cross-language knowledge sharing</li>
-                                <li><i class="fas fa-check-circle text-primary me-2"></i> Dynamic content translation</li>
-                                <li><i class="fas fa-check-circle text-primary me-2"></i> Terminology consistency</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Service 4 -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-card h-100">
-                        <div class="p-4">
-                            <div class="icon-box mb-4">
-                                <i class="fas fa-microphone-alt text-primary"></i>
-                            </div>
-                            <h3>Voice-Enabled Language Support</h3>
-                            <p>Multilingual voice recognition and response capabilities that allow customers to speak in their native language and receive accurate voice responses, creating a more natural and accessible conversation experience.</p>
-                            <ul class="list-unstyled service-features mt-4">
-                                <li><i class="fas fa-check-circle text-primary me-2"></i> Accent-aware voice recognition</li>
-                                <li><i class="fas fa-check-circle text-primary me-2"></i> Natural-sounding voices</li>
-                                <li><i class="fas fa-check-circle text-primary me-2"></i> Voice-to-text in multiple languages</li>
-                                <li><i class="fas fa-check-circle text-primary me-2"></i> Voice emotion detection</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Languages Supported -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-lg-12 text-center" data-aos="fade-up">
-                    <h2 class="section-title">Languages Supported</h2>
-                    <div class="section-divider mx-auto mb-5"></div>
-                    <p class="lead mb-5">Our multilingual chatbots support over 100 languages with high-quality, natural translations. Some of our most requested languages include:</p>
+                    <h3>E-commerce Sales Assistants</h3>
+                    <p>Multilingual shopping assistants that help international customers find products, answer questions, and complete purchases in their native language, driving higher conversion rates across global markets.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Product recommendation in any language</li>
+                        <li><i class="fas fa-check"></i> International payment assistance</li>
+                        <li><i class="fas fa-check"></i> Cross-border shipping information</li>
+                        <li><i class="fas fa-check"></i> Currency conversion support</li>
+                    </ul>
                 </div>
             </div>
             
-            <div class="row g-4">
-                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up">
-                    <div class="text-center mb-4">
-                        <div class="rounded-circle bg-light d-inline-flex p-3 mb-3">
-                            <span class="h4 mb-0">🇺🇸</span>
-                        </div>
-                        <h5>English</h5>
+            <!-- Service 3 -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
                     </div>
+                    <h3>Multilingual Booking Assistants</h3>
+                    <p>AI assistants that help international customers schedule appointments, book services, and manage reservations in their native language, providing a smooth booking experience regardless of language barriers.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Timezone-aware scheduling</li>
+                        <li><i class="fas fa-check"></i> Localized availability display</li>
+                        <li><i class="fas fa-check"></i> Regional preference accommodation</li>
+                        <li><i class="fas fa-check"></i> Confirmation in native language</li>
+                    </ul>
                 </div>
-                
-                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
-                    <div class="text-center mb-4">
-                        <div class="rounded-circle bg-light d-inline-flex p-3 mb-3">
-                            <span class="h4 mb-0">🇪🇸</span>
-                        </div>
-                        <h5>Spanish</h5>
+            </div>
+            
+            <!-- Service 4 -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hands-helping"></i>
                     </div>
+                    <h3>Employee Support Chatbots</h3>
+                    <p>Internal multilingual chatbots that support diverse workforces with HR information, IT help, and company resources in each employee's preferred language, improving workplace communication and satisfaction.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> HR policy explanation</li>
+                        <li><i class="fas fa-check"></i> Technical support in multiple languages</li>
+                        <li><i class="fas fa-check"></i> Company resource localization</li>
+                        <li><i class="fas fa-check"></i> Cross-cultural communication assistance</li>
+                    </ul>
                 </div>
-                
-                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-center mb-4">
-                        <div class="rounded-circle bg-light d-inline-flex p-3 mb-3">
-                            <span class="h4 mb-0">🇫🇷</span>
-                        </div>
-                        <h5>French</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Implementation Process -->
+<section class="implementation-process">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="implementation-header" data-aos="fade-up">
+                <h2>Our Implementation Approach</h2>
+                <p class="lead">A systematic methodology to deploy multilingual chatbots that connect with your global audience</p>
+            </div>
+        </div>
+        
+        <div class="process-grid">
+            <!-- Step 1 -->
+            <div class="process-item" data-aos="fade-up">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <span>1</span>
                     </div>
+                    <h3>Language Needs Assessment</h3>
+                    <p>We analyze your global audience, identify priority languages, and assess regional communication preferences to create a targeted language strategy.</p>
+                    <ul>
+                        <li>Customer demographic analysis</li>
+                        <li>Language priority mapping</li>
+                        <li>Regional communication assessment</li>
+                    </ul>
                 </div>
-                
-                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-center mb-4">
-                        <div class="rounded-circle bg-light d-inline-flex p-3 mb-3">
-                            <span class="h4 mb-0">🇩🇪</span>
-                        </div>
-                        <h5>German</h5>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="process-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <span>2</span>
                     </div>
+                    <h3>Chatbot Design & Training</h3>
+                    <p>We design conversation flows and train the AI with language-specific datasets, accounting for cultural nuances and regional expressions.</p>
+                    <ul>
+                        <li>Language-specific flow design</li>
+                        <li>Cultural adaptation</li>
+                        <li>Idiom and expression training</li>
+                    </ul>
                 </div>
-                
-                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="400">
-                    <div class="text-center mb-4">
-                        <div class="rounded-circle bg-light d-inline-flex p-3 mb-3">
-                            <span class="h4 mb-0">🇨🇳</span>
-                        </div>
-                        <h5>Chinese</h5>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <span>3</span>
                     </div>
+                    <h3>Translation Engine Integration</h3>
+                    <p>We integrate advanced neural machine translation systems optimized for conversational content and connect to your existing knowledge base.</p>
+                    <ul>
+                        <li>Neural translation setup</li>
+                        <li>Knowledge base connection</li>
+                        <li>Terminology consistency configuration</li>
+                    </ul>
                 </div>
-                
-                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="500">
-                    <div class="text-center mb-4">
-                        <div class="rounded-circle bg-light d-inline-flex p-3 mb-3">
-                            <span class="h4 mb-0">🇯🇵</span>
-                        </div>
-                        <h5>Japanese</h5>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <span>4</span>
                     </div>
+                    <h3>Testing & Optimization</h3>
+                    <p>We test with native speakers and optimize performance across all languages before global deployment.</p>
+                    <ul>
+                        <li>Native speaker validation</li>
+                        <li>Cross-language performance testing</li>
+                        <li>Continuous improvement systems</li>
+                    </ul>
                 </div>
-                
-                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
-                    <div class="text-center mb-4">
-                        <div class="rounded-circle bg-light d-inline-flex p-3 mb-3">
-                            <span class="h4 mb-0">🇮🇳</span>
-                        </div>
-                        <h5>Hindi</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Language Support -->
+<section class="key-features">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="key-features-header" data-aos="fade-up">
+                <h2>Our Language Support</h2>
+                <p class="lead">Comprehensive coverage for global communication</p>
+            </div>
+        </div>
+        
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-item" data-aos="fade-up">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
                     </div>
+                    <h3>100+ Languages</h3>
+                    <p>Support for major world languages including English, Spanish, French, German, Chinese, Japanese, Arabic, Russian, Portuguese, Hindi, and many more.</p>
                 </div>
-                
-                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-center mb-4">
-                        <div class="rounded-circle bg-light d-inline-flex p-3 mb-3">
-                            <span class="h4 mb-0">🇷🇺</span>
-                        </div>
-                        <h5>Russian</h5>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
                     </div>
+                    <h3>Contextual Translation</h3>
+                    <p>Advanced neural machine translation that understands context, maintaining conversational flow and meaning across languages.</p>
                 </div>
-                
-                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-center mb-4">
-                        <div class="rounded-circle bg-light d-inline-flex p-3 mb-3">
-                            <span class="h4 mb-0">🇧🇷</span>
-                        </div>
-                        <h5>Portuguese</h5>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
                     </div>
+                    <h3>Language Detection</h3>
+                    <p>Automatic detection of customer language, allowing for seamless language switching during conversations.</p>
                 </div>
-                
-                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="400">
-                    <div class="text-center mb-4">
-                        <div class="rounded-circle bg-light d-inline-flex p-3 mb-3">
-                            <span class="h4 mb-0">🇮🇹</span>
-                        </div>
-                        <h5>Italian</h5>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-atlas"></i>
                     </div>
+                    <h3>Regional Variants</h3>
+                    <p>Support for regional language variants (e.g., Brazilian Portuguese vs. European Portuguese) for more accurate localization.</p>
                 </div>
-                
-                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="500">
-                    <div class="text-center mb-4">
-                        <div class="rounded-circle bg-light d-inline-flex p-3 mb-3">
-                            <span class="h4 mb-0">🇰🇷</span>
-                        </div>
-                        <h5>Korean</h5>
+            </div>
+            
+            <!-- Feature 5 -->
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
                     </div>
+                    <h3>Real-time Translation</h3>
+                    <p>Instantaneous translation of messages with minimal latency for natural conversation flow.</p>
                 </div>
-                
-                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="600">
-                    <div class="text-center mb-4">
-                        <div class="rounded-circle bg-light d-inline-flex p-3 mb-3">
-                            <span class="h4 mb-0">🇦🇪</span>
-                        </div>
-                        <h5>Arabic</h5>
+            </div>
+            
+            <!-- Feature 6 -->
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Industry Terminology</h3>
+                    <p>Specialized translation for industry-specific terminology in fields like healthcare, finance, tech, and more.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="benefits-header" data-aos="fade-up">
+                <h2>The Business Impact</h2>
+                <p class="lead">Real results from breaking language barriers</p>
+            </div>
+        </div>
+        
+        <div class="benefits-grid">
+            <!-- Benefit 1 -->
+            <div class="benefit-item" data-aos="fade-up">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Expanded Global Reach</h3>
+                        <p>Connect with customers in 100+ countries without language barriers, increasing your serviceable market by up to 75%.</p>
                     </div>
                 </div>
             </div>
             
-            <div class="row mt-3">
-                <div class="col-lg-12 text-center">
-                    <p>We can add support for additional languages as needed for your specific business requirements.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Implementation Process -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-lg-12 text-center" data-aos="fade-up">
-                    <h2 class="section-title">Our Implementation Approach</h2>
-                    <div class="section-divider mx-auto mb-4"></div>
-                    <p class="lead">A methodical process to build multilingual chatbots that resonate with your global audience</p>
+            <!-- Benefit 2 -->
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Higher Conversion Rates</h3>
+                        <p>Customers are 3x more likely to purchase when addressed in their native language, resulting in 25-40% higher conversion rates.</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="row">
-                <!-- Step 1 -->
-                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up">
-                    <div class="process-card h-100">
-                        <div class="process-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <h3>Language Assessment</h3>
-                        <p>We analyze your target markets, customer language preferences, and business requirements to determine which languages will deliver the highest ROI.</p>
-                        <ul class="list-unstyled mt-3">
-                            <li><small><i class="fas fa-circle text-primary me-2"></i> Market analysis</small></li>
-                            <li><small><i class="fas fa-circle text-primary me-2"></i> Customer language profiling</small></li>
-                            <li><small><i class="fas fa-circle text-primary me-2"></i> Content evaluation</small></li>
-                        </ul>
+            <!-- Benefit 3 -->
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
                     </div>
-                </div>
-                
-                <!-- Step 2 -->
-                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="process-card h-100">
-                        <div class="process-icon">
-                            <i class="fas fa-pencil-alt"></i>
-                        </div>
-                        <h3>Cultural Adaptation</h3>
-                        <p>We design conversational flows that respect cultural norms and communication styles for each target language and region.</p>
-                        <ul class="list-unstyled mt-3">
-                            <li><small><i class="fas fa-circle text-primary me-2"></i> Cultural research</small></li>
-                            <li><small><i class="fas fa-circle text-primary me-2"></i> Localization strategy</small></li>
-                            <li><small><i class="fas fa-circle text-primary me-2"></i> Regional customization</small></li>
-                        </ul>
+                    <div class="benefit-content">
+                        <h3>Reduced Support Costs</h3>
+                        <p>Save 60-70% on multilingual support costs compared to maintaining native-speaking human teams across all languages.</p>
                     </div>
-                </div>
-                
-                <!-- Step 3 -->
-                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="process-card h-100">
-                        <div class="process-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h3>AI Training & Translation</h3>
-                        <p>We build and train multilingual models that understand the nuances of each language, ensuring accurate translations and responses.</p>
-                        <ul class="list-unstyled mt-3">
-                            <li><small><i class="fas fa-circle text-primary me-2"></i> Language model training</small></li>
-                            <li><small><i class="fas fa-circle text-primary me-2"></i> Native speaker validation</small></li>
-                            <li><small><i class="fas fa-circle text-primary me-2"></i> Cross-language testing</small></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Step 4 -->
-                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="process-card h-100">
-                        <div class="process-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3>Deployment & Optimization</h3>
-                        <p>We deploy your multilingual chatbot across channels and continuously improve its language capabilities based on real customer interactions.</p>
-                        <ul class="list-unstyled mt-3">
-                            <li><small><i class="fas fa-circle text-primary me-2"></i> Phased language rollout</small></li>
-                            <li><small><i class="fas fa-circle text-primary me-2"></i> Translation quality monitoring</small></li>
-                            <li><small><i class="fas fa-circle text-primary me-2"></i> Continuous improvement</small></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Business Benefits -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-lg-12 text-center" data-aos="fade-up">
-                    <h2 class="section-title">Business Benefits</h2>
-                    <div class="section-divider mx-auto mb-5"></div>
                 </div>
             </div>
             
-            <div class="row g-4">
-                <!-- Benefit 1 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                    <div class="benefit-card h-100">
-                        <i class="fas fa-globe-americas text-primary"></i>
-                        <h3>Global Market Expansion</h3>
-                        <p>Enter new markets and engage with international customers without the need to hire native speakers for each language, reducing barriers to global expansion.</p>
+            <!-- Benefit 4 -->
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
                     </div>
-                </div>
-                
-                <!-- Benefit 2 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="benefit-card h-100">
-                        <i class="fas fa-dollar-sign text-primary"></i>
-                        <h3>Reduced Translation Costs</h3>
-                        <p>Eliminate the ongoing expense of professional translation services for customer support content, saving up to 70% compared to traditional multilingual support models.</p>
-                    </div>
-                </div>
-                
-                <!-- Benefit 3 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="benefit-card h-100">
-                        <i class="fas fa-smile text-primary"></i>
-                        <h3>Enhanced Customer Experience</h3>
-                        <p>Increase customer satisfaction by 85% by communicating with them in their preferred language, showing respect for their culture and creating a more personalized experience.</p>
-                    </div>
-                </div>
-                
-                <!-- Benefit 4 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="benefit-card h-100">
-                        <i class="fas fa-clock text-primary"></i>
-                        <h3>24/7 Multilingual Support</h3>
-                        <p>Provide round-the-clock support in multiple languages without the complexities and costs of managing international support teams across different time zones.</p>
-                    </div>
-                </div>
-                
-                <!-- Benefit 5 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="benefit-card h-100">
-                        <i class="fas fa-chart-line text-primary"></i>
-                        <h3>Increased Conversion Rates</h3>
-                        <p>Boost conversion rates by up to 70% by engaging prospects in their native language, building trust and reducing the friction that language barriers create in the buying process.</p>
-                    </div>
-                </div>
-                
-                <!-- Benefit 6 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="benefit-card h-100">
-                        <i class="fas fa-expand-arrows-alt text-primary"></i>
-                        <h3>Scalable Language Support</h3>
-                        <p>Easily add new languages as your business expands, without proportional increases in support costs or the complexities of hiring native speakers.</p>
+                    <div class="benefit-content">
+                        <h3>Improved Customer Satisfaction</h3>
+                        <p>Customers report 35% higher satisfaction when receiving support in their native language, enhancing loyalty and retention.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Use Cases -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-lg-12 text-center" data-aos="fade-up">
-                    <h2 class="section-title">Industry Applications</h2>
-                    <div class="section-divider mx-auto mb-5"></div>
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="content-container">
+        <div class="cta-content">
+            <h2>Ready to Connect with a Global Audience?</h2>
+            <p class="lead">Schedule a consultation to discuss how our multilingual chatbots can help you break language barriers.</p>
+            <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">Schedule a Consultation</a>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="faq-header">
+                <h2>Frequently Asked Questions</h2>
+                <p class="lead">Common questions about multilingual chatbots</p>
+            </div>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item active">
+                <div class="faq-question">
+                    <h3>How accurate are the translations in multilingual chatbots?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Our multilingual chatbots utilize advanced neural machine translation technology that achieves 94-98% accuracy for major languages and 88-94% for less common languages. This is comparable to professional human translators in many contexts. For specialized industries, we implement domain-specific terminology databases to ensure technical terms are translated correctly. The AI continuously improves through machine learning, becoming more accurate over time with usage. For critical communications, we can also implement human review for specific language pairs as needed.</p>
                 </div>
             </div>
             
-            <div class="row g-4">
-                <!-- Use Case 1 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h5 class="card-title text-primary mb-3">E-commerce</h5>
-                            <p class="card-text">Multilingual chatbots assist international shoppers with product information, recommendations, order tracking, and returns in their native language, increasing conversion rates and reducing cart abandonment.</p>
-                        </div>
-                    </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do you handle cultural differences in communication?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
-                
-                <!-- Use Case 2 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h5 class="card-title text-primary mb-3">Travel & Hospitality</h5>
-                            <p class="card-text">Support international travelers with booking assistance, local recommendations, and concierge services in their preferred language, creating a welcoming experience for guests from around the world.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Use Case 3 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h5 class="card-title text-primary mb-3">Software & SaaS</h5>
-                            <p class="card-text">Provide multilingual technical support, onboarding, and product guidance to global users, improving adoption rates and reducing churn in international markets.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Use Case 4 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h5 class="card-title text-primary mb-3">Financial Services</h5>
-                            <p class="card-text">Assist international clients with account information, transactions, and financial advice in their native language while maintaining strict security and compliance standards.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Use Case 5 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h5 class="card-title text-primary mb-3">Healthcare</h5>
-                            <p class="card-text">Support patients with appointment scheduling, medical information, and care instructions in their native language, improving access to care for diverse populations.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Use Case 6 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h5 class="card-title text-primary mb-3">Education</h5>
-                            <p class="card-text">Assist international students with enrollment, course information, and campus services in their native language, creating a more inclusive and supportive learning environment.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="py-5 bg-primary text-white">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8 mb-4 mb-lg-0" data-aos="fade-right">
-                    <h2 class="display-5 fw-bold">Ready to speak your customers' language?</h2>
-                    <p class="lead opacity-75">Connect with global audiences through AI-powered multilingual chatbots.</p>
-                </div>
-                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
-                    <a href="/pages/contact.php" class="btn btn-light btn-lg px-4 py-2">Contact Us Today</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQs -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-lg-12 text-center" data-aos="fade-up">
-                    <h2 class="section-title">Frequently Asked Questions</h2>
-                    <div class="section-divider mx-auto mb-5"></div>
+                <div class="faq-answer">
+                    <p>Our chatbots are trained on culture-specific datasets to understand and respect different communication styles, formality levels, honorifics, and cultural references. For example, they'll adjust formality levels for languages like Japanese or Korean that have complex honorific systems, adapt to indirect vs. direct communication styles based on cultural norms, and recognize region-specific idioms and expressions. We can also configure cultural preferences for specific markets, such as adapting to different ways of expressing dates, numbers, and currencies.</p>
                 </div>
             </div>
             
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="faq-container">
-                        <div class="faq-column">
-                            <!-- FAQ Item 1 -->
-                            <div class="faq-item active">
-                                <div class="faq-question">
-                                    <span>How accurate are your multilingual chatbot translations?</span>
-                                    <button class="toggle-btn">
-                                        <span class="icon"></span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Our multilingual chatbots achieve over 95% translation accuracy for most major languages. We use advanced neural machine translation models that understand context, idioms, and industry-specific terminology—not just word-for-word translations. For specialized domains like legal, medical, or technical fields, we implement domain-specific training to further improve accuracy. Each language model undergoes rigorous testing with native speakers and continuous improvement based on real conversation data. For critical communications, we can also implement human-in-the-loop verification for specific languages or topics.</p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 2 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span>How do you handle regional dialects and expressions?</span>
-                                    <button class="toggle-btn">
-                                        <span class="icon"></span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>We address regional language variations through dialect-specific training and localization. Our systems can be configured to recognize and respond appropriately to multiple dialects of the same language (like Latin American vs. European Spanish, or American vs. British English). For each target market, we incorporate regional expressions, slang, and cultural references into the training data. The chatbot can automatically detect which dialect a user is using and adjust its responses accordingly. For businesses targeting specific regions, we can optimize the chatbot for those particular dialects and expressions, ensuring the most natural and culturally relevant interactions.</p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 3 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span>How long does it take to add a new language to my chatbot?</span>
-                                    <button class="toggle-btn">
-                                        <span class="icon"></span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Adding a new language to an existing chatbot typically takes 2-4 weeks, depending on complexity and customization needs. For common languages with strong AI language models (like Spanish, French, German), implementation can be faster—around 2 weeks. Languages with more complex character sets or less common languages may take 3-4 weeks due to additional training requirements. The timeline includes language model adaptation, content translation, cultural adaptation, testing with native speakers, and fine-tuning based on feedback. We use a phased implementation approach, often starting with core functionality in the new language and then expanding to more complex interactions over time.</p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 4 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span>Do I need to provide translated content for each language?</span>
-                                    <button class="toggle-btn">
-                                        <span class="icon"></span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>No, you don't need to provide pre-translated content. Our AI-powered system can automatically translate your existing knowledge base, FAQs, product information, and conversation flows into multiple languages. While having some native language content can improve accuracy, it's not required to get started. For optimal results, we recommend reviewing automatically translated content for key messages or industry-specific terminology. We can work with your team or translation partners for targeted reviews of critical content, while handling the bulk of translation automatically. This hybrid approach balances quality with efficiency, giving you the best of both worlds without the traditional costs of full manual translation.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-column">
-                            <!-- FAQ Item 5 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span>How do you handle specialized terminology for our industry?</span>
-                                    <button class="toggle-btn">
-                                        <span class="icon"></span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>We handle specialized terminology through domain-specific training and custom glossaries. During implementation, we create a multilingual terminology database specific to your industry and company, ensuring consistent and accurate translation of technical terms across all languages. This includes product names, industry jargon, and company-specific terminology. The system learns from your existing documentation to identify and correctly translate specialized terms. For complex fields like legal, medical, or technical domains, we implement additional training with industry-specific content. The terminology management system continually improves through machine learning, becoming more accurate with specialized terms over time based on actual usage patterns.</p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 6 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span>Can your chatbots handle language switching mid-conversation?</span>
-                                    <button class="toggle-btn">
-                                        <span class="icon"></span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Yes, our multilingual chatbots can seamlessly handle language switching during a conversation. The system automatically detects when a user changes languages and adjusts its responses accordingly, without losing context or conversation history. This is particularly valuable for multilingual users who may naturally switch between languages. The chatbot maintains all user information and conversation context across language changes, providing a continuous experience. Users can also explicitly request a language change through simple commands. This flexibility accommodates diverse user preferences and creates a more natural interaction for global customers who may be comfortable in multiple languages.</p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 7 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span>How do you measure the ROI of multilingual chatbots?</span>
-                                    <button class="toggle-btn">
-                                        <span class="icon"></span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>We measure ROI through multiple metrics: market penetration (increased engagement from non-English speaking markets), cost savings (compared to traditional translation services or multilingual support staff), conversion rate improvements (for each language market), customer satisfaction scores across language segments, support ticket reduction in each language, and resolution times for multilingual inquiries. We establish baselines before implementation and track improvements over time. Our analytics dashboard provides language-specific insights to help you understand performance across different markets. We also measure operational metrics like translation quality scores and language detection accuracy to ensure technical performance. This comprehensive approach helps quantify both the direct financial benefits and broader business impact of multilingual capabilities.</p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 8 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span>What happens when the chatbot doesn't understand a phrase in another language?</span>
-                                    <button class="toggle-btn">
-                                        <span class="icon"></span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>When a chatbot encounters a phrase it doesn't understand in a particular language, it has several fallback mechanisms. First, it will attempt to clarify by asking follow-up questions in the same language, providing the user an opportunity to rephrase. If unclear about specific terms, it may offer suggestions based on similar phrases it does understand. For persistent issues, the system can offer alternative support channels in the user's language, such as suggesting common topics or providing human agent contact options. Each misunderstood phrase is logged and used to improve the language model over time. For critical conversations, we can implement human-in-the-loop assistance for complex language challenges. These layered approaches ensure users are never left without support, even when language barriers arise.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How long does it take to implement a multilingual chatbot?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us - Hardcoded Section -->
-    <section class="why-choose-us py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                    <h2>Why Choose Us for <?php echo $serviceName; ?></h2>
-                    <p class="lead">Our multilingual chatbot solutions break down language barriers for global businesses</p>
+                <div class="faq-answer">
+                    <p>Implementation typically takes 6-12 weeks depending on the number of languages and complexity of your content. A basic implementation supporting 5-10 major languages can be deployed in about 6 weeks. More extensive implementations supporting 20+ languages with industry-specific terminology may take 8-12 weeks. We follow an agile implementation approach, often starting with your highest-priority languages while adding others progressively. The chatbot's language capabilities continue to improve after launch through ongoing machine learning.</p>
                 </div>
             </div>
             
-            <div class="row">
-                <div class="col-md-4 mb-4" data-aos="fade-up">
-                    <div class="feature-card text-center p-4 h-100">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-globe fa-3x text-primary"></i>
-                        </div>
-                        <h3 class="h5">Comprehensive Language Coverage</h3>
-                        <p>Support for 100+ languages with native-quality understanding and response generation for truly global reach.</p>
-                    </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do I need separate chatbots for each language?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
-                
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-card text-center p-4 h-100">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-brain fa-3x text-primary"></i>
-                        </div>
-                        <h3 class="h5">Advanced Neural Translation</h3>
-                        <p>Our AI models understand context and cultural nuances, not just word-for-word translation like conventional systems.</p>
-                    </div>
+                <div class="faq-answer">
+                    <p>No, our solution uses a single chatbot that can communicate in multiple languages. The chatbot automatically detects the customer's language and responds accordingly. This unified approach ensures consistent functionality and knowledge across all languages while centralizing management and analytics. It also allows for seamless language switching during conversations if needed. All languages benefit from the same updates and improvements you make to the core chatbot, eliminating the need to maintain separate systems for each language.</p>
                 </div>
-                
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-card text-center p-4 h-100">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-user-friends fa-3x text-primary"></i>
-                        </div>
-                        <h3 class="h5">Cultural Adaptation</h3>
-                        <p>Our chatbots adapt communication styles to match cultural expectations and regional preferences.</p>
-                    </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do you ensure consistent terminology across all languages?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
-                
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-card text-center p-4 h-100">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-sync-alt fa-3x text-primary"></i>
-                        </div>
-                        <h3 class="h5">Real-Time Translation</h3>
-                        <p>Instantaneous language switching and translation with no perceptible delay in conversation flow.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="feature-card text-center p-4 h-100">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-database fa-3x text-primary"></i>
-                        </div>
-                        <h3 class="h5">Unified Knowledge Base</h3>
-                        <p>Maintain a single source of truth that serves all languages, eliminating content synchronization challenges.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="feature-card text-center p-4 h-100">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-chart-line fa-3x text-primary"></i>
-                        </div>
-                        <h3 class="h5">Cross-Language Analytics</h3>
-                        <p>Gain insights across all your markets with unified reporting that identifies patterns across language barriers.</p>
-                    </div>
+                <div class="faq-answer">
+                    <p>We implement terminology management systems that maintain consistent translations of key terms, product names, and brand-specific language across all supported languages. This includes creating centralized terminology databases, configuring the translation engine to recognize and consistently translate specific terms, implementing glossaries for industry-specific vocabulary, and providing controls for you to review and approve translations of critical terminology. The system can also be configured to keep certain terms untranslated when appropriate, such as product names or branded features.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 <?php
 include_once '../../../../components/footer.php';
+?>
+
+<!-- JavaScript libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/services.js"></script>
 ?> 

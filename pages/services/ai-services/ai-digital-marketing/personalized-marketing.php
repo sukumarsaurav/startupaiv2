@@ -15,15 +15,15 @@ require_once '../../../../components/header.php';
 
 <!-- Page Header -->
 <section class="page-header">
-    <div class="main-container">
-        <div class="row align-items-center">
-            <div class="col-lg-6" data-aos="fade-right">
-                <h1 class="display-4"><?php echo $pageTitle; ?></h1>
+    <div class="content-container">
+        <div class="header-grid">
+            <div class="page-header-content" data-aos="fade-right">
+                <h1><?php echo $pageTitle; ?></h1>
                 <p class="lead"><?php echo $pageDescription; ?></p>
-                <a href="/pages/contact.php" class="btn btn-primary mt-3">Get Started</a>
+                <a href="/pages/contact.php" class="get-started-btn">Get Started</a>
             </div>
-            <div class="col-lg-6" data-aos="fade-left">
-                <img src="/assets/images/services/personalized-marketing.svg" alt="<?php echo $serviceName; ?>" class="img-fluid">
+            <div class="page-header-image" data-aos="fade-left">
+                <img src="/assets/images/services/personalized-marketing.svg" alt="<?php echo $serviceName; ?>" class="animate-float">
             </div>
         </div>
     </div>
@@ -31,20 +31,20 @@ require_once '../../../../components/header.php';
 
 <!-- Service Overview -->
 <section class="service-overview">
-    <div class="main-container">
-        <div class="overview-grid">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="service-overview-header" data-aos="fade-up">
                 <h2>Personalization at Scale with AI</h2>
                 <p class="lead">Move beyond basic segmentation to create truly individualized experiences that connect with customers on a deeper level and drive meaningful engagement.</p>
             </div>
         </div>
         
-        <div class="row mt-4">
-            <div class="col-md-6" data-aos="fade-up">
+        <div class="overview-grid">
+            <div class="service-overview-content" data-aos="fade-up">
                 <h3>The Limitations of Traditional Marketing</h3>
                 <p>Traditional marketing approaches rely on broad demographic segmentation and basic rules-based personalization. This results in generic messaging that fails to truly resonate with individual customers, missed opportunities for engagement, and inefficient marketing spend.</p>
             </div>
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-overview-content" data-aos="fade-up" data-aos-delay="100">
                 <h3>The AI Personalization Advantage</h3>
                 <p>Our AI-powered approach analyzes vast amounts of behavioral, contextual, and historical data to understand each customer as an individual. This enables dynamic content personalization, predictive next-best-action recommendations, and automated optimization that continuously improves performance.</p>
             </div>
@@ -53,116 +53,104 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Services -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+<section class="services-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="services-header" data-aos="fade-up">
                 <h2>Our Personalized Marketing Services</h2>
                 <p class="lead">Comprehensive AI-powered solutions to deliver individualized customer experiences</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-6 mb-4" data-aos="fade-up">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-user-circle fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">Customer Behavior Prediction</h3>
-                        <p>Forecast individual customer actions and preferences using machine learning models that analyze historical behavior, purchase patterns, and engagement data.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Purchase propensity modeling</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Churn prediction and prevention</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Product affinity analysis</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Lifetime value forecasting</li>
-                        </ul>
+        <div class="services-grid">
+            <div class="service-item" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-circle"></i>
                     </div>
+                    <h3>Customer Behavior Prediction</h3>
+                    <p>Forecast individual customer actions and preferences using machine learning models that analyze historical behavior, purchase patterns, and engagement data.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Purchase propensity modeling</li>
+                        <li><i class="fas fa-check"></i>Churn prediction and prevention</li>
+                        <li><i class="fas fa-check"></i>Product affinity analysis</li>
+                        <li><i class="fas fa-check"></i>Lifetime value forecasting</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-puzzle-piece fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">Dynamic Content Personalization</h3>
-                        <p>Deliver individualized content experiences across all customer touchpoints that adapt in real-time to user behavior, preferences, and context.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Real-time website personalization</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Adaptive email content</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Dynamic product recommendations</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Contextual messaging</li>
-                        </ul>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-puzzle-piece"></i>
                     </div>
+                    <h3>Dynamic Content Personalization</h3>
+                    <p>Deliver individualized content experiences across all customer touchpoints that adapt in real-time to user behavior, preferences, and context.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Real-time website personalization</li>
+                        <li><i class="fas fa-check"></i>Adaptive email content</li>
+                        <li><i class="fas fa-check"></i>Dynamic product recommendations</li>
+                        <li><i class="fas fa-check"></i>Contextual messaging</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-route fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">AI-Optimized Customer Journeys</h3>
-                        <p>Create adaptive customer journey paths that automatically adjust based on individual behavior, optimizing each step toward conversion.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Journey mapping and analysis</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Next-best-action recommendations</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Multi-channel orchestration</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Automated decision points</li>
-                        </ul>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-route"></i>
                     </div>
+                    <h3>AI-Optimized Customer Journeys</h3>
+                    <p>Create adaptive customer journey paths that automatically adjust based on individual behavior, optimizing each step toward conversion.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Journey mapping and analysis</li>
+                        <li><i class="fas fa-check"></i>Next-best-action recommendations</li>
+                        <li><i class="fas fa-check"></i>Multi-channel orchestration</li>
+                        <li><i class="fas fa-check"></i>Automated decision points</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-clock fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">Predictive Timing Optimization</h3>
-                        <p>Deliver messages at the exact moment when each individual customer is most likely to engage, based on historical engagement patterns and real-time signals.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Engagement time prediction</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Optimal frequency modeling</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Real-time opportunity detection</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Cross-channel coordination</li>
-                        </ul>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clock"></i>
                     </div>
+                    <h3>Predictive Timing Optimization</h3>
+                    <p>Deliver messages at the exact moment when each individual customer is most likely to engage, based on historical engagement patterns and real-time signals.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Engagement time prediction</li>
+                        <li><i class="fas fa-check"></i>Optimal frequency modeling</li>
+                        <li><i class="fas fa-check"></i>Real-time opportunity detection</li>
+                        <li><i class="fas fa-check"></i>Cross-channel coordination</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-bullhorn fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">Personalized Campaign Automation</h3>
-                        <p>Deploy self-optimizing marketing campaigns that automatically adjust messaging, creative elements, and offers based on individual response patterns.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>AI-driven campaign creation</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Automated A/B testing</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Performance-based optimization</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Cross-channel campaign coordination</li>
-                        </ul>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
                     </div>
+                    <h3>Personalized Campaign Automation</h3>
+                    <p>Deploy self-optimizing marketing campaigns that automatically adjust messaging, creative elements, and offers based on individual response patterns.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>AI-driven campaign creation</li>
+                        <li><i class="fas fa-check"></i>Automated A/B testing</li>
+                        <li><i class="fas fa-check"></i>Performance-based optimization</li>
+                        <li><i class="fas fa-check"></i>Cross-channel campaign coordination</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-comments fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">Emotional Intelligence Marketing</h3>
-                        <p>Leverage advanced NLP and sentiment analysis to understand customer emotional states and deliver messaging that resonates on an emotional level.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Sentiment analysis</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Tone and message adaptation</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Emotional journey mapping</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Brand voice personalization</li>
-                        </ul>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
                     </div>
+                    <h3>Emotional Intelligence Marketing</h3>
+                    <p>Leverage advanced NLP and sentiment analysis to understand customer emotional states and deliver messaging that resonates on an emotional level.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Sentiment analysis</li>
+                        <li><i class="fas fa-check"></i>Tone and message adaptation</li>
+                        <li><i class="fas fa-check"></i>Emotional journey mapping</li>
+                        <li><i class="fas fa-check"></i>Brand voice personalization</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -170,229 +158,170 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Data & Platform -->
-<section class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+<section class="platforms-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="platforms-header" data-aos="fade-up">
                 <h2>Our AI Personalization Technology</h2>
                 <p class="lead">Powerful technology stack that enables 1:1 personalization at scale</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="tech-card text-center p-4 h-100">
-                    <i class="fas fa-database fa-3x text-primary mb-3"></i>
-                    <h3 class="h5">Unified Customer Data Platform</h3>
-                    <p>Our CDP integrates data from all touchpoints to create comprehensive individual customer profiles that power personalization.</p>
-                </div>
+        <div class="platforms-grid">
+            <div class="platform-card" data-aos="fade-up">
+                <h3>Unified Customer Data Platform</h3>
+                <ul>
+                    <li>Real-time data collection</li>
+                    <li>Identity resolution</li>
+                    <li>Cross-device tracking</li>
+                    <li>Behavioral analytics</li>
+                    <li>Unified customer profiles</li>
+                </ul>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="tech-card text-center p-4 h-100">
-                    <i class="fas fa-brain fa-3x text-primary mb-3"></i>
-                    <h3 class="h5">Machine Learning Engine</h3>
-                    <p>Advanced algorithms analyze patterns in customer behavior to predict preferences and future actions with high accuracy.</p>
-                </div>
+            <div class="platform-card" data-aos="fade-up" data-aos-delay="100">
+                <h3>Machine Learning Engine</h3>
+                <ul>
+                    <li>Predictive modeling</li>
+                    <li>Pattern recognition</li>
+                    <li>Behavioral clustering</li>
+                    <li>Propensity scoring</li>
+                    <li>Continuous learning</li>
+                </ul>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="tech-card text-center p-4 h-100">
-                    <i class="fas fa-bolt fa-3x text-primary mb-3"></i>
-                    <h3 class="h5">Real-Time Decision Engine</h3>
-                    <p>Our platform makes instantaneous personalization decisions based on current context and historical insights.</p>
-                </div>
+            <div class="platform-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>Real-Time Decision Engine</h3>
+                <ul>
+                    <li>Sub-second processing</li>
+                    <li>Multi-variate decisioning</li>
+                    <li>Dynamic content assembly</li>
+                    <li>Contextual awareness</li>
+                    <li>Automated optimization</li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Implementation Process -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                <h2>Our Personalization Implementation Process</h2>
-                <p class="lead">A systematic approach to creating AI-powered personalized marketing</p>
+<section class="implementation-process">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="implementation-header" data-aos="fade-up">
+                <h2>Our Implementation Approach</h2>
+                <p class="lead">A systematic methodology for deploying AI-powered personalization</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-3 mb-4" data-aos="fade-up">
-                <div class="process-card text-center h-100">
+        <div class="process-grid">
+            <div class="process-item" data-aos="fade-up">
+                <div class="process-card">
                     <div class="process-icon">
                         <span>1</span>
                     </div>
-                    <h3>Data Integration & Analysis</h3>
-                    <p>We consolidate your customer data from all sources and analyze it to identify personalization opportunities and establish baselines.</p>
+                    <h3>Data Assessment & Integration</h3>
+                    <p>We audit your customer data sources, identify gaps, and build a unified data foundation to power personalization.</p>
+                    <ul>
+                        <li>Data source inventory</li>
+                        <li>Integration planning</li>
+                        <li>Data quality assessment</li>
+                        <li>Compliance verification</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-card text-center h-100">
+            <div class="process-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="process-card">
                     <div class="process-icon">
                         <span>2</span>
                     </div>
-                    <h3>Model Development</h3>
-                    <p>Our data scientists build custom machine learning models tailored to your specific business goals and customer behaviors.</p>
+                    <h3>Customer Modeling</h3>
+                    <p>We develop AI models that predict individual preferences, behaviors, and optimal engagement strategies.</p>
+                    <ul>
+                        <li>Segmentation development</li>
+                        <li>Behavioral modeling</li>
+                        <li>Preference analysis</li>
+                        <li>Predictive model training</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-card text-center h-100">
+            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="process-card">
                     <div class="process-icon">
                         <span>3</span>
                     </div>
-                    <h3>Campaign Configuration</h3>
-                    <p>We set up personalized campaigns across your marketing channels, integrating AI decisioning into your existing marketing stack.</p>
+                    <h3>Experience Design</h3>
+                    <p>We create personalized experience frameworks that define how content, offers, and journeys adapt to individual needs.</p>
+                    <ul>
+                        <li>Content strategy</li>
+                        <li>Decision mapping</li>
+                        <li>Journey orchestration</li>
+                        <li>Rule configuration</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-card text-center h-100">
+            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="process-card">
                     <div class="process-icon">
                         <span>4</span>
                     </div>
-                    <h3>Optimization & Scaling</h3>
-                    <p>Our AI continuously learns from campaign performance and customer responses to improve personalization effectiveness over time.</p>
+                    <h3>Deployment & Optimization</h3>
+                    <p>We implement the personalization system, validate results, and continuously refine based on performance data.</p>
+                    <ul>
+                        <li>A/B testing</li>
+                        <li>Implementation support</li>
+                        <li>Performance monitoring</li>
+                        <li>Continuous improvement</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Business Benefits -->
-<section class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+<!-- Benefits -->
+<section class="benefits-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="benefits-header" data-aos="fade-up">
                 <h2>Business Benefits</h2>
-                <p class="lead">How AI-powered personalization transforms marketing performance</p>
+                <p class="lead">Transformative outcomes from AI-powered personalization</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-chart-line fa-3x text-primary"></i>
+        <div class="benefits-grid">
+            <div class="benefit-item" data-aos="fade-up">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3 class="h5">Increased Conversion Rates</h3>
-                    <p>Achieve 30-50% higher conversion rates through precisely targeted messaging that resonates with individual needs and preferences.</p>
+                    <h3>Increased Conversion Rates</h3>
+                    <p>Personalized experiences typically deliver 20-30% higher conversion rates by providing the right content at the right moment.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-coins fa-3x text-primary"></i>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
                     </div>
-                    <h3 class="h5">Higher Customer Lifetime Value</h3>
-                    <p>Increase average customer value by 20-40% through more relevant cross-selling, upselling, and retention strategies.</p>
+                    <h3>Enhanced Customer Loyalty</h3>
+                    <p>Customers who receive personalized experiences show 40% higher retention rates and 38% higher lifetime value.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-heart fa-3x text-primary"></i>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <h3 class="h5">Enhanced Customer Loyalty</h3>
-                    <p>Build stronger emotional connections with customers through experiences that demonstrate understanding of their individual needs.</p>
+                    <h3>Higher Average Order Value</h3>
+                    <p>Personalized recommendations and offers lead to 15-25% larger transaction sizes and increased cross-selling.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-shopping-cart fa-3x text-primary"></i>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bullseye"></i>
                     </div>
-                    <h3 class="h5">Reduced Cart Abandonment</h3>
-                    <p>Recover 15-25% more abandoned carts through perfectly timed, personally relevant re-engagement campaigns.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-bullseye fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Improved Marketing Efficiency</h3>
-                    <p>Increase return on marketing spend by 40-60% by focusing resources on the highest-potential opportunities for each customer.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-tachometer-alt fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Faster Time-to-Market</h3>
-                    <p>Launch personalized campaigns 3-5x faster through AI automation that eliminates manual segmentation and rule creation.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Why Choose Us - Hardcoded Section -->
-<section class="why-choose-us py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                <h2>Why Choose Us for <?php echo $serviceName; ?></h2>
-                <p class="lead">Our personalization expertise drives engagement and conversion like no other</p>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-user-cog fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Individual-Level Personalization</h3>
-                    <p>Our AI goes beyond basic segmentation to create truly individualized experiences for each customer in real-time.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-project-diagram fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Cross-Channel Consistency</h3>
-                    <p>We create seamless personalized journeys across all touchpoints, from email to site to ads to mobile.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-bullseye fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Predictive Intent Modeling</h3>
-                    <p>Our proprietary algorithms anticipate customer needs and behaviors, allowing you to deliver what they want before they ask.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-shield-alt fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Privacy-First Design</h3>
-                    <p>Our personalization solutions are built with data privacy at their core, ensuring compliance with regulations like GDPR and CCPA.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-chart-line fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Proven ROI</h3>
-                    <p>Our clients see an average of 20-30% improvement in conversion rates after implementing our personalization solutions.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-rocket fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Rapid Implementation</h3>
-                    <p>Get up and running quickly with our streamlined setup process and pre-built integration connectors.</p>
+                    <h3>Improved Marketing Efficiency</h3>
+                    <p>AI-driven personalization reduces wasted ad spend by 30% while increasing campaign ROI by up to 50%.</p>
                 </div>
             </div>
         </div>
@@ -400,75 +329,83 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- CTA Section -->
-<section class="cta-section py-5 bg-primary text-white">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="mb-4">Ready to Transform Your Customer Relationships?</h2>
-                <p class="lead mb-4">Contact us today to discuss how AI-powered personalization can elevate your marketing effectiveness.</p>
-                <a href="/pages/contact.php" class="btn btn-light btn-lg">Schedule a Consultation</a>
-            </div>
+<section class="cta-section">
+    <div class="content-container">
+        <div class="cta-content">
+            <h2>Ready to Deliver Truly Personal Experiences?</h2>
+            <p class="lead">Let's build AI-powered personalization that connects with your customers on a deeper level.</p>
+            <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">Schedule a Consultation</a>
         </div>
     </div>
 </section>
 
 <!-- FAQ Section -->
-<section class="faq-section py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5">
-                <h2 class="faq-title">Frequently Asked Questions</h2>
-                <p class="faq-subtitle">Common questions about AI-powered personalized marketing</p>
+<section class="faq-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="faq-header">
+                <h2>Frequently Asked Questions</h2>
+                <p class="lead">Common questions about AI-powered personalization</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <div class="faq-container">
-                    <div class="faq-item active">
-                        <div class="faq-question">
-                            <h3>What data do you need to implement personalized marketing?</h3>
-                            <button class="toggle-btn"><span class="icon"></span></button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Effective AI personalization works with various data types, and we can start with whatever customer data you currently have available. The most valuable data sources include customer profile information (demographic data, preferences, purchase history), behavioral data (website interactions, email engagement, app usage), contextual data (time, location, device, weather), and transactional data (purchase history, cart events, payment methods). We prioritize quality over quantity—even with limited data points, our AI can identify meaningful patterns to power personalization. Our approach is incremental: we begin with your existing data and implement collection strategies for additional signals that will enhance personalization over time. All data integration is conducted securely, with strict adherence to privacy regulations like GDPR and CCPA. We also provide clear documentation of all data sources and processing methods to ensure compliance and transparency.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>How do you measure the ROI of personalized marketing campaigns?</h3>
-                            <button class="toggle-btn"><span class="icon"></span></button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>We measure the ROI of personalized marketing through a comprehensive framework that captures both immediate impact and long-term value creation. Our approach includes direct response metrics (conversion rate improvements, average order value increases, click-through rate enhancements), revenue impact measurements (incremental revenue attributed to personalization, customer lifetime value growth, reduced acquisition costs), and operational efficiency gains (marketing team productivity improvements, reduced time-to-market for campaigns, decreased reliance on technical resources). We establish a robust attribution methodology that accurately credits personalization initiatives for their contribution to business outcomes, using control groups and incremental lift analysis to isolate the true impact of personalization from other factors. Our reporting dashboards provide both high-level ROI summaries and detailed drill-down capabilities to analyze performance by channel, customer segment, and personalization type. We conduct regular ROI reviews to identify the highest-performing personalization strategies and continuously refine our approach based on results, ensuring your investment in personalization delivers maximum returns over time.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>How do you ensure privacy compliance with personalized marketing?</h3>
-                            <button class="toggle-btn"><span class="icon"></span></button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Privacy compliance is integrated into every aspect of our personalization approach through a comprehensive framework that exceeds regulatory requirements. We conduct thorough privacy impact assessments before implementing any personalization initiative, documenting data flows, processing activities, and potential privacy risks. Our technical infrastructure incorporates privacy by design principles, including data minimization (collecting only necessary data), purpose limitation (using data only for specified purposes), and storage limitations (retaining data only as long as required). We implement robust consent management systems that capture and honor user preferences across all touchpoints, providing transparent choices for opting in or out of personalization features. All data is protected through enterprise-grade security measures including encryption, access controls, and regular security audits. We maintain detailed records of processing activities and data protection measures to demonstrate compliance during regulatory audits. Our team stays current with evolving privacy regulations worldwide to ensure continuous compliance, and we provide regular privacy training for all personnel involved in personalization initiatives. This systematic approach allows us to deliver highly effective personalization while respecting individual privacy rights and maintaining regulatory compliance.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>How long does it take to implement AI-powered personalization?</h3>
-                            <button class="toggle-btn"><span class="icon"></span></button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>AI personalization implementation follows a phased approach with initial capabilities typically deployed within 4-8 weeks and more advanced features rolling out over 3-6 months. The timeline varies based on several factors: your existing data infrastructure, the complexity of your customer journeys, the number of channels to be personalized, and your specific business objectives. We begin with a rapid assessment phase (1-2 weeks) to evaluate your current capabilities and define a strategic roadmap. This is followed by the foundation phase (3-6 weeks), where we implement data integration, build initial AI models, and deploy basic personalization use cases that deliver immediate value. From there, we move to the expansion phase (2-3 months), deploying more sophisticated personalization capabilities across additional channels and customer journey stages. Finally, the optimization phase (ongoing) involves continuous refinement of AI models and personalization strategies based on performance data. Our modular approach ensures you see value quickly while building toward comprehensive personalization capabilities. Throughout implementation, we focus on knowledge transfer to your team, ensuring they develop the skills to leverage and extend the personalization capabilities we build.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>How does AI personalization differ from traditional segmentation?</h3>
-                            <button class="toggle-btn"><span class="icon"></span></button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Traditional segmentation and AI personalization represent fundamentally different approaches to customer targeting. Traditional segmentation divides customers into predetermined groups based on static attributes (demographics, purchase history, etc.) and applies the same marketing treatment to everyone within a segment. This approach is limited by human capacity to create and manage segments, typically resulting in 5-10 broad groups that fail to capture individual nuances. In contrast, AI personalization treats each customer as a unique segment of one by analyzing hundreds of data points to create truly individualized experiences. The key differences include: granularity (segments of thousands vs. segments of one), adaptability (AI continuously updates customer understanding in real-time vs. static segment assignments), predictive capability (AI anticipates future needs vs. segmentation reflecting past behavior), scalability (AI can manage millions of individualized experiences vs. limited human capacity for segment management), and dynamic optimization (AI automatically refines strategies based on results vs. manual optimization). While traditional segmentation provides a foundation for basic targeting, AI personalization represents an exponential leap forward in marketing relevance and effectiveness by delivering precisely tailored experiences to each individual customer.</p>
-                        </div>
-                    </div>
+        <div class="faq-container">
+            <div class="faq-item active">
+                <div class="faq-question">
+                    <h3>How does AI personalization differ from traditional segmentation?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Traditional segmentation groups customers into broad categories based on shared characteristics, delivering the same experience to everyone in that segment. AI personalization, by contrast, creates individualized experiences based on a combination of explicit data (demographics, preferences) and implicit data (behavioral patterns, contextual signals). While segmentation might divide customers into a few dozen groups, AI personalization can deliver uniquely tailored experiences to each individual customer, adapting in real-time to their behaviors and needs.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What kind of data is needed for effective AI personalization?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Effective AI personalization utilizes multiple data types, including: customer profile data (demographics, preferences, purchase history), behavioral data (website interactions, app usage, email engagement), contextual data (location, device, time of day), and transactional data (purchases, cart abandonment). The more data sources you can integrate, the more sophisticated your personalization can be. However, we can implement powerful personalization even with limited initial data, as our systems are designed to learn and improve over time as more customer interactions are captured.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How long does it take to implement AI personalization?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Implementation timelines vary based on your technical infrastructure, data readiness, and personalization goals. Typically, our phased approach delivers initial personalization capabilities within 6-8 weeks, with more advanced features rolling out over 3-6 months. We prioritize high-impact use cases first, ensuring you see ROI quickly while laying the foundation for more sophisticated personalization over time. Our modular approach allows for flexibility in implementation scope and timeline based on your specific business needs and technical constraints.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do you measure the success of personalization initiatives?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>We establish comprehensive measurement frameworks that track both customer experience metrics and business outcomes. Key performance indicators typically include conversion rate lift, average order value increases, customer engagement metrics (time on site, pages per session), retention and loyalty metrics (repeat purchase rate, churn reduction), and revenue impact (incremental revenue attributed to personalization). Our approach includes controlled A/B testing to isolate the impact of personalization initiatives and provide clear ROI calculations. We also track qualitative measures such as customer satisfaction and brand perception to ensure a holistic view of personalization success.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do you ensure privacy compliance with personalization?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Privacy compliance is built into our personalization approach from the ground up. We implement privacy-by-design principles including consent management, data minimization, purpose limitation, and transparent data practices. Our solutions are designed to comply with major privacy regulations including GDPR, CCPA/CPRA, and other regional requirements. We provide mechanisms for consent management, preference centers, and data subject rights fulfillment. Additionally, we offer options for anonymous personalization that deliver relevant experiences without collecting personally identifiable information when appropriate. Our team stays current with evolving privacy regulations to ensure ongoing compliance as the regulatory landscape changes.</p>
                 </div>
             </div>
         </div>

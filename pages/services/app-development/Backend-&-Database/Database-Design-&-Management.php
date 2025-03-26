@@ -14,11 +14,11 @@ require_once '../../../../components/header.php';
 
 <!-- Page Header -->
 <header class="page-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="fw-bold" data-aos="fade-up">Database Design & Management</h1>
-                <p class="lead" data-aos="fade-up" data-aos-delay="100">
+    <div class="content-container">
+        <div class="header-grid">
+            <div class="page-header-content text-center">
+                <h1 class="page-title" data-aos="fade-up">Database Design & Management</h1>
+                <p class="page-description" data-aos="fade-up" data-aos-delay="100">
                     Optimize your data architecture for scalability, performance, and security
                 </p>
             </div>
@@ -27,50 +27,50 @@ require_once '../../../../components/header.php';
 </header>
 
 <!-- Service Overview -->
-<section class="service-overview py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-                <img src="/assets/images/services/database-design.svg" alt="Database Design and Management" class="img-fluid rounded shadow">
+<section class="service-overview section-spacing">
+    <div class="content-container">
+        <div class="service-grid">
+            <div class="service-image" data-aos="fade-right">
+                <img src="/assets/images/services/database-design.svg" alt="Database Design and Management" class="featured-image">
             </div>
-            <div class="col-lg-6" data-aos="fade-left">
-                <h2 class="mb-4">Database Design & Management Services</h2>
+            <div class="service-content" data-aos="fade-left">
+                <h2 class="section-heading">Database Design & Management Services</h2>
                 <p>
                     Our database design and management services help organizations build robust data architectures that support business growth, ensure data integrity, and enhance application performance. From designing efficient schemas to implementing backup strategies and performance optimization, we provide comprehensive database solutions tailored to your specific needs.
                 </p>
-                <div class="features mt-4">
-                    <div class="feature d-flex align-items-start mb-3">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-sitemap text-primary"></i>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-sitemap icon-primary"></i>
                         </div>
-                        <div>
+                        <div class="feature-content">
                             <h5>Schema Design & Optimization</h5>
                             <p>Data modeling and schema design optimized for your business processes and application needs.</p>
                         </div>
                     </div>
-                    <div class="feature d-flex align-items-start mb-3">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-tachometer-alt text-primary"></i>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-tachometer-alt icon-primary"></i>
                         </div>
-                        <div>
+                        <div class="feature-content">
                             <h5>Performance Tuning</h5>
                             <p>Query optimization, indexing strategies, and configuration tuning for maximum efficiency.</p>
                         </div>
                     </div>
-                    <div class="feature d-flex align-items-start mb-3">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-shield-alt text-primary"></i>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt icon-primary"></i>
                         </div>
-                        <div>
+                        <div class="feature-content">
                             <h5>Security & Compliance</h5>
                             <p>Robust security measures and compliance with regulatory requirements like GDPR and HIPAA.</p>
                         </div>
                     </div>
-                    <div class="feature d-flex align-items-start">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-sync-alt text-primary"></i>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-sync-alt icon-primary"></i>
                         </div>
-                        <div>
+                        <div class="feature-content">
                             <h5>Migration & Modernization</h5>
                             <p>Seamless migration between database platforms and upgrades to modern technologies.</p>
                         </div>
@@ -85,48 +85,46 @@ require_once '../../../../components/header.php';
 <?php renderWhyHireUs($why_hire_us['service_name'], $why_hire_us['reasons']); ?>
 
 <!-- Process -->
-<section class="process-section py-5 bg-light">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Our Database Development Process</h2>
-                <p class="section-description">
-                    A methodical approach to creating optimized database solutions
-                </p>
-            </div>
+<section class="process-section section-spacing section-light">
+    <div class="content-container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <h2 class="section-heading">Our Database Development Process</h2>
+            <p class="section-subheading">
+                A methodical approach to creating optimized database solutions
+            </p>
         </div>
-        <div class="row">
-            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-clipboard-list fa-3x text-primary"></i>
+        <div class="process-grid">
+            <div class="process-item" data-aos="fade-up">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-clipboard-list icon-large icon-primary"></i>
                     </div>
                     <h4>Requirements Analysis</h4>
                     <p>We assess your data storage needs, application requirements, and performance expectations.</p>
                 </div>
             </div>
-            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-project-diagram fa-3x text-primary"></i>
+            <div class="process-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-project-diagram icon-large icon-primary"></i>
                     </div>
                     <h4>Design & Modeling</h4>
                     <p>We create efficient database schemas, relationships, and indexes tailored to your business logic.</p>
                 </div>
             </div>
-            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-cogs fa-3x text-primary"></i>
+            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-cogs icon-large icon-primary"></i>
                     </div>
                     <h4>Implementation</h4>
                     <p>Our database experts build and configure your database with security, scalability, and performance in mind.</p>
                 </div>
             </div>
-            <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-chart-line fa-3x text-primary"></i>
+            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-chart-line icon-large icon-primary"></i>
                     </div>
                     <h4>Optimization & Support</h4>
                     <p>We continuously monitor, tune, and maintain your database for optimal performance.</p>
@@ -137,50 +135,48 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Database Technologies -->
-<section class="technologies-section py-5">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Database Technologies We Work With</h2>
-                <p class="section-description">
-                    Expertise across relational, NoSQL, and specialized database systems
-                </p>
-            </div>
+<section class="technologies-section section-spacing">
+    <div class="content-container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <h2 class="section-heading">Database Technologies We Work With</h2>
+            <p class="section-subheading">
+                Expertise across relational, NoSQL, and specialized database systems
+            </p>
         </div>
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="tech-card h-100 p-4 bg-white rounded shadow-sm">
-                    <h4 class="text-center mb-4">Relational Databases</h4>
-                    <ul class="tech-list list-unstyled">
-                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>MySQL / MariaDB</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>PostgreSQL</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Microsoft SQL Server</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Oracle Database</li>
-                        <li><i class="fas fa-check-circle text-primary me-2"></i>SQLite</li>
+        <div class="tech-grid">
+            <div class="tech-item" data-aos="fade-up">
+                <div class="tech-card">
+                    <h4 class="text-center">Relational Databases</h4>
+                    <ul class="tech-list">
+                        <li><i class="fas fa-check-circle icon-primary icon-margin"></i>MySQL / MariaDB</li>
+                        <li><i class="fas fa-check-circle icon-primary icon-margin"></i>PostgreSQL</li>
+                        <li><i class="fas fa-check-circle icon-primary icon-margin"></i>Microsoft SQL Server</li>
+                        <li><i class="fas fa-check-circle icon-primary icon-margin"></i>Oracle Database</li>
+                        <li><i class="fas fa-check-circle icon-primary icon-margin"></i>SQLite</li>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="tech-card h-100 p-4 bg-white rounded shadow-sm">
-                    <h4 class="text-center mb-4">NoSQL Databases</h4>
-                    <ul class="tech-list list-unstyled">
-                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>MongoDB</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Redis</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Cassandra</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Amazon DynamoDB</li>
-                        <li><i class="fas fa-check-circle text-primary me-2"></i>Firebase Realtime Database</li>
+            <div class="tech-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="tech-card">
+                    <h4 class="text-center">NoSQL Databases</h4>
+                    <ul class="tech-list">
+                        <li><i class="fas fa-check-circle icon-primary icon-margin"></i>MongoDB</li>
+                        <li><i class="fas fa-check-circle icon-primary icon-margin"></i>Redis</li>
+                        <li><i class="fas fa-check-circle icon-primary icon-margin"></i>Cassandra</li>
+                        <li><i class="fas fa-check-circle icon-primary icon-margin"></i>Amazon DynamoDB</li>
+                        <li><i class="fas fa-check-circle icon-primary icon-margin"></i>Firebase Realtime Database</li>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="tech-card h-100 p-4 bg-white rounded shadow-sm">
-                    <h4 class="text-center mb-4">Specialized Databases</h4>
-                    <ul class="tech-list list-unstyled">
-                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Elasticsearch (search)</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Neo4j (graph)</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>InfluxDB (time series)</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Google BigQuery (analytics)</li>
-                        <li><i class="fas fa-check-circle text-primary me-2"></i>Snowflake (data warehouse)</li>
+            <div class="tech-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="tech-card">
+                    <h4 class="text-center">Specialized Databases</h4>
+                    <ul class="tech-list">
+                        <li><i class="fas fa-check-circle icon-primary icon-margin"></i>Elasticsearch (search)</li>
+                        <li><i class="fas fa-check-circle icon-primary icon-margin"></i>Neo4j (graph)</li>
+                        <li><i class="fas fa-check-circle icon-primary icon-margin"></i>InfluxDB (time series)</li>
+                        <li><i class="fas fa-check-circle icon-primary icon-margin"></i>Google BigQuery (analytics)</li>
+                        <li><i class="fas fa-check-circle icon-primary icon-margin"></i>Snowflake (data warehouse)</li>
                     </ul>
                 </div>
             </div>
@@ -189,101 +185,83 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Benefits -->
-<section class="benefits-section py-5 bg-light">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Benefits of Professional Database Design</h2>
-                <p class="section-description">
-                    How optimized database architecture drives business success
-                </p>
-            </div>
+<section class="benefits-section section-spacing section-light">
+    <div class="content-container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <h2 class="section-heading">Benefits of Professional Database Design</h2>
+            <p class="section-subheading">
+                How optimized database architecture drives business success
+            </p>
         </div>
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-bolt fa-2x text-primary"></i>
-                    </div>
-                    <h4>Enhanced Performance</h4>
-                    <p>Properly designed databases respond faster to queries, improving application responsiveness and user experience.</p>
+        <div class="benefits-grid">
+            <div class="benefit-item" data-aos="fade-up">
+                <div class="benefit-icon">
+                    <i class="fas fa-bolt icon-large icon-primary"></i>
                 </div>
+                <h4>Enhanced Performance</h4>
+                <p>Properly designed databases respond faster to queries, improving application responsiveness and user experience.</p>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-expand-arrows-alt fa-2x text-primary"></i>
-                    </div>
-                    <h4>Scalability</h4>
-                    <p>Future-proof designs that accommodate growing data volumes and increasing user loads without performance degradation.</p>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="benefit-icon">
+                    <i class="fas fa-expand-arrows-alt icon-large icon-primary"></i>
                 </div>
+                <h4>Scalability</h4>
+                <p>Future-proof designs that accommodate growing data volumes and increasing user loads without performance degradation.</p>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-shield-alt fa-2x text-primary"></i>
-                    </div>
-                    <h4>Data Security</h4>
-                    <p>Robust security measures and proper access controls to protect your valuable business information.</p>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="benefit-icon">
+                    <i class="fas fa-shield-alt icon-large icon-primary"></i>
                 </div>
+                <h4>Data Security</h4>
+                <p>Robust security measures and proper access controls to protect your valuable business information.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Services -->
-<section class="services-section py-5">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Our Database Services</h2>
-                <p class="section-description">
-                    Comprehensive solutions for all your database needs
-                </p>
-            </div>
+<section class="services-section section-spacing">
+    <div class="content-container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <h2 class="section-heading">Our Database Services</h2>
+            <p class="section-subheading">
+                Comprehensive solutions for all your database needs
+            </p>
         </div>
-        <div class="row">
-            <div class="col-md-6 mb-4" data-aos="fade-up">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="service-icon me-3">
-                            <i class="fas fa-pencil-ruler fa-2x text-primary"></i>
-                        </div>
-                        <h4 class="mb-0">Database Design & Development</h4>
+        <div class="services-grid">
+            <div class="service-item" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler icon-large icon-primary"></i>
                     </div>
+                    <h4 class="service-title">Database Design & Development</h4>
                     <p>Custom database design with efficient data models, schemas, and relationships. Our database architects create solutions that align with your business processes and application requirements.</p>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="service-icon me-3">
-                            <i class="fas fa-tachometer-alt fa-2x text-primary"></i>
-                        </div>
-                        <h4 class="mb-0">Performance Optimization</h4>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tachometer-alt icon-large icon-primary"></i>
                     </div>
+                    <h4 class="service-title">Performance Optimization</h4>
                     <p>Database tuning services to enhance query performance, reduce response times, and optimize resource utilization. We implement indexing strategies, query optimization, and configuration tuning.</p>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="service-icon me-3">
-                            <i class="fas fa-exchange-alt fa-2x text-primary"></i>
-                        </div>
-                        <h4 class="mb-0">Database Migration</h4>
+            <div class="service-item" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-exchange-alt icon-large icon-primary"></i>
                     </div>
+                    <h4 class="service-title">Database Migration</h4>
                     <p>Seamless migration between database platforms with minimal downtime. We handle data transfer, schema conversion, and application adaptation for smooth transitions to new database systems.</p>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="service-icon me-3">
-                            <i class="fas fa-server fa-2x text-primary"></i>
-                        </div>
-                        <h4 class="mb-0">Database Administration</h4>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server icon-large icon-primary"></i>
                     </div>
+                    <h4 class="service-title">Database Administration</h4>
                     <p>Ongoing management and maintenance of your database systems, including backups, monitoring, security updates, and troubleshooting. We ensure your databases operate reliably and securely.</p>
                 </div>
             </div>
@@ -292,16 +270,16 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- CTA -->
-<section class="cta-section py-5 bg-primary text-white">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8 mb-4 mb-lg-0" data-aos="fade-right">
-                <h2 class="mb-3">Ready to Optimize Your Data Architecture?</h2>
-                <p class="lead mb-0">
+<section class="cta-section section-spacing section-primary text-white">
+    <div class="content-container">
+        <div class="cta-grid">
+            <div class="cta-content" data-aos="fade-right">
+                <h2 class="cta-title">Ready to Optimize Your Data Architecture?</h2>
+                <p class="cta-description">
                     Let's design a database solution that enhances performance and supports your business growth.
                 </p>
             </div>
-            <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+            <div class="cta-button" data-aos="fade-left">
                 <a href="/contact" class="btn btn-light btn-lg">Get Started</a>
             </div>
         </div>

@@ -1,24 +1,3 @@
-        // FAQ Toggle Functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const faqItems = document.querySelectorAll('.faq-item');
-            
-            faqItems.forEach(item => {
-                const question = item.querySelector('.faq-question');
-                
-                question.addEventListener('click', function() {
-                    // Toggle active class on the clicked item
-                    item.classList.toggle('active');
-                    
-                    // Close other items (optional - for accordion behavior)
-                    faqItems.forEach(otherItem => {
-                        if (otherItem !== item && otherItem.classList.contains('active')) {
-                            otherItem.classList.remove('active');
-                        }
-                    });
-                });
-            });
-        });
-        
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -76,31 +55,39 @@
         // Testimonials Carousel
         document.addEventListener('DOMContentLoaded', function() {
             const track = document.querySelector('.testimonials-track');
-            const cards = document.querySelectorAll('.testimonial-card');
-            const prevButton = document.querySelector('.prev-button');
-            const nextButton = document.querySelector('.next-button');
             
-            let currentIndex = 0;
-            const cardCount = cards.length;
-            
-            // Set initial position
-            updateCarousel();
-            
-            // Handle next button click
-            nextButton.addEventListener('click', function() {
-                currentIndex = (currentIndex + 1) % cardCount;
+            // Only initialize carousel if the track element exists
+            if (track) {
+                const cards = document.querySelectorAll('.testimonial-card');
+                const prevButton = document.querySelector('.prev-button');
+                const nextButton = document.querySelector('.next-button');
+                
+                let currentIndex = 0;
+                const cardCount = cards.length;
+                
+                // Set initial position
                 updateCarousel();
-            });
-            
-            // Handle previous button click
-            prevButton.addEventListener('click', function() {
-                currentIndex = (currentIndex - 1 + cardCount) % cardCount;
-                updateCarousel();
-            });
-            
-            function updateCarousel() {
-                const translateValue = -currentIndex * 100;
-                track.style.transform = `translateX(${translateValue}%)`;
+                
+                // Handle next button click
+                if (nextButton) {
+                    nextButton.addEventListener('click', function() {
+                        currentIndex = (currentIndex + 1) % cardCount;
+                        updateCarousel();
+                    });
+                }
+                
+                // Handle previous button click
+                if (prevButton) {
+                    prevButton.addEventListener('click', function() {
+                        currentIndex = (currentIndex - 1 + cardCount) % cardCount;
+                        updateCarousel();
+                    });
+                }
+                
+                function updateCarousel() {
+                    const translateValue = -currentIndex * 100;
+                    track.style.transform = `translateX(${translateValue}%)`;
+                }
             }
         });
     

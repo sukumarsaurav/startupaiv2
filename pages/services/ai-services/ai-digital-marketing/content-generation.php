@@ -15,15 +15,15 @@ require_once '../../../../components/header.php';
 
 <!-- Page Header -->
 <section class="page-header">
-    <div class="main-container">
-        <div class="header-content">
-            <div class="col-lg-6" data-aos="fade-right">
-                <h1 class="page-title"><?php echo $pageTitle; ?></h1>
+    <div class="content-container">
+        <div class="header-grid">
+            <div class="page-header-content" data-aos="fade-right">
+                <h1><?php echo $pageTitle; ?></h1>
                 <p class="lead"><?php echo $pageDescription; ?></p>
-                <a href="/pages/contact.php" class="btn btn-primary mt-3">Get Started</a>
+                <a href="/pages/contact.php" class="get-started-btn">Get Started</a>
             </div>
-            <div class="col-lg-6" data-aos="fade-left">
-                <img src="/assets/images/services/content-generation.svg" alt="<?php echo $serviceName; ?>" class="img-fluid">
+            <div class="page-header-image" data-aos="fade-left">
+                <img src="/assets/images/services/content-generation.svg" alt="<?php echo $serviceName; ?>" class="animate-float">
             </div>
         </div>
     </div>
@@ -31,332 +31,297 @@ require_once '../../../../components/header.php';
 
 <!-- Service Overview -->
 <section class="service-overview">
-    <div class="main-container">
-        <div class="overview-grid">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                <h2>Scale Your Content Marketing with AI</h2>
-                <p class="lead">Leverage advanced AI models to create high-quality, engaging content across multiple platforms while maintaining your brand's unique voice.</p>
+    <div class="content-container">
+        <div class="section-header">
+            <div class="service-overview-header" data-aos="fade-up">
+                <h2>Create Exceptional Content at Scale</h2>
+                <p class="lead">Leverage AI-powered content generation technology to produce high-quality, on-brand content across multiple channels with unprecedented efficiency.</p>
             </div>
         </div>
         
-        <div class="row mt-4">
-            <div class="col-md-6" data-aos="fade-up">
+        <div class="overview-grid">
+            <div class="service-overview-content" data-aos="fade-up">
                 <h3>The Content Challenge</h3>
-                <p>Creating consistent, quality content across multiple channels requires significant time, expertise, and resources. Most businesses struggle to maintain the content volume needed to stay competitive while ensuring each piece meets their quality standards.</p>
+                <p>Creating consistent, engaging content across multiple channels is increasingly difficult for businesses. The demand for personalized content is growing exponentially, while maintaining quality and brand consistency is resource-intensive and costly. Many businesses struggle to keep up with content demands, leading to inconsistent messaging, missed opportunities, and customer disengagement.</p>
             </div>
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <h3>The AI Content Solution</h3>
-                <p>Our AI content generation solutions combine advanced language models with your brand guidelines to produce relevant, engaging content at scale. This human-AI collaboration approach delivers the volume you need without sacrificing quality, voice, or authenticity.</p>
+            <div class="service-overview-content" data-aos="fade-up" data-aos-delay="100">
+                <h3>Our AI Content Solution</h3>
+                <p>Our AI content generation service combines advanced language models with custom training on your brand guidelines and audience preferences. This creates a powerful content engine that can produce human-quality content at scale while maintaining your unique voice and meeting specific business objectives. The result is content that engages your audience, drives conversions, and maintains brand consistency across all touchpoints.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Services -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                <h2>Our AI Content Generation Services</h2>
-                <p class="lead">Comprehensive content creation solutions powered by advanced AI</p>
+<section class="services-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="services-header" data-aos="fade-up">
+                <h2>Our Content Generation Services</h2>
+                <p class="lead">Comprehensive AI content solutions tailored to your brand</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-6 mb-4" data-aos="fade-up">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-blog fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">Blog & Article Generation</h3>
-                        <p>Produce in-depth, SEO-optimized blog posts and articles that establish thought leadership and drive organic traffic.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Keyword-optimized content</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Industry-specific expertise</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Custom tone and style matching</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Fact-checked information</li>
-                        </ul>
+        <div class="services-grid">
+            <div class="service-item" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
                     </div>
+                    <h3>Blog & Article Generation</h3>
+                    <p>Create search-optimized long-form content that establishes authority, drives organic traffic, and engages your target audience.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>SEO-optimized blog posts</li>
+                        <li><i class="fas fa-check"></i>Thought leadership articles</li>
+                        <li><i class="fas fa-check"></i>Industry news analysis</li>
+                        <li><i class="fas fa-check"></i>How-to guides & tutorials</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-hashtag fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">Social Media Content</h3>
-                        <p>Create engaging posts, captions, and conversation starters that resonate with your audience across different social platforms.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Platform-specific formatting</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Engagement-optimized messaging</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Trend-responsive content</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Hashtag strategy integration</li>
-                        </ul>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-share-alt"></i>
                     </div>
+                    <h3>Social Media Content</h3>
+                    <p>Generate platform-specific social media content that drives engagement, builds community, and reinforces your brand voice.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Platform-optimized posts</li>
+                        <li><i class="fas fa-check"></i>Scheduled content calendars</li>
+                        <li><i class="fas fa-check"></i>Engagement-focused captions</li>
+                        <li><i class="fas fa-check"></i>Trending topic integration</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-envelope-open-text fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">Email Marketing Copy</h3>
-                        <p>Develop compelling email campaigns with subject lines, body content, and CTAs that drive opens, clicks, and conversions.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Attention-grabbing subject lines</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Personalized messaging</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Conversion-focused structure</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>A/B testing variations</li>
-                        </ul>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-envelope"></i>
                     </div>
+                    <h3>Email Marketing Copy</h3>
+                    <p>Develop conversion-focused email content that compels action, nurtures leads, and strengthens customer relationships.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>High-converting subject lines</li>
+                        <li><i class="fas fa-check"></i>Segmented campaign content</li>
+                        <li><i class="fas fa-check"></i>Drip sequence development</li>
+                        <li><i class="fas fa-check"></i>Newsletter content creation</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-bullhorn fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">Ad & Landing Page Copy</h3>
-                        <p>Craft persuasive ad copy and landing page content that communicates your value proposition and drives conversions.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Benefit-focused messaging</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Platform-specific ad formats</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Persuasive call-to-actions</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Message-to-market match</li>
-                        </ul>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
                     </div>
+                    <h3>Ad & Landing Page Copy</h3>
+                    <p>Create high-performing advertising copy and landing page content that maximizes conversions and campaign ROI.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>PPC ad copy variations</li>
+                        <li><i class="fas fa-check"></i>Display ad messaging</li>
+                        <li><i class="fas fa-check"></i>Landing page optimization</li>
+                        <li><i class="fas fa-check"></i>CTA development & testing</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-file-alt fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">Product Descriptions</h3>
-                        <p>Create compelling, feature-benefit focused product descriptions that enhance your e-commerce conversion rates.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Benefit-driven messaging</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>SEO-optimized content</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Consistent brand voice</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Conversion-focused structure</li>
-                        </ul>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-box-open"></i>
                     </div>
+                    <h3>Product Descriptions</h3>
+                    <p>Generate compelling, benefit-focused product descriptions that highlight unique selling points and drive purchase decisions.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Benefit-driven copy</li>
+                        <li><i class="fas fa-check"></i>Category-optimized templates</li>
+                        <li><i class="fas fa-check"></i>SEO-enhanced descriptions</li>
+                        <li><i class="fas fa-check"></i>Technical-to-simple translation</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-pencil-alt fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">Content Enhancement & Optimization</h3>
-                        <p>Improve existing content with AI-powered editing, readability improvements, and SEO optimization to maximize performance.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Readability improvements</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>SEO enhancement</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Content expansion</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Tone and style adjustments</li>
-                        </ul>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
                     </div>
+                    <h3>Content Enhancement & Optimization</h3>
+                    <p>Improve existing content with AI-powered optimization for readability, engagement, SEO performance, and conversion rate.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Content readability scoring</li>
+                        <li><i class="fas fa-check"></i>Engagement enhancement</li>
+                        <li><i class="fas fa-check"></i>SEO optimization</li>
+                        <li><i class="fas fa-check"></i>Conversion improvement</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Our Content Process -->
-<section class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                <h2>Our AI Content Generation Process</h2>
+<!-- Content Process -->
+<section class="implementation-process">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="implementation-header" data-aos="fade-up">
+                <h2>Our Content Generation Process</h2>
                 <p class="lead">A systematic approach that blends AI capabilities with human expertise</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-3 mb-4" data-aos="fade-up">
-                <div class="process-card text-center h-100">
+        <div class="process-grid">
+            <div class="process-item" data-aos="fade-up">
+                <div class="process-card">
                     <div class="process-icon">
                         <span>1</span>
                     </div>
                     <h3>Strategy & Planning</h3>
-                    <p>We define your content goals, target audience, brand voice, and specific requirements to establish a strategic foundation.</p>
+                    <p>We begin by understanding your business objectives, target audience, and brand voice to develop a comprehensive content strategy.</p>
+                    <ul>
+                        <li>Audience analysis</li>
+                        <li>Content goal definition</li>
+                        <li>Brand voice documentation</li>
+                        <li>Content gap identification</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-card text-center h-100">
+            <div class="process-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="process-card">
                     <div class="process-icon">
                         <span>2</span>
                     </div>
                     <h3>AI Model Training</h3>
-                    <p>We train or fine-tune our AI models with your existing content and brand guidelines to capture your unique voice and style.</p>
+                    <p>We customize our AI models with your brand guidelines, preferred content styles, and industry-specific knowledge.</p>
+                    <ul>
+                        <li>Brand style guide integration</li>
+                        <li>Content example analysis</li>
+                        <li>Industry terminology mapping</li>
+                        <li>Custom model development</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-card text-center h-100">
+            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="process-card">
                     <div class="process-icon">
                         <span>3</span>
                     </div>
-                    <h3>Content Creation</h3>
-                    <p>Our AI systems generate initial content drafts based on your requirements and optimization goals.</p>
+                    <h3>Content Production</h3>
+                    <p>Our AI system generates initial content drafts that are then refined by expert editors to ensure quality and brand alignment.</p>
+                    <ul>
+                        <li>AI-powered draft generation</li>
+                        <li>Human editorial review</li>
+                        <li>Fact-checking</li>
+                        <li>Brand consistency verification</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-card text-center h-100">
+            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="process-card">
                     <div class="process-icon">
                         <span>4</span>
                     </div>
-                    <h3>Human Review & Refinement</h3>
-                    <p>Our content experts review, fact-check, and refine the AI-generated content to ensure quality and accuracy.</p>
+                    <h3>Optimization & Distribution</h3>
+                    <p>We optimize the content for specific channels and objectives, then support implementation across your marketing ecosystem.</p>
+                    <ul>
+                        <li>SEO enhancement</li>
+                        <li>Channel-specific formatting</li>
+                        <li>Performance tracking setup</li>
+                        <li>Distribution strategy support</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Business Benefits -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+<!-- AI Content Platform -->
+<section class="platforms-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="platforms-header" data-aos="fade-up">
+                <h2>Our AI Content Platform</h2>
+                <p class="lead">Cutting-edge technology for enterprise-grade content generation</p>
+            </div>
+        </div>
+        
+        <div class="platforms-grid">
+            <div class="platform-card" data-aos="fade-up">
+                <h3>Natural Language Generation</h3>
+                <ul>
+                    <li>Advanced GPT-4 integration</li>
+                    <li>Custom-trained language models</li>
+                    <li>Multi-language support</li>
+                    <li>Context-aware generation</li>
+                    <li>Tone & style customization</li>
+                </ul>
+            </div>
+            <div class="platform-card" data-aos="fade-up" data-aos-delay="100">
+                <h3>Content Intelligence</h3>
+                <ul>
+                    <li>Performance prediction</li>
+                    <li>Sentiment analysis</li>
+                    <li>Engagement scoring</li>
+                    <li>Readability optimization</li>
+                    <li>Competitor content analysis</li>
+                </ul>
+            </div>
+            <div class="platform-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>Content Workflow System</h3>
+                <ul>
+                    <li>Automated content briefs</li>
+                    <li>Approval workflows</li>
+                    <li>Version control</li>
+                    <li>Content calendar integration</li>
+                    <li>Multi-channel publishing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits -->
+<section class="benefits-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="benefits-header" data-aos="fade-up">
                 <h2>Business Benefits</h2>
-                <p class="lead">How AI content generation transforms your marketing operations</p>
+                <p class="lead">Transformative advantages of AI-powered content generation</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-tachometer-alt fa-3x text-primary"></i>
+        <div class="benefits-grid">
+            <div class="benefit-item" data-aos="fade-up">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
                     </div>
-                    <h3 class="h5">10x Production Speed</h3>
-                    <p>Dramatically reduce content creation time from days to hours, enabling rapid scaling of your content marketing.</p>
+                    <h3>10x Content Production Speed</h3>
+                    <p>Reduce content creation time from weeks to days or hours while maintaining quality and consistency.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-dollar-sign fa-3x text-primary"></i>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3 class="h5">50-80% Cost Reduction</h3>
-                    <p>Significantly lower your content production costs while maintaining or improving quality standards.</p>
+                    <h3>30% Higher Engagement</h3>
+                    <p>AI-optimized content typically generates 25-35% higher engagement rates across channels.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-chart-line fa-3x text-primary"></i>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
                     </div>
-                    <h3 class="h5">Enhanced SEO Performance</h3>
-                    <p>Improve search rankings with consistently optimized, keyword-rich content published at optimal frequency.</p>
+                    <h3>60% Cost Reduction</h3>
+                    <p>Significantly lower content production costs compared to traditional content creation methods.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-bullhorn fa-3x text-primary"></i>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bullseye"></i>
                     </div>
-                    <h3 class="h5">Expanded Channel Presence</h3>
-                    <p>Maintain active presence across more marketing channels simultaneously without increasing team size.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-sync-alt fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Rapid Testing & Iteration</h3>
-                    <p>Quickly create multiple content variations to test and optimize messaging for maximum performance.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-user-friends fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Team Productivity Boost</h3>
-                    <p>Free your marketing team from routine content creation to focus on strategy and high-value creative tasks.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Why Choose Us - Hardcoded Section -->
-<section class="why-choose-us py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                <h2>Why Choose Us for <?php echo $serviceName; ?></h2>
-                <p class="lead">Our AI content generation expertise delivers unmatched quality and efficiency</p>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-robot fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Advanced AI Models</h3>
-                    <p>We leverage the latest large language models optimized specifically for content creation, delivering higher quality than generic AI solutions.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-fingerprint fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Brand Voice Preservation</h3>
-                    <p>Our proprietary voice-matching technology ensures all AI-generated content maintains your unique brand identity and tone.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-search fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">SEO-Optimized Content</h3>
-                    <p>Every piece of content is created with search engine performance in mind, improving your visibility and organic traffic.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-user-check fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Human Quality Assurance</h3>
-                    <p>Our expert editors review all AI-generated content, ensuring accuracy, relevance, and alignment with your goals.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-tachometer-alt fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Rapid Turnaround</h3>
-                    <p>Our AI-powered workflow delivers high-quality content at a fraction of the time required by traditional content creation methods.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-chart-pie fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Content Performance Analytics</h3>
-                    <p>Track the impact of your AI-generated content with our comprehensive analytics dashboard and continuous optimization.</p>
+                    <h3>Scalable Personalization</h3>
+                    <p>Create thousands of personalized content variations to improve relevance and conversion rates.</p>
                 </div>
             </div>
         </div>
@@ -364,75 +329,83 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- CTA Section -->
-<section class="cta-section py-5 bg-primary text-white">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="mb-4">Ready to Transform Your Content Marketing?</h2>
-                <p class="lead mb-4">Contact us today to discuss how AI-powered content generation can scale your marketing efforts while reducing costs.</p>
-                <a href="/pages/contact.php" class="btn btn-light btn-lg">Schedule a Consultation</a>
-            </div>
+<section class="cta-section">
+    <div class="content-container">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Content Strategy?</h2>
+            <p class="lead">Let's create compelling, conversion-driven content at scale with AI.</p>
+            <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">Schedule a Consultation</a>
         </div>
     </div>
 </section>
 
 <!-- FAQ Section -->
-<section class="faq-section py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5">
-                <h2 class="faq-title">Frequently Asked Questions</h2>
-                <p class="faq-subtitle">Common questions about AI content generation</p>
+<section class="faq-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="faq-header">
+                <h2>Frequently Asked Questions</h2>
+                <p class="lead">Common questions about AI content generation</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <div class="faq-container">
-                    <div class="faq-item active">
-                        <div class="faq-question">
-                            <h3>How does AI-generated content compare to human-written content?</h3>
-                            <button class="toggle-btn"><span class="icon"></span></button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Modern AI content generation has evolved significantly, producing high-quality content that can be nearly indistinguishable from human-written material in many contexts. Today's advanced language models can capture nuanced tones, industry-specific terminology, and logical flow. However, we believe the optimal approach is a human-AI collaboration. Our process combines AI's efficiency and pattern recognition with human creativity, fact-checking, and strategic thinking. The AI generates initial drafts based on your guidelines and requirements, while our content experts review, refine, and enhance the output. This hybrid approach delivers the best of both worlds: AI's speed and scalability with human quality assurance and creative judgment. The result is content that maintains your brand voice and quality standards while being produced at a fraction of the time and cost of traditional methods. Many of our clients find that this AI-assisted content actually performs better than their previous human-only content in terms of engagement and conversion metrics.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Will AI-generated content be penalized by search engines?</h3>
-                            <button class="toggle-btn"><span class="icon"></span></button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Search engines like Google evaluate content based on its quality, relevance, and value to users—not on how it was created. Their guidelines focus on whether content provides unique value, demonstrates expertise, and satisfies user intent. Our AI content generation process is specifically designed to create high-quality, valuable content that aligns with these principles. We avoid mass-produced, low-quality content that might trigger search engine penalties. Instead, our approach ensures that all AI-generated content is factually accurate, properly researched, and enhanced by human experts. Each piece is customized to your specific audience and business goals, incorporating your unique insights and expertise. Additionally, we implement proper disclosure practices in accordance with evolving industry standards. The performance data from our clients consistently shows that properly produced AI-assisted content performs extremely well in search rankings when following SEO best practices. In fact, the consistency and optimization capabilities of our AI systems often lead to improved search performance compared to purely human-written content.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>How do you maintain our brand voice in AI-generated content?</h3>
-                            <button class="toggle-btn"><span class="icon"></span></button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Maintaining your unique brand voice is a critical aspect of our AI content generation process. We implement a multi-faceted approach to ensure consistency with your established tone and style. First, we conduct a comprehensive brand voice analysis, studying your existing content to identify distinctive patterns, terminology, and stylistic elements. Using these insights, we create detailed voice guidelines and examples that inform our AI systems. For clients with substantial existing content, we can fine-tune our language models on your specific materials, essentially teaching the AI to write in your brand's voice. For each new content project, we incorporate explicit style instructions and reference materials to guide the generation process. Our human editors, who become experts in your brand voice, review and refine all AI-generated content to ensure perfect alignment with your communication style. This process becomes increasingly efficient over time as our systems learn from feedback and refinements. The result is content that maintains consistent brand identity across all channels and formats, regardless of volume or frequency, helping strengthen your brand recognition and customer connection.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>What information do you need from us to create effective content?</h3>
-                            <button class="toggle-btn"><span class="icon"></span></button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>To create highly effective AI-generated content for your business, we need several key inputs that ensure relevance, accuracy, and strategic alignment. These include your core content strategy (goals, target audience, key messages), brand guidelines (voice, tone, style preferences, taboo topics/language), existing content examples that represent your ideal style and quality, subject matter expertise (industry insights, technical information, unique perspectives), specific content requirements (topics, keywords, formats, lengths), and performance data from previous content efforts if available. The more detailed information you provide, the better our AI systems can generate content that meets your specific needs. However, our process is flexible—if you're unsure about certain aspects, we can work with minimal input and refine the approach based on your feedback. We've designed a structured onboarding process that efficiently gathers this information through questionnaires, interviews, and document reviews, minimizing the time investment required from your team. After the initial setup phase, ongoing content requests can be submitted through a streamlined process, making content generation increasingly efficient as our understanding of your needs deepens.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>How quickly can you deliver content, and what volumes can you handle?</h3>
-                            <button class="toggle-btn"><span class="icon"></span></button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Our AI content generation platform offers exceptional speed and scalability compared to traditional content creation methods. For standard blog posts, articles, and similar content types, we typically deliver initial drafts within 24-48 hours after receiving complete requirements. For shorter formats like social media posts or product descriptions, turnaround can be as quick as same-day delivery. Rush options are available for time-sensitive projects. In terms of volume, our hybrid AI-human approach enables us to handle virtually any scale of content needs. We regularly produce hundreds of content pieces monthly for enterprise clients while maintaining quality and consistency. For context, where a traditional agency might deliver 5-10 blog posts monthly, we can comfortably produce 50+ without sacrificing quality. Our capacity scales linearly with minimal lag time, making us ideal for large-scale content initiatives like website launches, product catalog expansions, or multi-channel campaigns. We offer flexible engagement models from one-time projects to ongoing content subscriptions with guaranteed monthly deliverables. Throughout the process, our project management system provides real-time visibility into production status, allowing you to track progress and manage your content calendar effectively.</p>
-                        </div>
-                    </div>
+        <div class="faq-container">
+            <div class="faq-item active">
+                <div class="faq-question">
+                    <h3>How does AI content compare to human-written content?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Modern AI content systems like ours produce text that is increasingly indistinguishable from human-written content. Our approach combines advanced AI language models with human editorial oversight to ensure quality. The AI excels at generating consistent, on-brand content at scale, while our human experts provide strategic direction, fact-checking, and final quality assurance. This hybrid approach delivers the best of both worlds: the efficiency and scalability of AI with the creativity and judgment of human experts. In blind tests, content produced through our system is regularly rated as equivalent to or better than traditionally created content, particularly for structured formats like product descriptions, reports, and standard marketing materials.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do you ensure the AI content matches our brand voice?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>We use a comprehensive brand voice training process to customize our AI models to your specific style and tone. This includes analyzing your existing content, brand guidelines, and competitor positioning to create a detailed voice profile. We then fine-tune our language models using this profile, training them to generate content that consistently reflects your brand's unique characteristics. The system continuously learns from feedback, improving its alignment with your voice over time. Additionally, our human editors review AI-generated content to ensure brand consistency before delivery. This rigorous approach ensures that all content—whether for your website, social media, or email campaigns—maintains a consistent voice that authentically represents your brand across all channels and content types.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What types of content work best with AI generation?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>AI content generation excels across many formats but shows particular strength in: product descriptions (creating hundreds or thousands of unique, benefit-focused descriptions), blog posts and articles (generating informational content on specified topics with proper structure), email marketing (crafting engaging subject lines and body content optimized for conversion), social media posts (creating platform-specific content that drives engagement), ad copy (developing multiple variations for testing), and SEO content (creating search-optimized content at scale). The technology is most effective for content that follows consistent patterns or requires scale. For highly creative conceptual work, thought leadership representing specific individual perspectives, or complex technical content requiring deep specialized knowledge, we recommend a collaborative approach where AI assists human experts rather than generating content independently.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do you handle factual accuracy in AI-generated content?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Factual accuracy is paramount in our AI content generation process. We implement multiple safeguards to ensure all information is correct and reliable. First, we train our models with verified, industry-specific information relevant to your business. For content requiring factual claims, we implement a comprehensive fact-checking protocol that includes: source documentation requirements, where specific facts must reference authoritative sources; human expert review, where subject matter experts verify technical information; automated fact-checking tools that flag potential inaccuracies for review; and client review processes for final verification of industry-specific details. We're transparent about the limitations of AI and use appropriate human oversight to ensure all content meets the highest standards of accuracy. This is especially important for regulated industries or technical subjects where precision is critical.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is the process for scaling content across multiple channels?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Our multi-channel content scaling approach begins with creating a centralized content strategy that defines core messaging and objectives. We then develop channel-specific templates that adapt this core message to the unique requirements of each platform—whether that's website content, social media, email, paid advertising, or other channels. Our AI system generates base content following these templates, which is then automatically optimized for each channel's specific format, length, tone, and audience expectations. The system can create dozens of variations optimized for different platforms from a single content brief, ensuring consistency of message while respecting the conventions of each channel. Our content workflow system manages the entire process, from initial generation through approval and publishing, with robust analytics that track performance across channels to continuously refine and improve your content strategy.</p>
                 </div>
             </div>
         </div>

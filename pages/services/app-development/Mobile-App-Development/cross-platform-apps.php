@@ -1,275 +1,355 @@
 <?php
-// Define base path to allow direct script access
 define('BASEPATH', true);
+require_once '../../../../includes/config.php';
 
-require_once '../../../../config/database.php';
-require_once '../../../../config/why-hire-us.php';
-require_once '../../../../assets/templates/why-hire-us-section.php';
+// Initialize the database connection
+$database = new Database();
+$db = $database->getConnection();
 
-// Get Why Hire Us content for Cross-Platform Apps
-$why_hire_us = getWhyHireUsContent('cross-platform-apps');
+// SEO Data
+$pageTitle = "Cross-Platform App Development Services | StartupAI";
+$pageDescription = "Build efficient and cost-effective mobile applications that work seamlessly across multiple platforms. Our cross-platform development services help you reach wider audiences with a single codebase.";
+$seo_data = [
+    'description' => $pageDescription,
+    'keywords' => 'cross-platform development, react native, flutter, ionic, mobile app development, hybrid apps, multi-platform apps, cross-platform frameworks'
+];
 
-require_once '../../../../components/header.php';
+include_once '../../../../components/header.php';
 ?>
 
-<!-- Page Header -->
-<header class="page-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="fw-bold" data-aos="fade-up">Cross-Platform App Development</h1>
-                <p class="lead" data-aos="fade-up" data-aos-delay="100">
-                    Build once, deploy everywhere with Flutter and React Native solutions
-                </p>
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="header-grid">
+                    <div class="page-header-content" data-aos="fade-right">
+                        <h1>Cross-Platform App Development</h1>
+                        <p class="lead">Create powerful applications that work seamlessly across iOS, Android, and other platforms with a single codebase.</p>
+                        <a href="/pages/contact.php" class="get-started-btn">Start Your Project</a>
+                    </div>
+                    <div class="page-header-image" data-aos="fade-left">
+                        <img src="/assets/images/services/cross-platform-development.svg" alt="Cross-Platform App Development" class="animate-float">
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
+        </section>
 
-<!-- Service Overview -->
-<section class="service-overview py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-                <img src="/assets/images/services/cross-platform-apps.svg" alt="Cross-Platform App Development" class="img-fluid rounded shadow">
+        <!-- Service Overview -->
+        <section class="service-overview">
+            <div class="container">
+                <div class="section-header">
+                    <div class="service-overview-header" data-aos="fade-up">
+                        <h2>Expert Cross-Platform Development Services</h2>
+                        <p class="lead">We leverage modern cross-platform frameworks to build high-performance applications that provide native-like experiences across all platforms.</p>
+                    </div>
+                </div>
+                
+                <div class="overview-grid">
+                    <div class="service-overview-content" data-aos="fade-up">
+                        <h3>Code Once, Run Everywhere</h3>
+                        <p>Our cross-platform approach allows you to maintain a single codebase while delivering consistent experiences across iOS, Android, and web platforms.</p>
+                    </div>
+                    <div class="service-overview-content" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Cost-Effective Solutions</h3>
+                        <p>Reduce development time and costs while maintaining high quality and performance with our efficient cross-platform development approach.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6" data-aos="fade-left">
-                <h2 class="mb-4">Efficient Cross-Platform Development</h2>
-                <p>
-                    Our cross-platform app development services allow you to reach both iOS and Android users with a single codebase, saving time and development costs. We utilize cutting-edge frameworks like Flutter and React Native to create high-performance applications that deliver a near-native experience while maintaining consistent functionality across platforms.
-                </p>
-                <div class="features mt-4">
-                    <div class="feature d-flex align-items-start mb-3">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-mobile-alt text-primary"></i>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="services-header" data-aos="fade-up">
+                        <h2>Our Cross-Platform Development Services</h2>
+                        <p class="lead">Comprehensive cross-platform solutions tailored to your business needs</p>
+                    </div>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-item" data-aos="fade-up">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>React Native Development</h3>
+                            <p>Build native-like applications using React Native for optimal performance and user experience.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Native UI components</li>
+                                <li><i class="fas fa-check"></i> Hot reloading</li>
+                                <li><i class="fas fa-check"></i> Native APIs access</li>
+                                <li><i class="fas fa-check"></i> Custom modules</li>
+                            </ul>
                         </div>
-                        <div>
-                            <h5>Flutter Development</h5>
-                            <p>Beautiful, natively compiled applications built with Google's UI toolkit for any screen.</p>
+                    </div>
+                    
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Flutter Development</h3>
+                            <p>Create beautiful, natively compiled applications using Flutter's rich widget library.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Material Design</li>
+                                <li><i class="fas fa-check"></i> Custom animations</li>
+                                <li><i class="fas fa-check"></i> Platform-specific styling</li>
+                                <li><i class="fas fa-check"></i> High performance</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="feature d-flex align-items-start mb-3">
-                        <div class="feature-icon me-3">
-                            <i class="fab fa-react text-primary"></i>
-                        </div>
-                        <div>
-                            <h5>React Native Solutions</h5>
-                            <p>High-performance apps with native UI components using Facebook's popular framework.</p>
-                        </div>
-                    </div>
-                    <div class="feature d-flex align-items-start mb-3">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-sync text-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Code Reusability</h5>
-                            <p>Shared codebase across platforms for faster development and consistent user experience.</p>
-                        </div>
-                    </div>
-                    <div class="feature d-flex align-items-start">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-clock text-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Rapid Development</h5>
-                            <p>Shorter time-to-market with hot reload features and efficient development workflows.</p>
+                    
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                            <h3>Progressive Web Apps</h3>
+                            <p>Develop web applications that provide app-like experiences across all platforms.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Offline functionality</li>
+                                <li><i class="fas fa-check"></i> Push notifications</li>
+                                <li><i class="fas fa-check"></i> App-like interface</li>
+                                <li><i class="fas fa-check"></i> Fast loading</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Why Hire Us Section -->
-<?php renderWhyHireUs($why_hire_us['service_name'], $why_hire_us['reasons']); ?>
-
-<!-- Process -->
-<section class="process-section py-5 bg-light">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Our Cross-Platform Development Process</h2>
-                <p class="section-description">
-                    A systematic approach to building efficient multi-platform applications
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-lightbulb fa-3x text-primary"></i>
+        <!-- Implementation Process -->
+        <section class="implementation-process">
+            <div class="container">
+                <div class="section-header">
+                    <div class="implementation-header" data-aos="fade-up">
+                        <h2>Our Development Process</h2>
+                        <p class="lead">A systematic approach to delivering high-quality cross-platform applications</p>
                     </div>
-                    <h4>Discovery</h4>
-                    <p>We analyze your business requirements and determine the optimal cross-platform strategy and framework choice.</p>
                 </div>
-            </div>
-            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-pencil-ruler fa-3x text-primary"></i>
+                
+                <div class="process-grid">
+                    <div class="process-item" data-aos="fade-up">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>1</span>
+                            </div>
+                            <h3>Requirements Analysis</h3>
+                            <p>Understand your needs and choose the most suitable cross-platform framework.</p>
+                        </div>
                     </div>
-                    <h4>UI/UX Design</h4>
-                    <p>Our designers create beautiful interfaces that respect platform guidelines while maintaining brand consistency.</p>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-code fa-3x text-primary"></i>
+                    
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>2</span>
+                            </div>
+                            <h3>UI/UX Design</h3>
+                            <p>Create platform-specific designs while maintaining consistency across devices.</p>
+                        </div>
                     </div>
-                    <h4>Development</h4>
-                    <p>We build your application with clean, maintainable code and robust architecture for both platforms.</p>
-                </div>
-            </div>
-            <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-rocket fa-3x text-primary"></i>
+                    
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>3</span>
+                            </div>
+                            <h3>Development & Testing</h3>
+                            <p>Build and test your app across multiple platforms and devices.</p>
+                        </div>
                     </div>
-                    <h4>Testing & Deployment</h4>
-                    <p>Thorough cross-platform testing followed by deployment to both App Store and Google Play.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Benefits -->
-<section class="benefits-section py-5">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Benefits of Cross-Platform Development</h2>
-                <p class="section-description">
-                    Why businesses choose cross-platform for their mobile app strategy
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-dollar-sign fa-2x text-primary"></i>
+                    
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>4</span>
+                            </div>
+                            <h3>Deployment & Support</h3>
+                            <p>Launch your app on all target platforms and provide ongoing maintenance.</p>
+                        </div>
                     </div>
-                    <h4>Cost Efficiency</h4>
-                    <p>Significantly reduced development and maintenance costs compared to building separate native applications.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-tachometer-alt fa-2x text-primary"></i>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="platforms-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="platforms-header" data-aos="fade-up">
+                        <h2>Technologies We Use</h2>
+                        <p class="lead">Latest cross-platform frameworks and tools</p>
                     </div>
-                    <h4>Faster Time-to-Market</h4>
-                    <p>Simultaneous development for multiple platforms means your app reaches users more quickly.</p>
                 </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-users fa-2x text-primary"></i>
+                
+                <div class="platforms-grid">
+                    <div class="platform-item" data-aos="fade-up">
+                        <div class="platform-card">
+                            <h3>Frameworks</h3>
+                            <ul>
+                                <li>React Native</li>
+                                <li>Flutter</li>
+                                <li>Ionic</li>
+                                <li>Xamarin</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h4>Wider Audience Reach</h4>
-                    <p>Launch on both major platforms at once to maximize your potential user base from day one.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Technologies -->
-<section class="technologies-section py-5 bg-light">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Cross-Platform Frameworks We Excel In</h2>
-                <p class="section-description">
-                    Cutting-edge technologies for efficient multi-platform development
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 mb-4" data-aos="fade-up">
-                <div class="tech-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="tech-icon mb-3">
-                        <i class="fas fa-feather-alt fa-2x text-primary"></i>
+                    
+                    <div class="platform-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="platform-card">
+                            <h3>Development Tools</h3>
+                            <ul>
+                                <li>VS Code</li>
+                                <li>Android Studio</li>
+                                <li>Xcode</li>
+                                <li>Git</li>
+                                <li>Firebase</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h4>Flutter</h4>
-                    <p>Google's UI toolkit for building natively compiled applications with expressive, beautiful UIs. Flutter offers exceptional performance with a rich set of customizable widgets and a hot reload feature that accelerates development.</p>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="tech-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="tech-icon mb-3">
-                        <i class="fab fa-react fa-2x text-primary"></i>
+                    
+                    <div class="platform-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="platform-card">
+                            <h3>Testing Tools</h3>
+                            <ul>
+                                <li>Jest</li>
+                                <li>Detox</li>
+                                <li>Flutter Test</li>
+                                <li>Appium</li>
+                                <li>TestFlight</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h4>React Native</h4>
-                    <p>Facebook's framework that combines the best parts of native development with React's powerful JavaScript library. React Native allows for building applications with a native feel using JavaScript and accessing platform-specific APIs when needed.</p>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- CTA -->
-<section class="cta-section py-5 bg-primary text-white">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8 mb-4 mb-lg-0" data-aos="fade-right">
-                <h2 class="mb-3">Ready to Launch on Multiple Platforms?</h2>
-                <p class="lead mb-0">
-                    Let's build your cross-platform app and reach more users with less development time.
-                </p>
-            </div>
-            <div class="col-lg-4 text-lg-end" data-aos="fade-left">
-                <a href="/contact" class="btn btn-light btn-lg">Get Started</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="faq-section">
-    <div class="container">
-        <div class="faq-header">
-            <h2 class="faq-title">Cross-Platform App Development FAQ's</h2>
-            <h3 class="faq-subtitle">Have Any Questions?</h3>
-        </div>
-
-        <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq-question">
-                    Is Flutter or React Native better for my app?
-                    <span class="faq-plus-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    <p>Both frameworks have their strengths. Flutter excels in UI consistency and performance with its compiled code and widget library. React Native is great if you already have React expertise or need deeper integration with native modules. During our consultation, we'll evaluate your specific needs, performance requirements, and team expertise to recommend the best framework for your project.</p>
+        <!-- Benefits Section -->
+        <section class="benefits-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="benefits-header" data-aos="fade-up">
+                        <h2>Why Choose Cross-Platform Development</h2>
+                        <p class="lead">Advantages of cross-platform app development</p>
+                    </div>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item" data-aos="fade-up">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <h3>Cost-Effective</h3>
+                            <p>Reduce development costs with a single codebase for multiple platforms.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>Faster Time-to-Market</h3>
+                            <p>Launch your app on multiple platforms simultaneously with shorter development cycles.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                            <h3>Easy Maintenance</h3>
+                            <p>Maintain and update your app across all platforms from a single codebase.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    Will my cross-platform app look and feel like a native app?
-                    <span class="faq-plus-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    <p>Modern cross-platform frameworks like Flutter and React Native can deliver experiences that are nearly indistinguishable from native apps for most use cases. They provide access to native UI components and device features, allowing us to create responsive, smooth applications that adhere to platform-specific design guidelines. For extremely performance-intensive applications like 3D games, native development might still have an edge.</p>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Build Your Cross-Platform App?</h2>
+                    <p class="lead">Let's discuss how we can help you reach users across all platforms efficiently.</p>
+                    <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">
+                        Schedule a Consultation
+                    </a>
                 </div>
             </div>
+        </section>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    How much can I save with cross-platform development?
-                    <span class="faq-plus-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    <p>Cross-platform development typically reduces development costs by 30-40% compared to building separate native apps for iOS and Android. This efficiency comes from maintaining a single codebase, streamlined testing processes, and simplified maintenance and updates. The exact savings depend on your application's complexity and the extent of platform-specific customizations required.</p>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="faq-header">
+                        <h2>Frequently Asked Questions</h2>
+                        <p class="lead">Common questions about cross-platform app development</p>
+                    </div>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <h3>What's the difference between native and cross-platform development?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Native development involves building separate apps for each platform using platform-specific languages and tools, while cross-platform development uses a single codebase to create apps that work on multiple platforms. Cross-platform development is generally more cost-effective and faster to market, though it may have some performance trade-offs compared to native apps.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Which cross-platform framework should I choose?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The choice of framework depends on your specific needs. React Native is great for apps requiring native functionality and has a large community. Flutter offers excellent performance and beautiful UIs. We'll help you choose the best framework based on your requirements, budget, and timeline.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do you ensure consistent performance across platforms?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We implement platform-specific optimizations, use efficient coding practices, and thoroughly test on multiple devices. Our development process includes performance monitoring, optimization techniques, and platform-specific adjustments to ensure smooth operation across all target platforms.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you provide post-launch support for all platforms?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we provide comprehensive post-launch support including bug fixes, performance optimization, and updates across all platforms. Our team monitors app performance, user feedback, and platform updates to ensure your app continues to work smoothly on all devices.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<?php require_once '../../../../components/footer.php'; ?> 
+<?php
+include_once '../../../../components/footer.php';
+?>
+
+    <!-- JavaScript libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/services.js"></script>
+</body>
+</html>

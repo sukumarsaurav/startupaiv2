@@ -2,461 +2,488 @@
 // Define base path to allow direct script access
 define('BASEPATH', true);
 
-// Use the main config.php instead of config/database.php
 require_once '../../../../includes/config.php';
 
-// Initialize the database connection
-$database = new Database();
-$db = $database->getConnection();
+// Page specific content
+$pageTitle = "Legal Website Design Services | StartupAI";
+$pageDescription = "Create authoritative, client-focused law firm websites that establish credibility and generate qualified leads. Professional website design for attorneys, law firms, and legal service providers.";
+$serviceName = "Legal Website Design";
+$serviceSlug = "legal-websites";
+
+// SEO Data
+$seo_data = [
+    'description' => $pageDescription,
+    'keywords' => 'legal website design, law firm website development, attorney websites, lawyer website design, legal practice websites, law office web design, legal service websites, legal case management portals'
+];
 
 require_once '../../../../components/header.php';
 ?>
 
-<!-- Page Header -->
-<header class="page-header">
-    <div class="content-container">
-        <div class="content-row">
-            <div class="content-col full-width text-align-center">
-                <h1 class="font-weight-bold" data-aos="fade-up">Law Firm & Legal Website Design</h1>
-                <p class="subtitle" data-aos="fade-up" data-aos-delay="100">
-                    Professional, authoritative websites that establish trust and generate quality client inquiries
-                </p>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="content-container">
+                <div class="header-grid">
+                    <div class="page-header-content" data-aos="fade-right">
+                        <h1>Legal Website Design</h1>
+                        <p class="lead">Create authoritative, client-centered websites that establish credibility and convert visitors into clients</p>
+                        <a href="/pages/contact.php" class="get-started-btn">
+                            Start Your Legal Project
+                        </a>
+                    </div>
+                    <div class="page-header-image" data-aos="fade-left">
+                        <img src="/assets/images/services/legal-website-design.svg" alt="Legal Website Design" class="animate-float">
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
+        </section>
 
-<!-- Service Overview -->
-<section class="service-overview padding-y-5">
-    <div class="content-container">
-        <div class="content-row align-items-center">
-            <div class="content-col half margin-bottom-responsive" data-aos="fade-right">
-                <img src="/assets/images/services/legal-websites.svg" alt="Law Firm Website Design" class="img-fluid rounded box-shadow">
+        <!-- Service Overview -->
+        <section class="service-overview">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="service-overview-header" data-aos="fade-up">
+                        <h2>Expert Legal Website Design Services</h2>
+                        <p class="lead">We create sophisticated legal websites that combine professional credibility with user-focused design to attract qualified clients and grow your practice.</p>
+                    </div>
+                </div>
+                
+                <div class="overview-grid">
+                    <div class="service-overview-content" data-aos="fade-up">
+                        <h3>Professional Authority & Digital Excellence</h3>
+                        <p>Our team specializes in developing websites for law firms and legal professionals that establish authority while offering intuitive experiences for potential clients. We understand the unique challenges of the legal industry – from strict ethical guidelines to clear communication of complex services and practice areas.</p>
+                        <p>Every legal website we design is built with meticulous attention to professional presentation, credibility signals, and lead generation while incorporating the latest web technologies for optimal performance and client engagement.</p>
+                    </div>
+                    <div class="service-overview-content" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Client-Centered Design Philosophy</h3>
+                        <p>We create legal websites with a focus on the client journey, developing user experiences that address anxieties, answer critical questions, and provide clear pathways to contact. Our client-first approach ensures that visitors can easily find practice areas, understand your expertise, and take confident next steps.</p>
+                        <p>By combining legal industry understanding with UX best practices, we develop digital experiences that build trust, differentiate your practice, and ultimately convert qualified prospects into consultations and clients.</p>
+                    </div>
+                </div>
             </div>
-            <div class="content-col half" data-aos="fade-left">
-                <h2 class="margin-bottom-4">Law Firm & Legal Website Design Services</h2>
-                <p>
-                    Our specialized legal website design services help law firms, attorneys, and legal service providers create professional digital platforms that convey expertise, build trust, and generate qualified client leads. We develop authoritative, client-focused websites that effectively communicate your practice areas, highlight attorney credentials, and provide a clear path for potential clients to engage with your firm.
-                </p>
-                <div class="features margin-top-4">
-                    <div class="feature-item display-flex align-items-start margin-bottom-3">
-                        <div class="feature-icon margin-right-3">
-                            <i class="fas fa-gavel color-primary"></i>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="services-header" data-aos="fade-up">
+                        <h2>Our Legal Website Design Services</h2>
+                        <p class="lead">Comprehensive web solutions tailored to the unique needs of legal professionals</p>
+                    </div>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-item" data-aos="fade-up">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h3>Law Firm Websites</h3>
+                            <p>Professional websites for law firms of all sizes that establish authority, showcase expertise, and generate qualified client inquiries.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Attorney profiles & credentials</li>
+                                <li><i class="fas fa-check"></i> Practice area pages</li>
+                                <li><i class="fas fa-check"></i> Case results & testimonials</li>
+                                <li><i class="fas fa-check"></i> Content marketing strategy</li>
+                                <li><i class="fas fa-check"></i> Lead capture optimization</li>
+                            </ul>
                         </div>
-                        <div>
-                            <h5>Professional Authority</h5>
-                            <p>Design that conveys credibility, experience, and legal expertise to potential clients.</p>
+                    </div>
+                    
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h3>Solo Practitioner Sites</h3>
+                            <p>Personalized websites for individual attorneys that highlight unique expertise and facilitate direct client connections.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Personal branding</li>
+                                <li><i class="fas fa-check"></i> Niche specialization highlight</li>
+                                <li><i class="fas fa-check"></i> Reputation management</li>
+                                <li><i class="fas fa-check"></i> Client scheduling integration</li>
+                                <li><i class="fas fa-check"></i> Mobile-optimized design</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="feature-item display-flex align-items-start margin-bottom-3">
-                        <div class="feature-icon margin-right-3">
-                            <i class="fas fa-user-plus color-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Lead Generation</h5>
-                            <p>Strategic contact forms and call-to-actions designed to convert visitors into consultations.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item display-flex align-items-start margin-bottom-3">
-                        <div class="feature-icon margin-right-3">
-                            <i class="fas fa-search color-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Legal SEO</h5>
-                            <p>Industry-specific search optimization to attract qualified clients seeking your services.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item display-flex align-items-start">
-                        <div class="feature-icon margin-right-3">
-                            <i class="fas fa-lock color-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Privacy & Compliance</h5>
-                            <p>Ethical compliance with legal advertising rules and client confidentiality standards.</p>
+                    
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-gavel"></i>
+                            </div>
+                            <h3>Client Portal Integration</h3>
+                            <p>Secure client communication and case management platforms that enhance service delivery and client satisfaction.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Secure messaging system</li>
+                                <li><i class="fas fa-check"></i> Document sharing</li>
+                                <li><i class="fas fa-check"></i> Case status tracking</li>
+                                <li><i class="fas fa-check"></i> E-signature integration</li>
+                                <li><i class="fas fa-check"></i> Billing & payment processing</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Why Hire Us Section - Hard-coded version -->
-<section class="legal-why-hire-us padding-y-5 bg-light">
-    <div class="content-container">
-        <div class="content-row margin-bottom-5">
-            <div class="content-col full-width text-align-center" data-aos="fade-up">
-                <h2 class="section-title">Why Choose Us for Legal Website Design</h2>
-                <p class="section-description">
-                    Our expertise makes us the ideal partner for your law firm website
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-gavel fa-2x color-primary"></i>
+        <!-- Implementation Process -->
+        <section class="implementation-process">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="implementation-header" data-aos="fade-up">
+                        <h2>Our Legal Website Design Process</h2>
+                        <p class="lead">A strategic approach to creating authoritative, high-converting legal websites</p>
                     </div>
-                    <h4>Legal Industry Knowledge</h4>
-                    <p>Our team understands the specific needs of law firms, legal ethics requirements, and how to effectively market different practice areas.</p>
+                </div>
+                
+                <div class="process-grid">
+                    <div class="process-item" data-aos="fade-up">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>1</span>
+                            </div>
+                            <h3>Discovery & Strategy</h3>
+                            <p>We begin with a thorough assessment of your legal practice needs, target clients, and competitive landscape:</p>
+                            <ul>
+                                <li>Practice analysis and differentiator identification</li>
+                                <li>Target client persona development</li>
+                                <li>Competitive legal market research</li>
+                                <li>Practice area prioritization</li>
+                                <li>Ethical compliance planning</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>2</span>
+                            </div>
+                            <h3>Design & UX Planning</h3>
+                            <p>Our designers create professional interfaces that establish authority and guide potential clients toward conversion:</p>
+                            <ul>
+                                <li>Information architecture for practice areas</li>
+                                <li>Attorney bio presentation strategy</li>
+                                <li>Visual design with professional legal aesthetics</li>
+                                <li>Client journey mapping and conversion paths</li>
+                                <li>Accessibility compliance for ADA standards</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>3</span>
+                            </div>
+                            <h3>Development & Content</h3>
+                            <p>We build feature-rich legal websites with persuasive content and client-focused functionality:</p>
+                            <ul>
+                                <li>Responsive development for all devices</li>
+                                <li>SEO-optimized content for practice areas</li>
+                                <li>Case result and testimonial presentation</li>
+                                <li>Lead capture form implementation</li>
+                                <li>Legal CRM and practice management integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>4</span>
+                            </div>
+                            <h3>Launch & Optimization</h3>
+                            <p>We ensure your legal website performs optimally and drives client acquisition:</p>
+                            <ul>
+                                <li>Compliance with bar association guidelines</li>
+                                <li>Consultation request form testing</li>
+                                <li>Local SEO implementation</li>
+                                <li>Analytics and conversion tracking</li>
+                                <li>Content marketing strategy deployment</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-handshake fa-2x color-primary"></i>
-                    </div>
-                    <h4>Trust-Building Design</h4>
-                    <p>We create websites that instantly establish credibility through professional aesthetics, thoughtful content organization, and attorney-focused presentation.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-search fa-2x color-primary"></i>
-                    </div>
-                    <h4>Legal SEO Expertise</h4>
-                    <p>Our strategies target practice-specific keywords and local search terms to help your firm be found by potential clients searching for your services.</p>
-                </div>
-            </div>
-        </div>
-        <div class="content-row margin-top-4">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-user-plus fa-2x color-primary"></i>
-                    </div>
-                    <h4>Conversion-Focused</h4>
-                    <p>We design strategic conversion points throughout your site to turn visitors into consultations and qualified case inquiries.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-balance-scale fa-2x color-primary"></i>
-                    </div>
-                    <h4>Ethics Compliance</h4>
-                    <p>We ensure your website adheres to all relevant legal advertising rules and bar association requirements for attorney websites.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-mobile-alt fa-2x color-primary"></i>
-                    </div>
-                    <h4>Mobile-Optimized</h4>
-                    <p>We create responsive legal websites that provide an exceptional experience for potential clients regardless of the device they're using.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Process -->
-<section class="process-section padding-y-5 bg-light">
-    <div class="content-container">
-        <div class="content-row margin-bottom-5">
-            <div class="content-col full-width text-align-center" data-aos="fade-up">
-                <h2 class="section-title">Our Legal Website Design Process</h2>
-                <p class="section-description">
-                    A methodical approach to creating effective law firm websites
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="content-col one-fourth margin-bottom-responsive" data-aos="fade-up">
-                <div class="process-step text-align-center padding-4 height-100 bg-white rounded box-shadow-sm">
-                    <div class="process-icon margin-bottom-3">
-                        <i class="fas fa-balance-scale fa-3x color-primary"></i>
+        <!-- Compliance Section -->
+        <section class="compliance-section">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="compliance-header" data-aos="fade-up">
+                        <h2>Legal Ethics & Compliance</h2>
+                        <p class="lead">Our legal websites adhere to professional standards and bar association requirements</p>
                     </div>
-                    <h4>Practice Analysis</h4>
-                    <p>We research your firm's specialties, target clients, and competitive landscape to inform our strategy.</p>
+                </div>
+                
+                <div class="content-row">
+                    <div class="content-col one-half margin-bottom-4" data-aos="fade-up">
+                        <div class="compliance-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                            <div class="compliance-icon margin-bottom-3">
+                                <i class="fas fa-gavel fa-2x color-primary"></i>
+                            </div>
+                            <h4>Advertising Rules Compliance</h4>
+                            <ul class="compliance-list">
+                                <li><i class="fas fa-check text-primary me-2"></i>State bar advertising guideline adherence</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Proper disclaimer implementation</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Ethical representation of case results</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Testimonial usage compliance</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Specialization claim governance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-col one-half margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="compliance-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                            <div class="compliance-icon margin-bottom-3">
+                                <i class="fas fa-shield-alt fa-2x color-primary"></i>
+                            </div>
+                            <h4>Client Confidentiality & Security</h4>
+                            <ul class="compliance-list">
+                                <li><i class="fas fa-check text-primary me-2"></i>Secure contact form implementation</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Client-attorney privilege preservation</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Data protection & encryption</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Secure client portal development</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Privacy policy customization</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="content-col one-fourth margin-bottom-responsive" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-step text-align-center padding-4 height-100 bg-white rounded box-shadow-sm">
-                    <div class="process-icon margin-bottom-3">
-                        <i class="fas fa-sitemap fa-3x color-primary"></i>
-                    </div>
-                    <h4>Content Architecture</h4>
-                    <p>We organize your practice areas, attorney profiles, and resources in a logical, client-focused structure.</p>
-                </div>
-            </div>
-            <div class="content-col one-fourth margin-bottom-responsive" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-step text-align-center padding-4 height-100 bg-white rounded box-shadow-sm">
-                    <div class="process-icon margin-bottom-3">
-                        <i class="fas fa-pencil-ruler fa-3x color-primary"></i>
-                    </div>
-                    <h4>Professional Design</h4>
-                    <p>We create trustworthy visual aesthetics that align with your firm's brand and convey legal authority.</p>
-                </div>
-            </div>
-            <div class="content-col one-fourth" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-step text-align-center padding-4 height-100 bg-white rounded box-shadow-sm">
-                    <div class="process-icon margin-bottom-3">
-                        <i class="fas fa-bullseye fa-3x color-primary"></i>
-                    </div>
-                    <h4>Conversion Optimization</h4>
-                    <p>We implement strategic contact points and case intake forms to maximize quality client inquiries.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Website Types -->
-<section class="website-types-section padding-y-5">
-    <div class="content-container">
-        <div class="content-row margin-bottom-5">
-            <div class="content-col full-width text-align-center" data-aos="fade-up">
-                <h2 class="section-title">Legal Website Types</h2>
-                <p class="section-description">
-                    Tailored solutions for different legal practices and specialties
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-building fa-2x color-primary"></i>
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="features-header" data-aos="fade-up">
+                        <h2>Essential Features for Legal Websites</h2>
+                        <p class="lead">Key components that enhance credibility and streamline client acquisition</p>
                     </div>
-                    <h4>Large Law Firm Websites</h4>
-                    <p>Comprehensive platforms for multi-practice law firms featuring extensive attorney profiles, detailed practice area descriptions, global office locations, and sophisticated case management systems.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item" data-aos="fade-up">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <h3>Attorney Profiles</h3>
+                            <p>Compelling attorney bios that highlight expertise, education, achievements, and personal approach to client representation. Includes professional photography and video introductions.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>Case Results & Testimonials</h3>
+                            <p>Ethically presented case outcomes and client testimonials that demonstrate track record and client satisfaction, with appropriate disclaimers and compliance with bar rules.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-file-signature"></i>
+                            </div>
+                            <h3>Client Intake Forms</h3>
+                            <p>Secure, user-friendly intake forms that gather essential case information while establishing attorney-client relationship parameters and confidentiality.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3>Live Chat Integration</h3>
+                            <p>Professional live chat functionality with ethical disclaimers that enables potential clients to ask questions and schedule consultations outside of office hours.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-user-tie fa-2x color-primary"></i>
-                    </div>
-                    <h4>Solo & Boutique Practice Sites</h4>
-                    <p>Focused websites for specialized attorneys and small firms that highlight niche expertise, personal service advantages, and individual attorney credentials to attract specific client types.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-car-crash fa-2x color-primary"></i>
-                    </div>
-                    <h4>Personal Injury Law Sites</h4>
-                    <p>Conversion-optimized websites for injury attorneys featuring case results, testimonials, free consultation offers, and clear information about contingency fee structures to drive potential client inquiries.</p>
-                </div>
-            </div>
-        </div>
-        <div class="content-row margin-top-4">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-landmark fa-2x color-primary"></i>
-                    </div>
-                    <h4>Corporate & Business Law Websites</h4>
-                    <p>Sophisticated platforms for business-focused firms showcasing transactional expertise, industry knowledge, and business-oriented solutions for corporate clients and entrepreneurs.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-users fa-2x color-primary"></i>
-                    </div>
-                    <h4>Family & Divorce Law Sites</h4>
-                    <p>Compassionate yet professional websites for family law attorneys with sensitive design elements, detailed practice area explanations, and private consultation options for clients in personal transitions.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-briefcase fa-2x color-primary"></i>
-                    </div>
-                    <h4>Legal Service Platforms</h4>
-                    <p>Streamlined websites for legal service providers, document preparation companies, and legal tech solutions with clear service explanations, pricing transparency, and online ordering capabilities.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Essential Features -->
-<section class="features-section padding-y-5 bg-light">
-    <div class="content-container">
-        <div class="content-row margin-bottom-5">
-            <div class="content-col full-width text-align-center" data-aos="fade-up">
-                <h2 class="section-title">Essential Legal Website Features</h2>
-                <p class="section-description">
-                    Key components that establish trust and drive client inquiries
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-user-graduate fa-2x color-primary"></i>
+        <!-- Benefits -->
+        <section class="benefits-section">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="benefits-header" data-aos="fade-up">
+                        <h2>Benefits of Professional Legal Website Design</h2>
+                        <p class="lead">Why investing in a specialized legal website matters</p>
                     </div>
-                    <h4>Attorney Profiles</h4>
-                    <p>Comprehensive biographies highlighting education, experience, bar admissions, publications, and areas of practice to establish credibility and expertise.</p>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item" data-aos="fade-up">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h3>Higher-Value Client Acquisition</h3>
+                            <p>Law firms with professionally designed websites report generating 67% more qualified leads than those with generic or outdated sites. Effective practice area pages and strategic calls-to-action convert 3.5x more visitors into consultation requests, with 76% of prospects researching attorneys online before making contact.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Enhanced Professional Credibility</h3>
+                            <p>Studies show that 83% of potential legal clients judge a firm's expertise based on website quality. Attorneys with professional websites are perceived as 57% more credible than competitors with outdated sites. Well-designed attorney profiles increase trust factor by 47%, leading to higher client retention and referral rates.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Improved Client Experience</h3>
+                            <p>Law firms using client portals and digital intake systems save an average of 8-12 hours per week on administrative tasks. Digital client resources reduce common questions by 35%, while online scheduling systems decrease no-shows by 27%. Legal websites with educational content receive 45% more engagement and establish stronger attorney-client relationships from the start.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-list-alt fa-2x color-primary"></i>
-                    </div>
-                    <h4>Practice Area Pages</h4>
-                    <p>Detailed descriptions of legal services offered, with clear explanations of processes, client rights, and potential outcomes for each type of case or matter.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-trophy fa-2x color-primary"></i>
-                    </div>
-                    <h4>Case Results & Testimonials</h4>
-                    <p>Showcases of successful outcomes, verdicts, settlements, and client experiences that demonstrate proven capabilities and client satisfaction.</p>
-                </div>
-            </div>
-        </div>
-        <div class="content-row margin-top-4">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-comment-dots fa-2x color-primary"></i>
-                    </div>
-                    <h4>Consultation Request Forms</h4>
-                    <p>Streamlined contact forms designed to qualify potential clients and gather case-specific information while maintaining confidentiality.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-book-open fa-2x color-primary"></i>
-                    </div>
-                    <h4>Legal Resources & Blog</h4>
-                    <p>Educational content that demonstrates expertise and provides value to potential clients, improving both SEO and client trust.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-lock fa-2x color-primary"></i>
-                    </div>
-                    <h4>Client Portals</h4>
-                    <p>Secure areas for client file access, document sharing, bill payment, and case status updates to enhance client service and communication.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Benefits -->
-<section class="benefits-section padding-y-5">
-    <div class="content-container">
-        <div class="content-row margin-bottom-5">
-            <div class="content-col full-width text-align-center" data-aos="fade-up">
-                <h2 class="section-title">Benefits of Professional Legal Website Design</h2>
-                <p class="section-description">
-                    How a specialized law firm website drives practice growth
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-award fa-2x color-primary"></i>
-                    </div>
-                    <h4>Enhanced Credibility</h4>
-                    <p>A professional website establishes trust with potential clients who overwhelmingly research attorneys online before making contact.</p>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="content-container">
+                <div class="cta-content">
+                    <h2>Ready to Create Your Legal Website?</h2>
+                    <p class="lead">Let's build an authoritative digital presence that attracts clients and showcases your legal expertise.</p>
+                    <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">
+                        Schedule a Consultation
+                    </a>
                 </div>
             </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-user-plus fa-2x color-primary"></i>
-                    </div>
-                    <h4>Qualified Client Inquiries</h4>
-                    <p>Strategic design and content attract more relevant case inquiries from clients who align with your practice areas and ideal client profile.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-search-location fa-2x color-primary"></i>
-                    </div>
-                    <h4>Local Practice Visibility</h4>
-                    <p>Optimized local SEO ensures your firm appears prominently when potential clients in your area search for legal services you provide.</p>
-                </div>
-            </div>
-        </div>
-        <div class="content-row margin-top-4">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-clock fa-2x color-primary"></i>
-                    </div>
-                    <h4>24/7 Client Acquisition</h4>
-                    <p>Your website works around the clock to inform potential clients and capture inquiries even outside of office hours.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-balance-scale fa-2x color-primary"></i>
-                    </div>
-                    <h4>Competitive Advantage</h4>
-                    <p>A superior website experience differentiates your firm from competitors with outdated or generic online presences.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-tasks fa-2x color-primary"></i>
-                    </div>
-                    <h4>Operational Efficiency</h4>
-                    <p>Online intake forms, client portals, and resource libraries reduce administrative workload and streamline client onboarding.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- CTA -->
-<section class="cta-section padding-y-5 bg-primary text-white">
-    <div class="content-container">
-        <div class="content-row align-items-center">
-            <div class="content-col one-half margin-bottom-4 margin-lg-0" data-aos="fade-right">
-                <h2 class="margin-bottom-3">Ready to Elevate Your Law Firm's Online Presence?</h2>
-                <p class="subtitle margin-bottom-0">
-                    Let's create a legal website that converts visitors into clients.
-                </p>
-            </div>
-            <div class="content-col one-half text-lg-end" data-aos="fade-left">
-                <a href="/contact" class="btn btn-light btn-lg">Get Started</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="faq-section">
-    <div class="content-container">
-        <div class="faq-header">
-            <h2 class="faq-title">Legal Website FAQ's</h2>
-            <h3 class="faq-subtitle">Have Any Questions?</h3>
-        </div>
-        <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq-question">
-                    What makes a legal website different from other business websites?
-                    <span class="faq-plus-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    <p>Legal websites must adhere to specific bar association advertising rules and ethics guidelines that don't apply to other industries. They also need to balance professional authority with approachability, include attorney-specific credentials and information, and often require higher levels of data security for client information. The content strategy focuses on demonstrating expertise in specific practice areas rather than general business services.</p>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="faq-header">
+                        <h2>Frequently Asked Questions</h2>
+                        <p class="lead">Common questions about legal website design</p>
+                    </div>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <h3>How do you handle compliance with various state bar advertising rules?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We implement a comprehensive state-specific compliance approach for legal websites:</p>
+                            <ul>
+                                <li><strong>State-Specific Research:</strong> We research and document the advertising rules for each jurisdiction where you practice, creating a compliance checklist specific to your website.</li>
+                                <li><strong>Strategic Disclaimer System:</strong> We develop a strategic system of disclaimers that appear contextually throughout the website, including practice area pages, case results, testimonials, and specialization claims.</li>
+                                <li><strong>Content Review Process:</strong> We establish a review process for all website content to ensure compliance with ethical guidelines, including proper representation of services, avoidance of guarantees, and accurate credentials.</li>
+                                <li><strong>Documentation:</strong> We provide documentation of compliance measures to help you demonstrate good faith adherence to bar rules in the event of questions.</li>
+                            </ul>
+                            <p>Our team stays updated on changing bar association rules and can implement necessary updates to keep your website compliant as regulations evolve. We balance ethical requirements with effective marketing strategies to create websites that generate business while adhering to professional standards.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What content performs best on legal websites for attracting clients?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The most effective legal website content combines educational value with strategic conversion elements:</p>
+                            <ul>
+                                <li><strong>Comprehensive Practice Area Pages:</strong> Detailed, educational content about specific practice areas that demonstrates expertise and answers potential client questions. These pages should include case scenarios, legal processes, and clear next steps.</li>
+                                <li><strong>FAQ-Based Content:</strong> Question-and-answer format content that directly addresses common client concerns ranks well in search and matches how people search for legal help (e.g., "How long do I have to file a personal injury claim in [state]?").</li>
+                                <li><strong>Process Explanations:</strong> Step-by-step explanations of legal processes that reduce anxiety and set expectations (e.g., "What to Expect During Your Divorce Case").</li>
+                                <li><strong>Value-Focused Case Results:</strong> Case studies that focus on client problems solved rather than just monetary outcomes. These demonstrate your approach and problem-solving abilities.</li>
+                                <li><strong>Local Content:</strong> Content specific to local courts, procedures, and legal environments that demonstrates your familiarity with local practice.</li>
+                                <li><strong>Video Content:</strong> Attorney profile videos and educational videos have particularly high engagement rates, with viewers being 64% more likely to contact a firm after watching an attorney video.</li>
+                            </ul>
+                            <p>We develop a content strategy for your website that balances immediate lead generation needs with long-term authority building, focusing on the specific content types that align with your practice areas and target clients.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can you integrate legal practice management systems with our website?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we specialize in integrating legal websites with practice management systems to create efficient client acquisition workflows:</p>
+                            <ul>
+                                <li><strong>CRM/Practice Management Integration:</strong> We can connect your website forms and intake processes with major systems including Clio, MyCase, PracticePanther, Rocket Matter, LawRuler, and others.</li>
+                                <li><strong>Intake Form Automation:</strong> Customized intake forms that automatically populate your practice management system, creating new contacts and matters without manual data entry.</li>
+                                <li><strong>Calendar Integration:</strong> Appointment scheduling tools that sync with your practice calendar and automatically send reminders to reduce no-shows.</li>
+                                <li><strong>Document Automation:</strong> Systems for clients to securely upload documents directly into your document management system.</li>
+                                <li><strong>E-Signature Integration:</strong> Seamless connections with DocuSign, HelloSign, or similar platforms for engagement letters and other agreements.</li>
+                                <li><strong>Payment Processing:</strong> Integration with LawPay or similar legal-specific payment processors for retainers and invoices.</li>
+                            </ul>
+                            <p>These integrations create a seamless experience from initial client contact through retention and case management, saving administrative time and reducing the risk of data entry errors. We configure all integrations with appropriate security measures to maintain client confidentiality.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do you approach SEO for competitive legal markets?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our approach to legal SEO in competitive markets focuses on strategic differentiation and local relevance:</p>
+                            <ul>
+                                <li><strong>Practice Area Specialization:</strong> Developing deep, authoritative content in specific niches within your practice areas rather than competing for broad terms. This creates topical authority and targets less competitive terms with higher conversion potential.</li>
+                                <li><strong>Geographical Targeting:</strong> Implementing advanced local SEO strategies including neighborhood/district-specific pages, county-level content, and local schema markup to dominate specific geographic segments.</li>
+                                <li><strong>Local Business Schema:</strong> Implementing specialized legal business schema markup that highlights attorney credentials, practice areas, and location information for enhanced search visibility.</li>
+                                <li><strong>E-A-T Signals Enhancement:</strong> Building expertise, authoritativeness, and trustworthiness signals through attorney authorship of content, credentials highlighting, and proper attribution of legal information.</li>
+                                <li><strong>Strategic Link Building:</strong> Developing relationships with legal directories, local business associations, and relevant organizations to build authoritative backlinks.</li>
+                                <li><strong>Content Publication Strategy:</strong> Creating a consistent publication calendar of informational content that targets specific client questions and problems within your practice areas.</li>
+                            </ul>
+                            <p>We conduct thorough competitive analysis of your specific market to identify gaps and opportunities, then develop a custom SEO strategy focused on areas where we can achieve meaningful visibility and qualified traffic, rather than pursuing overly competitive terms with low ROI potential.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is the typical timeline for developing a legal website?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The development timeline for a professional legal website typically follows this schedule:</p>
+                            <ul>
+                                <li><strong>Discovery & Planning (2-3 weeks):</strong> Practice analysis, competitor research, goal setting, and project planning. This phase includes several meetings with key stakeholders to understand your practice thoroughly.</li>
+                                <li><strong>Design Phase (3-4 weeks):</strong> Creation of wireframes, visual design concepts, and UI/UX planning. This phase includes presentation of design concepts, feedback rounds, and refinement of the chosen direction.</li>
+                                <li><strong>Content Development (4-6 weeks):</strong> Creation of practice area content, attorney profiles, and other key pages. This phase often runs concurrently with design and development and may be the most variable depending on your involvement in content creation and review.</li>
+                                <li><strong>Development Phase (4-5 weeks):</strong> Building the website structure, functionality, and integrations. This includes responsive implementation, form creation, and CRM integration.</li>
+                                <li><strong>Testing & Refinement (2 weeks):</strong> Quality assurance, browser testing, and content review for compliance and accuracy.</li>
+                                <li><strong>Launch Preparation (1 week):</strong> Final reviews, analytics setup, and launch planning.</li>
+                            </ul>
+                            <p>In total, a comprehensive legal website typically takes 12-16 weeks from kickoff to launch, with the most variable factor being content development time. We can accommodate expedited timelines when necessary, and provide a detailed project schedule at the beginning of the process so all stakeholders understand the timeline and their responsibilities.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<?php require_once '../../../../components/footer.php'; ?> 
+<?php
+include_once '../../../../components/footer.php';
+?>
+
+    <!-- JavaScript libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/services.js"></script>
+</body>
+</html>

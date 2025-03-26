@@ -20,28 +20,28 @@ require_once '../../../../components/header.php';
 ?>
 
 <!-- Page Header -->
-<section class="page-header py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6" data-aos="fade-right">
-                <h1 class="display-4"><?php echo $pageTitle; ?></h1>
+<section class="page-header">
+    <div class="content-container">
+        <div class="header-grid">
+            <div class="page-header-content" data-aos="fade-right">
+                <h1><?php echo $pageTitle; ?></h1>
                 <p class="lead"><?php echo $pageDescription; ?></p>
-                <a href="/contact" class="btn btn-primary btn-lg mt-3">Discuss Your Project</a>
+                <a href="/pages/contact.php" class="get-started-btn">Get Started</a>
             </div>
-            <div class="col-lg-6" data-aos="fade-left">
-                <img src="/assets/images/services/voice-assistants.svg" alt="<?php echo $serviceName; ?>" class="img-fluid">
+            <div class="page-header-image" data-aos="fade-left">
+                <img src="/assets/images/services/voice-assistants.svg" alt="<?php echo $serviceName; ?>" class="animate-float">
             </div>
         </div>
     </div>
 </section>
 
 <!-- Service Overview -->
-<section class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 mb-4" data-aos="fade-up">
-                <h2 class="section-title">Transform User Experiences with Voice AI</h2>
-                <p>Voice assistants have revolutionized how people interact with technology, creating more natural, efficient, and accessible experiences. Our AI voice assistant solutions leverage advanced natural language understanding and speech technologies to create intelligent voice interfaces that understand user intent, respond appropriately, and continuously learn from interactions.</p>
+<section class="service-overview">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="service-overview-header" data-aos="fade-up">
+                <h2>Transform User Experiences with Voice AI</h2>
+                <p class="lead">Voice assistants have revolutionized how people interact with technology, creating more natural, efficient, and accessible experiences. Our AI voice assistant solutions leverage advanced natural language understanding and speech technologies to create intelligent voice interfaces that understand user intent, respond appropriately, and continuously learn from interactions.</p>
                 <p>Whether you need a custom voice assistant for your mobile app, website, smart device, or enterprise system, our solutions go beyond basic command recognition to deliver contextually aware, conversational experiences that truly understand and anticipate user needs.</p>
             </div>
         </div>
@@ -49,76 +49,76 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Services Offered -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Voice Assistant Services</h2>
+<section class="services-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="services-header" data-aos="fade-up">
+                <h2>Voice Assistant Services</h2>
                 <p class="lead">Comprehensive solutions for intelligent voice interactions</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="service-icon mb-4">
-                        <i class="fas fa-robot fa-3x text-primary"></i>
+        <div class="services-grid">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
                     </div>
                     <h3>Custom Voice Assistant Development</h3>
                     <p>Build tailored voice assistants that align perfectly with your brand identity and business requirements.</p>
-                    <ul class="service-features mt-3">
-                        <li><i class="fas fa-check text-primary me-2"></i> Domain-specific voice assistants</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Branded voice and personality</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Multi-platform deployment</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Integration with existing systems</li>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Domain-specific voice assistants</li>
+                        <li><i class="fas fa-check"></i> Branded voice and personality</li>
+                        <li><i class="fas fa-check"></i> Multi-platform deployment</li>
+                        <li><i class="fas fa-check"></i> Integration with existing systems</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="service-icon mb-4">
-                        <i class="fas fa-mobile-alt fa-3x text-primary"></i>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
                     </div>
                     <h3>Voice Apps & Skills</h3>
                     <p>Develop applications for popular voice platforms like Amazon Alexa, Google Assistant, and Apple Siri.</p>
-                    <ul class="service-features mt-3">
-                        <li><i class="fas fa-check text-primary me-2"></i> Alexa Skills development</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Google Actions creation</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Siri Shortcuts integration</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Cross-platform voice experiences</li>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Alexa Skills development</li>
+                        <li><i class="fas fa-check"></i> Google Actions creation</li>
+                        <li><i class="fas fa-check"></i> Siri Shortcuts integration</li>
+                        <li><i class="fas fa-check"></i> Cross-platform voice experiences</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="service-icon mb-4">
-                        <i class="fas fa-headset fa-3x text-primary"></i>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
                     </div>
                     <h3>Voice-Enabled Customer Support</h3>
                     <p>Transform customer service with voice assistants that handle inquiries, provide information, and solve problems.</p>
-                    <ul class="service-features mt-3">
-                        <li><i class="fas fa-check text-primary me-2"></i> 24/7 voice support availability</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Call routing and qualification</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> FAQ and knowledge base integration</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Human handoff for complex issues</li>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 24/7 voice support availability</li>
+                        <li><i class="fas fa-check"></i> Call routing and qualification</li>
+                        <li><i class="fas fa-check"></i> FAQ and knowledge base integration</li>
+                        <li><i class="fas fa-check"></i> Human handoff for complex issues</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="service-icon mb-4">
-                        <i class="fas fa-home fa-3x text-primary"></i>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
                     </div>
                     <h3>IoT & Smart Environment Integration</h3>
                     <p>Create voice-controlled experiences for smart homes, workplaces, retail spaces, and other environments.</p>
-                    <ul class="service-features mt-3">
-                        <li><i class="fas fa-check text-primary me-2"></i> Smart home device control</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Voice-enabled workplace solutions</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Retail voice assistance</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Hospitality voice experiences</li>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Smart home device control</li>
+                        <li><i class="fas fa-check"></i> Voice-enabled workplace solutions</li>
+                        <li><i class="fas fa-check"></i> Retail voice assistance</li>
+                        <li><i class="fas fa-check"></i> Hospitality voice experiences</li>
                     </ul>
                 </div>
             </div>
@@ -126,61 +126,73 @@ require_once '../../../../components/header.php';
     </div>
 </section>
 
-<!-- Key Features -->
-<section class="py-5">
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Advanced Voice Assistant Capabilities</h2>
+<!-- Technologies Section -->
+<section class="tech-stack">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="tech-stack-header" data-aos="fade-up">
+                <h2>Advanced Voice Assistant Capabilities</h2>
                 <p class="lead">Next-generation features for superior voice experiences</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="tech-card h-100 p-4 text-center bg-white rounded shadow-sm">
-                    <i class="fas fa-brain fa-3x text-primary mb-3"></i>
-                    <h4>Contextual Understanding</h4>
+        <div class="tech-grid">
+            <div class="tech-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Contextual Understanding</h3>
                     <p>Our voice assistants maintain conversation context, understand follow-up questions, and handle complex dialogue flows.</p>
                 </div>
             </div>
             
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="tech-card h-100 p-4 text-center bg-white rounded shadow-sm">
-                    <i class="fas fa-language fa-3x text-primary mb-3"></i>
-                    <h4>Multilingual Support</h4>
+            <div class="tech-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Multilingual Support</h3>
                     <p>Support multiple languages and dialects to serve diverse user bases across global markets.</p>
                 </div>
             </div>
             
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="tech-card h-100 p-4 text-center bg-white rounded shadow-sm">
-                    <i class="fas fa-user-circle fa-3x text-primary mb-3"></i>
-                    <h4>Personalization</h4>
+            <div class="tech-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Personalization</h3>
                     <p>Create tailored experiences by remembering user preferences, past interactions, and behavior patterns.</p>
                 </div>
             </div>
             
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="tech-card h-100 p-4 text-center bg-white rounded shadow-sm">
-                    <i class="fas fa-fingerprint fa-3x text-primary mb-3"></i>
-                    <h4>Voice Authentication</h4>
+            <div class="tech-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3>Voice Authentication</h3>
                     <p>Enable secure access through voice biometrics and speaker recognition technology.</p>
                 </div>
             </div>
             
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="tech-card h-100 p-4 text-center bg-white rounded shadow-sm">
-                    <i class="fas fa-plug fa-3x text-primary mb-3"></i>
-                    <h4>API Integrations</h4>
+            <div class="tech-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>API Integrations</h3>
                     <p>Connect with external systems, databases, and services to provide comprehensive functionality.</p>
                 </div>
             </div>
             
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
-                <div class="tech-card h-100 p-4 text-center bg-white rounded shadow-sm">
-                    <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
-                    <h4>Analytics & Insights</h4>
+            <div class="tech-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics & Insights</h3>
                     <p>Gain valuable insights from voice interactions to continuously improve user experiences.</p>
                 </div>
             </div>
@@ -189,57 +201,73 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Implementation Process -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Our Implementation Process</h2>
+<section class="implementation-process">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="implementation-header" data-aos="fade-up">
+                <h2>Our Implementation Process</h2>
                 <p class="lead">A systematic approach to voice assistant development</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-card h-100 p-4 text-center">
-                    <div class="process-icon mb-3">
+        <div class="process-grid">
+            <div class="process-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="process-card">
+                    <div class="process-icon">
                         <span>1</span>
-                        <i class="fas fa-lightbulb"></i>
                     </div>
                     <h3>Discovery & Planning</h3>
                     <p>We define your voice assistant requirements, use cases, and success metrics.</p>
+                    <ul>
+                        <li>Business needs analysis</li>
+                        <li>Use case definition</li>
+                        <li>Platform selection</li>
+                    </ul>
                 </div>
             </div>
             
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-card h-100 p-4 text-center">
-                    <div class="process-icon mb-3">
+            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="process-card">
+                    <div class="process-icon">
                         <span>2</span>
-                        <i class="fas fa-comments"></i>
                     </div>
                     <h3>Conversational Design</h3>
                     <p>We design intuitive dialogue flows, voice personality, and conversation patterns.</p>
+                    <ul>
+                        <li>Dialog flow mapping</li>
+                        <li>Prompt engineering</li>
+                        <li>Voice character design</li>
+                    </ul>
                 </div>
             </div>
             
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-card h-100 p-4 text-center">
-                    <div class="process-icon mb-3">
+            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="process-card">
+                    <div class="process-icon">
                         <span>3</span>
-                        <i class="fas fa-code"></i>
                     </div>
                     <h3>Development & Training</h3>
                     <p>We build and train your voice assistant with NLU models and speech recognition.</p>
+                    <ul>
+                        <li>AI model training</li>
+                        <li>Speech recognition setup</li>
+                        <li>Backend integration</li>
+                    </ul>
                 </div>
             </div>
             
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="process-card h-100 p-4 text-center">
-                    <div class="process-icon mb-3">
+            <div class="process-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="process-card">
+                    <div class="process-icon">
                         <span>4</span>
-                        <i class="fas fa-rocket"></i>
                     </div>
                     <h3>Testing & Deployment</h3>
                     <p>We ensure quality through rigorous testing and support smooth deployment.</p>
+                    <ul>
+                        <li>Accuracy validation</li>
+                        <li>User acceptance testing</li>
+                        <li>Platform deployment</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -247,73 +275,85 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Business Benefits -->
-<section class="py-5">
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Business Benefits</h2>
-                <p class="lead">Why implement AI voice assistants</p>
+<section class="benefits-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="benefits-header" data-aos="fade-up">
+                <h2>The Business Impact</h2>
+                <p class="lead">Transformative results from voice assistant implementation</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-clock fa-2x text-primary"></i>
+        <div class="benefits-grid">
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-hand-pointer"></i>
                     </div>
-                    <h3>Enhanced Efficiency</h3>
-                    <p>Voice interactions are typically 3-4 times faster than typing, allowing users to complete tasks more quickly.</p>
+                    <div class="benefit-content">
+                        <h3>Enhanced User Experience</h3>
+                        <p>Voice interfaces reduce friction by 62%, allowing hands-free, natural interaction with your products and services.</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-hand-holding-usd fa-2x text-primary"></i>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-universal-access"></i>
                     </div>
-                    <h3>Cost Reduction</h3>
-                    <p>Voice assistants can handle routine inquiries and tasks, reducing operational costs and agent workload.</p>
+                    <div class="benefit-content">
+                        <h3>Increased Accessibility</h3>
+                        <p>Reach new customer segments, including those with visual impairments or limited literacy, expanding your market reach.</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-universal-access fa-2x text-primary"></i>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Improved Accessibility</h3>
-                    <p>Voice interfaces make technology accessible to users with disabilities, literacy challenges, or situational limitations.</p>
+                    <div class="benefit-content">
+                        <h3>Operational Efficiency</h3>
+                        <p>Voice-enabled workflows reduce task completion time by up to 35% and decrease error rates in operational environments.</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-users fa-2x text-primary"></i>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-fingerprint"></i>
                     </div>
-                    <h3>Enhanced User Experience</h3>
-                    <p>Natural voice interactions create more intuitive, satisfying user experiences across devices and platforms.</p>
+                    <div class="benefit-content">
+                        <h3>Brand Differentiation</h3>
+                        <p>Stand out from competitors with a unique voice assistant that reflects your brand personality and enhances brand recognition.</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-chart-bar fa-2x text-primary"></i>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
                     </div>
-                    <h3>Data-Driven Insights</h3>
-                    <p>Voice interactions provide valuable data about user needs, preferences, and behaviors.</p>
+                    <div class="benefit-content">
+                        <h3>Customer Service Enhancement</h3>
+                        <p>Provide 24/7 voice support that resolves up to 70% of common inquiries without human intervention, improving satisfaction.</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-broadcast-tower fa-2x text-primary"></i>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-database"></i>
                     </div>
-                    <h3>Brand Differentiation</h3>
-                    <p>Voice assistants with distinctive personalities can strengthen brand identity and customer relationships.</p>
+                    <div class="benefit-content">
+                        <h3>Valuable User Insights</h3>
+                        <p>Gain rich data on customer needs and behaviors that can inform product development and marketing strategies.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -413,108 +453,93 @@ require_once '../../../../components/header.php';
 
 <!-- FAQ Section -->
 <section class="faq-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <div class="faq-header">
-                    <h2 class="faq-title">Frequently Asked Questions</h2>
-                    <p class="faq-subtitle">Common questions about AI voice assistants</p>
-                </div>
+    <div class="content-container">
+        <div class="section-header">
+            <div class="faq-header">
+                <h2>Frequently Asked Questions</h2>
+                <p class="lead">Common questions about AI voice assistants</p>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-lg-12" data-aos="fade-up">
-                <div class="faq-container">
-                    <div class="faq-column">
-                        <div class="faq-item active">
-                            <div class="faq-question">
-                                <h3>How accurate are today's voice assistants?</h3>
-                                <button class="toggle-btn"><span class="icon"></span></button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Modern voice assistants achieve speech recognition accuracy rates of 95-98% in optimal conditions. Factors affecting accuracy include background noise, accent variations, vocabulary complexity, and hardware quality. Our voice assistants employ advanced noise cancellation, speaker adaptation, and domain-specific training to maintain high accuracy across various environments.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>What languages can your voice assistants support?</h3>
-                                <button class="toggle-btn"><span class="icon"></span></button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Our voice assistants support over 30 languages with comprehensive capabilities, including English (with various regional accents), Spanish, French, German, Italian, Portuguese, Japanese, Mandarin Chinese, Korean, Arabic, Russian, Hindi, and Dutch. We can develop custom language models for specific industries or less commonly supported languages.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>How do you handle user privacy and data security?</h3>
-                                <button class="toggle-btn"><span class="icon"></span></button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>We implement comprehensive privacy and security measures including encryption of voice data in transit and at rest, secure processing environments, data minimization practices, clear user consent mechanisms, configurable data retention policies, and on-device processing options where appropriate. Our solutions comply with relevant regulations like GDPR and CCPA.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>Can voice assistants work offline without internet?</h3>
-                                <button class="toggle-btn"><span class="icon"></span></button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Yes, we offer both cloud-based and offline voice solutions. Offline (on-device) processing provides consistent performance without internet connectivity, enhanced privacy, and lower latency. We can also implement hybrid approaches that use on-device processing for common commands while leveraging cloud capabilities for more complex requests when connectivity is available.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-column">
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>How long does it take to develop a voice assistant?</h3>
-                                <button class="toggle-btn"><span class="icon"></span></button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Development timelines vary based on complexity and requirements. Simple voice assistants with limited functionality can be implemented in 4-8 weeks. More comprehensive solutions with advanced features typically take 2-4 months. Enterprise-grade systems with extensive integrations and custom capabilities may require 4-6 months. We follow an agile approach with incremental deliveries throughout the project.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>How do voice assistants integrate with existing systems?</h3>
-                                <button class="toggle-btn"><span class="icon"></span></button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Voice assistants can integrate with existing systems through APIs, webhooks, database connectors, middleware solutions, and custom integration points. We can connect your voice assistant to CRM systems, knowledge bases, inventory management, ERP systems, and other business applications to access relevant data and functionality.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>What data do you need to develop a voice assistant?</h3>
-                                <button class="toggle-btn"><span class="icon"></span></button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>The ideal data includes examples of user utterances for different intents, conversation flows, domain-specific vocabulary, FAQ content, and system integration requirements. If you have limited data, we can help generate training examples, use transfer learning from pre-trained models, and implement feedback loops to improve performance over time.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>How do you measure voice assistant success?</h3>
-                                <button class="toggle-btn"><span class="icon"></span></button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>We measure success through various KPIs including recognition accuracy, task completion rates, conversation length, user satisfaction scores, retention rates, and business impact metrics (cost savings, conversion rates, etc.). We implement analytics dashboards to track these metrics and provide continuous improvement recommendations.</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="faq-container">
+            <div class="faq-item active">
+                <div class="faq-question">
+                    <h3>How accurate are today's voice assistants?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Modern voice assistants achieve speech recognition accuracy rates of 95-98% in optimal conditions. Factors affecting accuracy include background noise, accent variations, vocabulary complexity, and hardware quality. Our voice assistants employ advanced noise cancellation, speaker adaptation, and domain-specific training to maintain high accuracy across various environments.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What languages can your voice assistants support?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Our voice assistants support over 30 languages with comprehensive capabilities, including English (with various regional accents), Spanish, French, German, Italian, Portuguese, Japanese, Mandarin Chinese, Korean, Arabic, Russian, Hindi, and Dutch. We can develop custom language models for specific industries or less commonly supported languages.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do you handle user privacy and data security?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>We implement comprehensive privacy and security measures including encryption of voice data in transit and at rest, secure processing environments, data minimization practices, clear user consent mechanisms, configurable data retention policies, and on-device processing options where appropriate. Our solutions comply with relevant regulations like GDPR and CCPA.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can voice assistants work offline without internet?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we offer both cloud-based and offline voice solutions. Offline (on-device) processing provides consistent performance without internet connectivity, enhanced privacy, and lower latency. We can also implement hybrid approaches that use on-device processing for common commands while leveraging cloud capabilities for more complex requests when connectivity is available.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How long does it take to develop a voice assistant?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Development timelines vary based on complexity and requirements. Simple voice assistants with limited functionality can be implemented in 4-8 weeks. More comprehensive solutions with advanced features typically take 2-4 months. Enterprise-grade systems with extensive integrations and custom capabilities may require 4-6 months. We follow an agile approach with incremental deliveries throughout the project.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="content-container">
+        <div class="cta-content">
+            <h2>Ready to Give Your Business a Voice?</h2>
+            <p class="lead">Contact us today to discuss how voice assistants can transform your user experience.</p>
+            <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">Schedule a Consultation</a>
+        </div>
+    </div>
+</section>
+
 <?php
 include_once '../../../../components/footer.php';
-?> 
+?>
+
+<!-- JavaScript libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/services.js"></script> 

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/contact.css">
+    <link rel="stylesheet" href="/assets/css/services.css">
     
     <!-- Add any additional CSS files needed for specific pages -->
     <?php if (isset($additionalCss) && is_array($additionalCss)): ?>
@@ -26,9 +27,20 @@
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     
     <!-- Header JavaScript -->
     <script src="/assets/js/header.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-out',
+                once: false
+            });
+        });
+    </script>
 </head>
 <body>
     <!-- Drawer Overlay -->
@@ -127,6 +139,13 @@
                         <a href="/pages/services/app-development/Custom-Software-Solutions/CRM-&-ERP-Solutions.php">CRM & ERP Solutions</a>
                         <a href="/pages/services/app-development/Custom-Software-Solutions/IoT-&-Embedded-Systems.php">IoT & Embedded Systems</a>
                     </div>
+                    <div class="drawer-submenu-group">
+                        <h6 class="drawer-submenu-title">Mobile App Devlopment</h6>
+                        <a href="/pages/services/app-development/mobile-app-development/android-app-development.php">Android App Devlopment</a>
+                        <a href="/pages/services/app-development/mobile-app-development/ios-app-development.php">iOS App Devlopment</a>
+                        <a href="/pages/services/app-development/mobile-app-development/cross-platform-apps.php">Cross Platform Apps</a>
+                        <a href="/pages/services/app-development/mobile-app-development/app-ui-ux-design.php">App UI/UX Design</a>
+                    </div>
                 </div>
                 
                 <!-- AI Services -->
@@ -203,7 +222,7 @@
 
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
+        <div class="navbar-container">
             <button class="navbar-toggler" id="drawerToggle">
                 <i class="fas fa-bars"></i>
             </button>
@@ -263,7 +282,7 @@
                     <!-- App Development Dropdown -->
                     <li class="nav-item">
                         <a class="nav-link dropdown-toggle" href="#">App Development</a>
-                        <div class="mega-menu columns-3">
+                        <div class="mega-menu">
                             <div class="mega-menu-column">
                                 <h6 class="dropdown-header">Web Application Development</h6>
                                 <a class="dropdown-item" href="/pages/services/app-development/web-application-devlopment/custom-web-apps.php">Custom Web Applications</a>
@@ -284,6 +303,14 @@
                                 <a class="dropdown-item" href="/pages/services/app-development/Custom-Software-Solutions/CRM-&-ERP-Solutions.php">CRM & ERP Solutions</a>
                                 <a class="dropdown-item" href="/pages/services/app-development/Custom-Software-Solutions/IoT-&-Embedded-Systems.php">IoT & Embedded Systems</a>
                             </div>
+                            <div class="mega-menu-column">
+                                <h6 class="dropdown-header">Mobile App Devlopment</h6>
+                                <a class="dropdown-item" href="/pages/services/app-development/mobile-app-development/android-app-development.php">Android App Devlopment</a>
+                                <a class="dropdown-item" href="/pages/services/app-development/mobile-app-development/ios-app-development.php">iOS App Devlopment</a>
+                                <a class="dropdown-item" href="/pages/services/app-development/mobile-app-development/cross-platform-apps.php">Cross Platform Apps</a>
+                                <a class="dropdown-item"href="/pages/services/app-development/mobile-app-development/app-ui-ux-design.php">App UI/UX Design</a>
+                            </div>
+                    
                         </div>
                     </li>
                     

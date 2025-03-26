@@ -1,284 +1,355 @@
 <?php
-// Define base path to allow direct script access
 define('BASEPATH', true);
+require_once '../../../../includes/config.php';
 
-require_once '../../../../config/database.php';
-require_once '../../../../config/why-hire-us.php';
-require_once '../../../../assets/templates/why-hire-us-section.php';
+// Initialize the database connection
+$database = new Database();
+$db = $database->getConnection();
 
-// Get Why Hire Us content for App UI/UX Design
-$why_hire_us = getWhyHireUsContent('app-ui-ux-design');
+// SEO Data
+$pageTitle = "Mobile App UI/UX Design Services | StartupAI";
+$pageDescription = "Create engaging and intuitive mobile app experiences with our expert UI/UX design services. We combine aesthetics with functionality to deliver user-centered mobile applications.";
+$seo_data = [
+    'description' => $pageDescription,
+    'keywords' => 'mobile app design, ui design, ux design, user interface, user experience, app wireframes, mobile app prototypes, interaction design, visual design'
+];
 
-require_once '../../../../components/header.php';
+include_once '../../../../components/header.php';
 ?>
 
-<!-- Page Header -->
-<header class="page-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="fw-bold" data-aos="fade-up">App UI/UX Design</h1>
-                <p class="lead" data-aos="fade-up" data-aos-delay="100">
-                    Creating intuitive, engaging, and beautiful mobile experiences
-                </p>
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="header-grid">
+                    <div class="page-header-content" data-aos="fade-right">
+                        <h1>Mobile App UI/UX Design</h1>
+                        <p class="lead">Create beautiful, intuitive, and engaging mobile experiences that users love.</p>
+                        <a href="/pages/contact.php" class="get-started-btn">Start Your Project</a>
+                    </div>
+                    <div class="page-header-image" data-aos="fade-left">
+                        <img src="/assets/images/services/app-design.svg" alt="Mobile App UI/UX Design" class="animate-float">
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
+        </section>
 
-<!-- Service Overview -->
-<section class="service-overview py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-                <img src="/assets/images/services/app-ui-ux-design.svg" alt="App UI/UX Design" class="img-fluid rounded shadow">
+        <!-- Service Overview -->
+        <section class="service-overview">
+            <div class="container">
+                <div class="section-header">
+                    <div class="service-overview-header" data-aos="fade-up">
+                        <h2>Expert Mobile App Design Services</h2>
+                        <p class="lead">We create user-centered designs that combine aesthetics with functionality to deliver exceptional mobile experiences.</p>
+                    </div>
+                </div>
+                
+                <div class="overview-grid">
+                    <div class="service-overview-content" data-aos="fade-up">
+                        <h3>User-Centered Design</h3>
+                        <p>Our design process focuses on understanding user needs, behaviors, and preferences to create intuitive and engaging mobile experiences.</p>
+                    </div>
+                    <div class="service-overview-content" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Platform-Specific Excellence</h3>
+                        <p>We follow platform-specific design guidelines while maintaining brand consistency across iOS and Android applications.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6" data-aos="fade-left">
-                <h2 class="mb-4">User-Centered App Design Services</h2>
-                <p>
-                    Our app UI/UX design services focus on creating mobile experiences that are not only visually stunning but also intuitive and enjoyable to use. We combine aesthetic excellence with functional design principles to build interfaces that drive user engagement and retention. Our design process is deeply rooted in understanding user behavior, business goals, and platform-specific design patterns.
-                </p>
-                <div class="features mt-4">
-                    <div class="feature d-flex align-items-start mb-3">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-user text-primary"></i>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="services-header" data-aos="fade-up">
+                        <h2>Our UI/UX Design Services</h2>
+                        <p class="lead">Comprehensive mobile app design solutions tailored to your needs</p>
+                    </div>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-item" data-aos="fade-up">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                            <h3>User Interface Design</h3>
+                            <p>Create visually appealing and intuitive interfaces that enhance user engagement.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Visual design</li>
+                                <li><i class="fas fa-check"></i> Interaction design</li>
+                                <li><i class="fas fa-check"></i> Design systems</li>
+                                <li><i class="fas fa-check"></i> Brand integration</li>
+                            </ul>
                         </div>
-                        <div>
-                            <h5>User-Centered Design</h5>
-                            <p>Research-backed design decisions that prioritize user needs and behaviors.</p>
+                    </div>
+                    
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>User Experience Design</h3>
+                            <p>Design seamless user journeys that maximize engagement and satisfaction.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> User research</li>
+                                <li><i class="fas fa-check"></i> Information architecture</li>
+                                <li><i class="fas fa-check"></i> User flows</li>
+                                <li><i class="fas fa-check"></i> Usability testing</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="feature d-flex align-items-start mb-3">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-paint-brush text-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Visual Design Excellence</h5>
-                            <p>Beautiful, branded interfaces that reflect your company's identity and values.</p>
-                        </div>
-                    </div>
-                    <div class="feature d-flex align-items-start mb-3">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-sitemap text-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Intuitive Information Architecture</h5>
-                            <p>Logical navigation and content organization that reduces cognitive load.</p>
-                        </div>
-                    </div>
-                    <div class="feature d-flex align-items-start">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-universal-access text-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Accessible Design</h5>
-                            <p>Inclusive interfaces that accommodate users with different abilities and needs.</p>
+                    
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <h3>Prototyping & Testing</h3>
+                            <p>Create interactive prototypes to validate design decisions before development.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Wireframing</li>
+                                <li><i class="fas fa-check"></i> Interactive prototypes</li>
+                                <li><i class="fas fa-check"></i> User testing</li>
+                                <li><i class="fas fa-check"></i> Design iteration</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Why Hire Us Section -->
-<?php renderWhyHireUs($why_hire_us['service_name'], $why_hire_us['reasons']); ?>
+        <!-- Implementation Process -->
+        <section class="implementation-process">
+            <div class="container">
+                <div class="section-header">
+                    <div class="implementation-header" data-aos="fade-up">
+                        <h2>Our Design Process</h2>
+                        <p class="lead">A systematic approach to creating exceptional mobile app experiences</p>
+                    </div>
+                </div>
+                
+                <div class="process-grid">
+                    <div class="process-item" data-aos="fade-up">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>1</span>
+                            </div>
+                            <h3>Research & Discovery</h3>
+                            <p>Understand user needs, market trends, and business objectives.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>2</span>
+                            </div>
+                            <h3>UX Strategy</h3>
+                            <p>Define user flows, information architecture, and interaction patterns.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>3</span>
+                            </div>
+                            <h3>UI Design</h3>
+                            <p>Create visually appealing interfaces that align with brand guidelines.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>4</span>
+                            </div>
+                            <h3>Testing & Refinement</h3>
+                            <p>Validate designs through user testing and iterate based on feedback.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- Process -->
-<section class="process-section py-5 bg-light">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Our App UI/UX Design Process</h2>
-                <p class="section-description">
-                    A comprehensive approach to creating exceptional mobile experiences
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-search fa-3x text-primary"></i>
+        <!-- Technologies Section -->
+        <section class="platforms-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="platforms-header" data-aos="fade-up">
+                        <h2>Design Tools We Use</h2>
+                        <p class="lead">Industry-standard tools for mobile app design</p>
                     </div>
-                    <h4>Research & Discovery</h4>
-                    <p>We analyze user needs, market trends, and competitive landscape to establish a solid foundation.</p>
+                </div>
+                
+                <div class="platforms-grid">
+                    <div class="platform-item" data-aos="fade-up">
+                        <div class="platform-card">
+                            <h3>Design Tools</h3>
+                            <ul>
+                                <li>Figma</li>
+                                <li>Sketch</li>
+                                <li>Adobe XD</li>
+                                <li>Illustrator</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="platform-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="platform-card">
+                            <h3>Prototyping Tools</h3>
+                            <ul>
+                                <li>InVision</li>
+                                <li>Principle</li>
+                                <li>ProtoPie</li>
+                                <li>Framer</li>
+                                <li>Marvel</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="platform-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="platform-card">
+                            <h3>Collaboration Tools</h3>
+                            <ul>
+                                <li>Zeplin</li>
+                                <li>Abstract</li>
+                                <li>Miro</li>
+                                <li>Notion</li>
+                                <li>Slack</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-project-diagram fa-3x text-primary"></i>
-                    </div>
-                    <h4>Wireframing & Information Architecture</h4>
-                    <p>We create the structural blueprint of your app, focusing on user flows and content hierarchy.</p>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-pencil-ruler fa-3x text-primary"></i>
-                    </div>
-                    <h4>Visual Design</h4>
-                    <p>We craft visually appealing interfaces with consistent branding, typography, and color schemes.</p>
-                </div>
-            </div>
-            <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-vial fa-3x text-primary"></i>
-                    </div>
-                    <h4>Prototyping & Testing</h4>
-                    <p>We create interactive prototypes and conduct usability testing to validate design decisions.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Benefits -->
-<section class="benefits-section py-5">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Benefits of Professional UI/UX Design</h2>
-                <p class="section-description">
-                    Why investing in app design directly impacts your business success
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-hand-holding-heart fa-2x text-primary"></i>
+        <!-- Benefits Section -->
+        <section class="benefits-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="benefits-header" data-aos="fade-up">
+                        <h2>Why Choose Our Design Services</h2>
+                        <p class="lead">Benefits of professional UI/UX design for your mobile app</p>
                     </div>
-                    <h4>Increased User Retention</h4>
-                    <p>Intuitive, enjoyable interfaces keep users engaged and coming back to your application consistently.</p>
                 </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-chart-line fa-2x text-primary"></i>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item" data-aos="fade-up">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Enhanced User Satisfaction</h3>
+                            <p>Create engaging experiences that keep users coming back to your app.</p>
+                        </div>
                     </div>
-                    <h4>Higher Conversion Rates</h4>
-                    <p>Well-designed user journeys guide users toward desired actions, increasing conversion and revenue.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-comments fa-2x text-primary"></i>
+                    
+                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Increased Conversion</h3>
+                            <p>Design intuitive flows that guide users toward desired actions.</p>
+                        </div>
                     </div>
-                    <h4>Positive Brand Perception</h4>
-                    <p>Polished, professional design creates trust and enhances your brand's reputation in the market.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Deliverables -->
-<section class="deliverables-section py-5 bg-light">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">What You Receive</h2>
-                <p class="section-description">
-                    Comprehensive design deliverables for your app development project
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="deliverable-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="deliverable-icon mb-3">
-                        <i class="fas fa-file-alt fa-2x text-primary"></i>
+                    
+                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3>Brand Consistency</h3>
+                            <p>Maintain consistent brand identity across all platforms and touchpoints.</p>
+                        </div>
                     </div>
-                    <h4>User Research Findings</h4>
-                    <p>Comprehensive insights about your target users, their needs, behaviors, and pain points to inform design decisions.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="deliverable-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="deliverable-icon mb-3">
-                        <i class="fas fa-bezier-curve fa-2x text-primary"></i>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Design Your Mobile App?</h2>
+                    <p class="lead">Let's create an exceptional user experience for your mobile application.</p>
+                    <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">
+                        Schedule a Consultation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="faq-header">
+                        <h2>Frequently Asked Questions</h2>
+                        <p class="lead">Common questions about mobile app UI/UX design</p>
                     </div>
-                    <h4>User Flow Diagrams</h4>
-                    <p>Visual representations of user journeys through your application, showing paths to complete key tasks.</p>
                 </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="deliverable-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="deliverable-icon mb-3">
-                        <i class="fas fa-mobile-alt fa-2x text-primary"></i>
+                <div class="faq-container">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <h3>What's the difference between UI and UX design?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>UI (User Interface) design focuses on the visual elements and interactions of your app - how it looks and feels. UX (User Experience) design focuses on the overall experience, including how users navigate, interact, and accomplish their goals within the app. Both aspects work together to create a successful mobile application.</p>
+                        </div>
                     </div>
-                    <h4>UI Design System</h4>
-                    <p>Complete set of UI components, styles, and guidelines that ensure consistency throughout the application.</p>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do you ensure designs work across different devices?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We follow responsive design principles and create designs that adapt to different screen sizes and orientations. We test designs across various devices and platforms to ensure consistency and usability. Our process includes creating device-specific adjustments while maintaining the core user experience.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do you incorporate user feedback in the design process?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We conduct user testing throughout the design process, gathering feedback through prototypes, usability tests, and user interviews. This feedback helps us identify pain points, validate design decisions, and make improvements. We iterate on designs based on user insights to create the best possible experience.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What deliverables can I expect from the design process?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our deliverables typically include user research findings, wireframes, visual designs, interactive prototypes, and design specifications for development. We also provide design systems and style guides to ensure consistency in implementation. All assets are organized and properly prepared for handoff to the development team.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- CTA -->
-<section class="cta-section py-5 bg-primary text-white">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8 mb-4 mb-lg-0" data-aos="fade-right">
-                <h2 class="mb-3">Ready to Transform Your App's User Experience?</h2>
-                <p class="lead mb-0">
-                    Let's create an interface that delights your users and achieves your business goals.
-                </p>
-            </div>
-            <div class="col-lg-4 text-lg-end" data-aos="fade-left">
-                <a href="/contact" class="btn btn-light btn-lg">Get Started</a>
-            </div>
-        </div>
-    </div>
-</section>
+<?php
+include_once '../../../../components/footer.php';
+?>
 
-<!-- FAQ Section -->
-<section class="faq-section">
-    <div class="container">
-        <div class="faq-header">
-            <h2 class="faq-title">App UI/UX Design FAQ's</h2>
-            <h3 class="faq-subtitle">Have Any Questions?</h3>
-        </div>
-
-        <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq-question">
-                    Why is UI/UX design important for app development?
-                    <span class="faq-plus-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    <p>UI/UX design is crucial because it directly impacts how users interact with your application. Good design reduces the learning curve, increases user satisfaction, and builds trust in your brand. Studies show that every $1 invested in UX design can yield returns of $100 or more. Poor user experiences lead to high abandonment rates—about 25% of apps are used only once after download. In contrast, intuitive design leads to higher engagement, better retention, and ultimately, greater ROI for your app investment.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">
-                    What's the difference between UI and UX design?
-                    <span class="faq-plus-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    <p>UI (User Interface) design focuses on the visual aspects of an app—the screens, buttons, icons, and other visual elements that users interact with. UI designers work on creating aesthetically pleasing interfaces with consistent styling, color schemes, and typography. UX (User Experience) design is broader and focuses on the overall feel of the application—how users navigate through it, how they accomplish tasks, and their emotional response to using it. UX designers conduct research, create user flows, and ensure the app is intuitive and enjoyable to use. While distinct, both disciplines work together to create successful applications.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">
-                    How long does the app design process typically take?
-                    <span class="faq-plus-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    <p>The design timeline varies based on the app's complexity, number of screens, and unique features. For a medium-sized app, the complete design process typically takes 4-8 weeks. This includes 1-2 weeks for research and discovery, 1-2 weeks for wireframing and user flows, 2-3 weeks for visual design, and 1 week for creating interactive prototypes and design specifications for developers. We work with you to establish a timeline that meets your project schedule while ensuring we don't compromise on the quality of the design process.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<?php require_once '../../../../components/footer.php'; ?> 
+    <!-- JavaScript libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/services.js"></script>
+</body>
+</html>

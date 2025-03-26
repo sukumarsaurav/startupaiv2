@@ -2,461 +2,484 @@
 // Define base path to allow direct script access
 define('BASEPATH', true);
 
-// Use the main config.php instead of config/database.php
 require_once '../../../../includes/config.php';
 
-// Initialize the database connection
-$database = new Database();
-$db = $database->getConnection();
+// Page specific content
+$pageTitle = "Finance Website Design Services | StartupAI";
+$pageDescription = "Create secure, professional financial websites that inspire trust and convert clients. Our specialized finance web design services deliver regulatory-compliant, conversion-focused experiences for banks, wealth management firms, and fintech companies.";
+$serviceName = "Finance Website Design";
+$serviceSlug = "finance-websites";
+
+// SEO Data
+$seo_data = [
+    'description' => $pageDescription,
+    'keywords' => 'finance website design, bank website development, financial services web design, wealth management website, fintech website, financial advisor website, secure financial websites, regulatory compliant web design'
+];
 
 require_once '../../../../components/header.php';
 ?>
 
-<!-- Page Header -->
-<header class="page-header">
-    <div class="content-container">
-        <div class="content-row">
-            <div class="content-col full-width text-align-center">
-                <h1 class="font-weight-bold" data-aos="fade-up">Finance & Banking Website Design</h1>
-                <p class="subtitle" data-aos="fade-up" data-aos-delay="100">
-                    Secure, trustworthy, and conversion-focused websites for financial institutions and services
-                </p>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="content-container">
+                <div class="header-grid">
+                    <div class="page-header-content" data-aos="fade-right">
+                        <h1>Finance Website Design</h1>
+                        <p class="lead">Secure, professional websites that inspire trust and drive conversions for financial services companies</p>
+                        <a href="/pages/contact.php" class="get-started-btn">
+                            Start Your Finance Project
+                        </a>
+                    </div>
+                    <div class="page-header-image" data-aos="fade-left">
+                        <img src="/assets/images/services/finance-website-design.svg" alt="Finance Website Design" class="animate-float">
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
+        </section>
 
-<!-- Service Overview -->
-<section class="service-overview padding-y-5">
-    <div class="content-container">
-        <div class="content-row align-items-center">
-            <div class="content-col half margin-bottom-responsive" data-aos="fade-right">
-                <img src="/assets/images/services/finance-websites.svg" alt="Finance Website Design" class="img-fluid rounded box-shadow">
+        <!-- Service Overview -->
+        <section class="service-overview">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="service-overview-header" data-aos="fade-up">
+                        <h2>Expert Finance Website Design Services</h2>
+                        <p class="lead">We create specialized websites for financial institutions that balance security and compliance with user experience and conversion optimization.</p>
+                    </div>
+                </div>
+                
+                <div class="overview-grid">
+                    <div class="service-overview-content" data-aos="fade-up">
+                        <h3>Trust-Building Digital Solutions</h3>
+                        <p>Our team specializes in developing websites for banks, credit unions, wealth management firms, and fintech companies that meet stringent security standards while providing exceptional user experiences. We understand the unique challenges of financial websites – from regulatory compliance to trust-building design elements and secure transactional features.</p>
+                        <p>Every finance website we design is built with meticulous attention to security protocols, accessibility compliance, and conversion-focused user journeys while incorporating advanced encryption and data protection.</p>
+                    </div>
+                    <div class="service-overview-content" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Credibility-Centered Design Philosophy</h3>
+                        <p>We create finance websites with a focus on establishing immediate credibility, projecting stability, and streamlining complex financial processes. Our conversion-focused approach ensures visitors can efficiently find relevant information and complete key actions with confidence.</p>
+                        <p>By combining financial services expertise with user-centered design practices, we develop digital experiences that strengthen your brand authority, improve client acquisition, and provide secure access to financial services and information.</p>
+                    </div>
+                </div>
             </div>
-            <div class="content-col half" data-aos="fade-left">
-                <h2 class="margin-bottom-4">Finance & Banking Website Design Services</h2>
-                <p>
-                    Our specialized finance website design services help banks, credit unions, wealth management firms, fintech startups, and financial advisors create professional, secure online platforms that instill trust and convert prospects. We combine sleek aesthetics with robust functionality to deliver financial websites that meet strict regulatory requirements while providing exceptional user experiences.
-                </p>
-                <div class="features margin-top-4">
-                    <div class="feature-item display-flex align-items-start margin-bottom-3">
-                        <div class="feature-icon margin-right-3">
-                            <i class="fas fa-shield-alt color-primary"></i>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="services-header" data-aos="fade-up">
+                        <h2>Our Finance Website Design Services</h2>
+                        <p class="lead">Comprehensive web solutions tailored to the unique needs of financial institutions</p>
+                    </div>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-item" data-aos="fade-up">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <h3>Banking & Credit Union Websites</h3>
+                            <p>Professional, secure websites for financial institutions that balance brand credibility with comprehensive functionality for both retail and commercial clients.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Secure online banking integration</li>
+                                <li><i class="fas fa-check"></i> Interactive financial tools & calculators</li>
+                                <li><i class="fas fa-check"></i> Product comparison modules</li>
+                                <li><i class="fas fa-check"></i> Branch & ATM locators</li>
+                                <li><i class="fas fa-check"></i> Regulatory-compliant content structure</li>
+                            </ul>
                         </div>
-                        <div>
-                            <h5>Security-First Design</h5>
-                            <p>Enhanced security protocols and compliance with financial data protection standards.</p>
+                    </div>
+                    
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Investment & Wealth Management Sites</h3>
+                            <p>Sophisticated websites for financial advisors and wealth management firms that showcase expertise and facilitate client acquisition and engagement.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Advisor profile systems</li>
+                                <li><i class="fas fa-check"></i> Client portal integration</li>
+                                <li><i class="fas fa-check"></i> Service offering presentations</li>
+                                <li><i class="fas fa-check"></i> Thought leadership showcases</li>
+                                <li><i class="fas fa-check"></i> Compliance-ready content frameworks</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="feature-item display-flex align-items-start margin-bottom-3">
-                        <div class="feature-icon margin-right-3">
-                            <i class="fas fa-calculator color-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Financial Tools</h5>
-                            <p>Interactive calculators and tools for loans, investments, and financial planning.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item display-flex align-items-start margin-bottom-3">
-                        <div class="feature-icon margin-right-3">
-                            <i class="fas fa-user-lock color-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Account Access</h5>
-                            <p>Secure customer portals and banking interfaces for account management.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item display-flex align-items-start">
-                        <div class="feature-icon margin-right-3">
-                            <i class="fas fa-chart-line color-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Data Visualization</h5>
-                            <p>Clear presentation of financial data, rates, and market information.</p>
+                    
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Fintech Platform Websites</h3>
+                            <p>Modern, innovative websites for fintech companies that effectively communicate complex offerings and build credibility in the competitive financial technology space.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Product demonstration videos</li>
+                                <li><i class="fas fa-check"></i> API documentation sections</li>
+                                <li><i class="fas fa-check"></i> User onboarding flows</li>
+                                <li><i class="fas fa-check"></i> Security credential showcases</li>
+                                <li><i class="fas fa-check"></i> Integration partner ecosystems</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Why Hire Us Section - Hard-coded version -->
-<section class="finance-why-hire-us padding-y-5 bg-light">
-    <div class="content-container">
-        <div class="content-row margin-bottom-5">
-            <div class="content-col full-width text-align-center" data-aos="fade-up">
-                <h2 class="section-title">Why Choose Us for Finance Website Design</h2>
-                <p class="section-description">
-                    Our expertise makes us the ideal partner for your financial website
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-shield-alt fa-2x color-primary"></i>
+        <!-- Implementation Process -->
+        <section class="implementation-process">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="implementation-header" data-aos="fade-up">
+                        <h2>Our Finance Website Design Process</h2>
+                        <p class="lead">A strategic approach to creating secure, conversion-focused financial websites</p>
                     </div>
-                    <h4>Security Expertise</h4>
-                    <p>We understand the critical security needs of financial websites, implementing bank-grade encryption, secure authentication, and data protection measures.</p>
+                </div>
+                
+                <div class="process-grid">
+                    <div class="process-item" data-aos="fade-up">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>1</span>
+                            </div>
+                            <h3>Discovery & Compliance Planning</h3>
+                            <p>We begin with a thorough assessment of your financial institution's needs and regulatory requirements:</p>
+                            <ul>
+                                <li>Regulatory requirements documentation</li>
+                                <li>Security protocol planning</li>
+                                <li>Competitive analysis</li>
+                                <li>User persona development</li>
+                                <li>Conversion goal identification</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>2</span>
+                            </div>
+                            <h3>Trust-Centered Design</h3>
+                            <p>Our designers create interfaces that establish credibility while enabling efficient task completion:</p>
+                            <ul>
+                                <li>Trust-signaling visual elements</li>
+                                <li>Simplified complex information architecture</li>
+                                <li>Conversion-optimized user pathways</li>
+                                <li>Mobile-first responsive design</li>
+                                <li>Accessible interface implementation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>3</span>
+                            </div>
+                            <h3>Secure Development & Integration</h3>
+                            <p>We build robust finance websites with enterprise-grade security and integration capabilities:</p>
+                            <ul>
+                                <li>Secure coding practices</li>
+                                <li>Financial system integrations</li>
+                                <li>Advanced encryption implementation</li>
+                                <li>Secure form handling</li>
+                                <li>Performance optimization for financial calculators</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>4</span>
+                            </div>
+                            <h3>Security Testing & Launch</h3>
+                            <p>We validate security and compliance before launching your financial website:</p>
+                            <ul>
+                                <li>Penetration testing</li>
+                                <li>Compliance verification</li>
+                                <li>Cross-device/browser testing</li>
+                                <li>Performance benchmark testing</li>
+                                <li>Conversion optimization testing</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-balance-scale fa-2x color-primary"></i>
-                    </div>
-                    <h4>Compliance Knowledge</h4>
-                    <p>Our team stays current with financial industry regulations and compliance standards, ensuring your website meets all legal requirements.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-handshake fa-2x color-primary"></i>
-                    </div>
-                    <h4>Trust-Building Design</h4>
-                    <p>We create interfaces that convey professionalism, stability, and credibility—essential qualities for financial service providers.</p>
-                </div>
-            </div>
-        </div>
-        <div class="content-row margin-top-4">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-calculator fa-2x color-primary"></i>
-                    </div>
-                    <h4>Financial Tool Development</h4>
-                    <p>We excel at creating interactive financial calculators, comparison tools, and data visualizations that engage users and drive conversions.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-mobile-alt fa-2x color-primary"></i>
-                    </div>
-                    <h4>Mobile Banking Expertise</h4>
-                    <p>We design responsive platforms that provide seamless financial experiences across all devices, prioritizing mobile banking functions.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-cogs fa-2x color-primary"></i>
-                    </div>
-                    <h4>System Integration Skills</h4>
-                    <p>We expertly connect your website with banking cores, payment processors, CRM systems, and other financial service technology.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Process -->
-<section class="process-section padding-y-5 bg-light">
-    <div class="content-container">
-        <div class="content-row margin-bottom-5">
-            <div class="content-col full-width text-align-center" data-aos="fade-up">
-                <h2 class="section-title">Our Finance Website Design Process</h2>
-                <p class="section-description">
-                    A methodical approach to creating secure, effective financial websites
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="content-col one-fourth margin-bottom-responsive" data-aos="fade-up">
-                <div class="process-step text-align-center padding-4 height-100 bg-white rounded box-shadow-sm">
-                    <div class="process-icon margin-bottom-3">
-                        <i class="fas fa-clipboard-check fa-3x color-primary"></i>
+        <!-- Compliance Section -->
+        <section class="compliance-section">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="compliance-header" data-aos="fade-up">
+                        <h2>Financial Website Compliance Standards</h2>
+                        <p class="lead">Our finance websites adhere to critical regulatory and security requirements</p>
                     </div>
-                    <h4>Compliance Review</h4>
-                    <p>We assess regulatory requirements and industry standards that apply to your financial services.</p>
+                </div>
+                
+                <div class="content-row">
+                    <div class="content-col one-half margin-bottom-4" data-aos="fade-up">
+                        <div class="compliance-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                            <div class="compliance-icon margin-bottom-3">
+                                <i class="fas fa-shield-alt fa-2x color-primary"></i>
+                            </div>
+                            <h4>Security & Compliance Standards</h4>
+                            <ul class="compliance-list">
+                                <li><i class="fas fa-check text-primary me-2"></i>PCI DSS compliance for payment handling</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>GDPR & CCPA data privacy compliance</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>ADA accessibility standards</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>FINRA & SEC compliance guidance</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>SSL/TLS encryption implementation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-col one-half margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="compliance-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                            <div class="compliance-icon margin-bottom-3">
+                                <i class="fas fa-lock fa-2x color-primary"></i>
+                            </div>
+                            <h4>Enhanced Security Features</h4>
+                            <ul class="compliance-list">
+                                <li><i class="fas fa-check text-primary me-2"></i>Secure form encryption</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Advanced DDoS protection</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Regular security scanning</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Content security policies</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Secure third-party integrations</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="content-col one-fourth margin-bottom-responsive" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-step text-align-center padding-4 height-100 bg-white rounded box-shadow-sm">
-                    <div class="process-icon margin-bottom-3">
-                        <i class="fas fa-lock fa-3x color-primary"></i>
-                    </div>
-                    <h4>Security Architecture</h4>
-                    <p>We design secure infrastructure with proper encryption and data protection measures.</p>
-                </div>
-            </div>
-            <div class="content-col one-fourth margin-bottom-responsive" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-step text-align-center padding-4 height-100 bg-white rounded box-shadow-sm">
-                    <div class="process-icon margin-bottom-3">
-                        <i class="fas fa-pencil-ruler fa-3x color-primary"></i>
-                    </div>
-                    <h4>Trust-Building Design</h4>
-                    <p>We create interfaces that convey professionalism, credibility, and financial expertise.</p>
-                </div>
-            </div>
-            <div class="content-col one-fourth" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-step text-align-center padding-4 height-100 bg-white rounded box-shadow-sm">
-                    <div class="process-icon margin-bottom-3">
-                        <i class="fas fa-cogs fa-3x color-primary"></i>
-                    </div>
-                    <h4>Functionality Integration</h4>
-                    <p>We implement financial tools, secure logins, and other finance-specific features.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Website Types -->
-<section class="website-types-section padding-y-5">
-    <div class="content-container">
-        <div class="content-row margin-bottom-5">
-            <div class="content-col full-width text-align-center" data-aos="fade-up">
-                <h2 class="section-title">Finance & Banking Website Types</h2>
-                <p class="section-description">
-                    Specialized solutions for different financial service providers
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-university fa-2x color-primary"></i>
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="features-header" data-aos="fade-up">
+                        <h2>Essential Features for Finance Websites</h2>
+                        <p class="lead">Key components that enhance trust and drive conversions for financial institutions</p>
                     </div>
-                    <h4>Banking Websites</h4>
-                    <p>Comprehensive platforms for banks and credit unions featuring account access, branch/ATM locators, product information, and application forms. Designed with strict security and accessibility standards.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item" data-aos="fade-up">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <h3>Interactive Financial Tools</h3>
+                            <p>Engaging calculators and tools that help visitors visualize financial scenarios, including loan calculators, retirement planners, and investment return estimators that generate qualified leads.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h3>Secure Client Portals</h3>
+                            <p>Protected access points for clients to view accounts, documents, and communicate securely. Includes strong authentication, encryption, and role-based permissions to maintain data privacy.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-file-signature"></i>
+                            </div>
+                            <h3>Online Application Systems</h3>
+                            <p>Streamlined, secure application processes for financial products and services with progressive form design, document upload capabilities, and status tracking features.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <h3>Financial Resource Centers</h3>
+                            <p>Comprehensive knowledge bases with financial education content, market insights, and guides that position your institution as a trusted authority while improving SEO performance.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-hand-holding-usd fa-2x color-primary"></i>
-                    </div>
-                    <h4>Investment & Wealth Management</h4>
-                    <p>Sophisticated platforms for investment firms featuring portfolio tracking, market insights, advisor matching, and secure document sharing for high-net-worth clients.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-lightbulb fa-2x color-primary"></i>
-                    </div>
-                    <h4>Fintech Startup Platforms</h4>
-                    <p>Innovative digital platforms for financial technology companies with API integrations, mobile-first design, and modern user experiences that disrupt traditional banking.</p>
-                </div>
-            </div>
-        </div>
-        <div class="content-row margin-top-4">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-money-check-alt fa-2x color-primary"></i>
-                    </div>
-                    <h4>Lending & Mortgage Sites</h4>
-                    <p>Specialized websites for lenders featuring loan calculators, application processes, qualification tools, and rate comparisons with secure document upload.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-comments-dollar fa-2x color-primary"></i>
-                    </div>
-                    <h4>Financial Advisor Websites</h4>
-                    <p>Professional platforms for advisors and planners that showcase credentials, services, testimonials, and educational content to build client trust.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-chart-pie fa-2x color-primary"></i>
-                    </div>
-                    <h4>Insurance Provider Platforms</h4>
-                    <p>User-friendly websites for insurance companies with quote generators, coverage information, claim processing, and client portals for policy management.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Essential Features -->
-<section class="features-section padding-y-5 bg-light">
-    <div class="content-container">
-        <div class="content-row margin-bottom-5">
-            <div class="content-col full-width text-align-center" data-aos="fade-up">
-                <h2 class="section-title">Essential Finance Website Features</h2>
-                <p class="section-description">
-                    Key components for effective financial websites
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-key fa-2x color-primary"></i>
+        <!-- Benefits -->
+        <section class="benefits-section">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="benefits-header" data-aos="fade-up">
+                        <h2>Benefits of Professional Finance Website Design</h2>
+                        <p class="lead">Why investing in a specialized finance website drives business results</p>
                     </div>
-                    <h4>Secure Authentication</h4>
-                    <p>Multi-factor authentication, biometric login options, and secure session management for protected account access.</p>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item" data-aos="fade-up">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3>Enhanced Client Trust & Credibility</h3>
+                            <p>Financial institutions with professional, secure websites experience a 43% higher perceived trustworthiness rating from prospects. Professionally designed finance websites with clear security indicators can increase form completion rates by 58% compared to generic designs lacking trust signals.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Improved Lead Generation & Conversion</h3>
+                            <p>Financial websites with interactive calculators generate 2.5x more qualified leads than those without. Financial advisors with optimized websites report a 67% increase in qualified prospects, with 34% of new clients citing the website as their primary reason for making initial contact.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-gavel"></i>
+                            </div>
+                            <h3>Reduced Compliance & Security Risks</h3>
+                            <p>Professionally designed financial websites with comprehensive compliance measures reduce regulatory exposure by implementing proper disclaimers, disclosures, and accessibility standards. Secure financial websites reduce data breach risk, with each breach costing financial institutions an average of $5.85 million and significant reputation damage.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-calculator fa-2x color-primary"></i>
-                    </div>
-                    <h4>Financial Calculators</h4>
-                    <p>Interactive tools for mortgage payment estimates, investment growth projections, retirement planning, and loan amortization.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-map-marker-alt fa-2x color-primary"></i>
-                    </div>
-                    <h4>Branch/ATM Locators</h4>
-                    <p>Interactive maps with filtering options to help customers find branches, ATMs, and service centers in their area.</p>
-                </div>
-            </div>
-        </div>
-        <div class="content-row margin-top-4">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-file-invoice fa-2x color-primary"></i>
-                    </div>
-                    <h4>Digital Application Forms</h4>
-                    <p>Streamlined, secure forms for account opening, loan applications, and service enrollment with save-and-resume functionality.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-chart-line fa-2x color-primary"></i>
-                    </div>
-                    <h4>Investment Dashboards</h4>
-                    <p>Real-time portfolio tracking, performance metrics, and market data visualizations for investment account holders.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-comment-dollar fa-2x color-primary"></i>
-                    </div>
-                    <h4>Chat & Support Tools</h4>
-                    <p>Secure messaging systems, chatbots, and co-browsing solutions for customer service and financial guidance.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Benefits -->
-<section class="benefits-section padding-y-5">
-    <div class="content-container">
-        <div class="content-row margin-bottom-5">
-            <div class="content-col full-width text-align-center" data-aos="fade-up">
-                <h2 class="section-title">Benefits of Professional Finance Website Design</h2>
-                <p class="section-description">
-                    How a well-designed financial website drives business growth
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-shield-alt fa-2x color-primary"></i>
-                    </div>
-                    <h4>Enhanced Trust & Credibility</h4>
-                    <p>Professional design and security features reinforce client confidence in your financial institution.</p>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="content-container">
+                <div class="cta-content">
+                    <h2>Ready to Create Your Finance Website?</h2>
+                    <p class="lead">Let's build a secure, conversion-focused digital experience that establishes trust and drives business growth.</p>
+                    <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">
+                        Schedule a Consultation
+                    </a>
                 </div>
             </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-user-plus fa-2x color-primary"></i>
-                    </div>
-                    <h4>Increased Client Acquisition</h4>
-                    <p>Streamlined application processes and clear product information improve conversion rates for new accounts.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-chart-pie fa-2x color-primary"></i>
-                    </div>
-                    <h4>Product Cross-Selling</h4>
-                    <p>Strategic digital experiences make it easier to introduce relevant financial products to existing customers.</p>
-                </div>
-            </div>
-        </div>
-        <div class="content-row margin-top-4">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-clock fa-2x color-primary"></i>
-                    </div>
-                    <h4>Operational Efficiency</h4>
-                    <p>Self-service tools and automated processes reduce staff workload and streamline customer service operations.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-mobile-alt fa-2x color-primary"></i>
-                    </div>
-                    <h4>Mobile Banking Growth</h4>
-                    <p>Responsive design encourages adoption of mobile financial services, increasing customer engagement.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-balance-scale fa-2x color-primary"></i>
-                    </div>
-                    <h4>Regulatory Compliance</h4>
-                    <p>Properly designed financial websites help maintain compliance with industry regulations and data protection laws.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- CTA -->
-<section class="cta-section padding-y-5 bg-primary text-white">
-    <div class="content-container">
-        <div class="content-row align-items-center">
-            <div class="content-col one-half margin-bottom-4 margin-lg-0" data-aos="fade-right">
-                <h2 class="margin-bottom-3">Ready to Elevate Your Financial Institution Online?</h2>
-                <p class="subtitle margin-bottom-0">
-                    Let's create a secure, effective website that builds trust and drives growth.
-                </p>
-            </div>
-            <div class="content-col one-half text-lg-end" data-aos="fade-left">
-                <a href="/contact" class="btn btn-light btn-lg">Get Started</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="faq-section">
-    <div class="content-container">
-        <div class="faq-header">
-            <h2 class="faq-title">Finance Website FAQ's</h2>
-            <h3 class="faq-subtitle">Have Any Questions?</h3>
-        </div>
-        <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq-question">
-                    What security features should financial websites include?
-                    <span class="faq-plus-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    <p>Financial websites should implement multiple layers of security including SSL/TLS encryption with extended validation certificates, multi-factor authentication, secure session management with automatic timeouts, robust password policies, encrypted data storage, real-time fraud monitoring, regular security audits, and penetration testing. Additional essential features include IP tracking and suspicious activity alerts, secure forms with field validation, and compliance with financial industry security standards like PCI DSS for payment processing. We implement all these security measures and more to ensure your financial website maintains the highest levels of protection for sensitive customer data.</p>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="faq-header">
+                        <h2>Frequently Asked Questions</h2>
+                        <p class="lead">Common questions about finance website design</p>
+                    </div>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <h3>How do you ensure our financial website meets regulatory requirements?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our comprehensive regulatory compliance approach includes:</p>
+                            <ul>
+                                <li><strong>Regulatory Assessment:</strong> We conduct an initial assessment based on your specific financial sector (banking, wealth management, insurance, etc.) to identify applicable regulations like GDPR, CCPA, ADA, FINRA, and SEC requirements.</li>
+                                <li><strong>Compliance-Ready Architecture:</strong> We implement proper disclosure placement, disclaimer systems, accessibility features, and privacy controls as foundational elements.</li>
+                                <li><strong>Legal Review Integration:</strong> We collaborate with your legal team or compliance officers to review copy, disclosures, and user flows.</li>
+                                <li><strong>Documentation & Training:</strong> We provide guidance on maintaining compliance when updating content and features.</li>
+                            </ul>
+                            <p>Our specialized experience with financial institutions means we understand critical elements like proper disclosure of fees and rates, APR calculators that follow federal guidelines, accessibility compliance, and appropriate protections for collecting sensitive financial information. We stay current with evolving financial regulations to ensure your website remains compliant through regulatory changes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What security measures do you implement for financial websites?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our multilayered financial website security approach includes:</p>
+                            <ul>
+                                <li><strong>Advanced Encryption:</strong> Implementation of TLS 1.3 with strong cipher suites and perfect forward secrecy to protect data in transit.</li>
+                                <li><strong>Secure Form Handling:</strong> Forms with financial or personal information use enhanced validation, CAPTCHA protection, and secure processing methods.</li>
+                                <li><strong>Infrastructure Security:</strong> We work with high-security hosting environments that include DDoS protection, web application firewalls, intrusion detection, and regular security scanning.</li>
+                                <li><strong>Authentication Systems:</strong> For client portals, we implement strong password policies, multi-factor authentication options, and session security controls.</li>
+                                <li><strong>Security Headers:</strong> Implementation of content security policies, HSTS, and other security headers to prevent common attack vectors.</li>
+                            </ul>
+                            <p>Additionally, we provide security-focused training for your team, conduct penetration testing before launch, and can create a security response plan for your website. All third-party integrations are carefully vetted and implemented with security best practices.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do you integrate with our existing financial systems?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our financial system integration capabilities include:</p>
+                            <ul>
+                                <li><strong>Banking Platforms:</strong> Secure integration with major core banking systems, online banking platforms, and payment processors using industry-standard APIs and secure connection methods.</li>
+                                <li><strong>Investment Platforms:</strong> Connection to portfolio management systems, trading platforms, and market data providers to display real-time or daily account information.</li>
+                                <li><strong>CRM & Marketing Systems:</strong> Integration with financial CRM systems like Salesforce Financial Services Cloud or Redtail to create seamless lead management workflows.</li>
+                                <li><strong>Document Management:</strong> Secure connections to document storage and management systems with proper authentication.</li>
+                                <li><strong>Custom API Development:</strong> When standard integrations aren't available, we can develop secure middleware to connect your website with proprietary systems.</li>
+                            </ul>
+                            <p>All integrations are implemented with a security-first approach, using tokenization where possible, minimizing data transfer to only what's necessary, and implementing proper authentication and encryption. We work closely with your IT team and system vendors to ensure appropriate access methods while maintaining system integrity.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do you optimize financial websites for conversion?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our finance-specific conversion strategy includes:</p>
+                            <ul>
+                                <li><strong>Trust-First Design:</strong> Strategic placement of security indicators, credentials, testimonials, and reviews to establish credibility before asking for action.</li>
+                                <li><strong>Progressive Disclosure:</strong> Thoughtfully structured information architecture that provides essential details upfront while allowing interested prospects to dive deeper.</li>
+                                <li><strong>Value-Focused CTAs:</strong> Calls-to-action framed around value delivery rather than sales pressure, with multiple engagement options for different stages of decision readiness.</li>
+                                <li><strong>Financial Tools as Lead Generation:</strong> Interactive calculators and tools that provide value while capturing prospect information and financial goals.</li>
+                                <li><strong>Simplified Complex Processes:</strong> Multi-step forms and applications broken into manageable segments with progress indicators and save capabilities.</li>
+                            </ul>
+                            <p>We also implement A/B testing for key conversion points, heat mapping analysis, and user testing with actual financial consumers to continuously optimize performance. Our designs include specific conversion strategies for different financial products, recognizing that mortgage applications have different requirements than retirement planning consultations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do you handle financial content creation and compliance?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our approach to financial content development includes:</p>
+                            <ul>
+                                <li><strong>Compliance-Aware Copywriting:</strong> Our financial copywriters understand regulatory boundaries, proper disclosure requirements, and how to make required language accessible.</li>
+                                <li><strong>Automated Disclosure Management:</strong> We implement systems for managing disclosures, ensuring consistent application across relevant content.</li>
+                                <li><strong>Compliance Review Workflows:</strong> We develop approval processes for content that requires legal or compliance review before publication.</li>
+                                <li><strong>Educational Resource Development:</strong> We create educational content that avoids crossing lines into financial advice while providing value.</li>
+                                <li><strong>SEO-Optimized Compliant Content:</strong> We balance search engine optimization with regulatory requirements to create discoverable yet compliant content.</li>
+                            </ul>
+                            <p>We can work with your compliance team to develop content guidelines specific to your institution and regulatory environment. Our content management systems include features for tracking compliance reviews and maintaining records of approved content. We focus on creating clear, jargon-free financial content that builds trust while satisfying regulatory requirements.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<?php require_once '../../../../components/footer.php'; ?> 
+<?php
+include_once '../../../../components/footer.php';
+?>
+
+    <!-- JavaScript libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/services.js"></script>
+</body>
+</html>

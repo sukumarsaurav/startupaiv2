@@ -14,385 +14,284 @@ require_once '../../../../components/header.php';
 ?>
 
 <!-- Page Header -->
-<section class="page-header py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6" data-aos="fade-right">
-                <h1 class="display-4"><?php echo $pageTitle; ?></h1>
+<section class="page-header">
+    <div class="content-container">
+        <div class="header-grid">
+            <div class="page-header-content" data-aos="fade-right">
+                <h1><?php echo $pageTitle; ?></h1>
                 <p class="lead"><?php echo $pageDescription; ?></p>
-                <a href="/pages/contact.php" class="btn btn-primary mt-3">Get Started</a>
+                <a href="/pages/contact.php" class="get-started-btn">Get Started</a>
             </div>
-            <div class="col-lg-6" data-aos="fade-left">
-                <img src="/assets/images/services/seo-keyword-research.svg" alt="<?php echo $serviceName; ?>" class="img-fluid">
+            <div class="page-header-image" data-aos="fade-left">
+                <img src="/assets/images/services/ai-seo-research.svg" alt="<?php echo $serviceName; ?>" class="animate-float">
             </div>
         </div>
     </div>
 </section>
 
 <!-- Service Overview -->
-<section class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                <h2>Transform Your SEO Strategy with AI Intelligence</h2>
-                <p class="lead">Discover untapped keyword opportunities, predict search trends, and optimize content with AI-powered SEO tools that go beyond traditional research methods.</p>
+<section class="service-overview">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="service-overview-header" data-aos="fade-up">
+                <h2>Revolutionize Your SEO Strategy with AI-Powered Insights</h2>
+                <p class="lead">Discover untapped keyword opportunities and gain competitive advantage with machine learning-driven search intelligence.</p>
             </div>
         </div>
         
-        <div class="row mt-4">
-            <div class="col-md-6" data-aos="fade-up">
-                <h3>The Limitations of Traditional SEO</h3>
-                <p>Traditional keyword research and SEO tactics rely on historical data, basic metrics, and manual analysis. This approach misses emerging opportunities, fails to capture semantic connections, and struggles to keep pace with algorithm changes.</p>
+        <div class="overview-grid">
+            <div class="service-overview-content" data-aos="fade-up">
+                <h3>The SEO Challenge</h3>
+                <p>Traditional keyword research is time-consuming, often subjective, and fails to identify emerging trends and semantic relationships. Most businesses struggle with incomplete data, disconnected tools, and an inability to translate keyword insights into actionable content strategies that drive organic growth.</p>
             </div>
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <h3>The AI SEO Advantage</h3>
-                <p>Our AI-based SEO approach uses machine learning to analyze search patterns, predict trends, understand user intent, and identify semantic relationships. This gives you a competitive edge by uncovering opportunities others miss and adapting to search engine changes faster.</p>
+            <div class="service-overview-content" data-aos="fade-up" data-aos-delay="100">
+                <h3>Our AI-Powered Solution</h3>
+                <p>Our advanced AI keyword research platform goes beyond basic search volume metrics to analyze user intent, content gaps, competitive positioning, and semantic relationships between topics. By processing millions of data points, our AI identifies high-opportunity keywords that your competitors have missed and provides strategic recommendations tailored to your specific business goals.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Services -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                <h2>Our AI SEO & Keyword Research Services</h2>
-                <p class="lead">Comprehensive AI-powered solutions to enhance your search visibility</p>
+<section class="services-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="services-header" data-aos="fade-up">
+                <h2>Our AI SEO Research Services</h2>
+                <p class="lead">Comprehensive solutions to transform your search strategy</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-6 mb-4" data-aos="fade-up">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-key fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">AI-Powered Keyword Discovery</h3>
-                        <p>Uncover high-value keyword opportunities through advanced machine learning algorithms that analyze search patterns, user intent, and competitive gaps.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Semantic keyword clustering</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Long-tail opportunity analysis</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Intent-based keyword mapping</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Competitive gap identification</li>
-                        </ul>
+        <div class="services-grid">
+            <div class="service-item" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
                     </div>
+                    <h3>Opportunity Discovery</h3>
+                    <p>Identify high-potential keyword opportunities with significant traffic and manageable competition that align with your business objectives.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Semantic keyword clustering</li>
+                        <li><i class="fas fa-check"></i>Topic gap analysis</li>
+                        <li><i class="fas fa-check"></i>Competitive whitespace mapping</li>
+                        <li><i class="fas fa-check"></i>Emerging trend detection</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-chart-line fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">Predictive Search Trend Analysis</h3>
-                        <p>Identify emerging search trends before they peak using predictive AI that analyzes search patterns, social signals, and content engagement metrics.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Trend forecasting algorithms</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Seasonal opportunity prediction</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Cross-platform signal analysis</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Industry-specific trend alerts</li>
-                        </ul>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
                     </div>
+                    <h3>Intent Analysis</h3>
+                    <p>Understand exactly what users are looking for with each search query, enabling you to create perfectly matched content that converts.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Query intent classification</li>
+                        <li><i class="fas fa-check"></i>Semantic context analysis</li>
+                        <li><i class="fas fa-check"></i>SERP feature opportunities</li>
+                        <li><i class="fas fa-check"></i>Content format recommendations</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-robot fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">AI Content Optimization</h3>
-                        <p>Optimize your content for search engines and users with AI-powered content analysis that recommends improvements for readability, relevance, and ranking potential.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Semantic content analysis</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>NLP-based recommendations</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Topic coverage evaluation</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Readability optimization</li>
-                        </ul>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
+                    <h3>Competitive Intelligence</h3>
+                    <p>Gain deep insights into your competitors' keyword strategies, strengths, weaknesses, and untapped opportunities.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Competitor ranking analysis</li>
+                        <li><i class="fas fa-check"></i>Share of voice tracking</li>
+                        <li><i class="fas fa-check"></i>Content gap identification</li>
+                        <li><i class="fas fa-check"></i>Strategic opportunity mapping</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-users fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">User Intent Analysis</h3>
-                        <p>Decode user search intent using AI algorithms that classify queries by intent type and recommend content strategies that align with user needs.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Intent classification</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>SERP feature analysis</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Content format recommendations</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>User journey mapping</li>
-                        </ul>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-alt"></i>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-sitemap fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">AI-Driven Content Strategy</h3>
-                        <p>Develop data-driven content plans using AI that analyzes competitive content, identifies gaps, and recommends topics with the highest potential impact.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Content gap analysis</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Topic cluster generation</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Impact scoring algorithms</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Content prioritization frameworks</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="card-body p-4">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-tachometer-alt fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">SEO Performance Prediction</h3>
-                        <p>Forecast the potential performance of content and keywords before investing resources using predictive models trained on historical SEO data.</p>
-                        <ul class="service-features mt-3">
-                            <li><i class="fas fa-check text-primary me-2"></i>Ranking potential analysis</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Traffic forecasting</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>Conversion potential estimation</li>
-                            <li><i class="fas fa-check text-primary me-2"></i>ROI prediction models</li>
-                        </ul>
-                    </div>
+                    <h3>Content Strategy Development</h3>
+                    <p>Transform keyword insights into comprehensive content plans that address user needs and search engine requirements.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Topic cluster mapping</li>
+                        <li><i class="fas fa-check"></i>Content brief generation</li>
+                        <li><i class="fas fa-check"></i>Query-specific outlines</li>
+                        <li><i class="fas fa-check"></i>Semantic optimization guidance</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Technology Platform -->
-<section class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                <h2>Our AI SEO Technology Platform</h2>
-                <p class="lead">Powered by advanced algorithms and machine learning models</p>
+<!-- AI Research Platform -->
+<section class="platforms-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="platforms-header" data-aos="fade-up">
+                <h2>Our AI SEO Research Platform</h2>
+                <p class="lead">Advanced technology that powers data-driven search strategies</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="tech-card text-center p-4 h-100">
-                    <i class="fas fa-brain fa-3x text-primary mb-3"></i>
-                    <h3 class="h5">Natural Language Processing</h3>
-                    <p>Our NLP engines analyze content semantics, topic relationships, and linguistic patterns to understand content like a human reader.</p>
-                </div>
+        <div class="platforms-grid">
+            <div class="platform-card" data-aos="fade-up">
+                <h3>NLP Semantic Engine</h3>
+                <ul>
+                    <li>Topic modeling</li>
+                    <li>Entity recognition</li>
+                    <li>Query intent classification</li>
+                    <li>Contextual relevance scoring</li>
+                    <li>Semantic relationship mapping</li>
+                </ul>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="tech-card text-center p-4 h-100">
-                    <i class="fas fa-chart-bar fa-3x text-primary mb-3"></i>
-                    <h3 class="h5">Predictive Analytics</h3>
-                    <p>Machine learning models trained on vast SEO datasets predict keyword performance, content success, and algorithm impacts.</p>
-                </div>
+            <div class="platform-card" data-aos="fade-up" data-aos-delay="100">
+                <h3>Search Intelligence System</h3>
+                <ul>
+                    <li>SERP feature analysis</li>
+                    <li>Ranking factor identification</li>
+                    <li>Algorithm pattern detection</li>
+                    <li>Market trend prediction</li>
+                    <li>Real-time search monitoring</li>
+                </ul>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="tech-card text-center p-4 h-100">
-                    <i class="fas fa-database fa-3x text-primary mb-3"></i>
-                    <h3 class="h5">Big Data Processing</h3>
-                    <p>Our platforms analyze billions of search signals, content pieces, and ranking factors to identify patterns invisible to traditional tools.</p>
-                </div>
+            <div class="platform-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>Competitive Analysis Module</h3>
+                <ul>
+                    <li>Backlink intelligence</li>
+                    <li>Content effectiveness scoring</li>
+                    <li>Market position mapping</li>
+                    <li>Growth opportunity analysis</li>
+                    <li>Strategy recommendation engine</li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Implementation Process -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                <h2>Our AI SEO Implementation Process</h2>
-                <p class="lead">A systematic approach to leveraging AI for search engine optimization</p>
+<section class="implementation-process">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="implementation-header" data-aos="fade-up">
+                <h2>Our Research Methodology</h2>
+                <p class="lead">A systematic approach to discovering and leveraging keyword opportunities</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-3 mb-4" data-aos="fade-up">
-                <div class="process-card text-center h-100">
+        <div class="process-grid">
+            <div class="process-item" data-aos="fade-up">
+                <div class="process-card">
                     <div class="process-icon">
                         <span>1</span>
                     </div>
-                    <h3>Discovery & Audit</h3>
-                    <p>We analyze your current SEO performance, competitive position, and industry landscape to establish baselines and identify opportunities.</p>
+                    <h3>Discovery & Analysis</h3>
+                    <p>We begin by understanding your business objectives and current search performance, then conduct comprehensive research to identify opportunities.</p>
+                    <ul>
+                        <li>Business goal alignment</li>
+                        <li>Current performance audit</li>
+                        <li>Competitor landscape analysis</li>
+                        <li>Opportunity identification</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-card text-center h-100">
+            <div class="process-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="process-card">
                     <div class="process-icon">
                         <span>2</span>
                     </div>
-                    <h3>Strategy Development</h3>
-                    <p>Our AI systems develop a customized SEO strategy based on your goals, competitive analysis, and highest-potential opportunities.</p>
+                    <h3>Strategic Planning</h3>
+                    <p>We develop a comprehensive keyword strategy that aligns with your business goals and maps out content opportunities.</p>
+                    <ul>
+                        <li>Keyword prioritization</li>
+                        <li>Content gap mapping</li>
+                        <li>Topic cluster development</li>
+                        <li>SERP feature targeting</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-card text-center h-100">
+            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="process-card">
                     <div class="process-icon">
                         <span>3</span>
                     </div>
-                    <h3>Implementation</h3>
-                    <p>We execute the strategy through content optimization, keyword targeting, and technical SEO improvements guided by AI insights.</p>
+                    <h3>Implementation Support</h3>
+                    <p>We provide detailed guidance for content creation and on-page optimization to effectively target identified opportunities.</p>
+                    <ul>
+                        <li>Content brief development</li>
+                        <li>Query-specific recommendations</li>
+                        <li>Semantic optimization guidance</li>
+                        <li>Technical SEO requirements</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-card text-center h-100">
+            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="process-card">
                     <div class="process-icon">
                         <span>4</span>
                     </div>
-                    <h3>Measurement & Refinement</h3>
-                    <p>Our AI continuously analyzes performance data to refine strategies, adapt to algorithm changes, and capitalize on emerging opportunities.</p>
+                    <h3>Performance Tracking</h3>
+                    <p>We monitor the performance of implemented recommendations and continuously refine the strategy based on results.</p>
+                    <ul>
+                        <li>Ranking movement analysis</li>
+                        <li>Traffic growth tracking</li>
+                        <li>Conversion rate monitoring</li>
+                        <li>Strategy refinement</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Business Benefits -->
-<section class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+<!-- Benefits -->
+<section class="benefits-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="benefits-header" data-aos="fade-up">
                 <h2>Business Benefits</h2>
-                <p class="lead">How AI-powered SEO delivers superior results</p>
+                <p class="lead">Transformative outcomes from AI-powered SEO research</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-search fa-3x text-primary"></i>
+        <div class="benefits-grid">
+            <div class="benefit-item" data-aos="fade-up">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-search"></i>
                     </div>
-                    <h3 class="h5">Discover Hidden Opportunities</h3>
-                    <p>Uncover high-value keywords and content gaps that traditional research methods miss, giving you a competitive edge.</p>
+                    <h3>3x More Keyword Opportunities</h3>
+                    <p>Discover valuable keywords that traditional research methods miss, expanding your organic reach potential.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-bolt fa-3x text-primary"></i>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3 class="h5">Accelerate Results</h3>
-                    <p>Achieve faster ranking improvements by focusing efforts on the most impactful tactics identified through AI analysis.</p>
+                    <h3>40-60% Higher Ranking Velocity</h3>
+                    <p>Achieve faster improvements in search rankings by targeting the right keywords with optimal content.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-bullseye fa-3x text-primary"></i>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bullseye"></i>
                     </div>
-                    <h3 class="h5">Enhanced Targeting</h3>
-                    <p>Connect with your most valuable prospects through content that precisely matches their search intent and needs.</p>
+                    <h3>25% Better Content Relevance</h3>
+                    <p>Create content that perfectly matches user intent, resulting in higher engagement and conversion rates.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-chart-line fa-3x text-primary"></i>
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-trophy"></i>
                     </div>
-                    <h3 class="h5">Improved ROI</h3>
-                    <p>Maximize your SEO investment by prioritizing efforts with the highest predicted return based on AI forecasting.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-shield-alt fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Algorithm-Proof Strategy</h3>
-                    <p>Develop search strategies that remain effective through algorithm changes by focusing on core user intent and content quality.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="benefit-card text-center p-4 h-100">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-sync-alt fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Adaptive Optimization</h3>
-                    <p>Continuously refine your SEO strategy based on real-time performance data and changing search patterns.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Why Choose Us - Hardcoded Section -->
-<section class="why-choose-us py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                <h2>Why Choose Us for <?php echo $serviceName; ?></h2>
-                <p class="lead">Our AI-powered approach to SEO delivers superior results in less time</p>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-search-plus fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Deeper Keyword Insights</h3>
-                    <p>Our AI analyzes 100x more data points than traditional keyword tools, uncovering valuable opportunities competitors miss.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-brain fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Semantic Analysis</h3>
-                    <p>Our advanced NLP models understand search intent and topic relationships, moving beyond simple keyword matching.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-chart-line fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Predictive Trend Detection</h3>
-                    <p>Identify emerging search trends before they appear in standard tools, giving you a significant first-mover advantage.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-file-alt fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Content Optimization</h3>
-                    <p>Our AI doesn't just find keywords—it shows exactly how to use them in your content for maximum search impact.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-sync fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Algorithm Adaptation</h3>
-                    <p>Our systems continuously monitor search engine changes, ensuring your SEO strategy stays effective through updates.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="feature-card text-center p-4 h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="fas fa-trophy fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="h5">Proven Results</h3>
-                    <p>Our clients typically see a 40-70% increase in organic traffic within 6 months of implementing our AI-powered SEO strategies.</p>
+                    <h3>Sustainable Competitive Advantage</h3>
+                    <p>Build a search strategy based on exclusive insights that your competitors don't have access to.</p>
                 </div>
             </div>
         </div>
@@ -400,75 +299,83 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- CTA Section -->
-<section class="cta-section py-5 bg-primary text-white">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="mb-4">Ready to Transform Your SEO Strategy?</h2>
-                <p class="lead mb-4">Contact us today to discuss how AI-powered SEO and keyword research can elevate your search performance.</p>
-                <a href="/pages/contact.php" class="btn btn-light btn-lg">Schedule a Consultation</a>
-            </div>
+<section class="cta-section">
+    <div class="content-container">
+        <div class="cta-content">
+            <h2>Ready to Transform Your SEO Strategy?</h2>
+            <p class="lead">Discover untapped keyword opportunities and develop a data-driven search strategy powered by AI.</p>
+            <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">Schedule a Consultation</a>
         </div>
     </div>
 </section>
 
 <!-- FAQ Section -->
-<section class="faq-section py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5">
-                <h2 class="faq-title">Frequently Asked Questions</h2>
-                <p class="faq-subtitle">Common questions about AI-powered SEO and keyword research</p>
+<section class="faq-section">
+    <div class="content-container">
+        <div class="section-header">
+            <div class="faq-header">
+                <h2>Frequently Asked Questions</h2>
+                <p class="lead">Common questions about AI-powered SEO research</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <div class="faq-container">
-                    <div class="faq-item active">
-                        <div class="faq-question">
-                            <h3>How does AI-powered keyword research differ from traditional methods?</h3>
-                            <button class="toggle-btn"><span class="icon"></span></button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Traditional keyword research relies primarily on search volume, keyword difficulty, and basic competitor analysis using fixed datasets. This approach is limited by its reliance on historical data, manual analysis, and inability to detect semantic relationships or user intent nuances. In contrast, AI-powered keyword research leverages machine learning algorithms to analyze vast datasets and identify patterns that humans might miss. Our AI systems can detect semantic relationships between keywords, understand contextual relevance, predict emerging trends before they appear in traditional tools, analyze user intent signals across thousands of SERPs, and dynamically adjust recommendations based on real-time data. Additionally, AI can cluster keywords into topic groups based on user intent rather than just lexical similarity, evaluate keyword potential based on multiple factors beyond volume and difficulty, and identify competitive gaps where ranking is achievable with less effort. The result is a much more comprehensive, forward-looking, and strategic approach to keyword targeting that drives better results.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>How long does it take to see results from AI-powered SEO?</h3>
-                            <button class="toggle-btn"><span class="icon"></span></button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>The timeline for AI-powered SEO results varies based on several factors, including your website's current authority, the competitiveness of your industry, and the scope of implementation. Generally, our clients begin to see measurable improvements in three phases: Initial improvements typically appear within 1-2 months, with enhanced keyword rankings for less competitive terms and increased crawling and indexing rates. Significant traction develops around 3-6 months, with noticeable traffic increases, improved rankings for moderately competitive keywords, and measurable conversion improvements. Full potential is usually reached within 6-12 months, with rankings for competitive terms, substantial traffic growth, and optimized conversion rates. AI-powered SEO often accelerates results compared to traditional methods by identifying high-potential opportunities with lower competition, predicting which content optimizations will have the greatest impact, and enabling more efficient resource allocation. Throughout the process, our AI systems continuously monitor performance metrics and adapt strategies based on results, ensuring optimal progress regardless of timeline. We provide comprehensive reporting dashboards that track all relevant KPIs so you can see exactly how your search performance is improving throughout the engagement.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Will AI SEO work for my specific industry or niche?</h3>
-                            <button class="toggle-btn"><span class="icon"></span></button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Yes, our AI SEO approach is effective across virtually all industries and niches because it adapts to the specific characteristics of your market rather than applying a one-size-fits-all approach. Our AI systems analyze industry-specific search patterns, competitive landscapes, and user behaviors to develop customized strategies for your particular niche. For highly competitive industries like finance, legal, or healthcare, our AI excels at identifying underserved subtopics and long-tail opportunities that competitors miss. In technical industries with specialized terminology, our natural language processing models are trained to understand industry-specific jargon and semantic relationships. For emerging or rapidly evolving niches, our predictive analytics can identify trending topics before they become competitive. Local businesses benefit from our AI's ability to analyze geo-specific search patterns and user intent signals. Even in highly regulated industries, our content optimization respects compliance requirements while maximizing search visibility. The key advantage of AI-powered SEO is its adaptability—our systems learn from your specific market data and continuously refine strategies based on what works in your niche. We've successfully implemented AI SEO strategies across dozens of industries, from e-commerce and SaaS to manufacturing and professional services.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>How do you measure the success of AI SEO campaigns?</h3>
-                            <button class="toggle-btn"><span class="icon"></span></button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>We measure AI SEO success through a comprehensive framework that goes beyond basic rankings to assess real business impact. Our approach includes visibility metrics (keyword rankings across target terms, SERP feature capture rates, total keyword footprint growth), traffic metrics (organic search traffic volume, user engagement signals, new vs. returning visitor ratios), conversion metrics (organic search conversion rates, assisted conversions from search, revenue and lead generation from organic search), and ROI measurement (customer acquisition costs from organic search compared to other channels, lifetime value of search-acquired customers, overall return on SEO investment). We establish baseline measurements during the initial audit phase and track progress against these benchmarks. Our AI systems continuously analyze performance data to identify causal relationships between specific optimizations and outcome improvements. This enables us to attribute results accurately and refine strategies for maximum impact. All metrics are accessible through our real-time reporting dashboard, which provides both high-level KPI summaries and detailed drill-down capabilities. We conduct regular performance reviews to analyze trends, discuss insights, and adjust strategies based on results. This data-driven approach ensures complete transparency and accountability throughout our engagement.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>How does your AI handle search engine algorithm updates?</h3>
-                            <button class="toggle-btn"><span class="icon"></span></button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Our AI systems are specifically designed to be resilient to algorithm updates through several key capabilities. First, our predictive models continuously monitor thousands of ranking factors across millions of search results to detect early signs of algorithm shifts, often identifying changes before they're publicly announced. When an update occurs, our pattern recognition systems analyze its impact across different industries, content types, and website characteristics to understand which factors are being prioritized or penalized. This allows us to quickly adapt strategies in response to new algorithmic priorities. Our AI focuses on fundamental quality signals and user intent satisfaction rather than exploiting specific ranking factors, resulting in strategies that remain effective through algorithm changes. We maintain a diverse set of optimization approaches rather than over-relying on tactics that might be devalued in future updates. Additionally, our systems use anomaly detection to distinguish between normal ranking fluctuations and actual algorithm impacts, preventing overreaction to temporary changes. This approach has proven highly effective—during major updates like Core Updates, our clients typically experience less volatility and recover more quickly than sites using traditional SEO approaches. Rather than reacting to algorithm changes after they cause ranking drops, our AI enables proactive adaptation that maintains or improves performance through search engine evolution.</p>
-                        </div>
-                    </div>
+        <div class="faq-container">
+            <div class="faq-item active">
+                <div class="faq-question">
+                    <h3>How does AI-powered keyword research differ from traditional methods?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Traditional keyword research typically relies on basic metrics like search volume and difficulty scores, along with subjective judgment from SEO practitioners. This approach is limited by the tools used, human capacity to process information, and often misses complex relationships between topics. AI-powered keyword research, by contrast, uses advanced natural language processing and machine learning to analyze millions of data points, including search intent patterns, semantic relationships between topics, competitive positioning, and emerging trends. This enables the identification of valuable keyword opportunities that traditional methods miss entirely. Additionally, AI can predict which content formats and approaches are most likely to rank well for specific queries, based on analysis of currently ranking content and SERP features. The result is a much more comprehensive and strategic approach to search opportunity identification and content planning.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do you identify user intent behind keywords?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Our AI intent classification system uses several sophisticated methods to accurately determine user intent behind search queries. First, we analyze the linguistic structure of the query itself, identifying intent signals in the phrasing and modifiers. We then examine the SERP features and content formats that Google displays for each query, as these provide strong indicators of how the search engine has interpreted user intent. Our system also analyzes the content of top-ranking pages to identify common themes, formats, and information patterns that satisfy searcher needs. Additionally, we incorporate click behavior data when available to understand which results users find most relevant. By combining these multiple signals, our AI can classify queries into detailed intent categories beyond the basic informational/transactional/navigational framework, allowing for much more precise content targeting. This intent data is crucial for creating content that perfectly matches what users are actually looking for when they type a particular query.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How often should keyword research be updated?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Keyword research should be treated as an ongoing process rather than a one-time activity. Search behavior evolves constantly due to changing consumer interests, market trends, search algorithm updates, and competitive activities. For most businesses, we recommend a comprehensive keyword strategy refresh every 3-6 months, with continuous monitoring of key terms and topics in between. Industries with high volatility or seasonality may require more frequent updates. Our AI monitoring system tracks ranking fluctuations, search volume changes, and emerging terms in your industry, alerting you to new opportunities or threats as they arise. This balanced approach ensures your strategy remains current without requiring constant rebuilding. For clients on our managed services plans, we provide automated monthly opportunity reports highlighting new keywords worth targeting based on the latest data, ensuring you're always aware of emerging search trends relevant to your business.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do you measure the ROI of keyword research?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>We measure the ROI of our AI keyword research through several key performance indicators that track the business impact of the insights provided. These include: organic traffic growth to targeted pages, ranking improvements for high-value keywords, conversion rate changes from organic search traffic, market share gains in critical search verticals, and reduced cost-per-acquisition compared to paid channels. Our reporting platform connects keyword performance to actual business metrics like leads, sales, and revenue when analytics integration is available. We establish clear baselines before implementation and track performance changes over time, allowing for accurate attribution of results to the keyword strategy. For e-commerce clients, we can often demonstrate direct revenue impact by tracking product page ranking improvements and resulting sales increases. The comprehensive nature of our tracking allows us to calculate specific return on investment figures for your keyword research investment, typically showing returns of 5-10x within the first year for businesses that properly implement our recommendations.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do you incorporate keyword research into content strategy?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>We take a strategic approach to translating keyword insights into effective content, moving beyond simple keyword lists to comprehensive content planning. The process begins with organizing keywords into logical topic clusters that represent complete coverage of subject areas relevant to your audience. For each cluster, we identify the primary pillar topics and supporting subtopics based on search volume, competition, and business value. Our AI then analyzes the search intent and content requirements for each target keyword, generating detailed content briefs that outline the optimal format, structure, topics to cover, questions to answer, and semantic elements to include. These briefs serve as blueprints for creating highly relevant content that thoroughly satisfies user intent. We also provide strategic publication calendars that prioritize content creation based on opportunity size, competition level, and resources required. For existing content, we identify optimization opportunities where minor updates can improve relevance for additional keywords. This systematic approach ensures every piece of content has a strategic purpose within your overall SEO framework and addresses specific search queries with maximum relevance.</p>
                 </div>
             </div>
         </div>

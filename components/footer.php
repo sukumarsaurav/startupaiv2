@@ -140,6 +140,7 @@
 
 <!-- Component-specific JavaScript -->
 <script src="/assets/js/footer.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> -->
 
 <!-- Additional JavaScript files -->
 <?php if (isset($additionalJs) && is_array($additionalJs)): ?>

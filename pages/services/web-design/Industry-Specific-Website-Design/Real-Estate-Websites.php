@@ -2,482 +2,490 @@
 // Define base path to allow direct script access
 define('BASEPATH', true);
 
-// Use the main config.php instead of config/database.php
 require_once '../../../../includes/config.php';
 
-// Initialize the database connection
-$database = new Database();
-$db = $database->getConnection();
+// Page specific content
+$pageTitle = "Real Estate Website Design Services | StartupAI";
+$pageDescription = "Create engaging, feature-rich real estate websites that showcase properties beautifully and convert visitors into clients. Custom website design for real estate agents, brokers, and property management firms.";
+$serviceName = "Real Estate Website Design";
+$serviceSlug = "real-estate-websites";
+
+// SEO Data
+$seo_data = [
+    'description' => $pageDescription,
+    'keywords' => 'real estate website design, property listing websites, real estate broker websites, idx integration, property search websites, real estate agent websites, mls integration, property management websites'
+];
 
 require_once '../../../../components/header.php';
 ?>
 
-<!-- Page Header -->
-<header class="page-header">
-    <div class="content-container">
-        <div class="content-row">
-            <div class="content-col full-width text-align-center">
-                <h1 class="font-weight-bold" data-aos="fade-up">Real Estate Website Design</h1>
-                <p class="subtitle" data-aos="fade-up" data-aos-delay="100">
-                    Property listing websites and realtor portals that drive inquiries and sales
-                </p>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="content-container">
+                <div class="header-grid">
+                    <div class="page-header-content" data-aos="fade-right">
+                        <h1>Real Estate Website Design</h1>
+                        <p class="lead">Create stunning, feature-rich websites that showcase properties and convert visitors into clients</p>
+                        <a href="/pages/contact.php" class="get-started-btn">
+                            Start Your Real Estate Project
+                        </a>
+                    </div>
+                    <div class="page-header-image" data-aos="fade-left">
+                        <img src="/assets/images/services/real-estate-website-design.svg" alt="Real Estate Website Design" class="animate-float">
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
+        </section>
 
-<!-- Service Overview -->
-<section class="service-overview padding-y-5">
-    <div class="content-container">
-        <div class="content-row align-items-center">
-            <div class="content-col half margin-bottom-responsive" data-aos="fade-right">
-                <img src="/assets/images/services/real-estate-websites.svg" alt="Real Estate Website Design" class="img-fluid rounded box-shadow">
+        <!-- Service Overview -->
+        <section class="service-overview">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="service-overview-header" data-aos="fade-up">
+                        <h2>Expert Real Estate Website Design Services</h2>
+                        <p class="lead">We create sophisticated real estate websites that combine stunning visuals with powerful functionality to help you showcase properties and grow your business.</p>
+                    </div>
+                </div>
+                
+                <div class="overview-grid">
+                    <div class="service-overview-content" data-aos="fade-up">
+                        <h3>Property Showcase Excellence</h3>
+                        <p>Our team specializes in developing visually striking real estate websites that highlight properties through immersive galleries, virtual tours, and interactive features. We understand the unique challenges of the real estate industry – from IDX/MLS integration to lead capture and property management functionalities.</p>
+                        <p>Every real estate website we design is built with meticulous attention to property presentation, user experience, and conversion optimization while incorporating the latest technologies for optimal performance across all devices.</p>
+                    </div>
+                    <div class="service-overview-content" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Client-Focused Design Philosophy</h3>
+                        <p>We create real estate websites with a focus on the home buyer's and seller's journey, developing user experiences that streamline property search, provide valuable neighborhood insights, and facilitate easy contact with agents.</p>
+                        <p>By combining real estate expertise with UX best practices, we develop digital experiences that build trust, showcase properties in their best light, and ultimately generate quality leads and inquiries that convert into clients.</p>
+                    </div>
+                </div>
             </div>
-            <div class="content-col half" data-aos="fade-left">
-                <h2 class="margin-bottom-4">Real Estate Website Design Services</h2>
-                <p>
-                    Our real estate website design services help agents, brokers, and property companies create engaging digital platforms that showcase properties effectively and generate quality leads. From property listings to virtual tours, we develop feature-rich real estate websites optimized for both client experience and agent productivity.
-                </p>
-                <div class="features margin-top-4">
-                    <div class="feature-item display-flex align-items-start margin-bottom-3">
-                        <div class="feature-icon margin-right-3">
-                            <i class="fas fa-home color-primary"></i>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="services-header" data-aos="fade-up">
+                        <h2>Our Real Estate Website Design Services</h2>
+                        <p class="lead">Comprehensive web solutions tailored to the unique needs of real estate professionals</p>
+                    </div>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-item" data-aos="fade-up">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h3>Agent & Broker Websites</h3>
+                            <p>Custom websites for real estate professionals that establish credibility, showcase listings, and generate quality leads.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Professional agent profiles & credentials</li>
+                                <li><i class="fas fa-check"></i> Featured listings showcase</li>
+                                <li><i class="fas fa-check"></i> Testimonials & past sales</li>
+                                <li><i class="fas fa-check"></i> Neighborhood guides & expertise</li>
+                                <li><i class="fas fa-check"></i> Lead capture & contact forms</li>
+                            </ul>
                         </div>
-                        <div>
-                            <h5>Property Showcase</h5>
-                            <p>Eye-catching property listings with advanced search and filtering capabilities.</p>
+                    </div>
+                    
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3>Property Listing Platforms</h3>
+                            <p>Advanced property search websites with powerful filtering, map integration, and immersive viewing experiences.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> IDX/MLS integration</li>
+                                <li><i class="fas fa-check"></i> Advanced search filters</li>
+                                <li><i class="fas fa-check"></i> Interactive map search</li>
+                                <li><i class="fas fa-check"></i> Virtual tours integration</li>
+                                <li><i class="fas fa-check"></i> Property comparison tools</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="feature-item display-flex align-items-start margin-bottom-3">
-                        <div class="feature-icon margin-right-3">
-                            <i class="fas fa-map-marked-alt color-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Map Integration</h5>
-                            <p>Interactive mapping features with neighborhood data and location-based searches.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item display-flex align-items-start margin-bottom-3">
-                        <div class="feature-icon margin-right-3">
-                            <i class="fas fa-vr-cardboard color-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Virtual Tours</h5>
-                            <p>Immersive virtual property tours and 3D walkthroughs for remote viewing.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item display-flex align-items-start">
-                        <div class="feature-icon margin-right-3">
-                            <i class="fas fa-calculator color-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Mortgage Calculators</h5>
-                            <p>Interactive tools for buyers to calculate payments and affordability.</p>
+                    
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <h3>Property Management Sites</h3>
+                            <p>Specialized websites for property management companies with tenant portals, maintenance requests, and owner dashboards.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Tenant portal integration</li>
+                                <li><i class="fas fa-check"></i> Maintenance request systems</li>
+                                <li><i class="fas fa-check"></i> Rental applications</li>
+                                <li><i class="fas fa-check"></i> Owner dashboards</li>
+                                <li><i class="fas fa-check"></i> Payment processing</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Why Hire Us Section - Hard-coded version -->
-<section class="realestate-why-hire-us padding-y-5 bg-light">
-    <div class="content-container">
-        <div class="content-row margin-bottom-5">
-            <div class="content-col full-width text-align-center" data-aos="fade-up">
-                <h2 class="section-title">Why Choose Us for Real Estate Website Design</h2>
-                <p class="section-description">
-                    Our expertise makes us the ideal partner for your real estate website
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-home fa-2x color-primary"></i>
+        <!-- Implementation Process -->
+        <section class="implementation-process">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="implementation-header" data-aos="fade-up">
+                        <h2>Our Real Estate Website Design Process</h2>
+                        <p class="lead">A strategic approach to creating high-converting real estate websites</p>
                     </div>
-                    <h4>Real Estate Industry Expertise</h4>
-                    <p>Our team has deep experience in the real estate market, understanding buyer psychology and what makes property listings convert into inquiries and sales.</p>
+                </div>
+                
+                <div class="process-grid">
+                    <div class="process-item" data-aos="fade-up">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>1</span>
+                            </div>
+                            <h3>Discovery & Strategy</h3>
+                            <p>We begin with a thorough assessment of your real estate business needs, target audience, and competitive landscape:</p>
+                            <ul>
+                                <li>Client interviews and business model analysis</li>
+                                <li>Buyer/seller persona development</li>
+                                <li>Competitive market research</li>
+                                <li>MLS/IDX integration planning</li>
+                                <li>Lead generation strategy development</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>2</span>
+                            </div>
+                            <h3>Design & UX Planning</h3>
+                            <p>Our designers create visually engaging interfaces that showcase properties effectively and guide visitors toward conversion:</p>
+                            <ul>
+                                <li>Information architecture for property search</li>
+                                <li>Wireframing listing layouts and search flows</li>
+                                <li>Visual design with real estate photography focus</li>
+                                <li>Property listing and detail page templates</li>
+                                <li>Mobile-responsive property browsing design</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>3</span>
+                            </div>
+                            <h3>Development & Integration</h3>
+                            <p>We build feature-rich real estate websites with powerful property search capabilities and third-party integrations:</p>
+                            <ul>
+                                <li>MLS/IDX feed integration and synchronization</li>
+                                <li>Property search algorithm implementation</li>
+                                <li>CRM and lead management integrations</li>
+                                <li>Virtual tour and interactive media embedding</li>
+                                <li>Location-based features and mapping</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="process-card">
+                            <div class="process-icon">
+                                <span>4</span>
+                            </div>
+                            <h3>Launch & Optimization</h3>
+                            <p>We ensure your real estate website performs optimally and continues to attract and convert visitors:</p>
+                            <ul>
+                                <li>Property search performance testing</li>
+                                <li>Lead capture form optimization</li>
+                                <li>Listing load time optimization</li>
+                                <li>SEO for local real estate searches</li>
+                                <li>Analytics setup for conversion tracking</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-map-marked-alt fa-2x color-primary"></i>
-                    </div>
-                    <h4>MLS & IDX Integration Specialists</h4>
-                    <p>We're skilled at integrating with multiple listing services and IDX solutions to automatically sync your website with current property data.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-camera fa-2x color-primary"></i>
-                    </div>
-                    <h4>Visual Storytelling Focus</h4>
-                    <p>We emphasize beautiful property presentation with gallery optimization, virtual tours, and visual content that showcases properties at their best.</p>
-                </div>
-            </div>
-        </div>
-        <div class="content-row margin-top-4">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-mobile-alt fa-2x color-primary"></i>
-                    </div>
-                    <h4>Mobile-First Property Search</h4>
-                    <p>Our real estate websites are optimized for on-the-go property searches, with mobile-friendly interfaces that work flawlessly on any device.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-cogs fa-2x color-primary"></i>
-                    </div>
-                    <h4>CRM & Lead Management</h4>
-                    <p>We build integrated systems that capture leads and connect with your CRM, ensuring no potential buyer or seller falls through the cracks.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="why-hire-item height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="item-icon margin-bottom-3">
-                        <i class="fas fa-chart-line fa-2x color-primary"></i>
-                    </div>
-                    <h4>SEO for Real Estate</h4>
-                    <p>We employ specialized SEO strategies for real estate to ensure your properties rank well for local searches and attract qualified traffic.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Process -->
-<section class="process-section padding-y-5 bg-light">
-    <div class="content-container">
-        <div class="content-row margin-bottom-5">
-            <div class="content-col full-width text-align-center" data-aos="fade-up">
-                <h2 class="section-title">Our Real Estate Website Design Process</h2>
-                <p class="section-description">
-                    How we build property platforms that convert visitors into inquiries
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="content-col one-fourth margin-bottom-responsive" data-aos="fade-up">
-                <div class="process-step text-align-center padding-4 height-100 bg-white rounded box-shadow-sm">
-                    <div class="process-icon margin-bottom-3">
-                        <i class="fas fa-search-location fa-3x color-primary"></i>
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="features-header" data-aos="fade-up">
+                        <h2>Essential Features for Real Estate Websites</h2>
+                        <p class="lead">Key components that enhance property showcase and streamline client acquisition</p>
                     </div>
-                    <h4>Market Analysis</h4>
-                    <p>We research your target market, competition, and property niche to inform the design strategy.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item" data-aos="fade-up">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>Advanced Property Search</h3>
+                            <p>Intuitive property search functionality with filtering by price, location, property type, amenities, and more. Includes map-based search, saved searches, and property alerts.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <h3>Immersive Property Galleries</h3>
+                            <p>High-quality image galleries with virtual tours, 3D walkthroughs, and video integration to showcase properties comprehensively and attract serious buyers.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <h3>Mortgage Calculators</h3>
+                            <p>Interactive financial tools that help potential buyers calculate monthly payments, affordability, amortization schedules, and compare buying vs. renting.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <h3>Neighborhood Insights</h3>
+                            <p>Detailed neighborhood information including school ratings, local amenities, walkability scores, demographics, and market trends to help buyers make informed decisions.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="content-col one-fourth margin-bottom-responsive" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-step text-align-center padding-4 height-100 bg-white rounded box-shadow-sm">
-                    <div class="process-icon margin-bottom-3">
-                        <i class="fas fa-pencil-ruler fa-3x color-primary"></i>
-                    </div>
-                    <h4>UX/UI Design</h4>
-                    <p>We create user-friendly interfaces with intuitive property search and filtering functionality.</p>
-                </div>
-            </div>
-            <div class="content-col one-fourth margin-bottom-responsive" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-step text-align-center padding-4 height-100 bg-white rounded box-shadow-sm">
-                    <div class="process-icon margin-bottom-3">
-                        <i class="fas fa-code fa-3x color-primary"></i>
-                    </div>
-                    <h4>Development</h4>
-                    <p>Our team builds responsive, high-performance real estate platforms with all required features.</p>
-                </div>
-            </div>
-            <div class="content-col one-fourth" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-step text-align-center padding-4 height-100 bg-white rounded box-shadow-sm">
-                    <div class="process-icon margin-bottom-3">
-                        <i class="fas fa-rocket fa-3x color-primary"></i>
-                    </div>
-                    <h4>Launch & Support</h4>
-                    <p>We deploy your site with property data migration and provide ongoing technical support.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Website Types -->
-<section class="website-types-section padding-y-5">
-    <div class="content-container">
-        <div class="content-row margin-bottom-5">
-            <div class="content-col full-width text-align-center" data-aos="fade-up">
-                <h2 class="section-title">Real Estate Website Types</h2>
-                <p class="section-description">
-                    Specialized solutions for different real estate business models
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-list fa-2x color-primary"></i>
+        <!-- Benefits -->
+        <section class="benefits-section">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="benefits-header" data-aos="fade-up">
+                        <h2>Benefits of Professional Real Estate Website Design</h2>
+                        <p class="lead">Why investing in a specialized real estate website matters</p>
                     </div>
-                    <h4>Property Listing Websites</h4>
-                    <p>Comprehensive platforms for showcasing multiple properties with advanced search, filtering, and favoriting capabilities. Ideal for real estate agencies and brokerages managing large property portfolios.</p>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item" data-aos="fade-up">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Increased Lead Generation</h3>
+                            <p>Professional real estate websites generate 3-4x more qualified leads than generic websites. Strategic placement of lead capture forms, property alerts, and neighborhood guides can increase conversion rates by up to 120%, with an average 12% of website visitors submitting contact information.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h3>Enhanced Brand Credibility</h3>
+                            <p>94% of home buyers begin their search online, and 75% will only contact agents with professional websites. Real estate professionals with high-quality websites report 35% higher trust ratings from potential clients, and are 2.7x more likely to be selected for a listing presentation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <h3>Streamlined Property Marketing</h3>
+                            <p>Properties featured on professional real estate websites sell 31% faster on average. Automated MLS syncing saves agents an average of 5-7 hours per week on listing management, while virtual tours and professional galleries reduce physical showings by 40% while increasing serious buyer interest.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-building fa-2x color-primary"></i>
-                    </div>
-                    <h4>Property Development Websites</h4>
-                    <p>Showcase websites for new developments and pre-construction projects with floor plans, amenities, and interactive site plans. Perfect for builders and developers marketing new communities.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-user-tie fa-2x color-primary"></i>
-                    </div>
-                    <h4>Realtor & Agent Websites</h4>
-                    <p>Professional personal brand sites for individual agents highlighting expertise, listings, testimonials, and service areas. Designed to build trust and generate direct inquiries.</p>
-                </div>
-            </div>
-        </div>
-        <div class="content-row margin-top-4">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-globe fa-2x color-primary"></i>
-                    </div>
-                    <h4>Real Estate Portals</h4>
-                    <p>Marketplace platforms connecting buyers, sellers, and agents with subscription or listing fee business models. Complete with agent directories and lead generation tools.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-hand-holding-usd fa-2x color-primary"></i>
-                    </div>
-                    <h4>Property Management Websites</h4>
-                    <p>Operational platforms with tenant portals, maintenance requests, and payment processing for property management companies and landlords.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="type-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="type-icon margin-bottom-3">
-                        <i class="fas fa-chart-line fa-2x color-primary"></i>
-                    </div>
-                    <h4>Real Estate Investment Sites</h4>
-                    <p>Information-rich platforms for real estate investors with investment calculators, market analysis tools, and portfolio management features.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Essential Features -->
-<section class="features-section padding-y-5 bg-light">
-    <div class="content-container">
-        <div class="content-row margin-bottom-5">
-            <div class="content-col full-width text-align-center" data-aos="fade-up">
-                <h2 class="section-title">Essential Real Estate Website Features</h2>
-                <p class="section-description">
-                    Key components that drive engagement and conversions
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-search fa-2x color-primary"></i>
+        <!-- Technology Section -->
+        <section class="technology-section">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="technology-header" data-aos="fade-up">
+                        <h2>Real Estate Technologies We Integrate</h2>
+                        <p class="lead">Powerful tools and platforms that power modern real estate websites</p>
                     </div>
-                    <h4>Advanced Property Search</h4>
-                    <p>Intuitive search tools with multiple filters for price, location, property type, amenities, and more to help users find exact matches.</p>
+                </div>
+                
+                <div class="content-row">
+                    <div class="content-col one-half margin-bottom-4" data-aos="fade-up">
+                        <div class="technology-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                            <div class="technology-icon margin-bottom-3">
+                                <i class="fas fa-database fa-2x color-primary"></i>
+                            </div>
+                            <h4>MLS & IDX Integration</h4>
+                            <ul class="technology-list">
+                                <li><i class="fas fa-check text-primary me-2"></i>RETS/RESO Web API connectivity</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>IDX Broker integration</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Diverse MLS board compliance</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Automated listing updates</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Custom search widgets</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-col one-half margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="technology-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                            <div class="technology-icon margin-bottom-3">
+                                <i class="fas fa-vr-cardboard fa-2x color-primary"></i>
+                            </div>
+                            <h4>Virtual Tour Technologies</h4>
+                            <ul class="technology-list">
+                                <li><i class="fas fa-check text-primary me-2"></i>Matterport 3D tours</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>360° panoramic viewing</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Video tour integration</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Floor plan visualization</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Virtual staging capabilities</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-images fa-2x color-primary"></i>
-                    </div>
-                    <h4>High-Quality Media</h4>
-                    <p>Optimized galleries for professional photography, video tours, 3D walkthroughs, and drone footage of properties.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-mobile-alt fa-2x color-primary"></i>
-                    </div>
-                    <h4>Mobile Optimization</h4>
-                    <p>Responsive design ensuring perfect functionality on smartphones and tablets for on-the-go property browsing.</p>
-                </div>
-            </div>
-        </div>
-        <div class="content-row margin-top-4">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-user-lock fa-2x color-primary"></i>
-                    </div>
-                    <h4>User Accounts</h4>
-                    <p>Personalized accounts for saving favorite properties, saving searches, and receiving property alerts.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-comments fa-2x color-primary"></i>
-                    </div>
-                    <h4>Lead Capture Tools</h4>
-                    <p>Strategic inquiry forms, property alerts, and chat functions designed to convert visitors into qualified leads.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="feature-icon margin-bottom-3">
-                        <i class="fas fa-cogs fa-2x color-primary"></i>
-                    </div>
-                    <h4>CRM Integration</h4>
-                    <p>Seamless connections with real estate CRM systems to manage leads and track customer interactions.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Benefits -->
-<section class="benefits-section padding-y-5">
-    <div class="content-container">
-        <div class="content-row margin-bottom-5">
-            <div class="content-col full-width text-align-center" data-aos="fade-up">
-                <h2 class="section-title">Benefits of Professional Real Estate Websites</h2>
-                <p class="section-description">
-                    How a well-designed property platform drives business results
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-chart-line fa-2x color-primary"></i>
-                    </div>
-                    <h4>Increased Visibility</h4>
-                    <p>Reach more potential buyers and sellers through SEO-optimized listings and property content.</p>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="content-container">
+                <div class="cta-content">
+                    <h2>Ready to Create Your Real Estate Website?</h2>
+                    <p class="lead">Let's build a property-focused digital experience that attracts clients and showcases your listings beautifully.</p>
+                    <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">
+                        Schedule a Consultation
+                    </a>
                 </div>
             </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-user-plus fa-2x color-primary"></i>
-                    </div>
-                    <h4>Higher Quality Leads</h4>
-                    <p>Generate more qualified inquiries through detailed property information and targeted lead capture.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-handshake fa-2x color-primary"></i>
-                    </div>
-                    <h4>Faster Transactions</h4>
-                    <p>Speed up the sales cycle by providing comprehensive information upfront to serious buyers.</p>
-                </div>
-            </div>
-        </div>
-        <div class="content-row margin-top-4">
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-clock fa-2x color-primary"></i>
-                    </div>
-                    <h4>Time Efficiency</h4>
-                    <p>Automate property marketing and lead qualification to focus on high-value client interactions.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-building fa-2x color-primary"></i>
-                    </div>
-                    <h4>Brand Differentiation</h4>
-                    <p>Stand out in a competitive market with a professional, unique online presence that showcases your expertise.</p>
-                </div>
-            </div>
-            <div class="content-col one-third margin-bottom-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card height-100 padding-4 bg-white rounded box-shadow-sm">
-                    <div class="benefit-icon margin-bottom-3">
-                        <i class="fas fa-analytics fa-2x color-primary"></i>
-                    </div>
-                    <h4>Data-Driven Insights</h4>
-                    <p>Gain valuable market intelligence from user behavior and property interest analytics.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- CTA -->
-<section class="cta-section padding-y-5 bg-primary text-white">
-    <div class="content-container">
-        <div class="content-row align-items-center">
-            <div class="content-col one-half margin-bottom-4 margin-bottom-lg-0" data-aos="fade-right">
-                <h2 class="mb-3">Ready to Showcase Your Properties Online?</h2>
-                <p class="lead mb-0">
-                    Let's build a real estate website that attracts buyers and generates quality leads.
-                </p>
-            </div>
-            <div class="content-col one-half text-lg-end" data-aos="fade-left">
-                <a href="/contact" class="btn btn-light btn-lg">Get Started</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="faq-section">
-    <div class="content-container">
-        <div class="faq-header">
-            <h2 class="faq-title">Real Estate Website FAQ's</h2>
-            <h3 class="faq-subtitle">Have Any Questions?</h3>
-        </div>
-
-        <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq-question">
-                    What features should my real estate website include?
-                    <span class="faq-plus-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    <p>Essential features for any real estate website include an advanced property search system, high-quality photo galleries, virtual tours, detailed property information, interactive maps, mortgage calculators, and lead capture forms. Additional features to consider are saved searches, property alerts, agent profiles, neighborhood guides, and client testimonials. We'll help you determine which features align best with your specific business goals and target audience.</p>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="content-container">
+                <div class="section-header">
+                    <div class="faq-header">
+                        <h2>Frequently Asked Questions</h2>
+                        <p class="lead">Common questions about real estate website design</p>
+                    </div>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <h3>How does MLS/IDX integration work, and what are the costs involved?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>MLS/IDX integration allows your website to display real-time property listings directly from your local Multiple Listing Service:</p>
+                            <ul>
+                                <li><strong>Integration Process:</strong> We connect your website to the MLS through either direct RETS feed access, API integration, or an IDX provider like IDX Broker, showcasing properties with your branding and lead capture tools.</li>
+                                <li><strong>Costs Structure:</strong> There are typically three cost components: (1) One-time setup fee for the technical integration ($500-$1,500 depending on complexity), (2) Monthly/annual IDX provider fees ($50-$100/month on average), and (3) MLS fees, which vary by board and access level.</li>
+                                <li><strong>Maintenance Requirements:</strong> MLS data connections require ongoing maintenance to accommodate changes in the MLS platform, rules updates, and field mapping modifications.</li>
+                            </ul>
+                            <p>We handle the complete integration process, including MLS board paperwork, technical setup, and search configuration, ensuring your website remains compliant with all MLS regulations and data usage policies.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What lead generation features should a real estate website include?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Effective real estate websites include strategic lead generation features throughout the property search experience:</p>
+                            <ul>
+                                <li><strong>Property Alerts & Saved Searches:</strong> Allow visitors to save search criteria and receive automated emails when matching properties are listed.</li>
+                                <li><strong>Home Valuation Tools:</strong> Interactive calculators that provide estimated home values in exchange for contact information.</li>
+                                <li><strong>Gated Content:</strong> Valuable resources like neighborhood guides, market reports, and buying/selling guides accessible after form submission.</li>
+                                <li><strong>Intelligent Property Forms:</strong> Dynamic forms that appear based on user behavior, like time on property pages or multiple views of similar listings.</li>
+                                <li><strong>Mortgage Calculators:</strong> Financial tools that capture leads while helping buyers understand affordability.</li>
+                                <li><strong>Chatbots & Live Chat:</strong> Automated or live assistance to engage visitors and capture inquiries after hours.</li>
+                                <li><strong>Exit Intent Popups:</strong> Targeted offers that appear when users are about to leave your website.</li>
+                            </ul>
+                            <p>We implement a strategic mix of these features based on your business model and target audience, ensuring they enhance the user experience rather than interrupting it, and connect to your CRM for seamless lead management.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do you optimize real estate websites for mobile users?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>With over 76% of home buyers using mobile devices during their property search, our mobile optimization approach includes:</p>
+                            <ul>
+                                <li><strong>Location-Based Search:</strong> Utilizing GPS to show nearby properties and open houses automatically.</li>
+                                <li><strong>Simplified Property Filters:</strong> Touchscreen-friendly search filters with visual selectors for bedrooms, bathrooms, and price ranges.</li>
+                                <li><strong>Optimized Gallery Experience:</strong> Easy-to-navigate property photos with swipe gestures and full-screen viewing.</li>
+                                <li><strong>Map-Centric Interface:</strong> Interactive maps that work seamlessly on mobile with clustering for dense markets.</li>
+                                <li><strong>One-Touch Contact:</strong> Click-to-call buttons, simplified contact forms, and message features optimized for mobile input.</li>
+                                <li><strong>Progressive Loading:</strong> Technical optimizations that load essential content first, reducing wait times on mobile connections.</li>
+                                <li><strong>App-Like Experience:</strong> For high-volume property portals, we can create PWA (Progressive Web App) functionality for offline browsing and saved properties.</li>
+                            </ul>
+                            <p>We test all real estate websites on multiple devices and screen sizes, ensuring that property search, viewing, and contact features work flawlessly across smartphones and tablets of all sizes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can you integrate virtual tours and 3D walkthroughs into real estate websites?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we specialize in integrating immersive property visualization technologies into real estate websites:</p>
+                            <ul>
+                                <li><strong>Matterport Integration:</strong> Full embedding of Matterport 3D tours with dollhouse views, floor plans, and measurement tools.</li>
+                                <li><strong>360° Panoramic Tours:</strong> Integration of 360° panoramic photography with hotspots and room-to-room navigation.</li>
+                                <li><strong>Video Tour Hosting:</strong> Optimized video embedding with branded overlays and call-to-action features.</li>
+                                <li><strong>Virtual Staging:</strong> Implementation of before/after sliders to show empty rooms with virtual staging overlays.</li>
+                                <li><strong>Interactive Floor Plans:</strong> Clickable floor plans that connect to relevant photos and room information.</li>
+                                <li><strong>AR/VR Capabilities:</strong> For cutting-edge developers, we can integrate augmented reality features for visualization on vacant land or new developments.</li>
+                            </ul>
+                            <p>Properties with virtual tours receive 87% more views than those without, and we ensure these features load quickly and work across all devices. We can either integrate tours you've already created or connect you with professional virtual tour photographers in your area.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do real estate websites handle SEO and local search?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our real estate SEO approach is highly localized and property-focused:</p>
+                            <ul>
+                                <li><strong>Neighborhood Content Strategy:</strong> Creating dedicated pages for neighborhoods, communities, and developments with unique content that establishes local expertise.</li>
+                                <li><strong>Property Listing Schema:</strong> Implementing structured data markup specifically for real estate to enhance property listings in search results with rich details.</li>
+                                <li><strong>Google Business Profile Optimization:</strong> Setting up and optimizing your Google Business Profile with property categories, service areas, and regular updates.</li>
+                                <li><strong>Hyperlocal Keywords:</strong> Targeting specific phrases like "downtown lofts with rooftop terraces" or "lakefront homes in [specific neighborhood]" that match searcher intent.</li>
+                                <li><strong>Review Strategy:</strong> Building a system to collect and showcase client reviews both on your website and on third-party platforms.</li>
+                                <li><strong>Dynamic Listing Pages:</strong> Creating SEO-friendly URLs and metadata for individual property listings that feed into search engines properly.</li>
+                                <li><strong>Local Backlink Development:</strong> Strategies to earn links from local business directories, chambers of commerce, and community organizations.</li>
+                            </ul>
+                            <p>Our real estate websites are built with location-specific SEO from the ground up, helping you compete for valuable search terms in your service area. We also provide ongoing SEO guidance to help you continue building your local search presence after launch.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    How can my real estate website generate more quality leads?
-                    <span class="faq-plus-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    <p>To generate quality leads, your real estate website should implement strategic lead capture forms throughout the user journey, offer valuable content like market reports or home buying guides in exchange for contact information, provide property alerts for saved searches, incorporate live chat functionality, and feature prominent calls-to-action. Additionally, we implement analytics tracking to understand user behavior and optimize conversion points based on real data.</p>
-                </div>
-            </div>
+<?php
+include_once '../../../../components/footer.php';
+?>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    Can you integrate my real estate website with MLS listings?
-                    <span class="faq-plus-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    <p>Yes, we can integrate your website with MLS (Multiple Listing Service) data through various IDX (Internet Data Exchange) solutions. This allows your website to display up-to-date property listings directly from your local MLS. We handle the technical aspects of IDX integration, including regular data synchronization, search functionality, and compliance with MLS display rules. This integration can be customized to match your website's design for a seamless user experience.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<?php require_once '../../../../components/footer.php'; ?> 
+    <!-- JavaScript libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/services.js"></script>
+</body>
+</html>
