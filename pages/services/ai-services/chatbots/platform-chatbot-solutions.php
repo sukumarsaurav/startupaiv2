@@ -1,6 +1,6 @@
 <!-- Why Choose Us - Hardcoded Section -->
 <section class="why-choose-us">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="why-choose-header" data-aos="fade-up">
                 <h2>Why Choose Us for <?php echo $serviceName; ?></h2>

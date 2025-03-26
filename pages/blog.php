@@ -35,73 +35,69 @@ require_once '../components/header.php';
 ?>
 
 <!-- Page Header -->
-<section class="page-header py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <h1 class="display-4">Our Blog</h1>
-                <p class="lead">Insights, tips, and strategies to help your business grow online</p>
+<section class="page-header section-spacing">
+    <div class="content-container">
+        <div class="header-grid">
+            <div class="page-header-content text-center">
+                <h1 class="page-title">Our Blog</h1>
+                <p class="page-description">Insights, tips, and strategies to help your business grow online</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Blog Categories -->
-<section class="py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="blog-categories text-center mb-4">
-                    <a href="/blog" class="btn <?php echo !$current_category ? 'btn-primary' : 'btn-outline-primary'; ?> me-2 mb-2">All</a>
-                    <?php
-                    $categories_query = "SELECT * FROM blog_categories ORDER BY name";
-                    $stmt = $db->prepare($categories_query);
-                    $stmt->execute();
-                    while ($category = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                        $active = $current_category === $category['slug'] ? 'btn-primary' : 'btn-outline-primary';
-                        echo '<a href="/blog?category=' . $category['slug'] . '" class="btn ' . $active . ' me-2 mb-2">' . $category['name'] . '</a>';
-                    }
-                    ?>
-                </div>
-            </div>
+<section class="blog-categories section-spacing-sm">
+    <div class="content-container">
+        <div class="categories-container text-center">
+            <a href="/blog" class="category-btn <?php echo !$current_category ? 'active' : ''; ?>">All</a>
+            <?php
+            $categories_query = "SELECT * FROM blog_categories ORDER BY name";
+            $stmt = $db->prepare($categories_query);
+            $stmt->execute();
+            while ($category = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                $active = $current_category === $category['slug'] ? 'active' : '';
+                echo '<a href="/blog?category=' . $category['slug'] . '" class="category-btn ' . $active . '">' . $category['name'] . '</a>';
+            }
+            ?>
         </div>
     </div>
 </section>
 
 <!-- Blog Grid -->
-<section class="py-5">
-    <div class="container">
-        <div class="row">
+<section class="blog-grid section-spacing">
+    <div class="content-container">
+        <div class="posts-grid">
             <?php foreach ($posts as $post): ?>
-                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
-                    <div class="card blog-card h-100">
+                <div class="post-item" data-aos="fade-up">
+                    <div class="post-card">
                         <?php if ($post['featured_image']): ?>
-                            <img src="<?php echo htmlspecialchars($post['featured_image']); ?>" 
-                                 class="card-img-top" 
-                                 alt="<?php echo htmlspecialchars($post['title']); ?>">
-                        <?php endif; ?>
-                        <div class="card-body">
-                            <div class="mb-2">
-                                <span class="badge bg-primary"><?php echo htmlspecialchars($post['category']); ?></span>
-                                <small class="text-muted ms-2">
-                                    <?php echo date('M d, Y', strtotime($post['published_date'])); ?>
-                                </small>
+                            <div class="post-image">
+                                <img src="<?php echo htmlspecialchars($post['featured_image']); ?>" 
+                                     alt="<?php echo htmlspecialchars($post['title']); ?>">
                             </div>
-                            <h3 class="card-title h5">
-                                <a href="/blog/<?php echo htmlspecialchars($post['slug']); ?>" 
-                                   class="text-decoration-none text-dark">
+                        <?php endif; ?>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category"><?php echo htmlspecialchars($post['category']); ?></span>
+                                <span class="post-date">
+                                    <?php echo date('M d, Y', strtotime($post['published_date'])); ?>
+                                </span>
+                            </div>
+                            <h3 class="post-title">
+                                <a href="/blog/<?php echo htmlspecialchars($post['slug']); ?>">
                                     <?php echo htmlspecialchars($post['title']); ?>
                                 </a>
                             </h3>
-                            <p class="card-text">
+                            <p class="post-excerpt">
                                 <?php echo htmlspecialchars($post['excerpt']); ?>
                             </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="author">
-                                    <small class="text-muted">By <?php echo htmlspecialchars($post['author']); ?></small>
+                            <div class="post-footer">
+                                <div class="post-author">
+                                    By <?php echo htmlspecialchars($post['author']); ?>
                                 </div>
                                 <a href="/blog/<?php echo htmlspecialchars($post['slug']); ?>" 
-                                   class="btn btn-outline-primary btn-sm">
+                                   class="read-more-btn">
                                     Read More
                                 </a>
                             </div>
@@ -113,35 +109,25 @@ require_once '../components/header.php';
 
         <!-- Pagination -->
         <?php if ($total_pages > 1): ?>
-            <div class="row">
-                <div class="col-12">
-                    <nav aria-label="Blog pagination">
-                        <ul class="pagination justify-content-center">
-                            <?php if ($page > 1): ?>
-                                <li class="page-item">
-                                    <a class="page-link" href="?page=<?php echo $page - 1; ?><?php echo $current_category ? '&category=' . $current_category : ''; ?>">
-                                        Previous
-                                    </a>
-                                </li>
-                            <?php endif; ?>
-                            
-                            <?php for ($i = 1; $i <= $total_pages; $i++): ?>
-                                <li class="page-item <?php echo $i === $page ? 'active' : ''; ?>">
-                                    <a class="page-link" href="?page=<?php echo $i; ?><?php echo $current_category ? '&category=' . $current_category : ''; ?>">
-                                        <?php echo $i; ?>
-                                    </a>
-                                </li>
-                            <?php endfor; ?>
-                            
-                            <?php if ($page < $total_pages): ?>
-                                <li class="page-item">
-                                    <a class="page-link" href="?page=<?php echo $page + 1; ?><?php echo $current_category ? '&category=' . $current_category : ''; ?>">
-                                        Next
-                                    </a>
-                                </li>
-                            <?php endif; ?>
-                        </ul>
-                    </nav>
+            <div class="pagination-container">
+                <div class="pagination">
+                    <?php if ($page > 1): ?>
+                        <a href="?page=<?php echo $page - 1; ?><?php echo $current_category ? '&category=' . $current_category : ''; ?>" class="pagination-item prev">
+                            Previous
+                        </a>
+                    <?php endif; ?>
+                    
+                    <?php for ($i = 1; $i <= $total_pages; $i++): ?>
+                        <a href="?page=<?php echo $i; ?><?php echo $current_category ? '&category=' . $current_category : ''; ?>" class="pagination-item <?php echo $i === $page ? 'active' : ''; ?>">
+                            <?php echo $i; ?>
+                        </a>
+                    <?php endfor; ?>
+                    
+                    <?php if ($page < $total_pages): ?>
+                        <a href="?page=<?php echo $page + 1; ?><?php echo $current_category ? '&category=' . $current_category : ''; ?>" class="pagination-item next">
+                            Next
+                        </a>
+                    <?php endif; ?>
                 </div>
             </div>
         <?php endif; ?>

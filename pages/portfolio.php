@@ -69,41 +69,43 @@ $projects = [
 ?>
 
 <!-- Page Header -->
-<section class="page-header py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6" data-aos="fade-right">
-                <h1 class="display-4">Our Portfolio</h1>
-                <p class="lead">Showcasing our best work and successful projects</p>
+<section class="page-header section-spacing">
+    <div class="content-container">
+        <div class="header-grid">
+            <div class="page-header-content" data-aos="fade-right">
+                <h1 class="page-title">Our Portfolio</h1>
+                <p class="page-description">Showcasing our best work and successful projects</p>
             </div>
-            <div class="col-lg-6" data-aos="fade-left">
-                <img src="../assets/images/portfolio-header.svg" alt="Portfolio" class="img-fluid">
+            <div class="page-header-image" data-aos="fade-left">
+                <img src="../assets/images/portfolio-header.svg" alt="Portfolio" class="featured-image">
             </div>
         </div>
     </div>
 </section>
 
 <!-- Portfolio Filter -->
-<section class="py-5">
-    <div class="container">
-        <div class="portfolio-filter mb-5 text-center" data-aos="fade-up">
-            <button class="btn btn-outline-primary active" data-filter="all">All</button>
-            <button class="btn btn-outline-primary" data-filter="Web Development">Web Development</button>
-            <button class="btn btn-outline-primary" data-filter="AI Solutions">AI Solutions</button>
-            <button class="btn btn-outline-primary" data-filter="Digital Marketing">Digital Marketing</button>
-            <button class="btn btn-outline-primary" data-filter="Web Design">Web Design</button>
+<section class="portfolio-filter section-spacing">
+    <div class="content-container">
+        <div class="filter-container text-center" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Web Development">Web Development</button>
+            <button class="filter-btn" data-filter="AI Solutions">AI Solutions</button>
+            <button class="filter-btn" data-filter="Digital Marketing">Digital Marketing</button>
+            <button class="filter-btn" data-filter="Web Design">Web Design</button>
         </div>
         
-        <div class="row g-4 portfolio-container">
+        <div class="portfolio-grid">
             <?php foreach ($projects as $project): ?>
-            <div class="col-lg-4 col-md-6 portfolio-item" data-category="<?php echo htmlspecialchars($project['category']); ?>" data-aos="fade-up">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <img src="<?php echo htmlspecialchars($project['image']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($project['title']); ?>">
-                    <div class="card-body">
-                        <span class="badge bg-primary mb-2"><?php echo htmlspecialchars($project['category']); ?></span>
-                        <h3 class="card-title h5"><?php echo htmlspecialchars($project['title']); ?></h3>
-                        <p class="card-text"><?php echo htmlspecialchars($project['description']); ?></p>
-                        <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal<?php echo $loop = isset($loop) ? $loop + 1 : 1; ?>">
+            <div class="portfolio-item" data-category="<?php echo htmlspecialchars($project['category']); ?>" data-aos="fade-up">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="<?php echo htmlspecialchars($project['image']); ?>" alt="<?php echo htmlspecialchars($project['title']); ?>">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category"><?php echo htmlspecialchars($project['category']); ?></span>
+                        <h3 class="portfolio-title"><?php echo htmlspecialchars($project['title']); ?></h3>
+                        <p class="portfolio-description"><?php echo htmlspecialchars($project['description']); ?></p>
+                        <button class="view-details-btn" data-bs-toggle="modal" data-bs-target="#projectModal<?php echo $loop = isset($loop) ? $loop + 1 : 1; ?>">
                             View Details
                         </button>
                     </div>
@@ -125,22 +127,28 @@ $projects = [
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <img src="<?php echo htmlspecialchars($project['image']); ?>" class="img-fluid rounded" alt="<?php echo htmlspecialchars($project['title']); ?>">
+                <div class="modal-grid">
+                    <div class="modal-image">
+                        <img src="<?php echo htmlspecialchars($project['image']); ?>" class="project-image" alt="<?php echo htmlspecialchars($project['title']); ?>">
                     </div>
-                    <div class="col-md-6">
-                        <h6>Project Description</h6>
-                        <p><?php echo htmlspecialchars($project['description']); ?></p>
+                    <div class="modal-content">
+                        <div class="project-detail">
+                            <h6>Project Description</h6>
+                            <p><?php echo htmlspecialchars($project['description']); ?></p>
+                        </div>
                         
-                        <h6>Technologies Used</h6>
-                        <p><?php echo htmlspecialchars($project['technology']); ?></p>
+                        <div class="project-detail">
+                            <h6>Technologies Used</h6>
+                            <p><?php echo htmlspecialchars($project['technology']); ?></p>
+                        </div>
                         
-                        <h6>Client</h6>
-                        <p><?php echo htmlspecialchars($project['client']); ?></p>
+                        <div class="project-detail">
+                            <h6>Client</h6>
+                            <p><?php echo htmlspecialchars($project['client']); ?></p>
+                        </div>
                         
-                        <div class="mt-4">
-                            <a href="#" class="btn btn-primary">Visit Project</a>
+                        <div class="project-actions">
+                            <a href="#" class="btn-primary">Visit Project</a>
                         </div>
                     </div>
                 </div>
@@ -152,13 +160,13 @@ $projects = [
 <?php endforeach; ?>
 
 <!-- CTA Section -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="fw-bold mb-4">Ready to Start Your Project?</h2>
-                <p class="lead mb-4">Let us help you create a custom solution tailored to your business needs.</p>
-                <a href="/pages/contact.php" class="btn btn-primary btn-lg">Get in Touch</a>
+<section class="cta-section section-spacing section-light">
+    <div class="content-container">
+        <div class="cta-grid">
+            <div class="cta-content text-center">
+                <h2 class="cta-title">Ready to Start Your Project?</h2>
+                <p class="cta-description">Let us help you create a custom solution tailored to your business needs.</p>
+                <a href="/pages/contact.php" class="btn-primary btn-large">Get in Touch</a>
             </div>
         </div>
     </div>
@@ -168,7 +176,7 @@ $projects = [
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Portfolio filtering
-    const filterButtons = document.querySelectorAll('.portfolio-filter button');
+    const filterButtons = document.querySelectorAll('.filter-btn');
     const portfolioItems = document.querySelectorAll('.portfolio-item');
     
     filterButtons.forEach(button => {

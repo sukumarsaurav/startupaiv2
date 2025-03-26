@@ -20,7 +20,7 @@ require_once '../../../../components/header.php';
 
 <!-- Page Header -->
 <section class="page-header">
-    <div class="content-container">
+    <div class="container">
         <div class="header-grid">
             <div class="page-header-content" data-aos="fade-right">
                 <h1><?php echo $pageTitle; ?></h1>
@@ -36,7 +36,7 @@ require_once '../../../../components/header.php';
 
 <!-- Service Overview -->
 <section class="service-overview">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="service-overview-header" data-aos="fade-up">
                 <h2>AI-Powered Conversational Experiences</h2>
@@ -48,7 +48,7 @@ require_once '../../../../components/header.php';
 
 <!-- Services Offered -->
 <section class="services-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="services-header" data-aos="fade-up">
                 <h2>Our Custom Chatbot Solutions</h2>
@@ -130,7 +130,7 @@ require_once '../../../../components/header.php';
 
 <!-- Implementation Process -->
 <section class="implementation-process">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="implementation-header" data-aos="fade-up">
                 <h2>Our Development Process</h2>
@@ -212,7 +212,7 @@ require_once '../../../../components/header.php';
 
 <!-- Technologies Section -->
 <section class="tech-stack">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="tech-stack-header" data-aos="fade-up">
                 <h2>Our Technology Stack</h2>
@@ -290,7 +290,7 @@ require_once '../../../../components/header.php';
 
 <!-- Business Benefits -->
 <section class="benefits-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="benefits-header" data-aos="fade-up">
                 <h2>The Business Impact</h2>
@@ -382,7 +382,7 @@ require_once '../../../../components/header.php';
 
 <!-- CTA Section -->
 <section class="cta-section">
-    <div class="content-container">
+    <div class="container">
         <div class="cta-content">
             <h2>Ready to Transform Your Customer Experience?</h2>
             <p class="lead">Contact us today to discuss how a custom chatbot solution can drive results for your business.</p>
@@ -393,7 +393,7 @@ require_once '../../../../components/header.php';
 
 <!-- FAQ Section -->
 <section class="faq-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="faq-header">
                 <h2>Frequently Asked Questions</h2>

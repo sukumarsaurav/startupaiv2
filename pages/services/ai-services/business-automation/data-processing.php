@@ -15,7 +15,7 @@ require_once '../../../../components/header.php';
 
 <!-- Page Header -->
 <section class="page-header ">
-    <div class="content-container">
+    <div class="container">
         <div class="header-grid">
             <div class="page-header-content" data-aos="fade-right">
                 <h1><?php echo $pageTitle; ?></h1>
@@ -31,7 +31,7 @@ require_once '../../../../components/header.php';
 
 <!-- Service Overview -->
 <section class="service-overview">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="service-overview-header" data-aos="fade-up">
                 <h2>Unlock the Value of Your Data with AI-Powered Processing</h2>
@@ -54,7 +54,7 @@ require_once '../../../../components/header.php';
 
 <!-- Services -->
 <section class="services-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="services-header" data-aos="fade-up">
                 <h2>Our AI Data Processing Services</h2>
@@ -164,7 +164,7 @@ require_once '../../../../components/header.php';
 
 <!-- Implementation Process -->
 <section class="implementation-process">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="implementation-header" data-aos="fade-up">
                 <h2>Our Data Processing Implementation Process</h2>
@@ -218,7 +218,7 @@ require_once '../../../../components/header.php';
 
 <!-- Industry Applications -->
 <section class="industry-applications">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="industry-header" data-aos="fade-up">
                 <h2>Industry Applications</h2>
@@ -292,7 +292,7 @@ require_once '../../../../components/header.php';
 
 <!-- Technology Platform -->
 <section class="platforms-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="platforms-header" data-aos="fade-up">
                 <h2>Our Data Processing Technology Stack</h2>
@@ -336,7 +336,7 @@ require_once '../../../../components/header.php';
 
 <!-- Business Benefits -->
 <section class="benefits-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="benefits-header" data-aos="fade-up">
                 <h2>Business Benefits</h2>
@@ -410,7 +410,7 @@ require_once '../../../../components/header.php';
 
 <!-- Why Choose Us -->
 <section class="why-choose-us">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="why-choose-header" data-aos="fade-up">
                 <h2>Why Choose Us for <?php echo $serviceName; ?></h2>
@@ -484,7 +484,7 @@ require_once '../../../../components/header.php';
 
 <!-- CTA Section -->
 <section class="cta-section">
-    <div class="content-container">
+    <div class="container">
         <div class="cta-content">
             <h2>Ready to Transform Your Data Processing?</h2>
             <p class="lead">Contact us today to discuss how AI-powered data processing can unlock the value in your organization's data.</p>
@@ -495,7 +495,7 @@ require_once '../../../../components/header.php';
 
 <!-- FAQ Section -->
 <section class="faq-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="faq-header">
                 <h2>Frequently Asked Questions</h2>

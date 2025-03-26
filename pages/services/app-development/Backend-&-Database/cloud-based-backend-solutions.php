@@ -14,7 +14,7 @@ require_once '../../../../components/header.php';
 
 <!-- Page Header -->
 <header class="page-header">
-    <div class="content-container">
+    <div class="container">
         <div class="header-grid">
             <div class="page-header-content text-center">
                 <h1 class="page-title" data-aos="fade-up">Cloud-Based Backend Solutions</h1>
@@ -28,7 +28,7 @@ require_once '../../../../components/header.php';
 
 <!-- Service Overview -->
 <section class="service-overview section-spacing">
-    <div class="content-container">
+    <div class="container">
         <div class="service-grid">
             <div class="service-image" data-aos="fade-right">
                 <img src="/assets/images/services/cloud-backend.svg" alt="Cloud-Based Backend Solutions" class="featured-image">
@@ -86,7 +86,7 @@ require_once '../../../../components/header.php';
 
 <!-- Process -->
 <section class="process-section section-spacing section-light">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header text-center" data-aos="fade-up">
             <h2 class="section-heading">Our Cloud Backend Development Process</h2>
             <p class="section-subheading">
@@ -136,7 +136,7 @@ require_once '../../../../components/header.php';
 
 <!-- Benefits -->
 <section class="benefits-section section-spacing">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header text-center" data-aos="fade-up">
             <h2 class="section-heading">Benefits of Cloud-Based Backend Solutions</h2>
             <p class="section-subheading">
@@ -171,7 +171,7 @@ require_once '../../../../components/header.php';
 
 <!-- Technologies -->
 <section class="technologies-section section-spacing section-light">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header text-center" data-aos="fade-up">
             <h2 class="section-heading">Cloud Technologies We Work With</h2>
             <p class="section-subheading">
@@ -212,7 +212,7 @@ require_once '../../../../components/header.php';
 
 <!-- CTA -->
 <section class="cta-section section-spacing section-primary text-white">
-    <div class="content-container">
+    <div class="container">
         <div class="cta-grid">
             <div class="cta-content" data-aos="fade-right">
                 <h2 class="cta-title">Ready to Build Your Cloud Backend?</h2>
@@ -229,7 +229,7 @@ require_once '../../../../components/header.php';
 
 <!-- FAQ Section -->
 <section class="faq-section section-spacing">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header text-center" data-aos="fade-up">
             <h2 class="section-heading">Frequently Asked Questions</h2>
             <p class="section-subheading">

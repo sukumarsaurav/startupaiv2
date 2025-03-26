@@ -32,37 +32,35 @@ require_once '../components/header.php';
 ?>
 
 <!-- Blog Post Header -->
-<section class="blog-post-header py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
-                        <li class="breadcrumb-item">
-                            <a href="/blog?category=<?php echo urlencode($post['category']); ?>">
-                                <?php echo htmlspecialchars($post['category']); ?>
-                            </a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">
-                            <?php echo htmlspecialchars($post['title']); ?>
-                        </li>
-                    </ol>
-                </nav>
-                
-                <h1 class="display-4 mb-4"><?php echo htmlspecialchars($post['title']); ?></h1>
-                
-                <div class="blog-meta mb-4">
-                    <span class="badge bg-primary me-2"><?php echo htmlspecialchars($post['category']); ?></span>
-                    <span class="text-muted me-3">
-                        <i class="far fa-calendar-alt me-1"></i>
-                        <?php echo date('M d, Y', strtotime($post['published_date'])); ?>
-                    </span>
-                    <span class="text-muted">
-                        <i class="far fa-user me-1"></i>
-                        By <?php echo htmlspecialchars($post['author']); ?>
-                    </span>
-                </div>
+<section class="blog-post-header section-spacing">
+    <div class="content-container">
+        <div class="post-header-container">
+            <nav class="breadcrumb-nav">
+                <ol class="breadcrumb-list">
+                    <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
+                    <li class="breadcrumb-item">
+                        <a href="/blog?category=<?php echo urlencode($post['category']); ?>">
+                            <?php echo htmlspecialchars($post['category']); ?>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item current">
+                        <?php echo htmlspecialchars($post['title']); ?>
+                    </li>
+                </ol>
+            </nav>
+            
+            <h1 class="post-title"><?php echo htmlspecialchars($post['title']); ?></h1>
+            
+            <div class="post-meta">
+                <span class="post-category"><?php echo htmlspecialchars($post['category']); ?></span>
+                <span class="post-date">
+                    <i class="far fa-calendar-alt"></i>
+                    <?php echo date('M d, Y', strtotime($post['published_date'])); ?>
+                </span>
+                <span class="post-author">
+                    <i class="far fa-user"></i>
+                    By <?php echo htmlspecialchars($post['author']); ?>
+                </span>
             </div>
         </div>
     </div>
@@ -70,48 +68,44 @@ require_once '../components/header.php';
 
 <!-- Featured Image -->
 <?php if ($post['featured_image']): ?>
-<section class="blog-featured-image py-3">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <img src="<?php echo htmlspecialchars($post['featured_image']); ?>"
-                     class="img-fluid rounded"
-                     alt="<?php echo htmlspecialchars($post['title']); ?>">
-            </div>
+<section class="blog-featured-image section-spacing-sm">
+    <div class="content-container">
+        <div class="featured-image-container">
+            <img src="<?php echo htmlspecialchars($post['featured_image']); ?>"
+                 class="featured-post-image"
+                 alt="<?php echo htmlspecialchars($post['title']); ?>">
         </div>
     </div>
 </section>
 <?php endif; ?>
 
 <!-- Blog Content -->
-<section class="blog-content py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <article class="blog-post-content">
-                    <?php echo $post['content']; ?>
-                </article>
-                
-                <!-- Social Share -->
-                <div class="social-share mt-5">
-                    <h5>Share this article</h5>
-                    <div class="d-flex gap-2">
-                        <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode('https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']); ?>&text=<?php echo urlencode($post['title']); ?>"
-                           class="btn btn-outline-primary"
-                           target="_blank">
-                            <i class="fab fa-twitter"></i> Tweet
-                        </a>
-                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo urlencode('https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']); ?>&title=<?php echo urlencode($post['title']); ?>"
-                           class="btn btn-outline-primary"
-                           target="_blank">
-                            <i class="fab fa-linkedin"></i> Share
-                        </a>
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode('https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']); ?>"
-                           class="btn btn-outline-primary"
-                           target="_blank">
-                            <i class="fab fa-facebook"></i> Share
-                        </a>
-                    </div>
+<section class="blog-content section-spacing">
+    <div class="content-container">
+        <div class="post-content-container">
+            <article class="post-content">
+                <?php echo $post['content']; ?>
+            </article>
+            
+            <!-- Social Share -->
+            <div class="social-share-container">
+                <h5 class="share-title">Share this article</h5>
+                <div class="share-buttons">
+                    <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode('https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']); ?>&text=<?php echo urlencode($post['title']); ?>"
+                       class="share-button twitter"
+                       target="_blank">
+                        <i class="fab fa-twitter"></i> Tweet
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo urlencode('https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']); ?>&title=<?php echo urlencode($post['title']); ?>"
+                       class="share-button linkedin"
+                       target="_blank">
+                        <i class="fab fa-linkedin"></i> Share
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode('https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']); ?>"
+                       class="share-button facebook"
+                       target="_blank">
+                        <i class="fab fa-facebook"></i> Share
+                    </a>
                 </div>
             </div>
         </div>
@@ -119,14 +113,12 @@ require_once '../components/header.php';
 </section>
 
 <!-- Related Posts -->
-<section class="related-posts py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="h3 mb-4">Related Articles</h2>
-            </div>
+<section class="related-posts section-spacing section-light">
+    <div class="content-container">
+        <div class="section-header">
+            <h2 class="section-heading">Related Articles</h2>
         </div>
-        <div class="row">
+        <div class="related-posts-grid">
             <?php
             $related_query = "SELECT id, title, slug, excerpt, featured_image, published_date 
                             FROM blog_posts 
@@ -141,25 +133,25 @@ require_once '../components/header.php';
             $stmt->execute();
             while ($related_post = $stmt->fetch(PDO::FETCH_ASSOC)):
             ?>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
+                <div class="related-post-item">
+                    <div class="post-card">
                         <?php if ($related_post['featured_image']): ?>
-                            <img src="<?php echo htmlspecialchars($related_post['featured_image']); ?>"
-                                 class="card-img-top"
-                                 alt="<?php echo htmlspecialchars($related_post['title']); ?>">
+                            <div class="post-image">
+                                <img src="<?php echo htmlspecialchars($related_post['featured_image']); ?>"
+                                     alt="<?php echo htmlspecialchars($related_post['title']); ?>">
+                            </div>
                         <?php endif; ?>
-                        <div class="card-body">
-                            <h3 class="card-title h5">
-                                <a href="/blog/<?php echo htmlspecialchars($related_post['slug']); ?>"
-                                   class="text-decoration-none text-dark">
+                        <div class="post-content">
+                            <h3 class="post-title">
+                                <a href="/blog/<?php echo htmlspecialchars($related_post['slug']); ?>">
                                     <?php echo htmlspecialchars($related_post['title']); ?>
                                 </a>
                             </h3>
-                            <p class="card-text">
+                            <p class="post-excerpt">
                                 <?php echo htmlspecialchars($related_post['excerpt']); ?>
                             </p>
                             <a href="/blog/<?php echo htmlspecialchars($related_post['slug']); ?>"
-                               class="btn btn-outline-primary btn-sm">
+                               class="read-more-btn">
                                 Read More
                             </a>
                         </div>

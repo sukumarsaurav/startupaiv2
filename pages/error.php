@@ -50,15 +50,15 @@ include_once BASEPATH . '/components/header.php';
 ?>
 
 <!-- Page Header -->
-<section class="page-header bg-light py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1 class="display-4">Error <?php echo $error_code; ?></h1>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb justify-content-center">
+<section class="page-header section-spacing section-light">
+    <div class="content-container">
+        <div class="header-grid">
+            <div class="page-header-content text-center">
+                <h1 class="page-title">Error <?php echo $error_code; ?></h1>
+                <nav class="breadcrumb-nav">
+                    <ol class="breadcrumb-list">
                         <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Error <?php echo $error_code; ?></li>
+                        <li class="breadcrumb-item current">Error <?php echo $error_code; ?></li>
                     </ol>
                 </nav>
             </div>
@@ -67,24 +67,22 @@ include_once BASEPATH . '/components/header.php';
 </section>
 
 <!-- Error Section -->
-<section class="py-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-                <div class="error-container py-5">
-                    <h2 class="h1 text-danger mb-4"><?php echo $error_title; ?></h2>
-                    <div class="error-code display-1 text-muted mb-4"><?php echo $error_code; ?></div>
-                    <p class="lead mb-4"><?php echo htmlspecialchars($error_message); ?></p>
-                    <p class="text-muted mb-5">Our technical team has been notified of this issue.</p>
-                    
-                    <div class="d-flex justify-content-center gap-3">
-                        <button onclick="history.back()" class="btn btn-outline-primary">
-                            <i class="fas fa-arrow-left me-2"></i>Go Back
-                        </button>
-                        <a href="/" class="btn btn-primary">
-                            <i class="fas fa-home me-2"></i>Return to Homepage
-                        </a>
-                    </div>
+<section class="error-section section-spacing">
+    <div class="content-container">
+        <div class="error-container">
+            <div class="error-content text-center">
+                <h2 class="error-title"><?php echo $error_title; ?></h2>
+                <div class="error-code"><?php echo $error_code; ?></div>
+                <p class="error-message"><?php echo htmlspecialchars($error_message); ?></p>
+                <p class="error-note">Our technical team has been notified of this issue.</p>
+                
+                <div class="error-actions">
+                    <button onclick="history.back()" class="btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Go Back
+                    </button>
+                    <a href="/" class="btn-primary">
+                        <i class="fas fa-home"></i> Return to Homepage
+                    </a>
                 </div>
             </div>
         </div>

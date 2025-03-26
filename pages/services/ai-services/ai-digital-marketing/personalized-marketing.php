@@ -15,7 +15,7 @@ require_once '../../../../components/header.php';
 
 <!-- Page Header -->
 <section class="page-header">
-    <div class="content-container">
+    <div class="container">
         <div class="header-grid">
             <div class="page-header-content" data-aos="fade-right">
                 <h1><?php echo $pageTitle; ?></h1>
@@ -31,7 +31,7 @@ require_once '../../../../components/header.php';
 
 <!-- Service Overview -->
 <section class="service-overview">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="service-overview-header" data-aos="fade-up">
                 <h2>Personalization at Scale with AI</h2>
@@ -54,7 +54,7 @@ require_once '../../../../components/header.php';
 
 <!-- Services -->
 <section class="services-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="services-header" data-aos="fade-up">
                 <h2>Our Personalized Marketing Services</h2>
@@ -159,7 +159,7 @@ require_once '../../../../components/header.php';
 
 <!-- Data & Platform -->
 <section class="platforms-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="platforms-header" data-aos="fade-up">
                 <h2>Our AI Personalization Technology</h2>
@@ -204,7 +204,7 @@ require_once '../../../../components/header.php';
 
 <!-- Implementation Process -->
 <section class="implementation-process">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="implementation-header" data-aos="fade-up">
                 <h2>Our Implementation Approach</h2>
@@ -279,7 +279,7 @@ require_once '../../../../components/header.php';
 
 <!-- Benefits -->
 <section class="benefits-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="benefits-header" data-aos="fade-up">
                 <h2>Business Benefits</h2>
@@ -330,7 +330,7 @@ require_once '../../../../components/header.php';
 
 <!-- CTA Section -->
 <section class="cta-section">
-    <div class="content-container">
+    <div class="container">
         <div class="cta-content">
             <h2>Ready to Deliver Truly Personal Experiences?</h2>
             <p class="lead">Let's build AI-powered personalization that connects with your customers on a deeper level.</p>
@@ -341,7 +341,7 @@ require_once '../../../../components/header.php';
 
 <!-- FAQ Section -->
 <section class="faq-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="faq-header">
                 <h2>Frequently Asked Questions</h2>

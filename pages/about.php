@@ -17,58 +17,66 @@ include_once '../components/header.php';
 ?>
 
 <!-- Page Header -->
-<section class="page-header py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6" data-aos="fade-right">
-                <h1 class="display-4">About Us</h1>
-                <p class="lead">Your trusted technology partner for digital transformation and growth</p>
+<section class="page-header section-spacing">
+    <div class="content-container">
+        <div class="header-grid">
+            <div class="page-header-content" data-aos="fade-right">
+                <h1 class="page-title">About Us</h1>
+                <p class="page-description">Your trusted technology partner for digital transformation and growth</p>
             </div>
-            <div class="col-lg-6" data-aos="fade-left">
-                <img src="../assets/images/about-header.svg" alt="About Us" class="img-fluid">
+            <div class="page-header-image" data-aos="fade-left">
+                <img src="../assets/images/about-header.svg" alt="About Us" class="featured-image">
             </div>
         </div>
     </div>
 </section>
 
 <!-- Our Story -->
-<section class="py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-4" data-aos="fade-right">
-                <h2>Our Story</h2>
+<section class="section-spacing">
+    <div class="content-container">
+        <div class="service-grid">
+            <div class="service-content" data-aos="fade-right">
+                <h2 class="section-heading">Our Story</h2>
                 <p>StartupAI was founded with a vision to help startups and businesses leverage the power of technology to achieve their goals. We understand the challenges that startups face in today's competitive landscape.</p>
                 <p>Our team of experts brings together years of experience in web development, AI solutions, and digital marketing to provide comprehensive solutions that drive growth and success.</p>
             </div>
-            <div class="col-lg-6 mb-4" data-aos="fade-left">
-                <img src="../assets/images/our-story.svg" alt="Our Story" class="img-fluid rounded shadow">
+            <div class="service-image" data-aos="fade-left">
+                <img src="../assets/images/our-story.svg" alt="Our Story" class="featured-image">
             </div>
         </div>
     </div>
 </section>
 
 <!-- Our Values -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-5" data-aos="fade-up">Our Values</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
+<section class="section-spacing section-light">
+    <div class="content-container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <h2 class="section-heading">Our Values</h2>
+        </div>
+        <div class="values-grid">
+            <div class="value-item" data-aos="fade-up">
                 <div class="value-card">
-                    <i class="fas fa-lightbulb fa-3x mb-3"></i>
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb icon-large icon-primary"></i>
+                    </div>
                     <h3>Innovation</h3>
                     <p>We stay at the forefront of technology to deliver cutting-edge solutions.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="value-item" data-aos="fade-up" data-aos-delay="100">
                 <div class="value-card">
-                    <i class="fas fa-hands-helping fa-3x mb-3"></i>
+                    <div class="value-icon">
+                        <i class="fas fa-hands-helping icon-large icon-primary"></i>
+                    </div>
                     <h3>Partnership</h3>
                     <p>We work closely with our clients to ensure their success is our success.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="value-item" data-aos="fade-up" data-aos-delay="200">
                 <div class="value-card">
-                    <i class="fas fa-shield-alt fa-3x mb-3"></i>
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt icon-large icon-primary"></i>
+                    </div>
                     <h3>Quality</h3>
                     <p>We maintain the highest standards in everything we deliver.</p>
                 </div>
@@ -78,48 +86,50 @@ include_once '../components/header.php';
 </section>
 
 <!-- Team Section -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-5" data-aos="fade-up">Our Team</h2>
-        <div class="row">
-            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
+<section class="section-spacing">
+    <div class="content-container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <h2 class="section-heading">Our Team</h2>
+        </div>
+        <div class="team-grid">
+            <div class="team-item" data-aos="fade-up">
                 <div class="team-card">
-                    <img src="../assets/images/team1.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3">
+                    <img src="../assets/images/team1.jpg" alt="Team Member" class="team-image">
                     <h4>John Doe</h4>
-                    <p class="text-muted">CEO & Founder</p>
+                    <p class="team-role">CEO & Founder</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-item" data-aos="fade-up" data-aos-delay="100">
                 <div class="team-card">
-                    <img src="../assets/images/team2.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3">
+                    <img src="../assets/images/team2.jpg" alt="Team Member" class="team-image">
                     <h4>Jane Smith</h4>
-                    <p class="text-muted">AI Lead</p>
+                    <p class="team-role">AI Lead</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-item" data-aos="fade-up" data-aos-delay="200">
                 <div class="team-card">
-                    <img src="../assets/images/team3.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3">
+                    <img src="../assets/images/team3.jpg" alt="Team Member" class="team-image">
                     <h4>Mike Johnson</h4>
-                    <p class="text-muted">Tech Lead</p>
+                    <p class="team-role">Tech Lead</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="team-card">
-                    <img src="../assets/images/team4.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3">
+                    <img src="../assets/images/team4.jpg" alt="Team Member" class="team-image">
                     <h4>Sarah Wilson</h4>
-                    <p class="text-muted">Marketing Director</p>
+                    <p class="team-role">Marketing Director</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
