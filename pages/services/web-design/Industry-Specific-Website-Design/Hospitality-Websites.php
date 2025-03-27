@@ -21,7 +21,7 @@ require_once '../../../../components/header.php';
 
         <!-- Page Header -->
         <section class="page-header">
-            <div class="content-container">
+            <div class="container">
                 <div class="header-grid">
                     <div class="page-header-content" data-aos="fade-right">
                         <h1>Hospitality Website Design</h1>
@@ -39,7 +39,7 @@ require_once '../../../../components/header.php';
 
         <!-- Service Overview -->
         <section class="service-overview">
-            <div class="content-container">
+            <div class="container">
                 <div class="section-header">
                     <div class="service-overview-header" data-aos="fade-up">
                         <h2>Expert Hospitality Website Design Services</h2>
@@ -64,7 +64,7 @@ require_once '../../../../components/header.php';
 
         <!-- Services Section -->
         <section class="services-section">
-            <div class="content-container">
+            <div class="container">
                 <div class="section-header">
                     <div class="services-header" data-aos="fade-up">
                         <h2>Our Hospitality Website Design Services</h2>
@@ -129,7 +129,7 @@ require_once '../../../../components/header.php';
 
         <!-- Implementation Process -->
         <section class="implementation-process">
-            <div class="content-container">
+            <div class="container">
                 <div class="section-header">
                     <div class="implementation-header" data-aos="fade-up">
                         <h2>Our Hospitality Website Design Process</h2>
@@ -211,7 +211,7 @@ require_once '../../../../components/header.php';
 
         <!-- Features Section -->
         <section class="features-section">
-            <div class="content-container">
+            <div class="container">
                 <div class="section-header">
                     <div class="features-header" data-aos="fade-up">
                         <h2>Essential Features for Hospitality Websites</h2>
@@ -261,7 +261,7 @@ require_once '../../../../components/header.php';
 
         <!-- Integration Section -->
         <section class="integration-section">
-            <div class="content-container">
+            <div class="container">
                 <div class="section-header">
                     <div class="integration-header" data-aos="fade-up">
                         <h2>Booking Systems We Integrate</h2>
@@ -324,7 +324,7 @@ require_once '../../../../components/header.php';
 
         <!-- Benefits -->
         <section class="benefits-section">
-            <div class="content-container">
+            <div class="container">
                 <div class="section-header">
                     <div class="benefits-header" data-aos="fade-up">
                         <h2>Benefits of Professional Hospitality Website Design</h2>
@@ -368,7 +368,7 @@ require_once '../../../../components/header.php';
 
         <!-- CTA Section -->
         <section class="cta-section">
-            <div class="content-container">
+            <div class="container">
                 <div class="cta-content">
                     <h2>Ready to Create Your Hospitality Website?</h2>
                     <p class="lead">Let's build an immersive digital experience that showcases your hospitality business and drives direct bookings.</p>
@@ -381,7 +381,7 @@ require_once '../../../../components/header.php';
 
         <!-- FAQ Section -->
         <section class="faq-section">
-            <div class="content-container">
+            <div class="container">
                 <div class="section-header">
                     <div class="faq-header">
                         <h2>Frequently Asked Questions</h2>

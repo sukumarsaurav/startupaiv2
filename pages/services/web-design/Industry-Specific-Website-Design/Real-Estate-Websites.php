@@ -21,7 +21,7 @@ require_once '../../../../components/header.php';
 
         <!-- Page Header -->
         <section class="page-header">
-            <div class="content-container">
+            <div class="container">
                 <div class="header-grid">
                     <div class="page-header-content" data-aos="fade-right">
                         <h1>Real Estate Website Design</h1>
@@ -39,7 +39,7 @@ require_once '../../../../components/header.php';
 
         <!-- Service Overview -->
         <section class="service-overview">
-            <div class="content-container">
+            <div class="container">
                 <div class="section-header">
                     <div class="service-overview-header" data-aos="fade-up">
                         <h2>Expert Real Estate Website Design Services</h2>
@@ -64,7 +64,7 @@ require_once '../../../../components/header.php';
 
         <!-- Services Section -->
         <section class="services-section">
-            <div class="content-container">
+            <div class="container">
                 <div class="section-header">
                     <div class="services-header" data-aos="fade-up">
                         <h2>Our Real Estate Website Design Services</h2>
@@ -129,7 +129,7 @@ require_once '../../../../components/header.php';
 
         <!-- Implementation Process -->
         <section class="implementation-process">
-            <div class="content-container">
+            <div class="container">
                 <div class="section-header">
                     <div class="implementation-header" data-aos="fade-up">
                         <h2>Our Real Estate Website Design Process</h2>
@@ -211,7 +211,7 @@ require_once '../../../../components/header.php';
 
         <!-- Features Section -->
         <section class="features-section">
-            <div class="content-container">
+            <div class="container">
                 <div class="section-header">
                     <div class="features-header" data-aos="fade-up">
                         <h2>Essential Features for Real Estate Websites</h2>
@@ -261,7 +261,7 @@ require_once '../../../../components/header.php';
 
         <!-- Benefits -->
         <section class="benefits-section">
-            <div class="content-container">
+            <div class="container">
                 <div class="section-header">
                     <div class="benefits-header" data-aos="fade-up">
                         <h2>Benefits of Professional Real Estate Website Design</h2>
@@ -305,7 +305,7 @@ require_once '../../../../components/header.php';
 
         <!-- Technology Section -->
         <section class="technology-section">
-            <div class="content-container">
+            <div class="container">
                 <div class="section-header">
                     <div class="technology-header" data-aos="fade-up">
                         <h2>Real Estate Technologies We Integrate</h2>
@@ -350,7 +350,7 @@ require_once '../../../../components/header.php';
 
         <!-- CTA Section -->
         <section class="cta-section">
-            <div class="content-container">
+            <div class="container">
                 <div class="cta-content">
                     <h2>Ready to Create Your Real Estate Website?</h2>
                     <p class="lead">Let's build a property-focused digital experience that attracts clients and showcases your listings beautifully.</p>
@@ -363,7 +363,7 @@ require_once '../../../../components/header.php';
 
         <!-- FAQ Section -->
         <section class="faq-section">
-            <div class="content-container">
+            <div class="container">
                 <div class="section-header">
                     <div class="faq-header">
                         <h2>Frequently Asked Questions</h2>

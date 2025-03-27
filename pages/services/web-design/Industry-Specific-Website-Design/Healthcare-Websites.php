@@ -255,12 +255,12 @@ require_once '../../../../components/header.php';
         </section>
 
         <!-- Benefits -->
-        <section class="benefits-section padding-y-5 bg-light">
+        <section class="benefits-section">
             <div class="container">
-                <div class="content-row margin-bottom-5">
-                    <div class="content-col full-width text-align-center" data-aos="fade-up">
-                        <h2 class="section-title">Benefits of Professional Healthcare Website Design</h2>
-                        <p class="section-description">
+                <div class="section-header">
+                    <div class="benefits-header" data-aos="fade-up">
+                        <h2>Benefits of Professional Healthcare Website Design</h2>
+                        <p class="lead">
                             Why investing in a specialized healthcare website matters
                         </p>
                     </div>
