@@ -18,11 +18,18 @@ include_once 'components/header.php';
 
 <!-- Hero Section -->
 <section id="home" class="hero-section">
-    <div class="main-container">
-        <div class="hero-content">
-            <div class="hero-text" data-aos="fade-right">
-                <h1 class="hero-title">Transforming Ideas into Digital Success Stories</h1>
-                <p class="hero-subtitle">End-to-end technology solutions for businesses at every stage of growth - from startup MVPs to enterprise digital transformations.</p>
+    <div class="hero-background"></div>
+    <div class="hero-blob-1"></div>
+    <div class="hero-blob-2"></div>
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <h1 class="hero-title">Transforming Ideas into <span class="highlight">Digital Success</span> Stories</h1>
+                <p class="lead">End-to-end technology solutions for businesses at every stage of growth - from startup MVPs to enterprise digital transformations.</p>
+                <div class="hero-buttons">
+                    <a href="/pages/contact.php" class="btn btn-primary">Get Started</a>
+                    <a href="/pages/portfolio.php" class="btn btn-outline">View Our Work</a>
+                </div>
                 <div class="inquiry-form">
                     <h3 class="form-title">Get Started Today</h3>
                     
@@ -71,8 +78,11 @@ include_once 'components/header.php';
                     ?>
                 </div>
             </div>
-            <div class="hero-image" data-aos="fade-left">
-                <img src="assets/images/hero-image.svg" alt="Hero Image">
+            <div class="hero-image">
+                <div class="image-glow"></div>
+                <img src="assets/images/hero-image.svg" alt="Hero Image" class="floating-image">
+                <div class="decoration-circle-1"></div>
+                <div class="decoration-circle-2"></div>
             </div>
         </div>
     </div>

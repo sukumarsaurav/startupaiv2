@@ -14,15 +14,22 @@ require_once '../../../../components/header.php';
 ?>
 
 <!-- Page Header -->
-<section class="page-header">
-    <div class="container">
-        <div class="header-grid">
-            <div class="page-header-content" data-aos="fade-right">
-                <h1><?php echo $pageTitle; ?></h1>
-                <p class="lead"><?php echo $pageDescription; ?></p>
-                <a href="/pages/contact.php" class="get-started-btn">Get Started</a>
+<section class="hero-section">
+    <div class="hero-background">
+        <div class="hero-blob-1"></div>
+        <div class="hero-blob-2"></div>
+    </div>
+    <div class="content-container">
+        <div class="hero-grid">
+            <div class="hero-content" data-aos="zoom-in" data-aos-duration="800">
+                <h1>AI-Powered <span class="highlight">Workflow Automation</span></h1>
+                <p class="hero-lead">Streamline business processes with intelligent workflow automation solutions that increase efficiency and reduce manual tasks.</p>
+                <div class="hero-buttons">
+                    <a href="/pages/contact.php" class="primary-button animate-pulse-slow">Get a Free Consultation</a>
+                    <a href="/case-studies" class="secondary-button">View Automation Results</a>
+                </div>
             </div>
-            <div class="page-header-image" data-aos="fade-left">
+            <div class="hero-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                 <img src="/assets/images/services/workflow-automation.svg" alt="<?php echo $serviceName; ?>" class="animate-float">
             </div>
         </div>
@@ -30,23 +37,26 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Service Overview -->
-<section class="service-overview">
-    <div class="container">
+<section class="overview-section">
+    <div class="content-container">
         <div class="section-header">
-            <div class="service-overview-header" data-aos="fade-up">
-                <h2>Transform Your Business Operations with AI Automation</h2>
-                <p class="lead">Eliminate repetitive tasks, reduce human error, and accelerate business processes with intelligent workflow automation powered by artificial intelligence.</p>
-            </div>
+            <h2>Transform Your Business Operations with AI Automation</h2>
+            <p class="section-lead">Eliminate repetitive tasks, reduce human error, and accelerate business processes with intelligent workflow automation powered by artificial intelligence.</p>
         </div>
         
         <div class="overview-grid">
-            <div class="service-overview-content" data-aos="fade-up">
+            <div class="overview-card primary-card" data-aos="fade-right" data-aos-duration="800">
+                <div class="card-decoration"></div>
                 <h3>The Challenges of Manual Workflows</h3>
                 <p>Traditional business processes often involve repetitive manual tasks that consume valuable employee time, introduce human error, create process bottlenecks, and limit scalability. This leads to reduced productivity, higher operational costs, and missed business opportunities.</p>
+                <p>Manual workflows typically operate at less than 65% efficiency and introduce error rates of 5-15%, directly impacting your bottom line.</p>
             </div>
-            <div class="service-overview-content" data-aos="fade-up" data-aos-delay="100">
+            
+            <div class="overview-card secondary-card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                <div class="card-decoration"></div>
                 <h3>The AI Automation Advantage</h3>
-                <p>Our AI-powered workflow automation solutions transform how businesses operate by intelligently automating routine tasks, analyzing process inefficiencies, adapting to changing conditions, and enabling employees to focus on high-value strategic work. This results in significant cost savings, improved accuracy, faster processes, and enhanced scalability.</p>
+                <p>Our AI-powered workflow automation solutions transform how businesses operate by intelligently automating routine tasks, analyzing process inefficiencies, adapting to changing conditions, and enabling employees to focus on high-value strategic work.</p>
+                <p>This results in significant cost savings, improved accuracy, faster processes, and enhanced scalability that gives your business a competitive edge.</p>
             </div>
         </div>
     </div>
@@ -163,53 +173,71 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Implementation Process -->
-<section class="implementation-process">
-    <div class="container">
+<section class="process-section">
+    <div class="content-container">
         <div class="section-header">
-            <div class="implementation-header" data-aos="fade-up">
-                <h2>Our Workflow Automation Implementation Process</h2>
-                <p class="lead">A systematic approach to transforming your business operations</p>
-            </div>
+            <h2>Our Workflow Automation Implementation Process</h2>
+            <p class="section-lead">A systematic approach to transforming your business operations with intelligent automation</p>
         </div>
         
-        <div class="process-grid">
-            <div class="process-item" data-aos="fade-up">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>1</span>
-                    </div>
-                    <h3>Process Discovery</h3>
-                    <p>We analyze your current workflows, identify bottlenecks, and prioritize automation opportunities based on ROI and strategic impact.</p>
-                </div>
-            </div>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
             
-            <div class="process-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>2</span>
+            <div class="process-grid">
+                <div class="process-card-wrapper" data-aos="fade-right" data-aos-duration="800">
+                    <div class="process-card">
+                        <div class="process-number">1</div>
+                        <h3>Process Discovery</h3>
+                        <p>We analyze your current workflows, identify bottlenecks, and prioritize automation opportunities based on ROI and strategic impact.</p>
+                        <ul class="process-tasks">
+                            <li>Comprehensive process mapping & documentation</li>
+                            <li>Bottleneck identification & impact analysis</li>
+                            <li>Automation opportunity prioritization</li>
+                            <li>ROI calculation & business case development</li>
+                        </ul>
                     </div>
-                    <h3>Solution Design</h3>
-                    <p>Our team designs the optimal automation solution, selecting the right technologies and creating detailed implementation plans.</p>
                 </div>
-            </div>
-            
-            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>3</span>
+                
+                <div class="process-card-wrapper" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                    <div class="process-card">
+                        <div class="process-number">2</div>
+                        <h3>Solution Design</h3>
+                        <p>Our team designs the optimal automation solution, selecting the right technologies and creating detailed implementation plans.</p>
+                        <ul class="process-tasks">
+                            <li>Process optimization & redesign</li>
+                            <li>Technology stack selection</li>
+                            <li>Integration architecture planning</li>
+                            <li>Detailed implementation roadmap creation</li>
+                        </ul>
                     </div>
-                    <h3>Development & Testing</h3>
-                    <p>We build and thoroughly test your automation solution in a controlled environment to ensure reliability and performance.</p>
                 </div>
-            </div>
-            
-            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>4</span>
+                
+                <div class="process-card-wrapper" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
+                    <div class="process-card">
+                        <div class="process-number">3</div>
+                        <h3>Development & Testing</h3>
+                        <p>We build your custom automation solution with AI capabilities, ensuring quality and reliability through rigorous testing.</p>
+                        <ul class="process-tasks">
+                            <li>Workflow automation development</li>
+                            <li>AI model training & integration</li>
+                            <li>Comprehensive testing across scenarios</li>
+                            <li>User acceptance validation</li>
+                        </ul>
                     </div>
-                    <h3>Deployment & Optimization</h3>
-                    <p>After successful deployment, we continuously monitor the automated processes and implement improvements based on real-world performance.</p>
+                </div>
+                
+                <div class="process-card-wrapper" data-aos="fade-left" data-aos-duration="800" data-aos-delay="600">
+                    <div class="process-card">
+                        <div class="process-number">4</div>
+                        <h3>Deployment & Optimization</h3>
+                        <p>We implement the solution in your environment, train your team, and continuously optimize performance based on real-world results.</p>
+                        <ul class="process-tasks">
+                            <li>Phased implementation strategy</li>
+                            <li>Comprehensive staff training</li>
+                            <li>Performance monitoring & analytics</li>
+                            <li>Continuous improvement cycles</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -329,73 +357,59 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Business Benefits -->
-<section class="business-benefits">
-    <div class="container">
+<section class="benefits-section">
+    <div class="content-container">
         <div class="section-header">
-            <div class="benefits-header" data-aos="fade-up">
-                <h2>Business Benefits</h2>
-                <p class="lead">The transformative impact of AI-powered workflow automation</p>
-            </div>
+            <h2>Business Benefits</h2>
+            <p class="section-lead">The transformative impact of AI-powered workflow automation</p>
         </div>
         
         <div class="benefits-grid">
-            <div class="benefit-item" data-aos="fade-up">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-dollar-sign fa-3x text-primary"></i>
-                    </div>
+            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-duration="800">
+                <div class="benefit-card primary-benefit">
+                    <div class="stat-badge">40-75%</div>
                     <h3>Cost Reduction</h3>
-                    <p>Reduce operational costs by 40-75% through elimination of manual tasks, reduced errors, and optimized resource allocation.</p>
+                    <p>Reduce operational costs by 40-75% through elimination of manual tasks, reduced errors, and optimized resource allocation. Automated workflows dramatically decrease labor costs while improving throughput and quality.</p>
                 </div>
             </div>
             
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-bolt fa-3x text-primary"></i>
-                    </div>
+            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <div class="benefit-card secondary-benefit">
+                    <div class="stat-badge">35-50%</div>
                     <h3>Increased Productivity</h3>
-                    <p>Boost employee productivity by 35-50% by automating routine tasks and enabling focus on high-value strategic activities.</p>
+                    <p>Boost employee productivity by 35-50% by automating routine tasks and enabling focus on high-value strategic activities. Your team can accomplish more meaningful work while automation handles repetitive processes.</p>
                 </div>
             </div>
             
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-check-circle fa-3x text-primary"></i>
-                    </div>
+            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="benefit-card tertiary-benefit">
+                    <div class="stat-badge">99.9%</div>
                     <h3>Enhanced Accuracy</h3>
-                    <p>Achieve up to 99.9% accuracy in business processes by eliminating human error and implementing consistent automated workflows.</p>
+                    <p>Achieve up to 99.9% accuracy in business processes by eliminating human error and implementing consistent automated workflows. Reduce costly mistakes, compliance issues, and reputation damage from process errors.</p>
                 </div>
             </div>
             
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-tachometer-alt fa-3x text-primary"></i>
-                    </div>
+            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <div class="benefit-card quaternary-benefit">
+                    <div class="stat-badge">70-90%</div>
                     <h3>Faster Processing</h3>
-                    <p>Reduce process completion times by 70-90% with automated 24/7 operations and elimination of bottlenecks.</p>
+                    <p>Reduce process completion times by 70-90% with automated 24/7 operations and elimination of bottlenecks. Tasks that took days can be completed in hours or minutes, accelerating your business operations.</p>
                 </div>
             </div>
             
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-chart-line fa-3x text-primary"></i>
-                    </div>
+            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                <div class="benefit-card primary-benefit">
+                    <div class="stat-badge">3x</div>
                     <h3>Improved Scalability</h3>
-                    <p>Scale operations efficiently without proportional increases in staff, handling volume spikes with automated systems.</p>
+                    <p>Scale operations up to 3x more efficiently without proportional increases in staff, handling volume spikes with automated systems. Meet growing demand without the traditional constraints of manual processes.</p>
                 </div>
             </div>
             
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-users fa-3x text-primary"></i>
-                    </div>
+            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                <div class="benefit-card secondary-benefit">
+                    <div class="stat-badge">65%</div>
                     <h3>Enhanced Customer Experience</h3>
-                    <p>Deliver faster, more consistent customer service with reduced wait times and error-free processing.</p>
+                    <p>Deliver faster, more consistent customer service with 65% reduced wait times and error-free processing. Automation enables real-time responses and consistent service quality that builds customer loyalty.</p>
                 </div>
             </div>
         </div>

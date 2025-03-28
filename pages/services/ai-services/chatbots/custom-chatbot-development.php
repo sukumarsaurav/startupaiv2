@@ -18,29 +18,53 @@ $seoData = [
 require_once '../../../../components/header.php';
 ?>
 
-<!-- Page Header -->
-<section class="page-header">
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-background"></div>
+    <div class="hero-blob-1"></div>
+    <div class="hero-blob-2"></div>
+    
     <div class="container">
-        <div class="header-grid">
-            <div class="page-header-content" data-aos="fade-right">
-                <h1><?php echo $pageTitle; ?></h1>
+        <div class="hero-grid">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <h1>Custom Chatbot <span class="highlight">Development</span></h1>
                 <p class="lead"><?php echo $pageDescription; ?></p>
-                <a href="/pages/contact.php" class="get-started-btn">Get Started</a>
+                <div class="hero-buttons">
+                    <a href="/pages/contact.php" class="btn btn-primary">Start Your Chatbot Project</a>
+                    <a href="/portfolio" class="btn btn-outline">View Portfolio</a>
+                </div>
             </div>
-            <div class="page-header-image" data-aos="fade-left">
-                <img src="/assets/images/services/custom-chatbot.svg" alt="<?php echo $serviceName; ?>" class="animate-float">
+            <div class="hero-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                <div class="image-glow"></div>
+                <img src="/assets/images/services/custom-chatbot.svg" alt="<?php echo $serviceName; ?>" class="floating-image">
+                <div class="decoration-circle-1"></div>
+                <div class="decoration-circle-2"></div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Service Overview -->
-<section class="service-overview">
+<!-- Service Overview Section -->
+<section class="overview-section">
     <div class="container">
-        <div class="section-header">
-            <div class="service-overview-header" data-aos="fade-up">
-                <h2>AI-Powered Conversational Experiences</h2>
-                <p class="lead">In today's digital-first business environment, customers expect immediate, personalized assistance at any time of day. Our custom chatbot development solutions create intelligent, conversational AI experiences that engage your customers, streamline operations, and drive business results. We build chatbots that don't just answer questions—they create meaningful connections with your audience.</p>
+        <div class="section-header" data-aos="fade-up">
+            <h2>AI-Powered Conversational Experiences</h2>
+            <p class="section-lead">Creating intelligent, conversational AI experiences that engage your customers, streamline operations, and drive business results.</p>
+        </div>
+        
+        <div class="overview-grid">
+            <div class="overview-card primary-card" data-aos="fade-right" data-aos-duration="800">
+                <div class="card-decoration"></div>
+                <h3>Intelligent Conversation Design</h3>
+                <p>In today's digital-first business environment, customers expect immediate, personalized assistance at any time of day. Our custom chatbot development solutions create intelligent, conversational AI experiences that engage your customers, streamline operations, and drive business results.</p>
+                <p>We focus on creating natural, contextual conversations that understand user intent and provide relevant, helpful responses that solve real problems for your users.</p>
+            </div>
+            
+            <div class="overview-card secondary-card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                <div class="card-decoration"></div>
+                <h3>Business-Focused AI Solutions</h3>
+                <p>We build chatbots that don't just answer questions—they create meaningful connections with your audience. Our solutions are designed to represent your brand voice consistently while delivering measurable business outcomes.</p>
+                <p>From customer service automation to lead generation and internal process efficiency, our chatbots are engineered to deliver specific business value aligned with your strategic goals.</p>
             </div>
         </div>
     </div>
@@ -128,89 +152,152 @@ require_once '../../../../components/header.php';
     </div>
 </section>
 
-<!-- Implementation Process -->
-<section class="implementation-process">
+<!-- Implementation Process Section -->
+<section class="process-section">
     <div class="container">
-        <div class="section-header">
-            <div class="implementation-header" data-aos="fade-up">
-                <h2>Our Development Process</h2>
-                <p class="lead">A systematic approach to creating effective AI chatbots</p>
-            </div>
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Development Process</h2>
+            <p class="section-lead">A systematic approach to creating effective AI chatbots</p>
         </div>
         
-        <div class="process-grid">
-            <!-- Step 1 -->
-            <div class="process-item" data-aos="fade-up">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>1</span>
-                    </div>
-                    <h3>Discovery & Strategy</h3>
-                    <p>We analyze your business needs, user requirements, and existing systems to create a comprehensive chatbot strategy.</p>
-                    <ul>
-                        <li>Business goals analysis</li>
-                        <li>User journey mapping</li>
-                        <li>Use case identification</li>
-                        <li>Integration requirements</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="process-timeline">
+            <!-- Timeline Line -->
+            <div class="timeline-line"></div>
             
-            <!-- Step 2 -->
-            <div class="process-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>2</span>
+            <div class="process-grid">
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800">
+                    <div class="process-number">1</div>
+                    <div class="process-card">
+                        <h3>Discovery & Strategy</h3>
+                        <p>We analyze your business needs, user requirements, and existing systems to create a comprehensive chatbot strategy.</p>
+                        <ul class="process-list">
+                            <li>Business goals analysis</li>
+                            <li>User journey mapping</li>
+                            <li>Use case identification</li>
+                            <li>Integration requirements</li>
+                            <li>Success metrics definition</li>
+                        </ul>
                     </div>
-                    <h3>Conversation Design</h3>
-                    <p>We design intuitive conversation flows that feel natural and effectively guide users toward their goals.</p>
-                    <ul>
-                        <li>Dialogue flow mapping</li>
-                        <li>Intent and entity modeling</li>
-                        <li>Personality development</li>
-                        <li>Fallback handling design</li>
-                    </ul>
                 </div>
-            </div>
-            
-            <!-- Step 3 -->
-            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>3</span>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="process-number">2</div>
+                    <div class="process-card">
+                        <h3>Conversation Design</h3>
+                        <p>We design intuitive conversation flows that feel natural and effectively guide users toward their goals.</p>
+                        <ul class="process-list">
+                            <li>Dialogue flow mapping</li>
+                            <li>Intent and entity modeling</li>
+                            <li>Personality development</li>
+                            <li>Fallback handling design</li>
+                            <li>Multi-turn conversation planning</li>
+                        </ul>
                     </div>
-                    <h3>Development & Training</h3>
-                    <p>We build and train your AI chatbot using advanced NLP technologies and your specific business data.</p>
-                    <ul>
-                        <li>AI model selection and training</li>
-                        <li>NLP optimization</li>
-                        <li>Integration development</li>
-                        <li>Backend system connections</li>
-                    </ul>
                 </div>
-            </div>
-            
-            <!-- Step 4 -->
-            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>4</span>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="process-number">3</div>
+                    <div class="process-card">
+                        <h3>Development & Training</h3>
+                        <p>We build and train your AI chatbot using advanced NLP technologies and your specific business data.</p>
+                        <ul class="process-list">
+                            <li>AI model selection and training</li>
+                            <li>NLP optimization</li>
+                            <li>Integration development</li>
+                            <li>Backend system connections</li>
+                            <li>Contextual understanding enhancement</li>
+                        </ul>
                     </div>
-                    <h3>Testing & Deployment</h3>
-                    <p>We thoroughly test your chatbot across scenarios and deploy it to your preferred channels with ongoing optimization.</p>
-                    <ul>
-                        <li>Conversational testing</li>
-                        <li>User acceptance testing</li>
-                        <li>Multi-channel deployment</li>
-                        <li>Performance monitoring</li>
-                    </ul>
+                </div>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    <div class="process-number">4</div>
+                    <div class="process-card">
+                        <h3>Testing & Deployment</h3>
+                        <p>We thoroughly test your chatbot across scenarios and deploy it to your preferred channels with ongoing optimization.</p>
+                        <ul class="process-list">
+                            <li>Scenario-based testing</li>
+                            <li>Natural language understanding validation</li>
+                            <li>Channel-specific deployment</li>
+                            <li>Performance monitoring setup</li>
+                            <li>Continuous improvement framework</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Technologies Section -->
+<!-- Benefits Section -->
+<section class="benefits-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Benefits of Custom AI Chatbots</h2>
+            <p class="section-lead">The strategic advantages of implementing intelligent conversational AI</p>
+        </div>
+        
+        <div class="benefits-grid">
+            <div class="benefit-card-wrapper primary-benefit" data-aos="fade-right" data-aos-duration="800">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Enhanced Customer Experience</h3>
+                    <p>AI chatbots provide immediate, 24/7 responses to customer inquiries, eliminating wait times and improving satisfaction. Businesses implementing chatbots report a 35% improvement in customer experience ratings.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge">35% better satisfaction</span>
+                        <span class="stat-badge">24/7 availability</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benefit-card-wrapper secondary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                <div class="benefit-card">
+                    <div class="benefit-icon secondary-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Operational Efficiency</h3>
+                    <p>Custom chatbots automate routine inquiries and processes, reducing operational costs by up to 30% and allowing human agents to focus on higher-value interactions that require emotional intelligence.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge secondary-badge">30% cost reduction</span>
+                        <span class="stat-badge secondary-badge">70% routine task automation</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benefit-card-wrapper tertiary-benefit" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
+                <div class="benefit-card">
+                    <div class="benefit-icon tertiary-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Lead Generation & Conversion</h3>
+                    <p>Intelligent chatbots engage website visitors proactively, qualify leads, and guide purchasing decisions. Businesses using AI chatbots report a 67% higher lead conversion rate than traditional forms.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge tertiary-badge">67% higher conversion</span>
+                        <span class="stat-badge tertiary-badge">3.5x more leads</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benefit-card-wrapper quaternary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+                <div class="benefit-card">
+                    <div class="benefit-icon quaternary-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Data-Driven Insights</h3>
+                    <p>Chatbots capture valuable conversation data, revealing customer preferences, pain points, and behavior patterns. This intelligence helps optimize products, services, and marketing strategies.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge quaternary-badge">100% conversation capture</span>
+                        <span class="stat-badge quaternary-badge">Actionable insights</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technology Section -->
 <section class="tech-stack">
     <div class="container">
         <div class="section-header">
@@ -282,98 +369,6 @@ require_once '../../../../components/header.php';
                         <li>Messaging platforms (WhatsApp, FB Messenger)</li>
                         <li>Voice assistants (Alexa, Google Assistant)</li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Business Benefits -->
-<section class="benefits-section">
-    <div class="container">
-        <div class="section-header">
-            <div class="benefits-header" data-aos="fade-up">
-                <h2>The Business Impact</h2>
-                <p class="lead">Transformative results from intelligent chatbot implementation</p>
-            </div>
-        </div>
-        
-        <div class="benefits-grid">
-            <!-- Benefit 1 -->
-            <div class="benefit-item" data-aos="fade-up">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>24/7 Customer Engagement</h3>
-                        <p>Provide instant responses and assistance around the clock without the cost of maintaining 24/7 human staff.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Benefit 2 -->
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Increased Conversion Rates</h3>
-                        <p>Businesses implementing AI chatbots see an average 30% increase in conversion rates through proactive engagement.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Benefit 3 -->
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-dollar-sign"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Reduced Operational Costs</h3>
-                        <p>Custom chatbots typically reduce customer service costs by 30-50% by handling routine inquiries automatically.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Benefit 4 -->
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Improved Customer Experience</h3>
-                        <p>90% of businesses report improved customer satisfaction scores after implementing intelligent chatbot solutions.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Benefit 5 -->
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Valuable Customer Insights</h3>
-                        <p>Gain deep insights into customer needs, common questions, and pain points through chatbot analytics.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Benefit 6 -->
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-expand-arrows-alt"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Scalable Customer Support</h3>
-                        <p>Handle surges in customer inquiries without additional staffing, maintaining consistent service levels.</p>
-                    </div>
                 </div>
             </div>
         </div>

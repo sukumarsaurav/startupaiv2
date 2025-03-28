@@ -20,15 +20,22 @@ require_once '../../../../components/header.php';
 ?>
 
 <!-- Page Header -->
-<section class="page-header">
+<section class="hero-section">
+    <div class="hero-background">
+        <div class="hero-blob-1"></div>
+        <div class="hero-blob-2"></div>
+    </div>
     <div class="content-container">
-        <div class="header-grid">
-            <div class="page-header-content" data-aos="fade-right">
-                <h1><?php echo $pageTitle; ?></h1>
-                <p class="lead"><?php echo $pageDescription; ?></p>
-                <a href="/pages/contact.php" class="get-started-btn">Get Started</a>
+        <div class="hero-grid">
+            <div class="hero-content" data-aos="zoom-in" data-aos-duration="800">
+                <h1>AI <span class="highlight">Voice Assistants</span></h1>
+                <p class="hero-lead">Develop intelligent voice assistants that deliver personalized user experiences, streamline interactions, and enhance productivity across multiple platforms.</p>
+                <div class="hero-buttons">
+                    <a href="/pages/contact.php" class="primary-button animate-pulse-slow">Get a Free Consultation</a>
+                    <a href="/case-studies" class="secondary-button">View Voice AI Case Studies</a>
+                </div>
             </div>
-            <div class="page-header-image" data-aos="fade-left">
+            <div class="hero-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                 <img src="/assets/images/services/voice-assistants.svg" alt="<?php echo $serviceName; ?>" class="animate-float">
             </div>
         </div>
@@ -36,13 +43,26 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Service Overview -->
-<section class="service-overview">
+<section class="overview-section">
     <div class="content-container">
         <div class="section-header">
-            <div class="service-overview-header" data-aos="fade-up">
-                <h2>Transform User Experiences with Voice AI</h2>
-                <p class="lead">Voice assistants have revolutionized how people interact with technology, creating more natural, efficient, and accessible experiences. Our AI voice assistant solutions leverage advanced natural language understanding and speech technologies to create intelligent voice interfaces that understand user intent, respond appropriately, and continuously learn from interactions.</p>
+            <h2>Transform User Experiences with Voice AI</h2>
+            <p class="section-lead">Voice assistants have revolutionized how people interact with technology, creating more natural, efficient, and accessible experiences.</p>
+        </div>
+        
+        <div class="overview-grid">
+            <div class="overview-card primary-card" data-aos="fade-right" data-aos-duration="800">
+                <div class="card-decoration"></div>
+                <h3>Conversational AI Excellence</h3>
+                <p>Our AI voice assistant solutions leverage advanced natural language understanding and speech technologies to create intelligent voice interfaces that understand user intent, respond appropriately, and continuously learn from interactions.</p>
+                <p>With state-of-the-art acoustic models and context-aware processing, our voice assistants provide consistently accurate responses even in challenging environments.</p>
+            </div>
+            
+            <div class="overview-card secondary-card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                <div class="card-decoration"></div>
+                <h3>Versatile Voice Applications</h3>
                 <p>Whether you need a custom voice assistant for your mobile app, website, smart device, or enterprise system, our solutions go beyond basic command recognition to deliver contextually aware, conversational experiences that truly understand and anticipate user needs.</p>
+                <p>From customer service automation to operational workflows, our voice assistants create frictionless interactions that enhance productivity and satisfaction.</p>
             </div>
         </div>
     </div>
@@ -201,73 +221,71 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Implementation Process -->
-<section class="implementation-process">
+<section class="process-section">
     <div class="content-container">
         <div class="section-header">
-            <div class="implementation-header" data-aos="fade-up">
-                <h2>Our Implementation Process</h2>
-                <p class="lead">A systematic approach to voice assistant development</p>
-            </div>
+            <h2>Our Implementation Process</h2>
+            <p class="section-lead">A systematic approach to voice assistant development that ensures quality, accuracy, and business value</p>
         </div>
         
-        <div class="process-grid">
-            <div class="process-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>1</span>
-                    </div>
-                    <h3>Discovery & Planning</h3>
-                    <p>We define your voice assistant requirements, use cases, and success metrics.</p>
-                    <ul>
-                        <li>Business needs analysis</li>
-                        <li>Use case definition</li>
-                        <li>Platform selection</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
             
-            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>2</span>
+            <div class="process-grid">
+                <div class="process-card-wrapper" data-aos="fade-right" data-aos-duration="800">
+                    <div class="process-card">
+                        <div class="process-number">1</div>
+                        <h3>Discovery & Planning</h3>
+                        <p>We define your voice assistant requirements, use cases, and success metrics to create a strategic roadmap.</p>
+                        <ul class="process-tasks">
+                            <li>Business needs analysis & use case prioritization</li>
+                            <li>Voice assistant capability planning</li>
+                            <li>Platform selection & technology stack definition</li>
+                            <li>Success metrics & KPI establishment</li>
+                        </ul>
                     </div>
-                    <h3>Conversational Design</h3>
-                    <p>We design intuitive dialogue flows, voice personality, and conversation patterns.</p>
-                    <ul>
-                        <li>Dialog flow mapping</li>
-                        <li>Prompt engineering</li>
-                        <li>Voice character design</li>
-                    </ul>
                 </div>
-            </div>
-            
-            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>3</span>
+                
+                <div class="process-card-wrapper" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                    <div class="process-card">
+                        <div class="process-number">2</div>
+                        <h3>Conversational Design</h3>
+                        <p>We design intuitive dialogue flows, voice personality, and conversation patterns that align with your brand.</p>
+                        <ul class="process-tasks">
+                            <li>Comprehensive dialog flow mapping</li>
+                            <li>Voice personality & character development</li>
+                            <li>Prompt engineering & response optimization</li>
+                            <li>Error handling & conversation recovery design</li>
+                        </ul>
                     </div>
-                    <h3>Development & Training</h3>
-                    <p>We build and train your voice assistant with NLU models and speech recognition.</p>
-                    <ul>
-                        <li>AI model training</li>
-                        <li>Speech recognition setup</li>
-                        <li>Backend integration</li>
-                    </ul>
                 </div>
-            </div>
-            
-            <div class="process-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>4</span>
+                
+                <div class="process-card-wrapper" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
+                    <div class="process-card">
+                        <div class="process-number">3</div>
+                        <h3>Development & Training</h3>
+                        <p>We build and train your voice assistant with advanced NLU models and speech recognition capabilities.</p>
+                        <ul class="process-tasks">
+                            <li>AI model training & intent recognition</li>
+                            <li>Speech recognition & acoustic modeling</li>
+                            <li>Backend system integration & API development</li>
+                            <li>Context management & session handling</li>
+                        </ul>
                     </div>
-                    <h3>Testing & Deployment</h3>
-                    <p>We ensure quality through rigorous testing and support smooth deployment.</p>
-                    <ul>
-                        <li>Accuracy validation</li>
-                        <li>User acceptance testing</li>
-                        <li>Platform deployment</li>
-                    </ul>
+                </div>
+                
+                <div class="process-card-wrapper" data-aos="fade-left" data-aos-duration="800" data-aos-delay="600">
+                    <div class="process-card">
+                        <div class="process-number">4</div>
+                        <h3>Testing & Deployment</h3>
+                        <p>We ensure quality through rigorous testing across diverse scenarios and support smooth deployment.</p>
+                        <ul class="process-tasks">
+                            <li>Accuracy validation & intent recognition testing</li>
+                            <li>User acceptance testing with diverse speakers</li>
+                            <li>Performance optimization & scalability testing</li>
+                            <li>Platform deployment & continuous improvement</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -278,82 +296,56 @@ require_once '../../../../components/header.php';
 <section class="benefits-section">
     <div class="content-container">
         <div class="section-header">
-            <div class="benefits-header" data-aos="fade-up">
-                <h2>The Business Impact</h2>
-                <p class="lead">Transformative results from voice assistant implementation</p>
-            </div>
+            <h2>The Business Impact</h2>
+            <p class="section-lead">Transformative results from voice assistant implementation</p>
         </div>
         
         <div class="benefits-grid">
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-hand-pointer"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Enhanced User Experience</h3>
-                        <p>Voice interfaces reduce friction by 62%, allowing hands-free, natural interaction with your products and services.</p>
-                    </div>
+            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-duration="800">
+                <div class="benefit-card primary-benefit">
+                    <div class="stat-badge">62%</div>
+                    <h3>Enhanced User Experience</h3>
+                    <p>Voice interfaces reduce interaction friction by 62%, allowing hands-free, natural interaction with your products and services, resulting in significantly higher satisfaction scores and increased engagement time.</p>
                 </div>
             </div>
             
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-universal-access"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Increased Accessibility</h3>
-                        <p>Reach new customer segments, including those with visual impairments or limited literacy, expanding your market reach.</p>
-                    </div>
+            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <div class="benefit-card secondary-benefit">
+                    <div class="stat-badge">3x</div>
+                    <h3>Increased Accessibility</h3>
+                    <p>Voice assistants provide up to 3x greater accessibility for users with disabilities or situational limitations, expanding your reach to new customer segments and demonstrating inclusive design principles.</p>
                 </div>
             </div>
             
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Operational Efficiency</h3>
-                        <p>Voice-enabled workflows reduce task completion time by up to 35% and decrease error rates in operational environments.</p>
-                    </div>
+            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="benefit-card tertiary-benefit">
+                    <div class="stat-badge">35%</div>
+                    <h3>Operational Efficiency</h3>
+                    <p>Voice-enabled workflows reduce task completion time by up to 35% and decrease error rates in operational environments, allowing your team to focus on high-value activities while automation handles routine tasks.</p>
                 </div>
             </div>
             
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-fingerprint"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Brand Differentiation</h3>
-                        <p>Stand out from competitors with a unique voice assistant that reflects your brand personality and enhances brand recognition.</p>
-                    </div>
+            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <div class="benefit-card quaternary-benefit">
+                    <div class="stat-badge">89%</div>
+                    <h3>Brand Differentiation</h3>
+                    <p>89% of companies with custom voice assistants report increased brand recognition and recall, creating a unique digital touchpoint that reinforces brand identity and builds stronger emotional connections with users.</p>
                 </div>
             </div>
             
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Customer Service Enhancement</h3>
-                        <p>Provide 24/7 voice support that resolves up to 70% of common inquiries without human intervention, improving satisfaction.</p>
-                    </div>
+            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                <div class="benefit-card primary-benefit">
+                    <div class="stat-badge">70%</div>
+                    <h3>Customer Service Enhancement</h3>
+                    <p>Voice assistants resolve up to 70% of common customer inquiries without human intervention, providing 24/7 support that improves satisfaction while reducing support costs and minimizing wait times.</p>
                 </div>
             </div>
             
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="600">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Valuable User Insights</h3>
-                        <p>Gain rich data on customer needs and behaviors that can inform product development and marketing strategies.</p>
-                    </div>
+            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                <div class="benefit-card secondary-benefit">
+                    <div class="stat-badge">2.8x</div>
+                    <h3>Valuable User Insights</h3>
+                    <p>Voice interactions generate 2.8x more contextual data than traditional interfaces, providing rich insights into customer needs, preferences, and behaviors that can inform product development and marketing strategies.</p>
                 </div>
             </div>
         </div>

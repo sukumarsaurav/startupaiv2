@@ -86,45 +86,7 @@ section {
     margin: 0 auto;
 }
 
-/* Hero Section */
-.hero-section {
-    background-color: var(--light-gray);
-    padding: 100px 0 80px;
-    position: relative;
-}
-
-.hero-content {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.hero-text {
-    flex: 1;
-    min-width: 320px;
-}
-
-.hero-title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--yinmn-blue);
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
-
-.hero-subtitle {
-    font-size: 1.2rem;
-    color: var(--gray);
-    margin-bottom: 30px;
-}
-
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-/* Inquiry Form */
+/* Form Styles */
 .inquiry-form {
     background-color: var(--light);
     padding: 30px;
@@ -201,7 +163,7 @@ textarea.input-control {
     opacity: 1;
 }
 
-/* Buttons */
+/* Button Styles */
 .primary-button {
     display: inline-block;
     background-color: var(--pumpkin);
@@ -227,8 +189,8 @@ textarea.input-control {
 
 /* Features Section */
 .features-section {
-    background-color: var(--light);
     padding: 80px 0;
+    background-color: #fff;
 }
 
 .features-grid {
@@ -326,26 +288,8 @@ textarea.input-control {
 
 /* Responsive Styles */
 @media (max-width: 992px) {
-    .hero-content {
-        flex-direction: column;
-    }
-    
-    .hero-text, .hero-image {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .hero-image {
-        justify-content: center;
-        margin-top: 40px;
-    }
-    
     .section-title {
         font-size: 2.2rem;
-    }
-    
-    .hero-title {
-        font-size: 2.5rem;
     }
     
     .service-content.active {
@@ -370,23 +314,11 @@ textarea.input-control {
     .section-title {
         font-size: 2rem;
     }
-    
-    .hero-title {
-        font-size: 2.2rem;
-    }
 }
 
 @media (max-width: 576px) {
-    .hero-section {
-        padding: 80px 0 60px;
-    }
-    
     .section-title {
         font-size: 1.8rem;
-    }
-    
-    .hero-title {
-        font-size: 2rem;
     }
     
     .feature-item {

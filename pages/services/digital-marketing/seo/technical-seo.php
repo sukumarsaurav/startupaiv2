@@ -19,30 +19,53 @@ $why_hire_us = getWhyHireUsContent('seo');
 require_once '../../../../components/header.php';
 ?>
 
-<!-- Page Header -->
-<section class="page-header py-5">
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-background"></div>
+    <div class="hero-blob-1"></div>
+    <div class="hero-blob-2"></div>
+    
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6" data-aos="fade-right">
-                <h1 class="display-4"><?php echo $pageTitle; ?></h1>
+        <div class="hero-grid">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <h1>Technical <span class="highlight">SEO</span></h1>
                 <p class="lead"><?php echo $pageDescription; ?></p>
-                <a href="/contact" class="btn btn-primary btn-lg mt-3">Get a Free Technical SEO Audit</a>
+                <div class="hero-buttons">
+                    <a href="/pages/contact.php" class="btn btn-primary">Get a Free Technical SEO Audit</a>
+                    <a href="/portfolio" class="btn btn-outline">View Case Studies</a>
+                </div>
             </div>
-            <div class="col-lg-6" data-aos="fade-left">
-                <img src="/assets/images/services/technical-seo.svg" alt="<?php echo $serviceName; ?>" class="img-fluid">
+            <div class="hero-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                <div class="image-glow"></div>
+                <img src="/assets/images/services/technical-seo.svg" alt="<?php echo $serviceName; ?>" class="floating-image">
+                <div class="decoration-circle-1"></div>
+                <div class="decoration-circle-2"></div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Service Overview -->
-<section class="py-5">
+<!-- Service Overview Section -->
+<section class="overview-section">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 mb-4" data-aos="fade-up">
-                <h2 class="section-title">Build a Strong Technical Foundation</h2>
+        <div class="section-header" data-aos="fade-up">
+            <h2>Build a Strong Technical Foundation</h2>
+            <p class="section-lead">Optimizing your website's infrastructure for better crawling, indexing, and performance in search results</p>
+        </div>
+        
+        <div class="overview-grid">
+            <div class="overview-card primary-card" data-aos="fade-right" data-aos-duration="800">
+                <div class="card-decoration"></div>
+                <h3>Technical Excellence for Search Success</h3>
                 <p>Technical SEO focuses on optimizing the infrastructure of your website to improve search engine crawling, indexing, and rendering of your content. While on-page SEO addresses content and off-page SEO builds authority, technical SEO ensures that search engines can effectively access, understand, and evaluate your website.</p>
-                <p>Our Technical SEO services address the critical behind-the-scenes factors that influence your rankings, with particular emphasis on site speed, Core Web Vitals, and overall site health. We implement technical optimizations that enhance both search engine accessibility and user experience—providing the foundation upon which your content and link-building efforts can succeed.</p>
+                <p>By resolving technical barriers, we ensure search engines can properly discover, understand, and index your site's content, establishing the foundation for ranking success.</p>
+            </div>
+            
+            <div class="overview-card secondary-card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                <div class="card-decoration"></div>
+                <h3>Performance-Driven Optimization</h3>
+                <p>Our Technical SEO services address the critical behind-the-scenes factors that influence your rankings, with particular emphasis on site speed, Core Web Vitals, and overall site health.</p>
+                <p>We implement technical optimizations that enhance both search engine accessibility and user experience—providing the foundation upon which your content and link-building efforts can succeed.</p>
             </div>
         </div>
     </div>
@@ -158,6 +181,151 @@ require_once '../../../../components/header.php';
     </div>
 </section>
 
+<!-- Implementation Process Section -->
+<section class="process-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Technical SEO Process</h2>
+            <p class="section-lead">A systematic approach to improving your website's technical performance</p>
+        </div>
+        
+        <div class="process-timeline">
+            <!-- Timeline Line -->
+            <div class="timeline-line"></div>
+            
+            <div class="process-grid">
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800">
+                    <div class="process-number">1</div>
+                    <div class="process-card">
+                        <h3>Comprehensive Technical Audit</h3>
+                        <p>We conduct a thorough analysis of your website's technical foundation to identify issues and opportunities.</p>
+                        <ul class="process-list">
+                            <li>Crawlability assessment</li>
+                            <li>Site structure evaluation</li>
+                            <li>Performance metrics analysis</li>
+                            <li>Core Web Vitals assessment</li>
+                            <li>Mobile optimization check</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="process-number">2</div>
+                    <div class="process-card">
+                        <h3>Strategic Implementation Plan</h3>
+                        <p>We develop a prioritized roadmap of technical improvements based on impact and implementation effort.</p>
+                        <ul class="process-list">
+                            <li>Issue prioritization matrix</li>
+                            <li>Implementation roadmap</li>
+                            <li>Resource requirement planning</li>
+                            <li>Stakeholder documentation</li>
+                            <li>Performance benchmark establishment</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="process-number">3</div>
+                    <div class="process-card">
+                        <h3>Optimization Execution</h3>
+                        <p>We implement technical improvements working closely with your development team or handling changes directly.</p>
+                        <ul class="process-list">
+                            <li>Server configuration optimization</li>
+                            <li>Site speed enhancements</li>
+                            <li>Structured data implementation</li>
+                            <li>Mobile usability improvements</li>
+                            <li>Crawl efficiency optimization</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    <div class="process-number">4</div>
+                    <div class="process-card">
+                        <h3>Monitoring & Continuous Improvement</h3>
+                        <p>We establish ongoing monitoring to ensure sustained technical excellence and adapt to algorithm changes.</p>
+                        <ul class="process-list">
+                            <li>Performance tracking implementation</li>
+                            <li>Crawl error monitoring</li>
+                            <li>Algorithm update adaptation</li>
+                            <li>Regular technical audits</li>
+                            <li>Proactive issue prevention</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Benefits of Technical SEO Optimization</h2>
+            <p class="section-lead">How technical excellence drives measurable search performance improvements</p>
+        </div>
+        
+        <div class="benefits-grid">
+            <div class="benefit-card-wrapper primary-benefit" data-aos="fade-right" data-aos-duration="800">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Enhanced Crawl Efficiency</h3>
+                    <p>Well-optimized sites see 93% more pages crawled and indexed compared to sites with technical issues. This comprehensive indexing ensures all your valuable content has the opportunity to rank.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge">93% more pages indexed</span>
+                        <span class="stat-badge">Complete content discovery</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benefit-card-wrapper secondary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                <div class="benefit-card">
+                    <div class="benefit-icon secondary-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Improved User Experience</h3>
+                    <p>Sites meeting Core Web Vitals standards experience 24% fewer bounces and 34% higher page views per session. These engagement metrics directly influence search rankings.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge secondary-badge">24% lower bounce rate</span>
+                        <span class="stat-badge secondary-badge">34% more page views</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benefit-card-wrapper tertiary-benefit" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
+                <div class="benefit-card">
+                    <div class="benefit-icon tertiary-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Ranking Advantages</h3>
+                    <p>Mobile-optimized websites rank 15-20% higher in mobile search results, which now represent over 60% of all searches. Technical mobile optimization is no longer optional.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge tertiary-badge">20% higher mobile rankings</span>
+                        <span class="stat-badge tertiary-badge">60%+ mobile search share</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benefit-card-wrapper quaternary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+                <div class="benefit-card">
+                    <div class="benefit-icon quaternary-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Rich Result Opportunities</h3>
+                    <p>Websites with proper structured data implementation receive up to 30% higher click-through rates from search results due to enhanced visibility with rich snippets.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge quaternary-badge">30% higher CTR</span>
+                        <span class="stat-badge quaternary-badge">Enhanced SERP visibility</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Key Features -->
 <section class="py-5">
     <div class="container">
@@ -214,138 +382,6 @@ require_once '../../../../components/header.php';
                     <i class="fas fa-project-diagram fa-3x text-primary mb-3"></i>
                     <h4>Platform Specialization</h4>
                     <p>We offer specialized technical SEO solutions for WordPress, Shopify, Magento, and custom platforms.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Implementation Process -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Our Technical SEO Process</h2>
-                <p class="lead">A systematic approach to improving your website's technical foundation</p>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-card h-100 p-4 text-center">
-                    <div class="process-icon mb-3">
-                        <span>1</span>
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>Technical Audit</h3>
-                    <p>We conduct a comprehensive analysis of your website's technical health to identify issues and opportunities.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-card h-100 p-4 text-center">
-                    <div class="process-icon mb-3">
-                        <span>2</span>
-                        <i class="fas fa-clipboard-list"></i>
-                    </div>
-                    <h3>Strategy Development</h3>
-                    <p>We create a prioritized technical optimization plan based on impact, difficulty, and business goals.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-card h-100 p-4 text-center">
-                    <div class="process-icon mb-3">
-                        <span>3</span>
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Implementation</h3>
-                    <p>We execute technical optimizations across site structure, performance, mobile, and more.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="process-card h-100 p-4 text-center">
-                    <div class="process-icon mb-3">
-                        <span>4</span>
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3>Monitoring & Refinement</h3>
-                    <p>We track technical performance metrics and continuously refine our approach to maximize results.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Business Benefits -->
-<section class="py-5">
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Benefits of Technical SEO</h2>
-                <p class="lead">How technical optimization impacts your business</p>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-search fa-2x text-primary"></i>
-                    </div>
-                    <h3>Improved Search Visibility</h3>
-                    <p>A technically sound website is more effectively crawled and indexed, leading to better visibility across more search queries.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-bolt fa-2x text-primary"></i>
-                    </div>
-                    <h3>Faster Page Speed</h3>
-                    <p>Optimized website performance leads to faster loading times, which improve both search rankings and user experience.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-mobile-alt fa-2x text-primary"></i>
-                    </div>
-                    <h3>Enhanced Mobile Experience</h3>
-                    <p>Technical improvements ensure your site works flawlessly across all devices, capturing the growing mobile audience.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-percentage fa-2x text-primary"></i>
-                    </div>
-                    <h3>Higher Conversion Rates</h3>
-                    <p>Faster, more reliable websites create better user experiences that convert more visitors into customers.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-chart-pie fa-2x text-primary"></i>
-                    </div>
-                    <h3>Increased Crawl Efficiency</h3>
-                    <p>Technical optimization helps search engines find and index more of your content with fewer resources.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-robot fa-2x text-primary"></i>
-                    </div>
-                    <h3>Better AI Understanding</h3>
-                    <p>Structured data implementation helps AI-powered search understand your content's context and purpose.</p>
                 </div>
             </div>
         </div>

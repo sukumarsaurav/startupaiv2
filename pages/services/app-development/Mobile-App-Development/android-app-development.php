@@ -18,39 +18,50 @@ include_once '../../../../components/header.php';
 ?>
 
     <main>
-        <!-- Page Header -->
-        <section class="page-header">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-blob-1"></div>
+            <div class="hero-blob-2"></div>
+            
             <div class="container">
-                <div class="header-grid">
-                    <div class="page-header-content" data-aos="fade-right">
-                        <h1>Android App Development</h1>
+                <div class="hero-grid">
+                    <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                        <h1>Android App <span class="highlight">Development</span></h1>
                         <p class="lead">Create powerful, scalable, and user-friendly Android applications that drive business growth and maximize user engagement across the world's largest mobile platform.</p>
-                        <a href="/pages/contact.php" class="get-started-btn">Start Your Project</a>
+                        <div class="hero-buttons">
+                            <a href="/pages/contact.php" class="btn btn-primary">Start Your Android Project</a>
+                            <a href="/portfolio" class="btn btn-outline">View Portfolio</a>
+                        </div>
                     </div>
-                    <div class="page-header-image" data-aos="fade-left">
-                        <img src="/assets/images/services/android-development.svg" alt="Android App Development" class="animate-float">
+                    <div class="hero-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="image-glow"></div>
+                        <img src="/assets/images/services/android-development.svg" alt="Android App Development" class="floating-image">
+                        <div class="decoration-circle-1"></div>
+                        <div class="decoration-circle-2"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Service Overview -->
-        <section class="service-overview">
+        <!-- Service Overview Section -->
+        <section class="overview-section">
             <div class="container">
-                <div class="section-header">
-                    <div class="service-overview-header" data-aos="fade-up">
-                        <h2>Comprehensive Android Development Services</h2>
-                        <p class="lead">Our Android development team delivers cutting-edge applications that combine innovative technology with exceptional user experiences, driving engagement and business growth.</p>
-                    </div>
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Comprehensive Android Development Services</h2>
+                    <p class="section-lead">Our Android development team delivers cutting-edge applications that combine innovative technology with exceptional user experiences, driving engagement and business growth.</p>
                 </div>
                 
                 <div class="overview-grid">
-                    <div class="service-overview-content" data-aos="fade-up">
+                    <div class="overview-card primary-card" data-aos="fade-right" data-aos-duration="800">
+                        <div class="card-decoration"></div>
                         <h3>Native Excellence &amp; Technical Expertise</h3>
                         <p>Our team specializes in native Android development using Kotlin and Java, ensuring optimal performance, seamless functionality, and full access to platform-specific features. We leverage Android's latest APIs and features to create apps that stand out in the competitive market.</p>
                         <p>With expertise in complex integrations, offline capabilities, and real-time synchronization, we build applications that work flawlessly even in challenging connectivity environments.</p>
                     </div>
-                    <div class="service-overview-content" data-aos="fade-up" data-aos-delay="100">
+                    
+                    <div class="overview-card secondary-card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                        <div class="card-decoration"></div>
                         <h3>Modern Architecture &amp; Design Principles</h3>
                         <p>We implement clean architecture principles like MVVM (Model-View-ViewModel), MVI (Model-View-Intent), and modern Android development practices such as Jetpack Compose, Coroutines, and Material Design for maintainable and scalable applications.</p>
                         <p>Our modular approach to development ensures your app can grow and evolve with your business needs while maintaining performance and stability. We emphasize automated testing and continuous integration to deliver high-quality code.</p>
@@ -124,82 +135,77 @@ include_once '../../../../components/header.php';
             </div>
         </section>
 
-        <!-- Implementation Process -->
-        <section class="implementation-process">
+        <!-- Implementation Process Section -->
+        <section class="process-section">
             <div class="container">
-                <div class="section-header">
-                    <div class="implementation-header" data-aos="fade-up">
-                        <h2>Our Android Development Process</h2>
-                        <p class="lead">A systematic and transparent approach to delivering high-quality Android applications on time and within budget</p>
-                    </div>
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Our Android Development Process</h2>
+                    <p class="section-lead">A systematic and transparent approach to delivering high-quality Android applications on time and within budget</p>
                 </div>
                 
-                <div class="process-grid">
-                    <div class="process-item" data-aos="fade-up">
-                        <div class="process-card">
-                            <div class="process-icon">
-                                <span>1</span>
-                            </div>
-                            <h3>Discovery &amp; Planning</h3>
-                            <p>We begin by thoroughly understanding your business objectives, target audience, and technical requirements. Our team analyzes your competitors, identifies key features, and creates a detailed development roadmap with milestones and deliverables. This phase includes:</p>
-                            <ul>
-                                <li>Requirements gathering and analysis</li>
-                                <li>User persona development</li>
-                                <li>Feature prioritization</li>
-                                <li>Technical feasibility assessment</li>
-                                <li>Project planning and timeline creation</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="process-timeline">
+                    <!-- Timeline Line -->
+                    <div class="timeline-line"></div>
                     
-                    <div class="process-item" data-aos="fade-up" data-aos-delay="100">
-                        <div class="process-card">
-                            <div class="process-icon">
-                                <span>2</span>
+                    <div class="process-grid">
+                        <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800">
+                            <div class="process-number">1</div>
+                            <div class="process-card">
+                                <h3>Discovery &amp; Planning</h3>
+                                <p>We begin by thoroughly understanding your business objectives, target audience, and technical requirements.</p>
+                                <ul class="process-list">
+                                    <li>Requirements gathering and analysis</li>
+                                    <li>User persona development</li>
+                                    <li>Feature prioritization</li>
+                                    <li>Technical feasibility assessment</li>
+                                    <li>Project planning and timeline creation</li>
+                                </ul>
                             </div>
-                            <h3>Design &amp; Architecture</h3>
-                            <p>Our designers create intuitive UI/UX designs following Material Design principles while our architects establish a robust technical foundation for your app. This ensures both visual appeal and technical excellence:</p>
-                            <ul>
-                                <li>Wireframing and prototyping</li>
-                                <li>UI/UX design using Material Design guidelines</li>
-                                <li>Architecture planning (MVVM, Clean Architecture)</li>
-                                <li>Database schema design</li>
-                                <li>API integration planning</li>
-                            </ul>
                         </div>
-                    </div>
-                    
-                    <div class="process-item" data-aos="fade-up" data-aos-delay="200">
-                        <div class="process-card">
-                            <div class="process-icon">
-                                <span>3</span>
+                        
+                        <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            <div class="process-number">2</div>
+                            <div class="process-card">
+                                <h3>Design &amp; Architecture</h3>
+                                <p>Our designers create intuitive UI/UX designs following Material Design principles while our architects establish a robust technical foundation.</p>
+                                <ul class="process-list">
+                                    <li>Wireframing and prototyping</li>
+                                    <li>UI/UX design using Material Design guidelines</li>
+                                    <li>Architecture planning (MVVM, Clean Architecture)</li>
+                                    <li>Database schema design</li>
+                                    <li>API integration planning</li>
+                                </ul>
                             </div>
-                            <h3>Development &amp; Testing</h3>
-                            <p>We implement features using clean code practices and conduct thorough testing throughout the development cycle. Our agile approach includes:</p>
-                            <ul>
-                                <li>Iterative development in sprints</li>
-                                <li>Regular builds and continuous integration</li>
-                                <li>Comprehensive testing (unit, integration, UI)</li>
-                                <li>Performance optimization</li>
-                                <li>Security testing and vulnerability assessment</li>
-                            </ul>
                         </div>
-                    </div>
-                    
-                    <div class="process-item" data-aos="fade-up" data-aos-delay="300">
-                        <div class="process-card">
-                            <div class="process-icon">
-                                <span>4</span>
+                        
+                        <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                            <div class="process-number">3</div>
+                            <div class="process-card">
+                                <h3>Development &amp; Testing</h3>
+                                <p>We implement features using clean code practices and conduct thorough testing throughout the development cycle.</p>
+                                <ul class="process-list">
+                                    <li>Iterative development in sprints</li>
+                                    <li>Regular builds and continuous integration</li>
+                                    <li>Comprehensive testing (unit, integration, UI)</li>
+                                    <li>Performance optimization</li>
+                                    <li>Security testing and vulnerability assessment</li>
+                                </ul>
                             </div>
-                            <h3>Deployment &amp; Support</h3>
-                            <p>We handle the entire Play Store submission process and provide ongoing maintenance and support to ensure your app remains competitive and performs optimally:</p>
-                            <ul>
-                                <li>Play Store listing optimization</li>
-                                <li>App submission and review management</li>
-                                <li>Post-launch monitoring and analytics</li>
-                                <li>Regular updates and feature enhancements</li>
-                                <li>Technical support and bug fixes</li>
-                            </ul>
+                        </div>
+                        
+                        <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                            <div class="process-number">4</div>
+                            <div class="process-card">
+                                <h3>Deployment &amp; Support</h3>
+                                <p>We handle the entire Play Store submission process and provide ongoing maintenance and support.</p>
+                                <ul class="process-list">
+                                    <li>Play Store listing optimization</li>
+                                    <li>App submission and review management</li>
+                                    <li>Post-launch monitoring and analytics</li>
+                                    <li>Regular updates and feature enhancements</li>
+                                    <li>Performance and user feedback analysis</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -268,51 +274,65 @@ include_once '../../../../components/header.php';
         <!-- Benefits Section -->
         <section class="benefits-section">
             <div class="container">
-                <div class="section-header">
-                    <div class="benefits-header" data-aos="fade-up">
-                        <h2>Why Choose Android App Development</h2>
-                        <p class="lead">Strategic advantages that Android development offers for your business</p>
-                    </div>
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Benefits of Professional Android Development</h2>
+                    <p class="section-lead">Why investing in expert Android application development drives business results</p>
                 </div>
                 
                 <div class="benefits-grid">
-                    <div class="benefit-item" data-aos="fade-up">
+                    <div class="benefit-card-wrapper primary-benefit" data-aos="fade-right" data-aos-duration="800">
                         <div class="benefit-card">
                             <div class="benefit-icon">
                                 <i class="fas fa-globe"></i>
                             </div>
-                            <h3>Global Market Dominance</h3>
-                            <p>With over 70% global market share, Android gives your app access to billions of potential users across diverse demographics and markets. This exceptional reach allows businesses to target users in both developed and emerging markets, maximizing your app's exposure and potential user base.</p>
+                            <h3>Massive Market Reach</h3>
+                            <p>Android commands over 70% of the global mobile OS market, giving your app access to billions of potential users across diverse demographics and regions.</p>
+                            <div class="benefit-stats">
+                                <span class="stat-badge">70%+ market share</span>
+                                <span class="stat-badge">2.5B+ active devices</span>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-card-wrapper secondary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
                         <div class="benefit-card">
-                            <div class="benefit-icon">
+                            <div class="benefit-icon secondary-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3>Technical Flexibility</h3>
+                            <p>Android's open ecosystem allows for deep hardware integration, feature customization, and cross-app functionality that isn't possible on other platforms.</p>
+                            <div class="benefit-stats">
+                                <span class="stat-badge secondary-badge">100% customizable</span>
+                                <span class="stat-badge secondary-badge">Diverse hardware access</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-card-wrapper tertiary-benefit" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
+                        <div class="benefit-card">
+                            <div class="benefit-icon tertiary-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Faster Market Entry</h3>
+                            <p>Android's streamlined publishing process and less restrictive approval guidelines allow for quicker time-to-market and more rapid iteration cycles.</p>
+                            <div class="benefit-stats">
+                                <span class="stat-badge tertiary-badge">Hours not days approval</span>
+                                <span class="stat-badge tertiary-badge">Faster iteration cycles</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-card-wrapper quaternary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+                        <div class="benefit-card">
+                            <div class="benefit-icon quaternary-icon">
                                 <i class="fas fa-dollar-sign"></i>
                             </div>
                             <h3>Cost-Effective Development</h3>
-                            <p>Android's open-source nature and flexible development environment typically result in more cost-effective development and deployment compared to other platforms. The one-time developer fee and customizable distribution options reduce barriers to entry and ongoing costs, making it ideal for startups and growing businesses.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
-                        <div class="benefit-card">
-                            <div class="benefit-icon">
-                                <i class="fas fa-cogs"></i>
+                            <p>Android development offers flexible monetization options and lower distribution costs, providing excellent ROI for businesses of all sizes.</p>
+                            <div class="benefit-stats">
+                                <span class="stat-badge quaternary-badge">One-time $25 fee</span>
+                                <span class="stat-badge quaternary-badge">Multiple revenue models</span>
                             </div>
-                            <h3>Customization &amp; Integration</h3>
-                            <p>Android offers unparalleled customization possibilities and hardware integration options. The platform allows for deeper integration with device features, custom UI/UX implementations, and extensive interoperability with other systems and services, giving your app more flexibility and functionality.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
-                        <div class="benefit-card">
-                            <div class="benefit-icon">
-                                <i class="fas fa-puzzle-piece"></i>
-                            </div>
-                            <h3>Versatile Distribution Options</h3>
-                            <p>Beyond Google Play Store, Android supports multiple distribution channels including third-party stores, direct APK installation, and private enterprise distribution. This flexibility allows for targeted deployment strategies based on your specific business needs and target markets.</p>
                         </div>
                     </div>
                 </div>
