@@ -3,7 +3,6 @@
 define('BASEPATH', true);
 
 require_once '../../../../includes/config.php';
-require_once '../../../../config/why-hire-us.php';
 
 // Page specific content
 $pageTitle = "E-commerce SEO | StartupAI";
@@ -17,11 +16,6 @@ $seo_data = [
     'keywords' => 'e-commerce SEO, online store optimization, product page SEO, category page optimization, shopping cart SEO, ecommerce search rankings, product schema markup, ecommerce keyword research, conversion optimization, shopping feed optimization'
 ];
 
-require_once '../../../../assets/templates/why-hire-us-section.php';
-
-// Get Why Hire Us content
-$why_hire_us = getWhyHireUsContent('seo');
-
 require_once '../../../../components/header.php';
 ?>
 
@@ -31,7 +25,7 @@ require_once '../../../../components/header.php';
     <div class="hero-blob-1"></div>
     <div class="hero-blob-2"></div>
     
-    <div class="content-container">
+    <div class="container">
         <div class="hero-grid">
             <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
                 <h1>E-commerce <span class="highlight">SEO</span></h1>
@@ -53,7 +47,7 @@ require_once '../../../../components/header.php';
 
 <!-- Service Overview Section -->
 <section class="overview-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header" data-aos="fade-up">
             <h2>Specialized SEO for Online Stores</h2>
             <p class="section-lead">We help e-commerce businesses improve visibility, traffic, and conversion rates through strategic search optimization tailored to product-based websites.</p>
@@ -79,7 +73,7 @@ require_once '../../../../components/header.php';
 
 <!-- Services Section -->
 <section class="services-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="services-header" data-aos="fade-up">
                 <h2>Our E-commerce SEO Services</h2>
@@ -195,7 +189,7 @@ require_once '../../../../components/header.php';
 
 <!-- Process Section -->
 <section class="process-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header" data-aos="fade-up">
             <h2>Our E-commerce SEO Process</h2>
             <p class="section-lead">A structured approach to improving your online store's search visibility and performance</p>
@@ -287,7 +281,7 @@ require_once '../../../../components/header.php';
 
 <!-- Platform Section -->
 <section class="platforms-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="platforms-header" data-aos="fade-up">
                 <h2>E-commerce Platforms We Support</h2>
@@ -353,7 +347,7 @@ require_once '../../../../components/header.php';
 
 <!-- Results & Benefits Section -->
 <section class="benefits-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header" data-aos="fade-up">
             <h2>E-commerce SEO Results</h2>
             <p class="section-lead">The tangible benefits our e-commerce SEO services deliver for online retailers</p>
@@ -420,9 +414,8 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Why Choose Us Section -->
-<?php if (isset($why_hire_us) && !empty($why_hire_us)): ?>
 <section class="why-choose-us">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="why-choose-us-header" data-aos="fade-up">
                 <h2>Why Choose StartupAI for E-commerce SEO</h2>
@@ -431,25 +424,72 @@ require_once '../../../../components/header.php';
         </div>
         
         <div class="features-grid">
-            <?php foreach ($why_hire_us as $item): ?>
             <div class="feature-item" data-aos="fade-up">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="<?php echo $item['icon']; ?>"></i>
+                        <i class="fas fa-store"></i>
                     </div>
-                    <h3><?php echo $item['title']; ?></h3>
-                    <p><?php echo $item['description']; ?></p>
+                    <h3>E-commerce Specialization</h3>
+                    <p>Our team specializes exclusively in online retail SEO, with deep understanding of product-based website optimization strategies that drive qualified traffic and sales.</p>
                 </div>
             </div>
-            <?php endforeach; ?>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data-Driven Results</h3>
+                    <p>We base our strategies on comprehensive analytics, focusing on metrics that directly impact your revenue and ROI rather than vanity metrics that don't affect your bottom line.</p>
+                </div>
+            </div>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Technical Excellence</h3>
+                    <p>We excel at solving complex technical SEO challenges specific to e-commerce platforms, ensuring your store provides an optimal experience for both search engines and users.</p>
+                </div>
+            </div>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Platform Expertise</h3>
+                    <p>Our team has hands-on experience with all major e-commerce platforms, allowing us to implement effective SEO strategies that work within your specific technical environment.</p>
+                </div>
+            </div>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Conversion Optimization</h3>
+                    <p>We integrate SEO with conversion rate optimization principles, ensuring that increased traffic translates directly into more sales and higher average order values.</p>
+                </div>
+            </div>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Adaptive Strategy</h3>
+                    <p>Our approach evolves with the constantly changing e-commerce landscape, search algorithm updates, and consumer behavior shifts to keep your store ahead of competitors.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
-<?php endif; ?>
 
 <!-- CTA Section -->
 <section class="cta-section">
-    <div class="content-container">
+    <div class="container">
         <div class="cta-content" data-aos="fade-up">
             <h2>Ready to Grow Your E-commerce Store's Organic Traffic?</h2>
             <p class="lead">Let's talk about how our specialized e-commerce SEO strategies can help drive more qualified shoppers to your online store.</p>
@@ -460,7 +500,7 @@ require_once '../../../../components/header.php';
 
 <!-- FAQ Section -->
 <section class="faq-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="faq-header" data-aos="fade-up">
                 <h2>Frequently Asked Questions</h2>

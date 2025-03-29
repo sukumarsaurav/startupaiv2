@@ -3,7 +3,7 @@
 define('BASEPATH', true);
 
 require_once '../../../../includes/config.php';
-require_once '../../../../config/why-hire-us.php';
+
 
 // Page specific content
 $pageTitle = "On-Page SEO | StartupAI";
@@ -16,11 +16,6 @@ $seo_data = [
     'description' => $pageDescription,
     'keywords' => 'on-page SEO, content optimization, meta tags, keyword optimization, SEO-friendly content, title tag optimization, header tags, internal linking, technical SEO, search engine optimization'
 ];
-
-require_once '../../../../assets/templates/why-hire-us-section.php';
-
-// Get Why Hire Us content
-$why_hire_us = getWhyHireUsContent('seo');
 
 require_once '../../../../components/header.php';
 ?>

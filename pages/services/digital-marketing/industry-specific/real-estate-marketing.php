@@ -3,434 +3,460 @@
 define('BASEPATH', true);
 
 require_once '../../../../includes/config.php';
-require_once '../../../../config/why-hire-us.php';
 
 // Page specific content
-$pageTitle = "Real Estate Marketing";
-$pageDescription = "Generate high-quality leads, increase property visibility, and grow your real estate business with specialized digital marketing strategies for agents, brokers, and property developers";
+$pageTitle = "Real Estate Marketing | StartupAI";
+$pageDescription = "Comprehensive digital marketing strategies for real estate agents, brokers, and property developers to attract leads, showcase properties, and close more deals";
 $serviceName = "Real Estate Marketing";
 $serviceSlug = "real-estate-marketing";
 
-require_once '../../../../assets/templates/why-hire-us-section.php';
-
-// Get Why Hire Us content
-$why_hire_us = getWhyHireUsContent('industry-specific');
+// SEO Data
+$seo_data = [
+    'description' => $pageDescription,
+    'keywords' => 'real estate marketing, property marketing, real estate agent marketing, realtor marketing, real estate SEO, property listing marketing, real estate social media, real estate advertising, real estate lead generation, property developer marketing'
+];
 
 require_once '../../../../components/header.php';
 ?>
 
-<!-- Page Header -->
-<div class="page-header bg-primary text-white">
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-background"></div>
+    <div class="hero-blob-1"></div>
+    <div class="hero-blob-2"></div>
+    
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2 text-center">
-                <h1 class="fw-bold"><?php echo $pageTitle; ?></h1>
-                <p class="lead"><?php echo $pageDescription; ?></p>
-                <a href="#inquiry" class="btn btn-light rounded-pill px-4 py-2 mt-3">Request a Free Consultation</a>
+        <div class="hero-grid">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <h1>Real Estate <span class="highlight">Marketing</span></h1>
+                <p class="lead">Turn property listings into leads and leads into closed deals</p>
+                <div class="hero-buttons">
+                    <a href="/pages/contact.php" class="btn btn-primary">Get Started</a>
+                    <a href="/pages/services/digital-marketing/industry-specific/" class="btn btn-outline">All Industry Services</a>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<!-- Service Overview -->
-<section class="service-overview py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <h2>Specialized Digital Marketing for Real Estate Professionals</h2>
-                <p class="lead">Convert digital traffic into property tours, listings, and closings with targeted marketing strategies designed specifically for real estate.</p>
-                <p>Today's real estate market is fiercely competitive and increasingly digital. Prospective buyers and sellers begin their journey online, researching properties, neighborhoods, and agents long before making first contact. Standing out in this crowded digital landscape requires more than just listing properties — it demands a sophisticated marketing strategy tailored to the unique dynamics of real estate.</p>
-                <p>Our specialized real estate marketing services combine deep industry knowledge with cutting-edge digital techniques to help agents, brokers, teams, and property developers capture attention, generate qualified leads, and build lasting relationships with clients. We understand the emotional journey of buying or selling property and design marketing campaigns that connect with prospects at exactly the right moment in their decision process.</p>
-                <p>From optimizing your presence on real estate platforms like Zillow and Realtor.com to creating compelling property listings, virtual tours, targeted advertising campaigns, and lead nurturing systems, we provide comprehensive solutions that deliver measurable results in inquiries, showings, listings, and closings.</p>
-            </div>
-            <div class="col-lg-6">
-                <img src="/assets/images/services/real-estate-marketing.jpg" alt="Real Estate Marketing" class="img-fluid rounded shadow">
+            <div class="hero-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                <div class="image-glow"></div>
+                <img src="/assets/images/services/real-estate-marketing.svg" alt="Real Estate Marketing" class="floating-image">
+                <div class="decoration-circle-1"></div>
+                <div class="decoration-circle-2"></div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Services Offered -->
-<section class="services-offered py-5 bg-light">
+<!-- Service Overview Section -->
+<section class="overview-section">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center mb-5">
-                <h2 class="section-title">Our Real Estate Marketing Services</h2>
-                <p class="section-subtitle">Specialized Solutions for Real Estate Professionals</p>
-            </div>
+        <div class="section-header" data-aos="fade-up">
+            <h2>Modern Marketing for Today's Real Estate Professionals</h2>
+            <p class="section-lead">Stand out in a competitive market with data-driven digital strategies</p>
         </div>
         
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <h3>Real Estate Lead Generation</h3>
-                    <p>Create a consistent pipeline of qualified buyer and seller leads through targeted digital strategies.</p>
-                    <ul class="service-highlights">
-                        <li><i class="fas fa-check text-primary"></i> Property search landing pages</li>
-                        <li><i class="fas fa-check text-primary"></i> Neighborhood value calculators</li>
-                        <li><i class="fas fa-check text-primary"></i> Targeted Facebook & Instagram lead ads</li>
-                        <li><i class="fas fa-check text-primary"></i> Google search & display campaigns</li>
-                        <li><i class="fas fa-check text-primary"></i> Homebuyer/seller guides & resources</li>
-                        <li><i class="fas fa-check text-primary"></i> Market report lead magnets</li>
-                    </ul>
-                </div>
+        <div class="overview-grid">
+            <div class="overview-card primary-card" data-aos="fade-right" data-aos-duration="800">
+                <div class="card-decoration"></div>
+                <h3>Digital-First Property Marketing</h3>
+                <p>Today's real estate buyers begin their journey online, with over 97% of home buyers using the internet during their property search. Our real estate marketing strategies are designed to position your properties and services where motivated buyers and sellers are already looking.</p>
+                <p>We combine industry-specific expertise with cutting-edge digital marketing tactics to help you showcase properties effectively, generate qualified leads, and build your personal brand as a trusted real estate professional.</p>
             </div>
             
-            <div class="col-md-6">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <h3>Real Estate Platform Optimization</h3>
-                    <p>Maximize visibility and engagement on major real estate platforms to reach active property seekers.</p>
-                    <ul class="service-highlights">
-                        <li><i class="fas fa-check text-primary"></i> Zillow profile & listing optimization</li>
-                        <li><i class="fas fa-check text-primary"></i> Zillow Premier Agent advertising</li>
-                        <li><i class="fas fa-check text-primary"></i> Realtor.com presence management</li>
-                        <li><i class="fas fa-check text-primary"></i> Redfin & Trulia optimization</li>
-                        <li><i class="fas fa-check text-primary"></i> MLS listing enhancement</li>
-                        <li><i class="fas fa-check text-primary"></i> Featured listing campaigns</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <h3>Property Marketing & Visual Content</h3>
-                    <p>Showcase properties effectively with professional content that highlights key features and creates emotional connections.</p>
-                    <ul class="service-highlights">
-                        <li><i class="fas fa-check text-primary"></i> Professional property description copywriting</li>
-                        <li><i class="fas fa-check text-primary"></i> Virtual tour creation & optimization</li>
-                        <li><i class="fas fa-check text-primary"></i> Property video marketing</li>
-                        <li><i class="fas fa-check text-primary"></i> Aerial & drone footage coordination</li>
-                        <li><i class="fas fa-check text-primary"></i> Social media listing promotion</li>
-                        <li><i class="fas fa-check text-primary"></i> Single property websites</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="col-md-6">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <h3>Agent & Broker Branding</h3>
-                    <p>Build a distinctive personal brand that establishes credibility, trust, and recognition in your market.</p>
-                    <ul class="service-highlights">
-                        <li><i class="fas fa-check text-primary"></i> Agent website development & SEO</li>
-                        <li><i class="fas fa-check text-primary"></i> Personal branding strategy</li>
-                        <li><i class="fas fa-check text-primary"></i> Neighborhood expertise content</li>
-                        <li><i class="fas fa-check text-primary"></i> Email newsletter campaigns</li>
-                        <li><i class="fas fa-check text-primary"></i> Testimonial & review generation</li>
-                        <li><i class="fas fa-check text-primary"></i> Social media content strategy</li>
-                    </ul>
-                </div>
+            <div class="overview-card secondary-card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                <div class="card-decoration"></div>
+                <h3>Lead Generation & Nurturing</h3>
+                <p>Real estate success depends on a consistent pipeline of qualified leads and effective follow-up systems. Our specialized lead generation strategies help you attract motivated buyers and sellers while weeding out low-quality leads that waste your time.</p>
+                <p>From property-specific landing pages and targeted advertising to automated nurturing campaigns, we build systems that not only generate inquiries but help you effectively convert them into clients and closed transactions.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Key Features -->
-<section class="key-features py-5">
+<!-- Services Section -->
+<section class="services-section">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center mb-5">
-                <h2 class="section-title">Why Our Real Estate Marketing Works</h2>
-                <p class="section-subtitle">Strategic Methodology for Real Estate Success</p>
+        <div class="section-header">
+            <div class="services-header" data-aos="fade-up">
+                <h2>Our Real Estate Marketing Services</h2>
+                <p class="lead">Comprehensive solutions for agents, brokers, and developers</p>
             </div>
         </div>
         
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="feature-card text-center h-100 p-4 rounded shadow-sm">
-                    <div class="icon-circle mb-4 mx-auto">
-                        <i class="fas fa-map-marked-alt"></i>
+        <div class="services-grid">
+            <div class="service-item" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
                     </div>
-                    <h3>Hyperlocal Targeting</h3>
-                    <p>We implement precise geographic targeting to reach potential buyers and sellers in specific neighborhoods, zip codes, and radius areas around your listings or farm areas, ensuring marketing dollars are spent on the most relevant audiences.</p>
+                    <h3>Property Website Development</h3>
+                    <p>Stunning, conversion-optimized websites for agents, brokers, and properties.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> IDX/MLS integration</li>
+                        <li><i class="fas fa-check"></i> Virtual tour compatibility</li>
+                        <li><i class="fas fa-check"></i> Lead capture optimization</li>
+                        <li><i class="fas fa-check"></i> Mobile-responsive design</li>
+                    </ul>
                 </div>
             </div>
             
-            <div class="col-md-6 col-lg-4">
-                <div class="feature-card text-center h-100 p-4 rounded shadow-sm">
-                    <div class="icon-circle mb-4 mx-auto">
-                        <i class="fas fa-user-check"></i>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
                     </div>
-                    <h3>Buyer/Seller Intent Signals</h3>
-                    <p>Our campaigns target prospects exhibiting specific behaviors that indicate they're actively in the market to buy or sell, including search patterns, life event triggers, and platform engagement signals.</p>
+                    <h3>Real Estate SEO</h3>
+                    <p>Targeted search strategies that attract motivated property seekers.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Location-based optimization</li>
+                        <li><i class="fas fa-check"></i> Property type targeting</li>
+                        <li><i class="fas fa-check"></i> Neighborhood content</li>
+                        <li><i class="fas fa-check"></i> Listing optimization</li>
+                    </ul>
                 </div>
             </div>
             
-            <div class="col-md-6 col-lg-4">
-                <div class="feature-card text-center h-100 p-4 rounded shadow-sm">
-                    <div class="icon-circle mb-4 mx-auto">
-                        <i class="fas fa-handshake"></i>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ad"></i>
                     </div>
-                    <h3>Relationship-Focused Approach</h3>
-                    <p>We create marketing systems that nurture leads through the lengthy real estate decision process, building trust and positioning you as a helpful advisor rather than just focusing on immediate transactions.</p>
+                    <h3>Property Advertising</h3>
+                    <p>Strategic campaigns that showcase properties to qualified buyers.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Google Ads for real estate</li>
+                        <li><i class="fas fa-check"></i> Facebook & Instagram property ads</li>
+                        <li><i class="fas fa-check"></i> Listing promotion campaigns</li>
+                        <li><i class="fas fa-check"></i> Retargeting for interested buyers</li>
+                    </ul>
                 </div>
             </div>
             
-            <div class="col-md-6 col-lg-4">
-                <div class="feature-card text-center h-100 p-4 rounded shadow-sm">
-                    <div class="icon-circle mb-4 mx-auto">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Mobile-First Strategies</h3>
-                    <p>With over 70% of property searches now occurring on mobile devices, we prioritize mobile-optimized experiences across websites, landing pages, and advertising to capture leads wherever they're searching.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="feature-card text-center h-100 p-4 rounded shadow-sm">
-                    <div class="icon-circle mb-4 mx-auto">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                    <div class="service-icon">
                         <i class="fas fa-camera"></i>
                     </div>
-                    <h3>Visual Storytelling Excellence</h3>
-                    <p>We emphasize high-quality visual content including professional photography, virtual tours, and video that showcase properties effectively and create emotional connections with potential buyers.</p>
+                    <h3>Property Content Creation</h3>
+                    <p>Compelling visual and written content that sells properties faster.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Professional property descriptions</li>
+                        <li><i class="fas fa-check"></i> Virtual staging</li>
+                        <li><i class="fas fa-check"></i> Photography enhancement</li>
+                        <li><i class="fas fa-check"></i> Video marketing</li>
+                    </ul>
                 </div>
             </div>
             
-            <div class="col-md-6 col-lg-4">
-                <div class="feature-card text-center h-100 p-4 rounded shadow-sm">
-                    <div class="icon-circle mb-4 mx-auto">
-                        <i class="fas fa-funnel-dollar"></i>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-friends"></i>
                     </div>
-                    <h3>Lead Qualification Systems</h3>
-                    <p>We implement automated systems to score, qualify and nurture leads based on behavior and engagement, helping you focus your personal attention on the most promising opportunities.</p>
+                    <h3>Agent Branding & Reputation</h3>
+                    <p>Strategies to position you as the trusted expert in your market.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Personal brand development</li>
+                        <li><i class="fas fa-check"></i> Review generation</li>
+                        <li><i class="fas fa-check"></i> Social proof strategies</li>
+                        <li><i class="fas fa-check"></i> Testimonial campaigns</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="service-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Real Estate Email Marketing</h3>
+                    <p>Nurture leads and past clients with targeted communication.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Listing alert systems</li>
+                        <li><i class="fas fa-check"></i> Drip campaigns for buyers/sellers</li>
+                        <li><i class="fas fa-check"></i> Past client reactivation</li>
+                        <li><i class="fas fa-check"></i> Market update newsletters</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Implementation Process -->
-<section class="implementation-process py-5 bg-light">
+<!-- Process Section -->
+<section class="process-section">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center mb-5">
-                <h2 class="section-title">Our Real Estate Marketing Process</h2>
-                <p class="section-subtitle">A Systematic Approach to Real Estate Success</p>
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Real Estate Marketing Process</h2>
+            <p class="section-lead">A strategic approach to growing your real estate business</p>
+        </div>
+        
+        <div class="process-timeline">
+            <!-- Timeline Line -->
+            <div class="timeline-line"></div>
+            
+            <div class="process-grid">
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800">
+                    <div class="process-number">1</div>
+                    <div class="process-card">
+                        <h3>Market Analysis</h3>
+                        <p>We research your specific market and competition to identify opportunities.</p>
+                        <ul class="process-list">
+                            <li>Competitive analysis</li>
+                            <li>Target demographic research</li>
+                            <li>Local market assessment</li>
+                            <li>Opportunity identification</li>
+                            <li>Current performance review</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="process-number">2</div>
+                    <div class="process-card">
+                        <h3>Strategy Development</h3>
+                        <p>We create a customized marketing plan aligned with your business goals.</p>
+                        <ul class="process-list">
+                            <li>Business goal alignment</li>
+                            <li>Channel selection</li>
+                            <li>Listing promotion strategy</li>
+                            <li>Lead generation planning</li>
+                            <li>Budget allocation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="process-number">3</div>
+                    <div class="process-card">
+                        <h3>Implementation</h3>
+                        <p>We execute the strategy with property-specific optimizations.</p>
+                        <ul class="process-list">
+                            <li>Property content creation</li>
+                            <li>Website optimization</li>
+                            <li>Ad campaign launch</li>
+                            <li>Listing syndication</li>
+                            <li>Tracking implementation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    <div class="process-number">4</div>
+                    <div class="process-card">
+                        <h3>Optimization & Growth</h3>
+                        <p>We continuously refine campaigns to maximize lead quality and conversions.</p>
+                        <ul class="process-list">
+                            <li>Performance analysis</li>
+                            <li>Lead quality assessment</li>
+                            <li>Conversion optimization</li>
+                            <li>Market response adaptation</li>
+                            <li>Scale successful channels</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Real Estate Specialties Section -->
+<section class="platforms-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Real Estate Specialties We Serve</h2>
+            <p class="section-lead">Specialized marketing for various real estate professionals</p>
+        </div>
+
+        <div class="platforms-grid">
+            <div class="platform-item" data-aos="fade-up">
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Individual Agents</h3>
+                    <p>Personal branding, lead generation, and client acquisition strategies for real estate agents looking to build their business and stand out in their market.</p>
+                </div>
+            </div>
+            
+            <div class="platform-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Brokerages</h3>
+                    <p>Comprehensive marketing solutions for real estate brokerages focused on recruitment, brand building, and supporting their agents with effective lead generation systems.</p>
+                </div>
+            </div>
+            
+            <div class="platform-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3>Property Developers</h3>
+                    <p>Pre-construction and new development marketing strategies that build excitement, generate qualified buyer interest, and accelerate sales for residential and commercial projects.</p>
+                </div>
+            </div>
+            
+            <div class="platform-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Commercial Real Estate</h3>
+                    <p>Specialized B2B marketing approaches for commercial real estate professionals targeting investors, business owners, and commercial tenants with property-specific campaigns.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us">
+    <div class="container">
+        <div class="section-header">
+            <div class="why-choose-us-header" data-aos="fade-up">
+                <h2>Why Choose StartupAI for Real Estate Marketing</h2>
+                <p class="lead">What sets our real estate marketing services apart</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="process-card h-100 p-4 bg-white rounded shadow-sm text-center">
-                    <div class="process-icon mb-3">
-                        <span>1</span>
+        <div class="features-grid">
+            <div class="feature-item" data-aos="fade-up">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
                     </div>
-                    <h3>Market Analysis & Strategy</h3>
-                    <p>We analyze your target market, competition, and ideal client profiles to develop a customized marketing strategy aligned with your specific business goals and market positioning.</p>
+                    <h3>Local Market Expertise</h3>
+                    <p>We understand the hyperlocal nature of real estate and tailor strategies to your specific market conditions and target demographics.</p>
                 </div>
             </div>
             
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="process-card h-100 p-4 bg-white rounded shadow-sm text-center">
-                    <div class="process-icon mb-3">
-                        <span>2</span>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
                     </div>
-                    <h3>Platform & Campaign Setup</h3>
-                    <p>We optimize your presence across relevant platforms, create landing pages, design ad campaigns, and implement tracking systems to measure performance and lead quality.</p>
+                    <h3>Conversion-Focused Approach</h3>
+                    <p>We focus not just on traffic but on generating qualified leads and inquiries from motivated buyers and sellers.</p>
                 </div>
             </div>
             
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="process-card h-100 p-4 bg-white rounded shadow-sm text-center">
-                    <div class="process-icon mb-3">
-                        <span>3</span>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bullseye"></i>
                     </div>
-                    <h3>Lead Generation & Nurturing</h3>
-                    <p>We launch targeted campaigns to capture qualified leads and implement automated nurturing sequences that guide prospects through their buying or selling journey.</p>
+                    <h3>Property-Specific Targeting</h3>
+                    <p>Our campaigns target the right audience for each property type, price point, and location to maximize relevant engagement.</p>
                 </div>
             </div>
             
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="process-card h-100 p-4 bg-white rounded shadow-sm text-center">
-                    <div class="process-icon mb-3">
-                        <span>4</span>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Optimization & Scaling</h3>
-                    <p>We continuously analyze performance data, refine campaigns for maximum effectiveness, and scale successful strategies to increase lead volume while maintaining or improving quality.</p>
+                    <h3>Data-Driven Strategies</h3>
+                    <p>We analyze market trends, buyer behavior, and campaign performance to continuously optimize your marketing results.</p>
+                </div>
+            </div>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Visual Excellence</h3>
+                    <p>We emphasize high-quality visual content that showcases properties effectively and creates emotional connections with potential buyers.</p>
+                </div>
+            </div>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile-First Approach</h3>
+                    <p>All our real estate marketing solutions are optimized for mobile users, who make up over 70% of property searchers.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Business Benefits -->
-<section class="business-benefits py-5">
+<!-- CTA Section -->
+<section class="cta-section">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center mb-5">
-                <h2 class="section-title">Benefits of Professional Real Estate Marketing</h2>
-                <p class="section-subtitle">How Strategic Marketing Transforms Your Real Estate Business</p>
-            </div>
-        </div>
-        
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <i class="fas fa-stream text-primary mb-3"></i>
-                    <h3>Consistent Lead Flow</h3>
-                    <p>Create a predictable pipeline of qualified buyer and seller leads that reduces the feast-or-famine cycle common in real estate and supports sustainable business growth.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <i class="fas fa-search-location text-primary mb-3"></i>
-                    <h3>Increased Local Visibility</h3>
-                    <p>Establish dominant presence in your target neighborhoods and communities, becoming the go-to agent or broker when residents are ready to buy or sell property.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <i class="fas fa-home text-primary mb-3"></i>
-                    <h3>Faster Property Sales</h3>
-                    <p>Generate more interest and qualified showings for your listings through strategic promotion, resulting in reduced days on market and potentially higher selling prices.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <i class="fas fa-user-friends text-primary mb-3"></i>
-                    <h3>Expanded Referral Network</h3>
-                    <p>Build a larger sphere of influence through consistent digital presence and value-added content that keeps you top-of-mind for referrals and repeat business.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <i class="fas fa-chart-line text-primary mb-3"></i>
-                    <h3>Measurable ROI</h3>
-                    <p>Track the precise performance of your marketing investments with detailed analytics that show cost-per-lead, cost-per-showing, and ultimately cost-per-transaction.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <i class="fas fa-briefcase text-primary mb-3"></i>
-                    <h3>Professional Reputation</h3>
-                    <p>Differentiate yourself from competitors through sophisticated marketing that demonstrates your professionalism, market knowledge, and commitment to client success.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Call to Action -->
-<section class="cta py-5 bg-primary text-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2 text-center">
-                <h2>Ready to Transform Your Real Estate Business?</h2>
-                <p class="lead mb-4">Get a customized digital marketing strategy designed to generate qualified leads and grow your real estate practice.</p>
-                <a href="#inquiry" class="btn btn-light btn-lg rounded-pill px-5">Request Your Free Consultation</a>
-            </div>
+        <div class="cta-content" data-aos="fade-up">
+            <h2>Ready to Elevate Your Real Estate Marketing?</h2>
+            <p class="lead">Let's create a strategy that generates more leads and closes more deals.</p>
+            <a href="/pages/contact.php" class="cta-btn">Get Started Today</a>
         </div>
     </div>
 </section>
 
 <!-- FAQ Section -->
-<section class="faq-section py-5 bg-light">
+<section class="faq-section">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center mb-5">
-                <h2 class="faq-title">Frequently Asked Questions</h2>
-                <p class="faq-subtitle">Common questions about real estate marketing</p>
+        <div class="section-header">
+            <div class="faq-header" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p class="lead">Common questions about real estate marketing</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How much should I spend on real estate marketing?</h3>
-                        <div class="toggle-btn"><span class="icon"></span></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>The ideal marketing budget for real estate professionals typically ranges from 8-15% of gross commission income (GCI), though this varies based on your business phase and goals. New agents or those entering new markets may need to invest more initially (15-20%) to build momentum, while established agents with strong referral networks might maintain at 5-10%. Rather than thinking solely about cost, consider return on investment. Our clients typically see a 3-5x return on their marketing spend within 6-12 months. We recommend starting with a base campaign targeting your most important lead source (often buyer leads, seller leads, or geographic farming), then scaling up as you see results. We structure campaigns with clear KPIs including cost per lead, cost per showing, and ultimately cost per closing. This allows us to calculate exact ROI and make data-driven decisions about scaling profitable campaigns. During our consultation, we'll help determine the optimal budget for your specific situation and goals while ensuring marketing costs align with your commission potential.</p>
-                    </div>
+        <div class="faq-container">
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>What digital marketing channels work best for real estate?</h3>
+                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
                 </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How do I get more seller leads?</h3>
-                        <div class="toggle-btn"><span class="icon"></span></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Generating qualified seller leads requires a strategic approach focused on homeowners exhibiting pre-listing behavior. Our most effective seller lead strategies include: Targeted Facebook/Instagram campaigns using custom audiences that model likely sellers based on life events, property ownership duration, and browsing behavior; home valuation landing pages that offer instant estimates with lead capture forms requiring contact information; Google search campaigns targeting terms like "sell my house," "home value," and "best time to sell in [neighborhood]"; geofenced advertising targeting homeowners in neighborhoods with high turnover rates or appreciating values; regular market update emails to past clients and sphere of influence highlighting recent sales and price trends; and strategic partnerships with financial advisors, divorce attorneys, retirement planners and other professionals who work with clients in transition. What differentiates our approach is our seller lead nurturing system, which builds trust over time through valuable market insights, positioning you as the neighborhood expert before homeowners are ready to list. During our consultation, we'll analyze your market and develop a customized seller lead generation strategy based on your target neighborhoods, ideal client profile, and business goals.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Are Zillow Premier Agent ads worth the investment?</h3>
-                        <div class="toggle-btn"><span class="icon"></span></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Zillow Premier Agent can be a worthwhile investment under the right circumstances, but effectiveness varies significantly based on several factors. In competitive markets with high average sales prices, Premier Agent often provides strong ROI because the lifetime value of each lead is substantial. However, in lower-priced markets or areas with extreme competition, it may be challenging to achieve profitable results. The key to success with Zillow Premier Agent is not just purchasing the leads but implementing a robust lead handling and nurturing system. Zillow leads typically require immediate response (under 5 minutes) and persistent follow-up (8-12 contact attempts over 30 days). Our approach includes setting up automated text/email systems for immediate engagement, implementing qualification processes to focus your time on the most promising leads, and creating long-term nurturing for leads not ready to transact immediately. We also help optimize your Zillow profile, reviews, and listing presentations to maximize conversion rates once you connect with leads. For many of our clients, we recommend a diversified lead generation strategy rather than relying solely on Zillow, combining Premier Agent with other channels like Facebook advertising, Google search campaigns, and content marketing for optimal results.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How long does it take to see results from real estate marketing?</h3>
-                        <div class="toggle-btn"><span class="icon"></span></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>The timeline for results from real estate marketing varies based on several factors, including your market conditions, campaign types, and the real estate cycle in your area. Typically, our clients begin seeing lead generation within the first 2-4 weeks of campaign launch. Paid advertising channels like Facebook and Google ads often produce the fastest results, with qualified leads coming in as soon as campaigns are properly optimized (usually within 14-21 days). Content marketing and SEO strategies typically take longer, showing meaningful results in 3-6 months but providing more sustainable long-term growth. The full sales cycle from marketing investment to commission checks depends on your market's typical timeline. For buyer leads, expect 60-120 days from lead generation to closing in most markets. Seller leads often have a longer nurturing period, with 3-6 months being common between initial contact and listing agreement. We structure our campaigns to include both short-term lead generation tactics and longer-term brand building strategies, creating an immediate pipeline while establishing systems for sustainable growth. During implementation, we set clear expectations for each marketing channel's timeline and establish milestone metrics to track progress even before closings occur.</p>
-                    </div>
+                <div class="faq-answer">
+                    <p>The most effective digital marketing channels for real estate depend on your specific goals, target audience, and property types. For most real estate professionals, a multi-channel approach yields the best results. Search engine optimization (SEO) is foundational, as approximately 44% of buyers start their home search online. Local SEO specifically helps you appear in neighborhood-specific searches and Google Maps results. Paid search advertising through Google Ads can generate immediate visibility for your listings and services. Social media marketing, particularly on visual platforms like Instagram and Facebook, is extremely effective for property promotion due to their targeting capabilities and visual nature. Email marketing maintains relationships with past clients and nurtures prospects with listing alerts and market updates. Content marketing through neighborhood guides, market reports, and buyer/seller resources establishes your expertise while improving search visibility. Video marketing has become increasingly important, with virtual tours, property walkthrough videos, and neighborhood showcases generating significantly higher engagement than static content. For luxury properties, we often recommend additional channels like targeted display advertising on premium sites and specialized listing portals. We tailor channel selection and budget allocation based on your specific real estate niche, property types, and business goals.</p>
                 </div>
             </div>
             
-            <div class="col-lg-6">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What makes for effective real estate ads?</h3>
-                        <div class="toggle-btn"><span class="icon"></span></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Effective real estate ads combine several key elements that drive engagement and conversions. First, successful ads use precise targeting to reach the right audience—whether that's first-time homebuyers, move-up sellers, investors, or specific demographic groups in your target area. Second, compelling visuals are critical—professional photography, virtual tours, or lifestyle imagery that helps prospects envision themselves in the property or neighborhood. Third, effective ads focus on benefits rather than features, addressing the emotional and practical needs driving real estate decisions. Fourth, strong real estate ads include a clear, compelling call-to-action that offers genuine value (like a free home valuation, neighborhood guide, or property alerts) in exchange for contact information. Fifth, ad copy should create urgency through limited-time offers, market trends, or other motivating factors. Finally, all ads should maintain consistent branding that reinforces your professional image and differentiators. Our high-performing campaigns typically include multiple ad variations to test different messages, images, and offers, allowing us to continuously optimize performance. We also implement retargeting strategies to recapture interested prospects who visited your website or engaged with previous ads, significantly improving overall conversion rates.</p>
-                    </div>
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>How can I differentiate myself from other real estate agents?</h3>
+                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
                 </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How do I build my personal brand as a real estate agent?</h3>
-                        <div class="toggle-btn"><span class="icon"></span></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Building a strong personal brand as a real estate agent requires a strategic approach that consistently communicates your unique value proposition across multiple channels. Start by defining your brand foundation—identifying your ideal clients, unique strengths, specializations, and the specific value you provide compared to other agents. Next, develop your visual identity with professional photography, consistent color schemes, and design elements that reflect your personality and professional style. Create a content strategy centered around demonstrating your expertise through neighborhood guides, market updates, property showcases, client success stories, and educational content that addresses common questions from buyers and sellers. Leverage multiple distribution channels including a professional website, social media platforms (particularly Instagram and Facebook for real estate), email newsletters, and potentially video or podcast content. Consistently engage with your community both online and offline through meaningful interactions, comments, and participation in local events. Collect and showcase client testimonials and reviews across Google, Zillow, and other platforms to build social proof. Our personal branding services help agents develop cohesive strategies that align with their personality and business goals while implementing systems to maintain consistent brand presence without overwhelming your schedule. The most successful agent brands are authentic, consistent, and focused on providing genuine value rather than just self-promotion.</p>
-                    </div>
+                <div class="faq-answer">
+                    <p>Differentiation in real estate marketing is essential in today's competitive environment. The most effective approach is to develop a clear, authentic personal brand built around your unique strengths, specialization, and value proposition. Consider specializing in a specific neighborhood, property type, or client demographic (first-time buyers, investors, luxury, etc.) to position yourself as the expert in that niche. Create signature content that showcases your expertise and personality through consistent blog posts, videos, market reports, or social media series that reflect your unique perspective and knowledge. Develop a distinctive visual identity with professional photography, consistent design elements, and a memorable logo that stands out in a crowded market. Leverage client success stories and testimonials strategically, focusing on the specific value you provided rather than generic praise. Adopt innovative marketing approaches such as interactive property tours, market analysis tools, or educational resources that competitors aren't using. Emphasize your process and client experience, clearly communicating how working with you differs from other agents. Most importantly, be authentic – your most powerful differentiation comes from genuinely sharing your personality, values, and approach to real estate, attracting clients who resonate with your unique style and creating a referral-generating brand that can't be easily copied.</p>
                 </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Should I focus more on social media or paid advertising?</h3>
-                        <div class="toggle-btn"><span class="icon"></span></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>The most effective real estate marketing strategy typically incorporates both social media and paid advertising, as they serve complementary roles in your marketing ecosystem. Social media builds your brand, establishes credibility, and nurtures relationships with your sphere of influence over time. It's excellent for showcasing your personality, market knowledge, and successful transactions. However, organic social media reach has declined significantly—most posts now reach only 2-5% of your followers without paid promotion. Paid advertising, on the other hand, provides immediate visibility to targeted prospects outside your existing network and typically generates leads more quickly. For most real estate professionals, we recommend a balanced approach: Use organic social media to build your brand and nurture existing relationships while investing in targeted paid advertising to generate new leads and amplify your best content. The ideal balance depends on your business phase and goals. New agents often benefit from higher investment in paid lead generation to build their client base quickly. Established agents may focus more on nurturing their sphere and past clients through content while maintaining targeted paid campaigns for specific neighborhoods or property types. During our consultation, we'll analyze your business goals, current marketing assets, and competitive landscape to recommend the optimal channel mix for your specific situation.</p>
-                    </div>
+            </div>
+            
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>How much should real estate agents spend on marketing?</h3>
+                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
                 </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How do you measure success in real estate marketing?</h3>
-                        <div class="toggle-btn"><span class="icon"></span></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We measure real estate marketing success through a comprehensive set of metrics that track performance throughout the entire client acquisition funnel. Our reporting begins with visibility metrics including impressions, reach, and website traffic to gauge brand awareness. We then track engagement metrics such as click-through rates, time on site, and social interactions that indicate prospect interest. Lead generation metrics measure form submissions, calls, and other conversion actions along with associated costs (cost-per-lead). Lead quality metrics analyze qualification rates, showing requests, and listing appointments generated from marketing campaigns. Finally, business impact metrics calculate cost-per-acquisition, marketing ROI (return on investment), and net commission generated from marketing sources. We implement proper tracking systems including website analytics, lead source attribution, CRM integration, and call tracking to ensure accurate measurement across all channels. Our clients receive regular performance reports with both detailed metrics and executive summaries highlighting key insights. We establish baseline KPIs at campaign launch and continuously optimize toward improved performance. Rather than focusing solely on vanity metrics like followers or likes, our measurement framework prioritizes the metrics most directly tied to your business goals—whether that's transaction volume, GCI growth, or specific targets for buyer or seller clients. This data-driven approach ensures marketing resources are directed to the activities generating the strongest returns.</p>
-                    </div>
+                <div class="faq-answer">
+                    <p>Real estate marketing budgets should be determined strategically based on your income goals, market conditions, and career stage rather than arbitrary percentages. Industry benchmarks suggest successful agents typically invest 10-15% of their commission income back into marketing, but this varies significantly based on several factors. New agents often need to invest a higher percentage (15-20%) to establish their presence and generate initial momentum, while established agents with strong referral networks might maintain effectiveness at 8-12%. Your local market competitiveness is a crucial factor—agents in highly saturated markets generally need larger marketing investments to stand out. Consider your property type and price point as well; luxury listings justify higher per-property marketing budgets due to their commission potential, while high-volume agents selling moderate-priced homes might need to be more efficient with per-listing expenditures. Rather than a single annual budget, we recommend a portfolio approach that includes: a consistent monthly investment in brand-building and lead generation activities; property-specific budgets allocated based on commission potential; and opportunity-based funds for unique marketing opportunities or seasonal campaigns. Most importantly, track your cost per lead and cost per acquisition to ensure your marketing delivers positive ROI. During our consultation, we'll help you determine an appropriate budget based on your specific situation, goals, and competitive landscape.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>What types of content work best for real estate marketing?</h3>
+                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                </div>
+                <div class="faq-answer">
+                    <p>The most effective content for real estate marketing combines visual appeal with valuable information that addresses specific buyer and seller needs. High-quality property visuals are foundational—professional photography, virtual tours, and video walkthroughs consistently generate the highest engagement and lead conversion rates. Neighborhood guides and local market reports provide valuable context for listings while demonstrating your local expertise and improving search visibility. Educational content addressing common questions and concerns—buyer guides, seller checklists, financing explainers, and investment analysis frameworks—builds trust and positions you as a helpful resource. Client testimonials and case studies create social proof, particularly when they highlight specific challenges you helped overcome. Market update content including price trends, inventory levels, and interest rate implications helps establish you as a market authority while providing genuinely useful information to prospects. Visual social content like before/after renovation comparisons, design trends, and property features presented in carousel formats typically generate the highest engagement on platforms like Instagram. For maximum effectiveness, we recommend developing a content strategy that balances listing-specific content with evergreen educational resources and timely market insights, distributed across your website, email marketing, and social channels. The ideal mix varies based on your target audience and business model, which we'll help you determine as part of your marketing strategy.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>How long does it take to see results from real estate marketing?</h3>
+                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                </div>
+                <div class="faq-answer">
+                    <p>The timeline for real estate marketing results varies based on your market conditions, starting point, and the specific strategies implemented. Paid advertising channels like Google Ads and Facebook typically generate listing inquiries fastest, often within the first 1-2 weeks of launching optimized campaigns. Email marketing to your existing database can yield quick results for specific listings, especially with past clients and warm leads. Social media marketing generally shows meaningful engagement within 3-4 weeks of consistent, quality posting, though building a substantial following takes 3-6 months of strategic content. Website improvements and IDX integration typically start generating organic leads within 1-2 months after implementation. Search engine optimization is a longer-term investment, with initial ranking improvements often visible within 2-3 months but substantial traffic growth taking 4-6 months or longer for competitive terms. The complete client acquisition cycle—from marketing to closed transaction—depends on your market's typical buying timeline, which might range from 30 days to 6+ months. Most importantly, real estate marketing results compound over time as you build brand recognition, accumulate reviews, develop content, and grow your database. Our approach focuses on both quick-win strategies for immediate lead generation and sustainable systems that deliver increasing returns over time. We provide transparent reporting that tracks leading indicators (website traffic, inquiries, social engagement) as well as outcome metrics (qualified leads, showings, and transactions) to demonstrate progress throughout the process.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<?php
-// Display Why Hire Us section if content is available
-if (!empty($why_hire_us)) {
-    renderWhyHireUs($serviceName, $why_hire_us);
-}
-?>
-
-<!-- Include footer -->
 <?php require_once '../../../../components/footer.php'; ?> 

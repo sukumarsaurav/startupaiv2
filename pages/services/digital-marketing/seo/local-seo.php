@@ -3,7 +3,6 @@
 define('BASEPATH', true);
 
 require_once '../../../../includes/config.php';
-require_once '../../../../config/why-hire-us.php';
 
 // Page specific content
 $pageTitle = "Local SEO (Google My Business)";
@@ -11,10 +10,6 @@ $pageDescription = "Dominate local search results and attract nearby customers w
 $serviceName = "Local SEO";
 $serviceSlug = "local-seo";
 
-require_once '../../../../assets/templates/why-hire-us-section.php';
-
-// Get Why Hire Us content
-$why_hire_us = getWhyHireUsContent('seo');
 
 require_once '../../../../components/header.php';
 ?>

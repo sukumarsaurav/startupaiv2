@@ -3,18 +3,12 @@
 define('BASEPATH', true);
 
 require_once '../../../../includes/config.php';
-require_once '../../../../config/why-hire-us.php';
 
 // Page specific content
 $pageTitle = "Technical SEO";
 $pageDescription = "Optimize your website's technical foundation with our comprehensive Technical SEO services focused on site speed, core web vitals, and crawlability";
 $serviceName = "Technical SEO";
 $serviceSlug = "technical-seo";
-
-require_once '../../../../assets/templates/why-hire-us-section.php';
-
-// Get Why Hire Us content
-$why_hire_us = getWhyHireUsContent('seo');
 
 require_once '../../../../components/header.php';
 ?>
