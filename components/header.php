@@ -192,6 +192,12 @@
                     </div>
                     
                     <div class="drawer-submenu-group">
+                        <h6 class="drawer-submenu-title">PPC</h6>
+                        <a href="/pages/services/digital-marketing/ppc/google-ads.php">Google ads</a>
+                        <a href="/pages/services/digital-marketing/ppc/facebook-instagram-ads.php">Facebook Instagram ads</a>
+                    </div>
+                    
+                    <div class="drawer-submenu-group">
                         <h6 class="drawer-submenu-title">Content Marketing</h6>
                         <a href="/pages/services/digital-marketing/content-marketing/content-strategy.php">Content Strategy</a>
                         <a href="/pages/services/digital-marketing/content-marketing/blogging-services.php">Blogging Services</a>
@@ -200,11 +206,37 @@
                     </div>
                     
                     <div class="drawer-submenu-group">
+                        <h6 class="drawer-submenu-title">Email Marketing</h6>
+                        <a href="/pages/services/digital-marketing/email-marketing/email-campaigns.php">Email Campaigns</a>
+                        <a href="/pages/services/digital-marketing/email-marketing/newsletter-management.php">Newsletter Management</a>
+                    </div>
+                    
+                    <div class="drawer-submenu-group">
                         <h6 class="drawer-submenu-title">Social Media Marketing</h6>
                         <a href="/pages/services/digital-marketing/social-media/social-media-management.php">Social Media Management</a>
                         <a href="/pages/services/digital-marketing/social-media/social-media-advertising.php">Social Media Advertising</a>
                         <a href="/pages/services/digital-marketing/social-media/influencer-marketing.php">Influencer Marketing</a>
                         <a href="/pages/services/digital-marketing/social-media/community-management.php">Community Management</a>
+                    </div>
+                    
+                    <div class="drawer-submenu-group">
+                        <h6 class="drawer-submenu-title">Conversion Optimization</h6>
+                        <a href="/pages/services/digital-marketing/cro/ab-testing.php">A/B Testing</a>
+                        <a href="/pages/services/digital-marketing/cro/landing-page-optimization.php">Landing Page Optimization</a>
+                    </div>
+                    
+                    <div class="drawer-submenu-group">
+                        <h6 class="drawer-submenu-title">Reputation Management</h6>
+                        <a href="/pages/services/digital-marketing/reputation-management/online-reviews-pr-management.php">PR Management</a>
+                        <a href="/pages/services/digital-marketing/reputation-management/brand-monitoring.php">Brand Monitoring</a>
+                        <a href="/pages/services/digital-marketing/reputation-management/crisis-management.php">Crisis Management</a>
+                    </div>
+                    
+                    <div class="drawer-submenu-group">
+                        <h6 class="drawer-submenu-title">Industry Marketing</h6>
+                        <a href="/pages/services/digital-marketing/industry-specific/healthcare-marketing.php">Healthcare Marketing</a>
+                        <a href="/pages/services/digital-marketing/industry-specific/real-estate-marketing.php">Real Estate Marketing</a>
+                        <a href="/pages/services/digital-marketing/industry-specific/ecommerce-marketing.php">E-commerce Marketing</a>
                     </div>
                 </div>
                 
@@ -356,6 +388,9 @@
                                 <a class="dropdown-item" href="/pages/services/digital-marketing/seo/technical-seo.php">Technical SEO</a>
                                 <a class="dropdown-item" href="/pages/services/digital-marketing/seo/local-seo.php">Local SEO</a>
                                 <a class="dropdown-item" href="/pages/services/digital-marketing/seo/ecommerce-seo.php">E-commerce SEO</a>
+                                <h6 class="dropdown-header">PPC</h6>
+                                <a class="dropdown-item" href="/pages/services/digital-marketing/ppc/google-ads.php">Google ads</a>
+                                <a class="dropdown-item" href="/pages/services/digital-marketing/ppc/facebook-instagram-ads.php">Facebook Instagram ads</a>
                             </div>
                             <div class="mega-menu-column">
                                 <h6 class="dropdown-header">Content Marketing</h6>
@@ -381,10 +416,9 @@
                             </div>
                             <div class="mega-menu-column">
                                 <h6 class="dropdown-header">Reputation Management</h6>
-                                <a class="dropdown-item" href="/pages/services/digital-marketing/reputation-management/review-management.php">Review Management</a>
+                                <a class="dropdown-item" href="/pages/services/digital-marketing/reputation-management/online-reviews-pr-management.php">PR Management</a>
                                 <a class="dropdown-item" href="/pages/services/digital-marketing/reputation-management/brand-monitoring.php">Brand Monitoring</a>
                                 <a class="dropdown-item" href="/pages/services/digital-marketing/reputation-management/crisis-management.php">Crisis Management</a>
-                                
                                 <h6 class="dropdown-header">Industry Marketing</h6>
                                 <a class="dropdown-item" href="/pages/services/digital-marketing/industry-specific/healthcare-marketing.php">Healthcare Marketing</a>
                                 <a class="dropdown-item" href="/pages/services/digital-marketing/industry-specific/real-estate-marketing.php">Real Estate Marketing</a>

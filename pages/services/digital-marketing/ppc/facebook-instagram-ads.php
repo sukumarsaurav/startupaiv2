@@ -3,429 +3,460 @@
 define('BASEPATH', true);
 
 require_once '../../../../includes/config.php';
-require_once '../../../../config/why-hire-us.php';
 
 // Page specific content
-$pageTitle = "Facebook & Instagram Ads Management";
-$pageDescription = "Drive engagement, increase brand awareness, and generate leads with targeted Facebook and Instagram advertising campaigns";
+$pageTitle = "Facebook & Instagram Ads Management | StartupAI";
+$pageDescription = "Elevate your social advertising with expert Facebook and Instagram ads management. Targeted campaigns that engage your audience and drive measurable results.";
 $serviceName = "Facebook & Instagram Ads";
 $serviceSlug = "facebook-instagram-ads";
 
-require_once '../../../../assets/templates/why-hire-us-section.php';
-
-// Get Why Hire Us content
-$why_hire_us = getWhyHireUsContent('ppc');
+// SEO Data
+$seo_data = [
+    'description' => $pageDescription,
+    'keywords' => 'facebook ads, instagram ads, social media advertising, paid social, social ppc, facebook marketing, instagram marketing, social media ads management, facebook ad campaigns, instagram ad campaigns'
+];
 
 require_once '../../../../components/header.php';
 ?>
 
-<!-- Page Header -->
-<div class="page-header bg-primary text-white">
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-background"></div>
+    <div class="hero-blob-1"></div>
+    <div class="hero-blob-2"></div>
+    
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2 text-center">
-                <h1 class="fw-bold"><?php echo $pageTitle; ?></h1>
-                <p class="lead"><?php echo $pageDescription; ?></p>
-                <a href="#inquiry" class="btn btn-light rounded-pill px-4 py-2 mt-3">Request a Free Consultation</a>
+        <div class="hero-grid">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <h1>Facebook & Instagram <span class="highlight">Ads</span></h1>
+                <p class="lead">Strategic social advertising that captivates and converts your target audience</p>
+                <div class="hero-buttons">
+                    <a href="/pages/contact.php" class="btn btn-primary">Get Started</a>
+                    <a href="/pages/services/digital-marketing/ppc/" class="btn btn-outline">All PPC Services</a>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<!-- Service Overview -->
-<section class="service-overview py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <h2>Harness the Power of Social Media Advertising</h2>
-                <p class="lead">Reach over 3.5 billion potential customers with targeted Facebook and Instagram ad campaigns.</p>
-                <p>With 2.9 billion monthly active Facebook users and over 1 billion Instagram users, these platforms represent an unparalleled opportunity to reach your target audience with precision. Our expert team develops strategic, data-driven campaigns that leverage Facebook and Instagram's powerful targeting capabilities to deliver your message to the right people at the right time.</p>
-                <p>We create compelling, platform-optimized content that captures attention in crowded feeds, driving engagement, leads, and sales while maximizing your advertising budget.</p>
-            </div>
-            <div class="col-lg-6">
-                <img src="/assets/images/services/facebook-instagram-ads.jpg" alt="Facebook & Instagram Advertising" class="img-fluid rounded shadow">
+            <div class="hero-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                <div class="image-glow"></div>
+                <img src="/assets/images/services/facebook-instagram-ads.svg" alt="Facebook and Instagram Advertising" class="floating-image">
+                <div class="decoration-circle-1"></div>
+                <div class="decoration-circle-2"></div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Services Offered -->
-<section class="services-offered py-5 bg-light">
+<!-- Service Overview Section -->
+<section class="overview-section">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center mb-5">
-                <h2 class="section-title">Our Facebook & Instagram Ad Services</h2>
-                <p class="section-subtitle">Comprehensive Social Media Advertising Solutions</p>
+        <div class="section-header" data-aos="fade-up">
+            <h2>Harness the Power of Social Advertising</h2>
+            <p class="section-lead">Targeted campaigns that engage your audience where they spend their time</p>
+        </div>
+        
+        <div class="overview-grid">
+            <div class="overview-card primary-card" data-aos="fade-right" data-aos-duration="800">
+                <div class="card-decoration"></div>
+                <h3>Precision Targeting for Maximum Impact</h3>
+                <p>With billions of active users across Facebook and Instagram, these platforms offer unparalleled targeting capabilities to reach your ideal customers. Our strategic approach leverages detailed demographics, interests, behaviors, and custom audiences to ensure your ads reach exactly the right people.</p>
+                <p>Whether you're looking to build brand awareness, generate leads, or drive sales, our expert team creates campaigns designed to achieve your specific business objectives with maximum efficiency.</p>
+            </div>
+            
+            <div class="overview-card secondary-card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                <div class="card-decoration"></div>
+                <h3>Creative Excellence Across All Formats</h3>
+                <p>Standing out in crowded social feeds requires compelling creative that stops scrolling and drives action. Our team develops eye-catching visuals and persuasive copy optimized for all ad formats—from image and carousel ads to video and story experiences.</p>
+                <p>We continually test and refine creative elements to identify what resonates most with your audience, ensuring your campaigns remain fresh and effective over time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section">
+    <div class="container">
+        <div class="section-header">
+            <div class="services-header" data-aos="fade-up">
+                <h2>Our Facebook & Instagram Advertising Services</h2>
+                <p class="lead">Comprehensive social advertising solutions for your business goals</p>
             </div>
         </div>
         
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <h3>Campaign Strategy & Setup</h3>
-                    <p>Develop comprehensive advertising strategies aligned with your business objectives and target audience behavior.</p>
-                    <ul class="service-highlights">
-                        <li><i class="fas fa-check text-primary"></i> Custom audience development and segmentation</li>
-                        <li><i class="fas fa-check text-primary"></i> Campaign structure optimization</li>
-                        <li><i class="fas fa-check text-primary"></i> Platform selection (Facebook, Instagram, Messenger)</li>
-                        <li><i class="fas fa-check text-primary"></i> Ad placement optimization</li>
-                        <li><i class="fas fa-check text-primary"></i> Budget allocation and bidding strategies</li>
+        <div class="services-grid">
+            <div class="service-item" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Campaign Strategy & Planning</h3>
+                    <p>Customized advertising strategies aligned with your specific business objectives.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Audience research & definition</li>
+                        <li><i class="fas fa-check"></i> Campaign goal setting</li>
+                        <li><i class="fas fa-check"></i> Platform & format selection</li>
+                        <li><i class="fas fa-check"></i> Budget planning & forecasting</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="col-md-6">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
                     <h3>Creative Development</h3>
-                    <p>Create scroll-stopping ad content tailored for optimal performance on Facebook and Instagram platforms.</p>
-                    <ul class="service-highlights">
-                        <li><i class="fas fa-check text-primary"></i> Compelling ad copy and headlines</li>
-                        <li><i class="fas fa-check text-primary"></i> Eye-catching image creation and selection</li>
-                        <li><i class="fas fa-check text-primary"></i> Engaging video ad production</li>
-                        <li><i class="fas fa-check text-primary"></i> Instagram Story and Reel creation</li>
-                        <li><i class="fas fa-check text-primary"></i> Carousel and collection ad design</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <h3>Advanced Targeting</h3>
-                    <p>Leverage Facebook's powerful targeting capabilities to reach the most relevant audience for your business.</p>
-                    <ul class="service-highlights">
-                        <li><i class="fas fa-check text-primary"></i> Custom and lookalike audience creation</li>
-                        <li><i class="fas fa-check text-primary"></i> Demographic and interest-based targeting</li>
-                        <li><i class="fas fa-check text-primary"></i> Behavioral targeting optimization</li>
-                        <li><i class="fas fa-check text-primary"></i> Retargeting campaign setup</li>
-                        <li><i class="fas fa-check text-primary"></i> Exclusion audience development</li>
+                    <p>Compelling ad creative that captures attention and drives engagement.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Ad copy creation</li>
+                        <li><i class="fas fa-check"></i> Image & graphic design</li>
+                        <li><i class="fas fa-check"></i> Video ad production</li>
+                        <li><i class="fas fa-check"></i> Creative A/B testing</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="col-md-6">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <h3>Analytics & Optimization</h3>
-                    <p>Continuously monitor, analyze, and optimize your campaigns for maximum performance and ROI.</p>
-                    <ul class="service-highlights">
-                        <li><i class="fas fa-check text-primary"></i> Performance tracking across key metrics</li>
-                        <li><i class="fas fa-check text-primary"></i> A/B testing of ad creative and audience segments</li>
-                        <li><i class="fas fa-check text-primary"></i> Budget adjustment based on performance</li>
-                        <li><i class="fas fa-check text-primary"></i> Regular reporting and insights</li>
-                        <li><i class="fas fa-check text-primary"></i> Campaign refinement and scaling</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Key Features -->
-<section class="key-features py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center mb-5">
-                <h2 class="section-title">Why Our Facebook & Instagram Ads Approach Works</h2>
-                <p class="section-subtitle">Strategic Methodology for Social Media Advertising Success</p>
-            </div>
-        </div>
-        
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="feature-card text-center h-100 p-4 rounded shadow-sm">
-                    <div class="icon-circle mb-4 mx-auto">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3>Audience-First Approach</h3>
-                    <p>We prioritize deeply understanding your ideal customer's demographics, interests, and online behaviors before developing campaigns.</p>
+                    <h3>Advanced Audience Targeting</h3>
+                    <p>Precision targeting to reach the right people with your message.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom audience creation</li>
+                        <li><i class="fas fa-check"></i> Lookalike audience development</li>
+                        <li><i class="fas fa-check"></i> Interest & behavior targeting</li>
+                        <li><i class="fas fa-check"></i> Retargeting implementation</li>
+                    </ul>
                 </div>
             </div>
             
-            <div class="col-md-6 col-lg-4">
-                <div class="feature-card text-center h-100 p-4 rounded shadow-sm">
-                    <div class="icon-circle mb-4 mx-auto">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Campaign Management</h3>
+                    <p>Day-to-day oversight and optimization of your social ad campaigns.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Campaign setup & configuration</li>
+                        <li><i class="fas fa-check"></i> Bid management & optimization</li>
+                        <li><i class="fas fa-check"></i> Performance monitoring</li>
+                        <li><i class="fas fa-check"></i> Ongoing refinement</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-funnel-dollar"></i>
+                    </div>
+                    <h3>Conversion Optimization</h3>
+                    <p>Maximize ROI by optimizing for meaningful business actions.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Conversion tracking setup</li>
+                        <li><i class="fas fa-check"></i> Landing page optimization</li>
+                        <li><i class="fas fa-check"></i> Conversion rate improvement</li>
+                        <li><i class="fas fa-check"></i> Cost per acquisition reduction</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="service-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics & Reporting</h3>
+                    <p>Comprehensive insights and transparent reporting on campaign performance.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Performance dashboards</li>
+                        <li><i class="fas fa-check"></i> ROI & ROAS analysis</li>
+                        <li><i class="fas fa-check"></i> Campaign insights</li>
+                        <li><i class="fas fa-check"></i> Strategic recommendations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="process-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Social Advertising Process</h2>
+            <p class="section-lead">A proven methodology for social campaign success</p>
+        </div>
+        
+        <div class="process-timeline">
+            <!-- Timeline Line -->
+            <div class="timeline-line"></div>
+            
+            <div class="process-grid">
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800">
+                    <div class="process-number">1</div>
+                    <div class="process-card">
+                        <h3>Discovery & Strategy</h3>
+                        <p>We begin by understanding your business goals and target audience.</p>
+                        <ul class="process-list">
+                            <li>Business objectives analysis</li>
+                            <li>Target audience research</li>
+                            <li>Competitive landscape review</li>
+                            <li>Campaign goal setting</li>
+                            <li>Strategic planning & budgeting</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="process-number">2</div>
+                    <div class="process-card">
+                        <h3>Campaign Setup & Creative</h3>
+                        <p>We build your campaigns and develop compelling creative assets.</p>
+                        <ul class="process-list">
+                            <li>Account & pixel setup</li>
+                            <li>Campaign structure creation</li>
+                            <li>Audience targeting configuration</li>
+                            <li>Creative development</li>
+                            <li>Ad testing preparation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="process-number">3</div>
+                    <div class="process-card">
+                        <h3>Launch & Optimization</h3>
+                        <p>We activate your campaigns and continuously refine for best results.</p>
+                        <ul class="process-list">
+                            <li>Campaign deployment</li>
+                            <li>Performance monitoring</li>
+                            <li>A/B testing execution</li>
+                            <li>Budget & bid optimization</li>
+                            <li>Creative refresh & rotation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    <div class="process-number">4</div>
+                    <div class="process-card">
+                        <h3>Analysis & Scaling</h3>
+                        <p>We analyze results and scale successful campaign elements.</p>
+                        <ul class="process-list">
+                            <li>Performance analysis</li>
+                            <li>ROI/ROAS measurement</li>
+                            <li>Success pattern identification</li>
+                            <li>Scaling strategy development</li>
+                            <li>Long-term planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Platform Section -->
+<section class="platforms-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Advertising Solutions Across Platforms</h2>
+            <p class="section-lead">Strategic campaigns across the Meta ecosystem</p>
+        </div>
+
+        <div class="platforms-grid">
+            <div class="platform-item" data-aos="fade-up">
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h3>Facebook Advertising</h3>
+                    <p>Reach billions of active users with targeted campaigns on the world's largest social platform. Our Facebook advertising solutions include News Feed ads, right column ads, Marketplace ads, and in-stream video placements to connect with your audience wherever they engage.</p>
+                </div>
+            </div>
+            
+            <div class="platform-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram Advertising</h3>
+                    <p>Showcase your brand on the highly visual Instagram platform with feed ads, Stories ads, Explore ads, and Reels ads. Our Instagram advertising strategies leverage the platform's engaging format to build brand awareness and drive consideration among audiences with high purchase intent.</p>
+                </div>
+            </div>
+            
+            <div class="platform-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Facebook & Instagram Shops</h3>
+                    <p>Turn browsers into buyers with seamless shopping experiences directly on Facebook and Instagram. We help set up and optimize your product catalog, create shopping ads, and implement strategies that drive conversions through the entire customer journey.</p>
+                </div>
+            </div>
+            
+            <div class="platform-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Messenger Advertising</h3>
+                    <p>Create personalized conversations with potential customers through Messenger ads. Our strategies help you engage prospects directly, answer questions in real-time, and guide them toward conversion through this interactive advertising channel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us">
+    <div class="container">
+        <div class="section-header">
+            <div class="why-choose-us-header" data-aos="fade-up">
+                <h2>Why Choose StartupAI for Facebook & Instagram Ads</h2>
+                <p class="lead">What sets our social advertising services apart</p>
+            </div>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-item" data-aos="fade-up">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Meta Business Partner</h3>
+                    <p>As a certified Meta Business Partner, we have access to advanced resources, beta features, and direct support to maximize your campaign performance.</p>
+                </div>
+            </div>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Continuous Testing</h3>
+                    <p>We implement systematic testing across audiences, creative, messaging, and placements to continuously improve campaign performance.</p>
+                </div>
+            </div>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-icon">
                         <i class="fas fa-palette"></i>
                     </div>
                     <h3>Creative Excellence</h3>
-                    <p>Our designers and copywriters create platform-optimized content that captures attention and drives engagement in crowded feeds.</p>
+                    <p>Our in-house creative team develops scroll-stopping visuals and compelling copy that drives engagement and conversion.</p>
                 </div>
             </div>
             
-            <div class="col-md-6 col-lg-4">
-                <div class="feature-card text-center h-100 p-4 rounded shadow-sm">
-                    <div class="icon-circle mb-4 mx-auto">
-                        <i class="fas fa-chart-bar"></i>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
                     </div>
-                    <h3>Data-Driven Decisions</h3>
-                    <p>We base every strategic decision on comprehensive data analysis, ensuring campaigns continually improve over time.</p>
+                    <h3>Data-Driven Approach</h3>
+                    <p>We make strategic decisions based on comprehensive data analysis, ensuring optimal performance and ROI for your campaigns.</p>
                 </div>
             </div>
             
-            <div class="col-md-6 col-lg-4">
-                <div class="feature-card text-center h-100 p-4 rounded shadow-sm">
-                    <div class="icon-circle mb-4 mx-auto">
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Adaptability</h3>
+                    <p>We stay ahead of platform changes and evolving best practices, quickly adapting strategies to maintain peak performance.</p>
+                </div>
+            </div>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-card">
+                    <div class="feature-icon">
                         <i class="fas fa-funnel-dollar"></i>
                     </div>
-                    <h3>Full-Funnel Strategy</h3>
-                    <p>We develop campaigns that address every stage of the customer journey, from awareness to consideration to conversion.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="feature-card text-center h-100 p-4 rounded shadow-sm">
-                    <div class="icon-circle mb-4 mx-auto">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <h3>Systematic Testing</h3>
-                    <p>Our structured approach to A/B testing continuously refines and improves campaign performance across all variables.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="feature-card text-center h-100 p-4 rounded shadow-sm">
-                    <div class="icon-circle mb-4 mx-auto">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Transparent Partnership</h3>
-                    <p>We provide clear, consistent communication and comprehensive reporting so you always understand your campaign performance.</p>
+                    <h3>Results Focus</h3>
+                    <p>We prioritize real business outcomes—leads, sales, and revenue—not just vanity metrics like impressions or clicks.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Implementation Process -->
-<section class="implementation-process py-5 bg-light">
+<!-- CTA Section -->
+<section class="cta-section">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center mb-5">
-                <h2 class="section-title">Our Facebook & Instagram Advertising Process</h2>
-                <p class="section-subtitle">A Proven Methodology for Social Advertising Success</p>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="process-card h-100 p-4 bg-white rounded shadow-sm text-center">
-                    <div class="process-icon mb-3">
-                        <span>1</span>
-                    </div>
-                    <h3>Discovery & Research</h3>
-                    <p>We analyze your business goals, target audience, and competitors to create a strategic foundation for your campaigns.</p>
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="process-card h-100 p-4 bg-white rounded shadow-sm text-center">
-                    <div class="process-icon mb-3">
-                        <span>2</span>
-                    </div>
-                    <h3>Strategy & Creative</h3>
-                    <p>We develop a comprehensive campaign strategy and create compelling, platform-optimized ad content.</p>
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="process-card h-100 p-4 bg-white rounded shadow-sm text-center">
-                    <div class="process-icon mb-3">
-                        <span>3</span>
-                    </div>
-                    <h3>Campaign Launch</h3>
-                    <p>We set up your campaign structure, implement tracking, and launch your campaigns with careful monitoring.</p>
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="process-card h-100 p-4 bg-white rounded shadow-sm text-center">
-                    <div class="process-icon mb-3">
-                        <span>4</span>
-                    </div>
-                    <h3>Optimization & Scaling</h3>
-                    <p>We continuously analyze performance data, refine campaigns, and scale successful strategies for maximum ROI.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Business Benefits -->
-<section class="business-benefits py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center mb-5">
-                <h2 class="section-title">Benefits of Professional Facebook & Instagram Advertising</h2>
-                <p class="section-subtitle">How Social Media Ads Drive Business Growth</p>
-            </div>
-        </div>
-        
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <i class="fas fa-bullseye text-primary mb-3"></i>
-                    <h3>Precise Audience Targeting</h3>
-                    <p>Reach exactly the right people based on demographics, interests, behaviors, and connections with unparalleled precision.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <i class="fas fa-eye text-primary mb-3"></i>
-                    <h3>Increased Brand Awareness</h3>
-                    <p>Expand your reach and build recognition among potential customers at scale through Facebook and Instagram's vast user base.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <i class="fas fa-chart-line text-primary mb-3"></i>
-                    <h3>Lead Generation</h3>
-                    <p>Capture qualified leads directly on the platforms with lead generation ads and forms designed for conversion.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <i class="fas fa-sync-alt text-primary mb-3"></i>
-                    <h3>Retargeting Capabilities</h3>
-                    <p>Re-engage website visitors, email subscribers, and past customers with highly relevant messaging to drive conversions.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <i class="fas fa-dollar-sign text-primary mb-3"></i>
-                    <h3>Cost-Effective Advertising</h3>
-                    <p>Achieve lower cost-per-click and cost-per-acquisition compared to many other digital advertising platforms.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <i class="fas fa-tachometer-alt text-primary mb-3"></i>
-                    <h3>Rapid Testing & Optimization</h3>
-                    <p>Quickly test different creative approaches and audience segments to identify and scale what works best.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Call to Action -->
-<section class="cta py-5 bg-primary text-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2 text-center">
-                <h2>Ready to Transform Your Social Media Advertising?</h2>
-                <p class="lead mb-4">Get a complimentary social media advertising audit and personalized strategy recommendation.</p>
-                <a href="#inquiry" class="btn btn-light btn-lg rounded-pill px-5">Request Your Free Consultation</a>
-            </div>
+        <div class="cta-content" data-aos="fade-up">
+            <h2>Ready to Transform Your Social Advertising?</h2>
+            <p class="lead">Let's create campaigns that captivate your audience and drive measurable results.</p>
+            <a href="/pages/contact.php" class="cta-btn">Get Started Today</a>
         </div>
     </div>
 </section>
 
 <!-- FAQ Section -->
-<section class="faq-section py-5 bg-light">
+<section class="faq-section">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center mb-5">
-                <h2 class="faq-title">Frequently Asked Questions</h2>
-                <p class="faq-subtitle">Common questions about Facebook & Instagram advertising</p>
+        <div class="section-header">
+            <div class="faq-header" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p class="lead">Common questions about Facebook & Instagram advertising</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How much should I budget for Facebook and Instagram ads?</h3>
-                        <div class="toggle-btn"><span class="icon"></span></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Effective Facebook and Instagram ad budgets depend on your industry, goals, and audience. We typically recommend starting with a minimum of $1,500/month for businesses to generate meaningful data and results. This allows for proper testing of different audiences, creative approaches, and placements. As we identify winning combinations, we can scale budgets to capitalize on successful strategies. We work with you to establish a budget that aligns with your business objectives and expected ROI.</p>
-                    </div>
+        <div class="faq-container">
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>How much should I budget for Facebook and Instagram ads?</h3>
+                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
                 </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How long does it take to see results from social media advertising?</h3>
-                        <div class="toggle-btn"><span class="icon"></span></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Initial results like impressions, clicks, and engagement are visible almost immediately. However, the Facebook and Instagram algorithms require a "learning phase" of about 3-7 days to optimize delivery. Meaningful business results typically develop within 2-4 weeks as we gather sufficient data to refine targeting and creative elements. For e-commerce, results often come faster, while B2B and higher-consideration purchases may take longer. We set clear expectations and KPIs based on your specific business model and goals.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What's better for my business: Facebook or Instagram ads?</h3>
-                        <div class="toggle-btn"><span class="icon"></span></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>In most cases, a combined approach works best as Facebook Ads Manager allows you to run campaigns across both platforms. The ideal mix depends on your specific business, target audience, and objectives. Facebook typically offers broader reach and demographic diversity, while Instagram excels with younger audiences and visually-driven products. We recommend starting with both platforms, then allocating more budget to whichever performs better based on data. Our strategic approach tests multiple placements across both networks to determine the optimal mix for your business.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How do you measure the success of social media advertising campaigns?</h3>
-                        <div class="toggle-btn"><span class="icon"></span></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We measure success against the specific KPIs established in your strategy, which vary based on campaign objectives. For awareness campaigns, we track metrics like reach, frequency, and brand lift. For engagement, we monitor likes, comments, shares, and click-through rates. For conversion-focused campaigns, we measure leads generated, sales, return on ad spend (ROAS), and cost per acquisition (CPA). We use the Facebook Pixel and conversion API for accurate attribution and implement additional tracking as needed. All metrics are provided in comprehensive reports that demonstrate clear ROI.</p>
-                    </div>
+                <div class="faq-answer">
+                    <p>The ideal budget for Facebook and Instagram advertising depends on several factors including your industry, business goals, target audience size, and competitive landscape. For most businesses, we recommend starting with a minimum budget of $1,500-3,000 per month to generate meaningful data and results. This allows for proper testing of different audience segments, ad formats, and creative approaches. With social advertising, establishing a testing budget is crucial during the initial phase to identify winning combinations of targeting, placement, and creative elements. Once we've identified what works best, we can scale successful campaigns while pausing underperforming ones. Rather than focusing on a specific budget amount, we emphasize efficiency metrics like return on ad spend (ROAS) and cost per acquisition (CPA) to ensure your investment delivers tangible business results regardless of budget size.</p>
                 </div>
             </div>
             
-            <div class="col-lg-6">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How are you addressing iOS privacy changes and tracking limitations?</h3>
-                        <div class="toggle-btn"><span class="icon"></span></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We've adapted our approach to account for Apple's iOS privacy changes by implementing multiple tracking solutions. This includes setting up the Facebook Conversion API alongside the traditional pixel, utilizing UTM parameters for better attribution in Google Analytics, and incorporating server-side tracking where possible. We also put more emphasis on creative testing and audience expansion to compensate for reduced targeting precision. Finally, we employ alternative measurement methods like incrementality testing and lift studies to accurately assess campaign performance in this new privacy-focused landscape.</p>
-                    </div>
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>How long does it take to see results from social ads?</h3>
+                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
                 </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Do you create the ad creative or should I provide it?</h3>
-                        <div class="toggle-btn"><span class="icon"></span></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We offer complete creative services including copywriting, graphic design, and video production specifically optimized for Facebook and Instagram ads. Our team creates multiple ad variations for testing and continual performance improvement. While you're welcome to provide existing assets, our experience shows that platform-specific creative developed by our specialists typically outperforms repurposed content. We can also optimize your existing materials if you prefer. The creative development process involves collaborative feedback to ensure alignment with your brand guidelines and marketing objectives.</p>
-                    </div>
+                <div class="faq-answer">
+                    <p>Results timeline for Facebook and Instagram ads varies depending on your specific goals and campaign type. Initial data becomes available immediately after launch, but meaningful performance patterns typically emerge within specific timeframes. Facebook's learning phase usually requires 3-7 days as the algorithm optimizes delivery based on early results. For awareness and engagement campaigns, you can expect to see significant results within 1-2 weeks. For conversion-focused campaigns, performance patterns typically emerge within 2-3 weeks. E-commerce businesses often see faster returns, while lead generation for complex B2B services may require 4-8 weeks to establish reliable performance benchmarks. Throughout the campaign lifecycle, we continuously optimize based on accumulated data, meaning performance typically improves over time. We set clear expectations during our onboarding process and provide regular updates on campaign progress, ensuring you understand what to expect at each stage of the optimization process.</p>
                 </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How often do you update or refresh ad creative?</h3>
-                        <div class="toggle-btn"><span class="icon"></span></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We typically refresh ad creative every 4-6 weeks, though the exact timeline depends on performance data and audience fatigue indicators. Social media audiences tend to experience "ad fatigue" when seeing the same creative repeatedly, resulting in declining performance. We monitor metrics like frequency, click-through rate, and conversion rate to identify when new creative is needed. Our process involves continuously testing new variations alongside proven performers, gradually replacing underperforming ads while scaling successful ones. This approach ensures your campaigns remain fresh and effective.</p>
-                    </div>
+            </div>
+            
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>Which is better for my business, Facebook or Instagram ads?</h3>
+                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
                 </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Can you target my competitors' customers?</h3>
-                        <div class="toggle-btn"><span class="icon"></span></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>While Facebook doesn't allow direct targeting of specific competitors' customers, we can create strategic audience segments likely to include your competitors' audience. We do this through interest-based targeting that includes your competitors' brands, lookalike audiences based on your current customers, and targeting users with interests in multiple related products/services. We can also implement competitive conquest campaigns with messaging specifically designed to attract customers considering or using competitor products. Our comprehensive competitor analysis informs these strategies to effectively reach your competitors' audience segments.</p>
-                    </div>
+                <div class="faq-answer">
+                    <p>The optimal platform choice between Facebook and Instagram depends on your target audience, business type, and specific marketing objectives. Facebook offers broader demographic reach with 2.9 billion monthly active users across diverse age groups, making it effective for B2B services, local businesses, and reaching older demographics. Instagram's 1.4 billion users skew younger and engage more with visual content, making it ideal for fashion, beauty, travel, food, and lifestyle brands. Rather than choosing one platform exclusively, our approach typically involves testing both platforms initially, as the Meta ads system allows for cross-platform deployment with automatic optimization. We analyze performance data to determine which platform delivers better results for your specific business and then allocate budget accordingly. Some campaigns perform better with a 70/30 split favoring one platform, while others benefit from equal distribution. We continuously optimize this allocation based on performance data to maximize your return on ad spend.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>How do you measure the success of social ad campaigns?</h3>
+                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                </div>
+                <div class="faq-answer">
+                    <p>We measure social advertising success using metrics aligned with your specific business objectives. For awareness campaigns, we track impressions, reach, frequency, brand lift, and audience growth. For engagement campaigns, we monitor engagement rate, click-through rate, video view duration, and social interaction metrics. For conversion campaigns, we measure leads generated, cost per acquisition, conversion rate, return on ad spend (ROAS), and ultimately, revenue attribution. Beyond platform metrics, we implement comprehensive tracking through the Meta pixel, conversion API, UTM parameters, and CRM integration to provide accurate multi-touch attribution. Our reporting combines both technical campaign metrics and business outcome metrics that connect directly to your bottom line. We establish clear KPIs at the beginning of our engagement and provide regular performance reports with actionable insights, ensuring you understand not just what happened, but why it happened and how we're optimizing based on these insights.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>How do you handle creative development and testing?</h3>
+                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                </div>
+                <div class="faq-answer">
+                    <p>Our approach to creative development and testing follows a systematic methodology designed to identify the most effective messaging and visuals for your audience. We begin with a creative strategy session to establish your brand voice, value proposition, and key selling points. Based on this foundation, we develop multiple creative concepts with variations in imagery, copy, call-to-action, and format (image, carousel, video, etc.). Initial campaigns include a testing matrix that evaluates these creative elements while controlling for audience and placement variables. We implement A/B testing using Facebook's split testing feature to ensure statistically significant results, typically running tests for 5-7 days to gather sufficient data. Our creative refresh schedule prevents ad fatigue, with new concepts introduced regularly based on performance metrics. Throughout this process, we document creative insights in a "learning library" that informs future campaigns, creating a cycle of continuous improvement. For clients who have their own creative assets, we can work with existing materials, though we recommend testing our specialized social ad creative against current assets to identify performance improvements.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<?php
-// Display Why Hire Us section if content is available
-if (!empty($why_hire_us)) {
-    renderWhyHireUs($serviceName, $why_hire_us);
-}
-?>
-
-<!-- Include footer -->
 <?php require_once '../../../../components/footer.php'; ?> 
