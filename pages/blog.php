@@ -34,22 +34,28 @@ $seo_data = [
 require_once '../components/header.php';
 ?>
 
-<!-- Page Header -->
-<section class="page-header section-spacing">
-    <div class="content-container">
-        <div class="header-grid">
-            <div class="page-header-content text-center">
-                <h1 class="page-title">Our Blog</h1>
-                <p class="page-description">Insights, tips, and strategies to help your business grow online</p>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-content" data-aos="fade-right">
+                <h1>Our <span class="highlight">Blog</span></h1>
+                <p class="lead">Insights, tips, and strategies to help your business grow online</p>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="../assets/images/blog-header.svg" alt="Blog" class="floating-image">
+                <div class="image-glow"></div>
+                <div class="decoration-circle-1"></div>
+                <div class="decoration-circle-2"></div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Blog Categories -->
-<section class="blog-categories section-spacing-sm">
-    <div class="content-container">
-        <div class="categories-container text-center">
+<section class="features-section">
+    <div class="container">
+        <div class="blog-categories" data-aos="fade-up">
             <a href="/blog" class="category-btn <?php echo !$current_category ? 'active' : ''; ?>">All</a>
             <?php
             $categories_query = "SELECT * FROM blog_categories ORDER BY name";
@@ -65,55 +71,68 @@ require_once '../components/header.php';
 </section>
 
 <!-- Blog Grid -->
-<section class="blog-grid section-spacing">
-    <div class="content-container">
-        <div class="posts-grid">
-            <?php foreach ($posts as $post): ?>
-                <div class="post-item" data-aos="fade-up">
-                    <div class="post-card">
-                        <?php if ($post['featured_image']): ?>
-                            <div class="post-image">
-                                <img src="<?php echo htmlspecialchars($post['featured_image']); ?>" 
-                                     alt="<?php echo htmlspecialchars($post['title']); ?>">
-                            </div>
-                        <?php endif; ?>
-                        <div class="post-content">
-                            <div class="post-meta">
-                                <span class="post-category"><?php echo htmlspecialchars($post['category']); ?></span>
-                                <span class="post-date">
-                                    <?php echo date('M d, Y', strtotime($post['published_date'])); ?>
-                                </span>
-                            </div>
-                            <h3 class="post-title">
-                                <a href="/blog/<?php echo htmlspecialchars($post['slug']); ?>">
-                                    <?php echo htmlspecialchars($post['title']); ?>
-                                </a>
-                            </h3>
-                            <p class="post-excerpt">
-                                <?php echo htmlspecialchars($post['excerpt']); ?>
-                            </p>
-                            <div class="post-footer">
-                                <div class="post-author">
-                                    By <?php echo htmlspecialchars($post['author']); ?>
+<section class="services-section">
+    <div class="container">
+        <div class="section-header">
+            <div class="services-header" data-aos="fade-up">
+                <h2>Latest Articles</h2>
+                <p class="lead">Expert insights to help your business succeed online</p>
+            </div>
+        </div>
+        
+        <div class="services-grid blog-posts-grid">
+            <?php if (empty($posts)): ?>
+                <div class="no-posts" data-aos="fade-up">
+                    <p>No posts found. Please check back soon for new content!</p>
+                </div>
+            <?php else: ?>
+                <?php foreach ($posts as $post): ?>
+                    <div class="service-item blog-post-item" data-aos="fade-up">
+                        <div class="service-card blog-post-card">
+                            <?php if ($post['featured_image']): ?>
+                                <div class="post-image">
+                                    <img src="<?php echo htmlspecialchars($post['featured_image']); ?>" 
+                                         alt="<?php echo htmlspecialchars($post['title']); ?>">
                                 </div>
-                                <a href="/blog/<?php echo htmlspecialchars($post['slug']); ?>" 
-                                   class="read-more-btn">
-                                    Read More
-                                </a>
+                            <?php endif; ?>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-category"><?php echo htmlspecialchars($post['category']); ?></span>
+                                    <span class="post-date">
+                                        <i class="far fa-calendar-alt"></i> <?php echo date('M d, Y', strtotime($post['published_date'])); ?>
+                                    </span>
+                                </div>
+                                <h3 class="post-title">
+                                    <a href="/blog/<?php echo htmlspecialchars($post['slug']); ?>">
+                                        <?php echo htmlspecialchars($post['title']); ?>
+                                    </a>
+                                </h3>
+                                <p class="post-excerpt">
+                                    <?php echo htmlspecialchars($post['excerpt']); ?>
+                                </p>
+                                <div class="post-footer">
+                                    <div class="post-author">
+                                        <i class="far fa-user"></i> By <?php echo htmlspecialchars($post['author']); ?>
+                                    </div>
+                                    <a href="/blog/<?php echo htmlspecialchars($post['slug']); ?>" 
+                                       class="read-more-btn">
+                                        Read More <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            <?php endforeach; ?>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </div>
 
         <!-- Pagination -->
         <?php if ($total_pages > 1): ?>
-            <div class="pagination-container">
+            <div class="pagination-container" data-aos="fade-up">
                 <div class="pagination">
                     <?php if ($page > 1): ?>
                         <a href="?page=<?php echo $page - 1; ?><?php echo $current_category ? '&category=' . $current_category : ''; ?>" class="pagination-item prev">
-                            Previous
+                            <i class="fas fa-chevron-left"></i> Previous
                         </a>
                     <?php endif; ?>
                     
@@ -125,12 +144,25 @@ require_once '../components/header.php';
                     
                     <?php if ($page < $total_pages): ?>
                         <a href="?page=<?php echo $page + 1; ?><?php echo $current_category ? '&category=' . $current_category : ''; ?>" class="pagination-item next">
-                            Next
+                            Next <i class="fas fa-chevron-right"></i>
                         </a>
                     <?php endif; ?>
                 </div>
             </div>
         <?php endif; ?>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Want to Contribute?</h2>
+            <p class="lead">Share your expertise with our community. We're always looking for guest writers.</p>
+            <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">
+                Get in Touch
+            </a>
+        </div>
     </div>
 </section>
 

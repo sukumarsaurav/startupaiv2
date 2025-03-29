@@ -12,6 +12,12 @@ $pageTitle = 'Our Portfolio - StartupAI';
 $pageDescription = 'Explore our portfolio of web development, AI solutions, and digital marketing projects';
 $pageKeywords = 'portfolio, projects, web development, AI solutions, digital marketing, case studies';
 
+// SEO Data
+$seo_data = [
+    'description' => $pageDescription,
+    'keywords' => $pageKeywords
+];
+
 // Include header
 include_once '../components/header.php';
 
@@ -68,25 +74,35 @@ $projects = [
 ];
 ?>
 
-<!-- Page Header -->
-<section class="page-header section-spacing">
-    <div class="content-container">
-        <div class="header-grid">
-            <div class="page-header-content" data-aos="fade-right">
-                <h1 class="page-title">Our Portfolio</h1>
-                <p class="page-description">Showcasing our best work and successful projects</p>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-content" data-aos="fade-right">
+                <h1>Our <span class="highlight">Portfolio</span></h1>
+                <p class="lead">Showcasing our best work and successful projects</p>
             </div>
-            <div class="page-header-image" data-aos="fade-left">
-                <img src="../assets/images/portfolio-header.svg" alt="Portfolio" class="featured-image">
+            <div class="hero-image" data-aos="fade-left">
+                <img src="../assets/images/portfolio-header.svg" alt="Portfolio" class="floating-image">
+                <div class="image-glow"></div>
+                <div class="decoration-circle-1"></div>
+                <div class="decoration-circle-2"></div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Portfolio Filter -->
-<section class="portfolio-filter section-spacing">
-    <div class="content-container">
-        <div class="filter-container text-center" data-aos="fade-up">
+<section class="features-section">
+    <div class="container">
+        <div class="section-header">
+            <div class="features-header" data-aos="fade-up">
+                <h2>Our Work</h2>
+                <p class="lead">Browse our projects by category</p>
+            </div>
+        </div>
+        
+        <div class="filter-container" data-aos="fade-up">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="Web Development">Web Development</button>
             <button class="filter-btn" data-filter="AI Solutions">AI Solutions</button>
@@ -106,7 +122,7 @@ $projects = [
                         <h3 class="portfolio-title"><?php echo htmlspecialchars($project['title']); ?></h3>
                         <p class="portfolio-description"><?php echo htmlspecialchars($project['description']); ?></p>
                         <button class="view-details-btn" data-bs-toggle="modal" data-bs-target="#projectModal<?php echo $loop = isset($loop) ? $loop + 1 : 1; ?>">
-                            View Details
+                            View Details <i class="fas fa-arrow-right"></i>
                         </button>
                     </div>
                 </div>
@@ -123,7 +139,7 @@ $projects = [
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title"><?php echo htmlspecialchars($project['title']); ?></h5>
+                <h3 class="modal-title"><?php echo htmlspecialchars($project['title']); ?></h3>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -133,22 +149,23 @@ $projects = [
                     </div>
                     <div class="modal-content">
                         <div class="project-detail">
-                            <h6>Project Description</h6>
+                            <h4>Project Description</h4>
                             <p><?php echo htmlspecialchars($project['description']); ?></p>
                         </div>
                         
                         <div class="project-detail">
-                            <h6>Technologies Used</h6>
+                            <h4>Technologies Used</h4>
                             <p><?php echo htmlspecialchars($project['technology']); ?></p>
                         </div>
                         
                         <div class="project-detail">
-                            <h6>Client</h6>
+                            <h4>Client</h4>
                             <p><?php echo htmlspecialchars($project['client']); ?></p>
                         </div>
                         
                         <div class="project-actions">
                             <a href="#" class="btn-primary">Visit Project</a>
+                            <button type="button" class="btn-outline" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -160,14 +177,12 @@ $projects = [
 <?php endforeach; ?>
 
 <!-- CTA Section -->
-<section class="cta-section section-spacing section-light">
-    <div class="content-container">
-        <div class="cta-grid">
-            <div class="cta-content text-center">
-                <h2 class="cta-title">Ready to Start Your Project?</h2>
-                <p class="cta-description">Let us help you create a custom solution tailored to your business needs.</p>
-                <a href="/pages/contact.php" class="btn-primary btn-large">Get in Touch</a>
-            </div>
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Start Your Project?</h2>
+            <p class="lead">Let us help you create a custom solution tailored to your business needs.</p>
+            <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">Get in Touch</a>
         </div>
     </div>
 </section>

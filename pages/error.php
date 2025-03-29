@@ -41,50 +41,85 @@ if (empty($error_message)) {
 }
 
 // Set page variables
-$page_title = "Error {$error_code} - {$error_title} | " . $site_config['site_name'];
-$page_description = "Error {$error_code} - {$error_title}";
-$page_keywords = "error, {$error_code}, {$error_title}";
+$pageTitle = "Error {$error_code} - {$error_title} | StartupAI";
+$pageDescription = "Error {$error_code} - {$error_title}";
+$pageKeywords = "error, {$error_code}, {$error_title}";
+
+// SEO Data
+$seo_data = [
+    'description' => $pageDescription,
+    'keywords' => $pageKeywords
+];
 
 // Include the header
 include_once BASEPATH . '/components/header.php';
 ?>
 
-<!-- Page Header -->
-<section class="page-header section-spacing section-light">
-    <div class="content-container">
-        <div class="header-grid">
-            <div class="page-header-content text-center">
-                <h1 class="page-title">Error <?php echo $error_code; ?></h1>
-                <nav class="breadcrumb-nav">
-                    <ol class="breadcrumb-list">
-                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item current">Error <?php echo $error_code; ?></li>
-                    </ol>
-                </nav>
+<!-- Hero Section -->
+<section class="hero-section error-hero">
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-content" data-aos="fade-right">
+                <h1>Error <span class="highlight"><?php echo $error_code; ?></span></h1>
+                <p class="lead"><?php echo $error_title; ?></p>
+                <div class="hero-buttons">
+                    <button onclick="history.back()" class="btn btn-outline">
+                        <i class="fas fa-arrow-left"></i> Go Back
+                    </button>
+                    <a href="/" class="btn btn-primary">
+                        <i class="fas fa-home"></i> Return to Homepage
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="../assets/images/error-illustration.svg" alt="Error <?php echo $error_code; ?>" class="floating-image">
+                <div class="image-glow"></div>
+                <div class="decoration-circle-1"></div>
+                <div class="decoration-circle-2"></div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Error Section -->
-<section class="error-section section-spacing">
-    <div class="content-container">
-        <div class="error-container">
-            <div class="error-content text-center">
-                <h2 class="error-title"><?php echo $error_title; ?></h2>
-                <div class="error-code"><?php echo $error_code; ?></div>
-                <p class="error-message"><?php echo htmlspecialchars($error_message); ?></p>
+<section class="overview-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>What Happened?</h2>
+            <p class="section-lead">Here's what might have gone wrong</p>
+        </div>
+        
+        <div class="overview-grid">
+            <div class="overview-card primary-card" data-aos="fade-up">
+                <div class="card-decoration"></div>
+                <h3>Error Details</h3>
+                <p><?php echo htmlspecialchars($error_message); ?></p>
                 <p class="error-note">Our technical team has been notified of this issue.</p>
-                
-                <div class="error-actions">
-                    <button onclick="history.back()" class="btn-secondary">
-                        <i class="fas fa-arrow-left"></i> Go Back
-                    </button>
-                    <a href="/" class="btn-primary">
-                        <i class="fas fa-home"></i> Return to Homepage
-                    </a>
-                </div>
             </div>
+            
+            <div class="overview-card secondary-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-decoration"></div>
+                <h3>What You Can Do</h3>
+                <ul class="error-suggestions">
+                    <li>Check that the URL you entered is correct</li>
+                    <li>Return to the previous page and try again</li>
+                    <li>Go to our homepage and navigate from there</li>
+                    <li>Contact us if the problem persists</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Need Help?</h2>
+            <p class="lead">We're here to assist you with any questions or concerns</p>
+            <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">
+                Contact Support
+            </a>
         </div>
     </div>
 </section>
