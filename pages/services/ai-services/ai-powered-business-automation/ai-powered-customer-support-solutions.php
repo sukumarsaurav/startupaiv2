@@ -19,40 +19,72 @@ $seo_data = [
 require_once '../../../../components/header.php';
 ?>
 
-<!-- Page Header -->
-<section class="page-header">
-    <div class="content-container">
-        <div class="header-grid">
-            <div class="page-header-content" data-aos="fade-right">
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="blob-1"></div>
+    <div class="blob-2"></div>
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-content" data-aos="fade-right">
+                <span class="service-category">AI Business Automation</span>
                 <h1><?php echo $serviceName; ?></h1>
-                <p>Intelligent automation for exceptional customer experiences</p>
-                <a href="/pages/contact.php" class="get-started-btn">Transform Your Customer Support</a>
+                <p class="lead">Intelligent automation for exceptional customer experiences available 24/7 across all channels</p>
+                <div class="hero-buttons">
+                    <a href="/pages/contact.php" class="btn btn-primary">Transform Your Support</a>
+                    <a href="/pages/portfolio.php" class="btn btn-outline">View Success Stories</a>
+                </div>
+                <div class="tech-stack">
+                    <span>Technologies:</span>
+                    <img src="/assets/images/tech/nlp.png" alt="Natural Language Processing" title="NLP">
+                    <img src="/assets/images/tech/machine-learning.png" alt="Machine Learning" title="Machine Learning">
+                    <img src="/assets/images/tech/python.png" alt="Python" title="Python">
+                    <img src="/assets/images/tech/dialogflow.png" alt="Dialogflow" title="Dialogflow">
+                </div>
             </div>
-            <div class="page-header-image" data-aos="fade-left">
-                <img src="/assets/images/services/customer-support.svg" alt="AI-Powered Customer Support" class="animate-float">
+            <div class="hero-image" data-aos="fade-left">
+                <img src="/assets/images/services/customer-support.svg" alt="AI-Powered Customer Support" class="floating-image">
             </div>
         </div>
     </div>
 </section>
 
 <!-- Service Overview -->
-<section class="service-overview">
-    <div class="content-container">
+<section class="overview-section">
+    <div class="container">
         <div class="section-header">
-            <div class="service-overview-header" data-aos="fade-up">
+            <div class="overview-header" data-aos="fade-up">
                 <h2>Revolutionize Your Customer Support with AI</h2>
-                <p class="lead">Our AI-powered customer support solutions help businesses deliver exceptional service experiences while reducing costs and operational complexity.</p>
+                <p class="section-lead">Our AI-powered customer support solutions help businesses deliver exceptional service experiences while reducing costs and operational complexity.</p>
             </div>
         </div>
         
-        <div class="overview-grid">
-            <div class="service-overview-content" data-aos="fade-up">
+        <div class="overview-cards">
+            <div class="overview-card primary-card" data-aos="fade-up">
+                <div class="card-icon">
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
                 <h3>The Challenge</h3>
-                <p>Today's customers expect immediate, personalized support across multiple channels at any time of day. Traditional customer service models struggle with scaling to meet these demands, leading to long wait times, inconsistent responses, and frustrated customers. Support teams face increasing ticket volumes without proportional increases in resources.</p>
+                <p>Today's customers expect immediate, personalized support across multiple channels at any time of day. Traditional customer service models struggle to meet these demands.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Rising customer expectations</li>
+                    <li><i class="fas fa-check-circle"></i> Increasing support volumes</li>
+                    <li><i class="fas fa-check-circle"></i> Multi-channel support demands</li>
+                </ul>
             </div>
-            <div class="service-overview-content" data-aos="fade-up" data-aos-delay="100">
+            
+            <div class="overview-card secondary-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
                 <h3>Our Solution</h3>
-                <p>Our AI-powered customer support platform combines conversational AI, machine learning, and automation to create intelligent support experiences. We help you automate routine inquiries, augment agent capabilities, and provide personalized, contextual assistance across all customer touchpoints – creating better experiences while reducing costs.</p>
+                <p>Our AI-powered platform combines conversational AI, machine learning, and automation to create intelligent support experiences that scale with your business.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> 24/7 automated responses</li>
+                    <li><i class="fas fa-check-circle"></i> Personalized customer interactions</li>
+                    <li><i class="fas fa-check-circle"></i> Seamless agent augmentation</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -60,11 +92,11 @@ require_once '../../../../components/header.php';
 
 <!-- Services Section -->
 <section class="services-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="services-header" data-aos="fade-up">
                 <h2>Our AI Customer Support Solutions</h2>
-                <p class="lead">Comprehensive solutions to transform your customer service operations</p>
+                <p class="section-lead">Comprehensive solutions to transform your customer service operations</p>
             </div>
         </div>
         
@@ -136,83 +168,152 @@ require_once '../../../../components/header.php';
     </div>
 </section>
 
-<!-- Implementation Process -->
-<section class="implementation-process">
-    <div class="content-container">
+<!-- Process Section -->
+<section class="process-section">
+    <div class="container">
         <div class="section-header">
-            <div class="implementation-header" data-aos="fade-up">
+            <div class="process-header" data-aos="fade-up">
                 <h2>Our AI Support Implementation Approach</h2>
-                <p class="lead">A methodical process to transform your customer support operations</p>
+                <p class="section-lead">A methodical process to transform your customer support operations</p>
             </div>
         </div>
         
-        <div class="process-grid">
-            <div class="process-item" data-aos="fade-up">
-                <div class="process-card">
-                    <div class="process-number">01</div>
-                    <h3>Support Analysis & Strategy</h3>
-                    <p>We thoroughly analyze your current support operations, customer journeys, and pain points to develop an AI implementation strategy aligned with your business goals.</p>
-                    <ul class="process-features">
-                        <li>Support interaction analysis</li>
-                        <li>Common inquiry identification</li>
-                        <li>Channel assessment</li>
-                        <li>ROI opportunity mapping</li>
+        <div class="process-timeline">
+            <!-- Timeline Line -->
+            <div class="timeline-line"></div>
+            
+            <div class="process-grid">
+                <div class="process-card-wrapper" data-aos="fade-up">
+                    <div class="process-number">1</div>
+                    <div class="process-card">
+                        <h3>Support Analysis & Strategy</h3>
+                        <p>We thoroughly analyze your current support operations, customer journeys, and pain points to develop an AI implementation strategy aligned with your business goals.</p>
+                        <ul class="process-list">
+                            <li>Support interaction analysis</li>
+                            <li>Common inquiry identification</li>
+                            <li>Channel assessment</li>
+                            <li>ROI opportunity mapping</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-number">2</div>
+                    <div class="process-card">
+                        <h3>AI Solution Design</h3>
+                        <p>We design a custom AI support solution tailored to your specific needs, including conversational flows, integration points, and system architecture.</p>
+                        <ul class="process-list">
+                            <li>Conversation design</li>
+                            <li>Integration architecture</li>
+                            <li>Knowledge base structure</li>
+                            <li>Automation workflow mapping</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-number">3</div>
+                    <div class="process-card">
+                        <h3>AI Training & Implementation</h3>
+                        <p>We build and train the AI components of your solution using your historical support data to ensure high accuracy and relevance from day one.</p>
+                        <ul class="process-list">
+                            <li>Model training with historical data</li>
+                            <li>Integration with support systems</li>
+                            <li>Agent training and enablement</li>
+                            <li>Phased deployment strategy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-number">4</div>
+                    <div class="process-card">
+                        <h3>Testing & Optimization</h3>
+                        <p>We rigorously test the solution across various scenarios and continuously optimize based on real-world performance and feedback.</p>
+                        <ul class="process-list">
+                            <li>Accuracy testing</li>
+                            <li>A/B testing of responses</li>
+                            <li>Performance monitoring</li>
+                            <li>Iterative refinement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technologies Section -->
+<section class="technologies-section">
+    <div class="container">
+        <div class="section-header">
+            <div class="technologies-header" data-aos="fade-up">
+                <h2>Technologies We Use</h2>
+                <p class="section-lead">Advanced technologies that power our AI customer support solutions</p>
+            </div>
+        </div>
+        
+        <div class="tech-grid">
+            <div class="tech-item" data-aos="fade-up">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Conversational AI Platforms</h3>
+                    <ul>
+                        <li>Google Dialogflow</li>
+                        <li>IBM Watson Assistant</li>
+                        <li>Microsoft Bot Framework</li>
+                        <li>Rasa</li>
+                        <li>Custom NLU Engines</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="process-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-card">
-                    <div class="process-number">02</div>
-                    <h3>AI Solution Design</h3>
-                    <p>We design a custom AI support solution tailored to your specific needs, including conversational flows, integration points, and system architecture.</p>
-                    <ul class="process-features">
-                        <li>Conversation design</li>
-                        <li>Integration architecture</li>
-                        <li>Knowledge base structure</li>
-                        <li>Automation workflow mapping</li>
+            <div class="tech-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <ul>
+                        <li>Natural Language Processing</li>
+                        <li>Sentiment Analysis</li>
+                        <li>Intent Classification</li>
+                        <li>Entity Recognition</li>
+                        <li>Predictive Analytics</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-card">
-                    <div class="process-number">03</div>
-                    <h3>AI Training & Implementation</h3>
-                    <p>We build and train the AI components of your solution using your historical support data to ensure high accuracy and relevance from day one.</p>
-                    <ul class="process-features">
-                        <li>Model training with historical data</li>
-                        <li>Integration with support systems</li>
-                        <li>Agent training and enablement</li>
-                        <li>Phased deployment strategy</li>
+            <div class="tech-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Integration Technologies</h3>
+                    <ul>
+                        <li>CRM Systems (Salesforce, etc.)</li>
+                        <li>Help Desk Systems (Zendesk, etc.)</li>
+                        <li>Knowledge Bases</li>
+                        <li>RESTful APIs</li>
+                        <li>Webhook Systems</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-card">
-                    <div class="process-number">04</div>
-                    <h3>Testing & Optimization</h3>
-                    <p>We rigorously test the solution across various scenarios and continuously optimize based on real-world performance and feedback.</p>
-                    <ul class="process-features">
-                        <li>Accuracy testing</li>
-                        <li>A/B testing of responses</li>
-                        <li>Performance monitoring</li>
-                        <li>Iterative refinement</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="process-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="process-card">
-                    <div class="process-number">05</div>
-                    <h3>Continuous Improvement</h3>
-                    <p>We implement ongoing monitoring, analysis, and enhancement of your AI support systems to ensure they continue to deliver value as your business evolves.</p>
-                    <ul class="process-features">
-                        <li>Regular performance review</li>
-                        <li>Knowledge base updates</li>
-                        <li>Model retraining</li>
-                        <li>Feature enhancement</li>
+            <div class="tech-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Channel Technologies</h3>
+                    <ul>
+                        <li>Website Chat Integrations</li>
+                        <li>Messaging Platforms</li>
+                        <li>Social Media APIs</li>
+                        <li>Voice Platforms</li>
+                        <li>SMS Systems</li>
                     </ul>
                 </div>
             </div>
@@ -220,75 +321,65 @@ require_once '../../../../components/header.php';
     </div>
 </section>
 
-<!-- Key Features Section -->
-<section class="features-section">
-    <div class="content-container">
-        <div class="section-header">
-            <div class="features-header" data-aos="fade-up">
-                <h2>Key Features of Our AI Support Platform</h2>
-                <p class="lead">Advanced capabilities that set our solutions apart</p>
-            </div>
+<!-- Technical Standards Section -->
+<section class="standards-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our AI Support Technical Standards</h2>
+            <p class="section-lead">The principles and practices that guide our AI support solutions</p>
         </div>
         
-        <div class="features-grid">
-            <div class="feature-item" data-aos="fade-up">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Natural Language Understanding</h3>
-                    <p>Our AI understands customer intent, context, and sentiment—even with typos, slang, and industry-specific terminology.</p>
+        <div class="standards-grid">
+            <div class="standard-item" data-aos="fade-up">
+                <div class="standard-icon">
+                    <i class="fas fa-shield-alt"></i>
                 </div>
+                <h3>Data Security & Privacy</h3>
+                <ul class="standard-list">
+                    <li>End-to-end data encryption</li>
+                    <li>GDPR/CCPA compliance protocols</li>
+                    <li>Secure customer data handling</li>
+                    <li>Anonymization techniques</li>
+                </ul>
             </div>
             
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Omnichannel Support</h3>
-                    <p>Deliver consistent AI-powered support across websites, mobile apps, social media, messaging platforms, and voice channels.</p>
+            <div class="standard-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="standard-icon">
+                    <i class="fas fa-bullseye"></i>
                 </div>
+                <h3>AI Accuracy & Reliability</h3>
+                <ul class="standard-list">
+                    <li>Minimum 95% intent recognition accuracy</li>
+                    <li>Continuous model retraining</li>
+                    <li>Fallback handling protocols</li>
+                    <li>Confidence threshold optimization</li>
+                </ul>
             </div>
             
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Seamless Integrations</h3>
-                    <p>Connect with CRM systems, ticketing platforms, knowledge bases, and other business tools for a unified support ecosystem.</p>
+            <div class="standard-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="standard-icon">
+                    <i class="fas fa-tachometer-alt"></i>
                 </div>
+                <h3>Performance Optimization</h3>
+                <ul class="standard-list">
+                    <li>Sub-second response times</li>
+                    <li>High concurrency support</li>
+                    <li>Load balancing implementation</li>
+                    <li>Caching strategies</li>
+                </ul>
             </div>
             
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-user-check"></i>
-                    </div>
-                    <h3>Personalization Engine</h3>
-                    <p>Deliver tailored support experiences based on customer history, preferences, and behavior patterns.</p>
+            <div class="standard-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="standard-icon">
+                    <i class="fas fa-expand-arrows-alt"></i>
                 </div>
-            </div>
-            
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-language"></i>
-                    </div>
-                    <h3>Multilingual Support</h3>
-                    <p>Provide support in multiple languages with AI that understands nuances, idioms, and cultural context.</p>
-                </div>
-            </div>
-            
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-hand-paper"></i>
-                    </div>
-                    <h3>Human Handoff</h3>
-                    <p>Seamlessly transition complex conversations to human agents with complete context preservation.</p>
-                </div>
+                <h3>Scalability & Integration</h3>
+                <ul class="standard-list">
+                    <li>Cloud-native architecture</li>
+                    <li>Microservices-based design</li>
+                    <li>API-first approach</li>
+                    <li>Seamless CRM/Helpdesk integration</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -296,72 +387,66 @@ require_once '../../../../components/header.php';
 
 <!-- Benefits Section -->
 <section class="benefits-section">
-    <div class="content-container">
-        <div class="section-header">
-            <div class="benefits-header" data-aos="fade-up">
-                <h2>Benefits of AI-Powered Customer Support</h2>
-                <p class="lead">Transform your customer experience while optimizing operations</p>
-            </div>
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Benefits of AI-Powered Customer Support</h2>
+            <p class="section-lead">How intelligent support transforms your customer experience and operations</p>
         </div>
         
         <div class="benefits-grid">
-            <div class="benefit-item" data-aos="fade-up">
+            <div class="benefit-card-wrapper primary-benefit" data-aos="fade-right" data-aos-duration="800">
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-clock"></i>
                     </div>
-                    <h3>24/7 Support Availability</h3>
-                    <p>Provide instant assistance to customers around the clock without increasing staffing costs.</p>
-                </div>
-            </div>
-            
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-tachometer-alt"></i>
+                    <h3>24/7 Instant Support</h3>
+                    <p>AI enables round-the-clock customer support without increasing staff costs. Businesses implementing AI support solutions report 85% faster average response times and 65% improvement in customer satisfaction scores.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge">85% faster responses</span>
+                        <span class="stat-badge">65% higher CSAT</span>
                     </div>
-                    <h3>Faster Resolution Times</h3>
-                    <p>Reduce average resolution times by up to 80% through instant responses and AI-augmented agent workflows.</p>
                 </div>
             </div>
-            
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="benefit-card-wrapper secondary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
+                    <div class="benefit-icon secondary-icon">
                         <i class="fas fa-dollar-sign"></i>
                     </div>
-                    <h3>Reduced Support Costs</h3>
-                    <p>Lower operational costs by automating routine inquiries and increasing agent productivity.</p>
-                </div>
-            </div>
-            
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-thumbs-up"></i>
+                    <h3>Operational Cost Reduction</h3>
+                    <p>AI automation handles routine inquiries, freeing human agents for complex issues. Companies using AI support solutions achieve 40-60% cost reduction while maintaining or improving service quality.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge secondary-badge">40-60% cost reduction</span>
+                        <span class="stat-badge secondary-badge">70% ticket deflection</span>
                     </div>
-                    <h3>Improved Customer Satisfaction</h3>
-                    <p>Enhance CSAT scores through consistent, accurate, and personalized support experiences.</p>
                 </div>
             </div>
-            
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
+
+            <div class="benefit-card-wrapper tertiary-benefit" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
+                    <div class="benefit-icon tertiary-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3>Scalable Support Operations</h3>
-                    <p>Handle growing support volume without proportional increases in headcount or resources.</p>
+                    <p>AI systems scale instantly to handle volume spikes without additional resources. Businesses using AI support can handle 300% more inquiries with the same team size during peak periods.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge tertiary-badge">300% scalability</span>
+                        <span class="stat-badge tertiary-badge">95% consistency</span>
+                    </div>
                 </div>
             </div>
-            
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="500">
+
+            <div class="benefit-card-wrapper quaternary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-database"></i>
+                    <div class="benefit-icon quaternary-icon">
+                        <i class="fas fa-user-friends"></i>
                     </div>
-                    <h3>Valuable Customer Insights</h3>
-                    <p>Uncover trends, identify product issues, and capture voice-of-customer data at scale.</p>
+                    <h3>Personalized Customer Experiences</h3>
+                    <p>AI analyzes customer history and context to deliver personalized support at scale. Organizations implementing AI support see 50% higher customer retention rates and 35% increase in upsell opportunities.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge quaternary-badge">50% better retention</span>
+                        <span class="stat-badge quaternary-badge">35% more upsells</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -370,77 +455,79 @@ require_once '../../../../components/header.php';
 
 <!-- CTA Section -->
 <section class="cta-section">
-    <div class="content-container">
-        <div class="cta-content" data-aos="fade-up">
+    <div class="container">
+        <div class="cta-content">
             <h2>Ready to Transform Your Customer Support?</h2>
-            <p class="lead">Let's discuss how our AI solutions can help you deliver exceptional support experiences while reducing costs.</p>
-            <a href="/pages/contact.php" class="cta-btn">Schedule a Consultation</a>
+            <p class="lead">Let's discuss how AI can revolutionize your customer service operations.</p>
+            <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">
+                Schedule a Consultation
+            </a>
         </div>
     </div>
 </section>
 
 <!-- FAQ Section -->
 <section class="faq-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="faq-header" data-aos="fade-up">
                 <h2>Frequently Asked Questions</h2>
-                <p class="lead">Common questions about AI-powered customer support</p>
+                <p class="section-lead">Common questions about AI-powered customer support</p>
             </div>
         </div>
-        
         <div class="faq-container">
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item active">
                 <div class="faq-question">
-                    <h3>Will AI completely replace our human customer support team?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>How quickly can AI be implemented in our existing support system?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>No, our AI solutions are designed to complement and enhance human support teams, not replace them. The most effective customer support strategy combines AI automation for routine, repetitive inquiries with human agents for complex issues requiring empathy and critical thinking. This hybrid approach typically allows human agents to focus on high-value interactions while AI handles up to 70-80% of routine inquiries. The result is more efficient operations and better utilization of your human talent for situations where they can make the biggest impact.</p>
+                    <p>Implementation timelines vary based on the complexity of your support operations and the depth of integration required. Basic implementations can be completed in 4-6 weeks, while more complex enterprise integrations typically take 2-3 months. We follow a phased approach that allows you to see value quickly while building toward a comprehensive solution.</p>
                 </div>
             </div>
-            
-            <div class="faq-item" data-aos="fade-up">
+
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How long does it take to implement an AI customer support solution?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>Will AI replace our human support agents?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Implementation timelines vary based on the complexity of your support operations, the number of channels, and the level of integration required. Typically, a basic AI support implementation can be completed in 4-8 weeks, while more complex enterprise deployments may take 3-6 months. We follow a phased approach, often starting with a single channel or department to demonstrate value quickly, then expanding across the organization. Our methodology includes data analysis, AI training, integration with existing systems, testing, and continuous optimization to ensure maximum effectiveness.</p>
+                    <p>AI is designed to complement and enhance human agents, not replace them. Our AI solutions handle routine, repetitive inquiries that don't require human empathy or complex problem-solving, allowing your agents to focus on high-value interactions where human touch makes the difference. Most organizations find that AI implementation leads to better agent job satisfaction as it eliminates mundane tasks and allows them to focus on more meaningful work.</p>
                 </div>
             </div>
-            
-            <div class="faq-item" data-aos="fade-up">
+
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How does the AI learn and improve over time?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>How accurate are your AI solutions in understanding customer inquiries?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Our AI support solutions employ continuous learning mechanisms to improve over time. They learn from every customer interaction, applying machine learning to identify patterns and refine responses. Human feedback loops are integrated throughout the system, allowing agents to correct or improve AI responses. We also conduct regular reviews of performance metrics and customer feedback to identify improvement opportunities. Additionally, as your products, services, and knowledge base evolve, the AI is updated to incorporate new information, ensuring it remains accurate and relevant to your customers' needs.</p>
+                    <p>Our AI solutions typically achieve 95%+ accuracy in understanding customer intent after initial training. We use a combination of machine learning, natural language processing, and continuous learning mechanisms to improve accuracy over time. For inquiries where the AI's confidence falls below a certain threshold, we implement graceful handoffs to human agents to ensure customers always receive accurate information.</p>
                 </div>
             </div>
-            
-            <div class="faq-item" data-aos="fade-up">
+
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How do you ensure the AI provides accurate responses?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>Can your AI solutions integrate with our existing CRM and support tools?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Accuracy is our top priority, and we employ multiple strategies to ensure it. First, we train the AI on your verified knowledge base, support documentation, and historical support interactions. We implement confidence thresholds so the AI only provides responses when it has high certainty. For complex inquiries or when confidence is below thresholds, the system automatically routes to human agents. We also build in continuous human review processes where agents can flag and correct inaccurate responses. Additionally, we conduct regular audits and testing to measure accuracy and make improvements. This multi-layered approach ensures the AI delivers reliable information to your customers.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item" data-aos="fade-up">
-                <div class="faq-question">
-                    <h3>Can the AI support solution integrate with our existing tools and platforms?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
-                </div>
-                <div class="faq-answer">
-                    <p>Yes, our AI support solutions are designed for seamless integration with your existing technology stack. We offer pre-built connectors for popular CRM systems (Salesforce, Zendesk, HubSpot), ticketing platforms (Freshdesk, ServiceNow, Jira), knowledge bases, live chat tools, messaging platforms, and telephony systems. For custom or legacy systems, we provide API-based integration capabilities. Our implementation team works closely with your IT department to ensure smooth integration with minimal disruption to your operations. This integration approach ensures the AI has access to relevant customer data and can work within your established support workflows.</p>
+                    <p>Yes, our AI support solutions are designed with integration in mind. We support seamless connections with popular CRM systems (Salesforce, HubSpot, Microsoft Dynamics), helpdesk platforms (Zendesk, Freshdesk, ServiceNow), and communication channels (chat, email, social media, voice). We also offer custom API development for proprietary systems to ensure your AI support solution works within your existing tech ecosystem.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<?php require_once '../../../../components/footer.php'; ?>
+<?php
+require_once '../../../../components/footer.php';
+?>
+<script src="/assets/js/services.js"></script>

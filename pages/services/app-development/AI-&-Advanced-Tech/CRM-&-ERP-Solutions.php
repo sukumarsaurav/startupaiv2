@@ -1,10 +1,19 @@
 <?php
 // Define base path to allow direct script access
 define('BASEPATH', true);
+require_once '../../../../includes/config.php';
 
-require_once '../../../../config/database.php';
-require_once '../../../../config/why-hire-us.php';
-require_once '../../../../assets/templates/why-hire-us-section.php';
+// Page specific content
+$pageTitle = "CRM & ERP Solutions | StartupAI";
+$pageDescription = "Streamline operations and enhance customer relationships with tailored business management systems that integrate seamlessly with your existing workflows.";
+$serviceName = "CRM & ERP Solutions";
+$serviceSlug = "crm-erp-solutions";
+
+// SEO Data
+$seo_data = [
+    'description' => $pageDescription,
+    'keywords' => 'crm solutions, erp development, business management systems, customer relationship management, enterprise resource planning, custom crm, custom erp, business process automation'
+];
 
 // Get Why Hire Us content for CRM & ERP Solutions
 $why_hire_us = getWhyHireUsContent('crm-erp-solutions');
@@ -13,69 +22,71 @@ require_once '../../../../components/header.php';
 ?>
 
 <!-- Page Header -->
-<header class="page-header">
-    <div class="content-container">
-        <div class="header-grid">
-            <div class="page-header-content text-center">
-                <h1 class="page-title" data-aos="fade-up">CRM & ERP Solutions</h1>
-                <p class="page-description" data-aos="fade-up" data-aos-delay="100">
-                    Streamline operations and enhance customer relationships with tailored business management systems
-                </p>
+<section class="hero-section">
+    <div class="blob-1"></div>
+    <div class="blob-2"></div>
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-content" data-aos="fade-right">
+                <span class="service-category">Business Systems</span>
+                <h1><?php echo $serviceName; ?></h1>
+                <p class="lead"><?php echo $pageDescription; ?></p>
+                <div class="hero-buttons">
+                    <a href="/pages/contact.php" class="btn btn-primary">Start Your Business System</a>
+                    <a href="/pages/portfolio.php" class="btn btn-outline">View Portfolio</a>
+                </div>
+                <div class="tech-stack">
+                    <span>Technologies:</span>
+                    <img src="/assets/images/tech/salesforce.png" alt="Salesforce" title="Salesforce">
+                    <img src="/assets/images/tech/sap.png" alt="SAP" title="SAP">
+                    <img src="/assets/images/tech/microsoft-dynamics.png" alt="Microsoft Dynamics" title="Microsoft Dynamics">
+                    <img src="/assets/images/tech/odoo.png" alt="Odoo" title="Odoo">
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="/assets/images/services/crm-erp-solutions.svg" alt="<?php echo $serviceName; ?>" class="floating-image">
             </div>
         </div>
     </div>
-</header>
+</section>
 
 <!-- Service Overview -->
-<section class="service-overview section-spacing">
-    <div class="content-container">
-        <div class="service-grid">
-            <div class="service-image" data-aos="fade-right">
-                <img src="/assets/images/services/crm-erp-solutions.svg" alt="CRM and ERP Solutions" class="featured-image">
+<section class="overview-section">
+    <div class="container">
+        <div class="section-header">
+            <div class="overview-header" data-aos="fade-up">
+                <h2>Custom CRM & ERP Development Services</h2>
+                <p class="section-lead">Our CRM and ERP development services help businesses optimize their operations, enhance customer relationships, and make data-driven decisions. We create tailored solutions that integrate with your existing workflows, automate key processes, and provide actionable insights, enabling your organization to increase efficiency, reduce costs, and improve customer satisfaction.</p>
             </div>
-            <div class="service-content" data-aos="fade-left">
-                <h2 class="section-heading">Custom CRM & ERP Development Services</h2>
-                <p>
-                    Our CRM and ERP development services help businesses optimize their operations, enhance customer relationships, and make data-driven decisions. We create tailored solutions that integrate with your existing workflows, automate key processes, and provide actionable insights, enabling your organization to increase efficiency, reduce costs, and improve customer satisfaction.
-                </p>
-                <div class="features-list">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-users icon-primary"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h5>Customer Relationship Management</h5>
-                            <p>Custom CRM solutions to track interactions, manage sales pipelines, and improve customer service.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-cogs icon-primary"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h5>Enterprise Resource Planning</h5>
-                            <p>Integrated ERP systems to manage finance, inventory, HR, and other core business functions.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-sync-alt icon-primary"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h5>System Integration</h5>
-                            <p>Seamless connection between your CRM/ERP and third-party tools, databases, and services.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-chart-bar icon-primary"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h5>Reporting & Analytics</h5>
-                            <p>Powerful dashboards and reporting tools for real-time business intelligence and insights.</p>
-                        </div>
-                    </div>
+        </div>
+        
+        <div class="overview-cards">
+            <div class="overview-card primary-card" data-aos="fade-up">
+                <div class="card-icon">
+                    <i class="fas fa-users"></i>
                 </div>
+                <h3>Customer Relationship Management</h3>
+                <p>Custom CRM solutions designed to strengthen relationships, streamline sales processes, and provide comprehensive customer insights across your organization.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Lead & opportunity management</li>
+                    <li><i class="fas fa-check-circle"></i> Customer service automation</li>
+                    <li><i class="fas fa-check-circle"></i> Marketing campaign tracking</li>
+                </ul>
+            </div>
+            
+            <div class="overview-card secondary-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Enterprise Resource Planning</h3>
+                <p>Comprehensive ERP systems that integrate core business processes, from finance and inventory to HR and manufacturing, into a unified platform.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Financial management</li>
+                    <li><i class="fas fa-check-circle"></i> Inventory & supply chain</li>
+                    <li><i class="fas fa-check-circle"></i> HR & project management</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -85,49 +96,72 @@ require_once '../../../../components/header.php';
 <?php renderWhyHireUs($why_hire_us['service_name'], $why_hire_us['reasons']); ?>
 
 <!-- Process -->
-<section class="process-section section-spacing section-light">
-    <div class="content-container">
-        <div class="section-header text-center" data-aos="fade-up">
-            <h2 class="section-heading">Our CRM & ERP Development Process</h2>
-            <p class="section-subheading">
-                A methodical approach to building effective business management systems
-            </p>
+<section class="process-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our CRM & ERP Development Process</h2>
+            <p class="section-lead">A methodical approach to building effective business management systems</p>
         </div>
-        <div class="process-grid">
-            <div class="process-item" data-aos="fade-up">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <i class="fas fa-search icon-large icon-primary"></i>
+        
+        <div class="process-timeline">
+            <!-- Timeline Line -->
+            <div class="timeline-line"></div>
+            
+            <div class="process-grid">
+                <div class="process-card-wrapper" data-aos="fade-up">
+                    <div class="process-number">1</div>
+                    <div class="process-card">
+                        <h3>Business Analysis</h3>
+                        <p>We analyze your business processes, workflows, and requirements to identify optimization opportunities and define system specifications.</p>
+                        <ul class="process-list">
+                            <li>Current workflow assessment</li>
+                            <li>Stakeholder interviews & requirements gathering</li>
+                            <li>Process optimization planning</li>
+                            <li>ROI & business case development</li>
+                        </ul>
                     </div>
-                    <h4>Business Analysis</h4>
-                    <p>We analyze your business processes, workflows, and requirements to identify optimization opportunities.</p>
                 </div>
-            </div>
-            <div class="process-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <i class="fas fa-pencil-ruler icon-large icon-primary"></i>
+
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-number">2</div>
+                    <div class="process-card">
+                        <h3>Solution Design</h3>
+                        <p>We create a tailored CRM/ERP architecture that aligns with your business goals and workflows, ensuring seamless integration.</p>
+                        <ul class="process-list">
+                            <li>System architecture planning</li>
+                            <li>Database schema design</li>
+                            <li>User interface & experience mapping</li>
+                            <li>Integration points identification</li>
+                        </ul>
                     </div>
-                    <h4>Solution Design</h4>
-                    <p>We create a tailored CRM/ERP architecture that aligns with your business goals and workflows.</p>
                 </div>
-            </div>
-            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <i class="fas fa-code icon-large icon-primary"></i>
+
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-number">3</div>
+                    <div class="process-card">
+                        <h3>Development & Integration</h3>
+                        <p>Our developers build your system with a focus on usability, performance, and seamless connections with your existing tools and platforms.</p>
+                        <ul class="process-list">
+                            <li>Modular system development</li>
+                            <li>API & third-party integration</li>
+                            <li>Data migration & transformation</li>
+                            <li>Quality assurance & testing</li>
+                        </ul>
                     </div>
-                    <h4>Development & Integration</h4>
-                    <p>Our developers build your system with a focus on usability, performance, and integrations.</p>
                 </div>
-            </div>
-            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <i class="fas fa-graduation-cap icon-large icon-primary"></i>
+
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-number">4</div>
+                    <div class="process-card">
+                        <h3>Training & Support</h3>
+                        <p>We ensure smooth adoption with comprehensive training and ongoing technical support for your team and stakeholders.</p>
+                        <ul class="process-list">
+                            <li>User & administrator training</li>
+                            <li>Documentation & knowledge transfer</li>
+                            <li>Post-deployment optimization</li>
+                            <li>Continuous support & maintenance</li>
+                        </ul>
                     </div>
-                    <h4>Training & Support</h4>
-                    <p>We ensure smooth adoption with comprehensive training and ongoing technical support.</p>
                 </div>
             </div>
         </div>
@@ -135,40 +169,59 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- CRM Solutions -->
-<section class="crm-solutions-section section-spacing">
-    <div class="content-container">
-        <div class="section-header text-center" data-aos="fade-up">
-            <h2 class="section-heading">CRM Development Solutions</h2>
-            <p class="section-subheading">
-                Custom customer relationship management systems tailored to your business
-            </p>
+<section class="services-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>CRM Development Solutions</h2>
+            <p class="section-lead">Custom customer relationship management systems tailored to your business</p>
         </div>
-        <div class="solutions-grid">
-            <div class="solution-item" data-aos="fade-up">
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-funnel-dollar icon-large icon-primary"></i>
+        
+        <div class="services-grid">
+            <div class="service-item" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-funnel-dollar"></i>
                     </div>
-                    <h4>Sales CRM</h4>
+                    <h3>Sales CRM</h3>
                     <p>Lead management, opportunity tracking, sales forecasting, and pipeline visualization to optimize your sales process and increase conversion rates.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Contact & lead management</li>
+                        <li><i class="fas fa-check"></i> Sales pipeline tracking</li>
+                        <li><i class="fas fa-check"></i> Forecasting & analytics</li>
+                        <li><i class="fas fa-check"></i> Mobile sales tools</li>
+                    </ul>
                 </div>
             </div>
-            <div class="solution-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-headset icon-large icon-primary"></i>
+            
+            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
                     </div>
-                    <h4>Service CRM</h4>
+                    <h3>Service CRM</h3>
                     <p>Ticket management, customer service automation, SLA tracking, and knowledge bases to improve customer support and satisfaction.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Ticketing system</li>
+                        <li><i class="fas fa-check"></i> SLA management</li>
+                        <li><i class="fas fa-check"></i> Knowledge base integration</li>
+                        <li><i class="fas fa-check"></i> Customer satisfaction tracking</li>
+                    </ul>
                 </div>
             </div>
-            <div class="solution-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-bullhorn icon-large icon-primary"></i>
+            
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
                     </div>
-                    <h4>Marketing CRM</h4>
+                    <h3>Marketing CRM</h3>
                     <p>Campaign management, email marketing automation, customer segmentation, and analytics to enhance marketing effectiveness.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Campaign automation</li>
+                        <li><i class="fas fa-check"></i> Lead scoring & segmentation</li>
+                        <li><i class="fas fa-check"></i> Email marketing integration</li>
+                        <li><i class="fas fa-check"></i> Marketing ROI analytics</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -176,139 +229,241 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- ERP Solutions -->
-<section class="erp-solutions-section section-spacing section-light">
-    <div class="content-container">
-        <div class="section-header text-center" data-aos="fade-up">
-            <h2 class="section-heading">ERP Development Solutions</h2>
-            <p class="section-subheading">
-                Comprehensive enterprise resource planning systems for operational excellence
-            </p>
+<section class="services-section section-light">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>ERP Development Solutions</h2>
+            <p class="section-lead">Comprehensive enterprise resource planning systems for operational excellence</p>
         </div>
-        <div class="solutions-grid">
-            <div class="solution-item" data-aos="fade-up">
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-calculator icon-large icon-primary"></i>
+        
+        <div class="services-grid">
+            <div class="service-item" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
                     </div>
-                    <h4>Financial Management</h4>
+                    <h3>Financial Management</h3>
                     <p>Accounting, budgeting, financial reporting, expense management, and billing automation to streamline your financial operations.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> General ledger & accounting</li>
+                        <li><i class="fas fa-check"></i> Accounts payable/receivable</li>
+                        <li><i class="fas fa-check"></i> Budgeting & forecasting</li>
+                        <li><i class="fas fa-check"></i> Financial reporting</li>
+                    </ul>
                 </div>
             </div>
-            <div class="solution-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-boxes icon-large icon-primary"></i>
+            
+            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-boxes"></i>
                     </div>
-                    <h4>Inventory & Supply Chain</h4>
+                    <h3>Inventory & Supply Chain</h3>
                     <p>Inventory tracking, order management, procurement automation, supplier management, and logistics coordination.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Inventory control</li>
+                        <li><i class="fas fa-check"></i> Purchase order management</li>
+                        <li><i class="fas fa-check"></i> Supplier relationship management</li>
+                        <li><i class="fas fa-check"></i> Warehouse & distribution</li>
+                    </ul>
                 </div>
             </div>
-            <div class="solution-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-users-cog icon-large icon-primary"></i>
+            
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users-cog"></i>
                     </div>
-                    <h4>Human Resources</h4>
+                    <h3>Human Resources</h3>
                     <p>Employee management, time tracking, payroll processing, recruitment, performance evaluation, and training administration.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Employee records & onboarding</li>
+                        <li><i class="fas fa-check"></i> Time & attendance tracking</li>
+                        <li><i class="fas fa-check"></i> Payroll & benefits administration</li>
+                        <li><i class="fas fa-check"></i> Performance management</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="solutions-grid">
-            <div class="solution-item" data-aos="fade-up">
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-industry icon-large icon-primary"></i>
+        
+        <div class="services-grid">
+            <div class="service-item" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
                     </div>
-                    <h4>Manufacturing</h4>
+                    <h3>Manufacturing</h3>
                     <p>Production planning, quality control, equipment maintenance, bill of materials, and manufacturing resource planning.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Production scheduling</li>
+                        <li><i class="fas fa-check"></i> Material requirements planning</li>
+                        <li><i class="fas fa-check"></i> Quality management</li>
+                        <li><i class="fas fa-check"></i> Equipment maintenance</li>
+                    </ul>
                 </div>
             </div>
-            <div class="solution-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-tasks icon-large icon-primary"></i>
+            
+            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tasks"></i>
                     </div>
-                    <h4>Project Management</h4>
+                    <h3>Project Management</h3>
                     <p>Task assignment, resource allocation, project tracking, time and cost management, and collaboration tools.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Project planning & scheduling</li>
+                        <li><i class="fas fa-check"></i> Resource allocation</li>
+                        <li><i class="fas fa-check"></i> Time & expense tracking</li>
+                        <li><i class="fas fa-check"></i> Team collaboration</li>
+                    </ul>
                 </div>
             </div>
-            <div class="solution-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-chart-pie icon-large icon-primary"></i>
+            
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-pie"></i>
                     </div>
-                    <h4>Business Intelligence</h4>
+                    <h3>Business Intelligence</h3>
                     <p>Advanced reporting, data visualization, performance dashboards, and predictive analytics for informed decision-making.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom dashboards & reporting</li>
+                        <li><i class="fas fa-check"></i> Data visualization</li>
+                        <li><i class="fas fa-check"></i> KPI tracking</li>
+                        <li><i class="fas fa-check"></i> Predictive analytics</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Technical Standards Section -->
+<section class="standards-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Business Systems Standards</h2>
+            <p class="section-lead">How we ensure secure, reliable, and scalable CRM & ERP implementations</p>
+        </div>
+        
+        <div class="standards-grid">
+            <div class="standard-item" data-aos="fade-up">
+                <div class="standard-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Security & Compliance</h3>
+                <ul class="standard-list">
+                    <li>Role-based access control</li>
+                    <li>Data encryption at rest and in transit</li>
+                    <li>Regular security audits</li>
+                    <li>GDPR, HIPAA & industry compliance</li>
+                </ul>
+            </div>
+            
+            <div class="standard-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="standard-icon">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                </div>
+                <h3>Scalability</h3>
+                <ul class="standard-list">
+                    <li>Modular architecture</li>
+                    <li>Horizontal scaling capability</li>
+                    <li>Performance optimization</li>
+                    <li>Load balancing & redundancy</li>
+                </ul>
+            </div>
+            
+            <div class="standard-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="standard-icon">
+                    <i class="fas fa-plug"></i>
+                </div>
+                <h3>Integration Framework</h3>
+                <ul class="standard-list">
+                    <li>API-first architecture</li>
+                    <li>Webhook support</li>
+                    <li>Standard import/export formats</li>
+                    <li>Third-party connector library</li>
+                </ul>
+            </div>
+            
+            <div class="standard-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="standard-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Accessibility</h3>
+                <ul class="standard-list">
+                    <li>Responsive design</li>
+                    <li>Cross-device compatibility</li>
+                    <li>Mobile application support</li>
+                    <li>Offline capabilities</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Benefits -->
-<section class="benefits-section section-spacing">
-    <div class="content-container">
-        <div class="section-header text-center" data-aos="fade-up">
-            <h2 class="section-heading">Benefits of Custom CRM & ERP Solutions</h2>
-            <p class="section-subheading">
-                How tailored business systems drive operational excellence
-            </p>
+<section class="benefits-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Benefits of Custom CRM & ERP Solutions</h2>
+            <p class="section-lead">How tailored business systems drive operational excellence</p>
         </div>
+        
         <div class="benefits-grid">
-            <div class="benefit-item" data-aos="fade-up">
+            <div class="benefit-card-wrapper primary-benefit" data-aos="fade-right" data-aos-duration="800">
                 <div class="benefit-card">
                     <div class="benefit-icon">
-                        <i class="fas fa-bolt icon-large icon-primary"></i>
+                        <i class="fas fa-bolt"></i>
                     </div>
-                    <h4>Increased Efficiency</h4>
-                    <p>Automate routine tasks and streamline workflows to reduce manual effort and operational costs.</p>
+                    <h3>Increased Efficiency</h3>
+                    <p>Automate routine tasks and streamline workflows to reduce manual effort and operational costs. Organizations implementing custom CRM/ERP systems report up to 30% reduction in administrative overhead and 20% improvement in process efficiency.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge">30% less admin work</span>
+                        <span class="stat-badge">20% process improvement</span>
+                    </div>
                 </div>
             </div>
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+            
+            <div class="benefit-card-wrapper secondary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-database icon-large icon-primary"></i>
+                    <div class="benefit-icon secondary-icon">
+                        <i class="fas fa-database"></i>
                     </div>
-                    <h4>Centralized Data</h4>
-                    <p>Eliminate data silos with a unified platform that provides a single source of truth across departments.</p>
+                    <h3>Centralized Data</h3>
+                    <p>Eliminate data silos with a unified platform that provides a single source of truth across departments. This leads to 65% better data visibility, 42% improved reporting accuracy, and significant reduction in duplicate data entry.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge secondary-badge">65% better visibility</span>
+                        <span class="stat-badge secondary-badge">42% reporting accuracy</span>
+                    </div>
                 </div>
             </div>
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+            
+            <div class="benefit-card-wrapper tertiary-benefit" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-chart-line icon-large icon-primary"></i>
+                    <div class="benefit-icon tertiary-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h4>Better Decision Making</h4>
-                    <p>Access to real-time analytics and reporting enables data-driven business decisions.</p>
+                    <h3>Better Decision Making</h3>
+                    <p>Access to real-time analytics and reporting enables data-driven business decisions. Companies with integrated business systems make decisions 35% faster and see a 25% improvement in strategic planning accuracy.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge tertiary-badge">35% faster decisions</span>
+                        <span class="stat-badge tertiary-badge">25% better planning</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="benefits-grid">
-            <div class="benefit-item" data-aos="fade-up">
+            
+            <div class="benefit-card-wrapper quaternary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-user-check icon-large icon-primary"></i>
+                    <div class="benefit-icon quaternary-icon">
+                        <i class="fas fa-user-check"></i>
                     </div>
-                    <h4>Enhanced Customer Experience</h4>
-                    <p>Deliver personalized service through better customer insights and streamlined interactions.</p>
-                </div>
-            </div>
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-expand-arrows-alt icon-large icon-primary"></i>
+                    <h3>Enhanced Customer Experience</h3>
+                    <p>Deliver personalized service through better customer insights and streamlined interactions. Businesses with integrated CRM systems report 27% higher customer satisfaction rates and 18% improved customer retention.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge quaternary-badge">27% higher satisfaction</span>
+                        <span class="stat-badge quaternary-badge">18% better retention</span>
                     </div>
-                    <h4>Scalability</h4>
-                    <p>Adapt and grow your business systems as your organization evolves without starting from scratch.</p>
-                </div>
-            </div>
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-handshake icon-large icon-primary"></i>
-                    </div>
-                    <h4>Improved Collaboration</h4>
-                    <p>Enable teams to work together more effectively with shared information and workflows.</p>
                 </div>
             </div>
         </div>
@@ -316,18 +471,14 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- CTA -->
-<section class="cta-section section-spacing section-primary text-white">
-    <div class="content-container">
-        <div class="cta-grid">
-            <div class="cta-content" data-aos="fade-right">
-                <h2 class="cta-title">Ready to Transform Your Business Operations?</h2>
-                <p class="cta-description">
-                    Let's build CRM and ERP solutions that streamline your processes and drive growth.
-                </p>
-            </div>
-            <div class="cta-button" data-aos="fade-left">
-                <a href="/contact" class="btn btn-light btn-lg">Get Started</a>
-            </div>
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Business Operations?</h2>
+            <p class="lead">Let's build CRM and ERP solutions that streamline your processes and drive growth.</p>
+            <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">
+                Schedule a Business Systems Consultation
+            </a>
         </div>
     </div>
 </section>
@@ -335,37 +486,44 @@ require_once '../../../../components/header.php';
 <!-- FAQ Section -->
 <section class="faq-section">
     <div class="container">
-        <div class="faq-header">
-            <h2 class="faq-title">CRM & ERP Solutions FAQ's</h2>
-            <h3 class="faq-subtitle">Have Any Questions?</h3>
+        <div class="section-header">
+            <div class="faq-header" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-lead">Common questions about CRM & ERP solutions</p>
+            </div>
         </div>
-
         <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq-question">
-                    Should I choose an off-the-shelf solution or custom CRM/ERP development?
-                    <span class="faq-plus-icon">+</span>
-                </button>
+            <div class="faq-item active">
+                <div class="faq-question">
+                    <h3>Should I choose an off-the-shelf solution or custom CRM/ERP development?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
                 <div class="faq-answer">
                     <p>The choice between off-the-shelf and custom CRM/ERP solutions depends on your specific business needs. Off-the-shelf solutions work well for businesses with standard processes that can adapt to the software's workflow. They typically offer faster implementation and lower initial costs. Custom development is ideal when you have unique business processes that you don't want to change, need specific integrations with existing systems, or require functionality not available in standard products. While custom solutions have higher upfront costs, they can provide better long-term value through perfect alignment with your processes, no recurring licensing fees, and the ability to adapt as your business evolves. We often recommend a hybrid approach, starting with a robust platform that we can then customize to your specific requirements.</p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">
-                    How long does it take to implement a custom CRM or ERP system?
-                    <span class="faq-plus-icon">+</span>
-                </button>
+                <div class="faq-question">
+                    <h3>How long does it take to implement a custom CRM or ERP system?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
                 <div class="faq-answer">
                     <p>Implementation timelines vary based on the complexity and scope of your CRM or ERP project. For a focused CRM with specific functionality, development typically takes 3-6 months from requirements gathering to deployment. Comprehensive ERP systems that cover multiple departments and functions usually require 6-12 months for full implementation. Complex enterprise-wide solutions with extensive integrations and data migration may take 12-18 months. We use an agile development approach that enables phased implementation, allowing you to start using core functionality earlier while we continue developing additional features. This approach provides faster time-to-value and allows for adjustments based on user feedback during the implementation process.</p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">
-                    How do you handle data migration to new CRM/ERP systems?
-                    <span class="faq-plus-icon">+</span>
-                </button>
+                <div class="faq-question">
+                    <h3>How do you handle data migration to new CRM/ERP systems?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
                 <div class="faq-answer">
                     <p>We follow a structured data migration approach to ensure a seamless transition to your new system. First, we conduct a thorough data audit to identify all relevant data sources, assess data quality, and determine what needs to be migrated. Then we create a detailed migration strategy, including data mapping between old and new systems, transformation rules, and validation criteria. We develop custom migration scripts and perform multiple test migrations to identify and resolve issues before the final transfer. We also implement data cleansing processes to improve the quality of migrated data. The final migration is carefully timed to minimize business disruption, often during off-hours. Post-migration, we conduct extensive validation to ensure data integrity and provide training on how to work with the migrated data in the new system.</p>
                 </div>
@@ -375,3 +533,4 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?>
+<script src="/assets/js/services.js"></script>

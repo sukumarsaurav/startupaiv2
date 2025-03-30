@@ -19,40 +19,72 @@ $seo_data = [
 require_once '../../../../components/header.php';
 ?>
 
-<!-- Page Header -->
-<section class="page-header">
-    <div class="content-container">
-        <div class="header-grid">
-            <div class="page-header-content" data-aos="fade-right">
-                <h1><?php echo $pageTitle; ?></h1>
-                <p class="lead"><?php echo $pageDescription; ?></p>
-                <a href="/pages/contact.php" class="get-started-btn">Get Started</a>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="blob-1"></div>
+    <div class="blob-2"></div>
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-content" data-aos="fade-right">
+                <span class="service-category">AI Business Automation</span>
+                <h1><?php echo $serviceName; ?></h1>
+                <p class="lead">Intelligent systems that streamline operations, eliminate repetitive tasks, and optimize your business processes</p>
+                <div class="hero-buttons">
+                    <a href="/pages/contact.php" class="btn btn-primary">Transform Your Workflows</a>
+                    <a href="/pages/portfolio.php" class="btn btn-outline">View Success Stories</a>
+                </div>
+                <div class="tech-stack">
+                    <span>Technologies:</span>
+                    <img src="/assets/images/tech/uipath.png" alt="UiPath" title="UiPath">
+                    <img src="/assets/images/tech/python.png" alt="Python" title="Python">
+                    <img src="/assets/images/tech/zapier.png" alt="Zapier" title="Zapier">
+                    <img src="/assets/images/tech/tensorflow.png" alt="TensorFlow" title="TensorFlow">
+                </div>
             </div>
-            <div class="page-header-image" data-aos="fade-left">
-                <img src="/assets/images/services/workflow-automation.svg" alt="<?php echo $serviceName; ?>" class="animate-float">
+            <div class="hero-image" data-aos="fade-left">
+                <img src="/assets/images/services/workflow-automation.svg" alt="<?php echo $serviceName; ?>" class="floating-image">
             </div>
         </div>
     </div>
 </section>
 
 <!-- Service Overview -->
-<section class="service-overview">
-    <div class="content-container">
+<section class="overview-section">
+    <div class="container">
         <div class="section-header">
-            <div class="service-overview-header" data-aos="fade-up">
+            <div class="overview-header" data-aos="fade-up">
                 <h2>Reinvent Your Business Processes with AI</h2>
-                <p class="lead">We help businesses transform manual, time-consuming workflows into intelligent, automated systems that learn and improve over time.</p>
+                <p class="section-lead">We help businesses transform manual, time-consuming workflows into intelligent, automated systems that learn and improve over time.</p>
             </div>
         </div>
         
-        <div class="overview-grid">
-            <div class="service-overview-content" data-aos="fade-up">
-                <h3>The Problem</h3>
-                <p>Manual business processes are prone to errors, delays, and inconsistencies. They consume valuable employee time that could be better spent on strategic, creative work. Most businesses struggle with siloed information, redundant tasks, and inefficient resource allocation.</p>
+        <div class="overview-cards">
+            <div class="overview-card primary-card" data-aos="fade-up">
+                <div class="card-icon">
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <h3>The Challenge</h3>
+                <p>Manual business processes are prone to errors, delays, and inconsistencies. They consume valuable employee time that could be better spent on strategic work.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Time-consuming manual tasks</li>
+                    <li><i class="fas fa-check-circle"></i> Error-prone processes</li>
+                    <li><i class="fas fa-check-circle"></i> Siloed information systems</li>
+                </ul>
             </div>
-            <div class="service-overview-content" data-aos="fade-up" data-aos-delay="100">
+            
+            <div class="overview-card secondary-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
                 <h3>Our Solution</h3>
-                <p>Our AI-powered workflow automation solutions identify inefficiencies, create streamlined processes, and continuously improve through machine learning. We connect disparate systems, automate routine tasks, and provide intelligent insights to optimize operations across your organization.</p>
+                <p>Our AI-powered workflow automation solutions identify inefficiencies, create streamlined processes, and continuously improve through machine learning.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Intelligent process automation</li>
+                    <li><i class="fas fa-check-circle"></i> Cross-system integration</li>
+                    <li><i class="fas fa-check-circle"></i> Predictive optimization</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -60,11 +92,11 @@ require_once '../../../../components/header.php';
 
 <!-- Services Section -->
 <section class="services-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="services-header" data-aos="fade-up">
                 <h2>Our Workflow Automation Services</h2>
-                <p class="lead">Comprehensive solutions to transform how your business operates</p>
+                <p class="section-lead">Comprehensive solutions to transform how your business operates</p>
             </div>
         </div>
         
@@ -136,64 +168,75 @@ require_once '../../../../components/header.php';
     </div>
 </section>
 
-<!-- Implementation Process -->
-<section class="implementation-process">
-    <div class="content-container">
+<!-- Process Section -->
+<section class="process-section">
+    <div class="container">
         <div class="section-header">
-            <div class="implementation-header" data-aos="fade-up">
+            <div class="process-header" data-aos="fade-up">
                 <h2>Our Workflow Automation Process</h2>
-                <p class="lead">A methodical approach to transforming your business operations</p>
+                <p class="section-lead">A methodical approach to transforming your business operations</p>
             </div>
         </div>
         
-        <div class="process-grid">
-            <div class="process-item" data-aos="fade-up">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>1</span>
-                    </div>
-                    <h3>Process Analysis & Discovery</h3>
-                    <p>We thoroughly analyze your existing workflows, identify bottlenecks, and determine automation opportunities. Our team maps current processes, interviews stakeholders, and collects data to establish a baseline.</p>
-                </div>
-            </div>
+        <div class="process-timeline">
+            <!-- Timeline Line -->
+            <div class="timeline-line"></div>
             
-            <div class="process-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>2</span>
+            <div class="process-grid">
+                <div class="process-card-wrapper" data-aos="fade-up">
+                    <div class="process-number">1</div>
+                    <div class="process-card">
+                        <h3>Process Analysis & Discovery</h3>
+                        <p>We thoroughly analyze your existing workflows, identify bottlenecks, and determine automation opportunities.</p>
+                        <ul class="process-list">
+                            <li>Current workflow mapping</li>
+                            <li>Bottleneck identification</li>
+                            <li>Stakeholder interviews</li>
+                            <li>ROI opportunity assessment</li>
+                        </ul>
                     </div>
-                    <h3>Solution Design & Architecture</h3>
-                    <p>Based on our analysis, we design an optimal automation solution that addresses your specific challenges. This includes process redesign, technology selection, integration planning, and ROI calculations.</p>
                 </div>
-            </div>
-            
-            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>3</span>
+
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-number">2</div>
+                    <div class="process-card">
+                        <h3>Solution Design & Architecture</h3>
+                        <p>Based on our analysis, we design an optimal automation solution that addresses your specific challenges.</p>
+                        <ul class="process-list">
+                            <li>Process redesign</li>
+                            <li>Technology selection</li>
+                            <li>Integration planning</li>
+                            <li>ROI calculations</li>
+                        </ul>
                     </div>
-                    <h3>Development & Integration</h3>
-                    <p>Our engineers develop the automated workflow solution, integrating with your existing systems. We build custom connectors, implement machine learning models, and configure the automation platform to your specifications.</p>
                 </div>
-            </div>
-            
-            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>4</span>
+
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-number">3</div>
+                    <div class="process-card">
+                        <h3>Development & Integration</h3>
+                        <p>Our engineers develop the automated workflow solution, integrating with your existing systems.</p>
+                        <ul class="process-list">
+                            <li>Custom automation development</li>
+                            <li>System integration</li>
+                            <li>AI model implementation</li>
+                            <li>User interface development</li>
+                        </ul>
                     </div>
-                    <h3>Testing & Deployment</h3>
-                    <p>We rigorously test the solution to ensure accuracy, performance, and reliability. After validation, we deploy the system, train your team, and provide comprehensive documentation for seamless adoption.</p>
                 </div>
-            </div>
-            
-            <div class="process-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>5</span>
+
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-number">4</div>
+                    <div class="process-card">
+                        <h3>Testing & Deployment</h3>
+                        <p>We rigorously test the solution to ensure accuracy, performance, and reliability before full deployment.</p>
+                        <ul class="process-list">
+                            <li>Functionality testing</li>
+                            <li>Performance optimization</li>
+                            <li>User training</li>
+                            <li>Phased rollout</li>
+                        </ul>
                     </div>
-                    <h3>Continuous Improvement</h3>
-                    <p>Our work doesn't end at deployment. We monitor the performance of your automated workflows, gather data on outcomes, and continuously improve the system over time as your business evolves.</p>
                 </div>
             </div>
         </div>
@@ -201,18 +244,21 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Technologies Section -->
-<section class="platforms-section">
-    <div class="content-container">
+<section class="technologies-section">
+    <div class="container">
         <div class="section-header">
-            <div class="platforms-header" data-aos="fade-up">
+            <div class="technologies-header" data-aos="fade-up">
                 <h2>Automation Technologies We Leverage</h2>
-                <p class="lead">Best-in-class tools and platforms to power your automated workflows</p>
+                <p class="section-lead">Best-in-class tools and platforms to power your automated workflows</p>
             </div>
         </div>
         
-        <div class="platforms-grid">
-            <div class="platform-item" data-aos="fade-up">
-                <div class="platform-card">
+        <div class="tech-grid">
+            <div class="tech-item" data-aos="fade-up">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
                     <h3>RPA Platforms</h3>
                     <ul>
                         <li>UiPath</li>
@@ -223,20 +269,26 @@ require_once '../../../../components/header.php';
                 </div>
             </div>
             
-            <div class="platform-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="platform-card">
+            <div class="tech-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
                     <h3>BPM Solutions</h3>
                     <ul>
                         <li>Camunda</li>
                         <li>Appian</li>
                         <li>Pega</li>
-                        <li>IBM Business Automation Workflow</li>
+                        <li>IBM Business Automation</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="platform-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="platform-card">
+            <div class="tech-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
                     <h3>AI & Machine Learning</h3>
                     <ul>
                         <li>TensorFlow</li>
@@ -247,14 +299,17 @@ require_once '../../../../components/header.php';
                 </div>
             </div>
             
-            <div class="platform-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="platform-card">
+            <div class="tech-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
                     <h3>Integration Platforms</h3>
                     <ul>
-                        <li>MuleSoft</li>
                         <li>Zapier</li>
-                        <li>Boomi</li>
-                        <li>Workato</li>
+                        <li>MuleSoft</li>
+                        <li>Dell Boomi</li>
+                        <li>Integromat</li>
                     </ul>
                 </div>
             </div>
@@ -262,74 +317,132 @@ require_once '../../../../components/header.php';
     </div>
 </section>
 
+<!-- Technical Standards Section -->
+<section class="standards-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Automation Technical Standards</h2>
+            <p class="section-lead">The principles and practices that guide our workflow automation solutions</p>
+        </div>
+        
+        <div class="standards-grid">
+            <div class="standard-item" data-aos="fade-up">
+                <div class="standard-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Security & Compliance</h3>
+                <ul class="standard-list">
+                    <li>Role-based access controls</li>
+                    <li>Data encryption at rest and in transit</li>
+                    <li>Audit logging and compliance tracking</li>
+                    <li>Regulatory adherence (GDPR, HIPAA, etc.)</li>
+                </ul>
+            </div>
+            
+            <div class="standard-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="standard-icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <h3>Performance Optimization</h3>
+                <ul class="standard-list">
+                    <li>Automated load balancing</li>
+                    <li>Process execution time optimization</li>
+                    <li>Resource consumption monitoring</li>
+                    <li>Scalable architecture design</li>
+                </ul>
+            </div>
+            
+            <div class="standard-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="standard-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3>Reliability & Resilience</h3>
+                <ul class="standard-list">
+                    <li>Exception handling frameworks</li>
+                    <li>Automated retry mechanisms</li>
+                    <li>Error reporting and alerting</li>
+                    <li>Failover and redundancy systems</li>
+                </ul>
+            </div>
+            
+            <div class="standard-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="standard-icon">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                </div>
+                <h3>Scalability & Maintainability</h3>
+                <ul class="standard-list">
+                    <li>Modular workflow design</li>
+                    <li>Cloud-native architecture</li>
+                    <li>Comprehensive documentation</li>
+                    <li>Version-controlled development</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Benefits Section -->
 <section class="benefits-section">
-    <div class="content-container">
-        <div class="section-header">
-            <div class="benefits-header" data-aos="fade-up">
-                <h2>Benefits of AI-Powered Workflow Automation</h2>
-                <p class="lead">Transformative advantages for your business operations</p>
-            </div>
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Benefits of AI-Powered Workflow Automation</h2>
+            <p class="section-lead">How intelligent automation transforms your business operations</p>
         </div>
         
         <div class="benefits-grid">
-            <div class="benefit-item" data-aos="fade-up">
+            <div class="benefit-card-wrapper primary-benefit" data-aos="fade-right" data-aos-duration="800">
                 <div class="benefit-card">
                     <div class="benefit-icon">
-                        <i class="fas fa-tachometer-alt"></i>
+                        <i class="fas fa-clock"></i>
                     </div>
-                    <h3>Increased Efficiency</h3>
-                    <p>Reduce process completion times by up to 90% through elimination of manual steps, wait times, and redundancies.</p>
+                    <h3>Operational Efficiency</h3>
+                    <p>Automated workflows execute tasks faster and more consistently than manual processes. Organizations implementing AI-powered automation report 70% reduction in process time and 90% decrease in manual effort for routine tasks.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge">70% faster processes</span>
+                        <span class="stat-badge">90% less manual effort</span>
+                    </div>
                 </div>
             </div>
-            
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="benefit-card-wrapper secondary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
+                    <div class="benefit-icon secondary-icon">
                         <i class="fas fa-dollar-sign"></i>
                     </div>
                     <h3>Cost Reduction</h3>
-                    <p>Lower operational costs by automating routine tasks, reducing errors, and optimizing resource allocation.</p>
+                    <p>Intelligent automation reduces operational costs across your organization. Businesses implementing workflow automation achieve 40-60% cost savings in operational areas and 35% reduction in overall process-related expenses.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge secondary-badge">40-60% operational savings</span>
+                        <span class="stat-badge secondary-badge">35% process cost reduction</span>
+                    </div>
                 </div>
             </div>
-            
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="benefit-card-wrapper tertiary-benefit" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
+                    <div class="benefit-icon tertiary-icon">
                         <i class="fas fa-check-circle"></i>
                     </div>
-                    <h3>Improved Accuracy</h3>
-                    <p>Eliminate human errors and achieve consistent, high-quality results across all automated processes.</p>
-                </div>
-            </div>
-            
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-chart-bar"></i>
+                    <h3>Error Reduction</h3>
+                    <p>Automated workflows eliminate human error in routine processes. Companies using AI-powered automation experience 95% fewer errors in data processing and 85% reduction in exception handling requirements.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge tertiary-badge">95% fewer errors</span>
+                        <span class="stat-badge tertiary-badge">85% less exception handling</span>
                     </div>
-                    <h3>Data-Driven Insights</h3>
-                    <p>Gain valuable business intelligence from automated workflow data to drive continuous improvement.</p>
                 </div>
             </div>
-            
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
+
+            <div class="benefit-card-wrapper quaternary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
+                    <div class="benefit-icon quaternary-icon">
                         <i class="fas fa-users"></i>
                     </div>
                     <h3>Enhanced Employee Experience</h3>
-                    <p>Free your team from repetitive tasks so they can focus on creative, strategic, and high-value activities.</p>
-                </div>
-            </div>
-            
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-expand-arrows-alt"></i>
+                    <p>Automation frees employees from repetitive tasks to focus on creative, strategic work. Organizations report 67% improvement in employee satisfaction and 45% increase in innovation-focused activities after implementing workflow automation.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge quaternary-badge">67% higher satisfaction</span>
+                        <span class="stat-badge quaternary-badge">45% more innovation</span>
                     </div>
-                    <h3>Scalability</h3>
-                    <p>Easily scale operations up or down without proportional increases in time, cost, or resources.</p>
                 </div>
             </div>
         </div>
@@ -338,76 +451,80 @@ require_once '../../../../components/header.php';
 
 <!-- CTA Section -->
 <section class="cta-section">
-    <div class="content-container">
+    <div class="container">
         <div class="cta-content">
-            <h2>Ready to Transform Your Business Operations?</h2>
-            <p class="lead">Let us help you identify and automate your most critical workflows with AI-powered solutions.</p>
-            <a href="/pages/contact.php" class="cta-btn">Schedule a Consultation</a>
+            <h2>Ready to Transform Your Workflows?</h2>
+            <p class="lead">Let's discuss how AI-powered automation can revolutionize your business operations.</p>
+            <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">
+                Schedule a Consultation
+            </a>
         </div>
     </div>
 </section>
 
 <!-- FAQ Section -->
 <section class="faq-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="faq-header" data-aos="fade-up">
                 <h2>Frequently Asked Questions</h2>
-                <p class="lead">Common questions about AI-powered workflow automation</p>
+                <p class="section-lead">Common questions about AI-powered workflow automation</p>
             </div>
         </div>
         <div class="faq-container">
             <div class="faq-item active">
                 <div class="faq-question">
-                    <h3>What types of business processes can be automated with AI?</h3>
-                    <button class="toggle-btn"><span class="icon"></span></button>
+                    <h3>Which business processes are best suited for AI-powered automation?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Many types of business processes can be automated with AI, especially those that are repetitive, rule-based, or involve large volumes of structured or semi-structured data. Common examples include customer onboarding, invoice processing, data entry and validation, report generation, inventory management, employee onboarding, compliance monitoring, and approval workflows. AI can also enhance automation by handling more complex decisions, natural language processing, and predictive capabilities.</p>
+                    <p>The best candidates for AI-powered automation are processes that are repetitive, rule-based, high-volume, and data-intensive. Common examples include data entry and validation, document processing, customer onboarding, invoice processing, report generation, employee onboarding, compliance checks, and inventory management. That said, with advances in AI, even processes requiring some degree of judgment can now be automated. During our assessment phase, we'll help you identify the processes in your organization that would benefit most from automation.</p>
                 </div>
             </div>
-            
+
             <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How long does it typically take to implement an AI workflow automation solution?</h3>
-                    <button class="toggle-btn"><span class="icon"></span></button>
+                    <h3>How long does it take to implement workflow automation?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Implementation timelines vary based on the complexity of the workflows, the number of systems involved, and the scale of the project. Simple, focused automations can be implemented in 4-8 weeks, while complex, enterprise-wide solutions may take 3-6 months or more. Our approach involves starting with high-impact processes that can deliver quick wins, then expanding the automation ecosystem over time. We'll provide a detailed timeline during the discovery and planning phase of your project.</p>
+                    <p>Implementation timelines vary based on the complexity of the processes being automated, the number of systems involved, and the level of customization required. Simple automations can be deployed in 4-6 weeks, while more complex enterprise-wide solutions may take 3-6 months. We follow an agile implementation approach, often starting with a pilot project to demonstrate value quickly, then expanding to other processes. This approach allows you to see ROI early in the process while we build toward a comprehensive solution.</p>
                 </div>
             </div>
-            
+
             <div class="faq-item">
                 <div class="faq-question">
-                    <h3>What kind of ROI can we expect from implementing AI workflow automation?</h3>
-                    <button class="toggle-btn"><span class="icon"></span></button>
+                    <h3>How do you ensure the security of automated workflows?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>ROI varies by industry and use case, but our clients typically see ROI within 6-12 months of implementation. Cost savings come from reduced labor costs, increased throughput, error reduction, and improved resource allocation. Beyond direct cost savings, businesses benefit from improved compliance, better customer experiences, faster processing times, and the ability to scale operations without proportional increases in headcount. We'll work with you to develop ROI projections specific to your automation initiatives.</p>
+                    <p>Security is built into every layer of our automation solutions. We implement role-based access controls, data encryption at rest and in transit, secure credential management, audit logging, and anomaly detection. Our development follows secure coding practices, and all solutions undergo rigorous security testing. We also adhere to relevant compliance frameworks such as GDPR, HIPAA, SOC 2, and industry-specific regulations. Additionally, we provide guidance on governance policies to ensure your automated processes maintain security over time.</p>
                 </div>
             </div>
-            
+
             <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How do you ensure the security and compliance of automated workflows?</h3>
-                    <button class="toggle-btn"><span class="icon"></span></button>
+                    <h3>Can your automation solutions integrate with our existing systems?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Security and compliance are foundational to our approach. We implement role-based access controls, audit logging, and encryption for all automated workflows. Our solutions can be designed to comply with industry-specific regulations like GDPR, HIPAA, SOX, and more. We conduct security assessments throughout the development process and can integrate with your existing security infrastructure. Additionally, automation can actually enhance compliance by ensuring consistent application of business rules and providing detailed audit trails of all system actions.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>Will employees need special training to work with automated workflows?</h3>
-                    <button class="toggle-btn"><span class="icon"></span></button>
-                </div>
-                <div class="faq-answer">
-                    <p>Our workflow automation solutions are designed with user experience in mind, making them intuitive for employees to use. We provide comprehensive training tailored to different user roles, from end-users to system administrators. This includes hands-on sessions, documentation, and video tutorials. Most employees find that automated workflows actually simplify their jobs by removing tedious tasks and providing clearer processes. We also offer ongoing support and can train your internal team to manage and maintain the automation platform for long-term success.</p>
+                    <p>Yes, our workflow automation solutions are designed for seamless integration with your existing technology stack. We support integration with ERP systems, CRM platforms, legacy applications, databases, cloud services, and custom software. We use a combination of APIs, connectors, and when necessary, RPA technology to interact with systems that don't have modern integration capabilities. Our approach ensures that your automated workflows can extract data from and push data to all your critical business systems without requiring major changes to your existing infrastructure.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<?php require_once '../../../../components/footer.php'; ?>
+<?php
+require_once '../../../../components/footer.php';
+?>
+<script src="/assets/js/services.js"></script>
+

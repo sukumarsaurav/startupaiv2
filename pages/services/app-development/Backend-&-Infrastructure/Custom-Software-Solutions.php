@@ -21,12 +21,27 @@ require_once '../../../../components/header.php';
 
 <!-- Page Header -->
 <section class="hero-section">
+    <div class="blob-1"></div>
+    <div class="blob-2"></div>
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
     <div class="container">
         <div class="hero-grid">
             <div class="hero-content" data-aos="fade-right">
+                <span class="service-category">Backend & Infrastructure</span>
                 <h1><?php echo $serviceName; ?></h1>
-                <p class="lead"><?php echo $pageDescription; ?></p>
-                <a href="/pages/contact.php" class="btn btn-primary">Get Started</a>
+                <p class="lead">Tailor-made software solutions designed specifically for your unique business challenges and requirements</p>
+                <div class="hero-buttons">
+                    <a href="/pages/contact.php" class="btn btn-primary">Start Your Custom Project</a>
+                    <a href="/pages/portfolio.php" class="btn btn-outline">View Portfolio</a>
+                </div>
+                <div class="tech-stack">
+                    <span>Technologies:</span>
+                    <img src="/assets/images/tech/java.png" alt="Java" title="Java">
+                    <img src="/assets/images/tech/python.png" alt="Python" title="Python">
+                    <img src="/assets/images/tech/nodejs.png" alt="Node.js" title="Node.js">
+                    <img src="/assets/images/tech/react.png" alt="React" title="React">
+                </div>
             </div>
             <div class="hero-image" data-aos="fade-left">
                 <img src="/assets/images/services/custom-software.svg" alt="<?php echo $serviceName; ?>" class="floating-image">
@@ -42,6 +57,34 @@ require_once '../../../../components/header.php';
             <div class="overview-header" data-aos="fade-up">
                 <h2>Software Tailored to Your Business Needs</h2>
                 <p class="section-lead">Off-the-shelf software often comes with compromises, forcing your business to adapt to its limitations. Our custom software solutions are designed specifically for your unique workflows, processes, and goals, empowering your business with technology that works exactly how you need it to.</p>
+            </div>
+        </div>
+        
+        <div class="overview-cards">
+            <div class="overview-card primary-card" data-aos="fade-up">
+                <div class="card-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>The Challenge</h3>
+                <p>Businesses struggle with generic software that doesn't align with their unique processes, leading to inefficiencies, workarounds, and missed opportunities.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Inflexible off-the-shelf solutions</li>
+                    <li><i class="fas fa-check-circle"></i> Disconnected systems and data silos</li>
+                    <li><i class="fas fa-check-circle"></i> Inefficient manual processes</li>
+                </ul>
+            </div>
+            
+            <div class="overview-card secondary-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-icon">
+                    <i class="fas fa-puzzle-piece"></i>
+                </div>
+                <h3>Our Solution</h3>
+                <p>We create tailor-made software that perfectly adapts to your business requirements, streamlining operations and enabling growth through technology that works for you, not against you.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Purpose-built for your workflows</li>
+                    <li><i class="fas fa-check-circle"></i> Seamless system integration</li>
+                    <li><i class="fas fa-check-circle"></i> Scalable and future-proof architecture</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -64,7 +107,7 @@ require_once '../../../../components/header.php';
                         <i class="fas fa-laptop-code"></i>
                     </div>
                     <h3>Enterprise Applications</h3>
-                    <p>Comprehensive software solutions designed to integrate and optimize complex business processes.</p>
+                    <p>Comprehensive software solutions designed to integrate and optimize complex business processes across your organization.</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> ERP System Development</li>
                         <li><i class="fas fa-check"></i> CRM Solutions</li>
@@ -80,7 +123,7 @@ require_once '../../../../components/header.php';
                         <i class="fas fa-cogs"></i>
                     </div>
                     <h3>Business Process Automation</h3>
-                    <p>Streamline operations and increase efficiency with automated workflows and processes.</p>
+                    <p>Streamline operations and increase efficiency with intelligent automated workflows that reduce manual effort and minimize errors.</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> Workflow Automation</li>
                         <li><i class="fas fa-check"></i> Document Processing</li>
@@ -96,7 +139,7 @@ require_once '../../../../components/header.php';
                         <i class="fas fa-sync-alt"></i>
                     </div>
                     <h3>Legacy System Modernization</h3>
-                    <p>Transform outdated systems into modern, efficient, and secure applications.</p>
+                    <p>Transform outdated systems into modern, efficient, and secure applications without losing critical business logic or data integrity.</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> System Analysis</li>
                         <li><i class="fas fa-check"></i> Code Refactoring</li>
@@ -112,7 +155,7 @@ require_once '../../../../components/header.php';
                         <i class="fas fa-industry"></i>
                     </div>
                     <h3>Industry-Specific Solutions</h3>
-                    <p>Specialized software designed for the unique needs of your industry or niche.</p>
+                    <p>Specialized software designed for the unique needs of your industry, incorporating domain expertise and best practices for your sector.</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> Healthcare Solutions</li>
                         <li><i class="fas fa-check"></i> Financial Software</li>
@@ -145,6 +188,12 @@ require_once '../../../../components/header.php';
                     <div class="process-card">
                         <h3>Discovery & Analysis</h3>
                         <p>Understanding your business processes, challenges, and goals through in-depth consultations.</p>
+                        <ul class="process-list">
+                            <li>Business process mapping</li>
+                            <li>Stakeholder interviews</li>
+                            <li>Requirements gathering</li>
+                            <li>Competitive analysis</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -153,6 +202,12 @@ require_once '../../../../components/header.php';
                     <div class="process-card">
                         <h3>Design & Planning</h3>
                         <p>Creating detailed architectural designs, wireframes, and project roadmaps tailored to your requirements.</p>
+                        <ul class="process-list">
+                            <li>System architecture design</li>
+                            <li>UI/UX wireframing</li>
+                            <li>Database schema modeling</li>
+                            <li>Project milestone planning</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -161,6 +216,12 @@ require_once '../../../../components/header.php';
                     <div class="process-card">
                         <h3>Development & Testing</h3>
                         <p>Building your custom solution using agile methodologies with continuous testing and quality assurance.</p>
+                        <ul class="process-list">
+                            <li>Iterative development cycles</li>
+                            <li>Continuous integration</li>
+                            <li>Automated testing</li>
+                            <li>Regular progress reviews</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -169,6 +230,12 @@ require_once '../../../../components/header.php';
                     <div class="process-card">
                         <h3>Deployment & Support</h3>
                         <p>Implementing your solution with comprehensive training, documentation, and ongoing maintenance.</p>
+                        <ul class="process-list">
+                            <li>Deployment planning</li>
+                            <li>User training and documentation</li>
+                            <li>Data migration</li>
+                            <li>Post-launch support</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -193,7 +260,7 @@ require_once '../../../../components/header.php';
                         <i class="fas fa-code"></i>
                     </div>
                     <h3>Frontend Technologies</h3>
-                    <p>Modern and responsive user interfaces.</p>
+                    <p>Modern and responsive user interfaces that provide exceptional user experiences.</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> React.js / Vue.js</li>
                         <li><i class="fas fa-check"></i> Angular</li>
@@ -209,7 +276,7 @@ require_once '../../../../components/header.php';
                         <i class="fas fa-server"></i>
                     </div>
                     <h3>Backend Technologies</h3>
-                    <p>Robust server-side solutions.</p>
+                    <p>Robust server-side solutions that ensure reliability, security, and performance.</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> Java / Spring Boot</li>
                         <li><i class="fas fa-check"></i> Node.js</li>
@@ -225,7 +292,7 @@ require_once '../../../../components/header.php';
                         <i class="fas fa-database"></i>
                     </div>
                     <h3>Database Technologies</h3>
-                    <p>Efficient data storage solutions.</p>
+                    <p>Efficient data storage solutions optimized for your specific usage patterns and requirements.</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> SQL (MySQL, PostgreSQL)</li>
                         <li><i class="fas fa-check"></i> NoSQL (MongoDB, Cassandra)</li>
@@ -241,7 +308,7 @@ require_once '../../../../components/header.php';
                         <i class="fas fa-cloud"></i>
                     </div>
                     <h3>Cloud & DevOps</h3>
-                    <p>Scalable and reliable infrastructure.</p>
+                    <p>Scalable and reliable infrastructure with continuous integration and deployment pipelines.</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> AWS / Azure / GCP</li>
                         <li><i class="fas fa-check"></i> Docker & Kubernetes</li>
@@ -254,54 +321,132 @@ require_once '../../../../components/header.php';
     </div>
 </section>
 
+<!-- Technical Standards Section -->
+<section class="standards-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Development Standards</h2>
+            <p class="section-lead">The principles and practices that ensure quality, reliability, and maintainability in our custom solutions</p>
+        </div>
+        
+        <div class="standards-grid">
+            <div class="standard-item" data-aos="fade-up">
+                <div class="standard-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Security By Design</h3>
+                <ul class="standard-list">
+                    <li>OWASP security principles implementation</li>
+                    <li>Regular security code reviews</li>
+                    <li>Vulnerability scanning automation</li>
+                    <li>Data encryption at rest and in transit</li>
+                </ul>
+            </div>
+            
+            <div class="standard-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="standard-icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <h3>Performance Optimization</h3>
+                <ul class="standard-list">
+                    <li>Efficient code architecture</li>
+                    <li>Database query optimization</li>
+                    <li>Caching strategies implementation</li>
+                    <li>Load and performance testing</li>
+                </ul>
+            </div>
+            
+            <div class="standard-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="standard-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Code Quality</h3>
+                <ul class="standard-list">
+                    <li>Adherence to coding standards</li>
+                    <li>Comprehensive documentation</li>
+                    <li>Peer code reviews</li>
+                    <li>Test-driven development</li>
+                </ul>
+            </div>
+            
+            <div class="standard-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="standard-icon">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                </div>
+                <h3>Scalability & Flexibility</h3>
+                <ul class="standard-list">
+                    <li>Modular architecture design</li>
+                    <li>Horizontal and vertical scaling</li>
+                    <li>Future-proof technology selection</li>
+                    <li>Extensible API development</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Benefits Section -->
 <section class="benefits-section">
     <div class="container">
-        <div class="section-header">
-            <div class="benefits-header" data-aos="fade-up">
-                <h2>Benefits of Custom Software</h2>
-                <p class="section-lead">Why businesses choose custom-built solutions</p>
-            </div>
+        <div class="section-header" data-aos="fade-up">
+            <h2>Benefits of Custom Software</h2>
+            <p class="section-lead">Why businesses choose custom-built solutions</p>
         </div>
         
         <div class="benefits-grid">
-            <div class="benefit-card-wrapper" data-aos="fade-up">
+            <div class="benefit-card-wrapper primary-benefit" data-aos="fade-right" data-aos-duration="800">
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-puzzle-piece"></i>
                     </div>
-                    <h3>Perfect Fit</h3>
-                    <p>Software designed specifically for your unique business processes and workflows.</p>
+                    <h3>Perfect Fit for Your Business</h3>
+                    <p>Custom software is designed specifically for your unique business processes and workflows, eliminating workarounds and inefficiencies. Businesses report 75% higher user adoption and 68% fewer workflow compromises with tailored solutions.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge">75% higher adoption</span>
+                        <span class="stat-badge">68% fewer compromises</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-delay="100">
+            <div class="benefit-card-wrapper secondary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
+                    <div class="benefit-icon secondary-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Scalability</h3>
-                    <p>Grows with your business, adapting to changing needs and increasing demand.</p>
+                    <h3>Scalability & Future-Proofing</h3>
+                    <p>Custom solutions grow with your business, adapting to changing needs and increasing demand without costly replacements. Organizations with custom software report 58% lower long-term costs and 40% longer system lifespans.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge secondary-badge">58% lower long-term costs</span>
+                        <span class="stat-badge secondary-badge">40% longer system lifespan</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-delay="200">
+            <div class="benefit-card-wrapper tertiary-benefit" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
+                    <div class="benefit-icon tertiary-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Enhanced Security</h3>
-                    <p>Tailored security measures addressing your specific compliance and risk management needs.</p>
+                    <h3>Enhanced Security & Compliance</h3>
+                    <p>Custom software includes tailored security measures addressing your specific compliance and risk management needs. Companies with purpose-built solutions experience 70% fewer security incidents and 85% higher regulatory compliance rates.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge tertiary-badge">70% fewer security incidents</span>
+                        <span class="stat-badge tertiary-badge">85% better compliance</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-delay="300">
+            <div class="benefit-card-wrapper quaternary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
+                    <div class="benefit-icon quaternary-icon">
                         <i class="fas fa-tachometer-alt"></i>
                     </div>
-                    <h3>Increased Efficiency</h3>
-                    <p>Streamlined operations and automated processes designed for your specific workflows.</p>
+                    <h3>Increased Operational Efficiency</h3>
+                    <p>Streamlined operations and automated processes designed for your specific workflows reduce manual effort and errors. Businesses implementing custom software solutions report 45% reduced processing time and 60% lower error rates.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge quaternary-badge">45% faster processing</span>
+                        <span class="stat-badge quaternary-badge">60% fewer errors</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -314,7 +459,9 @@ require_once '../../../../components/header.php';
         <div class="cta-content">
             <h2>Ready to Transform Your Business?</h2>
             <p class="lead">Let's discuss how custom software can solve your unique business challenges.</p>
-            <a href="/pages/contact.php" class="cta-btn">Schedule a Consultation</a>
+            <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">
+                Schedule a Software Consultation
+            </a>
         </div>
     </div>
 </section>
@@ -383,4 +530,4 @@ require_once '../../../../components/header.php';
 <?php
 require_once '../../../../components/footer.php';
 ?>
- <script src="/assets/js/services.js"></script>
+<script src="/assets/js/services.js"></script>

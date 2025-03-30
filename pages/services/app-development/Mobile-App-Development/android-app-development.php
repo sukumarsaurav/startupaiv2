@@ -2,9 +2,6 @@
 define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
-// Initialize the database connection
-$database = new Database();
-$db = $database->getConnection();
 
 // SEO Data
 $pageTitle = "Android App Development Services | StartupAI";
