@@ -30,6 +30,8 @@ require_once '../../../../components/header.php';
             </div>
             <div class="page-header-image" data-aos="fade-left">
                 <img src="/assets/images/services/sentiment-analysis.svg" alt="Sentiment Analysis" class="animate-float">
+                <div class="decoration-circle-1"></div>
+                <div class="decoration-circle-2"></div>
             </div>
         </div>
     </div>

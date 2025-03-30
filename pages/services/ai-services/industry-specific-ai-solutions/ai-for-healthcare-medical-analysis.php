@@ -45,6 +45,8 @@ require_once '../../../../components/header.php';
             </div>
             <div class="hero-image" data-aos="fade-left">
                 <img src="/assets/images/services/healthcare-ai.svg" alt="AI for Healthcare & Medical Analysis" class="floating-image">
+                <div class="decoration-circle-1"></div>
+                <div class="decoration-circle-2"></div>
             </div>
         </div>
     </div>
