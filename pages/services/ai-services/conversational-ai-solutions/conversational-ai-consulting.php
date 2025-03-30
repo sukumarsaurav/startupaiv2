@@ -19,29 +19,61 @@ $seo_data = [
 require_once '../../../../components/header.php';
 ?>
 
-<!-- Page Header -->
-<section class="page-header">
-    <div class="content-container">
-        <div class="header-grid">
-            <div class="page-header-content" data-aos="fade-right">
-                <h1><?php echo $serviceName; ?></h1>
-                <p>Strategic guidance for implementing effective conversational AI solutions</p>
-                <a href="/pages/contact.php" class="get-started-btn">Request a Consultation</a>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-background"></div>
+    <div class="hero-blob-1"></div>
+    <div class="hero-blob-2"></div>
+    
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <span class="service-category">Conversational AI Solutions</span>
+                <h1>Conversational <span class="highlight">AI</span> Consulting</h1>
+                <p class="lead">Strategic guidance to create intelligent, engaging conversational experiences that transform how businesses connect with users</p>
+                <div class="hero-buttons">
+                    <a href="/pages/contact.php" class="btn btn-primary">Request a Consultation</a>
+                    <a href="/pages/case-studies.php" class="btn btn-outline">View Case Studies</a>
+                </div>
+                <div class="tech-stack">
+                    <span>Platforms:</span>
+                    <img src="/assets/images/tech/dialogflow.png" alt="Google Dialogflow" title="Google Dialogflow">
+                    <img src="/assets/images/tech/openai.png" alt="OpenAI" title="OpenAI GPT">
+                    <img src="/assets/images/tech/watson.png" alt="IBM Watson" title="IBM Watson">
+                    <img src="/assets/images/tech/lex.png" alt="Amazon Lex" title="Amazon Lex">
+                </div>
             </div>
-            <div class="page-header-image" data-aos="fade-left">
-                <img src="/assets/images/services/ai-consulting.svg" alt="Conversational AI Consulting" class="featured-image">
+            <div class="hero-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                <div class="image-glow"></div>
+                <img src="/assets/images/services/ai-consulting.svg" alt="Conversational AI Consulting" class="floating-image">
+                <div class="decoration-circle-1"></div>
+                <div class="decoration-circle-2"></div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Service Overview -->
-<section class="service-overview">
-    <div class="content-container">
-        <div class="section-header">
-            <div class="service-overview-header" data-aos="fade-up">
-                <h2>Strategic Consulting for Effective Conversational AI</h2>
-                <p class="lead">Our conversational AI consulting services help businesses plan, design, and optimize AI-powered conversation systems that deliver exceptional user experiences and measurable business results.</p>
+<!-- Service Overview Section -->
+<section class="overview-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Strategic Consulting for Effective Conversational AI</h2>
+            <p class="section-lead">Our conversational AI consulting services help businesses plan, design, and optimize AI-powered conversation systems that deliver exceptional user experiences and measurable business results.</p>
+        </div>
+        
+        <div class="overview-grid">
+            <div class="overview-card primary-card" data-aos="fade-right" data-aos-duration="800">
+                <div class="card-decoration"></div>
+                <h3>The Conversational AI Challenge</h3>
+                <p>Many organizations struggle to successfully implement conversational AI solutions that truly deliver value. Common challenges include unclear business objectives, poor conversation design, inadequate technology selection, and difficulty measuring ROI.</p>
+                <p>Without expert guidance, conversational AI projects often result in underwhelming user experiences, low adoption rates, and failure to deliver on business objectives.</p>
+            </div>
+            
+            <div class="overview-card secondary-card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                <div class="card-decoration"></div>
+                <h3>Our Consulting Approach</h3>
+                <p>Our experienced consultants bring strategic vision, technical expertise, and a user-centered design approach to help businesses successfully navigate the complexities of conversational AI implementation.</p>
+                <p>We work collaboratively with your team to develop a comprehensive strategy, select the right technologies, design engaging conversations, and establish frameworks for continuous improvement and ROI measurement.</p>
             </div>
         </div>
     </div>
@@ -49,11 +81,11 @@ require_once '../../../../components/header.php';
 
 <!-- Services Section -->
 <section class="services-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="services-header" data-aos="fade-up">
                 <h2>Our Conversational AI Consulting Services</h2>
-                <p class="lead">Comprehensive guidance across all aspects of conversational AI</p>
+                <p class="section-lead">Comprehensive guidance across all aspects of conversational AI</p>
             </div>
         </div>
         
@@ -70,6 +102,7 @@ require_once '../../../../components/header.php';
                         <li><i class="fas fa-check"></i> Use case prioritization</li>
                         <li><i class="fas fa-check"></i> Technology evaluation & selection</li>
                         <li><i class="fas fa-check"></i> Implementation roadmap</li>
+                        <li><i class="fas fa-check"></i> ROI framework development</li>
                     </ul>
                 </div>
             </div>
@@ -86,6 +119,7 @@ require_once '../../../../components/header.php';
                         <li><i class="fas fa-check"></i> Dialogue flow mapping</li>
                         <li><i class="fas fa-check"></i> Error handling strategies</li>
                         <li><i class="fas fa-check"></i> Conversational UX best practices</li>
+                        <li><i class="fas fa-check"></i> Voice & tone optimization</li>
                     </ul>
                 </div>
             </div>
@@ -102,6 +136,7 @@ require_once '../../../../components/header.php';
                         <li><i class="fas fa-check"></i> Intent recognition improvement</li>
                         <li><i class="fas fa-check"></i> Response optimization</li>
                         <li><i class="fas fa-check"></i> User satisfaction metrics</li>
+                        <li><i class="fas fa-check"></i> Continuous improvement frameworks</li>
                     </ul>
                 </div>
             </div>
@@ -118,6 +153,7 @@ require_once '../../../../components/header.php';
                         <li><i class="fas fa-check"></i> Development oversight</li>
                         <li><i class="fas fa-check"></i> Testing & quality assurance</li>
                         <li><i class="fas fa-check"></i> Launch & adoption planning</li>
+                        <li><i class="fas fa-check"></i> Team training & knowledge transfer</li>
                     </ul>
                 </div>
             </div>
@@ -125,70 +161,77 @@ require_once '../../../../components/header.php';
     </div>
 </section>
 
-<!-- Consulting Process -->
-<section class="implementation-process">
-    <div class="content-container">
-        <div class="section-header">
-            <div class="process-header" data-aos="fade-up">
-                <h2>Our Consulting Process</h2>
-                <p class="lead">A systematic approach to conversational AI success</p>
-            </div>
+<!-- Consulting Process Section -->
+<section class="process-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Consulting Process</h2>
+            <p class="section-lead">A systematic approach to conversational AI success</p>
         </div>
         
-        <div class="process-grid">
-            <div class="process-item" data-aos="fade-up">
-                <div class="process-card">
-                    <div class="process-number">01</div>
-                    <h3>Discovery & Assessment</h3>
-                    <p>We evaluate your business objectives, existing systems, user needs, and market context to establish a solid foundation for your conversational AI initiatives.</p>
-                    <ul class="process-features">
-                        <li>Business goals analysis</li>
-                        <li>User research & journey mapping</li>
-                        <li>Tech stack evaluation</li>
-                        <li>Competitive landscape review</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="process-timeline">
+            <!-- Timeline Line -->
+            <div class="timeline-line"></div>
             
-            <div class="process-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-card">
-                    <div class="process-number">02</div>
-                    <h3>Strategy Development</h3>
-                    <p>We create a comprehensive strategy and roadmap for your conversational AI implementation, aligned with your business objectives and resources.</p>
-                    <ul class="process-features">
-                        <li>Use case prioritization</li>
-                        <li>Technology recommendation</li>
-                        <li>Implementation planning</li>
-                        <li>ROI projection</li>
-                    </ul>
+            <div class="process-grid">
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800">
+                    <div class="process-number">1</div>
+                    <div class="process-card">
+                        <h3>Discovery & Assessment</h3>
+                        <p>We evaluate your business objectives, existing systems, user needs, and market context to establish a solid foundation for your conversational AI initiatives.</p>
+                        <ul class="process-list">
+                            <li>Business goals analysis</li>
+                            <li>User research & journey mapping</li>
+                            <li>Tech stack evaluation</li>
+                            <li>Competitive landscape review</li>
+                            <li>Stakeholder interviews & alignment</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-card">
-                    <div class="process-number">03</div>
-                    <h3>Design & Development Guidance</h3>
-                    <p>We provide expert oversight and direction during the design and development phases to ensure your solution meets best practices and business requirements.</p>
-                    <ul class="process-features">
-                        <li>Conversation design workshops</li>
-                        <li>NLP model optimization</li>
-                        <li>Integration architecture planning</li>
-                        <li>Quality assurance frameworks</li>
-                    </ul>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="process-number">2</div>
+                    <div class="process-card">
+                        <h3>Strategy Development</h3>
+                        <p>We create a comprehensive strategy and roadmap for your conversational AI implementation, aligned with your business objectives and resources.</p>
+                        <ul class="process-list">
+                            <li>Use case prioritization</li>
+                            <li>Technology recommendation</li>
+                            <li>Implementation planning</li>
+                            <li>ROI projection</li>
+                            <li>Risk assessment & mitigation</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-card">
-                    <div class="process-number">04</div>
-                    <h3>Continuous Improvement</h3>
-                    <p>We help you establish metrics, monitoring, and optimization processes to ensure your conversational AI solutions continue to improve over time.</p>
-                    <ul class="process-features">
-                        <li>Performance metrics setup</li>
-                        <li>Conversation analytics review</li>
-                        <li>Iterative optimization</li>
-                        <li>Expansion opportunity analysis</li>
-                    </ul>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="process-number">3</div>
+                    <div class="process-card">
+                        <h3>Design & Development Guidance</h3>
+                        <p>We provide expert oversight and direction during the design and development phases to ensure your solution meets best practices and business requirements.</p>
+                        <ul class="process-list">
+                            <li>Conversation design workshops</li>
+                            <li>NLP model optimization</li>
+                            <li>Integration architecture planning</li>
+                            <li>Quality assurance frameworks</li>
+                            <li>User testing coordination</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    <div class="process-number">4</div>
+                    <div class="process-card">
+                        <h3>Continuous Improvement</h3>
+                        <p>We help you establish metrics, monitoring, and optimization processes to ensure your conversational AI solutions continue to improve over time.</p>
+                        <ul class="process-list">
+                            <li>Performance metrics setup</li>
+                            <li>Conversation analytics review</li>
+                            <li>Iterative optimization</li>
+                            <li>Expansion opportunity analysis</li>
+                            <li>Long-term evolution planning</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -196,20 +239,23 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Expertise Section -->
-<section class="platforms-section">
-    <div class="content-container">
+<section class="technologies-section">
+    <div class="container">
         <div class="section-header">
-            <div class="platforms-header" data-aos="fade-up">
+            <div class="technologies-header" data-aos="fade-up">
                 <h2>Our Conversational AI Expertise</h2>
-                <p class="lead">Specialized knowledge across platforms and technologies</p>
+                <p class="section-lead">Specialized knowledge across platforms and technologies</p>
             </div>
         </div>
         
-        <div class="platforms-grid">
-            <div class="platform-item" data-aos="fade-up">
-                <div class="platform-card">
+        <div class="technologies-grid">
+            <div class="technology-item" data-aos="fade-up">
+                <div class="technology-card">
+                    <div class="technology-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
                     <h3>AI & NLP Technologies</h3>
-                    <ul>
+                    <ul class="technology-list">
                         <li>Google Dialogflow</li>
                         <li>Microsoft LUIS & Bot Framework</li>
                         <li>IBM Watson Assistant</li>
@@ -220,10 +266,13 @@ require_once '../../../../components/header.php';
                 </div>
             </div>
             
-            <div class="platform-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="platform-card">
+            <div class="technology-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="technology-card">
+                    <div class="technology-icon">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
                     <h3>Conversation Channels</h3>
-                    <ul>
+                    <ul class="technology-list">
                         <li>Website & Web App Integration</li>
                         <li>Mobile Applications</li>
                         <li>Voice Assistants (Alexa, Google)</li>
@@ -234,10 +283,13 @@ require_once '../../../../components/header.php';
                 </div>
             </div>
             
-            <div class="platform-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="platform-card">
+            <div class="technology-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="technology-card">
+                    <div class="technology-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
                     <h3>Industry Applications</h3>
-                    <ul>
+                    <ul class="technology-list">
                         <li>E-commerce & Retail</li>
                         <li>Banking & Financial Services</li>
                         <li>Healthcare & Pharma</li>
@@ -251,74 +303,113 @@ require_once '../../../../components/header.php';
     </div>
 </section>
 
-<!-- Benefits Section -->
-<section class="benefits-section">
-    <div class="content-container">
+<!-- Technical Standards Section -->
+<section class="compliance-section">
+    <div class="container">
         <div class="section-header">
-            <div class="benefits-header" data-aos="fade-up">
-                <h2>Benefits of Conversational AI Consulting</h2>
-                <p class="lead">How our consulting services drive successful outcomes</p>
+            <div class="compliance-header" data-aos="fade-up">
+                <h2>Conversational AI Standards</h2>
+                <p class="lead">We adhere to rigorous standards in our consulting approach</p>
             </div>
         </div>
         
+        <div class="content-row">
+            <div class="content-col one-half margin-bottom-4" data-aos="fade-up">
+                <div class="compliance-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="compliance-icon margin-bottom-3">
+                        <i class="fas fa-shield-alt fa-2x color-primary"></i>
+                    </div>
+                    <h4>Data Privacy & Security</h4>
+                    <ul class="compliance-list">
+                        <li><i class="fas fa-check text-primary me-2"></i>GDPR and CCPA compliant strategies</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Data minimization principles</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Encryption recommendations</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>User consent frameworks</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Secure authentication patterns</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-col one-half margin-bottom-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="compliance-card height-100 padding-4 bg-white rounded box-shadow-sm">
+                    <div class="compliance-icon margin-bottom-3">
+                        <i class="fas fa-universal-access fa-2x color-primary"></i>
+                    </div>
+                    <h4>Accessibility & Inclusion</h4>
+                    <ul class="compliance-list">
+                        <li><i class="fas fa-check text-primary me-2"></i>WCAG 2.1 compliance guidance</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Inclusive design principles</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Multi-language support</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Alternative interaction methods</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Bias mitigation strategies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Benefits of Expert AI Consulting</h2>
+            <p class="section-lead">How our consulting services drive success in conversational AI initiatives</p>
+        </div>
+        
         <div class="benefits-grid">
-            <div class="benefit-item" data-aos="fade-up">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3>Focused Strategy</h3>
-                    <p>Ensure your conversational AI initiatives align with business goals and target high-value use cases first.</p>
-                </div>
-            </div>
-            
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-money-bill-wave"></i>
-                    </div>
-                    <h3>Reduced Implementation Costs</h3>
-                    <p>Avoid costly mistakes and rework by developing the right solution with appropriate technology choices from the start.</p>
-                </div>
-            </div>
-            
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="benefit-card-wrapper primary-benefit" data-aos="fade-right" data-aos-duration="800">
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-rocket"></i>
                     </div>
-                    <h3>Accelerated Time-to-Value</h3>
-                    <p>Leverage our expertise to implement effective conversational AI solutions faster and realize returns sooner.</p>
+                    <h3>Accelerated Implementation</h3>
+                    <p>Expert guidance helps avoid common pitfalls and accelerate your path to success. Clients working with our consultants report 40% faster implementation timelines and 65% fewer revisions compared to teams working without expert assistance.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge">40% faster deployment</span>
+                        <span class="stat-badge">65% fewer revisions</span>
+                    </div>
                 </div>
             </div>
             
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="benefit-card-wrapper secondary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-smile"></i>
+                    <div class="benefit-icon secondary-icon">
+                        <i class="fas fa-users"></i>
                     </div>
-                    <h3>Enhanced User Experience</h3>
-                    <p>Create natural, intuitive conversational experiences that delight users and improve satisfaction metrics.</p>
+                    <h3>Enhanced User Adoption</h3>
+                    <p>Our strategic approach to conversation design and user experience results in higher engagement and satisfaction. Projects guided by our consultants see 58% higher user adoption rates and 45% improvement in satisfaction scores compared to industry averages.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge secondary-badge">58% higher adoption</span>
+                        <span class="stat-badge secondary-badge">45% better satisfaction</span>
+                    </div>
                 </div>
             </div>
             
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="benefit-card-wrapper tertiary-benefit" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-expand-arrows-alt"></i>
+                    <div class="benefit-icon tertiary-icon">
+                        <i class="fas fa-money-bill-wave"></i>
                     </div>
-                    <h3>Scalable Architecture</h3>
-                    <p>Build systems that can grow with your business and expand across channels and use cases over time.</p>
+                    <h3>Maximized ROI</h3>
+                    <p>Strategic alignment with business objectives ensures your conversational AI investments deliver tangible returns. Our clients report 52% higher ROI on their conversational AI projects and 30% lower total cost of ownership through proper planning and optimization.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge tertiary-badge">52% higher ROI</span>
+                        <span class="stat-badge tertiary-badge">30% lower TCO</span>
+                    </div>
                 </div>
             </div>
             
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="benefit-card-wrapper quaternary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-lightbulb"></i>
+                    <div class="benefit-icon quaternary-icon">
+                        <i class="fas fa-brain"></i>
                     </div>
-                    <h3>Innovation Guidance</h3>
-                    <p>Stay ahead with insights on emerging trends and technologies in the rapidly evolving conversational AI landscape.</p>
+                    <h3>Knowledge Transfer</h3>
+                    <p>Our consulting engagements include comprehensive knowledge transfer to your team. Clients report 75% improved capability in managing conversational AI platforms independently and 60% greater confidence in making strategic decisions about their AI roadmap.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge quaternary-badge">75% improved capabilities</span>
+                        <span class="stat-badge quaternary-badge">60% greater confidence</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -327,73 +418,121 @@ require_once '../../../../components/header.php';
 
 <!-- CTA Section -->
 <section class="cta-section">
-    <div class="content-container">
-        <div class="cta-content" data-aos="fade-up">
+    <div class="container">
+        <div class="cta-content">
             <h2>Ready to Transform Your Conversational AI Strategy?</h2>
-            <p class="lead">Let our experts guide you in developing effective, results-driven conversational AI solutions.</p>
-            <a href="/pages/contact.php" class="cta-btn">Schedule a Strategy Session</a>
+            <p class="lead">Schedule a strategic assessment with our conversational AI experts to identify opportunities and build your roadmap for success.</p>
+            <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">
+                Book a Strategic Assessment
+            </a>
         </div>
     </div>
 </section>
 
 <!-- FAQ Section -->
 <section class="faq-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
-            <div class="faq-header" data-aos="fade-up">
+            <div class="faq-header">
                 <h2>Frequently Asked Questions</h2>
                 <p class="lead">Common questions about conversational AI consulting</p>
             </div>
         </div>
-        
         <div class="faq-container">
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item active">
                 <div class="faq-question">
-                    <h3>When should a business consider conversational AI consulting?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>What does a conversational AI consultant do?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Businesses should consider conversational AI consulting when they're planning to implement their first chatbot or virtual assistant, when existing solutions aren't delivering expected results, when scaling conversational AI across the organization, or when aiming to leverage advanced capabilities like voice interfaces or multilingual support. Consulting is especially valuable when you need to align conversational AI with specific business goals, integrate with complex systems, or create sophisticated conversation flows that deliver measurable ROI.</p>
+                    <p>Conversational AI consultants provide expert guidance throughout the lifecycle of AI-powered conversation systems, including:</p>
+                    <ul>
+                        <li><strong>Strategy:</strong> Helping businesses identify the right use cases, select appropriate technologies, and create implementation roadmaps aligned with business objectives.</li>
+                        <li><strong>Design:</strong> Developing effective conversation flows, persona development, and user experience design to ensure natural, engaging interactions.</li>
+                        <li><strong>Technology:</strong> Providing guidance on platform selection, integration architecture, and technical implementation to ensure robust, scalable solutions.</li>
+                        <li><strong>Optimization:</strong> Analyzing conversation data to improve performance, expand capabilities, and enhance user satisfaction over time.</li>
+                        <li><strong>Governance:</strong> Establishing frameworks for monitoring, maintenance, and continuous improvement to maximize long-term value.</li>
+                    </ul>
+                    <p>Our consultants serve as strategic partners, bringing specialized expertise to help organizations achieve successful outcomes with their conversational AI initiatives.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How do you measure the success of conversational AI implementations?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>How do you measure the success of conversational AI initiatives?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>We measure success using a combination of technical, user experience, and business metrics. Technical metrics include accuracy rates, resolution rates, and containment rates. User experience metrics focus on customer satisfaction scores, engagement levels, and conversation completion rates. Business metrics track ROI through cost savings (reduced support costs, increased agent efficiency) and revenue generation (conversion rates, average order value, lead qualification). We establish baseline measurements and KPIs during the strategy phase and implement continuous monitoring to track improvement over time.</p>
+                    <p>We establish comprehensive measurement frameworks tailored to your business objectives. Key metrics typically include:</p>
+                    <ul>
+                        <li><strong>User Engagement:</strong> Conversation volume, session duration, completion rates, and recurring usage.</li>
+                        <li><strong>Technical Performance:</strong> Intent recognition accuracy, entity extraction precision, response times, and error rates.</li>
+                        <li><strong>Business Impact:</strong> Cost savings from automation, revenue generation, conversion rates, and customer satisfaction scores.</li>
+                        <li><strong>Operational Metrics:</strong> Reduction in human agent workload, inquiry resolution times, and escalation rates.</li>
+                    </ul>
+                    <p>Our approach focuses on connecting conversational AI performance directly to business outcomes, using both quantitative metrics and qualitative feedback to provide a complete picture of success and identify opportunities for improvement.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How long does a typical conversational AI consulting engagement last?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>How long does a typical consulting engagement last?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Consulting engagement duration varies based on scope and complexity. Initial strategy development typically takes 4-6 weeks, including discovery, assessment, and roadmap creation. Implementation guidance can range from 3-6 months for straightforward projects to 6-12 months for complex, enterprise-wide implementations. Many clients choose ongoing optimization engagements where we provide regular reviews and improvements on a quarterly basis. We offer flexible engagement models to match your specific needs and can scale our involvement based on your internal resources and capabilities.</p>
+                    <p>The duration of our consulting engagements varies based on the scope and complexity of your needs:</p>
+                    <ul>
+                        <li><strong>Strategic Assessment:</strong> 2-4 weeks to evaluate your current state and develop initial recommendations.</li>
+                        <li><strong>Implementation Planning:</strong> 4-8 weeks to create detailed roadmaps, use case specifications, and technical architecture.</li>
+                        <li><strong>Development Support:</strong> 3-6 months to guide implementation teams through the development and deployment process.</li>
+                        <li><strong>Ongoing Optimization:</strong> Typically quarterly check-ins and optimization sessions over a 12-month period.</li>
+                    </ul>
+                    <p>We offer flexible engagement models, from targeted workshops and assessments to comprehensive end-to-end support. Our goal is to provide the right level of expertise at each stage of your conversational AI journey, adapting our involvement based on your team's capabilities and needs.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>Do you recommend specific conversational AI platforms or are you platform-agnostic?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>Do you provide implementation services or just consulting?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>We maintain a platform-agnostic approach, providing recommendations based on your specific requirements, technical environment, and business needs. Our consultants have expertise across major platforms including Google Dialogflow, Microsoft Bot Framework, IBM Watson, Amazon Lex, Rasa, and others. During the strategy phase, we evaluate factors like required NLP capabilities, integration needs, deployment channels, scalability requirements, and budget constraints to recommend the most appropriate solution for your unique situation. We can also assess the suitability of your existing platforms if you already have conversational AI infrastructure in place.</p>
+                    <p>We offer both strategic consulting and implementation services for conversational AI:</p>
+                    <ul>
+                        <li><strong>Pure Consulting:</strong> For organizations that have internal development teams or preferred technology partners, we can provide strategic guidance, design expertise, and oversight while your team handles implementation.</li>
+                        <li><strong>Hybrid Model:</strong> We can lead certain specialized aspects of the implementation (such as conversation design or NLP model training) while working alongside your technical teams.</li>
+                        <li><strong>Full Implementation:</strong> Through our implementation services, we can deliver complete end-to-end development of your conversational AI solution, from strategy through deployment and optimization.</li>
+                    </ul>
+                    <p>Our flexible approach allows us to complement your existing capabilities with specialized expertise where needed. For clients interested in full implementation services, we have dedicated development teams with deep expertise in all major conversational AI platforms and technologies.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How do you ensure privacy and security in conversational AI implementations?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>What industries do you have experience with?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Privacy and security are foundational elements of our consulting approach. We conduct thorough assessments of data handling requirements, regulatory compliance needs (GDPR, HIPAA, CCPA, etc.), and industry-specific security standards. Our recommendations include data minimization strategies, appropriate authentication and authorization mechanisms, secure data storage and transmission practices, and privacy-by-design principles. We also advise on transparent user consent processes, data retention policies, and implementation of security best practices. For sensitive industries like healthcare or finance, we provide specialized guidance on compliance requirements and recommend appropriate security certifications.</p>
+                    <p>Our consultants have worked across a wide range of industries, developing specialized knowledge of use cases, challenges, and best practices in each sector:</p>
+                    <ul>
+                        <li><strong>Retail & E-commerce:</strong> Product discovery chatbots, order management, customer service automation.</li>
+                        <li><strong>Financial Services:</strong> Banking assistants, investment advisors, insurance claim processing, compliance-aware solutions.</li>
+                        <li><strong>Healthcare:</strong> Patient engagement, appointment scheduling, medication management, symptom checking.</li>
+                        <li><strong>Travel & Hospitality:</strong> Booking assistants, travel planning, concierge services, loyalty program management.</li>
+                        <li><strong>Telecommunications:</strong> Technical support, service activation, billing inquiries, plan recommendations.</li>
+                        <li><strong>Manufacturing & B2B:</strong> Supply chain communication, internal knowledge bases, field service support.</li>
+                    </ul>
+                    <p>This cross-industry experience allows us to bring proven patterns and innovative approaches to your specific challenges, combining industry-specific knowledge with conversational AI best practices.</p>
                 </div>
             </div>
         </div>
@@ -401,6 +540,10 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php
-// Include footer
-require_once '../../../../components/footer.php';
+include_once '../../../../components/footer.php';
 ?>
+
+<!-- JavaScript libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/services.js"></script>
