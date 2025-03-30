@@ -576,37 +576,45 @@ require_once '../../../../components/header.php';
 <!-- FAQ Section -->
 <section class="faq-section">
     <div class="container">
-        <div class="faq-header">
-            <h2 class="faq-title">Speed Optimization FAQ's</h2>
-            <h3 class="faq-subtitle">Have Any Questions?</h3>
+        <div class="section-header">
+            <div class="faq-header">
+                <h2>Speed Optimization FAQ's</h2>
+                <p class="lead">Have Any Questions?</p>
+            </div>
         </div>
 
         <div class="faq-container">
             <div class="faq-item">
-                <button class="faq-question">
-                    How much can speed optimization improve my website's performance?
-                    <span class="faq-plus-icon">+</span>
-                </button>
+                <div class="faq-question">
+                    <h3>How much can speed optimization improve my website's performance?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
                 <div class="faq-answer">
                     <p>The potential improvement varies based on your current site's condition, but we typically achieve load time reductions of 40-80%. For example, a site that takes 6 seconds to load might be optimized to load in 1.5-2 seconds. The most dramatic improvements usually come from sites with unoptimized images, excessive scripts, and no caching implementation. Even sites that seem reasonably fast can often be improved by 30-40% with advanced optimization techniques. The key metrics we focus on include initial page load time, Time to Interactive, and Core Web Vitals metrics like Largest Contentful Paint and Cumulative Layout Shift. We'll provide before-and-after measurements so you can see exactly how much your site has improved.</p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">
-                    Will speed optimization affect my website's design or functionality?
-                    <span class="faq-plus-icon">+</span>
-                </button>
+                <div class="faq-question">
+                    <h3>Will speed optimization affect my website's design or functionality?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
                 <div class="faq-answer">
                     <p>When properly implemented, speed optimization should maintain or even enhance your website's visual appearance and functionality. Our approach focuses on making technical improvements that don't compromise the user experience. For instance, we optimize images for faster loading while preserving visual quality. We might recommend some design adjustments if they would significantly impact performance, such as simplifying complex animations on mobile or implementing more efficient loading strategies for media-heavy pages. Any recommended changes will be discussed with you before implementation, with clear explanations of the performance benefits. Our goal is to make your site faster while keeping its design integrity and ensuring all functionality works flawlessly.</p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">
-                    How long does the speed optimization process take?
-                    <span class="faq-plus-icon">+</span>
-                </button>
+                <div class="faq-question">
+                    <h3>How long does the speed optimization process take?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
                 <div class="faq-answer">
                     <p>For most websites, the complete speed optimization process takes 2-3 weeks from initial assessment to final implementation. The timeline depends on your site's complexity, size, and the extent of optimization needed. The process begins with a thorough performance audit (2-3 days), followed by development of the optimization strategy (3-5 days). Implementation typically takes 1-2 weeks, with the most critical improvements often deployed early in the process. For very large sites or e-commerce platforms with complex functionality, the process may extend to 4-6 weeks to ensure all optimizations are thoroughly tested. We can also provide expedited optimization for specific high-priority pages if you need quick improvements in critical areas while the broader optimization work continues.</p>
                 </div>

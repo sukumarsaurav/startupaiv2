@@ -1,14 +1,7 @@
 <?php
 // Define base path to allow direct script access
 define('BASEPATH', true);
-
-require_once '../../../../config/database.php';
-require_once '../../../../config/why-hire-us.php';
-require_once '../../../../assets/templates/why-hire-us-section.php';
-
-// Get Why Hire Us content for Custom CMS Solutions
-$why_hire_us = getWhyHireUsContent('custom-cms-solutions');
-
+require_once '../../../../includes/config.php';
 require_once '../../../../components/header.php';
 ?>
 
@@ -27,7 +20,7 @@ require_once '../../../../components/header.php';
 </header>
 
 <!-- Service Overview -->
-<section class="service-overview py-5">
+<section class="overview-section py-5">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
@@ -137,7 +130,7 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Custom CMS Solutions -->
-<section class="solutions-section py-5">
+<section class="services-section py-5">
     <div class="container">
         <div class="row mb-5">
             <div class="col-lg-12 text-center" data-aos="fade-up">
@@ -336,47 +329,57 @@ require_once '../../../../components/header.php';
 <!-- FAQ Section -->
 <section class="faq-section">
     <div class="container">
-        <div class="faq-header">
-            <h2 class="faq-title">Custom CMS Development FAQ's</h2>
-            <h3 class="faq-subtitle">Have Any Questions?</h3>
+        <div class="section-header">
+            <div class="faq-header">
+                <h2>Custom CMS Development FAQ's</h2>
+                <p class="lead">Have Any Questions?</p>
+            </div>
         </div>
 
         <div class="faq-container">
             <div class="faq-item">
-                <button class="faq-question">
-                    How much does custom CMS development cost?
-                    <span class="faq-plus-icon">+</span>
-                </button>
+                <div class="faq-question">
+                    <h3>How much does custom CMS development cost?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
                 <div class="faq-answer">
                     <p>The cost of custom CMS development varies significantly based on the complexity, features, and scale of the solution. Simple custom CMS implementations typically start around $15,000-$25,000, while enterprise-level solutions with complex workflows, integrations, and advanced features can range from $30,000 to $150,000+. We provide detailed estimates after thoroughly understanding your specific requirements during our discovery phase.</p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">
-                    How long does it take to develop a custom CMS?
-                    <span class="faq-plus-icon">+</span>
-                </button>
+                <div class="faq-question">
+                    <h3>How long does it take to develop a custom CMS?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
                 <div class="faq-answer">
                     <p>The timeline for custom CMS development typically ranges from 3-9 months depending on complexity. A basic CMS might take 3-4 months to develop, while more complex systems with multiple user roles, advanced workflows, and extensive integrations can take 6-9 months or longer. We use an agile development approach that allows for early deployment of core functionality with additional features added in subsequent phases.</p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">
-                    Why choose a custom CMS over WordPress or another existing platform?
-                    <span class="faq-plus-icon">+</span>
-                </button>
+                <div class="faq-question">
+                    <h3>Why choose a custom CMS over WordPress or another existing platform?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
                 <div class="faq-answer">
                     <p>While WordPress and other existing CMS platforms work well for standard websites, a custom CMS is ideal when you have specific requirements that can't be efficiently met by off-the-shelf solutions. Custom CMS development is recommended when you need specialized content types, unique workflows, specific user roles and permissions, seamless integration with proprietary systems, enhanced security requirements, or when performance optimization is crucial. A custom solution eliminates the need for plugins and workarounds that can lead to maintenance issues and security vulnerabilities.</p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">
-                    How is the CMS maintained and updated after launch?
-                    <span class="faq-plus-icon">+</span>
-                </button>
+                <div class="faq-question">
+                    <h3>How is the CMS maintained and updated after launch?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
                 <div class="faq-answer">
                     <p>We offer several maintenance options for custom CMS solutions. Our standard maintenance packages include security updates, bug fixes, performance monitoring, and regular backups. We also provide ongoing development services for adding new features or modules as your business evolves. Our team can provide training for your internal IT staff if you prefer to handle routine maintenance in-house, while still being available for major updates or technical challenges. We recommend a maintenance agreement to ensure your CMS remains secure, stable, and up-to-date.</p>
                 </div>

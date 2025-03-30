@@ -502,37 +502,45 @@ require_once '../../../../components/header.php';
 <!-- FAQ Section -->
 <section class="faq-section">
     <div class="container">
-        <div class="faq-header">
-            <h2 class="faq-title">Website Modernization FAQ's</h2>
-            <h3 class="faq-subtitle">Have Any Questions?</h3>
+        <div class="section-header">
+            <div class="faq-header">
+                <h2>Website Modernization FAQ's</h2>
+                <p class="lead">Have Any Questions?</p>
+            </div>
         </div>
 
         <div class="faq-container">
             <div class="faq-item">
-                <button class="faq-question">
-                    How do I know if my website needs modernization?
-                    <span class="faq-plus-icon">+</span>
-                </button>
+                <div class="faq-question">
+                    <h3>How do I know if my website needs modernization?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
                 <div class="faq-answer">
                     <p>Several indicators suggest your website may need modernization: 1) It's not fully responsive on mobile devices, 2) It loads slowly (taking more than 3 seconds), 3) It has an outdated visual design with small text, limited whitespace, or dated graphics, 4) It's built on obsolete or unsupported technology, 5) You're unable to easily update content or add features, 6) Your conversion rates are declining despite stable traffic, 7) Your competitors' sites offer a notably better user experience, or 8) Your site has poor search engine visibility despite SEO efforts. If you recognize several of these signs, a modernization assessment can help determine the specific improvements needed to bring your site up to current standards and expectations.</p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">
-                    Will modernizing my website affect my SEO rankings?
-                    <span class="faq-plus-icon">+</span>
-                </button>
+                <div class="faq-question">
+                    <h3>Will modernizing my website affect my SEO rankings?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
                 <div class="faq-answer">
                     <p>When properly executed, website modernization should positively impact your SEO rankings. Our approach carefully preserves valuable SEO equity while implementing improvements that align with current search engine algorithms. We maintain URL structures where possible or implement proper redirects to prevent traffic loss. Modern websites benefit from improved mobile-friendliness, faster loading times, and better user experience metrics—all factors that search engines now prioritize. Additionally, we implement current technical SEO best practices like schema markup, enhanced metadata, and improved site architecture. Many clients see ranking improvements within 2-3 months after modernization as search engines recognize the enhanced user experience and technical improvements.</p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">
-                    Is it better to modernize my existing site or build a completely new one?
-                    <span class="faq-plus-icon">+</span>
-                </button>
+                <div class="faq-question">
+                    <h3>Is it better to modernize my existing site or build a completely new one?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
                 <div class="faq-answer">
                     <p>The decision between modernization and complete rebuilding depends on several factors. Modernization is often preferable when: 1) Your site has substantial valuable content that would be time-consuming to recreate, 2) You have established SEO rankings you don't want to risk, 3) Your basic site structure is sound but needs updating, or 4) You need to spread out investment over time. A complete rebuild might be better when: 1) Your site is built on obsolete technology that can't be effectively updated, 2) Your business objectives or target audience have fundamentally changed, 3) Your site structure needs complete rethinking, or 4) The cost of updating would exceed rebuilding. Our assessment process helps determine which approach offers the best value and results for your specific situation.</p>
                 </div>

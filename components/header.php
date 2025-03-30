@@ -10,7 +10,12 @@
     
     <!-- Core CSS -->
    
-    
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
     <!-- Component-specific CSS -->
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
@@ -253,7 +258,9 @@
             <button class="navbar-toggler" id="drawerToggle">
                 <i class="fas fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="/index.php">StartupAI</a>
+            <a class="navbar-brand" href="/index.php">
+                <img src="/assets/svg/logo.svg" alt="StartupAI Logo" style="height: 50px;">
+            </a>
             <div class="navbar-collapse">
                 <ul class="navbar-nav">
                     <!-- Web Design Dropdown -->

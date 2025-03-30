@@ -360,56 +360,58 @@ require_once '../../../../components/header.php';
         <!-- FAQ Section -->
         <section class="faq-section">
             <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2>Frequently Asked Questions</h2>
-                    <p class="section-lead">Common questions about UI/UX design and our process</p>
+                <div class="section-header">
+                    <div class="faq-header">
+                        <h2>Frequently Asked Questions</h2>
+                        <p class="section-lead">Common questions about UI/UX design and our process</p>
+                    </div>
                 </div>
                 
                 <div class="faq-container">
-                    <div class="faq-item active" data-aos="fade-up">
+                    <div class="faq-item active">
                         <div class="faq-question">
                             <h3>What's the difference between UI and UX design?</h3>
-                            <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                            <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                         </div>
                         <div class="faq-answer">
                             <p>While closely related, UI (User Interface) and UX (User Experience) design are distinct disciplines. UI design focuses on the visual elements of a digital product—the buttons, icons, spacing, typography, color schemes, and responsive design aspects that users interact with. UX design, on the other hand, encompasses the entire user journey and experience with a product, including research, testing, development, content, and strategy. UX answers the question "does this product provide a good experience?" while UI addresses "does this product look and feel good?"</p>
                         </div>
                     </div>
                     
-                    <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-item">
                         <div class="faq-question">
                             <h3>How long does the UI/UX design process typically take?</h3>
-                            <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                            <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                         </div>
                         <div class="faq-answer">
                             <p>The timeline for UI/UX design varies based on project complexity, scope, and specific requirements. A comprehensive design process for a medium-sized website typically takes 6-12 weeks, while a complex application might require 3-6 months. The process includes research, wireframing, prototyping, visual design, testing, and refinement phases. We'll provide a detailed timeline estimate specific to your project during our initial consultation.</p>
                         </div>
                     </div>
                     
-                    <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-item">
                         <div class="faq-question">
                             <h3>How do you ensure accessibility in your designs?</h3>
-                            <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                            <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                         </div>
                         <div class="faq-answer">
                             <p>We integrate accessibility considerations throughout our design process, following WCAG 2.1 guidelines. This includes designing with sufficient color contrast, providing text alternatives for non-text content, ensuring keyboard navigability, creating clear hierarchy and focus states, and testing with assistive technologies. We also conduct accessibility audits and testing with diverse users to identify and resolve any barriers to access. Our goal is to create inclusive designs that work for all users, regardless of their abilities or disabilities.</p>
                         </div>
                     </div>
                     
-                    <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-item">
                         <div class="faq-question">
                             <h3>What deliverables will I receive during the design process?</h3>
-                            <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                            <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                         </div>
                         <div class="faq-answer">
                             <p>Our standard deliverables include: research findings and user personas, information architecture diagrams, user flow maps, wireframes (low and high fidelity), interactive prototypes, UI design mockups for all key screens and responsive breakpoints, a comprehensive UI style guide/design system, annotated designs with specifications for developers, and usability testing reports. All deliverables are provided in formats that facilitate seamless handoff to development teams.</p>
                         </div>
                     </div>
                     
-                    <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-item">
                         <div class="faq-question">
                             <h3>How do you measure the success of a UI/UX design project?</h3>
-                            <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                            <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                         </div>
                         <div class="faq-answer">
                             <p>We establish clear success metrics at the beginning of each project based on your business goals. These typically include quantitative measures like conversion rates, time-on-task, error rates, and user satisfaction scores, as well as qualitative feedback from usability testing. After implementation, we conduct post-launch analysis to measure the actual impact against these benchmarks. We're committed to data-driven design that delivers measurable business results, not just aesthetically pleasing interfaces.</p>

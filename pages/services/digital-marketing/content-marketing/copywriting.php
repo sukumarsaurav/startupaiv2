@@ -26,7 +26,7 @@ require_once '../../../../components/header.php';
     <div class="hero-blob-1"></div>
     <div class="hero-blob-2"></div>
     
-    <div class="content-container">
+    <div class="container">
         <div class="hero-grid">
             <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
                 <h1>Persuasive <span class="highlight">Copywriting</span></h1>
@@ -48,7 +48,7 @@ require_once '../../../../components/header.php';
 
 <!-- Service Overview Section -->
 <section class="overview-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header" data-aos="fade-up">
             <h2>Convert Readers into Customers</h2>
             <p class="section-lead">Powerful copy that connects with your audience and drives them to take action.</p>
@@ -74,7 +74,7 @@ require_once '../../../../components/header.php';
 
 <!-- Services Section -->
 <section class="services-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="services-header" data-aos="fade-up">
                 <h2>Our Copywriting Services</h2>
@@ -184,7 +184,7 @@ require_once '../../../../components/header.php';
 
 <!-- Process Section -->
 <section class="process-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header" data-aos="fade-up">
             <h2>Our Copywriting Process</h2>
             <p class="section-lead">A proven approach to creating copy that converts</p>
@@ -262,7 +262,7 @@ require_once '../../../../components/header.php';
 <!-- Why Choose Us Section -->
 <?php if (isset($why_hire_us) && !empty($why_hire_us)): ?>
 <section class="why-choose-us">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="why-choose-us-header" data-aos="fade-up">
                 <h2>Why Choose StartupAI for Copywriting</h2>
@@ -289,7 +289,7 @@ require_once '../../../../components/header.php';
 
 <!-- CTA Section -->
 <section class="cta-section">
-    <div class="content-container">
+    <div class="container">
         <div class="cta-content" data-aos="fade-up">
             <h2>Ready for Copy That Converts?</h2>
             <p class="lead">Let's create persuasive messaging that resonates with your audience and drives results.</p>
@@ -300,7 +300,7 @@ require_once '../../../../components/header.php';
 
 <!-- FAQ Section -->
 <section class="faq-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="faq-header" data-aos="fade-up">
                 <h2>Frequently Asked Questions</h2>

@@ -27,7 +27,7 @@ require_once '../../../../components/header.php';
     <div class="hero-blob-1"></div>
     <div class="hero-blob-2"></div>
     
-    <div class="content-container">
+    <div class="container">
         <div class="hero-grid">
             <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
                 <h1>Content <span class="highlight">Strategy</span></h1>
@@ -49,7 +49,7 @@ require_once '../../../../components/header.php';
 
 <!-- Service Overview Section -->
 <section class="overview-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header" data-aos="fade-up">
             <h2>Strategic Content Planning for Business Growth</h2>
             <p class="section-lead">We create comprehensive content strategies that align with your business objectives and connect with your target audience.</p>
@@ -75,7 +75,7 @@ require_once '../../../../components/header.php';
 
 <!-- Services Section -->
 <section class="services-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="services-header" data-aos="fade-up">
                 <h2>Our Content Strategy Services</h2>
@@ -185,7 +185,7 @@ require_once '../../../../components/header.php';
 
 <!-- Process Section -->
 <section class="process-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header" data-aos="fade-up">
             <h2>Our Content Strategy Process</h2>
             <p class="section-lead">A systematic approach to developing effective content strategies</p>
@@ -263,7 +263,7 @@ require_once '../../../../components/header.php';
 <!-- Why Choose Us Section -->
 <?php if (isset($why_hire_us) && !empty($why_hire_us)): ?>
 <section class="why-choose-us">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="why-choose-us-header" data-aos="fade-up">
                 <h2>Why Choose StartupAI for Content Strategy</h2>
@@ -290,7 +290,7 @@ require_once '../../../../components/header.php';
 
 <!-- CTA Section -->
 <section class="cta-section">
-    <div class="content-container">
+    <div class="container">
         <div class="cta-content" data-aos="fade-up">
             <h2>Ready to Build Your Content Strategy?</h2>
             <p class="lead">Let's create a strategic roadmap that aligns with your business goals and engages your audience.</p>
@@ -301,7 +301,7 @@ require_once '../../../../components/header.php';
 
 <!-- FAQ Section -->
 <section class="faq-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="faq-header" data-aos="fade-up">
                 <h2>Frequently Asked Questions</h2>
