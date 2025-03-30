@@ -20,28 +20,71 @@ require_once '../../../../components/header.php';
 ?>
 
 <!-- Page Header -->
-<section class="page-header">
-    <div class="content-container">
-        <div class="header-grid">
-            <div class="page-header-content" data-aos="fade-right">
+<section class="hero-section">
+    <div class="blob-1"></div>
+    <div class="blob-2"></div>
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-content" data-aos="fade-right">
+                <span class="service-category">Backend & Infrastructure</span>
                 <h1><?php echo $serviceName; ?></h1>
                 <p class="lead"><?php echo $pageDescription; ?></p>
-                <a href="/pages/contact.php" class="get-started-btn">Get Started</a>
+                <div class="hero-buttons">
+                    <a href="/pages/contact.php" class="btn btn-primary">Build Serverless Apps</a>
+                    <a href="/pages/portfolio.php" class="btn btn-outline">View Portfolio</a>
+                </div>
+                <div class="tech-stack">
+                    <span>Technologies:</span>
+                    <img src="/assets/images/tech/aws-lambda.png" alt="AWS Lambda" title="AWS Lambda">
+                    <img src="/assets/images/tech/azure-functions.png" alt="Azure Functions" title="Azure Functions">
+                    <img src="/assets/images/tech/google-cloud-functions.png" alt="Google Cloud Functions" title="Google Cloud Functions">
+                    <img src="/assets/images/tech/dynamodb.png" alt="DynamoDB" title="DynamoDB">
+                </div>
             </div>
-            <div class="page-header-image" data-aos="fade-left">
-                <img src="/assets/images/services/serverless.svg" alt="<?php echo $serviceName; ?>" class="animate-float">
+            <div class="hero-image" data-aos="fade-left">
+                <img src="/assets/images/services/serverless.svg" alt="<?php echo $serviceName; ?>" class="floating-image">
             </div>
         </div>
     </div>
 </section>
 
 <!-- Service Overview -->
-<section class="service-overview">
-    <div class="content-container">
+<section class="overview-section">
+    <div class="container">
         <div class="section-header">
-            <div class="service-overview-header" data-aos="fade-up">
+            <div class="overview-header" data-aos="fade-up">
                 <h2>Embrace the Future of Cloud Computing</h2>
-                <p class="lead">Serverless architecture allows you to build and run applications without thinking about servers. With our serverless solutions, you can focus on your code while we handle the infrastructure, scaling, and maintenance.</p>
+                <p class="section-lead">Serverless architecture allows you to build and run applications without thinking about servers. With our serverless solutions, you can focus on your code while we handle the infrastructure, scaling, and maintenance.</p>
+            </div>
+        </div>
+        
+        <div class="overview-cards">
+            <div class="overview-card primary-card" data-aos="fade-up">
+                <div class="card-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Event-Driven Architecture</h3>
+                <p>We build serverless systems that automatically respond to events as they occur, creating highly responsive, adaptable applications that scale instantly to match demand.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Automatic scaling based on event volume</li>
+                    <li><i class="fas fa-check-circle"></i> Decoupled architecture for flexibility</li>
+                    <li><i class="fas fa-check-circle"></i> Pay only for actual execution time</li>
+                </ul>
+            </div>
+            
+            <div class="overview-card secondary-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3>Cloud-Native Development</h3>
+                <p>Our serverless solutions leverage the full potential of cloud platforms, integrating seamlessly with managed services to minimize development time and maintenance overhead.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Native cloud service integration</li>
+                    <li><i class="fas fa-check-circle"></i> Cross-platform compatibility</li>
+                    <li><i class="fas fa-check-circle"></i> Infrastructure as code deployment</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -49,11 +92,11 @@ require_once '../../../../components/header.php';
 
 <!-- Services Section -->
 <section class="services-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="services-header" data-aos="fade-up">
                 <h2>Our Serverless Solutions</h2>
-                <p class="lead">Modern, scalable serverless applications for your business needs</p>
+                <p class="section-lead">Modern, scalable serverless applications for your business needs</p>
             </div>
         </div>
         
@@ -126,53 +169,74 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Implementation Process -->
-<section class="implementation-process">
-    <div class="content-container">
+<section class="process-section">
+    <div class="container">
         <div class="section-header">
-            <div class="implementation-header" data-aos="fade-up">
+            <div class="process-header" data-aos="fade-up">
                 <h2>Our Implementation Process</h2>
-                <p class="lead">A strategic approach to serverless application development</p>
+                <p class="section-lead">A strategic approach to serverless application development</p>
             </div>
         </div>
         
-        <div class="process-grid">
-            <div class="process-item" data-aos="fade-up">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>1</span>
+        <div class="process-timeline">
+            <!-- Timeline Line -->
+            <div class="timeline-line"></div>
+            
+            <div class="process-grid">
+                <div class="process-card-wrapper" data-aos="fade-up">
+                    <div class="process-number">1</div>
+                    <div class="process-card">
+                        <h3>Assessment & Planning</h3>
+                        <p>We analyze your business needs and technical requirements to determine the optimal serverless architecture and technology stack for your specific use case.</p>
+                        <ul class="process-list">
+                            <li>Workload analysis and serverless suitability evaluation</li>
+                            <li>Cloud provider selection and service mapping</li>
+                            <li>Cost modeling and optimization planning</li>
+                            <li>Security and compliance requirement definition</li>
+                        </ul>
                     </div>
-                    <h3>Assessment & Planning</h3>
-                    <p>Evaluating use cases, requirements, and choosing the appropriate serverless technologies.</p>
                 </div>
-            </div>
 
-            <div class="process-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>2</span>
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-number">2</div>
+                    <div class="process-card">
+                        <h3>Function Design</h3>
+                        <p>Our experts craft well-bounded, single-purpose functions that follow serverless best practices for performance, resource utilization, and maintainability.</p>
+                        <ul class="process-list">
+                            <li>Domain-driven functional decomposition</li>
+                            <li>Function boundary definition and isolation</li>
+                            <li>Cold start optimization strategies</li>
+                            <li>Resource allocation and timeout configuration</li>
+                        </ul>
                     </div>
-                    <h3>Function Design</h3>
-                    <p>Breaking down complex applications into small, focused functions with clear boundaries.</p>
                 </div>
-            </div>
 
-            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>3</span>
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-number">3</div>
+                    <div class="process-card">
+                        <h3>Event Schema Design</h3>
+                        <p>We design robust event schemas and communication patterns that efficiently connect your serverless functions into a cohesive, resilient system.</p>
+                        <ul class="process-list">
+                            <li>Event payload structure and versioning</li>
+                            <li>Asynchronous communication patterns</li>
+                            <li>Error handling and dead letter queues</li>
+                            <li>Event-driven workflow orchestration</li>
+                        </ul>
                     </div>
-                    <h3>Event Schema Design</h3>
-                    <p>Creating the event structure and triggers that will orchestrate your serverless functions.</p>
                 </div>
-            </div>
 
-            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>4</span>
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-number">4</div>
+                    <div class="process-card">
+                        <h3>Development & Deployment</h3>
+                        <p>We implement your serverless solution using infrastructure as code, automated testing, and continuous deployment pipelines for reliable, consistent delivery.</p>
+                        <ul class="process-list">
+                            <li>Infrastructure as code implementation (Serverless Framework, AWS SAM, etc.)</li>
+                            <li>CI/CD pipeline configuration for serverless deployments</li>
+                            <li>Automated testing at function and integration levels</li>
+                            <li>Monitoring and observability implementation</li>
+                        </ul>
                     </div>
-                    <h3>Development & Deployment</h3>
-                    <p>Building, testing, and deploying your serverless application with CI/CD pipelines.</p>
                 </div>
             </div>
         </div>
@@ -181,11 +245,11 @@ require_once '../../../../components/header.php';
 
 <!-- Technologies Section -->
 <section class="services-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="services-header" data-aos="fade-up">
                 <h2>Technologies We Use</h2>
-                <p class="lead">Industry-leading serverless platforms and tools</p>
+                <p class="section-lead">Industry-leading serverless platforms and tools</p>
             </div>
         </div>
         
@@ -259,53 +323,131 @@ require_once '../../../../components/header.php';
 
 <!-- Benefits Section -->
 <section class="benefits-section">
-    <div class="content-container">
-        <div class="section-header">
-            <div class="benefits-header" data-aos="fade-up">
-                <h2>Benefits of Serverless Architecture</h2>
-                <p class="lead">Why businesses are adopting serverless computing</p>
-            </div>
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Benefits of Serverless Architecture</h2>
+            <p class="section-lead">Why businesses are rapidly adopting serverless for their applications</p>
         </div>
         
         <div class="benefits-grid">
-            <div class="benefit-item" data-aos="fade-up">
+            <div class="benefit-card-wrapper primary-benefit" data-aos="fade-right" data-aos-duration="800">
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-dollar-sign"></i>
                     </div>
                     <h3>Cost Efficiency</h3>
-                    <p>Pay only for the compute time you consume, with no charges when your code isn't running.</p>
+                    <p>Serverless eliminates the need to pay for idle resources. You only pay for actual compute time used, which typically results in 60-80% cost savings compared to traditional server-based deployments.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge">80% lower costs</span>
+                        <span class="stat-badge">0% idle server waste</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="benefit-card-wrapper secondary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-expand-arrows-alt"></i>
+                    <div class="benefit-icon secondary-icon">
+                        <i class="fas fa-tachometer-alt"></i>
                     </div>
                     <h3>Automatic Scaling</h3>
-                    <p>Automatically scale from a few requests per day to thousands per second, without configuration.</p>
+                    <p>Serverless applications scale automatically in response to demand, from handling a single user to millions without any configuration changes or performance degradation.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge secondary-badge">Infinite scaling</span>
+                        <span class="stat-badge secondary-badge">100ms response time</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="benefit-card-wrapper tertiary-benefit" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-rocket"></i>
+                    <div class="benefit-icon tertiary-icon">
+                        <i class="fas fa-clock"></i>
                     </div>
                     <h3>Faster Time to Market</h3>
-                    <p>Focus on product development rather than infrastructure management, accelerating innovation.</p>
+                    <p>Without the need to manage infrastructure, development teams can focus on building features. This results in a 4x faster development cycle and quicker innovation for your business.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge tertiary-badge">4x faster development</span>
+                        <span class="stat-badge tertiary-badge">75% less DevOps work</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="benefit-card-wrapper quaternary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-laptop-code"></i>
+                    <div class="benefit-icon quaternary-icon">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Reduced Complexity</h3>
-                    <p>Eliminate server management, capacity planning, and infrastructure maintenance tasks.</p>
+                    <h3>Enhanced Security</h3>
+                    <p>Serverless platforms handle many security concerns for you, including OS patching and network security. Every function runs in an isolated environment, reducing attack surfaces by up to 70%.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge quaternary-badge">70% smaller attack surface</span>
+                        <span class="stat-badge quaternary-badge">Automatic patching</span>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technical Standards Section -->
+<section class="standards-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Serverless Technical Standards</h2>
+            <p class="section-lead">How we ensure quality, performance, and reliability in every serverless project</p>
+        </div>
+        
+        <div class="standards-grid">
+            <div class="standard-item" data-aos="fade-up">
+                <div class="standard-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Performance Optimization</h3>
+                <ul class="standard-list">
+                    <li>Cold start mitigation techniques</li>
+                    <li>Function memory and timeout calibration</li>
+                    <li>Efficient data access patterns</li>
+                    <li>Connection pooling and reuse</li>
+                </ul>
+            </div>
+            
+            <div class="standard-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="standard-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Security Best Practices</h3>
+                <ul class="standard-list">
+                    <li>Principle of least privilege access</li>
+                    <li>Secrets management solutions</li>
+                    <li>API authentication and authorization</li>
+                    <li>Input validation and sanitization</li>
+                </ul>
+            </div>
+            
+            <div class="standard-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="standard-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Observability</h3>
+                <ul class="standard-list">
+                    <li>Distributed tracing implementation</li>
+                    <li>Comprehensive logging strategy</li>
+                    <li>Real-time monitoring dashboards</li>
+                    <li>Cost tracking and optimization</li>
+                </ul>
+            </div>
+            
+            <div class="standard-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="standard-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>Resilience Engineering</h3>
+                <ul class="standard-list">
+                    <li>Retry mechanisms with exponential backoff</li>
+                    <li>Circuit breaker patterns</li>
+                    <li>Idempotent function design</li>
+                    <li>Regional failover strategies</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -313,29 +455,33 @@ require_once '../../../../components/header.php';
 
 <!-- CTA Section -->
 <section class="cta-section">
-    <div class="content-container">
+    <div class="container">
         <div class="cta-content">
             <h2>Ready to Go Serverless?</h2>
-            <p class="lead">Contact us to discuss how serverless architecture can benefit your business.</p>
-            <a href="/pages/contact.php" class="cta-btn">Schedule a Consultation</a>
+            <p class="lead">Let's build a scalable, cost-efficient architecture that grows with your business needs.</p>
+            <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">
+                Schedule a Serverless Consultation
+            </a>
         </div>
     </div>
 </section>
 
 <!-- FAQ Section -->
 <section class="faq-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="faq-header" data-aos="fade-up">
                 <h2>Frequently Asked Questions</h2>
-                <p class="lead">Common questions about serverless architecture</p>
+                <p class="section-lead">Common questions about serverless architecture</p>
             </div>
         </div>
         <div class="faq-container">
             <div class="faq-item active">
                 <div class="faq-question">
                     <h3>What exactly is serverless computing?</h3>
-                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
                     <p>Serverless computing is a cloud computing execution model where the cloud provider manages the infrastructure and automatically provisions, scales, and manages the servers needed to run your code. Despite the name, servers are still used, but developers don't have to worry about them. You only pay for the resources you use when your code executes.</p>
@@ -345,7 +491,9 @@ require_once '../../../../components/header.php';
             <div class="faq-item">
                 <div class="faq-question">
                     <h3>What types of applications are best suited for serverless architecture?</h3>
-                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
                     <p>Serverless architecture works well for applications with variable or unpredictable workloads, backend processes, microservices, real-time file processing, and event-driven applications. It's particularly suitable for APIs, data processing tasks, scheduled jobs, and systems that need to scale rapidly in response to demand.</p>
@@ -355,7 +503,9 @@ require_once '../../../../components/header.php';
             <div class="faq-item">
                 <div class="faq-question">
                     <h3>Are there any limitations to serverless architecture?</h3>
-                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
                     <p>Yes, there are some limitations to consider. These include cold start latency (when functions haven't been used recently), execution time limits, vendor lock-in concerns, debugging complexity, and statelessness challenges. However, many of these limitations can be addressed with proper architecture and development practices.</p>
@@ -365,7 +515,9 @@ require_once '../../../../components/header.php';
             <div class="faq-item">
                 <div class="faq-question">
                     <h3>How does serverless architecture impact costs?</h3>
-                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
                     <p>Serverless typically offers a pay-per-execution model, which can be more cost-effective for applications with variable traffic. You don't pay for idle capacity, only for the compute resources used during function execution. For applications with consistent high loads, traditional server deployments might be more cost-effective in some cases, but serverless eliminates many operational costs associated with server management.</p>
@@ -378,3 +530,4 @@ require_once '../../../../components/header.php';
 <?php
 require_once '../../../../components/footer.php';
 ?>
+ <script src="/assets/js/services.js"></script>

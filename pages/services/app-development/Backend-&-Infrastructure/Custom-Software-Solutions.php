@@ -20,28 +20,28 @@ require_once '../../../../components/header.php';
 ?>
 
 <!-- Page Header -->
-<section class="page-header">
-    <div class="content-container">
-        <div class="header-grid">
-            <div class="page-header-content" data-aos="fade-right">
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-content" data-aos="fade-right">
                 <h1><?php echo $serviceName; ?></h1>
                 <p class="lead"><?php echo $pageDescription; ?></p>
-                <a href="/pages/contact.php" class="get-started-btn">Get Started</a>
+                <a href="/pages/contact.php" class="btn btn-primary">Get Started</a>
             </div>
-            <div class="page-header-image" data-aos="fade-left">
-                <img src="/assets/images/services/custom-software.svg" alt="<?php echo $serviceName; ?>" class="animate-float">
+            <div class="hero-image" data-aos="fade-left">
+                <img src="/assets/images/services/custom-software.svg" alt="<?php echo $serviceName; ?>" class="floating-image">
             </div>
         </div>
     </div>
 </section>
 
 <!-- Service Overview -->
-<section class="service-overview">
-    <div class="content-container">
+<section class="overview-section">
+    <div class="container">
         <div class="section-header">
-            <div class="service-overview-header" data-aos="fade-up">
+            <div class="overview-header" data-aos="fade-up">
                 <h2>Software Tailored to Your Business Needs</h2>
-                <p class="lead">Off-the-shelf software often comes with compromises, forcing your business to adapt to its limitations. Our custom software solutions are designed specifically for your unique workflows, processes, and goals, empowering your business with technology that works exactly how you need it to.</p>
+                <p class="section-lead">Off-the-shelf software often comes with compromises, forcing your business to adapt to its limitations. Our custom software solutions are designed specifically for your unique workflows, processes, and goals, empowering your business with technology that works exactly how you need it to.</p>
             </div>
         </div>
     </div>
@@ -49,11 +49,11 @@ require_once '../../../../components/header.php';
 
 <!-- Services Section -->
 <section class="services-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="services-header" data-aos="fade-up">
                 <h2>Our Custom Software Services</h2>
-                <p class="lead">Tailored development solutions for your unique business challenges</p>
+                <p class="section-lead">Tailored development solutions for your unique business challenges</p>
             </div>
         </div>
         
@@ -126,53 +126,50 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Development Process -->
-<section class="implementation-process">
-    <div class="content-container">
+<section class="process-section">
+    <div class="container">
         <div class="section-header">
-            <div class="implementation-header" data-aos="fade-up">
+            <div class="process-header" data-aos="fade-up">
                 <h2>Our Development Process</h2>
-                <p class="lead">A methodical approach to creating custom software solutions</p>
+                <p class="section-lead">A methodical approach to creating custom software solutions</p>
             </div>
         </div>
         
-        <div class="process-grid">
-            <div class="process-item" data-aos="fade-up">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>1</span>
+        <div class="process-timeline">
+            <!-- Timeline Line -->
+            <div class="timeline-line"></div>
+            
+            <div class="process-grid">
+                <div class="process-card-wrapper" data-aos="fade-up">
+                    <div class="process-number">1</div>
+                    <div class="process-card">
+                        <h3>Discovery & Analysis</h3>
+                        <p>Understanding your business processes, challenges, and goals through in-depth consultations.</p>
                     </div>
-                    <h3>Discovery & Analysis</h3>
-                    <p>Understanding your business processes, challenges, and goals through in-depth consultations.</p>
                 </div>
-            </div>
 
-            <div class="process-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>2</span>
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-number">2</div>
+                    <div class="process-card">
+                        <h3>Design & Planning</h3>
+                        <p>Creating detailed architectural designs, wireframes, and project roadmaps tailored to your requirements.</p>
                     </div>
-                    <h3>Design & Planning</h3>
-                    <p>Creating detailed architectural designs, wireframes, and project roadmaps tailored to your requirements.</p>
                 </div>
-            </div>
 
-            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>3</span>
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-number">3</div>
+                    <div class="process-card">
+                        <h3>Development & Testing</h3>
+                        <p>Building your custom solution using agile methodologies with continuous testing and quality assurance.</p>
                     </div>
-                    <h3>Development & Testing</h3>
-                    <p>Building your custom solution using agile methodologies with continuous testing and quality assurance.</p>
                 </div>
-            </div>
 
-            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-card">
-                    <div class="process-icon">
-                        <span>4</span>
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-number">4</div>
+                    <div class="process-card">
+                        <h3>Deployment & Support</h3>
+                        <p>Implementing your solution with comprehensive training, documentation, and ongoing maintenance.</p>
                     </div>
-                    <h3>Deployment & Support</h3>
-                    <p>Implementing your solution with comprehensive training, documentation, and ongoing maintenance.</p>
                 </div>
             </div>
         </div>
@@ -181,11 +178,11 @@ require_once '../../../../components/header.php';
 
 <!-- Technologies Section -->
 <section class="services-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="services-header" data-aos="fade-up">
                 <h2>Our Technology Stack</h2>
-                <p class="lead">Modern technologies to build robust and scalable solutions</p>
+                <p class="section-lead">Modern technologies to build robust and scalable solutions</p>
             </div>
         </div>
         
@@ -259,16 +256,16 @@ require_once '../../../../components/header.php';
 
 <!-- Benefits Section -->
 <section class="benefits-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="benefits-header" data-aos="fade-up">
                 <h2>Benefits of Custom Software</h2>
-                <p class="lead">Why businesses choose custom-built solutions</p>
+                <p class="section-lead">Why businesses choose custom-built solutions</p>
             </div>
         </div>
         
         <div class="benefits-grid">
-            <div class="benefit-item" data-aos="fade-up">
+            <div class="benefit-card-wrapper" data-aos="fade-up">
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-puzzle-piece"></i>
@@ -278,7 +275,7 @@ require_once '../../../../components/header.php';
                 </div>
             </div>
 
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-delay="100">
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-chart-line"></i>
@@ -288,7 +285,7 @@ require_once '../../../../components/header.php';
                 </div>
             </div>
 
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-delay="200">
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-shield-alt"></i>
@@ -298,7 +295,7 @@ require_once '../../../../components/header.php';
                 </div>
             </div>
 
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="benefit-card-wrapper" data-aos="fade-up" data-aos-delay="300">
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-tachometer-alt"></i>
@@ -313,7 +310,7 @@ require_once '../../../../components/header.php';
 
 <!-- CTA Section -->
 <section class="cta-section">
-    <div class="content-container">
+    <div class="container">
         <div class="cta-content">
             <h2>Ready to Transform Your Business?</h2>
             <p class="lead">Let's discuss how custom software can solve your unique business challenges.</p>
@@ -324,18 +321,20 @@ require_once '../../../../components/header.php';
 
 <!-- FAQ Section -->
 <section class="faq-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="faq-header" data-aos="fade-up">
                 <h2>Frequently Asked Questions</h2>
-                <p class="lead">Common questions about custom software development</p>
+                <p class="section-lead">Common questions about custom software development</p>
             </div>
         </div>
         <div class="faq-container">
             <div class="faq-item active">
                 <div class="faq-question">
                     <h3>How long does it take to develop custom software?</h3>
-                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
                     <p>The timeline for custom software development varies greatly depending on the complexity, scope, and requirements of your project. Simple applications might take 3-6 months, while enterprise-level solutions can take 9-18 months. During our initial consultation, we'll provide a more accurate timeline based on your specific needs.</p>
@@ -345,7 +344,9 @@ require_once '../../../../components/header.php';
             <div class="faq-item">
                 <div class="faq-question">
                     <h3>What's the difference between custom software and off-the-shelf solutions?</h3>
-                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
                     <p>Off-the-shelf software is designed for general use across many businesses, offering standard features that may or may not fit your needs. Custom software is built specifically for your business processes, providing exactly the features you need without unnecessary complexity. While off-the-shelf solutions have a lower initial cost, custom software often provides better long-term value through increased efficiency, perfect fit for your workflows, and no recurring license fees.</p>
@@ -355,7 +356,9 @@ require_once '../../../../components/header.php';
             <div class="faq-item">
                 <div class="faq-question">
                     <h3>How do you ensure the security of custom software?</h3>
-                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
                     <p>Security is integrated throughout our development process. We implement security by design principles, conduct regular code reviews and security testing, and adhere to industry best practices for secure development. We also incorporate specific security measures based on your industry regulations and compliance requirements. After deployment, we provide ongoing security updates and monitoring to protect against emerging threats.</p>
@@ -365,7 +368,9 @@ require_once '../../../../components/header.php';
             <div class="faq-item">
                 <div class="faq-question">
                     <h3>What happens after the software is delivered?</h3>
-                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
                     <p>We provide comprehensive post-launch support, including user training, documentation, and ongoing maintenance. We offer various support packages to ensure your software continues to run smoothly and remains up-to-date. As your business evolves, we can also implement new features and enhancements to ensure your software continues to meet your changing needs.</p>
@@ -378,3 +383,4 @@ require_once '../../../../components/header.php';
 <?php
 require_once '../../../../components/footer.php';
 ?>
+ <script src="/assets/js/services.js"></script>
