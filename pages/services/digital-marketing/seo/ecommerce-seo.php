@@ -509,53 +509,251 @@ require_once '../../../../components/header.php';
         </div>
         
         <div class="faq-container">
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item active">
                 <div class="faq-question">
                     <h3>How is e-commerce SEO different from regular SEO?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>E-commerce SEO differs from general SEO in several key ways. First, it focuses heavily on product and category pages, which have unique optimization challenges compared to informational content. Second, e-commerce sites typically have much larger scale with thousands of products, creating technical challenges for crawling and indexing. Third, e-commerce SEO must address specific challenges like duplicate content from product variations, faceted navigation, and inventory fluctuations. Finally, e-commerce SEO requires specific structured data implementation (like product schema) and must integrate with other channels like Google Shopping. Our specialized approach addresses these unique needs with strategies developed specifically for online retailers.</p>
+                    <p>E-commerce SEO differs from general SEO in several key ways:</p>
+                    <ul>
+                        <li><strong>Product-Centric Optimization:</strong>
+                            <ul>
+                                <li>Focus on product and category pages rather than informational content</li>
+                                <li>Specialized strategies for optimizing product descriptions and features</li>
+                                <li>Conversion-focused keyword targeting</li>
+                                <li>Transactional search intent prioritization</li>
+                            </ul>
+                        </li>
+                        <li><strong>Scale and Technical Complexity:</strong>
+                            <ul>
+                                <li>Managing thousands of product pages efficiently</li>
+                                <li>Addressing crawl budget challenges for large catalogs</li>
+                                <li>Handling dynamic inventory and product availability</li>
+                                <li>Implementing faceted navigation solutions</li>
+                            </ul>
+                        </li>
+                        <li><strong>Unique E-commerce Challenges:</strong>
+                            <ul>
+                                <li>Duplicate content from product variations and attributes</li>
+                                <li>Seasonal inventory and trending product optimization</li>
+                                <li>User-generated content management (reviews)</li>
+                                <li>Cross-linking between related products</li>
+                            </ul>
+                        </li>
+                        <li><strong>E-commerce Specific Requirements:</strong>
+                            <ul>
+                                <li>Product schema markup implementation</li>
+                                <li>Integration with Google Merchant Center</li>
+                                <li>Optimization for visual search and shopping features</li>
+                                <li>Site speed optimization for conversion impact</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Our specialized approach addresses these unique needs with strategies developed specifically for online retailers, resulting in higher product visibility, better conversion rates, and increased revenue from organic search channels.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>How long does it take to see results from e-commerce SEO?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>The timeline for e-commerce SEO results varies based on several factors including your site's current authority, technical health, competition level, and the scope of optimization needed. Typically, initial improvements in technical performance and on-page elements can be seen within 1-2 months. More significant ranking improvements usually begin around 3-4 months, with substantial traffic and revenue increases often occurring between 6-12 months. Some highly competitive keywords may take longer to show significant ranking improvements. We focus on prioritizing quick wins early in the process while building toward long-term sustainable growth, and provide transparent monthly reporting on progress across all key metrics.</p>
+                    <p>The timeline for e-commerce SEO results varies based on several factors, but typically follows this progression:</p>
+                    <ul>
+                        <li><strong>Initial Improvements (1-2 months):</strong>
+                            <ul>
+                                <li>Technical SEO fixes implemented and indexed</li>
+                                <li>On-page optimization of key product pages</li>
+                                <li>Category structure improvements</li>
+                                <li>Initial structured data implementation</li>
+                                <li>Improved crawling and indexation patterns</li>
+                            </ul>
+                        </li>
+                        <li><strong>Early Results (3-4 months):</strong>
+                            <ul>
+                                <li>Ranking improvements for less competitive product terms</li>
+                                <li>Increased visibility for optimized category pages</li>
+                                <li>Growth in product impressions in search</li>
+                                <li>Early traffic increases to optimized sections</li>
+                                <li>Initial conversion improvements</li>
+                            </ul>
+                        </li>
+                        <li><strong>Significant Growth (6-12 months):</strong>
+                            <ul>
+                                <li>Substantial organic traffic increases</li>
+                                <li>Competitive keyword position improvements</li>
+                                <li>Expanded product visibility across search results</li>
+                                <li>Measurable revenue growth from organic search</li>
+                                <li>Reduced dependency on paid channels</li>
+                            </ul>
+                        </li>
+                        <li><strong>Factors Affecting Timeline:</strong>
+                            <ul>
+                                <li>Current site authority and technical health</li>
+                                <li>Competitive landscape in your product categories</li>
+                                <li>Size of your product catalog</li>
+                                <li>Platform limitations and flexibility</li>
+                                <li>Previous optimization efforts</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>We focus on prioritizing quick wins early in the process while building toward long-term sustainable growth, and provide transparent monthly reporting on progress across all key metrics so you can clearly track improvements over time.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>Do you work with my specific e-commerce platform?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Yes, our e-commerce SEO team has experience optimizing stores built on all major e-commerce platforms including Shopify, WooCommerce, Magento/Adobe Commerce, BigCommerce, Squarespace, Wix, PrestaShop, OpenCart, and custom-built solutions. Each platform has unique capabilities and limitations when it comes to SEO, and our team is familiar with the specific optimization techniques required for each. We tailor our approach to work within your platform's capabilities while maximizing search performance. If you're using a less common platform, we'll evaluate it during the discovery process and develop a customized strategy that works with your specific technical environment.</p>
+                    <p>Yes, our e-commerce SEO team has experience optimizing stores built on all major e-commerce platforms:</p>
+                    <ul>
+                        <li><strong>Platform-Specific Expertise:</strong>
+                            <ul>
+                                <li><strong>Shopify:</strong> Theme optimization, app integration, collection structure</li>
+                                <li><strong>WooCommerce:</strong> WordPress integration, plugin optimization, custom taxonomies</li>
+                                <li><strong>Magento/Adobe Commerce:</strong> Complex catalog management, attribute optimization</li>
+                                <li><strong>BigCommerce:</strong> Stencil theme SEO, product organization strategies</li>
+                                <li><strong>Other platforms:</strong> Squarespace, Wix, PrestaShop, OpenCart, custom solutions</li>
+                            </ul>
+                        </li>
+                        <li><strong>Platform-Specific Optimization Techniques:</strong>
+                            <ul>
+                                <li>URL structure optimization within platform constraints</li>
+                                <li>Platform-specific schema markup implementation</li>
+                                <li>Template-level SEO improvements</li>
+                                <li>Custom field utilization for enhanced product SEO</li>
+                            </ul>
+                        </li>
+                        <li><strong>Technical Limitation Management:</strong>
+                            <ul>
+                                <li>Working within platform-specific constraints</li>
+                                <li>Custom development solutions when necessary</li>
+                                <li>Performance optimization for platform architecture</li>
+                                <li>Platform-specific redirect implementation</li>
+                            </ul>
+                        </li>
+                        <li><strong>Custom Platform Solutions:</strong>
+                            <ul>
+                                <li>Evaluation of proprietary platform capabilities</li>
+                                <li>Custom strategy development for unique environments</li>
+                                <li>Technical SEO workarounds for platform limitations</li>
+                                <li>Integration with platform-specific analytics</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>During our discovery process, we'll analyze your specific platform setup and develop a customized strategy that maximizes your platform's SEO capabilities while working around any limitations to ensure optimal search performance for your store.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>How do you measure the success of e-commerce SEO?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>We measure e-commerce SEO success through a comprehensive set of metrics that focus on both search performance and business outcomes. These include: Organic traffic growth (overall and by page type), Search rankings for target keywords, Organic conversion rate, Revenue from organic search, Return on investment (ROI), Average order value from organic traffic, Product and category page visibility, Organic market share compared to competitors, User engagement metrics (bounce rate, time on site, pages per session), and Technical health metrics. We provide detailed monthly reporting on these metrics through an interactive dashboard, showing progress over time and identifying areas for further optimization. Our focus is always on driving revenue growth, not just traffic or rankings.</p>
+                    <p>We measure e-commerce SEO success through a comprehensive set of metrics focused on both search performance and business outcomes:</p>
+                    <ul>
+                        <li><strong>Revenue Metrics:</strong>
+                            <ul>
+                                <li>Total revenue from organic search</li>
+                                <li>Revenue growth percentage over time</li>
+                                <li>Return on investment (ROI) calculations</li>
+                                <li>Revenue by product category from organic search</li>
+                                <li>Average order value from organic traffic</li>
+                            </ul>
+                        </li>
+                        <li><strong>Traffic and Visibility Metrics:</strong>
+                            <ul>
+                                <li>Organic traffic growth (overall and segmented)</li>
+                                <li>Product and category page organic traffic</li>
+                                <li>Search rankings for target transactional keywords</li>
+                                <li>Product visibility in Google Search Console</li>
+                                <li>Impression share for product searches</li>
+                            </ul>
+                        </li>
+                        <li><strong>Conversion Metrics:</strong>
+                            <ul>
+                                <li>Organic conversion rate trends</li>
+                                <li>Add-to-cart rate from organic visitors</li>
+                                <li>Checkout completion rate</li>
+                                <li>Product page bounce rate improvements</li>
+                                <li>User journey analysis for organic visitors</li>
+                            </ul>
+                        </li>
+                        <li><strong>Competitive and Technical Metrics:</strong>
+                            <ul>
+                                <li>Organic market share compared to competitors</li>
+                                <li>Technical health scores and improvements</li>
+                                <li>Page speed metrics for key landing pages</li>
+                                <li>Mobile usability and performance metrics</li>
+                                <li>Rich result acquisition and performance</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>We provide detailed monthly reporting through an interactive dashboard that shows progress over time, highlighting the direct business impact of your SEO investment. Our focus is always on driving revenue growth, not just traffic or rankings, ensuring your e-commerce SEO strategy delivers measurable return on investment.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How do you handle product pages that come and go with inventory changes?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>What makes product pages rank well in search results?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Managing changing inventory is a common challenge in e-commerce SEO. We implement several strategies to address this: For temporarily out-of-stock products, we maintain the pages with proper inventory schema markup rather than removing them, allowing customers to sign up for back-in-stock notifications. For seasonal products, we implement a strategic approach using proper HTTP status codes (keeping pages live with out-of-stock notices rather than returning 404 errors). For discontinued products, we create a proper redirection strategy to guide users to similar products or relevant categories. This approach preserves SEO value while maintaining a good user experience. We also help implement inventory management best practices that balance SEO needs with accurate inventory representation.</p>
+                    <p>Successful product page ranking requires a comprehensive approach addressing multiple ranking factors:</p>
+                    <ul>
+                        <li><strong>Content Quality and Relevance:</strong>
+                            <ul>
+                                <li>Detailed, unique product descriptions (not manufacturer boilerplate)</li>
+                                <li>Keyword-rich but natural product titles</li>
+                                <li>Comprehensive product specifications and features</li>
+                                <li>FAQ sections addressing common buyer questions</li>
+                                <li>User-generated content like reviews and Q&As</li>
+                            </ul>
+                        </li>
+                        <li><strong>Technical Optimization:</strong>
+                            <ul>
+                                <li>Proper HTML structure with semantic elements</li>
+                                <li>Mobile-friendly, responsive design</li>
+                                <li>Fast loading speed and Core Web Vitals compliance</li>
+                                <li>Canonical tags to manage product variations</li>
+                                <li>Clean, keyword-relevant URL structure</li>
+                            </ul>
+                        </li>
+                        <li><strong>Structured Data Implementation:</strong>
+                            <ul>
+                                <li>Product schema markup with complete attributes</li>
+                                <li>Aggregate rating schema for review visibility</li>
+                                <li>Price, availability, and inventory status markup</li>
+                                <li>Brand and manufacturer entity relationships</li>
+                                <li>Compatible with related product schemas</li>
+                            </ul>
+                        </li>
+                        <li><strong>User Experience Elements:</strong>
+                            <ul>
+                                <li>High-quality product images with optimized alt text</li>
+                                <li>Product videos where appropriate</li>
+                                <li>Clear pricing and availability information</li>
+                                <li>Intuitive product variation selectors</li>
+                                <li>Strong internal linking to related products and categories</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Our product page optimization strategy addresses all these elements systematically, creating pages that satisfy both search engines and potential customers. This comprehensive approach increases both visibility in search results and conversion rates once visitors arrive at your product pages.</p>
                 </div>
             </div>
         </div>

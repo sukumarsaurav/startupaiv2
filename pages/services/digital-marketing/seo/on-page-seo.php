@@ -331,53 +331,243 @@ require_once '../../../../components/header.php';
         </div>
         
         <div class="faq-container">
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item active">
                 <div class="faq-question">
                     <h3>What is included in your On-Page SEO services?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Our On-Page SEO services include all aspects of optimizing the elements within your website that affect search engine rankings. This includes comprehensive content optimization with strategic keyword placement, technical HTML element optimization (title tags, meta descriptions, header tags), internal linking strategy development, URL structure optimization, schema markup implementation, site speed improvements, mobile optimization, and user experience enhancements. We take a holistic approach that balances technical optimization with creating high-quality, valuable content for your users.</p>
+                    <p>Our On-Page SEO services include a comprehensive approach to optimizing all elements within your website that affect search rankings:</p>
+                    <ul>
+                        <li><strong>Content Optimization:</strong>
+                            <ul>
+                                <li>Keyword research and strategic placement</li>
+                                <li>Content quality and relevance enhancement</li>
+                                <li>Semantic keyword integration</li>
+                                <li>Content structuring for readability and engagement</li>
+                                <li>Competitor content gap analysis</li>
+                            </ul>
+                        </li>
+                        <li><strong>Technical HTML Element Optimization:</strong>
+                            <ul>
+                                <li>Title tag optimization for CTR and relevance</li>
+                                <li>Meta description crafting and testing</li>
+                                <li>Header tag structure (H1-H6) implementation</li>
+                                <li>Image alt text and file name optimization</li>
+                                <li>Schema markup for rich results</li>
+                            </ul>
+                        </li>
+                        <li><strong>Site Structure Optimization:</strong>
+                            <ul>
+                                <li>URL structure simplification and keyword inclusion</li>
+                                <li>Internal linking strategy development</li>
+                                <li>Content silo creation for topical relevance</li>
+                                <li>Category and tag organization</li>
+                                <li>Site architecture improvements</li>
+                            </ul>
+                        </li>
+                        <li><strong>User Experience Optimization:</strong>
+                            <ul>
+                                <li>Mobile responsiveness improvements</li>
+                                <li>Page speed enhancement</li>
+                                <li>Content formatting for readability</li>
+                                <li>Multimedia integration</li>
+                                <li>User engagement element implementation</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>We take a holistic approach that balances technical optimization with creating high-quality, valuable content for your users, ensuring both search engines and visitors have an optimal experience.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>How long does it take to see results from On-Page SEO?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>The timeline for On-Page SEO results varies depending on several factors including your website's current authority, the competitive landscape of your industry, the quality of the optimizations, and how frequently search engines crawl your site. Generally, you might begin to see initial improvements within 2-4 weeks as search engines recrawl your optimized pages. More substantial ranking improvements typically occur within 2-3 months, with continued growth over 6-12 months as the optimizations gain traction. We focus on implementing "quick wins" early in the process to demonstrate value while building toward long-term sustainable results.</p>
+                    <p>The timeline for On-Page SEO results varies based on several factors, but generally follows this progression:</p>
+                    <ul>
+                        <li><strong>Initial Changes (2-4 weeks):</strong>
+                            <ul>
+                                <li>Search engines recrawl and reindex optimized pages</li>
+                                <li>Technical improvements begin to register</li>
+                                <li>Initial fluctuations in rankings may occur</li>
+                                <li>Early improvements for low-competition keywords</li>
+                            </ul>
+                        </li>
+                        <li><strong>Meaningful Improvements (2-3 months):</strong>
+                            <ul>
+                                <li>Consistent ranking improvements for target keywords</li>
+                                <li>Increased organic click-through rates</li>
+                                <li>Growth in organic traffic</li>
+                                <li>Better indexation of site content</li>
+                            </ul>
+                        </li>
+                        <li><strong>Substantial Growth (6-12 months):</strong>
+                            <ul>
+                                <li>Significant ranking improvements across keyword groups</li>
+                                <li>Established authority for main topics</li>
+                                <li>Broader visibility in search results</li>
+                                <li>Compounding traffic benefits</li>
+                            </ul>
+                        </li>
+                        <li><strong>Variables Affecting Timeline:</strong>
+                            <ul>
+                                <li>Website's current authority and age</li>
+                                <li>Competitive landscape in your industry</li>
+                                <li>Extent of the optimization needed</li>
+                                <li>Frequency of content updates</li>
+                                <li>Integration with technical and off-page SEO</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>We focus on implementing "quick wins" early in the process to demonstrate value while building toward long-term sustainable results, with regular reporting to track progress throughout the journey.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>How do you measure the success of On-Page SEO efforts?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>We measure the success of our On-Page SEO services through a comprehensive set of metrics that track both search performance and business outcomes. These include organic search rankings for target keywords, organic traffic growth, conversion rates from organic visitors, user engagement metrics (bounce rate, time on site, pages per session), technical SEO health scores, and ultimately, return on investment. We provide regular reporting on these metrics through an intuitive dashboard, showing progress over time and identifying areas for further optimization. Our focus is always on delivering measurable business results from your SEO investment, not just technical improvements.</p>
+                    <p>We measure On-Page SEO success through a comprehensive set of metrics that track both technical performance and business outcomes:</p>
+                    <ul>
+                        <li><strong>Search Performance Metrics:</strong>
+                            <ul>
+                                <li>Organic keyword rankings for primary and secondary terms</li>
+                                <li>SERP feature acquisition (featured snippets, knowledge panels, etc.)</li>
+                                <li>Keyword visibility across search intent categories</li>
+                                <li>Competitive ranking position improvements</li>
+                            </ul>
+                        </li>
+                        <li><strong>Traffic and Engagement Metrics:</strong>
+                            <ul>
+                                <li>Organic search traffic growth trends</li>
+                                <li>User engagement signals (bounce rate, time on site, pages per session)</li>
+                                <li>Content interaction metrics</li>
+                                <li>Mobile vs. desktop performance</li>
+                            </ul>
+                        </li>
+                        <li><strong>Technical SEO Health:</strong>
+                            <ul>
+                                <li>Crawlability and indexation metrics</li>
+                                <li>Page speed and Core Web Vitals performance</li>
+                                <li>Mobile usability scores</li>
+                                <li>Schema markup implementation success</li>
+                            </ul>
+                        </li>
+                        <li><strong>Business Impact Metrics:</strong>
+                            <ul>
+                                <li>Conversion rates from organic visitors</li>
+                                <li>Lead quality from organic search</li>
+                                <li>Revenue attribution from SEO efforts</li>
+                                <li>Return on investment calculations</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>We provide regular reporting through an intuitive dashboard that shows progress over time and identifies areas for further optimization. Our focus is always on delivering measurable business results from your SEO investment, not just technical improvements.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>Will you need to make changes to my website design?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>In most cases, effective On-Page SEO can be implemented without significant changes to your website's design or branding. Our approach focuses on working within your existing design framework to optimize elements that impact search performance. This typically includes content enhancements, metadata optimizations, and backend technical improvements that don't affect the visual appearance. However, if we identify that certain aspects of your design are hindering search performance or user experience (such as slow-loading elements, poor mobile responsiveness, or confusing navigation), we'll recommend specific targeted improvements. We always discuss any visible changes before implementation and work collaboratively with your design team if needed.</p>
+                    <p>In most cases, effective On-Page SEO can be implemented without significant changes to your website's design. Our approach focuses on:</p>
+                    <ul>
+                        <li><strong>Working Within Your Design Framework:</strong>
+                            <ul>
+                                <li>Optimizing existing design elements rather than redesigning</li>
+                                <li>Preserving your brand identity and visual aesthetic</li>
+                                <li>Making invisible backend improvements that don't affect visuals</li>
+                                <li>Enhancing current content rather than replacing it</li>
+                            </ul>
+                        </li>
+                        <li><strong>Potential UX Recommendations:</strong>
+                            <ul>
+                                <li>Navigation improvements for better user journeys</li>
+                                <li>Content layout adjustments for readability</li>
+                                <li>Call-to-action placement optimization</li>
+                                <li>Mobile experience enhancements</li>
+                            </ul>
+                        </li>
+                        <li><strong>Performance Optimizations:</strong>
+                            <ul>
+                                <li>Image compression and formatting</li>
+                                <li>Script loading optimization</li>
+                                <li>Render-blocking resource management</li>
+                                <li>Cache implementation recommendations</li>
+                            </ul>
+                        </li>
+                        <li><strong>Collaborative Process:</strong>
+                            <ul>
+                                <li>Discussion of any visible changes before implementation</li>
+                                <li>Coordination with your design team if needed</li>
+                                <li>Prioritization based on impact vs. implementation effort</li>
+                                <li>Phased approach to minimize disruption</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>If we identify that certain aspects of your design are significantly hindering search performance or user experience (such as slow-loading elements, poor mobile responsiveness, or confusing navigation), we'll recommend specific targeted improvements while respecting your brand guidelines and design preferences.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>How often should On-Page SEO be updated?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>On-Page SEO is not a one-time effort but an ongoing process that requires regular attention. We recommend a comprehensive review of on-page elements at least quarterly, with more frequent attention to content updates and performance monitoring. Search engines continually update their algorithms, user behaviors evolve, and competitors adjust their strategies, all of which can impact your site's performance. Regular content refreshes, performance optimizations based on analytics insights, and adapting to emerging SEO best practices are essential for maintaining and improving search rankings over time. Our service includes ongoing optimization and monitoring to ensure your website stays competitive in search results.</p>
+                    <p>On-Page SEO is not a one-time effort but an ongoing process that requires regular attention:</p>
+                    <ul>
+                        <li><strong>Regular Content Updates (Monthly):</strong>
+                            <ul>
+                                <li>Content freshness updates for key pages</li>
+                                <li>New content creation based on keyword opportunities</li>
+                                <li>Performance review of existing content</li>
+                                <li>Updating information for accuracy and relevance</li>
+                            </ul>
+                        </li>
+                        <li><strong>Quarterly Technical Reviews:</strong>
+                            <ul>
+                                <li>Comprehensive technical SEO audits</li>
+                                <li>Performance optimization assessments</li>
+                                <li>Internal linking structure evaluation</li>
+                                <li>Crawl error resolution</li>
+                            </ul>
+                        </li>
+                        <li><strong>Bi-Annual Comprehensive Review:</strong>
+                            <ul>
+                                <li>Full content audit and gap analysis</li>
+                                <li>Competitive positioning assessment</li>
+                                <li>User experience and conversion path optimization</li>
+                                <li>Structured data implementation updates</li>
+                            </ul>
+                        </li>
+                        <li><strong>Continuous Monitoring and Adaptation:</strong>
+                            <ul>
+                                <li>Algorithm update responses</li>
+                                <li>Search trend adaptation</li>
+                                <li>Performance anomaly investigations</li>
+                                <li>Emerging opportunity implementation</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Our service includes ongoing optimization and monitoring to ensure your website stays competitive in search results. We adapt strategies based on analytics insights, search engine algorithm updates, changing user behaviors, and competitive movements to maintain and improve your search rankings over time.</p>
                 </div>
             </div>
         </div>

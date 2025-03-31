@@ -411,92 +411,402 @@ require_once '../../../../components/header.php';
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-lg-12" data-aos="fade-up">
-                <div class="faq-container">
-                    <div class="faq-column">
-                        <div class="faq-item active">
-                            <div class="faq-question">
-                                <h3>What are Core Web Vitals and why do they matter?</h3>
-                                <button class="toggle-btn"><span class="icon"></span></button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Core Web Vitals are specific metrics that Google uses to evaluate the user experience of a website. They include Largest Contentful Paint (LCP), which measures loading performance; First Input Delay (FID), which measures interactivity; and Cumulative Layout Shift (CLS), which measures visual stability. These metrics matter because they're official Google ranking factors—websites that meet the recommended thresholds can gain ranking advantages over competitors. More importantly, they directly correlate with user experience: sites with good Core Web Vitals scores typically have lower bounce rates, higher engagement, and better conversion rates because they provide a smooth, frustration-free experience for visitors.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>How does page speed affect SEO and conversions?</h3>
-                                <button class="toggle-btn"><span class="icon"></span></button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Page speed impacts SEO and conversions in several critical ways. For SEO, speed is both a direct and indirect ranking factor. Google explicitly uses page speed metrics in its ranking algorithm, particularly through Core Web Vitals. Indirectly, faster pages lead to reduced bounce rates and increased engagement—signals that further improve rankings. For conversions, studies consistently show that even small delays significantly impact business metrics: a 1-second delay in page load time can decrease conversions by 7%; 53% of mobile users abandon sites that take longer than 3 seconds to load; and Amazon found that every 100ms of latency cost them 1% in sales. Our technical SEO service prioritizes speed optimizations that deliver measurable improvements in both rankings and conversion rates.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>What technical issues most commonly affect search rankings?</h3>
-                                <button class="toggle-btn"><span class="icon"></span></button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>The most impactful technical issues we typically encounter include: poor mobile usability, which affects indexing in Google's mobile-first environment; slow page speed and poor Core Web Vitals, which directly impact rankings; crawlability obstacles like improper robots.txt configuration or broken internal linking; indexation problems from duplicate content or canonical tag errors; security issues such as missing HTTPS; structured data implementation errors that prevent rich results; site architecture issues that bury important content too deep; and JavaScript rendering problems that prevent content from being properly indexed. Our technical SEO audit identifies which of these issues are affecting your specific site, and our implementation prioritizes fixes based on potential ranking impact.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>How do you fix Core Web Vitals issues?</h3>
-                                <button class="toggle-btn"><span class="icon"></span></button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Our approach to fixing Core Web Vitals issues varies based on the specific metric and underlying causes: For Largest Contentful Paint (LCP), we implement solutions like image optimization, critical CSS extraction, server response time improvements, content delivery networks, and resource prioritization. For First Input Delay (FID), we focus on minimizing JavaScript execution time, breaking up long tasks, optimizing event handlers, and implementing browser caching. For Cumulative Layout Shift (CLS), we address issues by adding size attributes to images and embeds, reserving space for dynamic content, and ensuring proper loading of web fonts. The implementation typically involves a combination of server-side optimizations, front-end code improvements, and content delivery optimizations, all tailored to your specific website platform and technology stack.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-column">
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>What is schema markup and how does it help SEO?</h3>
-                                <button class="toggle-btn"><span class="icon"></span></button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Schema markup (structured data) is code added to your website to help search engines understand the content and context of your pages. It creates an enhanced description (rich snippet) that appears in search results. Schema markup helps SEO by: enabling rich results like star ratings, FAQs, how-tos, and event information that increase click-through rates; helping search engines understand your content's meaning beyond keywords, improving relevance matching; allowing your content to appear in specialized search features like knowledge panels, carousels, and voice search results; and establishing entity relationships that strengthen topical authority. Our structured data implementation focuses on the most relevant schema types for your business and ensures proper validation to maximize visibility in search results.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>How long does it take to fix technical SEO issues?</h3>
-                                <button class="toggle-btn"><span class="icon"></span></button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>The timeline for fixing technical SEO issues depends on several factors, including the complexity of the issues, your website platform, and implementation resources. Simple fixes like redirects, robots.txt adjustments, or canonical tag corrections can typically be implemented within days. More complex issues like site speed optimization, mobile usability improvements, or site architecture changes may take 2-8 weeks for full implementation. The impact timeline also varies—crawl efficiency improvements might show results within days, while the full effect of Core Web Vitals optimization might take 1-3 months as Google recrawls and reevaluates your site. Our approach prioritizes quick wins first, followed by more comprehensive improvements, with clear timelines established during our strategy phase based on your specific technical situation.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>Is technical SEO a one-time project or ongoing work?</h3>
-                                <button class="toggle-btn"><span class="icon"></span></button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>While some technical SEO improvements involve one-time fixes, maintaining optimal technical performance is an ongoing process. Websites are dynamic entities—new content is added, design elements change, plugins are updated, and Google's algorithms and standards continuously evolve. Our technical SEO service includes both initial optimization and ongoing maintenance. After the initial audit and implementation phase, we establish monitoring systems to track technical health metrics, conduct periodic follow-up audits (typically quarterly), address issues that arise from website changes or updates, and implement adjustments when search engines modify their technical requirements. This ongoing approach ensures your website maintains its technical foundation and adapts to changing standards, preventing the gradual technical debt that often accumulates on websites.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>How do you measure the success of technical SEO improvements?</h3>
-                                <button class="toggle-btn"><span class="icon"></span></button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>We track multiple metrics to measure the impact of technical SEO improvements, focusing on both technical performance indicators and business outcomes. Key performance indicators include: Core Web Vitals metrics and overall page speed improvements, crawl stats from Google Search Console (pages crawled, crawl errors, crawl budget utilization), indexation levels (pages in index vs. submitted), organic traffic growth, rankings for target keywords, rich result appearances and click-through rates, mobile usability errors, security issues, conversion rates and user engagement metrics (bounce rate, time on site), and organic visibility trends compared to competitors. We provide comprehensive reports showing before-and-after comparisons for these metrics, helping you understand the tangible business impact of technical improvements, not just the technical changes themselves.</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="faq-container">
+            <div class="faq-item active">
+                <div class="faq-question">
+                    <h3>What are Core Web Vitals and why do they matter?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Core Web Vitals are specific metrics that Google uses to evaluate the user experience of a website:</p>
+                    <ul>
+                        <li><strong>Key Metrics:</strong>
+                            <ul>
+                                <li>Largest Contentful Paint (LCP): Measures loading performance</li>
+                                <li>First Input Delay (FID): Measures interactivity</li>
+                                <li>Cumulative Layout Shift (CLS): Measures visual stability</li>
+                            </ul>
+                        </li>
+                        <li><strong>Ranking Impact:</strong>
+                            <ul>
+                                <li>Official Google ranking factors since the Page Experience Update</li>
+                                <li>Sites meeting recommended thresholds gain competitive advantages</li>
+                                <li>Performance directly influences mobile rankings</li>
+                                <li>Growing importance in Google's algorithm weighting</li>
+                            </ul>
+                        </li>
+                        <li><strong>User Experience Connection:</strong>
+                            <ul>
+                                <li>Lower bounce rates for sites with good Core Web Vitals</li>
+                                <li>Higher engagement metrics, including time on site</li>
+                                <li>Improved conversion rates due to reduced friction</li>
+                                <li>Better overall user satisfaction and return visits</li>
+                            </ul>
+                        </li>
+                        <li><strong>Business Benefits:</strong>
+                            <ul>
+                                <li>Competitive differentiation in search results</li>
+                                <li>Reduced abandonment during page loading</li>
+                                <li>Improved ROI from marketing campaigns</li>
+                                <li>Future-proofing against algorithm updates</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Our technical SEO services include comprehensive Core Web Vitals assessment and optimization, ensuring your site not only meets Google's standards but provides the smooth, frustration-free experience that converts visitors into customers.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How does page speed affect SEO and conversions?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Page speed has profound impacts on both search rankings and business conversions:</p>
+                    <ul>
+                        <li><strong>SEO Impact:</strong>
+                            <ul>
+                                <li>Direct ranking factor in Google's algorithm</li>
+                                <li>Core component of the Page Experience signals</li>
+                                <li>Mobile page speed especially critical with mobile-first indexing</li>
+                                <li>Influences crawl budget allocation and efficiency</li>
+                            </ul>
+                        </li>
+                        <li><strong>Conversion Impact:</strong>
+                            <ul>
+                                <li>1-second delay reduces conversions by up to 7%</li>
+                                <li>53% of mobile users abandon sites that load in more than 3 seconds</li>
+                                <li>Amazon found each 100ms of latency cost them 1% in sales</li>
+                                <li>Walmart saw a 2% conversion increase for every 1-second improvement</li>
+                            </ul>
+                        </li>
+                        <li><strong>User Behavior Effects:</strong>
+                            <ul>
+                                <li>Slower sites have higher bounce rates</li>
+                                <li>Reduced pages per session on slower-loading sites</li>
+                                <li>Lower average order values correlation with poor performance</li>
+                                <li>Negative brand perception from sluggish experiences</li>
+                            </ul>
+                        </li>
+                        <li><strong>Competitive Advantage:</strong>
+                            <ul>
+                                <li>Outperforming competitors by even 0.5 seconds can increase market share</li>
+                                <li>Fast-loading sites capture more mobile traffic share</li>
+                                <li>Performance leaders typically see higher engagement metrics</li>
+                                <li>Speed improvements compound with other optimization efforts</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Our technical SEO service prioritizes speed optimizations that deliver measurable improvements in both rankings and conversion rates, focusing on the specific speed factors most relevant to your website's technology stack and user base.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What technical issues most commonly affect search rankings?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>These are the most impactful technical issues we typically encounter:</p>
+                    <ul>
+                        <li><strong>Mobile Usability Issues:</strong>
+                            <ul>
+                                <li>Non-responsive design elements</li>
+                                <li>Touch elements too close together</li>
+                                <li>Content wider than screen</li>
+                                <li>Font sizes too small for mobile reading</li>
+                            </ul>
+                        </li>
+                        <li><strong>Performance Problems:</strong>
+                            <ul>
+                                <li>Slow page load times</li>
+                                <li>Poor Core Web Vitals scores</li>
+                                <li>Render-blocking resources</li>
+                                <li>Unoptimized images and media</li>
+                            </ul>
+                        </li>
+                        <li><strong>Crawlability Obstacles:</strong>
+                            <ul>
+                                <li>Improper robots.txt configuration</li>
+                                <li>Broken internal links</li>
+                                <li>Redirect chains and loops</li>
+                                <li>Excessive crawl depth to important pages</li>
+                            </ul>
+                        </li>
+                        <li><strong>Indexation Problems:</strong>
+                            <ul>
+                                <li>Duplicate content issues</li>
+                                <li>Incorrect canonical tag implementation</li>
+                                <li>Unintentional noindex directives</li>
+                                <li>Thin or low-value content pages</li>
+                            </ul>
+                        </li>
+                        <li><strong>Advanced Technical Issues:</strong>
+                            <ul>
+                                <li>JavaScript rendering problems</li>
+                                <li>Improper HTTP status codes</li>
+                                <li>Structured data implementation errors</li>
+                                <li>Insecure pages (missing HTTPS)</li>
+                                <li>XML sitemap errors or omissions</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Our technical SEO audit identifies which of these issues are affecting your specific site, and our implementation prioritizes fixes based on potential ranking impact and implementation difficulty.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do you fix Core Web Vitals issues?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Our approach to fixing Core Web Vitals issues is tailored to each specific metric:</p>
+                    <ul>
+                        <li><strong>Largest Contentful Paint (LCP) Optimizations:</strong>
+                            <ul>
+                                <li>Server response time improvements</li>
+                                <li>Resource prioritization for critical content</li>
+                                <li>Image optimization and right-sizing</li>
+                                <li>Implementing effective browser caching</li>
+                                <li>Content Delivery Network implementation</li>
+                                <li>Critical CSS extraction and inline placement</li>
+                            </ul>
+                        </li>
+                        <li><strong>First Input Delay (FID) Improvements:</strong>
+                            <ul>
+                                <li>JavaScript optimization and code splitting</li>
+                                <li>Deferring non-critical JavaScript</li>
+                                <li>Minimizing main thread work</li>
+                                <li>Breaking up long tasks</li>
+                                <li>Optimizing event handlers and listeners</li>
+                                <li>Using web workers for complex processes</li>
+                            </ul>
+                        </li>
+                        <li><strong>Cumulative Layout Shift (CLS) Fixes:</strong>
+                            <ul>
+                                <li>Adding explicit dimensions to images and embeds</li>
+                                <li>Reserving space for dynamic content</li>
+                                <li>Preventing late-loading content shifts</li>
+                                <li>Optimizing web font loading</li>
+                                <li>Managing advertisement spaces properly</li>
+                                <li>Stabilizing animations and transitions</li>
+                            </ul>
+                        </li>
+                        <li><strong>Implementation Approach:</strong>
+                            <ul>
+                                <li>Platform-specific optimizations for your CMS or framework</li>
+                                <li>Progressive implementation prioritizing highest-impact changes</li>
+                                <li>Custom solutions for unique technical challenges</li>
+                                <li>Regular testing and validation of improvements</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Our comprehensive approach involves both frontend and backend optimizations, carefully balanced to maintain your site's functionality and design integrity while significantly improving performance metrics.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is schema markup and how does it help SEO?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>Schema markup (structured data) is code added to your website to help search engines understand your content more precisely:</p>
+                    <ul>
+                        <li><strong>Enhanced Search Visibility:</strong>
+                            <ul>
+                                <li>Enables rich results (rich snippets) in search listings</li>
+                                <li>Increases SERP real estate and visual prominence</li>
+                                <li>Improves click-through rates by 30-50% on average</li>
+                                <li>Provides additional context in search results</li>
+                            </ul>
+                        </li>
+                        <li><strong>Types of Rich Results:</strong>
+                            <ul>
+                                <li>Reviews and star ratings</li>
+                                <li>FAQ accordions directly in search results</li>
+                                <li>How-to guides with visual steps</li>
+                                <li>Event information with dates and locations</li>
+                                <li>Product details including price and availability</li>
+                                <li>Recipe information with cooking times and ingredients</li>
+                            </ul>
+                        </li>
+                        <li><strong>Semantic Understanding:</strong>
+                            <ul>
+                                <li>Helps search engines understand content meaning beyond keywords</li>
+                                <li>Creates connections between entities and concepts</li>
+                                <li>Improves relevance matching for queries</li>
+                                <li>Establishes entity relationships that build topical authority</li>
+                            </ul>
+                        </li>
+                        <li><strong>Advanced Search Features:</strong>
+                            <ul>
+                                <li>Knowledge panel eligibility and information</li>
+                                <li>Voice search result selection</li>
+                                <li>Featured snippet qualification</li>
+                                <li>Inclusion in specialized SERP features like carousels</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Our structured data implementation focuses on the most relevant schema types for your business and industry, ensuring proper validation and monitoring to maximize your visibility in search results and capture more qualified traffic.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How long does it take to fix technical SEO issues?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>The timeline for fixing technical SEO issues varies based on several factors:</p>
+                    <ul>
+                        <li><strong>Quick Fixes (1-7 days):</strong>
+                            <ul>
+                                <li>Robots.txt adjustments</li>
+                                <li>Meta tag corrections (noindex, canonical)</li>
+                                <li>Simple redirect implementations</li>
+                                <li>XML sitemap corrections</li>
+                                <li>Basic schema markup implementation</li>
+                            </ul>
+                        </li>
+                        <li><strong>Moderate Complexity (2-4 weeks):</strong>
+                            <ul>
+                                <li>Image optimization across the site</li>
+                                <li>Content restructuring for better crawling</li>
+                                <li>Initial page speed optimizations</li>
+                                <li>URL structure improvements</li>
+                                <li>Internal linking enhancements</li>
+                            </ul>
+                        </li>
+                        <li><strong>Complex Issues (1-2 months):</strong>
+                            <ul>
+                                <li>Advanced Core Web Vitals optimization</li>
+                                <li>Major site architecture changes</li>
+                                <li>Complex JavaScript rendering issues</li>
+                                <li>Comprehensive mobile usability improvements</li>
+                                <li>Large-scale duplicate content resolution</li>
+                            </ul>
+                        </li>
+                        <li><strong>Impact Timelines:</strong>
+                            <ul>
+                                <li>Crawling changes: Results visible when next crawled (days to weeks)</li>
+                                <li>Indexation improvements: 1-4 weeks to see full impact</li>
+                                <li>Core Web Vitals: 1-3 months for full evaluation by Google</li>
+                                <li>Ranking improvements: 2-12 weeks depending on crawl frequency</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Our approach prioritizes quick wins first, followed by more comprehensive improvements, with clear timelines established during our strategy phase based on your specific technical situation and business priorities.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is technical SEO a one-time project or ongoing work?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>While some technical SEO improvements involve one-time fixes, optimal technical performance requires ongoing attention:</p>
+                    <ul>
+                        <li><strong>Initial Technical Optimization:</strong>
+                            <ul>
+                                <li>Comprehensive technical audit and assessment</li>
+                                <li>Priority issue resolution and implementation</li>
+                                <li>Baseline performance establishment</li>
+                                <li>Foundation building for long-term success</li>
+                            </ul>
+                        </li>
+                        <li><strong>Continuous Monitoring (Ongoing):</strong>
+                            <ul>
+                                <li>Core Web Vitals tracking and validation</li>
+                                <li>Crawl error detection and resolution</li>
+                                <li>Index coverage monitoring</li>
+                                <li>Site speed performance tracking</li>
+                                <li>Security and mobile usability monitoring</li>
+                            </ul>
+                        </li>
+                        <li><strong>Regular Technical Reviews:</strong>
+                            <ul>
+                                <li>Quarterly technical health assessments</li>
+                                <li>New issue identification and prioritization</li>
+                                <li>Performance optimization refinements</li>
+                                <li>Structured data validation and enhancement</li>
+                            </ul>
+                        </li>
+                        <li><strong>Adaptation to Changes:</strong>
+                            <ul>
+                                <li>Updates for algorithm changes</li>
+                                <li>Technical debt management for site modifications</li>
+                                <li>New feature and content implementation support</li>
+                                <li>Platform updates and migration assistance</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Our technical SEO service includes both initial optimization and ongoing maintenance. This continuous approach ensures your website maintains its technical foundation while adapting to changing standards, preventing the gradual technical debt that often accumulates on websites over time.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do you measure the success of technical SEO improvements?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>We track multiple metrics to measure the impact of technical SEO improvements:</p>
+                    <ul>
+                        <li><strong>Technical Performance Metrics:</strong>
+                            <ul>
+                                <li>Core Web Vitals scores and improvements</li>
+                                <li>Overall page speed metrics (Time to First Byte, Time to Interactive)</li>
+                                <li>Mobile usability error reduction</li>
+                                <li>Crawl stats improvements (pages crawled, crawl time)</li>
+                                <li>Index coverage enhancements</li>
+                            </ul>
+                        </li>
+                        <li><strong>Search Visibility Metrics:</strong>
+                            <ul>
+                                <li>Organic keyword rankings for target terms</li>
+                                <li>SERP feature acquisition (rich results, featured snippets)</li>
+                                <li>Organic impression growth in Search Console</li>
+                                <li>Indexed page count and quality</li>
+                            </ul>
+                        </li>
+                        <li><strong>User Experience Metrics:</strong>
+                            <ul>
+                                <li>Bounce rate reduction</li>
+                                <li>Pages per session increases</li>
+                                <li>Average session duration improvements</li>
+                                <li>Mobile vs. desktop performance comparison</li>
+                            </ul>
+                        </li>
+                        <li><strong>Business Impact Metrics:</strong>
+                            <ul>
+                                <li>Organic traffic growth</li>
+                                <li>Conversion rate improvements</li>
+                                <li>Lead quality from organic search</li>
+                                <li>Revenue attribution to technical changes</li>
+                                <li>Return on investment calculations</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>We provide comprehensive reports showing before-and-after comparisons for these metrics, helping you understand the tangible business impact of technical improvements, not just the technical changes themselves. This ROI-focused reporting ties technical work directly to your business objectives.</p>
                 </div>
             </div>
         </div>
