@@ -354,53 +354,106 @@ require_once '../../../../components/header.php';
         </div>
         
         <div class="faq-container">
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item active">
                 <div class="faq-question">
                     <h3>Why is brand monitoring important?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Brand monitoring is essential in today's digital landscape for several key reasons. First, it allows you to protect your reputation by identifying and addressing negative mentions before they escalate. Second, it provides valuable customer feedback about your products and services outside of formal channels. Third, it helps you identify emerging trends and consumer preferences relevant to your industry. Fourth, it enables you to measure the effectiveness of your marketing campaigns based on audience response. Finally, it provides competitive intelligence by tracking your market position relative to competitors. In an age where online reputation can significantly impact business success, comprehensive brand monitoring is no longer optional—it's a fundamental business practice.</p>
+                    <p>Brand monitoring is essential in today's digital landscape for several key reasons:</p>
+                    <ul>
+                        <li><strong>Reputation Protection:</strong> Identify and address negative mentions before they escalate into larger issues.</li>
+                        <li><strong>Customer Insights:</strong> Gather valuable feedback about your products and services outside of formal channels.</li>
+                        <li><strong>Trend Identification:</strong> Identify emerging trends and consumer preferences relevant to your industry.</li>
+                        <li><strong>Campaign Measurement:</strong> Measure the effectiveness of your marketing campaigns based on audience response.</li>
+                        <li><strong>Competitive Intelligence:</strong> Track your market position relative to competitors.</li>
+                    </ul>
+                    <p>In an age where online reputation can significantly impact business success, comprehensive brand monitoring is no longer optional—it's a fundamental business practice.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>What channels do you monitor for brand mentions?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Our brand monitoring services cover all major digital channels where your brand might be mentioned. This includes major social media platforms (Twitter, Facebook, Instagram, LinkedIn, TikTok, YouTube, Pinterest, etc.), news sites and online publications, blogs and content platforms, forums and discussion boards (Reddit, Quora, industry-specific forums), review sites (Google Reviews, Yelp, Trustpilot, etc.), app stores for mobile applications, podcasts and video content, and industry-specific platforms relevant to your business. We customize the monitoring scope based on your specific industry and where your audience is most active, ensuring comprehensive coverage without unnecessary noise.</p>
+                    <p>Our brand monitoring services cover all major digital channels where your brand might be mentioned:</p>
+                    <ul>
+                        <li><strong>Social Media:</strong> Twitter, Facebook, Instagram, LinkedIn, TikTok, YouTube, Pinterest, etc.</li>
+                        <li><strong>News & Publications:</strong> News sites, industry publications, and online magazines.</li>
+                        <li><strong>Blogs & Content:</strong> Blogs, content platforms, and influencer content.</li>
+                        <li><strong>Forums & Discussions:</strong> Reddit, Quora, and industry-specific forums.</li>
+                        <li><strong>Review Sites:</strong> Google Reviews, Yelp, Trustpilot, and specialized review platforms.</li>
+                        <li><strong>App Stores:</strong> Reviews and ratings for mobile applications.</li>
+                        <li><strong>Multimedia:</strong> Podcasts, videos, and other multimedia content.</li>
+                    </ul>
+                    <p>We customize the monitoring scope based on your specific industry and where your audience is most active, ensuring comprehensive coverage without unnecessary noise.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>How accurate is your sentiment analysis?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Our sentiment analysis combines advanced AI tools with human review for maximum accuracy. While purely automated sentiment analysis typically achieves 70-80% accuracy, our hybrid approach reaches 90%+ accuracy levels. Our system accounts for industry-specific terminology, sarcasm, mixed sentiment, and contextual nuances that often confuse automated systems. We use multiple layers of analysis, including natural language processing, machine learning algorithms, and human analysts who review and refine the automated classifications. We also continuously train our systems on your specific brand language and industry context, improving accuracy over time. For particularly important mentions or complex sentiment cases, our analysts always provide manual review to ensure accurate classification.</p>
+                    <p>Our sentiment analysis combines advanced AI tools with human review for maximum accuracy:</p>
+                    <ul>
+                        <li><strong>Hybrid Approach:</strong> While purely automated sentiment analysis typically achieves 70-80% accuracy, our hybrid approach reaches 90%+ accuracy levels.</li>
+                        <li><strong>Contextual Understanding:</strong> Our system accounts for industry-specific terminology, sarcasm, mixed sentiment, and contextual nuances.</li>
+                        <li><strong>Multi-Layer Analysis:</strong> We use natural language processing, machine learning algorithms, and human analysts who review and refine the automated classifications.</li>
+                        <li><strong>Continuous Learning:</strong> Our systems are continuously trained on your specific brand language and industry context, improving accuracy over time.</li>
+                        <li><strong>Manual Review:</strong> For particularly important mentions or complex sentiment cases, our analysts always provide manual review.</li>
+                    </ul>
+                    <p>This comprehensive approach ensures you receive accurate sentiment classifications that truly reflect how your audience perceives your brand.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>How quickly will I be alerted to negative mentions?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Our alert system operates in near real-time, with different response levels based on the potential impact of the mention. For high-priority situations—such as mentions from influential accounts, posts gaining rapid traction, or potentially damaging content—alerts are delivered immediately via your preferred notification method (email, SMS, or platform notification). For less urgent mentions, alerts are bundled into regular summaries delivered at intervals you specify. We work with you to establish custom alert thresholds based on factors like source influence, mention sentiment, potential reach, and topic sensitivity. Additionally, our crisis monitoring provides 24/7 coverage for clients requiring maximum vigilance, with direct analyst contact for urgent situations requiring immediate attention.</p>
+                    <p>Our alert system operates in near real-time, with different response levels based on the potential impact:</p>
+                    <ul>
+                        <li><strong>High-Priority Alerts:</strong> Immediate notifications for mentions from influential accounts, posts gaining rapid traction, or potentially damaging content.</li>
+                        <li><strong>Regular Summaries:</strong> Less urgent mentions are bundled into regular summaries delivered at intervals you specify.</li>
+                        <li><strong>Custom Thresholds:</strong> We establish alert thresholds based on factors like source influence, mention sentiment, potential reach, and topic sensitivity.</li>
+                        <li><strong>Multiple Notification Methods:</strong> Alerts can be delivered via email, SMS, or platform notification based on your preference.</li>
+                        <li><strong>Crisis Monitoring:</strong> For clients requiring maximum vigilance, we offer 24/7 coverage with direct analyst contact for urgent situations.</li>
+                    </ul>
+                    <p>This tiered approach ensures you receive timely alerts for critical mentions while avoiding alert fatigue from less significant brand conversations.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>Do you provide recommendations for responding to mentions?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Yes, we provide strategic response recommendations as part of our brand monitoring service. Our analysts evaluate mentions based on sentiment, source influence, potential impact, and historical context to develop appropriate response strategies. For routine positive mentions, we may suggest acknowledgment or engagement tactics to strengthen relationships. For neutral inquiries, we provide informational response templates aligned with your brand voice. For negative mentions, we develop tailored response strategies that address concerns while protecting brand reputation, including whether to respond publicly or privately. In crisis situations, we provide comprehensive response plans with messaging recommendations and channel-specific tactics. All recommendations align with your brand guidelines and communication policies, serving as expert advice that complements your team's judgment.</p>
+                    <p>Yes, we provide strategic response recommendations as part of our brand monitoring service:</p>
+                    <ul>
+                        <li><strong>Contextual Evaluation:</strong> Our analysts evaluate mentions based on sentiment, source influence, potential impact, and historical context.</li>
+                        <li><strong>Positive Engagement:</strong> For positive mentions, we suggest acknowledgment or engagement tactics to strengthen relationships.</li>
+                        <li><strong>Informational Responses:</strong> For neutral inquiries, we provide informational response templates aligned with your brand voice.</li>
+                        <li><strong>Negative Mention Strategy:</strong> For negative mentions, we develop tailored response strategies that address concerns while protecting brand reputation.</li>
+                        <li><strong>Crisis Response:</strong> In crisis situations, we provide comprehensive response plans with messaging recommendations and channel-specific tactics.</li>
+                        <li><strong>Brand Alignment:</strong> All recommendations align with your brand guidelines and communication policies.</li>
+                    </ul>
+                    <p>Our recommendations serve as expert advice that complements your team's judgment, helping you respond appropriately to every type of brand mention.</p>
                 </div>
             </div>
         </div>
@@ -408,4 +461,4 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?>
-
+<script src="/assets/js/services.js"></script>

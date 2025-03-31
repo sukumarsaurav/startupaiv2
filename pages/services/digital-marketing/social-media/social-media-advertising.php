@@ -426,53 +426,253 @@ require_once '../../../../components/header.php';
         </div>
         
         <div class="faq-container">
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item active">
                 <div class="faq-question">
-                    <h3>How much should I budget for social media advertising?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>Which social media advertising platform is best for my business?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Budget requirements for social media advertising vary based on industry, goals, audience size, and competitive landscape. For most businesses, we recommend starting with a minimum monthly budget of $1,500-3,000 to generate meaningful data and results. This allows for proper testing of different audiences, ad formats, and creative approaches. As we identify winning combinations, we can scale successful campaigns while pausing underperforming ones. We work with clients to establish a budget that aligns with their specific business objectives and expected ROI. Our approach is to start with a testing budget to identify what works, then scale spending on proven performers to maximize results.</p>
+                    <p>The ideal social advertising platform depends on your specific business goals, target audience, and product/service offering:</p>
+                    <ul>
+                        <li><strong>Facebook/Instagram Ads:</strong> Best for businesses with:
+                            <ul>
+                                <li>Broad demographic targeting needs</li>
+                                <li>Visual products or services</li>
+                                <li>B2C offerings with defined audience interests</li>
+                                <li>Local business targeting requirements</li>
+                                <li>Retargeting and conversion objectives</li>
+                            </ul>
+                        </li>
+                        <li><strong>LinkedIn Ads:</strong> Optimal for:
+                            <ul>
+                                <li>B2B products and services</li>
+                                <li>Professional audience targeting by job title, industry, company size</li>
+                                <li>Higher-value offerings with longer sales cycles</li>
+                                <li>Lead generation campaigns for business solutions</li>
+                            </ul>
+                        </li>
+                        <li><strong>Twitter Ads:</strong> Particularly effective for:
+                            <ul>
+                                <li>News, events, and time-sensitive promotions</li>
+                                <li>Targeting consumers interested in specific topics/conversations</li>
+                                <li>Engagement and awareness campaigns</li>
+                                <li>Technology, media, and entertainment sectors</li>
+                            </ul>
+                        </li>
+                        <li><strong>TikTok Ads:</strong> Best suited for:
+                            <ul>
+                                <li>Brands targeting Gen Z and younger Millennial audiences</li>
+                                <li>Visually engaging or entertaining products</li>
+                                <li>Creative approaches to brand storytelling</li>
+                                <li>Viral potential and awareness objectives</li>
+                            </ul>
+                        </li>
+                        <li><strong>Pinterest Ads:</strong> Ideal for:
+                            <ul>
+                                <li>Home, fashion, food, beauty, and DIY brands</li>
+                                <li>Products targeting predominantly female audiences</li>
+                                <li>Visual products with aspirational appeal</li>
+                                <li>Businesses with longer discovery-to-purchase cycles</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>We often recommend a multi-platform approach with primary and secondary platforms based on your specific business objectives and budget allocation. Our media planning process identifies the optimal platform mix through audience analysis and your business goals.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How long does it take to see results from social media ads?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>What budget should I allocate for social media advertising?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Initial data from social media advertising campaigns is available almost immediately, but meaningful business results typically develop within specific timeframes. Most platforms require a 3-7 day "learning phase" as their algorithms optimize delivery. For awareness and engagement-focused campaigns, you can expect to see results within the first week. For conversion-oriented campaigns, performance patterns usually emerge within 2-3 weeks, with ongoing optimization improving results over time. E-commerce businesses often see faster returns, while B2B and higher-consideration purchases may require longer timeframes. We set clear expectations and KPIs based on your specific business model and provide regular updates throughout the campaign lifecycle.</p>
+                    <p>Social media advertising budgets should be determined strategically based on several factors:</p>
+                    <ul>
+                        <li><strong>Business Objectives:</strong> Different goals require different investment levels:
+                            <ul>
+                                <li>Awareness campaigns typically require broader reach and higher initial investment</li>
+                                <li>Lead generation campaigns can be more targeted with budget scaled based on lead value</li>
+                                <li>E-commerce campaigns can start smaller and scale based on ROAS performance</li>
+                            </ul>
+                        </li>
+                        <li><strong>Audience Size & Competition:</strong>
+                            <ul>
+                                <li>Larger or more competitive audiences require higher budgets to achieve meaningful reach</li>
+                                <li>Niche audiences may require less spend but higher cost per impression</li>
+                                <li>Industry competition significantly impacts cost per click and cost per acquisition</li>
+                            </ul>
+                        </li>
+                        <li><strong>Testing Requirements:</strong>
+                            <ul>
+                                <li>Initial campaigns require sufficient budget to test multiple variables (audiences, creatives, placements)</li>
+                                <li>We recommend minimum daily budgets of $20-50 per ad set during testing phases</li>
+                                <li>Scaling follows successful test performance with data-backed budget allocation</li>
+                            </ul>
+                        </li>
+                        <li><strong>Benchmark Ranges:</strong> As general guidelines:
+                            <ul>
+                                <li>Small businesses: $1,500-5,000/month for meaningful results</li>
+                                <li>Mid-sized businesses: $5,000-15,000/month for comprehensive campaigns</li>
+                                <li>Larger enterprises: $15,000-50,000+/month for multi-objective campaigns</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Rather than fixed budget recommendations, we prefer implementing a performance-based approach that starts with strategic testing and scales investment as positive ROI is demonstrated. This data-driven model ensures efficient use of your advertising budget with clear performance accountability.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>Which social media platforms should I advertise on?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>How do you measure social advertising success?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>The best social media platforms for your advertising depend on your specific business, target audience, and objectives. Facebook and Instagram offer broad reach and diverse targeting options suitable for most businesses. LinkedIn excels for B2B targeting and professional audiences. TikTok and Snapchat are ideal for reaching younger demographics. Pinterest works well for lifestyle, decor, fashion, and aspirational products. We recommend a platform selection based on where your audience is most active and engaged, considering factors like demographic alignment, user intent, and ad format suitability. Our approach often involves testing multiple platforms initially to identify which performs best for your specific goals, then allocating more budget to the top performers.</p>
+                    <p>We measure social advertising success through a comprehensive metrics framework aligned with your specific business objectives:</p>
+                    <ul>
+                        <li><strong>Business Outcome Metrics:</strong>
+                            <ul>
+                                <li>Return on Ad Spend (ROAS)</li>
+                                <li>Cost Per Acquisition (CPA)</li>
+                                <li>Lifetime Value to Customer Acquisition Cost ratio (LTV:CAC)</li>
+                                <li>Revenue or leads directly attributed to campaigns</li>
+                                <li>Conversion rate by platform and campaign</li>
+                            </ul>
+                        </li>
+                        <li><strong>Campaign Performance Metrics:</strong>
+                            <ul>
+                                <li>Click-Through Rate (CTR)</li>
+                                <li>Cost Per Click (CPC)</li>
+                                <li>Engagement rate (likes, comments, shares)</li>
+                                <li>Video view rates and completion percentages</li>
+                                <li>Landing page conversion rates from social traffic</li>
+                            </ul>
+                        </li>
+                        <li><strong>Audience Insights:</strong>
+                            <ul>
+                                <li>Demographic performance breakdowns</li>
+                                <li>Interest and behavior affinity analysis</li>
+                                <li>Device and placement performance</li>
+                                <li>Geographic response patterns</li>
+                            </ul>
+                        </li>
+                        <li><strong>Attribution Analysis:</strong>
+                            <ul>
+                                <li>Multi-touch attribution models to understand the customer journey</li>
+                                <li>View-through conversion impact</li>
+                                <li>Cross-device conversion paths</li>
+                                <li>Post-impression activity analysis</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>We provide comprehensive performance reporting through customized dashboards that showcase both campaign metrics and business outcomes. Most importantly, we transform data into actionable insights that continuously improve campaign performance and ROI.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How do you measure the success of social media advertising?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>How long does it take to see results from social media advertising?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>We measure social media advertising success using metrics aligned with your specific campaign objectives. For awareness campaigns, we track impressions, reach, frequency, and brand lift. For engagement campaigns, we monitor engagement rate, click-through rate, video views, and social interactions. For conversion campaigns, we measure leads generated, cost per acquisition, conversion rate, return on ad spend (ROAS), and overall ROI. We implement comprehensive tracking through the platforms' native pixels, Google Analytics, and CRM integration to provide accurate attribution. Our reporting goes beyond data to provide context and actionable insights, showing not just what happened but why it happened and how to improve. Success is ultimately measured by the campaign's impact on your business objectives and bottom line.</p>
+                    <p>The timeline for social advertising results varies based on campaign objectives, platform algorithms, and market factors:</p>
+                    <ul>
+                        <li><strong>Initial Optimization Phase (1-2 weeks):</strong>
+                            <ul>
+                                <li>Platform algorithms require data collection period to optimize delivery</li>
+                                <li>Initial audience responses provide early performance indicators</li>
+                                <li>Creative element testing begins identifying winning variations</li>
+                                <li>Basic metrics like impressions, clicks, and engagement are immediately visible</li>
+                            </ul>
+                        </li>
+                        <li><strong>Performance Stabilization (2-4 weeks):</strong>
+                            <ul>
+                                <li>Statistically significant patterns emerge in audience response</li>
+                                <li>Cost metrics (CPC, CPM) typically stabilize after algorithm learning period</li>
+                                <li>Initial conversion data becomes reliable for optimization decisions</li>
+                                <li>First meaningful ROAS/CPA indicators become available</li>
+                            </ul>
+                        </li>
+                        <li><strong>Optimization & Scaling Phase (1-3 months):</strong>
+                            <ul>
+                                <li>Refinement of targeting and creative based on performance data</li>
+                                <li>Budget reallocation to top-performing segments and creatives</li>
+                                <li>Expanded testing of new audience segments and messaging</li>
+                                <li>Consistent improvement in efficiency metrics (lower CPA/higher ROAS)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Timeline Variables by Objective:</strong>
+                            <ul>
+                                <li>Awareness campaigns: Initial reach metrics visible immediately, brand lift measurable within 4-8 weeks</li>
+                                <li>Lead generation: Initial leads typically within first week, lead quality optimization over 2-4 weeks</li>
+                                <li>E-commerce sales: Initial transactions within days, ROAS optimization over 3-6 weeks</li>
+                                <li>Complex B2B sales: Initial leads within 2-3 weeks, full-funnel impact measurable over 2-3+ months</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>We set realistic expectations based on your specific objectives and industry, with transparent reporting throughout each phase. Our approach focuses on both quick wins and sustainable long-term performance improvement.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>Do you create the ad creative or should we provide it?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>What makes your social advertising approach different?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>We offer complete creative development services for social media advertising, including copywriting, graphic design, and video production. Our team develops multiple creative variations for testing and continuous performance improvement. While you're welcome to provide existing assets, our experience shows that creative specifically designed for each social platform following current best practices typically outperforms repurposed content. We can also work with a hybrid approach, optimizing your existing materials while creating additional assets. The creative development process involves collaborative feedback to ensure alignment with your brand guidelines while incorporating performance-driven elements that drive results in social media environments.</p>
+                    <p>Our social advertising approach is distinguished by several key differentiators:</p>
+                    <ul>
+                        <li><strong>Strategic Foundation:</strong>
+                            <ul>
+                                <li>We begin with comprehensive audience research beyond basic demographics</li>
+                                <li>Campaign architecture is built around customer journey mapping</li>
+                                <li>Multi-platform strategy designed for integrated touchpoints</li>
+                                <li>Business objectives drive all campaign decisions, not vanity metrics</li>
+                            </ul>
+                        </li>
+                        <li><strong>Creative Excellence:</strong>
+                            <ul>
+                                <li>Platform-specific creative development (not one-size-fits-all)</li>
+                                <li>Psychology-based ad messaging frameworks</li>
+                                <li>Continuous creative testing and iteration</li>
+                                <li>Multimedia content development across static, video, and interactive formats</li>
+                            </ul>
+                        </li>
+                        <li><strong>Advanced Targeting:</strong>
+                            <ul>
+                                <li>Proprietary audience building methodologies beyond platform defaults</li>
+                                <li>Custom lookalike modeling techniques</li>
+                                <li>Strategic retargeting sequences with progressive messaging</li>
+                                <li>Cross-platform audience synchronization</li>
+                            </ul>
+                        </li>
+                        <li><strong>Data-Driven Optimization:</strong>
+                            <ul>
+                                <li>Proprietary performance analysis frameworks</li>
+                                <li>Algorithmic budget allocation models</li>
+                                <li>Custom attribution modeling beyond platform reporting</li>
+                                <li>Weekly optimization cycles with documented testing protocols</li>
+                            </ul>
+                        </li>
+                        <li><strong>Transparent Partnership:</strong>
+                            <ul>
+                                <li>Full visibility into campaign structure and decision-making</li>
+                                <li>Comprehensive reporting with business impact focus</li>
+                                <li>Knowledge transfer throughout our relationship</li>
+                                <li>Strategy sessions beyond tactical reporting</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Our approach integrates strategic marketing principles with technical platform expertise, delivering campaigns that not only perform well within social platforms but drive meaningful business growth for our clients.</p>
                 </div>
             </div>
         </div>
@@ -480,3 +680,4 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?>
+<script src="/assets/js/services.js"></script>

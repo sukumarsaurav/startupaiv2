@@ -354,55 +354,80 @@ require_once '../../../../components/header.php';
                 <p class="lead">Common questions about online reviews and PR management</p>
             </div>
         </div>
-        
         <div class="faq-container">
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How do you handle negative reviews?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
-                    <p>We approach negative reviews with a strategic methodology that turns challenges into opportunities. First, we analyze each negative review to understand the root cause and validity of the complaint. Then, we craft personalized, empathetic responses that acknowledge concerns, provide solutions when appropriate, and demonstrate your commitment to customer satisfaction. For legitimate issues, we coordinate with your team to address underlying problems and follow up with the reviewer. When reviews contain inaccurate information, we respectfully provide corrections while maintaining a professional tone. We also monitor the resolution process and, when appropriate, invite the customer to update their review following a positive resolution. Our approach not only addresses individual negative reviews but leverages them as valuable feedback for operational improvements, potentially transforming critics into advocates while showing prospective customers that your business takes feedback seriously and resolves issues effectively.</p>
+                    <p>We approach negative reviews with a strategic methodology that turns challenges into opportunities:</p>
+                    <ul>
+                        <li>Analyze each negative review to understand the root cause.</li>
+                        <li>Craft personalized, empathetic responses that acknowledge concerns.</li>
+                        <li>Coordinate with your team to address underlying problems.</li>
+                        <li>Invite customers to update their reviews after positive resolutions.</li>
+                    </ul>
                 </div>
             </div>
             
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>Is it ethical to ask customers for reviews?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
-                    <p>Yes, asking customers for reviews is both ethical and recommended when done properly. The key is to follow ethical guidelines: request reviews from all customers (not just those likely to be positive), never offer incentives in exchange for positive reviews, make the process simple and convenient, and respect when customers decline to leave a review. Ethical review generation focuses on increasing the volume of authentic reviews that accurately reflect customer experiences, rather than manipulating ratings. Most major review platforms, including Google, Yelp, and Facebook, explicitly allow businesses to ask customers for honest reviews. In fact, these platforms encourage businesses to solicit reviews as it improves the quality and quantity of their review content. Our approach employs best practices such as timing review requests after positive interactions, using multiple channels (email, text, in-person), and creating simple review processes that reduce friction, all while strictly adhering to each platform's specific guidelines.</p>
+                    <p>Yes, asking customers for reviews is ethical when done properly:</p>
+                    <ul>
+                        <li>Request reviews from all customers, not just those likely to be positive.</li>
+                        <li>Never offer incentives for positive reviews.</li>
+                        <li>Make the process simple and convenient.</li>
+                    </ul>
                 </div>
             </div>
             
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>Which review platforms should my business focus on?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
-                    <p>The review platforms your business should prioritize depend on several factors specific to your industry, target audience, and business model. For most businesses, Google Business Profile reviews should be a primary focus due to their prominence in search results and Google Maps. Industry-specific platforms also deserve attention: Restaurants and hospitality businesses should prioritize TripAdvisor, Yelp, and OpenTable; Healthcare providers need to focus on Healthgrades, WebMD, and ZocDoc; Home services businesses should monitor HomeAdvisor, Angi, and Thumbtack; B2B companies benefit from focusing on G2, Capterra, and TrustRadius. Additionally, consider platform popularity in your geographic region and target demographic. We recommend a three-tiered approach: primary platforms (those most visible and impactful for your specific business), secondary platforms (those with moderate impact), and monitoring-only platforms (those with minimal impact but still worth tracking). Our service begins with a comprehensive audit to identify which platforms drive the most traffic and influence for your specific business.</p>
+                    <p>Your business should prioritize review platforms based on industry and audience:</p>
+                    <ul>
+                        <li>Focus on Google Business Profile for visibility.</li>
+                        <li>Consider industry-specific platforms like Yelp or TripAdvisor.</li>
+                        <li>Implement a three-tiered approach for platform prioritization.</li>
+                    </ul>
                 </div>
             </div>
             
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How do you measure the success of review and PR management?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
-                    <p>We measure the success of our review and PR management services through a comprehensive set of quantitative and qualitative metrics. For review management, we track average star ratings across platforms, review volume growth, review response rate and time, sentiment analysis trends, and conversion metrics from review platforms to your website. For PR management, we monitor media mention volume, publication quality and relevance, share of voice compared to competitors, message penetration, backlink acquisition, and referral traffic from media placements. We also evaluate broader business impact metrics including website traffic correlation with PR activities, lead or sales attribution from reputation channels, and customer acquisition cost from these sources. Each client receives a customized reporting dashboard showing the most relevant metrics for their specific goals, with regular performance reviews to assess progress and refine strategies. We establish baseline measurements at the beginning of our engagement and set realistic, measurable targets to demonstrate clear ROI from our reputation management efforts.</p>
+                    <p>We measure success through various metrics:</p>
+                    <ul>
+                        <li>Track average star ratings and review volume growth.</li>
+                        <li>Monitor media mention volume and publication quality.</li>
+                        <li>Evaluate broader business impact metrics.</li>
+                    </ul>
                 </div>
             </div>
             
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
-                    <h3>Can you remove negative reviews from Google, Yelp or other platforms?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>Can you remove negative reviews from Google, Yelp, or other platforms?</h3>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
-                    <p>Most major review platforms, including Google and Yelp, do not remove negative reviews simply because they are critical of a business. However, there are specific circumstances where removal is possible. Reviews that violate platform policies can be flagged for removal, including those containing hate speech, inappropriate content, conflicts of interest, spam, fake content, or off-topic information. Our approach is three-fold: First, we conduct a thorough policy review to determine if negative reviews violate platform guidelines. If violations exist, we assist with the proper reporting process, documenting evidence and following up as needed. Second, for legitimate negative reviews, we implement strategic response management to demonstrate your commitment to customer satisfaction. Finally, we focus on review generation strategies to ensure your overall rating reflects the typically positive experiences of your satisfied customers. While we cannot guarantee removal of legitimate negative reviews, our comprehensive approach ensures your overall online reputation accurately reflects your business quality while addressing valid removal cases with the proper platform-specific protocols.</p>
+                    <p>Most platforms do not remove negative reviews unless they violate policies:</p>
+                    <ul>
+                        <li>We assist with reporting violations.</li>
+                        <li>Implement strategic response management for legitimate reviews.</li>
+                        <li>Focus on generating positive reviews to improve overall ratings.</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -410,4 +435,4 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?> 
-?> 
+?>  <script src="/assets/js/services.js"></script>

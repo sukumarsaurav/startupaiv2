@@ -421,58 +421,220 @@ require_once '../../../../components/header.php';
         <div class="section-header">
             <div class="faq-header" data-aos="fade-up">
                 <h2>Frequently Asked Questions</h2>
-                <p class="lead">Common questions about our social media management services</p>
+                <p class="lead">Common questions about social media management</p>
             </div>
         </div>
         
         <div class="faq-container">
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item active">
                 <div class="faq-question">
-                    <h3>How often will you post on our social media accounts?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>Which social media platforms should my business be on?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Posting frequency depends on the platform and your specific strategy. Typically, we recommend 3-5 posts per week for Facebook and LinkedIn, 4-7 posts per week for Instagram, and 5-10 posts per week for Twitter. However, we believe in quality over quantity and will develop a custom posting schedule based on your audience, goals, and content resources. Our focus is on creating meaningful engagement rather than simply posting high volumes of content. We'll discuss the optimal posting frequency during our strategy development and adjust as needed based on performance data.</p>
+                    <p>The ideal social media platform mix depends on your business objectives, target audience, and resources. Here's how we approach platform selection:</p>
+                    <ul>
+                        <li><strong>Audience-First Approach:</strong> We analyze where your specific target audience is most active and engaged.</li>
+                        <li><strong>Platform Demographics:</strong> Each platform has distinct user demographics:
+                            <ul>
+                                <li><strong>Facebook:</strong> Broad demographic reach, especially valuable for 25-54 age groups and local businesses</li>
+                                <li><strong>Instagram:</strong> Strong for visual products and brands targeting 18-34 age groups</li>
+                                <li><strong>LinkedIn:</strong> Essential for B2B companies, professional services, and recruiting</li>
+                                <li><strong>Twitter:</strong> Valuable for news, customer service, and real-time engagement</li>
+                                <li><strong>TikTok:</strong> Rapidly growing platform primarily reaching under-30 audiences</li>
+                                <li><strong>Pinterest:</strong> Excellent for home, fashion, food, and DIY brands targeting predominantly female audiences</li>
+                            </ul>
+                        </li>
+                        <li><strong>Content Compatibility:</strong> We assess which platforms best showcase your content types (video, images, written content).</li>
+                        <li><strong>Business Goals:</strong> Different platforms excel for different objectives (brand awareness, community building, direct response).</li>
+                        <li><strong>Resource Consideration:</strong> We recommend focusing on doing fewer platforms exceptionally well rather than spreading resources too thin.</li>
+                    </ul>
+                    <p>During our strategy development, we provide platform-specific recommendations based on your unique business needs and resource availability.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How do you measure the success of social media management?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>How often should we post on social media?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>We measure success using both platform-specific metrics and business outcome metrics aligned with your goals. Platform metrics include engagement rate, reach, follower growth, click-through rates, and video views. Business outcome metrics might include website traffic, lead generation, conversion rates, and revenue attribution. We establish specific KPIs during strategy development and provide comprehensive monthly reports tracking these metrics. Most importantly, we go beyond just reporting numbers to provide context and actionable insights that inform ongoing strategy refinements. Success is ultimately defined by how well social media contributes to your business objectives, whether that's brand awareness, community building, lead generation, or sales growth.</p>
+                    <p>Optimal posting frequency varies by platform, audience engagement levels, and content quality. Here are our platform-specific guidelines:</p>
+                    <ul>
+                        <li><strong>Facebook:</strong> 3-5 times per week is typically optimal for most businesses. Quality and engagement rate matter more than higher frequency.</li>
+                        <li><strong>Instagram:</strong> 
+                            <ul>
+                                <li>Feed posts: 3-7 times per week</li>
+                                <li>Stories: 5-10 times per week for maximum visibility</li>
+                                <li>Reels: 2-4 times per week for algorithm favor</li>
+                            </ul>
+                        </li>
+                        <li><strong>LinkedIn:</strong> 3-5 times per week for most businesses, with focus on business hours posting.</li>
+                        <li><strong>Twitter:</strong> More frequency benefits engagement, typically 1-3 tweets daily plus relevant retweets and replies.</li>
+                        <li><strong>TikTok:</strong> Consistency matters more than volume; 3-5 times per week is a sustainable baseline.</li>
+                        <li><strong>Pinterest:</strong> 3-5 pins daily keeps your content in circulation without overwhelming followers.</li>
+                    </ul>
+                    <p>Beyond these guidelines, we regularly analyze your specific audience engagement patterns to refine and optimize posting schedules for your accounts. Content quality always supersedes quantity—it's better to post high-quality content less frequently than lower-quality content more often.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>Do you create all the content for our social media accounts?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>How do you measure social media success?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Yes, our comprehensive social media management service includes full content creation. Our team handles everything from copywriting and graphic design to photography direction and video production as needed. We develop monthly content calendars with diverse content types tailored to each platform, which you'll have the opportunity to review before publishing. We can also incorporate your existing content assets or collaborate with your team on specific content initiatives. Additionally, we can work with a hybrid model where we create core content while supplementing with user-generated content, curated industry content, and real-time engagement to create a well-rounded social media presence.</p>
+                    <p>We measure social media success through metrics aligned with your specific business objectives:</p>
+                    <ul>
+                        <li><strong>Brand Awareness Metrics:</strong>
+                            <ul>
+                                <li>Follower growth rate</li>
+                                <li>Reach and impressions</li>
+                                <li>Share of voice compared to competitors</li>
+                                <li>Brand mention volume and sentiment</li>
+                            </ul>
+                        </li>
+                        <li><strong>Engagement Metrics:</strong>
+                            <ul>
+                                <li>Engagement rate (interactions divided by reach)</li>
+                                <li>Comments, shares, and saves</li>
+                                <li>Click-through rate on links</li>
+                                <li>Video view duration and completion rate</li>
+                            </ul>
+                        </li>
+                        <li><strong>Conversion Metrics:</strong>
+                            <ul>
+                                <li>Website traffic from social channels</li>
+                                <li>Lead generation (form fills, sign-ups)</li>
+                                <li>Direct sales attribution</li>
+                                <li>Conversion rate from social visitors</li>
+                            </ul>
+                        </li>
+                        <li><strong>Customer Service Metrics:</strong>
+                            <ul>
+                                <li>Response time to inquiries</li>
+                                <li>Resolution rate for issues</li>
+                                <li>Sentiment improvement post-interaction</li>
+                            </ul>
+                        </li>
+                        <li><strong>Content Performance Analysis:</strong>
+                            <ul>
+                                <li>Top-performing content by category</li>
+                                <li>Optimal posting times and formats</li>
+                                <li>Hashtag and keyword effectiveness</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>We provide comprehensive monthly reports that track these metrics, identify trends, and include actionable insights for continuous improvement. Most importantly, we tie social media metrics to broader business outcomes to demonstrate tangible ROI.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How quickly will you respond to comments and messages?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>How do you create content that stands out on social media?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Our standard response time for comments and messages is within 24 hours during business days, with most responses happening much quicker. We monitor your accounts during business hours (9am-6pm, Monday-Friday) and have protocols in place for handling different types of engagement. For simple comments and general questions, we respond promptly with on-brand messaging. For more complex inquiries or customer service issues, we follow predetermined response guidelines developed with your team. For after-hours urgent matters, we can establish an escalation process that alerts your team to time-sensitive issues. We also proactively engage with relevant conversations and brand mentions to build relationships, not just react to direct communications.</p>
+                    <p>Our approach to creating standout social media content combines strategic planning with creative execution:</p>
+                    <ul>
+                        <li><strong>Audience-Centered Strategy:</strong>
+                            <ul>
+                                <li>Develop detailed audience personas to understand preferences and pain points</li>
+                                <li>Analyze audience engagement patterns to identify high-interest topics</li>
+                                <li>Create content that solves problems or fulfills specific audience needs</li>
+                            </ul>
+                        </li>
+                        <li><strong>Brand Differentiation:</strong>
+                            <ul>
+                                <li>Establish a distinctive brand voice and visual identity</li>
+                                <li>Focus on your unique expertise and perspectives</li>
+                                <li>Tell authentic brand stories that competitors can't replicate</li>
+                            </ul>
+                        </li>
+                        <li><strong>High-Value Content Types:</strong>
+                            <ul>
+                                <li>Educational content that showcases expertise</li>
+                                <li>Behind-the-scenes glimpses that build connection</li>
+                                <li>User-generated content that leverages social proof</li>
+                                <li>Timely content tied to trends and current events</li>
+                            </ul>
+                        </li>
+                        <li><strong>Visual Excellence:</strong>
+                            <ul>
+                                <li>Professional photography and graphic design</li>
+                                <li>Platform-optimized video formats</li>
+                                <li>Attention-grabbing thumbnails and opening frames</li>
+                                <li>Consistent visual branding across all content</li>
+                            </ul>
+                        </li>
+                        <li><strong>Performance Optimization:</strong>
+                            <ul>
+                                <li>A/B testing different formats, headlines, and visuals</li>
+                                <li>Analyzing platform-specific algorithm preferences</li>
+                                <li>Repurposing successful content across platforms</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Each piece of content we create is purposefully designed to either educate, entertain, inspire, or solve problems for your audience while maintaining your unique brand identity.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>What's your process for content approval?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>How do you handle negative comments and brand reputation issues?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>We implement a streamlined content approval process to ensure you maintain control while avoiding workflow bottlenecks. Typically, we develop a monthly content calendar with proposed content for your review and approval. This includes the copy, images, and other assets for all planned posts. We share this calendar via a collaborative platform where you can provide feedback and request revisions. Once the calendar is approved, we schedule and publish according to the agreed timeline. For timely or reactive content needs, we can establish an expedited approval process or pre-approved content guidelines. We're flexible and can adapt our approval workflow to match your internal processes while ensuring efficient content production and publishing.</p>
+                    <p>We manage negative feedback and reputation issues with a strategic, proactive approach:</p>
+                    <ul>
+                        <li><strong>Monitoring and Early Detection:</strong>
+                            <ul>
+                                <li>Continuous monitoring of all brand mentions across platforms</li>
+                                <li>Alert systems for potential reputation issues</li>
+                                <li>Sentiment analysis to identify emerging concerns</li>
+                            </ul>
+                        </li>
+                        <li><strong>Response Protocol:</strong>
+                            <ul>
+                                <li>Predefined response frameworks for common scenarios</li>
+                                <li>Rapid response times (typically within 1-2 hours during business hours)</li>
+                                <li>Escalation procedures for serious issues</li>
+                            </ul>
+                        </li>
+                        <li><strong>Communication Principles:</strong>
+                            <ul>
+                                <li>Acknowledge concerns with empathy and without defensiveness</li>
+                                <li>Move detailed problem resolution to private channels when appropriate</li>
+                                <li>Follow up publicly when issues are resolved</li>
+                                <li>Maintain transparency while protecting privacy</li>
+                            </ul>
+                        </li>
+                        <li><strong>Proactive Reputation Management:</strong>
+                            <ul>
+                                <li>Amplify positive customer experiences</li>
+                                <li>Build a reservoir of goodwill through community engagement</li>
+                                <li>Address product/service issues at their root to prevent recurring complaints</li>
+                            </ul>
+                        </li>
+                        <li><strong>Documentation and Learning:</strong>
+                            <ul>
+                                <li>Track all issue resolutions and outcomes</li>
+                                <li>Analyze patterns to identify improvement opportunities</li>
+                                <li>Refine response strategies based on effectiveness</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>We view negative feedback as an opportunity to demonstrate your commitment to customer satisfaction and continuously improve your products or services. Our approach turns potential reputation challenges into opportunities to strengthen customer loyalty and trust.</p>
                 </div>
             </div>
         </div>
@@ -480,4 +642,5 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?>
+<script src="/assets/js/services.js"></script>
 

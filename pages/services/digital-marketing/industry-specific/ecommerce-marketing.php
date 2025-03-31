@@ -406,53 +406,195 @@ require_once '../../../../components/header.php';
         </div>
         
         <div class="faq-container">
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item active">
                 <div class="faq-question">
-                    <h3>How long does it take to see results from e-commerce marketing?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>What marketing strategies work best for e-commerce?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>The timeline for e-commerce marketing results varies based on several factors including your platform, competition, current traffic, and chosen marketing channels. Generally, you can expect to see initial improvements in metrics like traffic and engagement within the first month. Significant increases in conversions and revenue typically emerge within 2-3 months as strategies are refined based on performance data. Some channels like PPC and marketplace advertising can deliver quicker results (within weeks), while SEO and content marketing build momentum over 3-6 months. Email marketing often shows strong results within the first few campaigns, especially for abandoned cart and post-purchase sequences. We establish realistic timelines for each channel in your strategy and provide regular reporting on progress toward your specific goals.</p>
+                    <p>The most effective e-commerce marketing strategies focus on driving targeted traffic and optimizing conversion:</p>
+                    <ul>
+                        <li><strong>Search Engine Optimization (SEO):</strong> Build a strong organic presence for product-specific and category searches.</li>
+                        <li><strong>Pay-Per-Click Advertising:</strong> Implement targeted Google Shopping, search, and display campaigns for immediate visibility.</li>
+                        <li><strong>Social Media Marketing:</strong> Leverage platforms like Instagram and Facebook for visual product showcasing and targeted advertising.</li>
+                        <li><strong>Email Marketing:</strong> Develop segmented campaigns for cart abandonment recovery, cross-selling, and customer retention.</li>
+                        <li><strong>Content Marketing:</strong> Create buying guides, product comparisons, and how-to content that supports purchase decisions.</li>
+                        <li><strong>Conversion Rate Optimization:</strong> Continuously test and refine product pages, checkout flows, and user experience.</li>
+                        <li><strong>Marketplace Optimization:</strong> For businesses on Amazon, eBay, or other marketplaces, optimize listings and advertising.</li>
+                    </ul>
+                    <p>We develop a customized channel mix based on your specific products, target audience, and business objectives.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>Which marketing channels work best for e-commerce?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>How can I reduce shopping cart abandonment?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>The most effective marketing channels for your e-commerce business depend on factors like your product type, target audience, price point, and competitive landscape. For most e-commerce businesses, a multi-channel approach yields the best results. Search engine marketing (both SEO and PPC) is typically foundational for capturing high-intent customers actively seeking products. Email marketing delivers exceptional ROI for nurturing customers and driving repeat purchases. Social media marketing excels for visually-appealing products and building brand awareness. Marketplace advertising (Amazon, eBay) is crucial if you sell on these platforms. The optimal channel mix varies by business, which is why we conduct thorough research before recommending specific channels. Our data-driven approach tests multiple channels to identify which combination delivers the highest ROI for your specific business model and goals.</p>
+                    <p>Reducing cart abandonment requires a multi-faceted approach targeting the key reasons shoppers leave without purchasing:</p>
+                    <ul>
+                        <li><strong>Checkout Optimization:</strong>
+                            <ul>
+                                <li>Streamline to as few steps as possible</li>
+                                <li>Offer guest checkout option</li>
+                                <li>Remove distractions from the checkout flow</li>
+                                <li>Ensure mobile-friendly checkout process</li>
+                            </ul>
+                        </li>
+                        <li><strong>Transparency:</strong>
+                            <ul>
+                                <li>Display all costs upfront (shipping, taxes, fees)</li>
+                                <li>Provide clear delivery timelines</li>
+                                <li>Make return policies easily accessible</li>
+                            </ul>
+                        </li>
+                        <li><strong>Payment Options:</strong>
+                            <ul>
+                                <li>Offer multiple payment methods</li>
+                                <li>Include popular digital wallets</li>
+                                <li>Consider Buy Now, Pay Later options</li>
+                            </ul>
+                        </li>
+                        <li><strong>Trust Signals:</strong>
+                            <ul>
+                                <li>Display security badges</li>
+                                <li>Show customer reviews</li>
+                                <li>Highlight money-back guarantees</li>
+                            </ul>
+                        </li>
+                        <li><strong>Recovery Tactics:</strong>
+                            <ul>
+                                <li>Implement cart abandonment email sequences</li>
+                                <li>Use targeted retargeting ads</li>
+                                <li>Consider time-limited incentives for completion</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Our approach combines UX improvements with strategic marketing automation to recapture sales that would otherwise be lost.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How do you improve e-commerce conversion rates?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>How important is SEO for e-commerce websites?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Improving e-commerce conversion rates requires a systematic approach addressing multiple aspects of the customer experience. We focus on several key areas: First, we optimize product pages with compelling descriptions, high-quality images, clear pricing, prominent call-to-action buttons, and persuasive social proof. Second, we streamline the checkout process by removing friction points, minimizing form fields, offering guest checkout options, and displaying security badges. Third, we implement strategic site-wide improvements including optimized navigation, mobile responsiveness, fast page loading, and effective search functionality. We also develop personalization strategies using product recommendations and targeted messaging based on user behavior. Finally, we implement rigorous testing through A/B experiments on key elements like product imagery, page layouts, call-to-action messaging, and pricing presentation. This comprehensive approach typically yields conversion rate improvements of 15-40% within 3-6 months.</p>
+                    <p>SEO is critical for e-commerce success for several key reasons:</p>
+                    <ul>
+                        <li><strong>Purchase Intent Traffic:</strong> SEO captures high-intent visitors actively searching for products you sell, delivering strong conversion potential.</li>
+                        <li><strong>Sustainable Acquisition Channel:</strong> While paid advertising stops generating traffic when you stop investing, SEO builds long-term organic visibility.</li>
+                        <li><strong>Competitive Advantage:</strong> Strong organic rankings differentiate your brand and reduce reliance on price competition in paid channels.</li>
+                        <li><strong>Cost Efficiency:</strong> The cost per acquisition from organic traffic is typically lower than paid channels, especially for established SEO programs.</li>
+                        <li><strong>Product Discoverability:</strong> Proper e-commerce SEO ensures your entire product catalog is indexed and findable through search.</li>
+                        <li><strong>Mobile Shopping Growth:</strong> As mobile shopping increases, SEO is essential for visibility in mobile search results.</li>
+                        <li><strong>Local Relevance:</strong> For businesses with physical locations, local SEO drives both online sales and in-store visits.</li>
+                    </ul>
+                    <p>Our e-commerce SEO strategy addresses technical foundation, content optimization, search experience, and authority building to maximize your organic visibility and sales.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>Do you work with specific e-commerce industries?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>How do you measure e-commerce marketing success?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>We work with e-commerce businesses across diverse industries, bringing both broad e-commerce expertise and specialized knowledge to each sector. Our team has extensive experience in fashion and apparel, beauty and cosmetics, home goods and furniture, electronics and tech products, food and beverage, health and wellness, jewelry and accessories, sports and outdoors, and B2B products. Each industry presents unique challenges and opportunities in terms of customer behavior, purchasing cycles, seasonality, content creation, and competitive differentiation. Our industry experience enables us to implement proven strategies while avoiding common pitfalls specific to your sector. We combine this industry knowledge with a fresh approach tailored to your unique brand and products. No matter your industry, we focus on understanding your specific audience, competitive landscape, and product differentiation to create marketing strategies that drive meaningful business results.</p>
+                    <p>We measure e-commerce marketing success through comprehensive metrics that directly tie to business outcomes:</p>
+                    <ul>
+                        <li><strong>Revenue Metrics:</strong>
+                            <ul>
+                                <li>Total revenue by channel and campaign</li>
+                                <li>Average order value (AOV)</li>
+                                <li>Revenue per visitor</li>
+                                <li>Product category performance</li>
+                            </ul>
+                        </li>
+                        <li><strong>ROI Measurements:</strong>
+                            <ul>
+                                <li>Return on ad spend (ROAS)</li>
+                                <li>Customer acquisition cost (CAC)</li>
+                                <li>Marketing cost as percentage of revenue</li>
+                                <li>Channel efficiency comparisons</li>
+                            </ul>
+                        </li>
+                        <li><strong>Conversion Metrics:</strong>
+                            <ul>
+                                <li>Shopping cart conversion rate</li>
+                                <li>Add-to-cart rate</li>
+                                <li>Checkout abandonment rate</li>
+                                <li>Product page conversion rate</li>
+                            </ul>
+                        </li>
+                        <li><strong>Customer Metrics:</strong>
+                            <ul>
+                                <li>New vs. returning customer ratio</li>
+                                <li>Customer lifetime value (CLV)</li>
+                                <li>Repeat purchase rate</li>
+                                <li>Customer retention cost</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>We provide comprehensive reporting that connects marketing activities to revenue performance, with custom dashboards showing both real-time performance and long-term trends.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How do you measure success in e-commerce marketing campaigns?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>How can I compete with Amazon and large retailers?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>We measure e-commerce marketing success through comprehensive metrics that connect directly to your business objectives and revenue. Our reporting focuses on both channel-specific metrics and overall business performance indicators. Key performance indicators we track include revenue growth (total and by channel), conversion rate, average order value, cost per acquisition, return on ad spend (ROAS), customer lifetime value, and specific metrics for individual marketing channels. For SEO, we monitor organic traffic, rankings, and organic conversion rate. For PPC and marketplace advertising, we track impressions, click-through rate, and advertising cost of sale (ACoS). For email marketing, we measure open rates, click rates, and revenue per email. We provide transparent reporting through customized dashboards that give you clear visibility into performance. Most importantly, we don't just track numbers—we provide actionable insights that explain what's working, what needs improvement, and how we're adapting strategies to continuously improve results.</p>
+                    <p>Competing successfully against Amazon and large retailers requires focusing on strategic advantages where they're vulnerable:</p>
+                    <ul>
+                        <li><strong>Brand Differentiation:</strong>
+                            <ul>
+                                <li>Develop a unique brand story and mission</li>
+                                <li>Showcase your expertise and passion for your products</li>
+                                <li>Create distinctive packaging and unboxing experiences</li>
+                            </ul>
+                        </li>
+                        <li><strong>Product Specialization:</strong>
+                            <ul>
+                                <li>Focus on niche product categories where you can be authoritative</li>
+                                <li>Develop exclusive or custom products unavailable elsewhere</li>
+                                <li>Build deeper product lines within specific categories</li>
+                            </ul>
+                        </li>
+                        <li><strong>Enhanced Customer Experience:</strong>
+                            <ul>
+                                <li>Provide personalized shopping assistance and recommendations</li>
+                                <li>Offer exceptional pre-sale and post-sale support</li>
+                                <li>Create more flexible return and exchange policies</li>
+                            </ul>
+                        </li>
+                        <li><strong>Content Excellence:</strong>
+                            <ul>
+                                <li>Develop superior product descriptions, images, and videos</li>
+                                <li>Create educational content that supports purchase decisions</li>
+                                <li>Showcase real customer experiences and testimonials</li>
+                            </ul>
+                        </li>
+                        <li><strong>Community Building:</strong>
+                            <ul>
+                                <li>Foster customer communities around shared interests</li>
+                                <li>Engage authentically on social media platforms</li>
+                                <li>Create loyalty programs that reward engagement</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Our approach helps you identify and leverage the specific strengths that give your store an edge, combining these advantages with targeted marketing to carve out your unique market position.</p>
                 </div>
             </div>
         </div>
@@ -460,3 +602,4 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?> 
+<script src="/assets/js/services.js"></script>

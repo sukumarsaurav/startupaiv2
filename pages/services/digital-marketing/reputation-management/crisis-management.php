@@ -354,53 +354,118 @@ require_once '../../../../components/header.php';
         </div>
         
         <div class="faq-container">
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item active">
                 <div class="faq-question">
                     <h3>How quickly can you respond to a crisis situation?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Our crisis response team is available 24/7/365, and we pride ourselves on rapid mobilization. For our retainer clients, we guarantee initial response within 30 minutes of notification, with a preliminary strategy session within 2 hours. For new clients experiencing an active crisis, we can typically provide initial consultation within 1-2 hours of first contact and deploy a full response team within 4-6 hours. The first 24-48 hours of a crisis are critical, which is why we've designed our systems for immediate activation and rapid deployment. Our global team structure also ensures we have crisis managers available regardless of time zone or holiday schedules.</p>
+                    <p>Our crisis response team is available 24/7/365, and we pride ourselves on rapid mobilization:</p>
+                    <ul>
+                        <li><strong>Retainer Clients:</strong> Guaranteed initial response within 30 minutes of notification, with a preliminary strategy session within 2 hours.</li>
+                        <li><strong>New Clients:</strong> Initial consultation within 1-2 hours of first contact and full response team deployment within 4-6 hours.</li>
+                        <li><strong>Critical First Days:</strong> The first 24-48 hours of a crisis are critical, which is why we've designed our systems for immediate activation.</li>
+                        <li><strong>Global Coverage:</strong> Our worldwide team structure ensures we have crisis managers available regardless of time zone or holiday schedules.</li>
+                    </ul>
+                    <p>Our rapid response capabilities ensure you have expert support during the most critical phase of any crisis situation.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>What types of crises do you manage?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>We manage a comprehensive range of crisis situations across industries. This includes: reputation and PR crises (negative media coverage, social media backlash, public criticism); operational crises (product recalls, service outages, supply chain disruptions); leadership crises (executive misconduct, succession issues, governance failures); data and cybersecurity incidents (data breaches, ransomware attacks, privacy violations); financial crises (earnings shortfalls, investor concerns, market volatility); workplace incidents (employee misconduct, discrimination claims, labor disputes); and regulatory/legal challenges (investigations, litigation, compliance issues). Our team includes specialists in various crisis types, allowing us to assemble the right expertise for your specific situation. We also have industry-specific experience across sectors including technology, healthcare, financial services, consumer products, manufacturing, education, and non-profit organizations.</p>
+                    <p>We manage a comprehensive range of crisis situations across industries, including:</p>
+                    <ul>
+                        <li><strong>Reputation and PR Crises:</strong> Negative media coverage, social media backlash, public criticism</li>
+                        <li><strong>Operational Crises:</strong> Product recalls, service outages, supply chain disruptions</li>
+                        <li><strong>Leadership Crises:</strong> Executive misconduct, succession issues, governance failures</li>
+                        <li><strong>Data and Cybersecurity Incidents:</strong> Data breaches, ransomware attacks, privacy violations</li>
+                        <li><strong>Financial Crises:</strong> Earnings shortfalls, investor concerns, market volatility</li>
+                        <li><strong>Workplace Incidents:</strong> Employee misconduct, discrimination claims, labor disputes</li>
+                        <li><strong>Regulatory/Legal Challenges:</strong> Investigations, litigation, compliance issues</li>
+                    </ul>
+                    <p>Our team includes specialists in various crisis types, allowing us to assemble the right expertise for your specific situation across sectors including technology, healthcare, financial services, consumer products, manufacturing, education, and non-profit organizations.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>Should we wait until a crisis occurs to engage your services?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>While we can certainly assist during an active crisis, the most effective approach is proactive preparation before a crisis occurs. Organizations with crisis plans in place respond more effectively, make better decisions under pressure, and typically experience less damage to their reputation and operations. Our crisis prevention and preparedness services include vulnerability assessments to identify potential crisis triggers, crisis communications planning with pre-approved messaging templates, response team training and simulation exercises, and the development of comprehensive crisis playbooks. Establishing a relationship before a crisis allows us to understand your organization, stakeholders, and values, enabling a more authentic and aligned response when issues arise. Many clients engage us on a retainer basis for both preparedness work and priority response when needed, ensuring they have immediate access to our team in emergency situations.</p>
+                    <p>While we can certainly assist during an active crisis, the most effective approach is proactive preparation before a crisis occurs:</p>
+                    <ul>
+                        <li><strong>Enhanced Effectiveness:</strong> Organizations with crisis plans in place respond more effectively, make better decisions under pressure, and typically experience less damage.</li>
+                        <li><strong>Preparedness Services:</strong> Our prevention services include vulnerability assessments, communications planning with pre-approved messaging templates, and response team training.</li>
+                        <li><strong>Crisis Simulations:</strong> We conduct realistic crisis simulation exercises to test your team's readiness and identify improvement areas.</li>
+                        <li><strong>Organizational Understanding:</strong> Establishing a relationship before a crisis allows us to understand your organization, stakeholders, and values.</li>
+                        <li><strong>Retainer Relationships:</strong> Many clients engage us on a retainer basis for both preparedness work and priority response when needed.</li>
+                    </ul>
+                    <p>The investment in crisis preparation typically pays dividends many times over when compared to the cost of managing an unprepared response to a full-blown crisis.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>How do you measure the success of crisis management?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>We measure crisis management success using a combination of quantitative and qualitative metrics tailored to each specific situation. Quantitative measures include media coverage analysis (volume, sentiment, message penetration), social media metrics (conversation volume, sentiment trends, engagement rates), search result improvements, website traffic patterns, and business impact indicators (sales data, stock price recovery, customer retention). Qualitative measures include stakeholder feedback, message adoption by third parties, long-term reputation recovery, and operational improvements implemented as a result of the crisis. We establish baseline measurements at the beginning of a crisis and track progress throughout the response and recovery phases. Each crisis is unique, so we work with clients to define success metrics specific to their situation and objectives. Our goal is not just to minimize negative outcomes but to position the organization for stronger stakeholder relationships and operational improvements following resolution.</p>
+                    <p>We measure crisis management success using a combination of quantitative and qualitative metrics tailored to each specific situation:</p>
+                    <ul>
+                        <li><strong>Quantitative Measures:</strong>
+                            <ul>
+                                <li>Media coverage analysis (volume, sentiment, message penetration)</li>
+                                <li>Social media metrics (conversation volume, sentiment trends, engagement rates)</li>
+                                <li>Search result improvements</li>
+                                <li>Website traffic patterns</li>
+                                <li>Business impact indicators (sales data, stock price recovery, customer retention)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Qualitative Measures:</strong>
+                            <ul>
+                                <li>Stakeholder feedback</li>
+                                <li>Message adoption by third parties</li>
+                                <li>Long-term reputation recovery</li>
+                                <li>Operational improvements implemented as a result of the crisis</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Our goal is not just to minimize negative outcomes but to position the organization for stronger stakeholder relationships and operational improvements following resolution.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>How do you handle social media during a crisis?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Social media requires specialized handling during a crisis due to its real-time nature and viral potential. Our approach includes establishing a dedicated social media crisis team that works in coordination with broader crisis efforts. We implement 24/7 monitoring using advanced tools to track conversation volume, sentiment, influential voices, and emerging narratives. Platform-specific response strategies are developed, recognizing that different platforms have distinct audiences and communication norms. We create tailored messaging frameworks with pre-approved response templates for common scenarios, enabling quick but consistent responses. Community management protocols are established to determine when to engage directly, when to take conversations private, and when to simply monitor. We also prepare pause or modification plans for scheduled content and paid campaigns that may be inappropriate during a crisis. Throughout the crisis, we continuously analyze social data to measure impact and adjust strategies in real-time, ensuring the most effective response as the situation evolves.</p>
+                    <p>Social media requires specialized handling during a crisis due to its real-time nature and viral potential:</p>
+                    <ul>
+                        <li><strong>Dedicated Crisis Team:</strong> We establish a social media-specific team that works in coordination with broader crisis efforts.</li>
+                        <li><strong>24/7 Monitoring:</strong> Advanced tools track conversation volume, sentiment, influential voices, and emerging narratives.</li>
+                        <li><strong>Platform-Specific Strategies:</strong> Different platforms have distinct audiences and communication norms requiring tailored approaches.</li>
+                        <li><strong>Response Frameworks:</strong> Pre-approved response templates for common scenarios enable quick but consistent communication.</li>
+                        <li><strong>Community Management:</strong> Clear protocols determine when to engage directly, when to take conversations private, and when to simply monitor.</li>
+                        <li><strong>Content Management:</strong> Plans for pausing or modifying scheduled content and paid campaigns that may be inappropriate during a crisis.</li>
+                        <li><strong>Real-Time Analytics:</strong> Continuous data analysis measures impact and informs strategy adjustments as the situation evolves.</li>
+                    </ul>
+                    <p>Our social media crisis management combines speed and strategic thinking to protect your reputation in the channels where public opinion forms most rapidly.</p>
                 </div>
             </div>
         </div>
@@ -408,3 +473,4 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?> 
+<script src="/assets/js/services.js"></script>

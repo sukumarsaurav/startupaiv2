@@ -305,58 +305,237 @@ require_once '../../../../components/header.php';
         <div class="section-header">
             <div class="faq-header" data-aos="fade-up">
                 <h2>Frequently Asked Questions</h2>
-                <p class="lead">Common questions about our content strategy services</p>
+                <p class="lead">Common questions about content strategy</p>
             </div>
         </div>
         
         <div class="faq-container">
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item active">
                 <div class="faq-question">
-                    <h3>Why do I need a content strategy?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>What exactly is a content strategy?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>A content strategy is essential because it provides direction and purpose for all your content marketing efforts. Without a strategy, you risk creating content that doesn't align with your business goals, fails to address audience needs, or lacks consistency across channels. A well-developed content strategy helps you allocate resources effectively, maintain a consistent publishing schedule, create content that resonates with your target audience, establish subject matter authority, and measure ROI. It transforms content creation from a reactive, ad hoc process into a strategic business function that drives measurable results and supports your overall marketing objectives.</p>
+                    <p>A content strategy is a comprehensive plan that guides how your business creates, distributes, and manages content to achieve specific business objectives. It encompasses:</p>
+                    <ul>
+                        <li><strong>Strategic Foundation:</strong>
+                            <ul>
+                                <li>Clear definition of business goals and how content supports them</li>
+                                <li>Detailed audience personas and journey mapping</li>
+                                <li>Competitive analysis and content differentiation plan</li>
+                                <li>Brand voice and messaging framework</li>
+                            </ul>
+                        </li>
+                        <li><strong>Content Planning:</strong>
+                            <ul>
+                                <li>Topic and keyword research aligned with audience needs</li>
+                                <li>Content pillars and themes development</li>
+                                <li>Content formats and channel selection</li>
+                                <li>Editorial calendar and production workflows</li>
+                            </ul>
+                        </li>
+                        <li><strong>Distribution Strategy:</strong>
+                            <ul>
+                                <li>Channel-specific distribution plans</li>
+                                <li>Content promotion tactics</li>
+                                <li>Paid, owned, and earned media integration</li>
+                                <li>Content repurposing framework</li>
+                            </ul>
+                        </li>
+                        <li><strong>Performance Framework:</strong>
+                            <ul>
+                                <li>Key performance indicators aligned with business goals</li>
+                                <li>Measurement tools and reporting cadence</li>
+                                <li>Optimization processes and feedback loops</li>
+                                <li>ROI measurement methodology</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Unlike a simple content calendar or one-off content creation, a true content strategy provides a structured, long-term approach to using content as a business asset that drives measurable results across marketing, sales, and customer experience.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>How long does it take to develop a content strategy?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Developing a comprehensive content strategy typically takes 3-6 weeks, depending on your business complexity, existing content inventory, and specific requirements. The process includes several phases: discovery and assessment (1-2 weeks), which involves content audits and audience research; strategy development (1-2 weeks), which includes creating content pillars and channel strategies; and implementation planning (1-2 weeks), which involves developing editorial calendars and workflows. For businesses with extensive existing content or complex multi-channel requirements, the process may take longer. We offer expedited strategy development for businesses that need to launch quickly, but we recommend allowing adequate time for thorough research and analysis to ensure your strategy is built on solid insights.</p>
+                    <p>The timeline for developing a comprehensive content strategy typically follows these phases:</p>
+                    <ul>
+                        <li><strong>Discovery Phase (2-3 weeks):</strong>
+                            <ul>
+                                <li>Stakeholder interviews and goal alignment</li>
+                                <li>Audience research and persona development</li>
+                                <li>Content audit and gap analysis</li>
+                                <li>Competitive landscape assessment</li>
+                            </ul>
+                        </li>
+                        <li><strong>Strategy Development (3-4 weeks):</strong>
+                            <ul>
+                                <li>Strategic narrative and positioning framework</li>
+                                <li>Channel strategy and content distribution plan</li>
+                                <li>Topic cluster and keyword mapping</li>
+                                <li>Content types and format recommendations</li>
+                            </ul>
+                        </li>
+                        <li><strong>Implementation Planning (2-3 weeks):</strong>
+                            <ul>
+                                <li>Editorial calendar creation</li>
+                                <li>Workflow and resource planning</li>
+                                <li>Measurement framework and KPI definition</li>
+                                <li>Technology requirements and integration</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>For most businesses, the complete process takes approximately 6-10 weeks from initiation to final strategy presentation. The timeline can vary based on your organization's complexity, the scope of content needs, and how quickly stakeholder feedback and approvals are provided. We can adapt our process to accommodate urgent business needs while ensuring all critical strategic elements are properly addressed.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>How do you measure content strategy success?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>We measure content strategy success through both content-specific metrics and business outcome metrics. Content performance metrics include engagement statistics (time on page, pages per session, social shares), audience growth (subscribers, followers, community members), SEO performance (rankings, organic traffic, featured snippets), and content production efficiency (time to publish, production costs). Business outcome metrics tie content directly to business results, including lead generation (form fills, downloads, inquiries), conversion rates, sales attribution, customer retention, and overall ROI. We establish custom KPIs aligned with your specific business goals and create a reporting framework that provides actionable insights. Our measurement approach evolves over time to ensure we're always tracking the most relevant indicators of success for your business.</p>
+                    <p>We measure content strategy success using a multi-layered approach that connects content performance to business outcomes:</p>
+                    <ul>
+                        <li><strong>Business Impact Metrics:</strong>
+                            <ul>
+                                <li>Revenue attribution from content-influenced conversions</li>
+                                <li>Lead generation volume and quality</li>
+                                <li>Customer acquisition cost reduction</li>
+                                <li>Customer retention and lifetime value impact</li>
+                            </ul>
+                        </li>
+                        <li><strong>Marketing Performance Metrics:</strong>
+                            <ul>
+                                <li>Organic traffic growth and search visibility</li>
+                                <li>Content engagement metrics (time on page, scroll depth, etc.)</li>
+                                <li>Email list growth and engagement rates</li>
+                                <li>Social sharing and amplification metrics</li>
+                            </ul>
+                        </li>
+                        <li><strong>Content-Specific Metrics:</strong>
+                            <ul>
+                                <li>Content production efficiency and output</li>
+                                <li>Content quality and consistency scores</li>
+                                <li>Topic performance by audience segment</li>
+                                <li>Content format effectiveness</li>
+                            </ul>
+                        </li>
+                        <li><strong>Channel Performance:</strong>
+                            <ul>
+                                <li>Channel-specific engagement rates</li>
+                                <li>Cross-channel attribution patterns</li>
+                                <li>Content distribution efficiency</li>
+                                <li>Return on content investment by channel</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Our measurement approach begins with clearly defined KPIs aligned with your business objectives. We implement comprehensive tracking using analytics platforms, marketing automation tools, and custom reporting dashboards. We focus not just on what's happening, but why it's happening and how to continuously improve performance over time.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
                     <h3>How often should a content strategy be updated?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Content strategies should be reviewed quarterly and undergo a more comprehensive update annually. Quarterly reviews allow for tactical adjustments based on performance data, emerging trends, and shifting business priorities. These reviews help fine-tune content types, topics, and distribution channels to optimize results. The annual update is more strategic, reassessing fundamental elements like audience personas, content pillars, and alignment with evolving business goals. However, certain situations warrant immediate strategy adjustments, including major business changes (new products/services, rebranding), significant algorithm updates, emerging content platforms, competitive disruption, or sudden performance changes. We build flexibility into our strategies from the start, allowing them to serve as living documents that can adapt to changing conditions while maintaining strategic direction.</p>
+                    <p>Content strategy should be maintained through a structured review and update cycle:</p>
+                    <ul>
+                        <li><strong>Quarterly Reviews (Every 3 Months):</strong>
+                            <ul>
+                                <li>Performance analysis against KPIs</li>
+                                <li>Content calendar adjustments based on data</li>
+                                <li>Topic and format optimization</li>
+                                <li>Channel performance assessment</li>
+                            </ul>
+                        </li>
+                        <li><strong>Semi-Annual Strategic Updates (Every 6 Months):</strong>
+                            <ul>
+                                <li>Audience and persona validation</li>
+                                <li>Competitive landscape reassessment</li>
+                                <li>Channel strategy refinement</li>
+                                <li>Resource allocation adjustment</li>
+                            </ul>
+                        </li>
+                        <li><strong>Annual Strategic Overhaul (Every 12 Months):</strong>
+                            <ul>
+                                <li>Comprehensive strategy review</li>
+                                <li>Business alignment reconfirmation</li>
+                                <li>Major process and workflow optimization</li>
+                                <li>Technology stack assessment</li>
+                            </ul>
+                        </li>
+                        <li><strong>Trigger-Based Updates (As Needed):</strong>
+                            <ul>
+                                <li>Significant business changes (mergers, new products, etc.)</li>
+                                <li>Major market shifts or competitive moves</li>
+                                <li>Algorithm or platform policy changes</li>
+                                <li>Substantial performance deviations</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>This layered approach ensures your content strategy remains responsive to short-term performance indicators while still evolving strategically for long-term success. We recommend maintaining core strategic elements as a stable foundation while allowing tactical components to adapt more frequently based on data and market conditions.</p>
                 </div>
             </div>
             
-            <div class="faq-item" data-aos="fade-up">
+            <div class="faq-item">
                 <div class="faq-question">
-                    <h3>Can you implement the content strategy after developing it?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <h3>Do you create content as part of the strategy development?</h3>
+                    <button class="toggle-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
                 <div class="faq-answer">
-                    <p>Yes, we offer end-to-end content services that can take your strategy from planning to implementation. After developing your content strategy, we can provide comprehensive execution services including content creation (blog posts, articles, white papers, case studies), content production (graphics, videos, podcasts), publishing and distribution, and ongoing analytics and optimization. Our implementation services can be scaled to match your needs—whether you need full outsourcing of your content operations or support for your internal team. We can also provide training and guidance if you prefer to handle implementation in-house. Our goal is to ensure your content strategy translates into effective execution that delivers tangible business results, regardless of whether we're handling all aspects or supporting your team's efforts.</p>
+                    <p>Our approach to content strategy and content creation follows a strategic sequence:</p>
+                    <ul>
+                        <li><strong>Strategy Development Phase:</strong>
+                            <ul>
+                                <li>We focus on building the strategic framework first</li>
+                                <li>Sample content templates and guidelines are included</li>
+                                <li>Content pillar frameworks and topic clusters are defined</li>
+                                <li>No full-scale content production during this phase</li>
+                            </ul>
+                        </li>
+                        <li><strong>Implementation Options:</strong>
+                            <ul>
+                                <li><strong>Strategy + Production:</strong> Most clients choose our comprehensive package that includes both strategy development and ongoing content creation</li>
+                                <li><strong>Strategy + Training:</strong> We can train your internal team on execution</li>
+                                <li><strong>Strategy Only:</strong> We provide the complete strategy for your team to implement</li>
+                                <li><strong>Hybrid Model:</strong> We handle specific content types while your team manages others</li>
+                            </ul>
+                        </li>
+                        <li><strong>Content Creation Services:</strong>
+                            <ul>
+                                <li>Blog articles and long-form content</li>
+                                <li>Website copy and landing pages</li>
+                                <li>Email campaigns and newsletters</li>
+                                <li>Whitepapers, ebooks, and downloadable assets</li>
+                                <li>Video scripts and podcast content</li>
+                                <li>Social media content and graphics</li>
+                            </ul>
+                        </li>
+                        <li><strong>Content Team Expertise:</strong>
+                            <ul>
+                                <li>Industry-specific writers with subject matter expertise</li>
+                                <li>SEO specialists for search-optimized content</li>
+                                <li>Designers for visual content elements</li>
+                                <li>Editors ensuring brand voice consistency</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>We recommend starting with strategy development to establish the proper foundation, then transitioning to content production with a clear roadmap in place. This approach ensures all content created is strategically aligned with your business objectives and audience needs rather than creating content without a cohesive plan.</p>
                 </div>
             </div>
         </div>
@@ -364,3 +543,4 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?>
+<script src="/assets/js/services.js"></script>
