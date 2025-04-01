@@ -1,36 +1,42 @@
 <footer class="site-footer">
-    <div class="footer-container">
-        <!-- Company Info Column -->
-        <div class="footer-column">
+    <!-- Top Footer with Company Info -->
+    <div class="top-footer">
+        <div class="footer-container">
             <div class="footer-logo">
-                <a href="/index.php">StartupAI</a>
+                <a href="/index.php">
+                    <img src="/assets/svg/logo.svg" alt="StartupAI Logo" style="height: 40px;">
+                </a>
             </div>
-            <p class="footer-description">
+            <!-- <p class="footer-description">
                 Empowering businesses with innovative web design, app development, AI services, and digital marketing solutions.
-            </p>
+            </p> -->
             <div class="social-icons">
-                <a href="#" aria-label="Facebook"><i class="fas fa-facebook-f"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fas fa-twitter"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fas fa-linkedin-in"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fas fa-instagram"></i></a>
-                <a href="#" aria-label="YouTube"><i class="fas fa-youtube"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
-        
+    </div>
+    
+    <!-- Footer Divider -->
+    <div class="footer-divider"></div>
+    
+    <!-- Main Footer with Links -->
+    <div class="footer-container">
         <!-- Web Design Column -->
         <div class="footer-column">
             <h3 class="footer-heading">Web Design</h3>
             <ul class="footer-links">
-                <li><a href="/pages/services/web-design/UI-UX-Design-&-Prototyping/Wireframing-&-Prototyping.php">Wireframing & Prototyping</a></li>
-                <li><a href="/pages/services/web-design/UI-UX-Design-&-Prototyping/User-Interface-(UI)-Design.php">UI Design</a></li>
-                <li><a href="/pages/services/web-design/UI-UX-Design-&-Prototyping/User-Experience-(UX)-Optimization.php">UX Optimization</a></li>
-                <li><a href="/pages/services/web-design/Website-Redesign-&-Revamp/Mobile-First-Design.php">Mobile-First Design</a></li>
-                <li><a href="/pages/services/web-design/Responsive-&-Mobile-Friendly-Design/Mobile-UI-UX-Optimization.php">Mobile UI/UX Optimization</a></li>
-                <li><a href="/pages/services/web-design/CMS-Based-Website-Development/WordPress-Website-Design.php">WordPress Design</a></li>
-                <li><a href="/pages/services/web-design/CMS-Based-Website-Development/Webflow-Development.php">Webflow Development</a></li>
-                <li><a href="/pages/services/web-design/E-commerce-Website-Design/Shopify-Development.php">Shopify Development</a></li>
-                <li><a href="/pages/services/web-design/E-commerce-Website-Design/WooCommerce-Development.php">WooCommerce Development</a></li>
-                <li><a href="/pages/services/web-design/Custom-Website-Design/Business-Websites.php">Business Websites</a></li>
+                <li><a href="/pages/services/web-design/Custom-Website-Solutions/Business-Websites.php">Business Websites</a></li>
+                <li><a href="/pages/services/web-design/Custom-Website-Solutions/E-commerce-Website-Design.php">E-commerce Website Design</a></li>
+                <li><a href="/pages/services/web-design/E-commerce-&-CMS-Solutions/WordPress-Website-Design.php">WordPress Design</a></li>
+                <li><a href="/pages/services/web-design/E-commerce-&-CMS-Solutions/Shopify-Development.php">Shopify Development</a></li>
+                <li><a href="/pages/services/web-design/E-commerce-&-CMS-Solutions/Webflow-Development.php">Webflow Development</a></li>
+                <li><a href="/pages/services/web-design/UI-UX-&-Website-Enhancements/UI-UX-Design-&-Prototyping.php">UI/UX Design & Prototyping</a></li>
+                <li><a href="/pages/services/web-design/UI-UX-&-Website-Enhancements/Website-Redesign-&-Revamp.php">Website Redesign</a></li>
+                <li><a href="/pages/services/web-design/UI-UX-&-Website-Enhancements/Mobile-First-Design.php">Mobile-First Design</a></li>
             </ul>
         </div>
         
@@ -38,16 +44,14 @@
         <div class="footer-column">
             <h3 class="footer-heading">App Development</h3>
             <ul class="footer-links">
-                <li><a href="/pages/services/app-development/web-application-devlopment/custom-web-apps.php">Custom Web Applications</a></li>
-                <li><a href="/pages/services/app-development/web-application-devlopment/API-Development-&-Integration.php">API Development & Integration</a></li>
-                <li><a href="/pages/services/app-development/web-application-devlopment/Progressive-Web-Apps.php">Progressive Web Apps</a></li>
-                <li><a href="/pages/services/app-development/web-application-devlopment/E-commerce-Solutions.php">E-commerce Solutions</a></li>
-                <li><a href="/pages/services/app-development/web-application-devlopment/SaaS-Development.php">SaaS Development</a></li>
-                <li><a href="/pages/services/app-development/Backend-&-Database/Database-Design-&-Management.php">Database Design & Management</a></li>
-                <li><a href="/pages/services/app-development/Backend-&-Database/DevOps-&-CI-CD.php">DevOps & CI/CD</a></li>
-                <li><a href="/pages/services/app-development/Custom-Software-Solutions/AI-Powered-Applications.php">AI-Powered Applications</a></li>
-                <li><a href="/pages/services/app-development/Custom-Software-Solutions/CRM-&-ERP-Solutions.php">CRM & ERP Solutions</a></li>
-                <li><a href="/pages/services/app-development/Custom-Software-Solutions/IoT-&-Embedded-Systems.php">IoT & Embedded Systems</a></li>
+                <li><a href="/pages/services/app-development/Web-Application-Development/Custom-Web-Applications.php">Custom Web Applications</a></li>
+                <li><a href="/pages/services/app-development/Web-Application-Development/API-Development-Integration.php">API Development</a></li>
+                <li><a href="/pages/services/app-development/Web-Application-Development/Progressive-Web-Apps.php">Progressive Web Apps</a></li>
+                <li><a href="/pages/services/app-development/Backend-&-Infrastructure/Backend-Development-APIs.php">Backend Development</a></li>
+                <li><a href="/pages/services/app-development/Backend-&-Infrastructure/Database-Design-&-Management.php">Database Design</a></li>
+                <li><a href="/pages/services/app-development/Mobile-App-Development/android-app-development.php">Android App Development</a></li>
+                <li><a href="/pages/services/app-development/Mobile-App-Development/ios-app-development.php">iOS App Development</a></li>
+                <li><a href="/pages/services/app-development/Mobile-App-Development/cross-platform-apps.php">Cross-Platform Apps</a></li>
             </ul>
         </div>
         
@@ -55,16 +59,14 @@
         <div class="footer-column">
             <h3 class="footer-heading">AI Services</h3>
             <ul class="footer-links">
-                <li><a href="/pages/services/ai-services/chatbots-virtual-assistants.php">AI Chatbots & Assistants</a></li>
-                <li><a href="/pages/services/ai-services/chatbots/customer-support-bots.php">Customer Support Bots</a></li>
-                <li><a href="/pages/services/ai-services/chatbots/sales-bots.php">Conversational Sales Bots</a></li>
-                <li><a href="/pages/services/ai-services/chatbots/multilingual-bots.php">Multilingual Chatbots</a></li>
-                <li><a href="/pages/services/ai-services/business-automation.php">Business Automation</a></li>
-                <li><a href="/pages/services/ai-services/business-automation/workflow-automation.php">Workflow Automation</a></li>
-                <li><a href="/pages/services/ai-services/natural-language-processing.php">Natural Language Processing</a></li>
-                <li><a href="/pages/services/ai-services/natural-language-processing/sentiment-analysis.php">Sentiment Analysis</a></li>
-                <li><a href="/pages/services/ai-services/machine-learning-solutions.php">Machine Learning Solutions</a></li>
-                <li><a href="/pages/services/ai-services/machine-learning/recommendation-systems.php">Recommendation Systems</a></li>
+                <li><a href="/pages/services/ai-services/conversational-ai-solutions/chatbot-development-services.php">Chatbot Development</a></li>
+                <li><a href="/pages/services/ai-services/conversational-ai-solutions/virtual-assistant-development.php">Virtual Assistant Development</a></li>
+                <li><a href="/pages/services/ai-services/ai-powered-business-automation/ai-powered-workflow-automation.php">Workflow Automation</a></li>
+                <li><a href="/pages/services/ai-services/ai-powered-business-automation/smart-document-processing.php">Smart Document Processing</a></li>
+                <li><a href="/pages/services/ai-services/machine-learning-ai-development/custom-ai-model-development-training.php">Custom AI Model Development</a></li>
+                <li><a href="/pages/services/ai-services/machine-learning-ai-development/ai-powered-recommendation-engines.php">Recommendation Engines</a></li>
+                <li><a href="/pages/services/ai-services/industry-specific-ai-solutions/ai-for-healthcare-medical-analysis.php">AI for Healthcare</a></li>
+                <li><a href="/pages/services/ai-services/industry-specific-ai-solutions/ai-solutions-for-e-commerce-retail.php">AI for E-commerce</a></li>
             </ul>
         </div>
         
@@ -73,19 +75,17 @@
             <h3 class="footer-heading">Digital Marketing</h3>
             <ul class="footer-links">
                 <li><a href="/pages/services/digital-marketing/seo/on-page-seo.php">On-Page SEO</a></li>
-                <li><a href="/pages/services/digital-marketing/seo/off-page-seo.php">Off-Page SEO</a></li>
-                <li><a href="/pages/services/digital-marketing/seo/technical-seo.php">Technical SEO</a></li>
                 <li><a href="/pages/services/digital-marketing/seo/local-seo.php">Local SEO</a></li>
-                <li><a href="/pages/services/digital-marketing/seo/ecommerce-seo.php">E-commerce SEO</a></li>
                 <li><a href="/pages/services/digital-marketing/content-marketing/content-strategy.php">Content Strategy</a></li>
-                <li><a href="/pages/services/digital-marketing/content-marketing/blogging-services.php">Blogging Services</a></li>
+                <li><a href="/pages/services/digital-marketing/email-marketing/email-campaigns.php">Email Campaigns</a></li>
+                <li><a href="/pages/services/digital-marketing/email-marketing/newsletter-management.php">Newsletter Management</a></li>
                 <li><a href="/pages/services/digital-marketing/social-media/social-media-management.php">Social Media Management</a></li>
-                <li><a href="/pages/services/digital-marketing/social-media/social-media-advertising.php">Social Media Advertising</a></li>
                 <li><a href="/pages/services/digital-marketing/social-media/influencer-marketing.php">Influencer Marketing</a></li>
+                <li><a href="/pages/services/digital-marketing/cro/ab-testing.php">A/B Testing</a></li>
             </ul>
         </div>
         
-        <!-- Quick Links Column -->
+        <!-- Quick Links Column (Moved from bottom to where Company Info was) -->
         <div class="footer-column">
             <h3 class="footer-heading">Quick Links</h3>
             <ul class="footer-links">
@@ -98,31 +98,15 @@
                 <li><a href="/pages/faq.php">FAQ</a></li>
                 <li><a href="/pages/legal/terms.php">Terms of Service</a></li>
                 <li><a href="/pages/legal/privacy.php">Privacy Policy</a></li>
-                <li><a href="/pages/legal/refund.php">Refund Policy</a></li>
             </ul>
-        </div>
-    </div>
-    
-    <!-- Newsletter Section -->
-    <div class="newsletter-section">
-        <div class="footer-container">
-            <div class="newsletter-content">
-                <h3>Subscribe to Our Newsletter</h3>
-                <p>Stay updated with our latest news and offers</p>
-            </div>
-            <div class="newsletter-form">
-                <form>
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
         </div>
     </div>
     
     <!-- Footer Bottom -->
     <div class="footer-bottom">
         <div class="footer-container">
-            <p class="copyright">© <span id="current-year">2023</span> StartupAI. All rights reserved.</p>
+            <p class="copyright">© <span id="current-year"></span> StartupAI. All rights reserved.</p>
+            <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
             <div class="footer-bottom-links">
                 <a href="/pages/sitemap.php">Sitemap</a>
                 <a href="/pages/legal/accessibility.php">Accessibility</a>
@@ -133,14 +117,11 @@
     </div>
 </footer>
 
-<!-- Footer content here -->
-
 <!-- Core JavaScript -->
 <script src="/assets/js/main.js"></script>
 
 <!-- Component-specific JavaScript -->
 <script src="/assets/js/footer.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> -->
 
 <!-- Additional JavaScript files -->
 <?php if (isset($additionalJs) && is_array($additionalJs)): ?>
