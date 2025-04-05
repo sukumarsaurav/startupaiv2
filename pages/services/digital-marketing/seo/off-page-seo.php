@@ -37,7 +37,7 @@ require_once '../../../../components/header.php';
             </div>
             <div class="hero-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
                 <div class="image-glow"></div>
-                <img src="/assets/images/services/off-page-seo.svg" alt="Off-Page SEO Services" class="floating-image">
+                <img src="/assets/svg/off-page-seo.svg" alt="Off-Page SEO Services" class="floating-image">
                 <div class="decoration-circle-1"></div>
                 <div class="decoration-circle-2"></div>
             </div>
