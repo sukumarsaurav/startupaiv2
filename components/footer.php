@@ -4,7 +4,7 @@
         <div class="footer-container">
             <div class="footer-logo">
                 <a href="/index.php">
-                    <img src="/assets/svg/logo.svg" alt="StartupAI Logo" style="height: 40px;">
+                    <img src="/assets/svg/logo.svg" alt="NeoWebX Logo" style="height: 40px;">
                 </a>
             </div>
             <!-- <p class="footer-description">
@@ -105,7 +105,7 @@
     <!-- Footer Bottom -->
     <div class="footer-bottom">
         <div class="footer-container">
-            <p class="copyright">© <span id="current-year"></span> StartupAI. All rights reserved.</p>
+            <p class="copyright">© <span id="current-year"></span> NeoWebX. All rights reserved.</p>
             <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
             <div class="footer-bottom-links">
                 <a href="/pages/sitemap.php">Sitemap</a>

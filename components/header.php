@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php echo htmlspecialchars($seo_data['description']); ?>">
     <meta name="keywords" content="<?php echo htmlspecialchars($seo_data['keywords']); ?>">
-    <title><?php echo isset($pageTitle) ? $pageTitle : 'StartupAI'; ?></title>
+    <title><?php echo isset($pageTitle) ? $pageTitle : 'NeoWebX'; ?></title>
     <meta name="description" content="<?php echo isset($pageDescription) ? $pageDescription : 'Default site description'; ?>">
     
     <!-- Core CSS -->
@@ -54,7 +54,7 @@
     <!-- Side Drawer -->
     <div class="side-drawer">
         <div class="drawer-header">
-            <a href="/index.php" class="drawer-logo">StartupAI</a>
+            <a href="/index.php" class="drawer-logo">NeoWebX</a>
             <button class="drawer-close"><i class="fas fa-times"></i></button>
         </div>
         <div class="drawer-body">
@@ -260,7 +260,7 @@
                 <i class="fas fa-bars"></i>
             </button>
             <a class="navbar-brand" href="/index.php">
-                <img src="/assets/svg/logo.svg" alt="StartupAI Logo" style="height: 50px;">
+                <img src="/assets/svg/logo.svg" alt="NeoWebX Logo" style="height: 50px;">
             </a>
             <div class="navbar-collapse">
                 <ul class="navbar-nav">
