@@ -263,7 +263,7 @@ require_once '../../../../components/header.php';
     <div class="container">
         <div class="section-header">
             <div class="why-choose-us-header" data-aos="fade-up">
-                <h2>Why Choose StartupAI for Google Ads Management</h2>
+                <h2>Why Choose NeoWebX for Google Ads Management</h2>
                 <p class="lead">What sets our paid search services apart</p>
             </div>
         </div>

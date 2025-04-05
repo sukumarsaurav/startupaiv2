@@ -285,7 +285,7 @@ require_once '../../../../components/header.php';
     <div class="container">
         <div class="section-header">
             <div class="why-choose-us-header" data-aos="fade-up">
-                <h2>Why Choose StartupAI for Off-Page SEO</h2>
+                <h2>Why Choose NeoWebX for Off-Page SEO</h2>
                 <p class="lead">Our unique approach to link building and authority development</p>
             </div>
         </div>

@@ -335,7 +335,7 @@ require_once '../../../../components/header.php';
     <div class="container">
         <div class="section-header">
             <div class="why-choose-us-header" data-aos="fade-up">
-                <h2>Why Choose StartupAI for Social Media Management</h2>
+                <h2>Why Choose NeoWebX for Social Media Management</h2>
                 <p class="lead">What sets our social media management services apart</p>
             </div>
         </div>

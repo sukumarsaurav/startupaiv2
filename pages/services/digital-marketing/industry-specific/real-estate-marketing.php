@@ -315,7 +315,7 @@ require_once '../../../../components/header.php';
     <div class="container">
         <div class="section-header">
             <div class="why-choose-us-header" data-aos="fade-up">
-                <h2>Why Choose StartupAI for Real Estate Marketing</h2>
+                <h2>Why Choose NeoWebX for Real Estate Marketing</h2>
                 <p class="lead">What sets our real estate marketing services apart</p>
             </div>
         </div>

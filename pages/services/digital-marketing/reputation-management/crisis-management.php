@@ -263,7 +263,7 @@ require_once '../../../../components/header.php';
     <div class="container">
         <div class="section-header">
             <div class="why-choose-us-header" data-aos="fade-up">
-                <h2>Why Choose StartupAI for Crisis Management</h2>
+                <h2>Why Choose NeoWebX for Crisis Management</h2>
                 <p class="lead">Experience, expertise, and a proven approach to managing challenging situations</p>
             </div>
         </div>

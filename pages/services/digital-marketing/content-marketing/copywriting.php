@@ -265,7 +265,7 @@ require_once '../../../../components/header.php';
     <div class="container">
         <div class="section-header">
             <div class="why-choose-us-header" data-aos="fade-up">
-                <h2>Why Choose StartupAI for Copywriting</h2>
+                <h2>Why Choose NeoWebX for Copywriting</h2>
                 <p class="lead">What makes our copywriting services different</p>
             </div>
         </div>

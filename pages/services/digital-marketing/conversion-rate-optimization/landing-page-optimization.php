@@ -315,7 +315,7 @@ require_once '../../../../components/header.php';
     <div class="container">
         <div class="section-header">
             <div class="why-choose-us-header" data-aos="fade-up">
-                <h2>Why Choose StartupAI for Landing Page Optimization</h2>
+                <h2>Why Choose NeoWebX for Landing Page Optimization</h2>
                 <p class="lead">What makes our landing page optimization services different</p>
             </div>
         </div>

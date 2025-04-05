@@ -266,7 +266,7 @@ require_once '../../../../components/header.php';
     <div class="container">
         <div class="section-header">
             <div class="why-choose-us-header" data-aos="fade-up">
-                <h2>Why Choose StartupAI for Content Strategy</h2>
+                <h2>Why Choose NeoWebX for Content Strategy</h2>
                 <p class="lead">What makes our content strategy services different</p>
             </div>
         </div>

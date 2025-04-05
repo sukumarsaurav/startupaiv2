@@ -265,7 +265,7 @@ require_once '../../../../components/header.php';
     <div class="container">
         <div class="section-header">
             <div class="why-choose-us-header" data-aos="fade-up">
-                <h2>Why Choose StartupAI for Online Reviews & PR Management</h2>
+                <h2>Why Choose NeoWebX for Online Reviews & PR Management</h2>
                 <p class="lead">What sets our reputation management services apart</p>
             </div>
         </div>

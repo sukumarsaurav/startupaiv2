@@ -376,7 +376,7 @@ require_once '../../../../components/header.php';
                                 <li><strong>User Experience (UX) Design</strong> focuses on the overall feel of the experience and how users interact with your product. It encompasses research, user flows, information architecture, and the overall journey a user takes. UX design ensures your product is intuitive, accessible, and solves user problems effectively.</li>
                                 <li><strong>User Interface (UI) Design</strong> deals with the visual and interactive elements that users engage with. This includes buttons, typography, color schemes, spacing, imagery, and responsive design. UI design ensures your product looks appealing, maintains brand consistency, and visually guides users through their journey.</li>
                             </ul>
-                            <p>Both UI and UX are essential for creating successful digital products. UX ensures your product works intuitively while UI ensures it's visually appealing and on-brand. At StartupAI, we integrate both disciplines for a comprehensive approach to design that addresses both functionality and aesthetics.</p>
+                            <p>Both UI and UX are essential for creating successful digital products. UX ensures your product works intuitively while UI ensures it's visually appealing and on-brand. At NeoWebX, we integrate both disciplines for a comprehensive approach to design that addresses both functionality and aesthetics.</p>
                         </div>
                     </div>
                     
