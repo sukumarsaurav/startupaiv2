@@ -311,7 +311,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>What types of videos will benefit my business the most?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>The most effective video types for your business depend on your specific goals, target audience, and stage in the marketing funnel. For building awareness, short social media videos and brand storytelling content typically perform well. For consideration stage, product demonstrations, explainer videos, and customer testimonials help educate prospects and build trust. For conversion, detailed product walkthroughs, comparison videos, and FAQ content can address objections and push prospects toward a decision. For customer retention, tutorial videos, product updates, and customer spotlight stories help maintain engagement. We recommend a strategic mix of video types that guide customers through their journey with your brand. During our discovery process, we'll analyze your specific business objectives, audience preferences, and competitive landscape to recommend the optimal video content mix for your particular situation.</p>
@@ -321,7 +321,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How much does video production typically cost?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Video production costs vary widely based on several factors including production type, complexity, length, location, talent needs, and equipment requirements. Basic animated explainer videos might start around $1,500-3,000, while professional live-action videos with full production teams typically range from $3,000-10,000+ per finished minute. More complex productions with multiple shooting locations, professional actors, or advanced special effects can range significantly higher. We offer scalable solutions to meet various budget requirements, from cost-effective approaches leveraging stock footage and simple animations to full-scale premium productions. Rather than offering one-size-fits-all pricing, we develop custom quotes based on your specific objectives and requirements. During our initial consultation, we'll discuss your goals and budget constraints to recommend the most effective approach that balances quality with cost-efficiency for your particular video marketing needs.</p>
@@ -331,7 +331,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How long should marketing videos be?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Optimal video length depends on your content purpose, platform, and where viewers are in their customer journey. Generally, shorter is better for top-of-funnel content, with social media videos performing best at 15-60 seconds, particularly on platforms like TikTok, Instagram, and Facebook. For YouTube, educational content typically performs well at 7-15 minutes if delivering valuable information throughout. Explainer videos are most effective at 60-90 seconds, focusing tightly on addressing a specific problem and solution. Webinars and in-depth product demonstrations can be longer (20-60 minutes) when targeting engaged, bottom-of-funnel prospects. Rather than adhering to strict time limits, we focus on creating content that maintains engagement throughout—whether that's 30 seconds or 10 minutes. During our strategy phase, we'll recommend optimal video lengths based on your specific objectives, audience preferences, platform requirements, and the complexity of your message.</p>
@@ -341,7 +341,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How do you measure video marketing success?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>We measure video marketing success through a combination of engagement metrics and business outcomes tied to your specific goals. Engagement metrics include views, watch time, retention rate (what percentage of viewers watch to completion), click-through rates, shares, comments, and likes. These metrics help assess content quality and audience resonance. For business impact, we track conversion metrics like lead generation, email sign-ups, product purchases, or other actions viewers take after watching. We also analyze attribution data to understand how video content contributes to your overall marketing funnel and customer journey. Our reporting combines platform-native analytics (YouTube, Facebook, etc.) with your website analytics and CRM data to provide a comprehensive view of performance. For each campaign, we establish key performance indicators (KPIs) aligned with your specific objectives and provide regular reports with actionable insights for continuous optimization of your video strategy.</p>
@@ -351,7 +351,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How quickly can you produce videos?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Our video production timelines vary based on project complexity, with typical turnaround times ranging from 2-8 weeks from concept to final delivery. Simple animated explainer videos or social media content can often be completed in 2-3 weeks. Standard promotional videos involving filming generally require 3-4 weeks, accounting for pre-production, filming, and post-production phases. More complex productions with multiple locations, extensive talent, or advanced visual effects may take 6-8 weeks or longer. For clients with urgent needs, we offer expedited production options when possible, though these may involve additional costs to accommodate compressed timelines. Our process always includes clear project milestones with specified delivery dates, and we maintain regular communication throughout production to ensure alignment with your expectations. During our initial consultation, we'll discuss your timeline requirements and develop a realistic production schedule that balances quality considerations with your desired delivery date.</p>
@@ -362,3 +362,4 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?>
+<script src="/assets/js/services.js"></script>

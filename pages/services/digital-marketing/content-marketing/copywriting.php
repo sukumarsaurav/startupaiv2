@@ -312,7 +312,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>What's the difference between copywriting and content writing?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Copywriting and content writing, while related, serve different primary purposes. Copywriting is persuasive writing specifically designed to prompt an immediate action—such as making a purchase, signing up for a newsletter, or requesting information. It's typically shorter, more direct, and focused on conversion. Examples include website sales pages, ads, email campaigns, and product descriptions. Content writing, meanwhile, primarily aims to inform, educate, or entertain the reader. It builds trust and authority over time rather than driving immediate action. Blog posts, articles, guides, and ebooks are common content writing formats. Our team excels at both disciplines and often blends elements of each to create compelling, value-driven copy that both engages readers and motivates them to take action. The best marketing strategies incorporate both types of writing at different stages of the customer journey.</p>
@@ -322,7 +322,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How do you capture our brand's voice in your copywriting?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                        <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Capturing your unique brand voice is central to our copywriting process. We begin with a comprehensive brand voice analysis that includes reviewing your existing marketing materials, interviewing key stakeholders about brand personality and values, analyzing competitor positioning, and understanding your audience's preferences. For clients without established voice guidelines, we can develop a custom brand voice guide that defines tone, style, vocabulary, and communication principles. Our copywriters then use this framework to ensure consistency across all materials. We incorporate client feedback throughout the process to refine and perfect the voice. For ongoing projects, we maintain a client-specific style guide that evolves as your brand does. This systematic approach ensures that whether we're writing website copy, emails, or ad campaigns, everything sounds authentically like your brand—just the most compelling version of it.</p>
@@ -332,7 +332,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How do you approach SEO in your copywriting?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Our approach to SEO copywriting balances search optimization with persuasive, reader-friendly content. We begin with comprehensive keyword research to identify valuable search terms with appropriate volume and competition levels. Rather than forcing keywords into existing copy, we build content around these terms naturally, integrating them into headlines, subheadings, and body copy in ways that enhance—rather than detract from—readability. We optimize meta titles, descriptions, URL structures, and image alt text while maintaining compelling messaging. Our copywriters are trained in both SEO best practices and conversion-focused writing, allowing them to create copy that satisfies search algorithms without sacrificing human engagement. We also consider search intent, ensuring content addresses what users are actually looking for when they enter specific search terms. This balanced approach results in copy that ranks well in search results while effectively engaging and converting the humans who click through.</p>
@@ -342,7 +342,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>What information do you need from me to get started?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>To create effective copy, we gather key information through our onboarding process, which typically includes: Background information about your company, products/services, and unique selling propositions; Target audience details including demographics, pain points, and motivations; Your goals for the specific copy (e.g., increase sales, generate leads, build awareness); Examples of existing marketing materials you like or dislike; Competitor information and how you differentiate; Brand voice guidelines or preferences; Technical specifications or features that need to be highlighted; and Customer testimonials or success stories. We make this process efficient through a combination of questionnaires and discovery calls. For clients with established brands, we can work with whatever materials you already have. For those needing more guidance, our strategists can help develop positioning and messaging foundations. The more information you provide, the more targeted your copy will be, but we've designed our process to accommodate various levels of client input while still delivering exceptional results.</p>
@@ -352,7 +352,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How do you measure the success of copywriting?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>We measure copywriting success through both engagement metrics and business outcomes. For website copy, we track metrics like conversion rates, time on page, bounce rates, and click-through rates on calls to action. Email copy effectiveness is measured through open rates, click rates, response rates, and conversion metrics. For ad copy, we analyze click-through rates, conversion rates, and cost per acquisition. Beyond these channel-specific metrics, we also look at broader business results like lead generation, sales attribution, and ROI. Our approach to measurement is always tied to your specific goals—whether that's increasing brand awareness, generating leads, or driving direct sales. We can establish A/B testing protocols to compare different copy approaches and continuously refine messaging based on performance data. We provide regular reporting on these metrics, with insights and recommendations for ongoing optimization, ensuring that your copy not only sounds good but delivers tangible business results.</p>
@@ -363,3 +363,4 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?>
+<script src="/assets/js/services.js"></script>

@@ -312,7 +312,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How often should my business publish new blog content?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>The ideal blogging frequency depends on your specific goals, resources, audience expectations, and industry. While studies show businesses that publish 16+ blog posts per month generate 3.5x more traffic than those publishing 0-4 posts, quality always trumps quantity. For most businesses, we recommend starting with 1-2 high-quality posts per week, focusing on depth, relevance, and value rather than volume. This approach allows you to establish a consistent publishing cadence while delivering substantial content. As your strategy matures and you measure performance, we can adjust frequency based on data. Some industries benefit from more frequent posting, while others see better results with fewer, more in-depth articles. Our team will develop a custom publishing schedule based on your specific business context, competitive landscape, and content marketing objectives.</p>
@@ -322,7 +322,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How do you ensure blog content is relevant to our specific industry?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>We employ a comprehensive approach to ensure industry relevance in all blog content we create. Our process begins with a thorough industry analysis, including competitor research and sector trend monitoring. We pair clients with writers who have specific subject matter expertise in their industry, many with professional backgrounds in the sectors they write for. Before creating content, we conduct deep-dive research using industry publications, academic sources, and expert interviews when necessary. Our team works closely with your subject matter experts to capture your unique perspective and insights. We also establish a detailed editorial process with client review and feedback loops to verify accuracy and relevance. Additionally, we continuously analyze content performance, refining our approach based on audience engagement data. This multi-layered approach ensures we deliver blog content that demonstrates genuine industry expertise and speaks directly to your specific audience's interests and pain points.</p>
@@ -332,7 +332,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How do you optimize blog content for SEO?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Our SEO blog optimization process is comprehensive and built on current search engine best practices. We begin with strategic keyword research to identify valuable, relevant terms with appropriate search volume and competition levels. These keywords guide our content development but are always balanced with reader experience—we never sacrifice quality for keyword density. Each blog post is structured with SEO-optimized elements including title tags, meta descriptions, header tags (H1, H2, H3), URL structure, and image alt text. We implement strategic internal linking to establish topic clusters and help search engines understand your site's architecture. Our writers create comprehensive, authoritative content that naturally incorporates primary and secondary keywords while answering the questions your audience is asking. We also optimize for technical factors like page speed, mobile responsiveness, and schema markup where appropriate. After publication, we continuously monitor performance, making data-driven optimizations to improve rankings and traffic over time.</p>
@@ -342,7 +342,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How long does it take to see results from blogging?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Blogging delivers both short-term engagement and long-term compounding benefits, with results typically appearing in phases. Initial engagement metrics (social shares, comments, time on page) may be visible immediately upon publication. Significant traffic improvements typically begin around 3-6 months with consistent publishing, as search engines index and rank your content. More substantial business results, including lead generation and conversions, often emerge between 6-12 months as your content library grows and gains authority. The timeline can vary based on factors including your industry competitiveness, content quality and frequency, domain authority, promotion strategy, and starting point. Unlike paid advertising that stops generating results when you stop paying, blog content continues working for you long-term, with many of our clients' most successful posts generating traffic and leads years after publication. We track metrics throughout the process, allowing you to see incremental improvements while building toward larger long-term results.</p>
@@ -352,7 +352,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>Can you work with our internal subject matter experts?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Yes, we excel at collaborating with internal subject matter experts (SMEs) and have established several effective collaboration models. Our most common approach is the interview method, where our writers conduct structured interviews with your SMEs, transforming their expertise into engaging content while preserving their unique insights. We also offer a review-based workflow where SMEs review outlines and drafts, providing feedback our writers incorporate. For SMEs who prefer to draft content themselves but need help refining it, we provide professional editing and optimization services to polish their work. We understand your experts' time is valuable, so we've designed efficient processes that minimize their time investment while maximizing knowledge transfer—most collaboration requires just 30-60 minutes of SME time per post. Throughout the process, we maintain clear communication channels and respect review timelines to ensure your team remains comfortable with the content representing your brand.</p>
@@ -363,3 +363,4 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?>
+<script src="/assets/js/services.js"></script>
