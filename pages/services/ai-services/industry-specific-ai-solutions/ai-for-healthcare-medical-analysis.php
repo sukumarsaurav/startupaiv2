@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "AI for Healthcare & Medical Analysis | StartupAI";
+$pageTitle = "AI for Healthcare & Medical Analysis | NeoWebX";
 $pageDescription = "Transform patient care with AI-powered healthcare solutions. From medical image analysis to predictive diagnostics and personalized treatment plans, our AI solutions enhance clinical decision-making and improve outcomes.";
 $serviceName = "AI for Healthcare & Medical Analysis";
 $serviceSlug = "ai-for-healthcare-medical-analysis";

@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Legal Website Design Services | StartupAI";
+$pageTitle = "Legal Website Design Services | NeoWebX";
 $pageDescription = "Create authoritative, client-focused law firm websites that establish credibility and generate qualified leads. Professional website design for attorneys, law firms, and legal service providers.";
 $serviceName = "Legal Website Design";
 $serviceSlug = "legal-websites";

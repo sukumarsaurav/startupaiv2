@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Custom AI Model Development & Training | StartupAI";
+$pageTitle = "Custom AI Model Development & Training | NeoWebX";
 $pageDescription = "Build tailored artificial intelligence solutions with our custom AI model development and training services. From proof of concept to deployment, we create specialized ML models for your unique business challenges.";
 $serviceName = "Custom AI Model Development & Training";
 $serviceSlug = "custom-ai-model-development-training";

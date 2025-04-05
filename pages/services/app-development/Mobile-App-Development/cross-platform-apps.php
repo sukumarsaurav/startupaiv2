@@ -5,7 +5,7 @@ require_once '../../../../includes/config.php';
 // Initialize the database connection
 
 // SEO Data
-$pageTitle = "Cross-Platform App Development Services | StartupAI";
+$pageTitle = "Cross-Platform App Development Services | NeoWebX";
 $pageDescription = "Build efficient and cost-effective mobile applications that work seamlessly across multiple platforms. Our cross-platform development services help you reach wider audiences with a single codebase.";
 $serviceName = "Cross-Platform App Development";
 $serviceSlug = "cross-platform-apps";

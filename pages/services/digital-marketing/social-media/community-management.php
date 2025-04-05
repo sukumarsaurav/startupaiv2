@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Community Management Services | StartupAI";
+$pageTitle = "Community Management Services | NeoWebX";
 $pageDescription = "Build and nurture thriving online communities with our expert community management services. Increase engagement and brand loyalty.";
 $serviceName = "Community Management";
 $serviceSlug = "community-management";

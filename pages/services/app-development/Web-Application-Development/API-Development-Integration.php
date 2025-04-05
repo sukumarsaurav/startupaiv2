@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "API Development & Integration Services | StartupAI";
+$pageTitle = "API Development & Integration Services | NeoWebX";
 $pageDescription = "Custom API development and seamless third-party integrations to connect your applications and systems. Our API solutions enable efficient data exchange and workflow automation across platforms.";
 $serviceName = "API Development & Integration";
 $serviceSlug = "api-development-integration";

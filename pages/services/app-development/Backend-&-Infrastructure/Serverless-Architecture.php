@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Serverless Architecture Development | StartupAI";
+$pageTitle = "Serverless Architecture Development | NeoWebX";
 $pageDescription = "Build scalable, cost-efficient applications with our serverless architecture solutions. Eliminate infrastructure management and pay only for the resources you use.";
 $serviceName = "Serverless Architecture";
 $serviceSlug = "serverless-architecture";

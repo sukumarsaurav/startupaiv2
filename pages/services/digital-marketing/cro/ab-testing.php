@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "A/B Testing Services | StartupAI";
+$pageTitle = "A/B Testing Services | NeoWebX";
 $pageDescription = "Optimize your digital experience with data-driven A/B testing that validates design and content changes, increases conversions, and delivers measurable ROI.";
 $serviceName = "A/B Testing";
 $serviceSlug = "ab-testing";

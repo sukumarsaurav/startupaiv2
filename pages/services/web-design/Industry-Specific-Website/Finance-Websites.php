@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Finance Website Design Services | StartupAI";
+$pageTitle = "Finance Website Design Services | NeoWebX";
 $pageDescription = "Create secure, professional financial websites that inspire trust and convert clients. Our specialized finance web design services deliver regulatory-compliant, conversion-focused experiences for banks, wealth management firms, and fintech companies.";
 $serviceName = "Finance Website Design";
 $serviceSlug = "finance-websites";

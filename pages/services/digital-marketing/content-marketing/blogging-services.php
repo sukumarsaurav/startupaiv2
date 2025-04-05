@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Professional Blogging Services | StartupAI";
+$pageTitle = "Professional Blogging Services | NeoWebX";
 $pageDescription = "Drive traffic, engage your audience, and establish thought leadership with our expert blogging services";
 $serviceName = "Blogging Services";
 $serviceSlug = "blogging-services";

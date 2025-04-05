@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Real Estate Website Design Services | StartupAI";
+$pageTitle = "Real Estate Website Design Services | NeoWebX";
 $pageDescription = "Create engaging, feature-rich real estate websites that showcase properties beautifully and convert visitors into clients. Custom website design for real estate agents, brokers, and property management firms.";
 $serviceName = "Real Estate Website Design";
 $serviceSlug = "real-estate-websites";

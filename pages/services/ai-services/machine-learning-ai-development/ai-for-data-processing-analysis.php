@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "AI for Data Processing & Analysis | StartupAI";
+$pageTitle = "AI for Data Processing & Analysis | NeoWebX";
 $pageDescription = "Transform raw data into valuable insights with our AI-powered data processing and analysis solutions. Extract patterns, predict trends, and make data-driven decisions with advanced machine learning algorithms.";
 $serviceName = "AI for Data Processing & Analysis";
 $serviceSlug = "ai-for-data-processing-analysis";

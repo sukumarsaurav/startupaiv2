@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Professional WordPress Website Design & Development | StartupAI";
+$pageTitle = "Professional WordPress Website Design & Development | NeoWebX";
 $pageDescription = "Custom WordPress website design and development that combines beautiful aesthetics with powerful functionality. Create a scalable, feature-rich website that grows with your business.";
 $serviceName = "WordPress Website Design";
 $serviceSlug = "wordpress-website-design";

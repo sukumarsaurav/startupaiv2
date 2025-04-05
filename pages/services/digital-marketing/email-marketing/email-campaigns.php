@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Email Campaign Services | StartupAI";
+$pageTitle = "Email Campaign Services | NeoWebX";
 $pageDescription = "Strategically designed and executed email campaigns that drive engagement, conversions, and customer retention through personalized communication.";
 $serviceName = "Email Campaigns";
 $serviceSlug = "email-campaigns";

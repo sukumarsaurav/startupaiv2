@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Custom Business Website Design Services | StartupAI";
+$pageTitle = "Custom Business Website Design Services | NeoWebX";
 $pageDescription = "Create a powerful online presence with our custom business website design services tailored for startups, SMEs, and enterprises. Professional, conversion-focused websites that drive growth.";
 $serviceName = "Business Website Design";
 $serviceSlug = "business-websites";

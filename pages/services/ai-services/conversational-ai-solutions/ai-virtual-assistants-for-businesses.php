@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "AI Virtual Assistants for Businesses | StartupAI";
+$pageTitle = "AI Virtual Assistants for Businesses | NeoWebX";
 $pageDescription = "Custom AI virtual assistants tailored for business applications. Automate workflows, enhance customer experiences, and increase operational efficiency with intelligent digital assistants.";
 $serviceName = "AI Virtual Assistants for Businesses";
 $serviceSlug = "ai-virtual-assistants-for-businesses";

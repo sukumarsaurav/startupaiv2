@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "AI-Driven Sentiment & Feedback Analysis | StartupAI";
+$pageTitle = "AI-Driven Sentiment & Feedback Analysis | NeoWebX";
 $pageDescription = "Transform customer feedback into actionable insights with our AI-powered sentiment analysis solutions. Automatically analyze reviews, social media, support interactions, and surveys at scale.";
 $serviceName = "AI-Driven Sentiment & Feedback Analysis";
 $serviceSlug = "ai-driven-sentiment-feedback-analysis";

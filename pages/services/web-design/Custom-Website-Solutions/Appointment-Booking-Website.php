@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Appointment Booking Website Design & Development | StartupAI";
+$pageTitle = "Appointment Booking Website Design & Development | NeoWebX";
 $pageDescription = "Create a streamlined appointment booking website that automates scheduling and maximizes efficiency. Custom booking systems for service-based businesses, healthcare providers, and professionals.";
 $serviceName = "Appointment Booking Website Design";
 $serviceSlug = "appointment-booking-website";

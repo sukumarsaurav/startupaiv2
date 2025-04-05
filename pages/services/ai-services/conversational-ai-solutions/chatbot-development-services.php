@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Chatbot Development Services | StartupAI";
+$pageTitle = "Chatbot Development Services | NeoWebX";
 $pageDescription = "Custom chatbot development services using the latest AI and natural language understanding technologies to create intelligent conversational interfaces for your business.";
 $serviceName = "Chatbot Development Services";
 $serviceSlug = "chatbot-development-services";

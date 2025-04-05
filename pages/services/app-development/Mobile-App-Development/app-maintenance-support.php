@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "App Maintenance & Support Services | StartupAI";
+$pageTitle = "App Maintenance & Support Services | NeoWebX";
 $pageDescription = "Comprehensive mobile app maintenance and support services to ensure your application remains secure, up-to-date, and functioning optimally throughout its lifecycle.";
 $serviceName = "App Maintenance & Support Services";
 $serviceSlug = "app-maintenance-support";

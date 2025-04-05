@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Crisis Management Services | StartupAI";
+$pageTitle = "Crisis Management Services | NeoWebX";
 $pageDescription = "Protect your brand during difficult times with our expert crisis management services. Rapid response, strategic communication, and reputation recovery.";
 $serviceName = "Crisis Management";
 $serviceSlug = "crisis-management";

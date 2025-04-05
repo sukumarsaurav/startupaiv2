@@ -23,7 +23,7 @@ if (!$post) {
 
 // Set SEO data for the post
 $seo_data = [
-    'title' => $post['title'] . ' | StartupAI Blog',
+    'title' => $post['title'] . ' | NeoWebX Blog',
     'description' => $post['meta_description'],
     'keywords' => $post['meta_keywords']
 ];

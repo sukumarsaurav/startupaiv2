@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Google Ads Management Services | StartupAI";
+$pageTitle = "Google Ads Management Services | NeoWebX";
 $pageDescription = "Maximize your ROI with expert Google Ads management. Data-driven PPC campaigns that drive qualified traffic, leads, and conversions.";
 $serviceName = "Google Ads Management";
 $serviceSlug = "google-ads";

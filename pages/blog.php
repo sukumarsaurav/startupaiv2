@@ -26,7 +26,7 @@ if ($current_category) {
 
 // SEO metadata for blog listing
 $seo_data = [
-    'title' => 'Blog - Latest Insights on Digital Marketing & Web Development | StartupAI',
+    'title' => 'Blog - Latest Insights on Digital Marketing & Web Development | NeoWebX',
     'description' => 'Explore our latest articles on digital marketing, web development, AI, and business growth strategies. Expert insights to help your business succeed online.',
     'keywords' => 'digital marketing blog, web development articles, business growth tips, AI insights, StartupAI blog'
 ];

@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "AI for Finance, Banking & Risk Management | StartupAI";
+$pageTitle = "AI for Finance, Banking & Risk Management | NeoWebX";
 $pageDescription = "Transform financial services with cutting-edge AI solutions. Enhance risk assessment, detect fraud, automate compliance, and deliver personalized banking experiences with our advanced AI technologies.";
 $serviceName = "AI for Finance, Banking & Risk Management";
 $serviceSlug = "ai-for-finance-banking-risk-management";

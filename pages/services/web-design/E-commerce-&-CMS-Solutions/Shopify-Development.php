@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Professional Shopify Development & Design Services | StartupAI";
+$pageTitle = "Professional Shopify Development & Design Services | NeoWebX";
 $pageDescription = "Expert Shopify development and design services for businesses of all sizes. Custom Shopify store creation, theme development, app integration, and optimization.";
 $serviceName = "Shopify Development";
 $serviceSlug = "shopify-development";

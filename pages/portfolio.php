@@ -8,7 +8,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // Set variables for header
-$pageTitle = 'Our Portfolio - StartupAI';
+$pageTitle = 'Our Portfolio - NeoWebX';
 $pageDescription = 'Explore our portfolio of web development, AI solutions, and digital marketing projects';
 $pageKeywords = 'portfolio, projects, web development, AI solutions, digital marketing, case studies';
 

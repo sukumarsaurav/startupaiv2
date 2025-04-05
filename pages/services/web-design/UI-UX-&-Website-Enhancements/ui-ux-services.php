@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "UI/UX Design & Prototyping Services | StartupAI";
+$pageTitle = "UI/UX Design & Prototyping Services | NeoWebX";
 $pageDescription = "Transform user experiences with our comprehensive UI/UX design, wireframing, prototyping, and usability testing services. Create intuitive, engaging, and accessible digital products that delight your users.";
 $serviceName = "UI/UX Design & Prototyping";
 $serviceSlug = "ui-ux-design-prototyping";

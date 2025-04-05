@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "High-Converting Landing Page Design Services | StartupAI";
+$pageTitle = "High-Converting Landing Page Design Services | NeoWebX";
 $pageDescription = "Create high-converting landing pages designed to maximize conversions and generate leads. Custom landing page design services for campaigns, product launches, and lead generation.";
 $serviceName = "Landing Page Design";
 $serviceSlug = "landing-pages";

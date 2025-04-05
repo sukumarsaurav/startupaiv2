@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Portfolio Website Design Services | StartupAI";
+$pageTitle = "Portfolio Website Design Services | NeoWebX";
 $pageDescription = "Showcase your work with a stunning portfolio website designed to highlight your talent and attract clients. Custom portfolio sites for creatives, artists, designers, and professionals.";
 $serviceName = "Portfolio Website Design";
 $serviceSlug = "portfolio-websites";

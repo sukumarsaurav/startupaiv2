@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Video Marketing Services | StartupAI";
+$pageTitle = "Video Marketing Services | NeoWebX";
 $pageDescription = "Engage your audience with compelling video content that drives brand awareness, engagement, and conversions";
 $serviceName = "Video Marketing";
 $serviceSlug = "video-marketing";

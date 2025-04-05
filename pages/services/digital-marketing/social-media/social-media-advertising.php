@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Social Media Advertising Services | StartupAI";
+$pageTitle = "Social Media Advertising Services | NeoWebX";
 $pageDescription = "Drive targeted traffic, increase brand awareness, and boost conversions with our strategic paid social media advertising services";
 $serviceName = "Social Media Advertising";
 $serviceSlug = "social-media-advertising";

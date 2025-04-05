@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "AI-Powered Translation & Localization Services | StartupAI";
+$pageTitle = "AI-Powered Translation & Localization Services | NeoWebX";
 $pageDescription = "Expand your global reach with intelligent AI-powered translation and localization services. Break language barriers and connect with customers worldwide through accurate, context-aware content.";
 $serviceName = "AI-Powered Translation & Localization Services";
 $serviceSlug = "ai-powered-translation-localization-services";

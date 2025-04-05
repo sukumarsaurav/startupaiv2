@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "IoT & Embedded Systems | StartupAI";
+$pageTitle = "IoT & Embedded Systems | NeoWebX";
 $pageDescription = "Connect physical devices to the digital world with smart, secure IoT solutions that drive innovation and operational efficiency.";
 $serviceName = "IoT & Embedded Systems";
 $serviceSlug = "iot-embedded-systems";

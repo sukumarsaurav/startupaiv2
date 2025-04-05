@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "SaaS Platform Development | StartupAI";
+$pageTitle = "SaaS Platform Development | NeoWebX";
 $pageDescription = "Custom SaaS (Software as a Service) platform development for businesses looking to create subscription-based cloud applications. We build scalable, secure, and user-friendly SaaS solutions.";
 $serviceName = "SaaS Platform Development";
 $serviceSlug = "saas-platform-development";

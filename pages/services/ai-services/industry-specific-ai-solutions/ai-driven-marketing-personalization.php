@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "AI-Driven Marketing & Personalization | StartupAI";
+$pageTitle = "AI-Driven Marketing & Personalization | NeoWebX";
 $pageDescription = "Transform your marketing strategy with AI-driven personalization. Deliver tailored experiences, targeted messaging, and predictive customer insights to maximize engagement and conversions.";
 $serviceName = "AI-Driven Marketing & Personalization";
 $serviceSlug = "ai-driven-marketing-personalization";

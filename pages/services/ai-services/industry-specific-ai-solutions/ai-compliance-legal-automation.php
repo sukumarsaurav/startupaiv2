@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "AI Compliance & Legal Automation | StartupAI";
+$pageTitle = "AI Compliance & Legal Automation | NeoWebX";
 $pageDescription = "Transform legal operations and compliance management with AI-powered solutions. Streamline document analysis, automate risk assessments, enhance regulatory monitoring, and reduce manual effort across legal workflows.";
 $serviceName = "AI Compliance & Legal Automation";
 $serviceSlug = "ai-compliance-legal-automation";

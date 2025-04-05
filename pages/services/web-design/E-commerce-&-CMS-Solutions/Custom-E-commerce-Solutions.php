@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Custom E-commerce Solutions & Development Services | StartupAI";
+$pageTitle = "Custom E-commerce Solutions & Development Services | NeoWebX";
 $pageDescription = "Tailored e-commerce development solutions for unique business requirements. From specialized shopping experiences to complex marketplace systems, we build custom e-commerce platforms that grow with your business.";
 $serviceName = "Custom E-commerce Solutions";
 $serviceSlug = "custom-ecommerce-solutions";

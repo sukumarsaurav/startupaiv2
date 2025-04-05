@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Influencer Marketing Services | StartupAI";
+$pageTitle = "Influencer Marketing Services | NeoWebX";
 $pageDescription = "Connect with authentic brand advocates and reach engaged audiences through strategic influencer partnerships that drive trust, visibility, and conversions.";
 $serviceName = "Influencer Marketing";
 $serviceSlug = "influencer-marketing";

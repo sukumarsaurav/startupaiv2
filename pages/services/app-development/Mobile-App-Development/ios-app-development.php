@@ -3,7 +3,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // SEO Data
-$pageTitle = "iOS App Development Services | StartupAI";
+$pageTitle = "iOS App Development Services | NeoWebX";
 $pageDescription = "Custom iOS application development services for businesses of all sizes. Our expert team creates high-quality, innovative iOS apps that deliver exceptional user experiences.";
 $serviceName = "iOS App Development";
 $serviceSlug = "ios-app-development";

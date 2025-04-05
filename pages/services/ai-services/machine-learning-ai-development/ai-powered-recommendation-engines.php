@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "AI-Powered Recommendation Engines | StartupAI";
+$pageTitle = "AI-Powered Recommendation Engines | NeoWebX";
 $pageDescription = "Deliver personalized experiences with advanced AI recommendation engines. Boost engagement, increase conversions, and enhance user satisfaction with intelligent content and product recommendations.";
 $serviceName = "AI-Powered Recommendation Engines";
 $serviceSlug = "ai-powered-recommendation-engines";

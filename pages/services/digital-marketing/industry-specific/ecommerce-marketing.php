@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "E-commerce Marketing | StartupAI";
+$pageTitle = "E-commerce Marketing | NeoWebX";
 $pageDescription = "Maximize online store visibility, conversions, and revenue with specialized marketing strategies for Amazon, Shopify, WooCommerce, and other e-commerce platforms";
 $serviceName = "E-commerce Marketing";
 $serviceSlug = "ecommerce-marketing";

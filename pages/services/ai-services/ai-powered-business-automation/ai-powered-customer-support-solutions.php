@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "AI-Powered Customer Support Solutions | StartupAI";
+$pageTitle = "AI-Powered Customer Support Solutions | NeoWebX";
 $pageDescription = "Transform your customer service with intelligent AI-powered support solutions. Automate responses, provide 24/7 assistance, and deliver personalized customer experiences at scale.";
 $serviceName = "AI-Powered Customer Support Solutions";
 $serviceSlug = "ai-powered-customer-support-solutions";

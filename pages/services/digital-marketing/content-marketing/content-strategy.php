@@ -6,7 +6,7 @@ require_once '../../../../includes/config.php';
 
 
 // Page specific content
-$pageTitle = "Content Strategy Services | StartupAI";
+$pageTitle = "Content Strategy Services | NeoWebX";
 $pageDescription = "Develop a robust content strategy that aligns with your business goals and engages your target audience";
 $serviceName = "Content Strategy";
 $serviceSlug = "content-strategy";

@@ -3,7 +3,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // SEO Data
-$pageTitle = "Mobile App UI/UX Design Services | StartupAI";
+$pageTitle = "Mobile App UI/UX Design Services | NeoWebX";
 $pageDescription = "Create engaging and intuitive mobile app experiences with our expert UI/UX design services. We combine aesthetics with functionality to deliver user-centered mobile applications.";
 $serviceName = "Mobile App UI/UX Design";
 $serviceSlug = "app-ui-ux-design";

@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Professional Webflow Design & Development Services | StartupAI";
+$pageTitle = "Professional Webflow Design & Development Services | NeoWebX";
 $pageDescription = "Create stunning, interactive websites with our expert Webflow development services. Custom Webflow design that combines visual appeal with powerful functionality for modern businesses.";
 $serviceName = "Webflow Development";
 $serviceSlug = "webflow-development";

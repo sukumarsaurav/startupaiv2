@@ -6,7 +6,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Landing Page Optimization Services | StartupAI";
+$pageTitle = "Landing Page Optimization Services | NeoWebX";
 $pageDescription = "Maximize your conversion rates with data-driven landing page optimization strategies. Transform visitors into customers with scientifically-proven techniques.";
 $serviceName = "Landing Page Optimization";
 $serviceSlug = "landing-page-optimization";

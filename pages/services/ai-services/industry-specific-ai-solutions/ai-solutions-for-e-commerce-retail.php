@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "AI Solutions for E-commerce & Retail | StartupAI";
+$pageTitle = "AI Solutions for E-commerce & Retail | NeoWebX";
 $pageDescription = "Transform your e-commerce and retail business with custom AI solutions. Drive sales, personalize customer experiences, optimize inventory, and streamline operations with intelligent technology.";
 $serviceName = "AI Solutions for E-commerce & Retail";
 $serviceSlug = "ai-solutions-for-e-commerce-retail";

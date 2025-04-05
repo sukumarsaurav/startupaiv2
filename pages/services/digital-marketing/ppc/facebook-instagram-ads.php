@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Facebook & Instagram Ads Management | StartupAI";
+$pageTitle = "Facebook & Instagram Ads Management | NeoWebX";
 $pageDescription = "Elevate your social advertising with expert Facebook and Instagram ads management. Targeted campaigns that engage your audience and drive measurable results.";
 $serviceName = "Facebook & Instagram Ads";
 $serviceSlug = "facebook-instagram-ads";

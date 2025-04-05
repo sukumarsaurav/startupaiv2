@@ -4,7 +4,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "AI-Powered Applications | StartupAI";
+$pageTitle = "AI-Powered Applications | NeoWebX";
 $pageDescription = "Transform your business with cutting-edge artificial intelligence applications. Our AI development services create intelligent solutions that automate processes, enhance decision-making, and deliver personalized experiences.";
 $serviceName = "AI-Powered Applications";
 $serviceSlug = "ai-powered-applications";

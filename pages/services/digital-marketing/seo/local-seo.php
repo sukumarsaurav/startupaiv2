@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Local SEO Services | StartupAI";
+$pageTitle = "Local SEO Services | NeoWebX";
 $pageDescription = "Dominate your local market with targeted Local SEO strategies that increase visibility for nearby searches, Google Maps rankings, and drive foot traffic to your business.";
 $serviceName = "Local SEO";
 $serviceSlug = "local-seo";

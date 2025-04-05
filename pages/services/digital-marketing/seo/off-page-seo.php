@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Off-Page SEO & Link Building | StartupAI";
+$pageTitle = "Off-Page SEO & Link Building | NeoWebX";
 $pageDescription = "Build your site's authority and improve rankings with our strategic off-page SEO and link building services";
 $serviceName = "Off-Page SEO & Link Building";
 $serviceSlug = "off-page-seo";

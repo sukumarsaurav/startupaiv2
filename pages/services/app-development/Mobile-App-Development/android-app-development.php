@@ -4,7 +4,7 @@ require_once '../../../../includes/config.php';
 
 
 // SEO Data
-$pageTitle = "Android App Development Services | StartupAI";
+$pageTitle = "Android App Development Services | NeoWebX";
 $pageDescription = "Transform your ideas into powerful Android applications with our expert development services. We create custom, user-friendly, and feature-rich Android apps for businesses of all sizes across various industries.";
 $seo_data = [
     'description' => $pageDescription,

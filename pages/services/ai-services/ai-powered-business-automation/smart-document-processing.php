@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Smart Document Processing | StartupAI";
+$pageTitle = "Smart Document Processing | NeoWebX";
 $pageDescription = "Intelligent document processing solutions powered by AI to automate extraction, classification, and validation of information from various document types.";
 $serviceName = "Smart Document Processing";
 $serviceSlug = "smart-document-processing";

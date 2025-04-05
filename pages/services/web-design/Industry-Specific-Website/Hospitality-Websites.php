@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Hospitality Website Design Services | StartupAI";
+$pageTitle = "Hospitality Website Design Services | NeoWebX";
 $pageDescription = "Create immersive, conversion-focused websites for hotels, restaurants, and hospitality businesses. Showcase your experience, streamline reservations, and increase direct bookings with our specialized hospitality web design.";
 $serviceName = "Hospitality Website Design";
 $serviceSlug = "hospitality-websites";

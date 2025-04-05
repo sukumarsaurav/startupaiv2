@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Website Redesign & Revamp Services | StartupAI";
+$pageTitle = "Website Redesign & Revamp Services | NeoWebX";
 $pageDescription = "Transform your outdated website into a modern, high-performing digital asset. Our website redesign and revamp services refresh your online presence while improving user experience and conversion rates.";
 $serviceName = "Website Redesign & Revamp";
 $serviceSlug = "website-redesign-revamp";

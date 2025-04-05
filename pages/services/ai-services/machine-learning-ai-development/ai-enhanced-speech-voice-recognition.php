@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "AI-Enhanced Speech & Voice Recognition | StartupAI";
+$pageTitle = "AI-Enhanced Speech & Voice Recognition | NeoWebX";
 $pageDescription = "Transform how users interact with your systems through advanced AI-powered speech and voice recognition. Enable natural, intuitive voice interfaces with our cutting-edge speech technology solutions.";
 $serviceName = "AI-Enhanced Speech & Voice Recognition";
 $serviceSlug = "ai-enhanced-speech-voice-recognition";

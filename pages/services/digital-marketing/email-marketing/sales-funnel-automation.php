@@ -6,7 +6,7 @@ require_once '../../../../includes/config.php';
 require_once '../../../../config/why-hire-us.php';
 
 // Page specific content
-$pageTitle = "Sales Funnel Automation";
+$pageTitle = "Sales Funnel Automation | NeoWebX";
 $pageDescription = "Transform your marketing and sales process with strategic funnel automation that nurtures leads, qualifies prospects, and increases conversions with minimal manual intervention";
 $serviceName = "Sales Funnel Automation";
 $serviceSlug = "sales-funnel-automation";

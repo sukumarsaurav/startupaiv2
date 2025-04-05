@@ -6,7 +6,7 @@ require_once '../../../../includes/config.php';
 
 
 // Page specific content
-$pageTitle = "On-Page SEO | StartupAI";
+$pageTitle = "On-Page SEO | NeoWebX";
 $pageDescription = "Optimize your website's content, structure, and code for search engines with our comprehensive On-Page SEO services";
 $serviceName = "On-Page SEO";
 $serviceSlug = "on-page-seo";

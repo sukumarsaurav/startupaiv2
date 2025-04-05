@@ -8,7 +8,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // Set variables for header
-$pageTitle = 'StartupAI - Complete Technology Partner for Modern Businesses';
+$pageTitle = 'NeoWebX - Complete Technology Partner for Modern Businesses';
 $pageDescription = 'Transform your business with expert web design, app development, AI solutions, and digital marketing services tailored for growth-focused companies.';
 
 // SEO Data

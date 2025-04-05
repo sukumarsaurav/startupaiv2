@@ -6,7 +6,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Online Reviews & PR Management | StartupAI";
+$pageTitle = "Online Reviews & PR Management | NeoWebX";
 $pageDescription = "Build and maintain a positive online presence with our comprehensive review management and public relations services. Monitor, respond to, and leverage reviews to enhance your reputation.";
 $serviceName = "Online Reviews & PR Management";
 $serviceSlug = "online-reviews-pr-management";

@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Brand Monitoring Services | StartupAI";
+$pageTitle = "Brand Monitoring Services | NeoWebX";
 $pageDescription = "Protect your brand reputation with comprehensive monitoring services. Track mentions, manage sentiment, and respond to feedback effectively.";
 $serviceName = "Brand Monitoring";
 $serviceSlug = "brand-monitoring";

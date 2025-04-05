@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Healthcare Website Design Services | StartupAI";
+$pageTitle = "Healthcare Website Design Services | NeoWebX";
 $pageDescription = "Create secure, compliant, and patient-centered healthcare websites that build trust and streamline care delivery. HIPAA-compliant web design for medical practices, hospitals, and healthcare organizations.";
 $serviceName = "Healthcare Website Design";
 $serviceSlug = "healthcare-websites";

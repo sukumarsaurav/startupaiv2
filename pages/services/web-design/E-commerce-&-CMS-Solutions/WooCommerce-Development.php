@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "WooCommerce Development & Customization Services | StartupAI";
+$pageTitle = "WooCommerce Development & Customization Services | NeoWebX";
 $pageDescription = "Expert WooCommerce development services to create powerful, customized online stores. From setup and configuration to custom extensions and theme development.";
 $serviceName = "WooCommerce Development";
 $serviceSlug = "woocommerce-development";

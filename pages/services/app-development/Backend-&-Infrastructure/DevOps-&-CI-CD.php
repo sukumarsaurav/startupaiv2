@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "DevOps & CI/CD Solutions | StartupAI";
+$pageTitle = "DevOps & CI/CD Solutions | NeoWebX";
 $pageDescription = "Streamline your development and deployment processes with our comprehensive DevOps and CI/CD solutions. We help businesses automate workflows and improve delivery efficiency.";
 $serviceName = "DevOps & CI/CD Solutions";
 $serviceSlug = "devops-ci-cd";

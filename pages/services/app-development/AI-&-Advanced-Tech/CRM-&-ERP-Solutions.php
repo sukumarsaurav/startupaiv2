@@ -4,7 +4,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "CRM & ERP Solutions | StartupAI";
+$pageTitle = "CRM & ERP Solutions | NeoWebX";
 $pageDescription = "Streamline operations and enhance customer relationships with tailored business management systems that integrate seamlessly with your existing workflows.";
 $serviceName = "CRM & ERP Solutions";
 $serviceSlug = "crm-erp-solutions";

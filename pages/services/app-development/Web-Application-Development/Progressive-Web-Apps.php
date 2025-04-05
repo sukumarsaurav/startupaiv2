@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Progressive Web Apps (PWAs) Development | StartupAI";
+$pageTitle = "Progressive Web Apps (PWAs) Development | NeoWebX";
 $pageDescription = "Custom Progressive Web App development to create fast, reliable, and engaging web applications that work offline and provide app-like experiences on any device.";
 $serviceName = "Progressive Web Apps (PWAs)";
 $serviceSlug = "progressive-web-apps";

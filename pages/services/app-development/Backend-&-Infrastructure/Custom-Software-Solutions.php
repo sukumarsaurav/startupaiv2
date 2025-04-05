@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Custom Software Solutions | StartupAI";
+$pageTitle = "Custom Software Solutions | NeoWebX";
 $pageDescription = "Tailor-made software solutions designed to address your unique business challenges and requirements. Our custom software development services deliver scalable, secure, and innovative applications.";
 $serviceName = "Custom Software Solutions";
 $serviceSlug = "custom-software-solutions";

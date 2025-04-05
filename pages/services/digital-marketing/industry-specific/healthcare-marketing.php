@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Healthcare & Medical Marketing | StartupAI";
+$pageTitle = "Healthcare & Medical Marketing | NeoWebX";
 $pageDescription = "Grow your medical practice or healthcare organization with HIPAA-compliant digital marketing strategies that attract new patients while maintaining regulatory compliance";
 $serviceName = "Healthcare & Medical Marketing";
 $serviceSlug = "healthcare-medical-marketing";

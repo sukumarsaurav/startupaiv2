@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Social Media Management Services | StartupAI";
+$pageTitle = "Social Media Management Services | NeoWebX";
 $pageDescription = "Expert social media management services to grow your brand presence, engage your audience, and drive business results across all major platforms";
 $serviceName = "Social Media Management";
 $serviceSlug = "social-media-management";

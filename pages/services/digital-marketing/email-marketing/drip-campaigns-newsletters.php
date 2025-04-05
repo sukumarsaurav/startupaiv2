@@ -6,7 +6,7 @@ require_once '../../../../includes/config.php';
 require_once '../../../../config/why-hire-us.php';
 
 // Page specific content
-$pageTitle = "Drip Campaigns & Newsletters";
+$pageTitle = "Drip Campaigns & Newsletters | NeoWebX";
 $pageDescription = "Drive consistent engagement and nurture leads with strategic email sequences and compelling newsletters that deliver value to your subscribers";
 $serviceName = "Drip Campaigns & Newsletters";
 $serviceSlug = "drip-campaigns-newsletters";

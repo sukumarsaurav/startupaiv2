@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "AI-Powered Workflow Automation | StartupAI";
+$pageTitle = "AI-Powered Workflow Automation | NeoWebX";
 $pageDescription = "Transform your business operations with intelligent workflow automation solutions. Our AI-powered systems streamline processes, reduce manual tasks, and optimize resource allocation.";
 $serviceName = "AI-Powered Workflow Automation";
 $serviceSlug = "ai-powered-workflow-automation";

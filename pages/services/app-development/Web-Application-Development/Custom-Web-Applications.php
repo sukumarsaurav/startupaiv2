@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Custom Web Application Development Services | StartupAI";
+$pageTitle = "Custom Web Application Development Services | NeoWebX";
 $pageDescription = "Transform your business operations with tailor-made web applications designed for your unique requirements. Our custom web application development services deliver scalable, secure, and user-friendly solutions.";
 $serviceName = "Custom Web Application Development";
 $serviceSlug = "custom-web-applications";

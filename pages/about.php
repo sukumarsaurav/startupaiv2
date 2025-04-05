@@ -8,7 +8,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // Set variables for header
-$pageTitle = 'About Us - StartupAI';
+$pageTitle = 'About Us - NeoWebX';
 $pageDescription = 'Learn about StartupAI - Your trusted technology partner for digital transformation';
 $pageKeywords = 'about us, startup, technology partner, web development, AI solutions';
 

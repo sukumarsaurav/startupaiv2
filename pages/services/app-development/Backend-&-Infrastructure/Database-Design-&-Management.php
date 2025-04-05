@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Database Design & Management | StartupAI";
+$pageTitle = "Database Design & Management | NeoWebX";
 $pageDescription = "Expert database design and management services to ensure efficient data storage, retrieval, and maintenance for your applications. We optimize database performance and security for scalable solutions.";
 $serviceName = "Database Design & Management";
 $serviceSlug = "database-design-management";

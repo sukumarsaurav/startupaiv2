@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Ready-Made Website Templates | StartupAI";
+$pageTitle = "Ready-Made Website Templates | NeoWebX";
 $pageDescription = "Choose from our premium collection of industry-specific website templates. Purchase instantly and customize as needed to get your business online faster with professional quality.";
 $serviceName = "Ready-Made Website Templates";
 $serviceSlug = "website-templates";

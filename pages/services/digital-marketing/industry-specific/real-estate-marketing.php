@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Real Estate Marketing | StartupAI";
+$pageTitle = "Real Estate Marketing | NeoWebX";
 $pageDescription = "Comprehensive digital marketing strategies for real estate agents, brokers, and property developers to attract leads, showcase properties, and close more deals";
 $serviceName = "Real Estate Marketing";
 $serviceSlug = "real-estate-marketing";

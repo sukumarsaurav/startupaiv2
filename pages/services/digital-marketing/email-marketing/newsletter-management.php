@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Newsletter Management Services | StartupAI";
+$pageTitle = "Newsletter Management Services | NeoWebX";
 $pageDescription = "Professional newsletter management services that deliver engaging, conversion-focused content to your audience's inbox on a consistent schedule.";
 $serviceName = "Newsletter Management";
 $serviceSlug = "newsletter-management";

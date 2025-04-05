@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Personal Blog Website Design & Development | StartupAI";
+$pageTitle = "Personal Blog Website Design & Development | NeoWebX";
 $pageDescription = "Create a beautiful, engaging personal blog website that reflects your unique voice. Custom-designed blogging platforms with advanced features for influencers, writers, and content creators.";
 $serviceName = "Personal Blog Website Design";
 $serviceSlug = "personal-blogs";

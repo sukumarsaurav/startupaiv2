@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Mobile-First Website Design Services | StartupAI";
+$pageTitle = "Mobile-First Website Design Services | NeoWebX";
 $pageDescription = "Create responsive, mobile-optimized websites that deliver exceptional experiences across all devices. Our mobile-first design approach ensures your site performs flawlessly on smartphones, tablets, and desktops.";
 $serviceName = "Mobile-First Design";
 $serviceSlug = "mobile-first-design";

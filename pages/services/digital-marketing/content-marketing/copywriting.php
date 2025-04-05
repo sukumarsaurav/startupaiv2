@@ -6,7 +6,7 @@ require_once '../../../../includes/config.php';
 
 
 // Page specific content
-$pageTitle = "Professional Copywriting Services | StartupAI";
+$pageTitle = "Professional Copywriting Services | NeoWebX";
 $pageDescription = "Engage your audience and drive conversions with compelling, persuasive copy crafted by our expert copywriters";
 $serviceName = "Copywriting";
 $serviceSlug = "copywriting";

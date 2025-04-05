@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Technical SEO";
+$pageTitle = "Technical SEO | NeoWebX";
 $pageDescription = "Optimize your website's technical foundation with our comprehensive Technical SEO services focused on site speed, core web vitals, and crawlability";
 $serviceName = "Technical SEO";
 $serviceSlug = "technical-seo";

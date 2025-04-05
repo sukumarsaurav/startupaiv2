@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Education Website Design Services | StartupAI";
+$pageTitle = "Education Website Design Services | NeoWebX";
 $pageDescription = "Create engaging, accessible educational websites for schools, universities, and learning institutions. Our specialized education web design services help you connect with students, faculty, and parents while streamlining administrative processes.";
 $serviceName = "Education Website Design";
 $serviceSlug = "education-websites";

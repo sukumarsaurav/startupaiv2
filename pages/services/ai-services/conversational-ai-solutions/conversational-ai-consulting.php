@@ -5,7 +5,7 @@ define('BASEPATH', true);
 require_once '../../../../includes/config.php';
 
 // Page specific content
-$pageTitle = "Conversational AI Consulting | StartupAI";
+$pageTitle = "Conversational AI Consulting | NeoWebX";
 $pageDescription = "Expert conversational AI consulting services to help businesses develop and implement effective AI conversation strategies, optimize existing systems, and drive measurable business outcomes.";
 $serviceName = "Conversational AI Consulting";
 $serviceSlug = "conversational-ai-consulting";
