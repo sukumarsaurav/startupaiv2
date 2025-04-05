@@ -532,6 +532,5 @@ include_once '../../../../components/footer.php';
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="/assets/js/main.js"></script>
 <script src="/assets/js/services.js"></script>
-</body>
-</html>
+
 

@@ -761,4 +761,4 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?>
-
+<script src="/assets/js/services.js"></script>

@@ -357,7 +357,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How much should I budget for Google Ads?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>The ideal Google Ads budget varies based on industry, competition, geographic targeting, and business objectives. For most businesses, we recommend starting with a minimum budget of $1,500-3,000 per month to generate meaningful data and results. This allows for proper testing across different campaigns, ad groups, and keywords. More competitive industries like legal, insurance, or financial services often require higher budgets due to increased cost-per-click rates. We take a strategic approach to budget allocation, starting with a discovery phase to identify the most effective keywords and audience targeting for your specific business. Rather than focusing solely on budget size, we emphasize efficiency metrics like return on ad spend (ROAS) and cost per acquisition (CPA) to ensure your budget—regardless of size—is being used effectively to achieve your business goals.</p>
@@ -367,7 +367,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How long does it take to see results from Google Ads?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Google Ads can begin generating impressions and clicks immediately after campaign launch, but meaningful business results typically develop over specific timeframes. The first 2-4 weeks serve as a data collection phase, where we gather performance metrics across keywords, ads, and audience segments. Initial optimization adjustments begin during weeks 3-4 as patterns emerge. By months 1-2, campaigns typically achieve baseline performance levels with established metrics. Significant performance improvements usually occur during months 2-3 as we implement ongoing optimizations based on accumulated data. For more competitive industries or complex sales cycles, the timeline may extend further. Unlike some agencies that promise overnight success, we set realistic expectations based on your specific business model and competitive landscape, focusing on building campaigns that deliver sustainable long-term results rather than short-term metrics that don't translate to business growth.</p>
@@ -377,7 +377,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How do you measure Google Ads success?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>We measure Google Ads success using a comprehensive framework aligned with your specific business objectives. For lead generation campaigns, we track metrics including lead volume, cost per lead, lead quality, and lead-to-sale conversion rate. For e-commerce, we focus on ROAS (return on ad spend), revenue, average order value, and new customer acquisition cost. For brand awareness, we monitor impressions, impression share, brand search volume growth, and engagement metrics. Beyond platform metrics, we integrate Google Ads data with your CRM and business systems to evaluate true business impact, including customer lifetime value of ad-generated customers. Our reporting includes both technical campaign metrics (quality scores, click-through rates, conversion rates) and business outcome metrics that directly connect to revenue and growth. This dual approach ensures your Google Ads investment is measured not just by marketing metrics but by actual business results that impact your bottom line.</p>
@@ -387,7 +387,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>What makes your Google Ads management different?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Our approach to Google Ads management is distinguished by several key factors that drive superior results. First, we implement a true account-based structure with dedicated specialists handling strategy, implementation, and analytics—not generalists juggling multiple marketing channels. Second, our optimization cadence is more frequent than industry standards, with weekly tactical adjustments and monthly strategic reviews. Third, we utilize advanced campaign structures including SKAGs (single keyword ad groups), RDAs (responsive display ads), and custom audience segmentation for precision targeting. Fourth, we maintain extraordinarily detailed conversion tracking, going beyond basic form submissions to track phone calls, chat interactions, and micro-conversions along the customer journey. Fifth, we develop custom scripts and automation rules tailored to your specific business that maximize efficiency and performance. Finally, our process integrates Google Ads with your broader marketing funnel, ensuring alignment with other channels like SEO, social media, and email marketing for a cohesive strategy rather than a siloed approach.</p>
@@ -397,7 +397,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>Do you require long-term contracts for Google Ads management?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>We don't believe in locking clients into lengthy contracts. Our Google Ads management services operate on a month-to-month basis after an initial three-month commitment. This initial period is necessary to properly set up campaigns, gather sufficient data, implement optimizations, and demonstrate results—a process that simply can't be rushed or compressed into a shorter timeframe. After this initial period, you have the flexibility to continue or pause services as needed, though most clients choose to maintain the partnership as performance improves over time. We earn your business each month through results and service quality, not contractual obligations. Our retention rate of over 90% after the first year speaks to the value our clients find in our ongoing partnership. This approach aligns our incentives with yours—we succeed when you succeed—creating a healthier, more productive relationship focused on performance rather than contract terms.</p>
@@ -408,4 +408,4 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?> 
-<?php require_once '../../../../components/footer.php'; ?> 
+<script src="/assets/js/services.js"></script>

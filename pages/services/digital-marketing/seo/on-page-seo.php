@@ -26,7 +26,7 @@ require_once '../../../../components/header.php';
     <div class="hero-blob-1"></div>
     <div class="hero-blob-2"></div>
     
-    <div class="content-container">
+    <div class="container">
         <div class="hero-grid">
             <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
                 <h1>On-Page <span class="highlight">SEO</span></h1>
@@ -48,7 +48,7 @@ require_once '../../../../components/header.php';
 
 <!-- Service Overview Section -->
 <section class="overview-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header" data-aos="fade-up">
             <h2>Maximize Your Website's Search Potential</h2>
             <p class="section-lead">On-Page SEO is the foundation of any successful search strategy, focusing on elements within your website that are entirely within your control.</p>
@@ -74,7 +74,7 @@ require_once '../../../../components/header.php';
 
 <!-- Services Section -->
 <section class="services-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="services-header" data-aos="fade-up">
                 <h2>Our On-Page SEO Services</h2>
@@ -152,7 +152,7 @@ require_once '../../../../components/header.php';
 
 <!-- Technologies Section -->
 <section class="technology-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="technology-header" data-aos="fade-up">
                 <h2>Our On-Page SEO Advantage</h2>
@@ -206,7 +206,7 @@ require_once '../../../../components/header.php';
 
 <!-- Implementation Process -->
 <section class="process-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header" data-aos="fade-up">
             <h2>Our On-Page SEO Process</h2>
             <p class="section-lead">A systematic approach to improving your search visibility</p>
@@ -284,7 +284,7 @@ require_once '../../../../components/header.php';
 <!-- Why Choose Us Section -->
 <?php if (isset($why_hire_us) && !empty($why_hire_us)): ?>
 <section class="why-choose-us">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="why-choose-us-header" data-aos="fade-up">
                 <h2>Why Choose StartupAI for On-Page SEO</h2>
@@ -311,7 +311,7 @@ require_once '../../../../components/header.php';
 
 <!-- CTA Section -->
 <section class="cta-section">
-    <div class="content-container">
+    <div class="container">
         <div class="cta-content" data-aos="fade-up">
             <h2>Ready to Improve Your Search Rankings?</h2>
             <p class="lead">Let's discuss how our On-Page SEO services can help your website rank higher and attract more targeted traffic.</p>
@@ -322,7 +322,7 @@ require_once '../../../../components/header.php';
 
 <!-- FAQ Section -->
 <section class="faq-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="faq-header" data-aos="fade-up">
                 <h2>Frequently Asked Questions</h2>
@@ -575,3 +575,4 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?> 
+<script src="/assets/js/services.js"></script>

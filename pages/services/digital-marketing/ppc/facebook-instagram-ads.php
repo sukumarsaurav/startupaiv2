@@ -409,7 +409,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How much should I budget for Facebook and Instagram ads?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>The ideal budget for Facebook and Instagram advertising depends on several factors including your industry, business goals, target audience size, and competitive landscape. For most businesses, we recommend starting with a minimum budget of $1,500-3,000 per month to generate meaningful data and results. This allows for proper testing of different audience segments, ad formats, and creative approaches. With social advertising, establishing a testing budget is crucial during the initial phase to identify winning combinations of targeting, placement, and creative elements. Once we've identified what works best, we can scale successful campaigns while pausing underperforming ones. Rather than focusing on a specific budget amount, we emphasize efficiency metrics like return on ad spend (ROAS) and cost per acquisition (CPA) to ensure your investment delivers tangible business results regardless of budget size.</p>
@@ -419,7 +419,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How long does it take to see results from social ads?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Results timeline for Facebook and Instagram ads varies depending on your specific goals and campaign type. Initial data becomes available immediately after launch, but meaningful performance patterns typically emerge within specific timeframes. Facebook's learning phase usually requires 3-7 days as the algorithm optimizes delivery based on early results. For awareness and engagement campaigns, you can expect to see significant results within 1-2 weeks. For conversion-focused campaigns, performance patterns typically emerge within 2-3 weeks. E-commerce businesses often see faster returns, while lead generation for complex B2B services may require 4-8 weeks to establish reliable performance benchmarks. Throughout the campaign lifecycle, we continuously optimize based on accumulated data, meaning performance typically improves over time. We set clear expectations during our onboarding process and provide regular updates on campaign progress, ensuring you understand what to expect at each stage of the optimization process.</p>
@@ -429,7 +429,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>Which is better for my business, Facebook or Instagram ads?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>The optimal platform choice between Facebook and Instagram depends on your target audience, business type, and specific marketing objectives. Facebook offers broader demographic reach with 2.9 billion monthly active users across diverse age groups, making it effective for B2B services, local businesses, and reaching older demographics. Instagram's 1.4 billion users skew younger and engage more with visual content, making it ideal for fashion, beauty, travel, food, and lifestyle brands. Rather than choosing one platform exclusively, our approach typically involves testing both platforms initially, as the Meta ads system allows for cross-platform deployment with automatic optimization. We analyze performance data to determine which platform delivers better results for your specific business and then allocate budget accordingly. Some campaigns perform better with a 70/30 split favoring one platform, while others benefit from equal distribution. We continuously optimize this allocation based on performance data to maximize your return on ad spend.</p>
@@ -439,7 +439,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How do you measure the success of social ad campaigns?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>We measure social advertising success using metrics aligned with your specific business objectives. For awareness campaigns, we track impressions, reach, frequency, brand lift, and audience growth. For engagement campaigns, we monitor engagement rate, click-through rate, video view duration, and social interaction metrics. For conversion campaigns, we measure leads generated, cost per acquisition, conversion rate, return on ad spend (ROAS), and ultimately, revenue attribution. Beyond platform metrics, we implement comprehensive tracking through the Meta pixel, conversion API, UTM parameters, and CRM integration to provide accurate multi-touch attribution. Our reporting combines both technical campaign metrics and business outcome metrics that connect directly to your bottom line. We establish clear KPIs at the beginning of our engagement and provide regular performance reports with actionable insights, ensuring you understand not just what happened, but why it happened and how we're optimizing based on these insights.</p>
@@ -449,7 +449,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How do you handle creative development and testing?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Our approach to creative development and testing follows a systematic methodology designed to identify the most effective messaging and visuals for your audience. We begin with a creative strategy session to establish your brand voice, value proposition, and key selling points. Based on this foundation, we develop multiple creative concepts with variations in imagery, copy, call-to-action, and format (image, carousel, video, etc.). Initial campaigns include a testing matrix that evaluates these creative elements while controlling for audience and placement variables. We implement A/B testing using Facebook's split testing feature to ensure statistically significant results, typically running tests for 5-7 days to gather sufficient data. Our creative refresh schedule prevents ad fatigue, with new concepts introduced regularly based on performance metrics. Throughout this process, we document creative insights in a "learning library" that informs future campaigns, creating a cycle of continuous improvement. For clients who have their own creative assets, we can work with existing materials, though we recommend testing our specialized social ad creative against current assets to identify performance improvements.</p>
@@ -460,3 +460,4 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?> 
+<script src="/assets/js/services.js"></script>

@@ -66,108 +66,108 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Services Offered -->
-<section class="py-5 bg-light">
+<section class="services-sectio">
     <div class="container">
-        <div class="row mb-4">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Our Technical SEO Services</h2>
+        <div class="section-header">
+            <div class="services-header" data-aos="fade-up">
+                <h2>Our Technical SEO Services</h2>
                 <p class="lead">Comprehensive solutions to optimize your website's performance</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="service-icon mb-4">
-                        <i class="fas fa-tachometer-alt fa-3x text-primary"></i>
+        <div class="services-grid">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tachometer "></i>
                     </div>
                     <h3>Site Speed & Core Web Vitals Optimization</h3>
                     <p>Enhance your website's loading performance and user experience metrics to meet Google's standards.</p>
-                    <ul class="service-features mt-3">
-                        <li><i class="fas fa-check text-primary me-2"></i> Image optimization & next-gen formats</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Code minification & compression</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Render-blocking resource management</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> CLS, LCP, FID improvement</li>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check "></i> Image optimization & next-gen formats</li>
+                        <li><i class="fas fa-check "></i> Code minification & compression</li>
+                        <li><i class="fas fa-check "></i> Render-blocking resource management</li>
+                        <li><i class="fas fa-check "></i> CLS, LCP, FID improvement</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="service-icon mb-4">
-                        <i class="fas fa-sitemap fa-3x text-primary"></i>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sitemap "></i>
                     </div>
                     <h3>Site Architecture & Crawlability</h3>
                     <p>Optimize your website structure for efficient crawling and maximum content discovery.</p>
-                    <ul class="service-features mt-3">
-                        <li><i class="fas fa-check text-primary me-2"></i> XML sitemap optimization</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Robots.txt configuration</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> URL structure improvement</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Internal linking strategy</li>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check "></i> XML sitemap optimization</li>
+                        <li><i class="fas fa-check "></i> Robots.txt configuration</li>
+                        <li><i class="fas fa-check "></i> URL structure improvement</li>
+                        <li><i class="fas fa-check "></i> Internal linking strategy</li>
                     </ul>
                 </div>
             </div>
             
             <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="service-icon mb-4">
-                        <i class="fas fa-mobile-alt fa-3x text-primary"></i>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt "></i>
                     </div>
                     <h3>Mobile Optimization</h3>
                     <p>Ensure your website delivers an exceptional experience across all devices and screen sizes.</p>
-                    <ul class="service-features mt-3">
-                        <li><i class="fas fa-check text-primary me-2"></i> Responsive design evaluation</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Mobile usability enhancement</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Touch element spacing</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Viewport configuration</li>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check "></i> Responsive design evaluation</li>
+                        <li><i class="fas fa-check "></i> Mobile usability enhancement</li>
+                        <li><i class="fas fa-check "></i> Touch element spacing</li>
+                        <li><i class="fas fa-check "></i> Viewport configuration</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="service-icon mb-4">
-                        <i class="fas fa-code fa-3x text-primary"></i>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code "></i>
                     </div>
                     <h3>Structured Data & Schema Implementation</h3>
                     <p>Help search engines better understand your content and enable rich results in search listings.</p>
-                    <ul class="service-features mt-3">
-                        <li><i class="fas fa-check text-primary me-2"></i> Schema markup implementation</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Rich snippet enhancement</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Entity relationship mapping</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> JSON-LD optimization</li>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check "></i> Schema markup implementation</li>
+                        <li><i class="fas fa-check "></i> Rich snippet enhancement</li>
+                        <li><i class="fas fa-check "></i> Entity relationship mapping</li>
+                        <li><i class="fas fa-check "></i> JSON-LD optimization</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="service-icon mb-4">
-                        <i class="fas fa-shield-alt fa-3x text-primary"></i>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt "></i>
                     </div>
                     <h3>Security & HTTPS Implementation</h3>
                     <p>Secure your website and boost user trust with proper security protocols and configurations.</p>
-                    <ul class="service-features mt-3">
-                        <li><i class="fas fa-check text-primary me-2"></i> SSL implementation & monitoring</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Mixed content resolution</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Security header implementation</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Safe browsing issue resolution</li>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check "></i> SSL implementation & monitoring</li>
+                        <li><i class="fas fa-check "></i> Mixed content resolution</li>
+                        <li><i class="fas fa-check "></i> Security header implementation</li>
+                        <li><i class="fas fa-check "></i> Safe browsing issue resolution</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="600">
-                <div class="service-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="service-icon mb-4">
-                        <i class="fas fa-tools fa-3x text-primary"></i>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools "></i>
                     </div>
                     <h3>Technical Issue Resolution</h3>
                     <p>Identify and fix technical problems that may be hindering your search performance.</p>
-                    <ul class="service-features mt-3">
-                        <li><i class="fas fa-check text-primary me-2"></i> 404 error management</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Redirect optimization</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Duplicate content resolution</li>
-                        <li><i class="fas fa-check text-primary me-2"></i> Orphaned page identification</li>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check "></i> 404 error management</li>
+                        <li><i class="fas fa-check "></i> Redirect optimization</li>
+                        <li><i class="fas fa-check "></i> Duplicate content resolution</li>
+                        <li><i class="fas fa-check "></i> Orphaned page identification</li>
                     </ul>
                 </div>
             </div>
@@ -321,59 +321,71 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Key Features -->
-<section class="py-5">
+<section class="why-choose-us">
     <div class="container">
-        <div class="row mb-4">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Our Technical SEO Advantage</h2>
+        <div class="section-header">
+            <div class="why-choose-us-header" data-aos="fade-up">
+                <h2>Our Technical SEO Advantage</h2>
                 <p class="lead">What makes our technical optimization approach effective</p>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="tech-card h-100 p-4 text-center bg-white rounded shadow-sm">
-                    <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+        <div class="features-grid">
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                <div class="feature-icon">
+                <i class="fas fa-tools "></i>
+                    </div>
                     <h4>Advanced Technical Tools</h4>
                     <p>We employ enterprise-level technical SEO tools for comprehensive analysis and monitoring.</p>
                 </div>
             </div>
             
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="tech-card h-100 p-4 text-center bg-white rounded shadow-sm">
-                    <i class="fas fa-code-branch fa-3x text-primary mb-3"></i>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
                     <h4>Developer-Level Expertise</h4>
                     <p>Our team includes SEO developers who understand both search algorithms and coding best practices.</p>
                 </div>
             </div>
             
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="tech-card h-100 p-4 text-center bg-white rounded shadow-sm">
-                    <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
                     <h4>Data-Driven Approach</h4>
                     <p>We prioritize technical issues based on impact analysis and performance data.</p>
                 </div>
             </div>
             
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="tech-card h-100 p-4 text-center bg-white rounded shadow-sm">
-                    <i class="fas fa-sync-alt fa-3x text-primary mb-3"></i>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
                     <h4>Continuous Monitoring</h4>
                     <p>We implement ongoing technical monitoring to catch issues before they impact rankings.</p>
                 </div>
             </div>
             
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="tech-card h-100 p-4 text-center bg-white rounded shadow-sm">
-                    <i class="fas fa-browser fa-3x text-primary mb-3"></i>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-browser"></i>
+                    </div>
                     <h4>Cross-Browser Testing</h4>
                     <p>We verify technical performance across multiple browsers, devices, and screen sizes.</p>
                 </div>
             </div>
             
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
-                <div class="tech-card h-100 p-4 text-center bg-white rounded shadow-sm">
-                    <i class="fas fa-project-diagram fa-3x text-primary mb-3"></i>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
                     <h4>Platform Specialization</h4>
                     <p>We offer specialized technical SEO solutions for WordPress, Shopify, Magento, and custom platforms.</p>
                 </div>
@@ -383,7 +395,7 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Call to Action -->
-<section class="cta-section py-5 bg-primary text-white">
+<section class="cta-section">   
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-8 mb-4 mb-lg-0" data-aos="fade-right">
@@ -816,3 +828,4 @@ require_once '../../../../components/header.php';
 <?php
 include_once '../../../../components/footer.php';
 ?> 
+<script src="/assets/js/services.js"></script>

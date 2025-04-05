@@ -281,7 +281,6 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Why Choose Us Section -->
-
 <section class="why-choose-us">
     <div class="container">
         <div class="section-header">
@@ -292,21 +291,68 @@ require_once '../../../../components/header.php';
         </div>
         
         <div class="features-grid">
-            <?php foreach ($why_hire_us as $item): ?>
             <div class="feature-item" data-aos="fade-up">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="<?php echo $item['icon']; ?>"></i>
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3><?php echo $item['title']; ?></h3>
-                    <p><?php echo $item['description']; ?></p>
+                    <h3>Ethical White-Hat Approach</h3>
+                    <p>We follow ethical SEO practices that build sustainable, penalty-free authority for your website. Our methods focus on earning quality links through valuable content and genuine relationships.</p>
                 </div>
             </div>
-            <?php endforeach; ?>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Transparent Reporting</h3>
+                    <p>We provide comprehensive monthly reports that track all acquired backlinks, domain authority growth, and the direct impact on your search rankings and organic traffic.</p>
+                </div>
+            </div>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3>Industry-Specific Strategy</h3>
+                    <p>Our link building strategies are tailored to your specific industry, focusing on relevant publisher relationships and authoritative sources that drive targeted referral traffic.</p>
+                </div>
+            </div>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Quality Over Quantity</h3>
+                    <p>Rather than chasing high volumes of low-quality links, we focus on acquiring authoritative, contextual backlinks that provide lasting value and significant ranking impact.</p>
+                </div>
+            </div>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Comprehensive Approach</h3>
+                    <p>We integrate link building with content marketing, digital PR, and social media strategies to create a holistic off-page SEO program that amplifies results.</p>
+                </div>
+            </div>
+            
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>Continuous Optimization</h3>
+                    <p>Our team regularly audits your backlink profile, identifies toxic links for disavowal, and adjusts strategies based on performance data to maximize ROI.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
-
 
 <!-- CTA Section -->
 <section class="cta-section">
@@ -543,3 +589,4 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?> 
+<script src="/assets/js/services.js"></script>
