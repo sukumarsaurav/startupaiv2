@@ -72,6 +72,7 @@
                         <a href="/pages/services/web-design/Custom-Website-Solutions/Landing-Pages.php">Landing Pages</a>
                         <a href="/pages/services/web-design/Custom-Website-Solutions/E-commerce-Website-Design.php">E-commerce Website Design</a>
                         <a href="/pages/services/web-design/Custom-Website-Solutions/Appointment-Booking-Website.php">Appointment Booking Website </a>
+                        <a href="/pages/services/web-design/Custom-Website-Solutions/website-template.php">website template </a>
                     </div>
                     
                     <div class="drawer-submenu-group">
@@ -275,6 +276,7 @@
                                 <a class="dropdown-item" href="/pages/services/web-design/Custom-Website-Solutions/Landing-Pages.php">Landing Pages</a>
                                 <a class="dropdown-item" href="/pages/services/web-design/Custom-Website-Solutions/E-commerce-Website-Design.php">E-commerce Website Design</a>
                                 <a class="dropdown-item" href="/pages/services/web-design/Custom-Website-Solutions/Appointment-Booking-Website.php">Appointment Booking Website</a>
+                                <a class="dropdown-item" href="/pages/services/web-design/Custom-Website-Solutions/website-template.php">website template </a>
                             </div>
                             <div class="mega-menu-column">
                                 <h6 class="dropdown-header">E-commerce & CMS Solutions</h6>

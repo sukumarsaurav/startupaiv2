@@ -80,7 +80,7 @@ include_once '../components/header.php';
                 </div>
             </div>
             <div class="hero-image" data-aos="fade-left">
-                <img src="../assets/images/contact-header.svg" alt="Contact Us" class="floating-image">
+                <img src="../assets/images/contact-us-startupai.png" alt="Contact Us" class="floating-image">
                 <div class="image-glow"></div>
                 <div class="decoration-circle-1"></div>
                 <div class="decoration-circle-2"></div>
@@ -150,9 +150,10 @@ include_once '../components/header.php';
     </div>
 </section>
 
-<!-- Contact Form -->
-<section id="contact-form" class="overview-section">
-    <div class="container">
+<!-- Form and Map Container -->
+<div class="form-map-container container">
+    <!-- Contact Form -->
+    <section id="contact-form" class="overview-section contact-form-section">
         <div class="section-header" data-aos="fade-up">
             <h2>Send Us a Message</h2>
             <p class="section-lead">We'd love to hear from you</p>
@@ -221,12 +222,10 @@ include_once '../components/header.php';
             </form>
         </div>
         <?php endif; ?>
-    </div>
-</section>
+    </section>
 
-<!-- Map Section -->
-<section class="map-section">
-    <div class="container">
+    <!-- Map Section -->
+    <section class="map-section">
         <div class="map-container" data-aos="fade-up">
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50487.35386508014!2d-122.4726194!3d37.7577627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1625764215714!5m2!1sen!2sus" 
@@ -238,8 +237,8 @@ include_once '../components/header.php';
                 title="StartupAI Office Location">
             </iframe>
         </div>
-    </div>
-</section>
+    </section>
+</div>
 
 <!-- FAQ Section -->
 <section class="faq-section">
@@ -321,3 +320,4 @@ include_once '../components/header.php';
 // Include footer
 include_once '../components/footer.php';
 ?>
+ <script src="/assets/js/services.js"></script>

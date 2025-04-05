@@ -8,79 +8,37 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // Set variables for header
-$pageTitle = 'StartupAI - Technology Partner for Modern Businesses';
-$pageDescription = 'Comprehensive technology solutions including web design, app development, AI services, and digital marketing for startups and enterprises';
-$pageKeywords = 'web development, digital marketing, AI solutions, React, Next.js, WordPress, chatbots, business automation, custom software';
+$pageTitle = 'StartupAI - Complete Technology Partner for Modern Businesses';
+$pageDescription = 'Transform your business with expert web design, app development, AI solutions, and digital marketing services tailored for growth-focused companies.';
+
+// SEO Data
+$seo_data = [
+    'description' => $pageDescription,
+    'keywords' => 'web design, app development, AI services, digital marketing, custom websites, mobile apps, chatbots, SEO, business automation'
+];
 
 // Include header
 include_once 'components/header.php';
 ?>
 
-<!-- Hero Section -->
-<section id="home" class="hero-section">
+<!-- Hero Section with Animated Elements -->
+<section class="hero-section">
     <div class="hero-background"></div>
     <div class="hero-blob-1"></div>
     <div class="hero-blob-2"></div>
     <div class="container">
         <div class="hero-grid">
-            <div class="hero-content">
-                <h1 class="hero-title">Transforming Ideas into <span class="highlight">Digital Success</span> Stories</h1>
-                <p class="lead">End-to-end technology solutions for businesses at every stage of growth - from startup MVPs to enterprise digital transformations.</p>
+            <div class="hero-content" data-aos="fade-right">
+                <h1>Transforming <span class="highlight">Ideas</span> into <span class="highlight">Digital Success</span> Stories</h1>
+                <p class="lead">Your end-to-end technology partner for innovative solutions that drive measurable business growth and digital transformation.</p>
                 <div class="hero-buttons">
-                    <a href="/pages/contact.php" class="btn btn-primary">Get Started</a>
+                    <a href="/pages/contact.php" class="btn btn-primary">Start Your Project</a>
                     <a href="/pages/portfolio.php" class="btn btn-outline">View Our Work</a>
                 </div>
-                <div class="inquiry-form">
-                    <h3 class="form-title">Get Started Today</h3>
-                    
-                    <?php if (isset($_SESSION['inquiry_success'])): ?>
-                        <div class="alert success-alert">
-                            Thank you for your inquiry! We'll get back to you as soon as possible.
-                            <button type="button" class="close-btn" data-dismiss="alert">×</button>
-                        </div>
-                        <?php unset($_SESSION['inquiry_success']); ?>
-                    <?php elseif (isset($_SESSION['inquiry_error'])): ?>
-                        <div class="alert error-alert">
-                            <?php echo $_SESSION['inquiry_error']; ?>
-                            <button type="button" class="close-btn" data-dismiss="alert">×</button>
-                        </div>
-                        <?php unset($_SESSION['inquiry_error']); ?>
-                    <?php endif; ?>
-                    
-                    <form id="inquiryForm" action="process/submit-inquiry.php" method="POST">
-                        <div class="form-field">
-                            <input type="text" name="name" class="input-control" placeholder="Your Name" required
-                                   value="<?php echo isset($_SESSION['form_data']['name']) ? htmlspecialchars($_SESSION['form_data']['name']) : ''; ?>">
-                        </div>
-                        <div class="form-field">
-                            <input type="email" name="email" class="input-control" placeholder="Email Address" required
-                                   value="<?php echo isset($_SESSION['form_data']['email']) ? htmlspecialchars($_SESSION['form_data']['email']) : ''; ?>">
-                        </div>
-                        <div class="form-field">
-                            <select name="service" class="input-control" required>
-                                <option value="" disabled selected>Select Service</option>
-                                <option value="web-design" <?php echo (isset($_SESSION['form_data']['service']) && $_SESSION['form_data']['service'] == 'web-design') ? 'selected' : ''; ?>>Web Design</option>
-                                <option value="app-development" <?php echo (isset($_SESSION['form_data']['service']) && $_SESSION['form_data']['service'] == 'app-development') ? 'selected' : ''; ?>>App Development</option>
-                                <option value="ai-services" <?php echo (isset($_SESSION['form_data']['service']) && $_SESSION['form_data']['service'] == 'ai-services') ? 'selected' : ''; ?>>AI Services</option>
-                                <option value="digital-marketing" <?php echo (isset($_SESSION['form_data']['service']) && $_SESSION['form_data']['service'] == 'digital-marketing') ? 'selected' : ''; ?>>Digital Marketing</option>
-                            </select>
-                        </div>
-                        <div class="form-field">
-                            <textarea name="description" class="input-control" rows="3" placeholder="Project Description" required><?php echo isset($_SESSION['form_data']['description']) ? htmlspecialchars($_SESSION['form_data']['description']) : ''; ?></textarea>
-                        </div>
-                        <button type="submit" class="primary-button full-width">Submit Inquiry</button>
-                    </form>
-                    <?php 
-                    // Clear form data after displaying
-                    if (isset($_SESSION['form_data'])) {
-                        unset($_SESSION['form_data']);
-                    }
-                    ?>
-                </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-image" data-aos="fade-left">
                 <div class="image-glow"></div>
-                <img src="assets/images/hero-image.svg" alt="Hero Image" class="floating-image">
+                <img src="assets/images/hero-image.webp" alt="StartupAI Digital Transformation" class="floating-image">
                 <div class="decoration-circle-1"></div>
                 <div class="decoration-circle-2"></div>
             </div>
@@ -89,59 +47,36 @@ include_once 'components/header.php';
 </section>
 
 <!-- Why Choose Us Section -->
-<section class="features-section">
-    <div class="main-container">
-        <div class="section-header">
-            <h2 class="section-title">Why Choose Us</h2>
-            <p class="section-subtitle">Our approach sets us apart</p>
+<section class="overview-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Why Choose StartupAI</h2>
+            <p class="section-lead">We combine technical excellence with strategic thinking to deliver solutions that drive real business results.</p>
         </div>
-        <div class="features-grid">
-            <div class="feature-item" data-aos="fade-up">
-                <div class="feature-icon">
-                    <i class="fas fa-rocket"></i>
-                </div>
-                <h3 class="feature-title">Startup Focused</h3>
-                <p class="feature-text">We help startups transform their ideas into MVPs and secure funding with scalable solutions.</p>
+        
+        <div class="overview-grid">
+            <div class="primary-card" data-aos="fade-right">
+                <div class="card-decoration"></div>
+                <h3>Our Approach</h3>
+                <p>We're not just developers or designers – we're strategic partners invested in your success. Our collaborative approach ensures that every solution is:</p>
+                <ul class="process-list">
+                    <li><strong>Business-focused</strong> – Aligned with your strategic objectives</li>
+                    <li><strong>Data-driven</strong> – Based on analytics and user insights</li>
+                    <li><strong>Future-proof</strong> – Built with scalability and evolution in mind</li>
+                    <li><strong>User-centered</strong> – Designed for optimal user experience</li>
+                </ul>
             </div>
             
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-icon">
-                    <i class="fas fa-brain"></i>
-                </div>
-                <h3 class="feature-title">AI-Powered Innovation</h3>
-                <p class="feature-text">We integrate cutting-edge AI capabilities into all our services to deliver smarter solutions.</p>
-            </div>
-            
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-icon">
-                    <i class="fas fa-code"></i>
-                </div>
-                <h3 class="feature-title">Technical Excellence</h3>
-                <p class="feature-text">Our team brings deep expertise across multiple technologies and platforms.</p>
-            </div>
-            
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3 class="feature-title">Results-Driven</h3>
-                <p class="feature-text">We focus on measurable outcomes that directly impact your business growth.</p>
-            </div>
-            
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="feature-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <h3 class="feature-title">Collaborative Approach</h3>
-                <p class="feature-text">We work as an extension of your team, ensuring alignment with your vision.</p>
-            </div>
-            
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="feature-icon">
-                    <i class="fas fa-clock"></i>
-                </div>
-                <h3 class="feature-title">Rapid Delivery</h3>
-                <p class="feature-text">Our agile methodology enables fast iteration and quicker time-to-market.</p>
+            <div class="secondary-card" data-aos="fade-left">
+                <div class="card-decoration"></div>
+                <h3>Our Difference</h3>
+                <p>What sets us apart from other technology partners:</p>
+                <ul class="process-list">
+                    <li><strong>AI Integration</strong> – Cutting-edge AI capabilities across all services</li>
+                    <li><strong>Full-Stack Expertise</strong> – End-to-end solutions under one roof</li>
+                    <li><strong>Startup Mindset</strong> – Agile, innovative, and growth-focused</li>
+                    <li><strong>Industry Knowledge</strong> – Specialized experience across key sectors</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -149,496 +84,467 @@ include_once 'components/header.php';
 
 <!-- Main Services Section -->
 <section class="services-section">
-    <div class="main-container">
-        <div class="section-header">
-            <h2 class="section-title">Our Services</h2>
-            <p class="section-subtitle">Comprehensive technology solutions for modern businesses</p>
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Comprehensive Services</h2>
+            <p class="section-lead">End-to-end technology solutions tailored to your business needs</p>
         </div>
         
-        <!-- Service Tabs -->
-        <div class="services-tabs">
-            <button class="service-tab active" data-target="web-design">Web Design</button>
-            <button class="service-tab" data-target="app-development">App Development</button>
-            <button class="service-tab" data-target="ai-services">AI Services</button>
-            <button class="service-tab" data-target="digital-marketing">Digital Marketing</button>
-        </div>
-        
-        <!-- Service Contents -->
-        <div class="service-content active" id="web-design">
-            <div class="service-info">
-                <h3 class="service-title">Web Design & Development</h3>
-                <p class="service-description">From stunning landing pages to complex web applications, we create responsive, user-friendly websites that drive growth. Our web design team combines aesthetics with functionality for results that impress.</p>
-                
-                <div class="service-features">
-                    <div class="service-feature">
-                        <h4 class="feature-subtitle">UI/UX Design</h4>
-                        <p>User-friendly interfaces with intuitive experiences</p>
-                    </div>
-                    
-                    <div class="service-feature">
-                        <h4 class="feature-subtitle">Responsive Design</h4>
-                        <p>Mobile-first approach for all screen sizes</p>
-                    </div>
-                    
-                    <div class="service-feature">
-                        <h4 class="feature-subtitle">CMS Development</h4>
-                        <p>WordPress, Webflow, and custom CMS solutions</p>
-                    </div>
-                    
-                    <div class="service-feature">
-                        <h4 class="feature-subtitle">E-commerce</h4>
-                        <p>Shopify, WooCommerce, and custom stores</p>
-                    </div>
+        <!-- Web Design Services -->
+        <div class="service-category" data-aos="fade-up">
+            <div class="category-header">
+                <div class="category-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Web Design & Development</h3>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon"><i class="fas fa-building"></i></div>
+                    <h4>Business Websites</h4>
+                    <p>Professional, conversion-focused websites that establish credibility and generate leads.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Responsive design</li>
+                        <li><i class="fas fa-check"></i> SEO optimization</li>
+                        <li><i class="fas fa-check"></i> Lead generation features</li>
+                    </ul>
+                    <a href="/pages/services/web-design/Custom-Website-Solutions/Business-Websites.php" class="learn-more">Learn More</a>
                 </div>
                 
-                <a href="/pages/services/web-design.php" class="primary-button">Learn More</a>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h4>E-commerce Solutions</h4>
+                    <p>Powerful online stores that deliver seamless shopping experiences and maximize conversions.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Shopify & WooCommerce</li>
+                        <li><i class="fas fa-check"></i> Custom e-commerce</li>
+                        <li><i class="fas fa-check"></i> Payment integration</li>
+                    </ul>
+                    <a href="/pages/services/web-design/E-commerce-&-CMS-Solutions/Custom-E-commerce-Solutions.php" class="learn-more">Learn More</a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+                    <h4>UI/UX Design</h4>
+                    <p>User-centric design that creates intuitive, engaging digital experiences that convert.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Wireframing & prototyping</li>
+                        <li><i class="fas fa-check"></i> User research</li>
+                        <li><i class="fas fa-check"></i> Interface design</li>
+                    </ul>
+                    <a href="/pages/services/web-design/UI-UX-&-Website-Enhancements/UI-UX-Design-&-Prototyping.php" class="learn-more">Learn More</a>
+                </div>
             </div>
-            <div class="service-image">
-                <img src="assets/images/web-design-service.jpg" alt="Web Design Services">
+            <div class="category-cta">
+                <a href="/pages/services/web-design.php" class="btn btn-outline">Explore All Web Design Services</a>
             </div>
         </div>
         
-        <!-- App Development Service -->
-        <div class="service-content" id="app-development">
-            <div class="service-info">
-                <h3 class="service-title">Mobile & Web App Development</h3>
-                <p class="service-description">We build powerful, scalable applications that work flawlessly across devices. From startup MVPs to enterprise applications, our development team delivers custom solutions that solve real business problems.</p>
-                
-                <div class="service-features">
-                    <div class="service-feature">
-                        <h4 class="feature-subtitle">Native Mobile Apps</h4>
-                        <p>High-performance iOS and Android applications</p>
-                    </div>
-                    
-                    <div class="service-feature">
-                        <h4 class="feature-subtitle">Cross-Platform Development</h4>
-                        <p>React Native and Flutter solutions for multiple platforms</p>
-                    </div>
-                    
-                    <div class="service-feature">
-                        <h4 class="feature-subtitle">Progressive Web Apps</h4>
-                        <p>Fast, engaging web experiences that work offline</p>
-                    </div>
-                    
-                    <div class="service-feature">
-                        <h4 class="feature-subtitle">Enterprise Applications</h4>
-                        <p>Secure, scalable solutions for large organizations</p>
-                    </div>
+        <!-- App Development Services -->
+        <div class="service-category" data-aos="fade-up">
+            <div class="category-header">
+                <div class="category-icon"><i class="fas fa-mobile-alt"></i></div>
+                <h3>App Development</h3>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon"><i class="fas fa-window-restore"></i></div>
+                    <h4>Custom Web Applications</h4>
+                    <p>Tailored web applications designed to automate processes and solve business challenges.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Scalable architecture</li>
+                        <li><i class="fas fa-check"></i> Secure & reliable</li>
+                        <li><i class="fas fa-check"></i> Custom functionality</li>
+                    </ul>
+                    <a href="/pages/services/app-development/Web-Application-Development/Custom-Web-Applications.php" class="learn-more">Learn More</a>
                 </div>
                 
-                <a href="/pages/services/app-development.php" class="primary-button">Learn More</a>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h4>Mobile App Development</h4>
+                    <p>Native and cross-platform mobile applications for iOS and Android that engage users on the go.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> iOS & Android apps</li>
+                        <li><i class="fas fa-check"></i> React Native & Flutter</li>
+                        <li><i class="fas fa-check"></i> App Store optimization</li>
+                    </ul>
+                    <a href="/pages/services/app-development/Mobile-App-Development/cross-platform-apps.php" class="learn-more">Learn More</a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h4>Backend Development</h4>
+                    <p>Robust backend systems and APIs that power your digital products with reliability and performance.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> API development</li>
+                        <li><i class="fas fa-check"></i> Database design</li>
+                        <li><i class="fas fa-check"></i> Cloud infrastructure</li>
+                    </ul>
+                    <a href="/pages/services/app-development/Backend-&-Infrastructure/Backend-Development-APIs.php" class="learn-more">Learn More</a>
+                </div>
             </div>
-            <div class="service-image">
-                <img src="assets/images/app-development-service.jpg" alt="App Development Services">
+            <div class="category-cta">
+                <a href="/pages/services/app-development.php" class="btn btn-outline">Explore All App Development Services</a>
             </div>
         </div>
         
         <!-- AI Services -->
-        <div class="service-content" id="ai-services">
-            <div class="service-info">
-                <h3 class="service-title">AI & Machine Learning Solutions</h3>
-                <p class="service-description">Harness the power of artificial intelligence to automate processes, gain insights, and create intelligent systems. Our AI solutions help businesses work smarter and deliver personalized experiences at scale.</p>
-                
-                <div class="service-features">
-                    <div class="service-feature">
-                        <h4 class="feature-subtitle">Conversational AI</h4>
-                        <p>Intelligent chatbots and virtual assistants</p>
-                    </div>
-                    
-                    <div class="service-feature">
-                        <h4 class="feature-subtitle">Predictive Analytics</h4>
-                        <p>Data-driven forecasting and business intelligence</p>
-                    </div>
-                    
-                    <div class="service-feature">
-                        <h4 class="feature-subtitle">Computer Vision</h4>
-                        <p>Image recognition and visual data processing</p>
-                    </div>
-                    
-                    <div class="service-feature">
-                        <h4 class="feature-subtitle">Natural Language Processing</h4>
-                        <p>Text analysis and language understanding systems</p>
-                    </div>
+        <div class="service-category" data-aos="fade-up">
+            <div class="category-header">
+                <div class="category-icon"><i class="fas fa-brain"></i></div>
+                <h3>AI Services</h3>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon"><i class="fas fa-comments"></i></div>
+                    <h4>Conversational AI</h4>
+                    <p>Intelligent chatbots and virtual assistants that enhance customer service and drive engagement.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 24/7 customer support</li>
+                        <li><i class="fas fa-check"></i> Natural language processing</li>
+                        <li><i class="fas fa-check"></i> Multi-platform integration</li>
+                    </ul>
+                    <a href="/pages/services/ai-services/conversational-ai-solutions/chatbot-development-services.php" class="learn-more">Learn More</a>
                 </div>
                 
-                <a href="/pages/services/ai-services.php" class="primary-button">Learn More</a>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                    <h4>Business Automation</h4>
+                    <p>AI-powered workflow and process automation that increases efficiency and reduces operational costs.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Document processing</li>
+                        <li><i class="fas fa-check"></i> Workflow optimization</li>
+                        <li><i class="fas fa-check"></i> Data extraction & analysis</li>
+                    </ul>
+                    <a href="/pages/services/ai-services/ai-powered-business-automation/ai-powered-workflow-automation.php" class="learn-more">Learn More</a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h4>Machine Learning Solutions</h4>
+                    <p>Custom AI models and algorithms that deliver predictive insights and intelligent features.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Predictive analytics</li>
+                        <li><i class="fas fa-check"></i> Computer vision</li>
+                        <li><i class="fas fa-check"></i> Recommendation engines</li>
+                    </ul>
+                    <a href="/pages/services/ai-services/machine-learning-ai-development/custom-ai-model-development-training.php" class="learn-more">Learn More</a>
+                </div>
             </div>
-            <div class="service-image">
-                <img src="assets/images/ai-services.jpg" alt="AI Services">
+            <div class="category-cta">
+                <a href="/pages/services/ai-services.php" class="btn btn-outline">Explore All AI Services</a>
             </div>
         </div>
         
         <!-- Digital Marketing -->
-        <div class="service-content" id="digital-marketing">
-            <div class="service-info">
-                <h3 class="service-title">Digital Marketing & SEO</h3>
-                <p class="service-description">Drive growth with data-driven digital marketing strategies. From SEO and content marketing to PPC and social media campaigns, we help businesses increase visibility, generate leads, and boost conversions.</p>
+        <div class="service-category" data-aos="fade-up">
+            <div class="category-header">
+                <div class="category-icon"><i class="fas fa-bullhorn"></i></div>
+                <h3>Digital Marketing</h3>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon"><i class="fas fa-search"></i></div>
+                    <h4>SEO Services</h4>
+                    <p>Comprehensive search engine optimization strategies that improve visibility and drive organic traffic.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Technical SEO</li>
+                        <li><i class="fas fa-check"></i> Content optimization</li>
+                        <li><i class="fas fa-check"></i> Local & e-commerce SEO</li>
+                    </ul>
+                    <a href="/pages/services/digital-marketing/seo/on-page-seo.php" class="learn-more">Learn More</a>
+                </div>
                 
-                <div class="service-features">
-                    <div class="service-feature">
-                        <h4 class="feature-subtitle">Search Engine Optimization</h4>
-                        <p>Technical SEO, content optimization, and link building</p>
-                    </div>
-                    
-                    <div class="service-feature">
-                        <h4 class="feature-subtitle">Content Marketing</h4>
-                        <p>Strategic content creation and distribution</p>
-                    </div>
-                    
-                    <div class="service-feature">
-                        <h4 class="feature-subtitle">PPC & Paid Media</h4>
-                        <p>Targeted advertising across search and social platforms</p>
-                    </div>
-                    
-                    <div class="service-feature">
-                        <h4 class="feature-subtitle">Analytics & Reporting</h4>
-                        <p>Comprehensive performance tracking and optimization</p>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-share-alt"></i></div>
+                    <h4>Social Media Marketing</h4>
+                    <p>Strategic social media management and advertising that builds your brand and drives engagement.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Content strategy</li>
+                        <li><i class="fas fa-check"></i> Paid advertising</li>
+                        <li><i class="fas fa-check"></i> Community management</li>
+                    </ul>
+                    <a href="/pages/services/digital-marketing/social-media/social-media-management.php" class="learn-more">Learn More</a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-envelope"></i></div>
+                    <h4>Email Marketing</h4>
+                    <p>Targeted email campaigns that nurture leads, drive conversions, and strengthen customer relationships.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Campaign strategy</li>
+                        <li><i class="fas fa-check"></i> List management</li>
+                        <li><i class="fas fa-check"></i> Performance analytics</li>
+                    </ul>
+                    <a href="/pages/services/digital-marketing/email-marketing/email-campaigns.php" class="learn-more">Learn More</a>
+                </div>
+            </div>
+            <div class="category-cta">
+                <a href="/pages/services/digital-marketing.php" class="btn btn-outline">Explore All Digital Marketing Services</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="process-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Proven Process</h2>
+            <p class="section-lead">A systematic approach to delivering successful digital solutions</p>
+        </div>
+        
+        <div class="process-timeline">
+            <div class="timeline-line"></div>
+            <div class="process-grid">
+                <div class="process-card-wrapper" data-aos="fade-up">
+                    <div class="process-number">1</div>
+                    <div class="process-card">
+                        <h3>Discovery & Strategy</h3>
+                        <p>We begin by deeply understanding your business goals, audience, and challenges.</p>
+                        <ul class="process-list">
+                            <li>Business analysis</li>
+                            <li>User research</li>
+                            <li>Competitive landscape</li>
+                            <li>Strategic planning</li>
+                        </ul>
                     </div>
                 </div>
                 
-                <a href="/pages/services/digital-marketing.php" class="primary-button">Learn More</a>
-            </div>
-            <div class="service-image">
-                <img src="assets/images/digital-marketing-service.jpg" alt="Digital Marketing Services">
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-number">2</div>
+                    <div class="process-card">
+                        <h3>Design & Prototyping</h3>
+                        <p>Converting strategy into visual concepts and interactive prototypes.</p>
+                        <ul class="process-list">
+                            <li>UI/UX design</li>
+                            <li>Wireframing</li>
+                            <li>Interactive prototyping</li>
+                            <li>Client feedback loop</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-number">3</div>
+                    <div class="process-card">
+                        <h3>Development & Testing</h3>
+                        <p>Building robust, scalable solutions with rigorous quality assurance.</p>
+                        <ul class="process-list">
+                            <li>Agile development</li>
+                            <li>Responsive implementation</li>
+                            <li>Comprehensive testing</li>
+                            <li>Performance optimization</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-card-wrapper" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-number">4</div>
+                    <div class="process-card">
+                        <h3>Launch & Growth</h3>
+                        <p>Deploying your solution and implementing strategies for continuous improvement.</p>
+                        <ul class="process-list">
+                            <li>Seamless deployment</li>
+                            <li>Analytics setup</li>
+                            <li>Training & support</li>
+                            <li>Ongoing optimization</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Industry Solutions Section -->
-<section class="industry-section">
-    <div class="main-container">
-        <div class="section-header">
-            <h2 class="section-title" data-aos="fade-up">Industry-Specific Solutions</h2>
-            <p class="section-subtitle" data-aos="fade-up">Tailored technology solutions for various industries</p>
+<section class="industry-applications">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Industry-Specific Solutions</h2>
+            <p class="section-lead">Specialized expertise across key business sectors</p>
         </div>
         
         <div class="industry-grid">
             <div class="industry-card" data-aos="fade-up">
-                <div class="industry-icon">
-                    <i class="fas fa-heartbeat"></i>
-                </div>
-                <h4 class="industry-title">Healthcare</h4>
-                <p class="industry-text">Patient portals, telemedicine solutions, and HIPAA-compliant systems</p>
-                <a href="/pages/services/web-design/Industry-Specific-Website-Design/Healthcare-Websites.php" class="secondary-button">Learn More</a>
+                <div class="industry-icon"><i class="fas fa-heartbeat"></i></div>
+                <h3>Healthcare</h3>
+                <p>HIPAA-compliant websites, patient portals, telemedicine solutions, and healthcare marketing.</p>
+                <a href="/pages/services/web-design/Industry-Specific-Website/Healthcare-Websites.php" class="learn-more">Learn More</a>
             </div>
             
             <div class="industry-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="industry-icon">
-                    <i class="fas fa-building"></i>
-                </div>
-                <h4 class="industry-title">Real Estate</h4>
-                <p class="industry-text">Property listings, virtual tours, and agent management systems</p>
-                <a href="/pages/services/web-design/Industry-Specific-Website-Design/Real-Estate-Websites.php" class="secondary-button">Learn More</a>
+                <div class="industry-icon"><i class="fas fa-home"></i></div>
+                <h3>Real Estate</h3>
+                <p>Property listing platforms, virtual tours, agent websites, and real estate marketing.</p>
+                <a href="/pages/services/web-design/Industry-Specific-Website/Real-Estate-Websites.php" class="learn-more">Learn More</a>
             </div>
             
             <div class="industry-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="industry-icon">
-                    <i class="fas fa-university"></i>
-                </div>
-                <h4 class="industry-title">Finance</h4>
-                <p class="industry-text">Secure banking portals, payment systems, and financial tools</p>
-                <a href="/pages/services/web-design/Industry-Specific-Website-Design/Finance-Websites.php" class="secondary-button">Learn More</a>
+                <div class="industry-icon"><i class="fas fa-shopping-bag"></i></div>
+                <h3>E-commerce & Retail</h3>
+                <p>Online stores, inventory management, AI-powered recommendations, and e-commerce marketing.</p>
+                <a href="/pages/services/ai-services/industry-specific-ai-solutions/ai-solutions-for-e-commerce-retail.php" class="learn-more">Learn More</a>
             </div>
             
             <div class="industry-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="industry-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <h4 class="industry-title">Education</h4>
-                <p class="industry-text">Learning management systems, online courses, and student portals</p>
-                <a href="/pages/services/web-design/Industry-Specific-Website-Design/Education-Websites.php" class="secondary-button">Learn More</a>
+                <div class="industry-icon"><i class="fas fa-university"></i></div>
+                <h3>Finance</h3>
+                <p>Secure banking portals, financial tools, compliance solutions, and finance industry marketing.</p>
+                <a href="/pages/services/web-design/Industry-Specific-Website/Finance-Websites.php" class="learn-more">Learn More</a>
+            </div>
+            
+            <div class="industry-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="industry-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Education</h3>
+                <p>Learning management systems, educational websites, student portals, and e-learning platforms.</p>
+                <a href="/pages/services/web-design/Industry-Specific-Website/Education-Websites.php" class="learn-more">Learn More</a>
+            </div>
+            
+            <div class="industry-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="industry-icon"><i class="fas fa-gavel"></i></div>
+                <h3>Legal</h3>
+                <p>Professional law firm websites, client portals, case management, and legal marketing.</p>
+                <a href="/pages/services/web-design/Industry-Specific-Website/Legal-Websites.php" class="learn-more">Learn More</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Statistics Section -->
-<section class="stats-section">
-    <div class="main-container">
-        <div class="stats-grid">
-            <div class="stat-card" data-aos="fade-up">
-                <div class="stat-number">100+</div>
-                <div class="stat-title">Projects Completed</div>
-            </div>
-            
-            <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="stat-number">45+</div>
-                <div class="stat-title">Team Members</div>
-            </div>
-            
-            <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="stat-number">90%</div>
-                <div class="stat-title">Client Retention</div>
-            </div>
-            
-            <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="stat-number">5+</div>
-                <div class="stat-title">Years of Excellence</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Featured Projects Section -->
-<section class="projects-section">
-    <div class="main-container">
-        <div class="section-header">
-            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
-            <p class="section-subtitle" data-aos="fade-up">Some of our recent work across different industries</p>
-        </div>
-        
-        <div class="projects-grid">
-            <div class="project-card" data-aos="fade-up">
-                <div class="project-image">
-                    <img src="assets/images/projects/project-1.jpg" alt="E-commerce Project">
-                </div>
-                <div class="project-details">
-                    <h4 class="project-title">E-commerce Platform</h4>
-                    <p class="project-category">Shopify Development, Custom Design</p>
-                    <p class="project-description">Custom e-commerce solution with integrated inventory management system.</p>
-                    <div class="project-tags">
-                        <span class="tag">E-commerce</span>
-                        <span class="tag">Shopify</span>
-                        <span class="tag">Responsive</span>
-                    </div>
-                    <a href="#" class="secondary-button">View Case Study</a>
-                </div>
-            </div>
-            
-            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="project-image">
-                    <img src="assets/images/projects/project-2.jpg" alt="Healthcare App">
-                </div>
-                <div class="project-details">
-                    <h4 class="project-title">Healthcare Patient Portal</h4>
-                    <p class="project-category">Web Application, Mobile App</p>
-                    <p class="project-description">HIPAA-compliant patient portal with telemedicine capabilities.</p>
-                    <div class="project-tags">
-                        <span class="tag">Healthcare</span>
-                        <span class="tag">React</span>
-                        <span class="tag">Mobile App</span>
-                    </div>
-                    <a href="#" class="secondary-button">View Case Study</a>
-                </div>
-            </div>
-            
-            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="project-image">
-                    <img src="assets/images/projects/project-3.jpg" alt="AI Chatbot">
-                </div>
-                <div class="project-details">
-                    <h4 class="project-title">AI Customer Support System</h4>
-                    <p class="project-category">Conversational AI, NLP</p>
-                    <p class="project-description">Intelligent chatbot system for 24/7 customer support automation.</p>
-                    <div class="project-tags">
-                        <span class="tag">AI</span>
-                        <span class="tag">Chatbot</span>
-                        <span class="tag">NLP</span>
-                    </div>
-                    <a href="#" class="secondary-button">View Case Study</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="section-footer">
-            <a href="/pages/portfolio.php" class="primary-button">View All Projects</a>
-        </div>
-    </div>
-</section>
-
-<!-- Technologies Section -->
-<section class="tech-section">
-    <div class="main-container">
-        <div class="section-header">
-            <h2 class="section-title" data-aos="fade-up">Technologies We Use</h2>
-            <p class="section-subtitle" data-aos="fade-up">Modern tech stack to build powerful, scalable solutions</p>
-        </div>
-        
-        <div class="tech-container">
-            <div class="tech-grid">
-                <div class="tech-item" data-aos="fade-up">
-                    <div class="tech-logo">
-                        <i class="fab fa-react"></i>
-                        <h6 class="tech-name">React</h6>
-                    </div>
-                </div>
-                
-                <div class="tech-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="tech-logo">
-                        <i class="fab fa-node-js"></i>
-                        <h6 class="tech-name">Node.js</h6>
-                    </div>
-                </div>
-                
-                <div class="tech-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="tech-logo">
-                        <i class="fab fa-python"></i>
-                        <h6 class="tech-name">Python</h6>
-                    </div>
-                </div>
-                
-                <div class="tech-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="tech-logo">
-                        <i class="fab fa-aws"></i>
-                        <h6 class="tech-name">AWS</h6>
-                    </div>
-                </div>
-                
-                <div class="tech-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="tech-logo">
-                        <i class="fab fa-wordpress"></i>
-                        <h6 class="tech-name">WordPress</h6>
-                    </div>
-                </div>
-                
-                <div class="tech-item" data-aos="fade-up" data-aos-delay="500">
-                    <div class="tech-logo">
-                        <i class="fab fa-shopify"></i>
-                        <h6 class="tech-name">Shopify</h6>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="tech-grid second-row">
-                <div class="tech-item" data-aos="fade-up">
-                    <div class="tech-logo">
-                        <i class="fab fa-angular"></i>
-                        <h6 class="tech-name">Angular</h6>
-                    </div>
-                </div>
-                
-                <div class="tech-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="tech-logo">
-                        <i class="fab fa-vuejs"></i>
-                        <h6 class="tech-name">Vue.js</h6>
-                    </div>
-                </div>
-                
-                <div class="tech-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="tech-logo">
-                        <i class="fab fa-php"></i>
-                        <h6 class="tech-name">PHP</h6>
-                    </div>
-                </div>
-                
-                <div class="tech-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="tech-logo">
-                        <i class="fab fa-laravel"></i>
-                        <h6 class="tech-name">Laravel</h6>
-                    </div>
-                </div>
-                
-                <div class="tech-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="tech-logo">
-                        <i class="fas fa-database"></i>
-                        <h6 class="tech-name">MongoDB</h6>
-                    </div>
-                </div>
-                
-                <div class="tech-item" data-aos="fade-up" data-aos-delay="500">
-                    <div class="tech-logo">
-                        <i class="fab fa-android"></i>
-                        <h6 class="tech-name">Android</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Client CTA Section -->
-<section class="client-cta py-5 bg-primary text-white">
+<!-- Benefits Section -->
+<section class="benefits-section">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8 mb-4 mb-lg-0">
-                <h2 class="mb-3">Ready to Transform Your Business?</h2>
-                <p class="lead mb-0">Let's discuss how our technology solutions can help you achieve your business goals.</p>
+        <div class="section-header" data-aos="fade-up">
+            <h2>Why Clients Choose Us</h2>
+            <p class="section-lead">Measurable benefits that drive your business forward</p>
+        </div>
+        
+        <div class="benefits-grid">
+            <div class="primary-benefit" data-aos="fade-up">
+                <div class="benefit-card">
+                    <div class="benefit-icon primary-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Growth-Focused</h3>
+                    <p>We focus on delivering solutions that drive measurable business growth with clear ROI. Our strategic approach ensures that every dollar spent contributes to your bottom line.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge">Avg. 40% Conversion Increase</span>
+                        <span class="stat-badge">250% Traffic Growth</span>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-4 text-lg-end">
-                <a href="/pages/contact.php" class="btn btn-light btn-lg">Get in Touch</a>
+            
+            <div class="secondary-benefit" data-aos="fade-up" data-aos-delay="100">
+                <div class="benefit-card">
+                    <div class="benefit-icon secondary-icon"><i class="fas fa-users"></i></div>
+                    <h3>Client-Centered</h3>
+                    <p>Your goals are our priority. We maintain transparent communication and collaborative processes that ensure your vision is realized.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge secondary-badge">95% Client Satisfaction</span>
+                        <span class="stat-badge secondary-badge">92% Retention Rate</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tertiary-benefit" data-aos="fade-up" data-aos-delay="200">
+                <div class="benefit-card">
+                    <div class="benefit-icon tertiary-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Technical Excellence</h3>
+                    <p>Our team of experts brings deep technical knowledge and stays at the forefront of emerging technologies and best practices.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge tertiary-badge">50+ Certified Experts</span>
+                        <span class="stat-badge tertiary-badge">100+ Technologies</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quaternary-benefit" data-aos="fade-up" data-aos-delay="300">
+                <div class="benefit-card">
+                    <div class="benefit-icon quaternary-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Innovation & Agility</h3>
+                    <p>We embrace innovative approaches and maintain agile processes that allow us to adapt quickly to changing requirements and market conditions.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge quaternary-badge">2x Faster Delivery</span>
+                        <span class="stat-badge quaternary-badge">Continuous Innovation</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Testimonials Section -->
+<!-- Call to Action -->
+<section class="cta-section">
+    <div class="container">
+        <h2 data-aos="fade-up">Ready to Transform Your Digital Presence?</h2>
+        <p class="lead" data-aos="fade-up" data-aos-delay="100">Let's discuss how our technology solutions can help you achieve your business goals.</p>
+        <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+            <a href="/pages/contact.php" class="cta-btn">Schedule a Free Consultation</a>
+            <a href="/pages/services.php" class="btn-outline">Explore Our Services</a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
 <section class="testimonials-section">
-    <div class="main-container">
-        <div class="section-header">
-            <h2 class="section-title" data-aos="fade-up">Client Testimonials</h2>
-            <p class="section-subtitle" data-aos="fade-up">What our clients say about working with us</p>
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Client Success Stories</h2>
+            <p class="section-lead">Hear from businesses we've helped transform</p>
         </div>
         
         <div class="testimonials-carousel">
-            <div class="testimonials-navigation">
-                <button class="nav-button prev-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-                </button>
-                <button class="nav-button next-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-                </button>
+            <div class="testimonial-card" data-aos="fade-up">
+                <div class="testimonial-content">
+                    <p>"StartupAI completely transformed our online presence. Their web design team created a stunning, conversion-focused website that has increased our leads by 75%. Their strategic approach and attention to detail were impressive."</p>
+                    <div class="testimonial-author">
+                        <div class="author-name">Jennifer Roberts</div>
+                        <div class="author-title">Marketing Director, TechInnovate</div>
+                    </div>
+                </div>
             </div>
             
-            <div class="testimonials-track">
-                <!-- Web Design Testimonial -->
-                <div class="testimonial-card">
-                    <div class="category">Web Design</div>
-                    <div class="quote-mark">&ldquo;&ldquo;</div>
-                    <div class="testimonial-text">
-                        Our website redesign exceeded all expectations. The StartupAI team delivered a beautiful, responsive design that perfectly captures our brand identity. The user experience is outstanding and we've seen a 45% increase in conversions since launch.
-                    </div>
-                    <div class="author-info">
-                        <div class="author-name">Jennifer Wilson</div>
-                        <div class="author-title">Marketing Director, GreenTech Solutions</div>
-                    </div>
-                </div>
-                
-                <!-- App Development Testimonial -->
-                <div class="testimonial-card">
-                    <div class="category">App Development</div>
-                    <div class="quote-mark">&ldquo;&ldquo;</div>
-                    <div class="testimonial-text">
-                        StartupAI developed a custom mobile app that transformed our customer experience. The app is intuitive, fast, and has all the features we needed. Our users love the seamless experience, and we've seen a significant increase in customer engagement since launch.
-                    </div>
-                    <div class="author-info">
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="testimonial-content">
+                    <p>"The mobile app developed by StartupAI has revolutionized how we connect with customers. Their development team delivered a feature-rich, user-friendly app on time and within budget. Our user engagement has increased by 150%."</p>
+                    <div class="testimonial-author">
                         <div class="author-name">Michael Chen</div>
-                        <div class="author-title">CTO, HealthFirst Technologies</div>
+                        <div class="author-title">CEO, HealthConnect</div>
                     </div>
                 </div>
-                
-                <!-- AI Services Testimonial -->
-                <div class="testimonial-card">
-                    <div class="category">AI Services</div>
-                    <div class="quote-mark">&ldquo;&ldquo;</div>
-                    <div class="testimonial-text">
-                        The AI chatbot solution developed by StartupAI has revolutionized our customer support. It handles over 70% of routine inquiries automatically, reducing response times by 85% and allowing our support team to focus on complex issues. Excellent ROI!
-                    </div>
-                    <div class="author-info">
+            </div>
+            
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-content">
+                    <p>"The AI chatbot solution from StartupAI has transformed our customer service. It handles 70% of inquiries automatically, reducing response times and allowing our team to focus on complex issues. The ROI has been exceptional."</p>
+                    <div class="testimonial-author">
                         <div class="author-name">Sarah Johnson</div>
-                        <div class="author-title">Customer Experience Manager, TechSupport Inc.</div>
-                    </div>
-                </div>
-                
-                <!-- Digital Marketing Testimonial -->
-                <div class="testimonial-card">
-                    <div class="category">Digital Marketing</div>
-                    <div class="quote-mark">&ldquo;&ldquo;</div>
-                    <div class="testimonial-text">
-                        StartupAI's digital marketing strategy helped us increase organic traffic by 215% in just 6 months. Their SEO and content marketing approach was highly targeted and effective. We're now ranking in the top 3 results for all our key terms.
-                    </div>
-                    <div class="author-info">
-                        <div class="author-name">David Rodriguez</div>
-                        <div class="author-title">Growth Director, Elevate Financial</div>
+                        <div class="author-title">Customer Success Manager, RetailPlus</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
- 
 </section>
 
-<?php
-// Include footer
-include_once 'components/footer.php';
-?> 
+<!-- Final CTA -->
+<section class="final-cta">
+    <div class="container">
+        <div class="cta-box" data-aos="fade-up">
+            <h2>Let's Build Something Amazing Together</h2>
+            <p>Ready to discuss your project? Our experts are here to help you define, design, and develop the perfect solution.</p>
+            <a href="/pages/contact.php" class="primary-button">Contact Us Today</a>
+        </div>
+    </div>
+</section>
+
+<?php include_once 'components/footer.php'; ?>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize AOS
+    AOS.init({
+        duration: 800,
+        easing: 'ease-out',
+        once: true
+    });
+    
+    // Add any additional JavaScript functionality here
+});
+</script> 
