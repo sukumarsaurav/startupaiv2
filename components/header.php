@@ -63,7 +63,7 @@
     <!-- Side Drawer -->
     <div class="side-drawer">
         <div class="drawer-header">
-            <a href="/index" class="drawer-logo">NeoWebX</a>
+            <a href="/" class="drawer-logo">NeoWebX</a>
             <button class="drawer-close"><i class="fas fa-times"></i></button>
         </div>
         <div class="drawer-body">
@@ -257,7 +257,7 @@
                 
                 <a href="/pages/about" class="drawer-item">About Us</a>
                 <a href="/pages/blog" class="drawer-item">Blog</a>
-                <a href="/pages/contact" class="drawer-item">Contact</a>
+                <a href="/pages/contact.php" class="drawer-item">Contact</a>
             </nav>
         </div>
     </div>
@@ -268,7 +268,7 @@
             <button class="navbar-toggler" id="drawerToggle">
                 <i class="fas fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="/index">
+            <a class="navbar-brand" href="/">
                 <img src="/assets/svg/logo.svg" alt="NeoWebX Logo" style="height: 50px;">
             </a>
             <div class="navbar-collapse">
@@ -444,7 +444,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/pages/contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/contact.php">Contact</a></li>
                 </ul>
             </div>
         </div>
