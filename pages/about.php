@@ -9,7 +9,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 // Set variables for header
 $pageTitle = 'About Us - NeoWebX';
-$pageDescription = 'Learn about StartupAI - Your trusted technology partner for digital transformation';
+$pageDescription = 'Learn about NeoWebX - Your trusted technology partner for digital transformation';
 $pageKeywords = 'about us, startup, technology partner, web development, AI solutions';
 
 // SEO Data
@@ -27,7 +27,7 @@ include_once '../components/header.php';
     <div class="container">
         <div class="hero-grid">
             <div class="hero-content" data-aos="fade-right">
-                <h1>About <span class="highlight">StartupAI</span></h1>
+                <h1>About <span class="highlight">NeoWebX</span></h1>
                 <p class="lead">Your trusted technology partner for digital transformation and growth</p>
             </div>
             <div class="hero-image" data-aos="fade-left">
@@ -52,7 +52,7 @@ include_once '../components/header.php';
             <div class="overview-card primary-card" data-aos="fade-right" data-aos-duration="800">
                 <div class="card-decoration"></div>
                 <h3>Our Mission & Vision</h3>
-                <p>StartupAI was founded with a vision to help startups and businesses leverage the power of technology to achieve their goals. We understand the challenges that startups face in today's competitive landscape.</p>
+                <p>NeoWebX was founded with a vision to help startups and businesses leverage the power of technology to achieve their goals. We understand the challenges that startups face in today's competitive landscape.</p>
                 <p>Our team of experts brings together years of experience in web development, AI solutions, and digital marketing to provide comprehensive solutions that drive growth and success.</p>
             </div>
             

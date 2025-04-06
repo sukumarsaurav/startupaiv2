@@ -9,7 +9,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 // Set variables for header
 $pageTitle = 'Contact Us - NeoWebX';
-$pageDescription = 'Get in touch with StartupAI - Your technology partner for digital transformation and growth';
+$pageDescription = 'Get in touch with NeoWebX - Your technology partner for digital transformation and growth';
 $pageKeywords = 'contact us, get in touch, startup, technology partner, web development, AI solutions';
 
 // SEO Data
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $formError = 'Please enter a valid email address.';
     } else {
         // Prepare email content
-        $to = 'info@startupai.com'; // Replace with your email
+        $to = 'info@neowebx.com'; // Replace with your email
         $subject = 'New Contact Form Submission from ' . $name;
         $emailBody = "Name: $name\n";
         $emailBody .= "Email: $email\n";
@@ -80,7 +80,7 @@ include_once '../components/header.php';
                 </div>
             </div>
             <div class="hero-image" data-aos="fade-left">
-                <img src="../assets/images/contact-us-startupai.png" alt="Contact Us" class="floating-image">
+                <img src="../assets/images/contact-us-neowebx.png" alt="Contact Us" class="floating-image">
                 <div class="image-glow"></div>
                 <div class="decoration-circle-1"></div>
                 <div class="decoration-circle-2"></div>
@@ -116,7 +116,7 @@ include_once '../components/header.php';
                     </div>
                     <h3>Email Us</h3>
                     <p>We'll respond within 24 hours</p>
-                    <a href="mailto:info@startupai.com" class="contact-link">info@startupai.com</a>
+                    <a href="mailto:info@neowebx.com" class="contact-link">info@neowebx.com</a>
                 </div>
             </div>
             <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
@@ -234,7 +234,7 @@ include_once '../components/header.php';
                 style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy"
-                title="StartupAI Office Location">
+                title="NeoWebX Office Location">
             </iframe>
         </div>
     </section>

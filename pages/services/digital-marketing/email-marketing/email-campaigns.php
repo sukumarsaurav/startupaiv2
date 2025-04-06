@@ -36,7 +36,7 @@ require_once '../../../../components/header.php';
                 </div>
             </div>
             <div class="hero-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
-                <img src="/assets/images/services/email-marketing.svg" alt="Email Campaign Services" class="floating-image">
+                <img src="/assets/svg/email-marketing.svg" alt="Email Campaign Services" class="floating-image">
             </div>
         </div>
     </div>

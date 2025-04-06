@@ -41,7 +41,7 @@ if (empty($error_message)) {
 }
 
 // Set page variables
-$pageTitle = "Error {$error_code} - {$error_title} | StartupAI";
+$pageTitle = "Error {$error_code} - {$error_title} | NeoWebX";
 $pageDescription = "Error {$error_code} - {$error_title}";
 $pageKeywords = "error, {$error_code}, {$error_title}";
 

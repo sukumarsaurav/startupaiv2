@@ -28,7 +28,7 @@ if ($current_category) {
 $seo_data = [
     'title' => 'Blog - Latest Insights on Digital Marketing & Web Development | NeoWebX',
     'description' => 'Explore our latest articles on digital marketing, web development, AI, and business growth strategies. Expert insights to help your business succeed online.',
-    'keywords' => 'digital marketing blog, web development articles, business growth tips, AI insights, StartupAI blog'
+    'keywords' => 'digital marketing blog, web development articles, business growth tips, AI insights, NeoWebX blog'
 ];
 
 require_once '../components/header.php';

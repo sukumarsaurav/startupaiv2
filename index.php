@@ -38,7 +38,7 @@ include_once 'components/header.php';
             </div>
             <div class="hero-image" data-aos="fade-left">
                 <div class="image-glow"></div>
-                <img src="assets/images/hero-image.webp" alt="StartupAI Digital Transformation" class="floating-image">
+                <img src="assets/svg/google-ads.svg" alt="NeoWebX Digital Transformation" class="floating-image">
                 <div class="decoration-circle-1"></div>
                 <div class="decoration-circle-2"></div>
             </div>
@@ -50,7 +50,7 @@ include_once 'components/header.php';
 <section class="overview-section">
     <div class="container">
         <div class="section-header" data-aos="fade-up">
-            <h2>Why Choose StartupAI</h2>
+            <h2>Why Choose NeoWebX</h2>
             <p class="section-lead">We combine technical excellence with strategic thinking to deliver solutions that drive real business results.</p>
         </div>
         
@@ -492,7 +492,7 @@ include_once 'components/header.php';
         <div class="testimonials-carousel">
             <div class="testimonial-card" data-aos="fade-up">
                 <div class="testimonial-content">
-                    <p>"StartupAI completely transformed our online presence. Their web design team created a stunning, conversion-focused website that has increased our leads by 75%. Their strategic approach and attention to detail were impressive."</p>
+                    <p>"NeoWebX completely transformed our online presence. Their web design team created a stunning, conversion-focused website that has increased our leads by 75%. Their strategic approach and attention to detail were impressive."</p>
                     <div class="testimonial-author">
                         <div class="author-name">Jennifer Roberts</div>
                         <div class="author-title">Marketing Director, TechInnovate</div>
@@ -502,7 +502,7 @@ include_once 'components/header.php';
             
             <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="testimonial-content">
-                    <p>"The mobile app developed by StartupAI has revolutionized how we connect with customers. Their development team delivered a feature-rich, user-friendly app on time and within budget. Our user engagement has increased by 150%."</p>
+                    <p>"The mobile app developed by NeoWebX has revolutionized how we connect with customers. Their development team delivered a feature-rich, user-friendly app on time and within budget. Our user engagement has increased by 150%."</p>
                     <div class="testimonial-author">
                         <div class="author-name">Michael Chen</div>
                         <div class="author-title">CEO, HealthConnect</div>
@@ -512,7 +512,7 @@ include_once 'components/header.php';
             
             <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="testimonial-content">
-                    <p>"The AI chatbot solution from StartupAI has transformed our customer service. It handles 70% of inquiries automatically, reducing response times and allowing our team to focus on complex issues. The ROI has been exceptional."</p>
+                    <p>"The AI chatbot solution from NeoWebX has transformed our customer service. It handles 70% of inquiries automatically, reducing response times and allowing our team to focus on complex issues. The ROI has been exceptional."</p>
                     <div class="testimonial-author">
                         <div class="author-name">Sarah Johnson</div>
                         <div class="author-title">Customer Success Manager, RetailPlus</div>

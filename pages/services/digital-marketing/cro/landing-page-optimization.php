@@ -34,7 +34,7 @@ require_once '../../../../components/header.php';
                 </div>
             </div>
             <div class="hero-image" data-aos="fade-left">
-                <img src="/assets/images/services/landing-page-optimization.svg" alt="Landing Page Optimization" class="floating-image">
+                <img src="/assets/svg/landing-page-optimization.svg" alt="Landing Page Optimization" class="floating-image">
                 <div class="image-glow"></div>
                 <div class="decoration-circle-1"></div>
                 <div class="decoration-circle-2"></div>
