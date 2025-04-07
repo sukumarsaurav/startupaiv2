@@ -17,6 +17,47 @@
     <title><?php echo isset($pageTitle) ? $pageTitle : 'NeoWebX'; ?></title>
     <meta name="description" content="<?php echo isset($pageDescription) ? $pageDescription : 'Default site description'; ?>">
     
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>">
+    <meta property="og:title" content="<?php echo isset($pageTitle) ? htmlspecialchars($pageTitle) : 'NeoWebX'; ?>">
+    <meta property="og:description" content="<?php echo htmlspecialchars($seo_data['description']); ?>">
+    <meta property="og:image" content="<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]"; ?>/assets/images/neowebx-social-share.jpg">
+    <meta property="og:site_name" content="NeoWebX">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@NeoWebX">
+    <meta name="twitter:title" content="<?php echo isset($pageTitle) ? htmlspecialchars($pageTitle) : 'NeoWebX'; ?>">
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($seo_data['description']); ?>">
+    <meta name="twitter:image" content="<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]"; ?>/assets/images/neowebx-social-share.jpg">
+    
+    <!-- Site Verification -->
+    <meta name="facebook-domain-verification" content="add-your-facebook-verification-code">
+    <meta name="google-site-verification" content="add-your-google-verification-code">
+    <meta name="pinterest-site-verification" content="add-your-pinterest-verification-code">
+    
+    <!-- Website info -->
+    <link rel="canonical" href="<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>">
+    
+    <!-- Social Profiles -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "NeoWebX",
+      "url": "<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]"; ?>",
+      "logo": "<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]"; ?>/assets/images/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61574724826323",
+        "https://x.com/NeoWebX",
+        "https://www.linkedin.com/in/neowebx/",
+        "https://www.instagram.com/neowebx?igsh=MXM0NjN4eTgxN3RvMg==",
+        "https://www.youtube.com/@NeoWebX"
+      ]
+    }
+    </script>
+    
     <!-- Core CSS -->
    
     <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />

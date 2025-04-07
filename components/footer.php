@@ -11,11 +11,11 @@
                 Empowering businesses with innovative web design, app development, AI services, and digital marketing solutions.
             </p> -->
             <div class="social-icons">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61574724826323" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/NeoWebX" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/neowebx/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/neowebx?igsh=MXM0NjN4eTgxN3RvMg==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@NeoWebX" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
     </div>
@@ -108,7 +108,7 @@
             <p class="copyright">© <span id="current-year"></span> NeoWebX. All rights reserved.</p>
             <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
             <div class="footer-bottom-links">
-                <a href="/pages/sitemap.php">Sitemap</a>
+                <a href="/sitemap.php">Sitemap</a>
                 <a href="/pages/legal/accessibility.php">Accessibility</a>
                 <a href="/pages/legal/cookies.php">Cookie Policy</a>
                 <a href="/pages/legal/disclaimer.php">Disclaimer</a>

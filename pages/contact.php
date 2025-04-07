@@ -89,70 +89,82 @@ include_once '../components/header.php';
     </div>
 </section>
 
-<!-- Contact Information -->
-<section id="contact-info" class="features-section">
-    <div class="container">
-        <div class="section-header">
-            <div class="features-header" data-aos="fade-up">
-                <h2>Get In Touch</h2>
-                <p class="lead">Multiple ways to connect with our team</p>
-            </div>
-        </div>
-        <div class="features-grid">
-            <div class="feature-item" data-aos="fade-up">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <h3>Call Us</h3>
-                    <p>Speak directly with our team</p>
-                    <a href="tel:+11234567890" class="contact-link">+1 (123) 456-7890</a>
-                </div>
-            </div>
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email Us</h3>
-                    <p>We'll respond within 24 hours</p>
-                    <a href="mailto:info@neowebx.com" class="contact-link">info@neowebx.com</a>
-                </div>
-            </div>
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3>Visit Us</h3>
-                    <p>Our office location</p>
-                    <address class="contact-address">
-                        123 Innovation Drive<br>
-                        Tech Park, Suite 101<br>
-                        San Francisco, CA 94107
-                    </address>
-                </div>
-            </div>
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Business Hours</h3>
-                    <p>When we're available</p>
-                    <div class="hours">
-                        <p>Monday - Friday: 9am - 6pm</p>
-                        <p>Saturday - Sunday: Closed</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Form and Map Container -->
 <div class="form-map-container container">
-    <!-- Contact Form -->
+    <!-- Combined Contact Information Card (Now on the left) -->
+    <section class="contact-info-card-section">
+        <div class="contact-card" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Contact Information</h2>
+                <p class="section-lead">Connect with our team</p>
+            </div>
+            
+            <div class="contact-details">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Call Us</h4>
+                        <p>Speak directly with our team</p>
+                        <a href="tel:+91-9991289245" class="contact-link">+91-9991289245</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Email Us</h4>
+                        <p>We'll respond within 24 hours</p>
+                        <a href="mailto:info@neowebx.com" class="contact-link">info@neowebx.com</a>
+                    </div>
+                </div>
+<!--                 
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Visit Us</h4>
+                        <p>Our office location</p>
+                        <address class="contact-address">
+                            123 Innovation Drive<br>
+                            Tech Park, Suite 101<br>
+                            San Francisco, CA 94107
+                        </address>
+                    </div>
+                </div>
+                 -->
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Business Hours</h4>
+                        <p>When we're available</p>
+                        <div class="hours">
+                            <p>Monday - Friday: 9am - 6pm</p>
+                            <p>Saturday - Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61574724826323" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/NeoWebX" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/neowebx/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/neowebx?igsh=MXM0NjN4eTgxN3RvMg==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form (Now on the right) -->
     <section id="contact-form" class="overview-section contact-form-section">
         <div class="section-header" data-aos="fade-up">
             <h2>Send Us a Message</h2>
@@ -222,21 +234,6 @@ include_once '../components/header.php';
             </form>
         </div>
         <?php endif; ?>
-    </section>
-
-    <!-- Map Section -->
-    <section class="map-section">
-        <div class="map-container" data-aos="fade-up">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50487.35386508014!2d-122.4726194!3d37.7577627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1625764215714!5m2!1sen!2sus" 
-                width="100%" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy"
-                title="NeoWebX Office Location">
-            </iframe>
-        </div>
     </section>
 </div>
 

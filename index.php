@@ -55,7 +55,7 @@ include_once 'components/header.php';
         </div>
         
         <div class="overview-grid">
-            <div class="primary-card" data-aos="fade-right">
+            <div class="overview-card primary-card" data-aos="fade-right">
                 <div class="card-decoration"></div>
                 <h3>Our Approach</h3>
                 <p>We're not just developers or designers – we're strategic partners invested in your success. Our collaborative approach ensures that every solution is:</p>
@@ -67,7 +67,7 @@ include_once 'components/header.php';
                 </ul>
             </div>
             
-            <div class="secondary-card" data-aos="fade-left">
+            <div class="overview-card secondary-card" data-aos="fade-left">
                 <div class="card-decoration"></div>
                 <h3>Our Difference</h3>
                 <p>What sets us apart from other technology partners:</p>
