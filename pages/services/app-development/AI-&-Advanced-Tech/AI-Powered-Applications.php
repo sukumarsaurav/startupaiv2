@@ -15,9 +15,6 @@ $seo_data = [
     'keywords' => 'AI applications, artificial intelligence development, machine learning, predictive analytics, AI solutions, deep learning, computer vision, natural language processing, NLP, AI integration'
 ];
 
-// Get Why Hire Us content for AI-Powered Applications
-$why_hire_us = getWhyHireUsContent('ai-powered-applications');
-
 require_once '../../../../components/header.php';
 ?>
 
@@ -93,9 +90,43 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Why Hire Us Section -->
-<?php if (!empty($why_hire_us)): ?>
-    <?php echo $why_hire_us; ?>
-<?php endif; ?>
+<section class="why-hire-us">
+    <div class="container">
+        <div class="section-header">
+            <h2>Why Choose NeoWebX for AI-Powered Applications</h2>
+            <p class="lead">What sets our AI development services apart</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-item" data-aos="fade-up">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Innovative Solutions</h3>
+                    <p>We leverage the latest AI technologies to create solutions that drive efficiency and innovation.</p>
+                </div>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Tailored Development</h3>
+                    <p>Our AI applications are customized to meet your specific business needs and challenges.</p>
+                </div>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Ethical AI Practices</h3>
+                    <p>We prioritize ethical considerations in AI development, ensuring fairness and transparency.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Services Section -->
 <section class="services-section">

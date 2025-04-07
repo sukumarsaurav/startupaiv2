@@ -15,9 +15,6 @@ $seo_data = [
     'keywords' => 'crm solutions, erp development, business management systems, customer relationship management, enterprise resource planning, custom crm, custom erp, business process automation'
 ];
 
-// Get Why Hire Us content for CRM & ERP Solutions
-$why_hire_us = getWhyHireUsContent('crm-erp-solutions');
-
 require_once '../../../../components/header.php';
 ?>
 
@@ -93,7 +90,43 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Why Hire Us Section -->
-<?php renderWhyHireUs($why_hire_us['service_name'], $why_hire_us['reasons']); ?>
+<section class="why-hire-us">
+    <div class="container">
+        <div class="section-header">
+            <h2>Why Choose NeoWebX for CRM & ERP Solutions</h2>
+            <p class="lead">What sets our CRM and ERP services apart</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-item" data-aos="fade-up">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Customized Solutions</h3>
+                    <p>We develop tailored CRM and ERP systems that fit your unique business processes.</p>
+                </div>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data-Driven Insights</h3>
+                    <p>Our systems provide actionable insights to enhance decision-making and operational efficiency.</p>
+                </div>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Secure and Compliant</h3>
+                    <p>We ensure that your CRM and ERP solutions are secure and comply with industry standards.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Process -->
 <section class="process-section">

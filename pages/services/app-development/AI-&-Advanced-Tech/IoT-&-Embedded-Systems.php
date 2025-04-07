@@ -16,8 +16,7 @@ $seo_data = [
     'keywords' => 'IoT development, embedded systems, Internet of Things, IoT consulting, smart devices, connected devices, IoT architecture, edge computing, sensor networks, IoT security'
 ];
 
-// Get Why Hire Us content for IoT & Embedded Systems
-$why_hire_us = getWhyHireUsContent('iot-embedded-systems');
+
 
 require_once '../../../../components/header.php';
 ?>
@@ -94,7 +93,43 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Why Hire Us Section -->
-<?php renderWhyHireUs($why_hire_us['service_name'], $why_hire_us['reasons']); ?>
+<section class="why-hire-us">
+    <div class="container">
+        <div class="section-header">
+            <h2>Why Choose NeoWebX for IoT & Embedded Systems</h2>
+            <p class="lead">What sets our IoT solutions apart</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-item" data-aos="fade-up">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Innovative Connectivity</h3>
+                    <p>We create IoT solutions that connect devices seamlessly and securely.</p>
+                </div>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Robust Security</h3>
+                    <p>Our IoT systems are designed with security as a top priority to protect your data.</p>
+                </div>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Scalable Solutions</h3>
+                    <p>We build scalable IoT systems that grow with your business needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Services Section -->
 <section class="services-section">
