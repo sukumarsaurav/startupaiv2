@@ -2,551 +2,440 @@
 // Define base path to allow direct script access
 define('BASEPATH', true);
 
-require_once '../../../../config/database.php';
-require_once '../../../../config/why-hire-us.php';
-require_once '../../../../assets/templates/why-hire-us-section.php';
+require_once '../../../../includes/config.php';
 
-// Get Why Hire Us content for Modernizing Old Websites
-$why_hire_us = getWhyHireUsContent('modernizing-old-websites');
+// Page specific content
+$pageTitle = "Website Modernization & Redesign Services | NeoWebX";
+$pageDescription = "Transform your outdated website into a modern, responsive, and high-performing digital experience. Our website modernization services breathe new life into legacy websites.";
+$serviceName = "Modernizing Old Websites";
+$serviceSlug = "modernizing-old-websites";
+
+// SEO Data
+$seo_data = [
+    'description' => $pageDescription,
+    'keywords' => 'website modernization, legacy website upgrade, website redesign, outdated website, responsive design, website facelift, modern website, website upgrade, site migration'
+];
 
 require_once '../../../../components/header.php';
 ?>
 
-<!-- Page Header -->
-<header class="page-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="fw-bold" data-aos="fade-up">Modernizing Old Websites</h1>
-                <p class="lead" data-aos="fade-up" data-aos-delay="100">
-                    Transform outdated sites into contemporary, high-performing digital experiences
-                </p>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-blob-1"></div>
+            <div class="hero-blob-2"></div>
+            
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                        <h1>Website <span class="highlight">Modernization</span></h1>
+                        <p class="lead">Transform your outdated website into a modern, responsive digital experience</p>
+                        <div class="hero-buttons">
+                            <a href="/pages/contact.php" class="btn btn-primary">Modernize Your Website</a>
+                            <a href="/portfolio" class="btn btn-outline">View Our Work</a>
+                        </div>
+                    </div>
+                    <div class="hero-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="image-glow"></div>
+                        <img src="/assets/images/services/website-modernization.svg" alt="Website Modernization" class="floating-image">
+                        <div class="decoration-circle-1"></div>
+                        <div class="decoration-circle-2"></div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
+        </section>
 
-<!-- Service Overview -->
-<section class="service-overview py-5">
-    <div class="service-container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-                <img src="/assets/images/services/website-modernization.svg" alt="Website Modernization" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-lg-6" data-aos="fade-left">
-                <h2 class="mb-4">Website Modernization Services</h2>
-                <p>
-                    Our website modernization services breathe new life into aging digital properties, transforming outdated sites into contemporary, competitive online experiences. We preserve what works while implementing modern design standards, updated technologies, and performance improvements. Whether your site is functionally obsolete, visually dated, or failing to meet user expectations, our strategic modernization approach delivers results without starting from scratch.
-                </p>
-                <div class="features mt-4">
-                    <div class="feature d-flex align-items-start mb-3">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-paint-brush text-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Visual Refreshing</h5>
-                            <p>Updated aesthetics with modern design trends, typography, and visual elements.</p>
-                        </div>
+        <!-- Service Overview Section -->
+        <section class="overview-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Breathe New Life Into Your Legacy Website</h2>
+                    <p class="section-lead">Modernize without starting from scratch</p>
+                </div>
+                
+                <div class="overview-grid">
+                    <div class="overview-card primary-card" data-aos="fade-right" data-aos-duration="800">
+                        <div class="card-decoration"></div>
+                        <h3>Why Modernize Your Website?</h3>
+                        <p>Websites that were cutting-edge just a few years ago can quickly become outdated in today's rapidly evolving digital landscape. An outdated website not only affects your brand perception but can also impact your search rankings, user engagement, and conversion rates.</p>
+                        <p>Website modernization transforms your existing site into a contemporary digital experience without losing valuable content and SEO equity you've built over time. Our approach focuses on preserving what works while upgrading design, functionality, and performance to meet current standards and user expectations.</p>
                     </div>
-                    <div class="feature d-flex align-items-start mb-3">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-code text-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Technology Upgrades</h5>
-                            <p>Implementing current frameworks, CMS versions, and development standards.</p>
-                        </div>
-                    </div>
-                    <div class="feature d-flex align-items-start mb-3">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-mobile-alt text-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Responsive Transformation</h5>
-                            <p>Adapting fixed layouts to function flawlessly across all modern devices.</p>
-                        </div>
-                    </div>
-                    <div class="feature d-flex align-items-start">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-tachometer-alt text-primary"></i>
-                        </div>
-                        <div>
-                            <h5>Performance Optimization</h5>
-                            <p>Enhancing speed, user experience, and search engine compatibility.</p>
-                        </div>
+                    
+                    <div class="overview-card secondary-card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                        <div class="card-decoration"></div>
+                        <h3>Our Modernization Expertise</h3>
+                        <p>Our team specializes in transforming outdated websites while preserving their valuable assets. We analyze your current site architecture, content, and performance metrics to develop a modernization strategy that addresses key pain points while building on existing strengths.</p>
+                        <p>With extensive experience across various platforms and technologies, we can tackle modernization projects of any complexity—from refreshing visual design and implementing responsive layouts to migrating to modern content management systems and integrating new functionality. Our work results in websites that look contemporary, perform exceptionally, and provide intuitive user experiences.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Why Hire Us Section -->
-<?php renderWhyHireUs($why_hire_us['service_name'], $why_hire_us['reasons']); ?>
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="services-header" data-aos="fade-up">
+                        <h2>Our Website Modernization Services</h2>
+                        <p class="lead">Comprehensive solutions to revitalize your digital presence</p>
+                    </div>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-item" data-aos="fade-up">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3>Visual Design Refresh</h3>
+                            <p>Update your website's aesthetic with modern design elements while maintaining brand consistency.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Contemporary visual design</li>
+                                <li><i class="fas fa-check"></i> Modern typography</li>
+                                <li><i class="fas fa-check"></i> Updated color schemes</li>
+                                <li><i class="fas fa-check"></i> Improved imagery</li>
+                                <li><i class="fas fa-check"></i> Brand consistency</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Responsive Implementation</h3>
+                            <p>Transform your desktop-only website into a fully responsive experience that works flawlessly across all devices.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Mobile-friendly layouts</li>
+                                <li><i class="fas fa-check"></i> Touch-optimized interfaces</li>
+                                <li><i class="fas fa-check"></i> Cross-device compatibility</li>
+                                <li><i class="fas fa-check"></i> Adaptive content display</li>
+                                <li><i class="fas fa-check"></i> Mobile performance optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <h3>Platform Migration</h3>
+                            <p>Migrate from legacy platforms to modern, secure content management systems without losing content or SEO value.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Content migration</li>
+                                <li><i class="fas fa-check"></i> URL structure preservation</li>
+                                <li><i class="fas fa-check"></i> SEO transition strategy</li>
+                                <li><i class="fas fa-check"></i> Database restructuring</li>
+                                <li><i class="fas fa-check"></i> Custom functionality transfer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- Process -->
-<section class="process-section py-5 bg-light">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Our Website Modernization Process</h2>
-                <p class="section-description">
-                    A methodical approach to transforming legacy websites
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-search fa-3x text-primary"></i>
+        <!-- Implementation Process Section -->
+        <section class="process-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Our Website Modernization Process</h2>
+                    <p class="section-lead">A methodical approach to transforming outdated websites</p>
+                </div>
+                
+                <div class="process-timeline">
+                    <!-- Timeline Line -->
+                    <div class="timeline-line"></div>
+                    
+                    <div class="process-grid">
+                        <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800">
+                            <div class="process-number">1</div>
+                            <div class="process-card">
+                                <h3>Comprehensive Audit</h3>
+                                <p>We analyze your existing website to identify strengths, weaknesses, and opportunities for improvement.</p>
+                                <ul class="process-list">
+                                    <li>Design evaluation</li>
+                                    <li>Technical assessment</li>
+                                    <li>Content inventory</li>
+                                    <li>Performance analysis</li>
+                                    <li>SEO evaluation</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            <div class="process-number">2</div>
+                            <div class="process-card">
+                                <h3>Strategic Planning</h3>
+                                <p>We develop a detailed modernization strategy that addresses key issues while preserving valuable assets.</p>
+                                <ul class="process-list">
+                                    <li>Modernization roadmap</li>
+                                    <li>Technology recommendations</li>
+                                    <li>UX improvement plan</li>
+                                    <li>Content migration strategy</li>
+                                    <li>SEO preservation plan</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                            <div class="process-number">3</div>
+                            <div class="process-card">
+                                <h3>Design & Development</h3>
+                                <p>Our team implements the modernization strategy with careful attention to both aesthetics and functionality.</p>
+                                <ul class="process-list">
+                                    <li>Visual design refresh</li>
+                                    <li>Responsive implementation</li>
+                                    <li>Frontend development</li>
+                                    <li>Backend modernization</li>
+                                    <li>Content migration</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="process-card-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                            <div class="process-number">4</div>
+                            <div class="process-card">
+                                <h3>Testing & Launch</h3>
+                                <p>We thoroughly test your modernized website before implementing a seamless transition strategy.</p>
+                                <ul class="process-list">
+                                    <li>Cross-browser testing</li>
+                                    <li>Responsive testing</li>
+                                    <li>Performance validation</li>
+                                    <li>SEO verification</li>
+                                    <li>Launch & post-launch support</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <h4>Comprehensive Assessment</h4>
-                    <p>We analyze your current site architecture, content, design, technology stack, and performance metrics to identify strengths and areas for improvement.</p>
                 </div>
             </div>
-            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-clipboard-list fa-3x text-primary"></i>
-                    </div>
-                    <h4>Modernization Strategy</h4>
-                    <p>We develop a prioritized plan addressing design, technology, content, and functionality updates while preserving valuable existing assets.</p>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-sync-alt fa-3x text-primary"></i>
-                    </div>
-                    <h4>Implementation</h4>
-                    <p>We execute updates systematically, ensuring continuity of business operations and minimal disruption to users and search rankings.</p>
-                </div>
-            </div>
-            <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
-                <div class="process-step text-center p-4 h-100 bg-white rounded shadow-sm">
-                    <div class="process-icon mb-3">
-                        <i class="fas fa-rocket fa-3x text-primary"></i>
-                    </div>
-                    <h4>Launch & Optimization</h4>
-                    <p>We deploy your modernized site with thorough testing and establish ongoing monitoring to ensure optimal performance and results.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Modernization Elements -->
-<section class="modernization-elements-section py-5">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Key Modernization Elements</h2>
-                <p class="section-description">
-                    Essential components of our website modernization approach
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="element-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="element-icon mb-3">
-                        <i class="fas fa-desktop fa-2x text-primary"></i>
+        <!-- Technologies Section -->
+        <section class="platforms-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="platforms-header" data-aos="fade-up">
+                        <h2>Modern Web Technologies</h2>
+                        <p class="lead">Advanced technologies we implement in website modernization projects</p>
                     </div>
-                    <h4>Design Modernization</h4>
-                    <p>Outdated visual designs can make even technically sound websites seem obsolete. Our design modernization includes:</p>
-                    <ul class="mt-3">
-                        <li>Contemporary aesthetic updates</li>
-                        <li>Modern typography systems</li>
-                        <li>Updated color schemes</li>
-                        <li>Enhanced visual hierarchy</li>
-                        <li>Improved whitespace utilization</li>
-                        <li>Modern UI component styling</li>
-                    </ul>
+                </div>
+                
+                <div class="platforms-grid">
+                    <div class="platform-item" data-aos="fade-up">
+                        <div class="platform-card">
+                            <h3>Frontend Technologies</h3>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3 & Advanced Animations</li>
+                                <li>Modern JavaScript (ES6+)</li>
+                                <li>React/Vue/Angular</li>
+                                <li>Progressive Web Apps</li>
+                                <li>Responsive Frameworks</li>
+                                <li>WebP & Next-Gen Formats</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="platform-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="platform-card">
+                            <h3>Modern CMS Platforms</h3>
+                            <ul>
+                                <li>WordPress (Latest)</li>
+                                <li>Drupal 9/10</li>
+                                <li>Headless CMS Options</li>
+                                <li>Jamstack Architecture</li>
+                                <li>Static Site Generators</li>
+                                <li>E-commerce Platforms</li>
+                                <li>Custom CMS Solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="platform-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="platform-card">
+                            <h3>Performance Technologies</h3>
+                            <ul>
+                                <li>CDN Integration</li>
+                                <li>Advanced Caching</li>
+                                <li>Lazy Loading</li>
+                                <li>Modern Image Formats</li>
+                                <li>Minification & Bundling</li>
+                                <li>HTTP/2 & HTTP/3</li>
+                                <li>Serverless Functions</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="element-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="element-icon mb-3">
-                        <i class="fas fa-mobile-alt fa-2x text-primary"></i>
-                    </div>
-                    <h4>Responsive Transformation</h4>
-                    <p>Fixed-width sites built before the mobile era need adaptation for today's multi-device world. Our responsive updates include:</p>
-                    <ul class="mt-3">
-                        <li>Mobile-first responsive layouts</li>
-                        <li>Touch-friendly navigation systems</li>
-                        <li>Flexible image and media handling</li>
-                        <li>Viewport-specific content prioritization</li>
-                        <li>Adaptive typography systems</li>
-                        <li>Device-optimized interactions</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="element-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="element-icon mb-3">
-                        <i class="fas fa-code fa-2x text-primary"></i>
-                    </div>
-                    <h4>Technical Modernization</h4>
-                    <p>Aging codebases pose security risks and limit functionality. Our technical updates include:</p>
-                    <ul class="mt-3">
-                        <li>CMS and framework upgrades</li>
-                        <li>Legacy code refactoring</li>
-                        <li>Modern JavaScript implementation</li>
-                        <li>Security enhancements</li>
-                        <li>Database optimization</li>
-                        <li>API integrations and connectivity</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="element-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="element-icon mb-3">
-                        <i class="fas fa-tachometer-alt fa-2x text-primary"></i>
-                    </div>
-                    <h4>Performance Optimization</h4>
-                    <p>Old sites often suffer from bloated code and outdated practices. Our performance updates include:</p>
-                    <ul class="mt-3">
-                        <li>Code optimization and minification</li>
-                        <li>Image and media optimization</li>
-                        <li>Caching implementation</li>
-                        <li>CDN integration</li>
-                        <li>Core Web Vitals improvements</li>
-                        <li>Streamlined resource loading</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="element-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="element-icon mb-3">
-                        <i class="fas fa-universal-access fa-2x text-primary"></i>
-                    </div>
-                    <h4>Accessibility Improvements</h4>
-                    <p>Legacy sites often lack critical accessibility features. Our accessibility updates include:</p>
-                    <ul class="mt-3">
-                        <li>WCAG 2.1 compliance improvements</li>
-                        <li>Screen reader compatibility</li>
-                        <li>Keyboard navigation enhancements</li>
-                        <li>Color contrast optimization</li>
-                        <li>Semantic HTML structure</li>
-                        <li>Accessible form implementations</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="element-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="element-icon mb-3">
-                        <i class="fas fa-search fa-2x text-primary"></i>
-                    </div>
-                    <h4>SEO Modernization</h4>
-                    <p>Search algorithms have evolved, leaving old SEO tactics ineffective. Our SEO updates include:</p>
-                    <ul class="mt-3">
-                        <li>Modern metadata implementation</li>
-                        <li>Schema markup integration</li>
-                        <li>Mobile-friendly optimization</li>
-                        <li>Page speed improvements</li>
-                        <li>URL structure refinement</li>
-                        <li>Core Web Vitals optimization</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Modernization Approaches -->
-<section class="approaches-section py-5 bg-light">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Modernization Approaches</h2>
-                <p class="section-description">
-                    Tailored strategies based on your specific needs and constraints
-                </p>
-            </div>
-        </div>
-        <div class="row align-items-center mb-5">
-            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-                <img src="/assets/images/services/phased-approach.svg" alt="Phased Modernization" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-lg-6" data-aos="fade-left">
-                <h3 class="mb-3">Phased Modernization</h3>
-                <p>
-                    Ideal for businesses that can't afford downtime or a complete rebuild, our phased approach implements improvements incrementally while maintaining continuity. This methodical process allows for budget spreading and minimizes disruption.
-                </p>
-                <div class="advantages mt-4">
-                    <div class="advantage d-flex align-items-start mb-3">
-                        <div class="advantage-icon me-3">
-                            <i class="fas fa-check-circle text-success"></i>
-                        </div>
-                        <div>
-                            <h5>Continuous Improvement</h5>
-                            <p>Implement changes gradually with minimal business disruption</p>
+        <!-- Benefits Section -->
+        <section class="benefits-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Benefits of Website Modernization</h2>
+                    <p class="section-lead">Why modernizing your existing website is a smart business decision</p>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card-wrapper primary-benefit" data-aos="fade-right" data-aos-duration="800">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>Improved Search Rankings</h3>
+                            <p>Modernization implements current SEO best practices while preserving existing search equity.</p>
+                            <div class="benefit-stats">
+                                <span class="stat-badge">Retain domain authority</span>
+                                <span class="stat-badge">Meet modern SEO requirements</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="advantage d-flex align-items-start mb-3">
-                        <div class="advantage-icon me-3">
-                            <i class="fas fa-check-circle text-success"></i>
-                        </div>
-                        <div>
-                            <h5>Distributed Investment</h5>
-                            <p>Spread the modernization budget over time instead of all at once</p>
+                    
+                    <div class="benefit-card-wrapper secondary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                        <div class="benefit-card">
+                            <div class="benefit-icon secondary-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <h3>Enhanced User Experience</h3>
+                            <p>Modern interfaces and responsive design dramatically improve how users interact with your site.</p>
+                            <div class="benefit-stats">
+                                <span class="stat-badge secondary-badge">40% improvement in navigation efficiency</span>
+                                <span class="stat-badge secondary-badge">Reduced bounce rates by up to 35%</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="advantage d-flex align-items-start">
-                        <div class="advantage-icon me-3">
-                            <i class="fas fa-check-circle text-success"></i>
+                    
+                    <div class="benefit-card-wrapper tertiary-benefit" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
+                        <div class="benefit-card">
+                            <div class="benefit-icon tertiary-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Mobile Compatibility</h3>
+                            <p>Reach the growing majority of users who browse on smartphones and tablets.</p>
+                            <div class="benefit-stats">
+                                <span class="stat-badge tertiary-badge">60%+ of web traffic comes from mobile devices</span>
+                                <span class="stat-badge tertiary-badge">Google's mobile-first indexing</span>
+                            </div>
                         </div>
-                        <div>
-                            <h5>Adaptable Strategy</h5>
-                            <p>Adjust priorities based on performance data from earlier phases</p>
+                    </div>
+                    
+                    <div class="benefit-card-wrapper quaternary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+                        <div class="benefit-card">
+                            <div class="benefit-icon quaternary-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Improved Security</h3>
+                            <p>Upgrade to modern security standards to protect your site and your users' data.</p>
+                            <div class="benefit-stats">
+                                <span class="stat-badge quaternary-badge">HTTPS implementation</span>
+                                <span class="stat-badge quaternary-badge">Protection from common vulnerabilities</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0" data-aos="fade-left">
-                <img src="/assets/images/services/complete-overhaul.svg" alt="Complete Redesign" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-lg-6 order-lg-1" data-aos="fade-right">
-                <h3 class="mb-3">Complete Modernization</h3>
-                <p>
-                    For websites that require fundamental restructuring or have fallen significantly behind current standards, our comprehensive approach delivers a fully modernized site with current design trends and technologies while preserving SEO equity.
-                </p>
-                <div class="advantages mt-4">
-                    <div class="advantage d-flex align-items-start mb-3">
-                        <div class="advantage-icon me-3">
-                            <i class="fas fa-check-circle text-success"></i>
-                        </div>
-                        <div>
-                            <h5>Holistic Transformation</h5>
-                            <p>Address all outdated elements simultaneously for maximum impact</p>
-                        </div>
-                    </div>
-                    <div class="advantage d-flex align-items-start mb-3">
-                        <div class="advantage-icon me-3">
-                            <i class="fas fa-check-circle text-success"></i>
-                        </div>
-                        <div>
-                            <h5>Clean Implementation</h5>
-                            <p>Eliminate legacy constraints while preserving valuable content and SEO</p>
-                        </div>
-                    </div>
-                    <div class="advantage d-flex align-items-start">
-                        <div class="advantage-icon me-3">
-                            <i class="fas fa-check-circle text-success"></i>
-                        </div>
-                        <div>
-                            <h5>Future-Proofing</h5>
-                            <p>Build on current technologies to maximize longevity and adaptability</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Benefits -->
-<section class="benefits-section py-5">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Benefits of Website Modernization</h2>
-                <p class="section-description">
-                    Why updating your aging website delivers significant returns
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-user-friends fa-2x text-primary"></i>
-                    </div>
-                    <h4>Enhanced User Experience</h4>
-                    <p>Modern interfaces, intuitive navigation, and responsive designs create positive interactions that keep visitors engaged and convert at higher rates.</p>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Modernize Your Website?</h2>
+                    <p class="lead">Let's transform your outdated site into a modern digital experience that impresses visitors and drives results.</p>
+                    <a href="/pages/contact.php" class="cta-btn animate-pulse-slow">
+                        Start Your Modernization Project
+                    </a>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-mobile-alt fa-2x text-primary"></i>
-                    </div>
-                    <h4>Multi-Device Compatibility</h4>
-                    <p>Responsive modernization ensures your site performs flawlessly across smartphones, tablets, desktops, and emerging devices, capturing all potential traffic.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-tachometer-alt fa-2x text-primary"></i>
-                    </div>
-                    <h4>Improved Performance</h4>
-                    <p>Technical modernization results in faster load times, smoother interactions, and better overall performance that enhances user satisfaction and conversions.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-search fa-2x text-primary"></i>
-                    </div>
-                    <h4>Better Search Visibility</h4>
-                    <p>Modern SEO practices, mobile-friendly design, and performance improvements align with current search algorithms, enhancing your organic visibility.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-shield-alt fa-2x text-primary"></i>
-                    </div>
-                    <h4>Enhanced Security</h4>
-                    <p>Updating outdated technologies and implementing modern security practices protects your business and customer data from emerging threats.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="benefit-card h-100 p-4 bg-white rounded shadow-sm">
-                    <div class="benefit-icon mb-3">
-                        <i class="fas fa-cogs fa-2x text-primary"></i>
-                    </div>
-                    <h4>Improved Maintainability</h4>
-                    <p>Modern codebases and CMS platforms make updates easier, reduce long-term maintenance costs, and provide greater flexibility for future enhancements.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Case Studies -->
-<section class="case-studies-section py-5 bg-light">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <h2 class="section-title">Modernization Success Stories</h2>
-                <p class="section-description">
-                    Real results from our website modernization projects
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 mb-4" data-aos="fade-up">
-                <div class="case-study-card h-100 p-4 bg-white rounded shadow-sm">
-                    <h4>Professional Services Firm Transformation</h4>
-                    <p class="text-muted">Law Practice Modernization</p>
-                    <p>A well-established law firm was operating a 7-year-old non-responsive website with outdated design and poor mobile performance. The site was built on an obsolete CMS version with security vulnerabilities and limited functionality.</p>
-                    <p>We implemented a phased modernization approach, first addressing critical mobile responsiveness and security issues, then upgrading the CMS while preserving content and SEO equity. Finally, we executed a comprehensive visual refresh with modern design patterns.</p>
-                    <div class="results mt-3">
-                        <div class="result d-flex align-items-center mb-2">
-                            <i class="fas fa-mobile-alt text-success me-2"></i>
-                            <span>Mobile traffic increased by 64%</span>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="faq-header">
+                        <h2>Frequently Asked Questions</h2>
+                        <p class="lead">Common questions about website modernization</p>
+                    </div>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <h3>How do I know if my website needs modernization?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
                         </div>
-                        <div class="result d-flex align-items-center mb-2">
-                            <i class="fas fa-search text-success me-2"></i>
-                            <span>Organic search visibility improved by 42%</span>
+                        <div class="faq-answer">
+                            <p>Several indicators suggest your website may benefit from modernization:</p>
+                            <ul>
+                                <li><strong>Aging Design:</strong> If your website was designed more than 3-5 years ago, it likely doesn't reflect current design standards and user expectations.</li>
+                                <li><strong>Poor Mobile Experience:</strong> If your site isn't fully responsive or delivers a subpar experience on mobile devices, modernization is critical given that most web traffic now comes from mobile users.</li>
+                                <li><strong>Declining Performance Metrics:</strong> Increasing bounce rates, decreasing time on site, or declining conversion rates often indicate that users find your site frustrating or outdated.</li>
+                                <li><strong>Slow Loading Speed:</strong> Modern websites should load in under 3 seconds. If yours takes longer, you're likely losing visitors and search ranking.</li>
+                                <li><strong>Difficult Content Management:</strong> If updating content requires developer assistance or complex processes, a modern CMS implementation could significantly improve efficiency.</li>
+                                <li><strong>Legacy Technology:</strong> Sites built with older technologies like Flash, outdated JavaScript libraries, or deprecated PHP versions pose security risks and compatibility issues.</li>
+                            </ul>
+                            <p>We offer a free website assessment that evaluates these factors and provides specific recommendations for modernization priorities based on your business goals and current website state.</p>
                         </div>
-                        <div class="result d-flex align-items-center">
-                            <i class="fas fa-user-plus text-success me-2"></i>
-                            <span>Lead generation increased by 37%</span>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Will modernization affect my website's SEO and search rankings?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>When done correctly, website modernization should positively impact your SEO and search rankings. Our approach prioritizes SEO preservation and enhancement:</p>
+                            <ul>
+                                <li><strong>URL Structure Preservation:</strong> We maintain your existing URL structure where possible or implement proper 301 redirects to preserve link equity when URLs must change.</li>
+                                <li><strong>Content Migration:</strong> We carefully transfer and optimize your existing content, preserving valuable SEO elements like meta descriptions, alt tags, and heading structure.</li>
+                                <li><strong>Technical SEO Improvements:</strong> Modernization includes implementing current technical SEO best practices, from proper semantic HTML5 structure to schema markup.</li>
+                                <li><strong>Mobile Optimization:</strong> Modern responsive design improves your site's performance in Google's mobile-first indexing.</li>
+                                <li><strong>Page Speed Enhancement:</strong> Faster loading times directly impact search rankings and user experience.</li>
+                                <li><strong>Enhanced User Metrics:</strong> Improved usability leads to better user engagement metrics (reduced bounce rate, increased time on site), which search engines consider when ranking sites.</li>
+                            </ul>
+                            <p>We closely monitor search performance before, during, and after the modernization process to quickly address any potential issues. Most clients see gradual improvement in search visibility following modernization as search engines recognize the improved user experience and technical foundations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does a website modernization project typically take?</h3>
+                            <button class="toggle-btn">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The timeline for website modernization varies based on several factors:</p>
+                            <ul>
+                                <li><strong>Website Size and Complexity:</strong> A small brochure site might be modernized in 4-6 weeks, while a large e-commerce site or complex web application could take 3-6 months.</li>
+                                <li><strong>Scope of Changes:</strong> A visual refresh while keeping the same platform requires less time than a complete platform migration with extensive functional changes.</li>
+                                <li><strong>Content Volume:</strong> Sites with hundreds or thousands of pages require more time for content migration and optimization.</li>
+                                <li><strong>Integration Requirements:</strong> Connections to third-party systems, CRMs, payment processors, or other services add complexity and time.</li>
+                                <li><strong>Approval Processes:</strong> The time needed for client reviews, feedback cycles, and stakeholder approvals affects the overall timeline.</li>
+                            </ul>
+                            <p>Our process begins with a thorough assessment that results in a detailed project timeline with key milestones. We typically work in phases, often starting with the most critical or visible sections of your site. This approach allows for partial launches when appropriate, bringing benefits sooner while work continues on other areas.</p>
+                            <p>For businesses concerned about downtime, we develop your modernized site on a staging environment and only switch over when everything is tested and ready, minimizing disruption to your online presence.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="case-study-card h-100 p-4 bg-white rounded shadow-sm">
-                    <h4>E-commerce Platform Modernization</h4>
-                    <p class="text-muted">Specialty Retailer Update</p>
-                    <p>A specialty retailer was struggling with a decade-old e-commerce platform that had poor mobile usability, slow performance, and limited integration capabilities with modern marketing tools. Checkout abandonment was high, and inventory management was inefficient.</p>
-                    <p>We executed a complete modernization with a new e-commerce platform while carefully migrating products, customer accounts, and order history. The new site featured contemporary design, streamlined checkout, and robust integrations with their business systems.</p>
-                    <div class="results mt-3">
-                        <div class="result d-flex align-items-center mb-2">
-                            <i class="fas fa-shopping-cart text-success me-2"></i>
-                            <span>Conversion rate increased by 86%</span>
-                        </div>
-                        <div class="result d-flex align-items-center mb-2">
-                            <i class="fas fa-undo-alt text-success me-2"></i>
-                            <span>Cart abandonment reduced by 34%</span>
-                        </div>
-                        <div class="result d-flex align-items-center">
-                            <i class="fas fa-dollar-sign text-success me-2"></i>
-                            <span>Average order value improved by 28%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- CTA -->
-<section class="cta-section py-5 bg-primary text-white">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8 mb-4 mb-lg-0" data-aos="fade-right">
-                <h2 class="mb-3">Ready to Modernize Your Website?</h2>
-                <p class="lead mb-0">
-                    Let's transform your outdated site into a contemporary digital experience that impresses visitors and drives results.
-                </p>
-            </div>
-            <div class="col-lg-4 text-lg-end" data-aos="fade-left">
-                <a href="/contact" class="btn btn-light btn-lg">Get Started</a>
-            </div>
-        </div>
-    </div>
-</section>
+<?php
+include_once '../../../../components/footer.php';
+?>
 
-<!-- FAQ Section -->
-<section class="faq-section">
-    <div class="container">
-        <div class="section-header">
-            <div class="faq-header">
-                <h2>Website Modernization FAQ's</h2>
-                <p class="lead">Have Any Questions?</p>
-            </div>
-        </div>
-
-        <div class="faq-container">
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>How do I know if my website needs modernization?</h3>
-                    <button class="toggle-btn">
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                </div>
-                <div class="faq-answer">
-                    <p>Several indicators suggest your website may need modernization: 1) It's not fully responsive on mobile devices, 2) It loads slowly (taking more than 3 seconds), 3) It has an outdated visual design with small text, limited whitespace, or dated graphics, 4) It's built on obsolete or unsupported technology, 5) You're unable to easily update content or add features, 6) Your conversion rates are declining despite stable traffic, 7) Your competitors' sites offer a notably better user experience, or 8) Your site has poor search engine visibility despite SEO efforts. If you recognize several of these signs, a modernization assessment can help determine the specific improvements needed to bring your site up to current standards and expectations.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>Will modernizing my website affect my SEO rankings?</h3>
-                    <button class="toggle-btn">
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                </div>
-                <div class="faq-answer">
-                    <p>When properly executed, website modernization should positively impact your SEO rankings. Our approach carefully preserves valuable SEO equity while implementing improvements that align with current search engine algorithms. We maintain URL structures where possible or implement proper redirects to prevent traffic loss. Modern websites benefit from improved mobile-friendliness, faster loading times, and better user experience metrics—all factors that search engines now prioritize. Additionally, we implement current technical SEO best practices like schema markup, enhanced metadata, and improved site architecture. Many clients see ranking improvements within 2-3 months after modernization as search engines recognize the enhanced user experience and technical improvements.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>Is it better to modernize my existing site or build a completely new one?</h3>
-                    <button class="toggle-btn">
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                </div>
-                <div class="faq-answer">
-                    <p>The decision between modernization and complete rebuilding depends on several factors. Modernization is often preferable when: 1) Your site has substantial valuable content that would be time-consuming to recreate, 2) You have established SEO rankings you don't want to risk, 3) Your basic site structure is sound but needs updating, or 4) You need to spread out investment over time. A complete rebuild might be better when: 1) Your site is built on obsolete technology that can't be effectively updated, 2) Your business objectives or target audience have fundamentally changed, 3) Your site structure needs complete rethinking, or 4) The cost of updating would exceed rebuilding. Our assessment process helps determine which approach offers the best value and results for your specific situation.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<?php require_once '../../../../components/footer.php'; ?>
+    <!-- JavaScript libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/services.js"></script>
+</body>
+</html>
