@@ -11,7 +11,7 @@
                 Empowering businesses with innovative web design, app development, AI services, and digital marketing solutions.
             </p> -->
             <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=61574724826323" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/official.NeoWebX" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://x.com/NeoWebX" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/in/neowebx/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://www.instagram.com/neowebx?igsh=MXM0NjN4eTgxN3RvMg==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>

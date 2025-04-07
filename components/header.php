@@ -49,7 +49,7 @@
       "url": "<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]"; ?>",
       "logo": "<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]"; ?>/assets/images/logo.png",
       "sameAs": [
-        "https://www.facebook.com/profile.php?id=61574724826323",
+        "https://www.facebook.com/official.NeoWebX",
         "https://x.com/NeoWebX",
         "https://www.linkedin.com/in/neowebx/",
         "https://www.instagram.com/neowebx?igsh=MXM0NjN4eTgxN3RvMg==",
