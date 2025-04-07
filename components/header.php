@@ -296,8 +296,8 @@
                     </div>
                 </div>
                 
-                <a href="/pages/about" class="drawer-item">About Us</a>
-                <a href="/pages/blog" class="drawer-item">Blog</a>
+                <a href="/pages/about.php" class="drawer-item">About Us</a>
+                <a href="/pages/blog.php" class="drawer-item">Blog</a>
                 <a href="/pages/contact.php" class="drawer-item">Contact</a>
             </nav>
         </div>

@@ -32,7 +32,7 @@ require_once '../../../../components/header.php';
                 <h1><?php echo $pageTitle; ?></h1>
                 <p class="lead">Launch your professional website in days, not weeks. Our premium ready-made templates are designed for your industry and fully customizable to your brand.</p>
                 <div class="hero-buttons">
-                    <a href="https://store.domain.com" class="btn btn-primary">Browse Template Store</a>
+                    <a href="https://store.neowebx.com" class="btn btn-primary">Browse Template Store</a>
                     <a href="/pages/contact.php" class="btn btn-outline">Request Customization</a>
                 </div>
                 <div class="tech-stack">
@@ -115,7 +115,7 @@ require_once '../../../../components/header.php';
                         <li><i class="fas fa-check"></i> Lead capture forms</li>
                         <li><i class="fas fa-check"></i> Agent/listing management</li>
                     </ul>
-                    <a href="https://store.domain.com/real-estate" class="learn-more">View Templates</a>
+                    <a href="https://store.neowebx.com/real-estate" class="learn-more">View Templates</a>
                 </div>
             </div>
 
@@ -132,7 +132,7 @@ require_once '../../../../components/header.php';
                         <li><i class="fas fa-check"></i> Application tracking</li>
                         <li><i class="fas fa-check"></i> Employer/candidate portals</li>
                     </ul>
-                    <a href="https://store.domain.com/jobs-recruiters" class="learn-more">View Templates</a>
+                    <a href="https://store.neowebx.com/jobs-recruiters" class="learn-more">View Templates</a>
                 </div>
             </div>
 
@@ -149,7 +149,7 @@ require_once '../../../../components/header.php';
                         <li><i class="fas fa-check"></i> Private messaging</li>
                         <li><i class="fas fa-check"></i> Verification systems</li>
                     </ul>
-                    <a href="https://store.domain.com/matrimonial" class="learn-more">View Templates</a>
+                    <a href="https://store.neowebx.com/matrimonial" class="learn-more">View Templates</a>
                 </div>
             </div>
 
@@ -166,7 +166,7 @@ require_once '../../../../components/header.php';
                         <li><i class="fas fa-check"></i> Service information</li>
                         <li><i class="fas fa-check"></i> Patient resources</li>
                     </ul>
-                    <a href="https://store.domain.com/medical-doctors" class="learn-more">View Templates</a>
+                    <a href="https://store.neowebx.com/medical-doctors" class="learn-more">View Templates</a>
                 </div>
             </div>
             
@@ -183,7 +183,7 @@ require_once '../../../../components/header.php';
                         <li><i class="fas fa-check"></i> Quote request systems</li>
                         <li><i class="fas fa-check"></i> Client testimonials</li>
                     </ul>
-                    <a href="https://store.domain.com/b2b" class="learn-more">View Templates</a>
+                    <a href="https://store.neowebx.com/b2b" class="learn-more">View Templates</a>
                 </div>
             </div>
 
@@ -200,7 +200,7 @@ require_once '../../../../components/header.php';
                         <li><i class="fas fa-check"></i> Customer accounts</li>
                         <li><i class="fas fa-check"></i> Order tracking</li>
                     </ul>
-                    <a href="https://store.domain.com/ecommerce" class="learn-more">View Templates</a>
+                    <a href="https://store.neowebx.com/ecommerce" class="learn-more">View Templates</a>
                 </div>
             </div>
 
@@ -217,7 +217,7 @@ require_once '../../../../components/header.php';
                         <li><i class="fas fa-check"></i> Enhanced security</li>
                         <li><i class="fas fa-check"></i> Resource centers</li>
                     </ul>
-                    <a href="https://store.domain.com/banking-finance" class="learn-more">View Templates</a>
+                    <a href="https://store.neowebx.com/banking-finance" class="learn-more">View Templates</a>
                 </div>
             </div>
 
@@ -234,7 +234,7 @@ require_once '../../../../components/header.php';
                         <li><i class="fas fa-check"></i> Before/after galleries</li>
                         <li><i class="fas fa-check"></i> Client reviews</li>
                     </ul>
-                    <a href="https://store.domain.com/health-beauty" class="learn-more">View Templates</a>
+                    <a href="https://store.neowebx.com/health-beauty" class="learn-more">View Templates</a>
                 </div>
             </div>
             
@@ -251,7 +251,7 @@ require_once '../../../../components/header.php';
                         <li><i class="fas fa-check"></i> Table reservations</li>
                         <li><i class="fas fa-check"></i> Location details</li>
                     </ul>
-                    <a href="https://store.domain.com/food-beverage" class="learn-more">View Templates</a>
+                    <a href="https://store.neowebx.com/food-beverage" class="learn-more">View Templates</a>
                 </div>
             </div>
 
@@ -268,7 +268,7 @@ require_once '../../../../components/header.php';
                         <li><i class="fas fa-check"></i> Event calendars</li>
                         <li><i class="fas fa-check"></i> Application forms</li>
                     </ul>
-                    <a href="https://store.domain.com/education" class="learn-more">View Templates</a>
+                    <a href="https://store.neowebx.com/education" class="learn-more">View Templates</a>
                 </div>
             </div>
 
@@ -285,7 +285,7 @@ require_once '../../../../components/header.php';
                         <li><i class="fas fa-check"></i> Booking engines</li>
                         <li><i class="fas fa-check"></i> Travel guides</li>
                     </ul>
-                    <a href="https://store.domain.com/travel" class="learn-more">View Templates</a>
+                    <a href="https://store.neowebx.com/travel" class="learn-more">View Templates</a>
                 </div>
             </div>
 
@@ -302,7 +302,7 @@ require_once '../../../../components/header.php';
                         <li><i class="fas fa-check"></i> Client portfolios</li>
                         <li><i class="fas fa-check"></i> Testimonial sections</li>
                     </ul>
-                    <a href="https://store.domain.com/b2c" class="learn-more">View Templates</a>
+                    <a href="https://store.neowebx.com/b2c" class="learn-more">View Templates</a>
                 </div>
             </div>
         </div>
@@ -522,7 +522,7 @@ require_once '../../../../components/header.php';
         <div class="cta-content">
             <h2>Ready to Launch Your Website Quickly?</h2>
             <p class="lead">Browse our template store and find the perfect foundation for your online presence.</p>
-            <a href="https://store.domain.com" class="cta-btn animate-pulse-slow">
+            <a href="https://store.neowebx.com" class="cta-btn animate-pulse-slow">
                 Explore Our Template Store
             </a>
         </div>

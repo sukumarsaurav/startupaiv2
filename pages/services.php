@@ -95,8 +95,8 @@ include_once '../components/header.php';
                     <h3>Digital Marketing</h3>
                     <p>Strategic digital marketing to increase your visibility and drive conversions.</p>
                     <div class="service-links">
-                        <a href="/pages/services/digital-marketing/seo.php" class="service-link">SEO</a>
-                        <a href="/pages/services/digital-marketing/google-ads.php" class="service-link">Google Ads</a>
+                        <a href="/pages/services/digital-marketing/seo/ecommerce-seo.php" class="service-link">SEO</a>
+                        <a href="/pages/services/digital-marketing/ppc/google-ads.php" class="service-link">Google Ads</a>
                     </div>
                 </div>
             </div>
