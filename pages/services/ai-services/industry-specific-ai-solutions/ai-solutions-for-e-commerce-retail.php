@@ -28,7 +28,6 @@ require_once '../../../../components/header.php';
     <div class="container">
         <div class="hero-grid">
             <div class="hero-content" data-aos="fade-right">
-                <span class="service-category">Industry-Specific AI Solutions</span>
                 <h1><?php echo $serviceName; ?></h1>
                 <p class="lead">Intelligent solutions to transform shopping experiences and drive business growth</p>
                 <div class="hero-buttons">

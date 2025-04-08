@@ -28,7 +28,6 @@ require_once '../../../../components/header.php';
     <div class="container">
         <div class="hero-grid">
             <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
-                <span class="service-category">Conversational AI Solutions</span>
                 <h1>Chatbot <span class="highlight">Development</span> Services</h1>
                 <p class="lead">Create intelligent, engaging conversational experiences that transform how you connect with customers</p>
                 <div class="hero-buttons">

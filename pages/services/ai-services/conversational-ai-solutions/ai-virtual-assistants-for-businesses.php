@@ -28,7 +28,6 @@ require_once '../../../../components/header.php';
     <div class="container">
         <div class="hero-grid">
             <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
-                <span class="service-category">Conversational AI Solutions</span>
                 <h1>AI Virtual <span class="highlight">Assistants</span> for Businesses</h1>
                 <p class="lead">Intelligent digital assistants that transform operations, streamline workflows, and enhance customer engagement</p>
                 <div class="hero-buttons">

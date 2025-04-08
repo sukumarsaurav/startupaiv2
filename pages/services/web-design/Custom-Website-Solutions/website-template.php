@@ -29,7 +29,7 @@ require_once '../../../../components/header.php';
         <div class="hero-grid">
             <div class="hero-content" data-aos="fade-right">
                 <span class="service-category">Custom Website Solutions</span>
-                <h1><?php echo $pageTitle; ?></h1>
+                <h1>Ready-Made Website  <span class="highlight">Templates</span></h1>
                 <p class="lead">Launch your professional website in days, not weeks. Our premium ready-made templates are designed for your industry and fully customizable to your brand.</p>
                 <div class="hero-buttons">
                     <a href="https://store.neowebx.com" class="btn btn-primary">Browse Template Store</a>

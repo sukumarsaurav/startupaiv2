@@ -30,7 +30,6 @@ require_once '../../../../components/header.php';
     <div class="container">
         <div class="hero-grid">
             <div class="hero-content" data-aos="fade-right">
-                <span class="service-category">AI & Advanced Tech</span>
                 <h1><?php echo $serviceName; ?></h1>
                 <p class="lead"><?php echo $pageDescription; ?></p>
                 <div class="hero-buttons">

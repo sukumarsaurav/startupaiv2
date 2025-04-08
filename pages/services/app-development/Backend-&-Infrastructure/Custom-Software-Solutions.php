@@ -28,7 +28,6 @@ require_once '../../../../components/header.php';
     <div class="container">
         <div class="hero-grid">
             <div class="hero-content" data-aos="fade-right">
-                <span class="service-category">Backend & Infrastructure</span>
                 <h1><?php echo $serviceName; ?></h1>
                 <p class="lead">Tailor-made software solutions designed specifically for your unique business challenges and requirements</p>
                 <div class="hero-buttons">
