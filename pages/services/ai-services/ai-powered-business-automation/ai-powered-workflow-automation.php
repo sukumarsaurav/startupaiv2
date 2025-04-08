@@ -61,11 +61,10 @@ require_once '../../../../components/header.php';
             </div>
         </div>
         
-        <div class="overview-cards">
+        <div class="overview-grid">
             <div class="overview-card primary-card" data-aos="fade-up">
-                <div class="card-icon">
-                    <i class="fas fa-exclamation-circle"></i>
-                </div>
+            <div class="card-decoration"></div>
+               
                 <h3>The Challenge</h3>
                 <p>Manual business processes are prone to errors, delays, and inconsistencies. They consume valuable employee time that could be better spent on strategic work.</p>
                 <ul>
@@ -76,9 +75,8 @@ require_once '../../../../components/header.php';
             </div>
             
             <div class="overview-card secondary-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="card-icon">
-                    <i class="fas fa-lightbulb"></i>
-                </div>
+            <div class="card-decoration"></div>
+               
                 <h3>Our Solution</h3>
                 <p>Our AI-powered workflow automation solutions identify inefficiencies, create streamlined processes, and continuously improve through machine learning.</p>
                 <ul>

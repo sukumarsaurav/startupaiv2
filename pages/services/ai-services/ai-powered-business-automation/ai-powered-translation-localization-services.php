@@ -21,7 +21,7 @@ require_once '../../../../components/header.php';
 
 <!-- Page Header -->
 <section class="page-header">
-    <div class="content-container">
+    <div class="container">
         <div class="header-grid">
             <div class="page-header-content" data-aos="fade-right">
                 <h1><?php echo $serviceName; ?></h1>
@@ -39,7 +39,7 @@ require_once '../../../../components/header.php';
 
 <!-- Service Overview -->
 <section class="service-overview">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="service-overview-header" data-aos="fade-up">
                 <h2>Breaking Language Barriers with AI</h2>
@@ -48,11 +48,13 @@ require_once '../../../../components/header.php';
         </div>
         
         <div class="overview-grid">
-            <div class="service-overview-content" data-aos="fade-up">
+            <div class="overview-card primary-card" data-aos="fade-up">
+            <div class="card-decoration"></div>
                 <h3>The Challenge</h3>
                 <p>Traditional translation methods are slow, expensive, and struggle with industry-specific terminology and cultural nuances. This creates barriers for businesses trying to reach global markets effectively. Content quality often suffers, leading to miscommunication and poor user experiences for international audiences.</p>
             </div>
-            <div class="service-overview-content" data-aos="fade-up" data-aos-delay="100">
+            <div class="overview-card secondary-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-decoration"></div>
                 <h3>Our Solution</h3>
                 <p>Our AI-powered translation and localization platform combines neural machine translation, natural language processing, and human expertise to deliver fast, accurate, and culturally appropriate translations. We help businesses scale content across languages while maintaining consistent brand voice, technical accuracy, and cultural relevance.</p>
             </div>
@@ -62,7 +64,7 @@ require_once '../../../../components/header.php';
 
 <!-- Services Section -->
 <section class="services-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="services-header" data-aos="fade-up">
                 <h2>Our Translation & Localization Services</h2>
@@ -140,7 +142,7 @@ require_once '../../../../components/header.php';
 
 <!-- Our Approach Section -->
 <section class="implementation-process">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="implementation-header" data-aos="fade-up">
                 <h2>Our Translation & Localization Approach</h2>
@@ -234,7 +236,7 @@ require_once '../../../../components/header.php';
 
 <!-- Language Coverage Section -->
 <section class="language-coverage">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="language-coverage-header" data-aos="fade-up">
                 <h2>Comprehensive Language Coverage</h2>
@@ -308,7 +310,7 @@ require_once '../../../../components/header.php';
 
 <!-- Benefits Section -->
 <section class="benefits-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="benefits-header" data-aos="fade-up">
                 <h2>Benefits of AI-Powered Translation</h2>
@@ -382,7 +384,7 @@ require_once '../../../../components/header.php';
 
 <!-- CTA Section -->
 <section class="cta-section">
-    <div class="content-container">
+    <div class="container">
         <div class="cta-content" data-aos="fade-up">
             <h2>Ready to Go Global?</h2>
             <p class="lead">Let's discuss how our AI-powered translation services can help you connect with international audiences.</p>
@@ -405,7 +407,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How accurate is AI-powered translation compared to human translation?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Modern neural machine translation (NMT) systems have made tremendous advances in recent years, with accuracy rates now approaching 85-95% for many language pairs and content types. For specific industries and customized models, accuracy can be even higher. Our hybrid approach combines the speed and cost-efficiency of AI with targeted human review, giving you the best of both worlds. For technical, marketing, or sensitive content, our expert linguists review and refine the AI-generated translations to ensure nuanced accuracy, cultural relevance, and brand-appropriate tone. This approach delivers human-quality translations at a fraction of the time and cost of traditional methods.</p>
@@ -415,7 +417,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>What types of content can you translate and localize?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Our AI translation and localization services can handle virtually any type of content, including: Websites and digital platforms, Mobile applications, Marketing materials (brochures, presentations, campaigns), Product descriptions and catalogs, Technical documentation and manuals, Legal documents and contracts, Customer support content and knowledge bases, E-learning and training materials, Social media and blog content, User interfaces and software strings, Multimedia content including subtitles and transcriptions. Our platform is designed to maintain proper formatting, handle various file formats, and adapt to specific industry terminology and style requirements for each content type.</p>
@@ -425,7 +427,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How do you handle industry-specific terminology and brand voice?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>We take a comprehensive approach to ensure terminology accuracy and brand voice consistency: First, we create custom terminology databases and glossaries for your specific industry, products, and brand. Our AI models are trained on these glossaries to ensure consistent translation of key terms. We also analyze your existing content to capture your unique brand voice and style, which guides both our AI systems and human reviewers. For complex industries like legal, medical, or technical fields, we assign specialized linguists with subject matter expertise for review. Our platform also maintains translation memories that learn from all previous translations, ensuring consistent terminology use across all content and over time. This multi-layered approach ensures your brand voice, terminology, and industry-specific language remain consistent across all languages.</p>
@@ -435,7 +437,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How quickly can you translate large volumes of content?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Our AI-powered translation platform can process content at speeds exponentially faster than traditional translation methods. For pure machine translation, our system can translate up to 100,000 words per hour per language pair. For our hybrid approach with human review, throughput depends on the complexity and review level needed, but is typically 5-10 times faster than traditional human translation. Large projects can be processed in parallel across multiple language pairs simultaneously. For example, we can localize a typical e-commerce website (50,000-100,000 words) into 10+ languages within 1-2 weeks, compared to months with traditional methods. For urgent needs, we offer expedited services with optimized workflows to meet tight deadlines while maintaining quality standards.</p>
@@ -445,7 +447,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How do you handle cultural adaptation in the localization process?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Cultural adaptation (also called transcreation) is a critical component of our localization process. We go beyond literal translation to ensure content resonates with local audiences: Our native-speaking linguists adapt idioms, metaphors, humor, and cultural references to maintain the original intent while being culturally appropriate for the target market. We provide guidance on imagery, colors, symbols, and design elements that might need adaptation for cultural reasons. Date formats, number formats, currency, units of measurement, and other locale-specific elements are automatically adjusted. For marketing content, we may recommend more substantial creative adaptations to ensure messages have the same emotional impact across cultures. We also provide cultural consultation to identify potential sensitivities or opportunities in specific markets. This comprehensive approach ensures your content feels native and authentic to each target audience, rather than obviously translated.</p>
@@ -456,3 +458,5 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?>
+<script src="/assets/js/main.js"></script>
+    <script src="/assets/js/services.js"></script>

@@ -21,12 +21,17 @@ require_once '../../../../components/header.php';
 
 <!-- Page Header -->
 <section class="page-header">
-    <div class="content-container">
-        <div class="header-grid">
-            <div class="page-header-content" data-aos="fade-right">
+<div class="hero-background"></div>
+            <div class="hero-blob-1"></div>
+            <div class="hero-blob-2"></div>
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-content" data-aos="fade-right">
                 <h1><?php echo $serviceName; ?></h1>
-                <p>Uncover what your customers really think with AI-powered sentiment analysis</p>
-                <a href="/pages/contact.php" class="get-started-btn">Get Started</a>
+                <p class="lead">Uncover what your customers really think with AI-powered sentiment analysis</p>
+                <div class="hero-buttons">
+                <a href="/pages/contact.php" class="btn btn-primary">Get Started</a>
+                </div>
             </div>
             <div class="page-header-image" data-aos="fade-left">
                 <img src="/assets/images/services/sentiment-analysis.svg" alt="Sentiment Analysis" class="animate-float">
@@ -38,21 +43,23 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Service Overview -->
-<section class="service-overview">
-    <div class="content-container">
+<section class="overview-section">
+    <div class="container">
         <div class="section-header">
             <div class="service-overview-header" data-aos="fade-up">
                 <h2>Turn Feedback into Strategic Insights</h2>
-                <p class="lead">Our AI-driven sentiment and feedback analysis solutions help businesses understand customer opinions, detect emerging issues, and identify opportunities hidden in vast amounts of unstructured feedback data.</p>
+                <p class="section-lead">Our AI-driven sentiment and feedback analysis solutions help businesses understand customer opinions, detect emerging issues, and identify opportunities hidden in vast amounts of unstructured feedback data.</p>
             </div>
         </div>
         
         <div class="overview-grid">
-            <div class="service-overview-content" data-aos="fade-up">
+            <div class="overview-card primary-card" data-aos="fade-up">
+            <div class="card-decoration"></div>
                 <h3>The Challenge</h3>
                 <p>Companies receive massive volumes of feedback across multiple channels—reviews, social media, support tickets, surveys, and more. Manual analysis is impossible at scale, and traditional analytics miss the nuanced emotions and context behind customer opinions. Without proper analysis, valuable feedback goes unused, and critical issues remain undetected.</p>
             </div>
-            <div class="service-overview-content" data-aos="fade-up" data-aos-delay="100">
+            <div class="overview-card secondary-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-decoration"></div>
                 <h3>Our Solution</h3>
                 <p>Our AI-powered sentiment analysis platform automatically processes feedback across all channels, identifying sentiment, emotions, topics, and trends. Advanced natural language processing captures context, sarcasm, and subtleties that basic tools miss. We transform unstructured feedback into actionable insights that drive product improvements, enhance customer experience, and inform business strategy.</p>
             </div>
@@ -62,7 +69,7 @@ require_once '../../../../components/header.php';
 
 <!-- Services Section -->
 <section class="services-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="services-header" data-aos="fade-up">
                 <h2>Our Sentiment Analysis Services</h2>
@@ -140,7 +147,7 @@ require_once '../../../../components/header.php';
 
 <!-- Implementation Process -->
 <section class="implementation-process">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="implementation-header" data-aos="fade-up">
                 <h2>Our Sentiment Analysis Implementation Approach</h2>
@@ -223,16 +230,16 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Technologies Section -->
-<section class="technologies-section">
-    <div class="content-container">
+<section class="technology-section">
+    <div class="container">
         <div class="section-header">
-            <div class="technologies-header" data-aos="fade-up">
+            <div class="technology-header" data-aos="fade-up">
                 <h2>Our Sentiment Analysis Technology</h2>
                 <p class="lead">Advanced AI technologies powering our sentiment analysis platform</p>
             </div>
         </div>
         
-        <div class="technologies-grid">
+        <div class="technology-grid">
             <div class="technology-item" data-aos="fade-up">
                 <div class="technology-card">
                     <h3>Natural Language Processing</h3>
@@ -286,7 +293,7 @@ require_once '../../../../components/header.php';
 
 <!-- Use Cases Section -->
 <section class="use-cases-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="use-cases-header" data-aos="fade-up">
                 <h2>Sentiment Analysis Use Cases</h2>
@@ -340,72 +347,66 @@ require_once '../../../../components/header.php';
 
 <!-- Benefits Section -->
 <section class="benefits-section">
-    <div class="content-container">
-        <div class="section-header">
-            <div class="benefits-header" data-aos="fade-up">
-                <h2>Benefits of AI-Driven Sentiment Analysis</h2>
-                <p class="lead">Transform how you understand and act on customer feedback</p>
-            </div>
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Benefits of AI-Driven Sentiment Analysis</h2>
+            <p class="section-lead">Transform how you understand and act on customer feedback</p>
         </div>
         
         <div class="benefits-grid">
-            <div class="benefit-item" data-aos="fade-up">
+            <div class="benefit-card-wrapper primary-benefit" data-aos="fade-right" data-aos-duration="800">
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-tachometer-alt"></i>
                     </div>
                     <h3>Comprehensive Customer Understanding</h3>
-                    <p>Gain a complete, 360-degree view of customer opinions across all touchpoints and channels.</p>
+                    <p>Gain a complete, 360-degree view of customer opinions across all touchpoints and channels. AI-powered sentiment analysis uncovers patterns and insights impossible to detect with manual analysis.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge">85% more feedback analyzed</span>
+                        <span class="stat-badge">360° customer view</span>
+                    </div>
                 </div>
             </div>
             
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="benefit-card-wrapper secondary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
+                    <div class="benefit-icon secondary-icon">
                         <i class="fas fa-bolt"></i>
                     </div>
                     <h3>Real-Time Issue Detection</h3>
-                    <p>Identify emerging problems, negative sentiment spikes, and potential crises before they escalate.</p>
+                    <p>Identify emerging problems, negative sentiment spikes, and potential crises before they escalate. Automated monitoring alerts you to significant changes in customer sentiment immediately.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge secondary-badge">73% faster issue detection</span>
+                        <span class="stat-badge secondary-badge">42% crisis prevention</span>
+                    </div>
                 </div>
             </div>
             
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="benefit-card-wrapper tertiary-benefit" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
+                    <div class="benefit-icon tertiary-icon">
                         <i class="fas fa-bullseye"></i>
                     </div>
                     <h3>Prioritized Improvements</h3>
-                    <p>Focus resources on addressing the issues that have the greatest impact on customer sentiment and loyalty.</p>
-                </div>
-            </div>
-            
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-users"></i>
+                    <p>Focus resources on addressing the issues that have the greatest impact on customer sentiment and loyalty. AI quantifies the impact of different factors on overall satisfaction.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge tertiary-badge">58% more effective resource allocation</span>
+                        <span class="stat-badge tertiary-badge">31% higher ROI on improvements</span>
                     </div>
-                    <h3>Enhanced Customer Experience</h3>
-                    <p>Create more personalized, responsive experiences by understanding emotional drivers and preferences.</p>
                 </div>
             </div>
             
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="benefit-card-wrapper quaternary-benefit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3>Data-Driven Decision Making</h3>
-                    <p>Base strategic decisions on comprehensive sentiment data rather than limited samples or gut feelings.</p>
-                </div>
-            </div>
-            
-            <div class="benefit-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
+                    <div class="benefit-icon quaternary-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3>Competitive Advantage</h3>
-                    <p>Stay ahead of competitors by understanding customer preferences and addressing issues faster.</p>
+                    <p>Stay ahead of competitors by understanding customer preferences and addressing issues faster. Sentiment analysis helps you anticipate market trends and adapt your strategy proactively.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-badge quaternary-badge">68% better market positioning</span>
+                        <span class="stat-badge quaternary-badge">47% improved customer retention</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -414,7 +415,7 @@ require_once '../../../../components/header.php';
 
 <!-- CTA Section -->
 <section class="cta-section">
-    <div class="content-container">
+    <div class="container">
         <div class="cta-content" data-aos="fade-up">
             <h2>Ready to Understand Your Customers Better?</h2>
             <p class="lead">Let's discuss how our AI-driven sentiment analysis can unlock valuable insights from your customer feedback.</p>
@@ -425,7 +426,7 @@ require_once '../../../../components/header.php';
 
 <!-- FAQ Section -->
 <section class="faq-section">
-    <div class="content-container">
+    <div class="container">
         <div class="section-header">
             <div class="faq-header" data-aos="fade-up">
                 <h2>Frequently Asked Questions</h2>
@@ -437,7 +438,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How accurate is AI-powered sentiment analysis?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Our AI sentiment analysis solutions typically achieve 85-95% accuracy, depending on the complexity of the content and the domain. Basic sentiment classification (positive/negative/neutral) tends to be more accurate, while nuanced emotion detection is more challenging but still highly effective. We use domain-specific training, contextual understanding, and continuous learning to maximize accuracy. For specialized industries or unique terminology, we create custom models trained on your data to ensure higher accuracy. Our systems also improve over time as they process more of your specific customer feedback.</p>
@@ -447,7 +448,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>What types of feedback can your system analyze?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Our sentiment analysis platform can process virtually any type of textual feedback including product reviews, social media posts, customer support tickets, survey responses, chat transcripts, call center transcripts, forum posts, blog comments, and email feedback. We support multiple languages and can handle various text formats from short tweets to lengthy feedback emails. For audio and visual content, we can integrate speech-to-text and image recognition technologies to extract analyzable text. The system is designed to adapt to different communication styles, industry terminology, and feedback formats.</p>
@@ -457,7 +458,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How does the system handle sarcasm, idioms, and other complex language?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Detecting sarcasm, idioms, and other complex language patterns is indeed challenging, but our advanced NLP models are specifically designed to address these nuances. We use contextual analysis, pattern recognition, and large-scale language models that understand linguistic subtleties. Our systems analyze not just individual words but entire sentences and surrounding context to determine true sentiment. For industry-specific expressions or unique customer language patterns, we train custom models on your data. While no system is perfect with highly nuanced language, our continuous learning approach means the system gets better at recognizing these patterns over time.</p>
@@ -467,7 +468,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>Can the sentiment analysis platform integrate with our existing systems?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Yes, our sentiment analysis platform is designed for seamless integration with your existing business systems. We offer pre-built connectors for popular CRM platforms (Salesforce, HubSpot), customer support systems (Zendesk, Intercom), survey tools (SurveyMonkey, Qualtrics), social media management platforms, and business intelligence systems. We also provide robust APIs for custom integrations with proprietary systems. Data can flow bidirectionally, allowing sentiment insights to enhance existing dashboards and workflows. The system can trigger alerts in your current notification systems when significant sentiment changes are detected.</p>
@@ -477,7 +478,7 @@ require_once '../../../../components/header.php';
             <div class="faq-item" data-aos="fade-up">
                 <div class="faq-question">
                     <h3>How long does it take to implement and see results?</h3>
-                    <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
                 <div class="faq-answer">
                     <p>Implementation timelines vary based on scope and complexity, but most deployments follow this general timeline: Initial setup with standard models can be completed in 2-4 weeks, providing immediate basic sentiment analysis capabilities. Custom model training typically requires 4-6 weeks of additional time to achieve higher accuracy. Full enterprise integration across multiple data sources and departments usually takes 8-12 weeks total. You'll begin seeing initial insights as soon as the system starts processing your data, with accuracy and depth of insights improving over the first few months as the models learn from your specific data. We follow an agile implementation approach, delivering value in phases rather than waiting for full deployment.</p>
@@ -488,3 +489,5 @@ require_once '../../../../components/header.php';
 </section>
 
 <?php require_once '../../../../components/footer.php'; ?>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/services.js"></script>

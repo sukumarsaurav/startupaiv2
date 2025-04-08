@@ -61,11 +61,10 @@ require_once '../../../../components/header.php';
             </div>
         </div>
         
-        <div class="overview-cards">
+        <div class="overview-grid">
             <div class="overview-card primary-card" data-aos="fade-up">
-                <div class="card-icon">
-                    <i class="fas fa-file-alt"></i>
-                </div>
+            <div class="card-decoration"></div>
+                
                 <h3>The Challenge</h3>
                 <p>Organizations struggle with processing large volumes of documents containing critical business information. Manual processing is slow, error-prone, and expensive.</p>
                 <ul>
@@ -76,9 +75,8 @@ require_once '../../../../components/header.php';
             </div>
             
             <div class="overview-card secondary-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="card-icon">
-                    <i class="fas fa-robot"></i>
-                </div>
+            <div class="card-decoration"></div>
+               
                 <h3>Our Solution</h3>
                 <p>Our Smart Document Processing platform combines advanced OCR, natural language processing, and machine learning to understand, extract, and validate information with high accuracy.</p>
                 <ul>

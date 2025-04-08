@@ -61,7 +61,7 @@ require_once '../../../../components/header.php';
             </div>
         </div>
         
-        <div class="overview-cards">
+        <div class="overview-grid">
             <div class="overview-card primary-card" data-aos="fade-up">
                 <div class="card-icon">
                     <i class="fas fa-exclamation-circle"></i>
