@@ -141,13 +141,13 @@ require_once '../../../../components/header.php';
 </section>
 
 <!-- Our Approach Section -->
-<section class="implementation-process">
+<section class="process-section">
     <div class="container">
         <div class="section-header">
-            <div class="implementation-header" data-aos="fade-up">
+            
                 <h2>Our Translation & Localization Approach</h2>
-                <p class="lead">A proven methodology that combines AI efficiency with human expertise</p>
-            </div>
+                <p class="section-lead">A proven methodology that combines AI efficiency with human expertise</p>
+            
         </div>
         
         <div class="process-grid">
