@@ -29,7 +29,7 @@ require_once '../../../../components/header.php';
                 <h1>Transform Your <span class="highlight">Landing Pages</span> Into Conversion Machines</h1>
                 <p class="lead"><?php echo $pageDescription; ?></p>
                 <div class="hero-buttons">
-                    <a href="/contact" class="btn btn-primary">Get Free Consultation</a>
+                    <a href="/contact.php" class="btn btn-primary">Get Free Consultation</a>
                     <a href="#services" class="btn btn-outline">Explore Services</a>
                 </div>
             </div>

@@ -2,7 +2,7 @@
 // Define base path to allow direct script access
 define('BASEPATH', true);
 
-require_once '../../../includes/config.php';
+require_once '../../includes/config.php';
 
 // Page specific content
 $pageTitle = "Cookie Policy | NeoWebX";
@@ -16,7 +16,7 @@ $seo_data = [
     'keywords' => 'cookie policy, website cookies, privacy, data protection, GDPR, CCPA, website tracking'
 ];
 
-require_once '../../../components/header.php';
+require_once '../../components/header.php';
 ?>
 
         <!-- Hero Section -->

@@ -32,7 +32,7 @@ require_once '../../../../components/header.php';
                         <p class="lead">Showcase your work with a stunning digital portfolio that captures attention and converts viewers into clients</p>
                         <div class="hero-buttons">
                             <a href="/pages/contact.php" class="btn btn-primary">Start Your Portfolio Project</a>
-                            <a href="/portfolio" class="btn btn-outline">View Our Work</a>
+                            <a href="/pages/portfolio.php" class="btn btn-outline">View Our Work</a>
                         </div>
                     </div>
                     <div class="hero-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">

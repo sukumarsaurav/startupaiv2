@@ -405,7 +405,7 @@ require_once '../../../../components/header.php';
                 </p>
             </div>
             <div class="col-lg-4 text-lg-end" data-aos="fade-left">
-                <a href="/contact.php" class="btn btn-light btn-lg">Get Free Technical Audit</a>
+                <a href="/pages/contact.php" class="btn btn-light btn-lg">Get Free Technical Audit</a>
             </div>
         </div>
     </div>

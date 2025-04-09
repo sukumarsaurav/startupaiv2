@@ -2,7 +2,7 @@
 // Define base path to allow direct script access
 define('BASEPATH', true);
 
-require_once '../config/database.php';
+require_once '../config/config.php';
 
 // Initialize database connection
 $database = new Database();
