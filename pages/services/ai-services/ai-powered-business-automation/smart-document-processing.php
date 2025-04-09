@@ -43,7 +43,7 @@ require_once '../../../../components/header.php';
                 </div>
             </div>
             <div class="hero-image" data-aos="fade-left">
-                <img src="/assets/images/services/document-processing.svg" alt="Smart Document Processing" class="floating-image">
+                <img src="/assets/svg/Smart-Document-Processing.svg" alt="Smart Document Processing" class="floating-image">
                 <div class="decoration-circle-1"></div>
                 <div class="decoration-circle-2"></div>
             </div>

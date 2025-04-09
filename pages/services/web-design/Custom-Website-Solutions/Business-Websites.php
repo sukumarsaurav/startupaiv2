@@ -32,7 +32,7 @@ require_once '../../../../components/header.php';
                         <p class="lead">Establish a powerful online presence with a professional website tailored to your business goals and customer needs</p>
                         <div class="hero-buttons">
                             <a href="/pages/contact.php" class="btn btn-primary">Start Your Website Project</a>
-                            <a href="/portfolio" class="btn btn-outline">View Our Work</a>
+                            <a href="/portfolio.php" class="btn btn-outline">View Our Work</a>
                         </div>
                     </div>
                     <div class="hero-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">

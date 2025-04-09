@@ -44,7 +44,7 @@ require_once '../../../../components/header.php';
             </div>
             <div class="hero-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
                 <div class="image-glow"></div>
-                <img src="/assets/images/services/business-virtual-assistant.svg" alt="AI Virtual Assistants for Businesses" class="floating-image">
+                <img src="/assets/svg/AI-Virtual-Assistants-NeoWebX.svg" alt="AI Virtual Assistants for Businesses" class="floating-image">
                 <div class="decoration-circle-1"></div>
                 <div class="decoration-circle-2"></div>
             </div>

@@ -43,7 +43,7 @@ require_once '../../../../components/header.php';
                 </div>
             </div>
             <div class="hero-image" data-aos="fade-left">
-                <img src="/assets/images/services/legal-ai.svg" alt="AI Compliance & Legal Automation" class="floating-image">
+                <img src="/assets/svg/AI-compliance-legal-automation-NeowebX .svg" alt="AI Compliance & Legal Automation" class="floating-image">
                 <div class="decoration-circle-1"></div>
                 <div class="decoration-circle-2"></div>
             </div>
